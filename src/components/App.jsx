@@ -1,12 +1,47 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { supabase } from '../supabaseClient';
+import Auth from './Auth';
 import Chatbot from './Chatbot';
 
 const App = () => {
+  const [session, setSession] = useState(null);
+
+  useEffect(() => {
+    // Get initial session
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setSession(session);
+    });
+
+    // Listen for auth changes
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, session) => {
+      setSession(session);
+    });
+
+    return () => subscription.unsubscribe();
+  }, []);
+
+  if (!session) {
+    return <Auth />;
+  }
+
   return (
     <div className="flex flex-col h-screen bg-gray-100">
       {/* Header Panel */}
       <header className="bg-blue-600 text-white p-4 shadow-md">
-        <h1 className="text-2xl font-bold">AI Chatbot Assistant</h1>
+        <div className="flex justify-between items-center">
+          <h1 className="text-2xl font-bold">AI Chatbot Assistant</h1>
+          <div className="flex items-center space-x-4">
+            <span className="text-sm">{session.user.email}</span>
+            <button
+              onClick={() => supabase.auth.signOut()}
+              className="px-3 py-1 text-sm bg-blue-500 hover:bg-blue-400 rounded"
+            >
+              Sign Out
+            </button>
+          </div>
+        </div>
       </header>
 
       {/* Main Content */}
@@ -47,7 +82,7 @@ const App = () => {
 
         {/* Chatbot Panel */}
         <div className="w-1/3 bg-white rounded-lg shadow-lg overflow-hidden">
-          <Chatbot />
+          <Chatbot user={session.user} />
         </div>
       </main>
     </div>

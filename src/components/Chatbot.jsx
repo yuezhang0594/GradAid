@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Chatbot = () => {
+const Chatbot = ({ user }) => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -8,16 +8,22 @@ const Chatbot = () => {
   const sendMessage = async () => {
     if (!input.trim()) return;
 
-    const userMessage = { sender: "user", text: input };
+    const userMessage = { sender: "user", text: input, userId: user.id };
     setMessages([...messages, userMessage]);
     setInput("");
     setIsLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5000/chat", {  
+      const response = await fetch("http://localhost:5000/chat", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: input })
+        headers: { 
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${user.id}` // Add user ID to requests
+        },
+        body: JSON.stringify({ 
+          message: input,
+          userId: user.id // Include user ID in message
+        })
       });
       
       if (!response.ok) {
@@ -25,14 +31,19 @@ const Chatbot = () => {
       }
       
       const data = await response.json();
-      const botMessage = { sender: "bot", text: data.response };
+      const botMessage = { 
+        sender: "bot", 
+        text: data.response,
+        userId: user.id 
+      };
       setMessages(prevMessages => [...prevMessages, botMessage]);
     } catch (error) {
       console.error("Error fetching response:", error);
       const errorMessage = { 
         sender: "bot", 
         text: "Sorry, I encountered an error. Please try again.",
-        isError: true 
+        isError: true,
+        userId: user.id
       };
       setMessages(prevMessages => [...prevMessages, errorMessage]);
     } finally {
