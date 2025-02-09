@@ -2,14 +2,20 @@ import React, { useState, useEffect } from 'react';
 import { supabase } from '../supabaseClient';
 import Auth from './Auth';
 import Chatbot from './Chatbot';
+import Welcome from './Welcome';
 
 const App = () => {
   const [session, setSession] = useState(null);
+  const [showAuth, setShowAuth] = useState(false);
 
   useEffect(() => {
     // Get initial session
     supabase.auth.getSession().then(({ data: { session } }) => {
       setSession(session);
+      // If user is authenticated, make sure we're not showing the auth page
+      if (session) {
+        setShowAuth(false);
+      }
     });
 
     // Listen for auth changes
@@ -17,15 +23,26 @@ const App = () => {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((_event, session) => {
       setSession(session);
+      // If user is authenticated, make sure we're not showing the auth page
+      if (session) {
+        setShowAuth(false);
+      }
     });
 
     return () => subscription.unsubscribe();
   }, []);
 
-  if (!session) {
-    return <Auth />;
+  // Show auth page
+  if (showAuth) {
+    return <Auth onBackClick={() => setShowAuth(false)} />;
   }
 
+  // Show welcome page if not authenticated
+  if (!session) {
+    return <Welcome onAuthClick={() => setShowAuth(true)} />;
+  }
+
+  // Show main app if authenticated
   return (
     <div className="flex flex-col h-screen bg-gray-100">
       {/* Header Panel */}

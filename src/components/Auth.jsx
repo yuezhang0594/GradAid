@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { supabase } from '../supabaseClient'
 
-export default function Auth() {
+export default function Auth({ onBackClick }) {
   const [loading, setLoading] = useState(false)
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -20,11 +20,16 @@ export default function Auth() {
         if (error) throw error
         alert('Check your email for the confirmation link!')
       } else {
-        const { error } = await supabase.auth.signInWithPassword({
+        const { error, data } = await supabase.auth.signInWithPassword({
           email,
           password,
         })
         if (error) throw error
+        if (data.session) {
+          // Successfully signed in, no need to manually navigate
+          // The App component will automatically update due to the auth state change
+          return;
+        }
       }
     } catch (error) {
       alert(error.message)
@@ -36,9 +41,17 @@ export default function Auth() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-md">
-        <h1 className="text-2xl font-bold text-center mb-8">
-          {isSignUp ? 'Sign Up' : 'Sign In'}
-        </h1>
+        <div className="flex justify-between items-center mb-8">
+          <h1 className="text-2xl font-bold">
+            {isSignUp ? 'Sign Up' : 'Sign In'}
+          </h1>
+          <button
+            onClick={onBackClick}
+            className="text-gray-600 hover:text-gray-800"
+          >
+            Back
+          </button>
+        </div>
         <form onSubmit={handleAuth} className="space-y-6">
           <div>
             <label className="block text-sm font-medium text-gray-700">Email</label>
