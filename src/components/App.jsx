@@ -78,6 +78,15 @@ const App = () => {
     }
   };
 
+  const handleLogoClick = () => {
+    // If user is signed in, sign them out
+    if (session) {
+      handleSignOut();
+    }
+    // If they're on the auth page, take them back to landing
+    setShowAuth(false);
+  };
+
   // Show auth page
   if (showAuth) {
     return <Auth onBackClick={() => setShowAuth(false)} />;
@@ -85,7 +94,11 @@ const App = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
-      <Header session={session} onSignOut={handleSignOut} />
+      <Header 
+        session={session} 
+        onSignOut={handleSignOut} 
+        onLogoClick={handleLogoClick}
+      />
       <main className="flex-1">
         <div className="max-w-7xl mx-auto px-4 py-8">
           {!session ? (

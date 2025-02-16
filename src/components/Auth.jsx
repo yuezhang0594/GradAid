@@ -51,7 +51,9 @@ export default function Auth({ onBackClick }) {
       const { error } = await supabase.auth.signInWithOAuth({
         provider,
         options: {
-          redirectTo: window.location.origin
+          redirectTo: import.meta.env.PROD 
+            ? 'https://gradaid.netlify.app'
+            : window.location.origin
         }
       })
       if (error) throw error
