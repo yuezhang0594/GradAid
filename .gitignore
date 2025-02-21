@@ -6,10 +6,12 @@ package-lock.json
 dist/
 
 # Environment variables
+.env*
 .env
 .env.local
 .env.development
 .env.production
+.env.pub
 
 # Logs
 npm-debug.log*

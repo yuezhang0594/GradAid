@@ -1,55 +1,107 @@
-import React from 'react';
-import Chatbot from './Chatbot';
+import React, { useState, useEffect } from 'react';
+import { supabase } from '../supabaseClient';
+import Auth from './Auth';
+import Header from './Header';
+import LandingPage from './LandingPage';
+import MainContent from './MainContent';
 
 const App = () => {
+  const [session, setSession] = useState(null);
+  const [showAuth, setShowAuth] = useState(false);
+
+  useEffect(() => {
+    // Check URL for sign_out parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const shouldSignOut = urlParams.get('sign_out') === 'true';
+
+    if (shouldSignOut) {
+      // Clear all Supabase-related items from localStorage
+      Object.keys(localStorage).forEach(key => {
+        if (key.startsWith('sb-')) {
+          localStorage.removeItem(key);
+        }
+      });
+      // Remove the sign_out parameter from URL
+      window.history.replaceState({}, '', window.location.pathname);
+      return;
+    }
+
+    // Get initial session
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setSession(session);
+      if (session) {
+        setShowAuth(false);
+      }
+    });
+
+    // Listen for auth changes
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, session) => {
+      setSession(session);
+      if (session) {
+        setShowAuth(false);
+      }
+    });
+
+    return () => subscription.unsubscribe();
+  }, []);
+
+  const handleSignOut = async () => {
+    try {
+      // Force session cleanup regardless of Supabase state
+      setSession(null);
+      setShowAuth(false);
+      
+      // Attempt to sign out from Supabase
+      const { error } = await supabase.auth.signOut();
+      if (error && !error.message.includes('Auth session missing')) {
+        throw error;
+      }
+      
+      // Clear all Supabase-related items from localStorage
+      Object.keys(localStorage).forEach(key => {
+        if (key.startsWith('sb-')) {
+          localStorage.removeItem(key);
+        }
+      });
+
+      // Force reload the page to ensure clean state
+      window.location.href = '/?sign_out=true';
+    } catch (error) {
+      console.error('Error signing out:', error.message);
+      // Even if there's an error, we want to clear the local state
+      setSession(null);
+      setShowAuth(false);
+    }
+  };
+
+  const handleLogoClick = () => {
+    // If user is signed in, sign them out
+    if (session) {
+      handleSignOut();
+    }
+    // If they're on the auth page, take them back to landing
+    setShowAuth(false);
+  };
+
+  // Show auth page
+  if (showAuth) {
+    return <Auth onBackClick={() => setShowAuth(false)} />;
+  }
+
   return (
-    <div className="flex flex-col h-screen bg-gray-100">
-      {/* Header Panel */}
-      <header className="bg-blue-600 text-white p-4 shadow-md">
-        <h1 className="text-2xl font-bold">AI Chatbot Assistant</h1>
-      </header>
-
-      {/* Main Content */}
-      <main className="flex flex-1 p-4 gap-4 overflow-hidden">
-        {/* Instructions Panel */}
-        <div className="w-2/3 bg-white p-6 rounded-lg shadow-lg overflow-y-auto">
-          <h2 className="text-xl font-semibold mb-4 text-gray-800">Instructions</h2>
-          <div className="space-y-4">
-            <section>
-              <h3 className="font-medium text-gray-700 mb-2">Getting Started</h3>
-              <p className="text-gray-600">
-                Welcome to our AI Chatbot! This assistant is designed to help answer your questions
-                and provide assistance with various tasks.
-              </p>
-            </section>
-            
-            <section>
-              <h3 className="font-medium text-gray-700 mb-2">How to Use</h3>
-              <ul className="list-disc list-inside text-gray-600 space-y-2">
-                <li>Type your message in the chat input field</li>
-                <li>Press Enter or click the Send button</li>
-                <li>Wait for the AI to respond to your query</li>
-                <li>You can ask follow-up questions at any time</li>
-              </ul>
-            </section>
-
-            <section>
-              <h3 className="font-medium text-gray-700 mb-2">Tips</h3>
-              <ul className="list-disc list-inside text-gray-600 space-y-2">
-                <li>Be specific with your questions</li>
-                <li>Provide context when necessary</li>
-                <li>You can ask the bot to clarify its responses</li>
-                <li>The chat history is preserved during your session</li>
-              </ul>
-            </section>
-          </div>
-        </div>
-
-        {/* Chatbot Panel */}
-        <div className="w-1/3 bg-white rounded-lg shadow-lg overflow-hidden">
-          <Chatbot />
-        </div>
-      </main>
+    <div className="flex flex-col min-h-screen bg-gray-100">
+      <Header 
+        session={session} 
+        onSignOut={handleSignOut} 
+        onLogoClick={handleLogoClick}
+      />
+      {session ? (
+        <MainContent session={session} />
+      ) : (
+        <LandingPage onGetStarted={() => setShowAuth(true)} />
+      )}
     </div>
   );
 };
