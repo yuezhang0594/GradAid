@@ -45,7 +45,7 @@ const InstructionsPanel = () => (
   </div>
 );
 
-// Demo mode flag - set to true to always show the profile form
+// Demo mode flag - set to true to always show the profile form initially
 const DEMO_MODE = true;
 
 const MainContent = ({ session }) => {
@@ -77,12 +77,9 @@ const MainContent = ({ session }) => {
     checkUserProfile();
   }, [session]);
 
-  // In demo mode, always show the form again after it's closed
   const handleFormComplete = () => {
     setShowProfileForm(false);
-    if (DEMO_MODE) {
-      setTimeout(() => setShowProfileForm(true), 3000); // Show form again after 3 seconds
-    }
+    // Removed the timeout that made the form reappear
   };
 
   return (
