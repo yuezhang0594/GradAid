@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { supabase } from '../supabaseClient';
+import { profileService } from '../services/profile';
+
+const API_URL = 'http://localhost:8000/api';
 
 export default function UserProfileForm({ onComplete }) {
   const [loading, setLoading] = useState(false);
@@ -36,19 +38,7 @@ export default function UserProfileForm({ onComplete }) {
     setLoading(true);
 
     try {
-      const { data: { user } } = await supabase.auth.getUser();
-      
-      const { error } = await supabase
-        .from('user_profiles')
-        .insert([
-          {
-            user_id: user.id,
-            ...formData
-          }
-        ]);
-
-      if (error) throw error;
-      
+      await profileService.createProfile(formData);
       if (onComplete) onComplete();
     } catch (error) {
       alert('Error saving profile: ' + error.message);

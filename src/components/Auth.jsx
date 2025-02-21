@@ -1,6 +1,8 @@
 import { useState } from 'react'
-import { supabase } from '../supabaseClient'
 import UserProfileForm from './UserProfileForm'
+import { authService } from '../services/auth'
+
+const API_URL = 'http://localhost:8000/api';
 
 export default function Auth({ onBackClick }) {
   const [loading, setLoading] = useState(false)
@@ -17,36 +19,11 @@ export default function Auth({ onBackClick }) {
 
     try {
       if (isSignUp) {
-        // First sign up
-        const { error: signUpError, data: signUpData } = await supabase.auth.signUp({
-          email,
-          password,
-          options: {
-            data: {
-              first_name: firstName,
-              last_name: lastName,
-              full_name: `${firstName} ${lastName}`.trim()
-            }
-          }
-        })
-        if (signUpError) throw signUpError
-
-        // If signup successful, automatically sign in
-        if (signUpData.user) {
-          const { error: signInError } = await supabase.auth.signInWithPassword({
-            email,
-            password,
-          })
-          if (signInError) throw signInError
-        }
-        
-        alert('Successfully signed up and logged in!')
+        await authService.signUp(email, password, firstName, lastName);
+        setShowProfileForm(true);
+        alert('Successfully signed up and logged in!');
       } else {
-        const { error } = await supabase.auth.signInWithPassword({
-          email,
-          password,
-        })
-        if (error) throw error
+        await authService.signIn(email, password);
       }
     } catch (error) {
       alert(error.message)
@@ -58,15 +35,21 @@ export default function Auth({ onBackClick }) {
   const handleSocialLogin = async (provider) => {
     try {
       setLoading(true)
-      const { error } = await supabase.auth.signInWithOAuth({
-        provider,
-        options: {
-          redirectTo: import.meta.env.PROD 
-            ? 'https://gradaid.netlify.app'
-            : window.location.origin
-        }
-      })
-      if (error) throw error
+      const response = await fetch(`${API_URL}/auth/social-login`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ provider }),
+        credentials: 'include',
+      });
+
+      if (!response.ok) {
+        throw new Error('Social login failed');
+      }
+
+      const data = await response.json();
+      localStorage.setItem('token', data.access_token);
     } catch (error) {
       alert(error.message)
     } finally {
