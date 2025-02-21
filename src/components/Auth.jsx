@@ -34,26 +34,12 @@ export default function Auth({ onBackClick }) {
 
   const handleSocialLogin = async (provider) => {
     try {
-      setLoading(true)
-      const response = await fetch(`${API_URL}/auth/social-login`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ provider }),
-        credentials: 'include',
-      });
-
-      if (!response.ok) {
-        throw new Error('Social login failed');
-      }
-
-      const data = await response.json();
-      localStorage.setItem('token', data.access_token);
+      setLoading(true);
+      await authService.signInWithProvider(provider);
     } catch (error) {
-      alert(error.message)
+      alert(error.message);
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
   }
 

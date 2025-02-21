@@ -10,6 +10,9 @@ class UserResponse(BaseModel):
     access_token: str
     token_type: str
 
+class SocialLoginRequest(BaseModel):
+    provider: str
+
 @router.post("/signup", response_model=UserResponse)
 async def signup(form_data: OAuth2PasswordRequestForm = Depends()):
     try:
@@ -60,4 +63,30 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends()):
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Authentication failed"
+        )
+
+@router.post("/social-login", response_model=UserResponse)
+async def social_login(request: SocialLoginRequest):
+    try:
+        auth_response = supabase.auth.sign_in_with_oauth({
+            "provider": request.provider,
+            "options": {
+                "redirect_to": "http://localhost:5173"  # Vite default dev server
+            }
+        })
+        
+        if not auth_response.url:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Failed to generate OAuth URL"
+            )
+        
+        return {
+            "access_token": auth_response.url,  # Return the OAuth URL
+            "token_type": "oauth_redirect"
+        }
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=str(e)
         )

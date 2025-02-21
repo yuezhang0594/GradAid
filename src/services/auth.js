@@ -77,6 +77,42 @@ class AuthService {
     }
   }
 
+  async signInWithProvider(provider) {
+    if (API_MODE === 'supabase') {
+      const { error, data } = await supabase.auth.signInWithOAuth({
+        provider,
+        options: {
+          redirectTo: window.location.origin
+        }
+      });
+      
+      if (error) throw error;
+      return data;
+    } else {
+      const response = await fetch(`${FASTAPI_URL}/auth/social-login`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ provider }),
+        credentials: 'include',
+      });
+
+      if (!response.ok) {
+        throw new Error('Social login failed');
+      }
+
+      const data = await response.json();
+      if (data.token_type === 'oauth_redirect' && data.access_token) {
+        window.location.href = data.access_token;
+        return;
+      }
+
+      localStorage.setItem('token', data.access_token);
+      return data;
+    }
+  }
+
   async signOut() {
     if (API_MODE === 'supabase') {
       const { error } = await supabase.auth.signOut();
