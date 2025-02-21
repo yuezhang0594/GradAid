@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Auth from './Auth';
+import Header from './Header';
 
 const FeatureCard = ({ title, description }) => (
   <div className="p-6 bg-white rounded-lg shadow-md">
@@ -7,7 +9,9 @@ const FeatureCard = ({ title, description }) => (
   </div>
 );
 
-const LandingPage = ({ onGetStarted }) => {
+const LandingPage = () => {
+  const [showAuth, setShowAuth] = useState(false);
+
   const features = [
     {
       title: "Application Strategy",
@@ -23,30 +27,46 @@ const LandingPage = ({ onGetStarted }) => {
     }
   ];
 
+  if (showAuth) {
+    return (
+      <>
+        <Header />
+        <Auth onBackClick={() => setShowAuth(false)} />
+      </>
+    );
+  }
+
   return (
-    <div className="text-center space-y-8">
-      <h2 className="text-4xl font-bold text-gray-900">
-        Welcome to GradAid
-      </h2>
-      <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-        Your AI-Powered Graduate Application Assistant. Get personalized guidance
-        for your graduate school applications, 24/7.
-      </p>
-      <div className="space-y-4">
-        <h3 className="text-2xl font-semibold text-gray-800">Key Features</h3>
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          {features.map((feature, index) => (
-            <FeatureCard key={index} {...feature} />
-          ))}
+    <div className="min-h-screen bg-gray-50">
+      <Header />
+      <div className="py-12 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center space-y-8">
+            <h2 className="text-4xl font-bold text-gray-900">
+              Welcome to GradAid
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Your AI-Powered Graduate Application Assistant. Get personalized guidance
+              for your graduate school applications, 24/7.
+            </p>
+            <div className="space-y-4">
+              <h3 className="text-2xl font-semibold text-gray-800">Key Features</h3>
+              <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                {features.map((feature, index) => (
+                  <FeatureCard key={index} {...feature} />
+                ))}
+              </div>
+            </div>
+            <div>
+              <button
+                onClick={() => setShowAuth(true)}
+                className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-      <div>
-        <button
-          onClick={onGetStarted}
-          className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
-        >
-          Get Started
-        </button>
       </div>
     </div>
   );

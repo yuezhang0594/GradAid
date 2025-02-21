@@ -11,3 +11,10 @@ html, body {
 #root {
   height: 100%;
 }
+
+/* Card flip styles */
+.backface-hidden {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
