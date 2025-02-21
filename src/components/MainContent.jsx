@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { supabase } from '../supabaseClient';
 import Chatbot from './Chatbot';
+import UserProfileForm from './UserProfileForm';
 
 const InstructionsPanel = () => (
   <div className="md:col-span-2 bg-white p-6 rounded-lg shadow-lg">
@@ -43,14 +45,60 @@ const InstructionsPanel = () => (
   </div>
 );
 
+// Demo mode flag - set to true to always show the profile form
+const DEMO_MODE = true;
+
 const MainContent = ({ session }) => {
+  const [showProfileForm, setShowProfileForm] = useState(DEMO_MODE);
+
+  useEffect(() => {
+    // In demo mode, we don't need to check the profile
+    if (DEMO_MODE) return;
+
+    const checkUserProfile = async () => {
+      try {
+        const { data, error } = await supabase
+          .from('user_profiles')
+          .select('id')
+          .eq('user_id', session.user.id)
+          .single();
+
+        if (error) throw error;
+        
+        // If no profile exists, show the profile form
+        if (!data) {
+          setShowProfileForm(true);
+        }
+      } catch (error) {
+        console.error('Error checking user profile:', error.message);
+      }
+    };
+
+    checkUserProfile();
+  }, [session]);
+
+  // In demo mode, always show the form again after it's closed
+  const handleFormComplete = () => {
+    setShowProfileForm(false);
+    if (DEMO_MODE) {
+      setTimeout(() => setShowProfileForm(true), 3000); // Show form again after 3 seconds
+    }
+  };
+
   return (
-    <div className="grid md:grid-cols-3 gap-8">
-      <InstructionsPanel />
-      <div className="md:col-span-1">
-        <Chatbot session={session} />
+    <>
+      {showProfileForm && (
+        <UserProfileForm 
+          onComplete={handleFormComplete}
+        />
+      )}
+      <div className="grid md:grid-cols-3 gap-8">
+        <InstructionsPanel />
+        <div className="md:col-span-1">
+          <Chatbot session={session} />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

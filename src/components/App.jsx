@@ -29,7 +29,6 @@ const App = () => {
     // Get initial session
     supabase.auth.getSession().then(({ data: { session } }) => {
       setSession(session);
-      // If user is authenticated, make sure we're not showing the auth page
       if (session) {
         setShowAuth(false);
       }
@@ -40,7 +39,6 @@ const App = () => {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((_event, session) => {
       setSession(session);
-      // If user is authenticated, make sure we're not showing the auth page
       if (session) {
         setShowAuth(false);
       }
@@ -99,15 +97,11 @@ const App = () => {
         onSignOut={handleSignOut} 
         onLogoClick={handleLogoClick}
       />
-      <main className="flex-1">
-        <div className="max-w-7xl mx-auto px-4 py-8">
-          {!session ? (
-            <LandingPage onGetStarted={() => setShowAuth(true)} />
-          ) : (
-            <MainContent session={session} />
-          )}
-        </div>
-      </main>
+      {session ? (
+        <MainContent session={session} />
+      ) : (
+        <LandingPage onGetStarted={() => setShowAuth(true)} />
+      )}
     </div>
   );
 };

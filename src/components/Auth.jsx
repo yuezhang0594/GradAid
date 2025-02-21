@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { supabase } from '../supabaseClient'
+import UserProfileForm from './UserProfileForm'
 
 export default function Auth({ onBackClick }) {
   const [loading, setLoading] = useState(false)
@@ -8,6 +9,7 @@ export default function Auth({ onBackClick }) {
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [isSignUp, setIsSignUp] = useState(false)
+  const [showProfileForm, setShowProfileForm] = useState(false)
 
   const handleAuth = async (e) => {
     e.preventDefault()
@@ -15,7 +17,8 @@ export default function Auth({ onBackClick }) {
 
     try {
       if (isSignUp) {
-        const { error: signUpError } = await supabase.auth.signUp({
+        // First sign up
+        const { error: signUpError, data: signUpData } = await supabase.auth.signUp({
           email,
           password,
           options: {
@@ -27,16 +30,23 @@ export default function Auth({ onBackClick }) {
           }
         })
         if (signUpError) throw signUpError
-        alert('Check your email for the confirmation link!')
+
+        // If signup successful, automatically sign in
+        if (signUpData.user) {
+          const { error: signInError } = await supabase.auth.signInWithPassword({
+            email,
+            password,
+          })
+          if (signInError) throw signInError
+        }
+        
+        alert('Successfully signed up and logged in!')
       } else {
-        const { error, data } = await supabase.auth.signInWithPassword({
+        const { error } = await supabase.auth.signInWithPassword({
           email,
           password,
         })
         if (error) throw error
-        if (data.session) {
-          return;
-        }
       }
     } catch (error) {
       alert(error.message)
@@ -192,6 +202,15 @@ export default function Auth({ onBackClick }) {
           </button>
         </div>
       </div>
+      {showProfileForm && (
+        <UserProfileForm 
+          onComplete={() => {
+            setShowProfileForm(false)
+            resetForm()
+            setIsSignUp(false)
+          }} 
+        />
+      )}
     </div>
   )
 }
