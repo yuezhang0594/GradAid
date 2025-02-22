@@ -1,140 +1,231 @@
-import React, { useState, useRef } from "react";
+import { useState, useEffect, useRef } from 'react';
+import { chatbotService, INTERVIEW_QUESTIONS } from '../services/chatbot';
 
-const Chatbot = ({ session }) => {
+export default function Chatbot({ session }) {
+  console.log('Chatbot rendering with session:', session);
+
   const [messages, setMessages] = useState([]);
-  const [input, setInput] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [userInput, setUserInput] = useState('');
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [showWelcome, setShowWelcome] = useState(false);
   const messagesEndRef = useRef(null);
+  const notificationSound = useRef(new Audio('/sounds/notification.mp3'));
 
-  const sendMessage = async () => {
-    if (!input.trim()) return;
+  const playNotification = () => {
+    try {
+      notificationSound.current.currentTime = 0;
+      notificationSound.current.volume = 0.2; // Set volume to 50%
+      notificationSound.current.play().catch(err => console.log('Error playing sound:', err));
+    } catch (err) {
+      console.log('Error playing sound:', err);
+    }
+  };
 
-    const userMessage = { sender: "user", text: input, userId: session.user.id };
-    setMessages([...messages, userMessage]);
-    setInput("");
-    setIsLoading(true);
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [messages]);
+
+  // Initialize audio on first user interaction
+  useEffect(() => {
+    const initAudio = () => {
+      notificationSound.current.load();
+    };
+
+    window.addEventListener('click', initAudio, { once: true });
+    return () => window.removeEventListener('click', initAudio);
+  }, []);
+
+  // Handle initial welcome message with delay
+  useEffect(() => {
+    console.log('Session effect running, session:', session);
+    if (!session) {
+      console.log('No session, returning early');
+      return;
+    }
+
+    // Reset states when session changes
+    setMessages([]);
+    setCurrentQuestion(0);
+    setShowWelcome(false);
+
+    // Add initial typing indicator
+    setMessages([
+      {
+        type: 'bot',
+        content: 'Typing...',
+        isTyping: true
+      }
+    ]);
+
+    // Show welcome message after 5 seconds
+    const welcomeTimer = setTimeout(() => {
+      setShowWelcome(true);
+      setMessages([
+        {
+          type: 'bot',
+          content: `Every story is unique! At GradAid, we're excited to hear yours. Share your experiences, goals, and inspirations with us—we're here to help you on your journey to U.S. graduate studies!`,
+        }
+      ]);
+      playNotification();
+
+      // Show first question after 2 more seconds
+      const questionTimer = setTimeout(() => {
+        setMessages(prev => [
+          ...prev,
+          {
+            type: 'bot',
+            content: INTERVIEW_QUESTIONS[0],
+          }
+        ]);
+        playNotification();
+      }, 2000);
+
+      return () => clearTimeout(questionTimer);
+    }, 5000);
+
+    return () => clearTimeout(welcomeTimer);
+  }, [session]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!userInput.trim() || isProcessing || !session || !showWelcome) return;
+
+    const response = userInput.trim();
+    setIsProcessing(true);
+    setUserInput('');
+
+    // Add user's response to messages
+    setMessages(prev => [...prev, { type: 'user', content: response }]);
 
     try {
-      const response = await fetch("http://localhost:5000/chat", {
-        method: "POST",
-        headers: { 
-          "Content-Type": "application/json",
-          "Authorization": `Bearer ${session.user.id}` // Add user ID to requests
-        },
-        body: JSON.stringify({ 
-          message: input,
-          userId: session.user.id // Include user ID in message
-        })
-      });
-      
-      if (!response.ok) {
-        throw new Error('Failed to get response from server');
+      // Add typing indicator
+      setMessages(prev => [...prev, { type: 'bot', content: 'Typing...', isTyping: true }]);
+
+      // Simple validation
+      const analysis = chatbotService.validateResponse(response);
+      console.log('Response analysis:', analysis);
+
+      // Remove typing indicator and add feedback if necessary
+      if (!analysis.isValid) {
+        setMessages(prev => [
+          ...prev.filter(m => !m.isTyping),
+          {
+            type: 'bot',
+            content: `${analysis.feedback}\n${analysis.suggestions}`,
+            isFeedback: true
+          }
+        ]);
+        playNotification();
+        setIsProcessing(false);
+        return;
       }
-      
-      const data = await response.json();
-      const botMessage = { 
-        sender: "bot", 
-        text: data.response,
-        userId: session.user.id 
-      };
-      setMessages(prevMessages => [...prevMessages, botMessage]);
+
+      // Move to next question with typing indicator
+      if (currentQuestion < INTERVIEW_QUESTIONS.length - 1) {
+        setCurrentQuestion(prev => prev + 1);
+        
+        // Remove typing indicator and add next question after a short delay
+        setTimeout(() => {
+          setMessages(prev => [
+            ...prev.filter(m => !m.isTyping),
+            {
+              type: 'bot',
+              content: INTERVIEW_QUESTIONS[currentQuestion + 1]
+            }
+          ]);
+          playNotification();
+        }, 1500);
+      } else {
+        // Interview completed
+        setTimeout(() => {
+          setMessages(prev => [
+            ...prev.filter(m => !m.isTyping),
+            {
+              type: 'bot',
+              content: "Thank you for completing the interview! Your responses will help you prepare better answers for your graduate school applications."
+            }
+          ]);
+          playNotification();
+        }, 1500);
+      }
     } catch (error) {
-      console.error("Error fetching response:", error);
-      const errorMessage = { 
-        sender: "bot", 
-        text: "Sorry, I encountered an error. Please try again.",
-        isError: true,
-        userId: session.user.id
-      };
-      setMessages(prevMessages => [...prevMessages, errorMessage]);
+      console.error('Error processing response:', error);
+      setMessages(prev => [
+        ...prev.filter(m => !m.isTyping),
+        {
+          type: 'bot',
+          content: "I apologize, but I encountered an error processing your response. Please try again.",
+          isError: true
+        }
+      ]);
+      playNotification();
     } finally {
-      setIsLoading(false);
+      setIsProcessing(false);
     }
   };
 
-  const handleKeyPress = (e) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault();
-      sendMessage();
-    }
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    sendMessage();
-  };
-
-  return (
-    <div className="bg-white rounded-lg shadow-lg p-4 h-[600px] flex flex-col">
-      <div className="flex-none mb-4">
-        <h2 className="text-lg font-semibold text-gray-800">Chat with GradAid</h2>
+  if (!session) {
+    console.log('Rendering no-session state');
+    return (
+      <div className="flex flex-col h-full max-w-4xl mx-auto p-4">
+        <div className="text-center text-gray-500">
+          Please sign in to use the interview assistant.
+        </div>
       </div>
+    );
+  }
 
-      <div className="flex-1 overflow-y-auto mb-4">
-        {messages.length === 0 ? (
-          <div className="text-center text-gray-500 mt-4">
-            Start a conversation by typing a message below
-          </div>
-        ) : (
-          messages.map((msg, index) => (
+  console.log('Rendering chat interface with messages:', messages);
+  return (
+    <div className="flex flex-col h-full max-w-4xl mx-auto p-4">
+      <div className="flex-1 overflow-y-auto mb-4 space-y-4">
+        {messages.map((message, index) => (
+          <div
+            key={index}
+            className={`flex ${message.type === 'user' ? 'justify-end' : 'justify-start'}`}
+          >
             <div
-              key={index}
-              className={`mb-4 ${
-                msg.sender === 'user' ? 'text-right' : 'text-left'
+              className={`max-w-[80%] p-4 rounded-lg ${
+                message.isTyping
+                  ? 'bg-gray-100 text-gray-500 animate-pulse'
+                  : message.type === 'user'
+                  ? 'bg-blue-600 text-white'
+                  : message.isError
+                  ? 'bg-red-100 text-red-700'
+                  : message.isFeedback
+                  ? 'bg-yellow-100 text-yellow-800'
+                  : 'bg-gray-100 text-gray-800'
               }`}
             >
-              <div
-                className={`inline-block p-3 rounded-lg ${
-                  msg.sender === 'user'
-                    ? 'bg-blue-600 text-white'
-                    : msg.isError 
-                      ? 'bg-red-100 text-red-600' 
-                      : 'bg-gray-100 text-gray-800'
-                }`}
-              >
-                {msg.text}
-              </div>
+              {message.content}
             </div>
-          ))
-        )}
-        {isLoading && (
-          <div className="text-left p-2 my-1">
-            <span className="px-3 py-2 rounded-lg inline-block bg-gray-100">
-              <div className="flex space-x-2">
-                <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
-                <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-                <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
-              </div>
-            </span>
           </div>
-        )}
+        ))}
         <div ref={messagesEndRef} />
       </div>
 
-      <div className="flex-none">
-        <form onSubmit={handleSubmit} className="flex gap-2">
-          <input
-            type="text"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyPress={handleKeyPress}
-            placeholder="Type your question about grad school..."
-            className="flex-1 p-2 border rounded-lg focus:outline-none focus:border-blue-500"
-            disabled={isLoading}
-          />
-          <button
-            type="submit"
-            className={`px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors ${
-              isLoading ? "cursor-not-allowed" : ""
-            }`}
-            disabled={isLoading}
-          >
-            {isLoading ? "..." : "Send"}
-          </button>
-        </form>
-      </div>
+      <form onSubmit={handleSubmit} className="flex gap-2">
+        <input
+          type="text"
+          value={userInput}
+          onChange={(e) => setUserInput(e.target.value)}
+          placeholder={showWelcome ? "Type your response..." : "Please wait..."}
+          disabled={isProcessing || currentQuestion >= INTERVIEW_QUESTIONS.length || !showWelcome}
+          className="flex-1 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <button
+          type="submit"
+          disabled={isProcessing || !userInput.trim() || currentQuestion >= INTERVIEW_QUESTIONS.length || !showWelcome}
+          className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50"
+        >
+          {isProcessing ? 'Processing...' : 'Send'}
+        </button>
+      </form>
     </div>
   );
-};
-
-export default Chatbot;
+}
