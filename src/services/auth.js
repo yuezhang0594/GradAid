@@ -131,6 +131,56 @@ class AuthService {
       return token ? { access_token: token } : null;
     }
   }
+
+  async resetPassword(email) {
+    if (API_MODE === 'supabase') {
+      const { error, data } = await supabase.auth.resetPasswordForEmail(email, {
+        redirectTo: `${window.location.origin}/reset-password`,
+      });
+      if (error) throw error;
+      return data;
+    } else {
+      const response = await fetch(`${FASTAPI_URL}/auth/reset-password`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Password reset request failed');
+      }
+
+      return await response.json();
+    }
+  }
+
+  async updatePassword(newPassword) {
+    if (API_MODE === 'supabase') {
+      const { error, data } = await supabase.auth.updateUser({
+        password: newPassword
+      });
+      if (error) throw error;
+      return data;
+    } else {
+      const token = localStorage.getItem('token');
+      const response = await fetch(`${FASTAPI_URL}/auth/update-password`, {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ password: newPassword }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Password update failed');
+      }
+
+      return await response.json();
+    }
+  }
 }
 
 export const authService = new AuthService();
