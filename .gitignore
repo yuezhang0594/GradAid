@@ -26,3 +26,4 @@ Thumbs.db
 # Netlify/Vercel deployment cache
 .netlify/
 .vercel/
+supabase/migrations/
