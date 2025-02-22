@@ -113,7 +113,7 @@ const MainContent = ({ session }) => {
           </div>
         )}
         <div className="grid md:grid-cols-12 gap-4 h-[calc(100vh-8rem)]">
-          <div className="md:col-span-9 grid grid-cols-12 gap-4 h-full">
+          <div className="md:col-span-8 grid grid-cols-12 gap-4 h-full">
             <div className="col-span-12 h-[250px] overflow-hidden">
               <InstructionsPanel />
             </div>
@@ -121,7 +121,7 @@ const MainContent = ({ session }) => {
               <UniversityTracker />
             </div>
           </div>
-          <div className="md:col-span-3 h-[calc(100vh-8rem)]">
+          <div className="md:col-span-4 h-[calc(100vh-8rem)] bg-white rounded-lg shadow-lg">
             <Chatbot session={session} />
           </div>
         </div>
