@@ -6,12 +6,14 @@ class ProfileService {
     if (API_MODE === 'supabase') {
       const { data: { user } } = await supabase.auth.getUser();
       
-      const { error, data } = await supabase
-        .from('profiles')
-        .insert([{
-          user_id: user.id,
+      if (!user) throw new Error('No user authenticated');
+
+      const { data, error } = await supabase
+        .from('User')
+        .upsert({
+          id: user.id,
           ...profileData
-        }]);
+        });
 
       if (error) throw error;
       return data;
@@ -40,9 +42,9 @@ class ProfileService {
       const { data: { user } } = await supabase.auth.getUser();
       
       const { error, data } = await supabase
-        .from('profiles')
+        .from('User')
         .select('*')
-        .eq('user_id', user.id)
+        .eq('id', user.id)
         .single();
 
       if (error) throw error;
@@ -70,9 +72,9 @@ class ProfileService {
       const { data: { user } } = await supabase.auth.getUser();
       
       const { error, data } = await supabase
-        .from('profiles')
+        .from('User')
         .update(profileData)
-        .eq('user_id', user.id);
+        .eq('id', user.id);
 
       if (error) throw error;
       return data;
