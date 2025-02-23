@@ -16,7 +16,6 @@ class ProfileCreate(BaseModel):
     toefl_score: Optional[int] = None
     ielts_score: Optional[float] = None
     profile_description: str
-    career_goal: str
 
 async def get_current_user(token: str = Depends(oauth2_scheme)):
     try:
@@ -37,13 +36,13 @@ async def create_profile(
 ):
     try:
         # Check if profile exists
-        existing_profile = supabase.table('profiles').select("*").eq('user_id', current_user.id).execute()
+        existing_profile = supabase.table('User').select("*").eq('user_id', current_user.id).execute()
         
         if existing_profile.data:
             raise HTTPException(status_code=400, detail="Profile already exists")
         
         # Create new profile
-        result = supabase.table('profiles').insert({
+        result = supabase.table('User').insert({
             "user_id": current_user.id,
             **profile.dict()
         }).execute()
@@ -55,7 +54,7 @@ async def create_profile(
 @router.get("/me")
 async def read_profile(current_user = Depends(get_current_user)):
     try:
-        result = supabase.table('profiles').select("*").eq('user_id', current_user.id).execute()
+        result = supabase.table('User').select("*").eq('user_id', current_user.id).execute()
         
         if not result.data:
             raise HTTPException(status_code=404, detail="Profile not found")
@@ -70,7 +69,7 @@ async def update_profile(
     current_user = Depends(get_current_user)
 ):
     try:
-        result = supabase.table('profiles').update(profile.dict()).eq('user_id', current_user.id).execute()
+        result = supabase.table('User').update(profile.dict()).eq('user_id', current_user.id).execute()
         
         if not result.data:
             raise HTTPException(status_code=404, detail="Profile not found")

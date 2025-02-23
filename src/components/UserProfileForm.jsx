@@ -13,8 +13,7 @@ export default function UserProfileForm({ onComplete }) {
     gre_score: '',
     toefl_score: '',
     ielts_score: '',
-    profile_desc: '',
-    career_goals: ''
+    profile_desc: ''
   });
 
   const educationLevels = [
@@ -38,7 +37,16 @@ export default function UserProfileForm({ onComplete }) {
     setLoading(true);
 
     try {
-      await profileService.createProfile(formData);
+      // Convert empty strings to null for numeric fields
+      const processedData = {
+        ...formData,
+        gpa: formData.gpa || null,
+        gre_score: formData.gre_score || null,
+        toefl_score: formData.toefl_score || null,
+        ielts_score: formData.ielts_score || null
+      };
+      
+      await profileService.createProfile(processedData);
       if (onComplete) onComplete();
     } catch (error) {
       alert('Error saving profile: ' + error.message);
@@ -151,18 +159,6 @@ export default function UserProfileForm({ onComplete }) {
             <textarea
               name="profile_desc"
               value={formData.profile_desc}
-              onChange={handleChange}
-              rows="3"
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
-              required
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Career Goal</label>
-            <textarea
-              name="career_goals"
-              value={formData.career_goals}
               onChange={handleChange}
               rows="3"
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"

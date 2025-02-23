@@ -14,7 +14,7 @@ class User(Base):
     profile = relationship("Profile", back_populates="user", uselist=False)
 
 class Profile(Base):
-    __tablename__ = "profiles"
+    __tablename__ = "User"
 
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey("users.id"), unique=True)
@@ -26,7 +26,6 @@ class Profile(Base):
     toefl_score = Column(Integer)
     ielts_score = Column(Float)
     profile_description = Column(String)
-    career_goal = Column(String)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
     

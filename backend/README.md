@@ -56,7 +56,7 @@ The application uses the following Supabase tables:
 
 ### profiles
 ```sql
-create table profiles (
+create table User (
   id uuid primary key default uuid_generate_v4(),
   user_id uuid references auth.users not null,
   country text,
@@ -67,24 +67,24 @@ create table profiles (
   toefl_score integer,
   ielts_score numeric(2,1),
   profile_description text,
-  career_goal text,
   created_at timestamp with time zone default timezone('utc'::text, now()),
   updated_at timestamp with time zone default timezone('utc'::text, now()),
   unique(user_id)
 );
 
 -- Enable RLS
-alter table profiles enable row level security;
+alter table User enable row level security;
 
 -- Create policies
 create policy "Users can view their own profile" 
-  on profiles for select 
-  using (auth.uid() = user_id);
+  on User for select 
+  using (auth.uid() = id);
 
 create policy "Users can create their own profile" 
-  on profiles for insert 
-  with check (auth.uid() = user_id);
+  on User for insert 
+  with check (auth.uid() = id);
 
 create policy "Users can update their own profile" 
-  on profiles for update 
-  using (auth.uid() = user_id);
+  on User for update 
+  using (auth.uid() = id);
+```
