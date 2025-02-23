@@ -121,7 +121,7 @@ const MainContent = ({ session }) => {
             <div className="col-span-12 h-[250px] overflow-hidden">
               <InstructionsPanel />
             </div>
-            <div className="col-span-12 h-[calc(100vh-380px)] overflow-hidden">
+            <div className="col-span-12 h-[calc(100vh-395px)] overflow-hidden">
               <UniversityTracker />
             </div>
           </div>
@@ -129,7 +129,7 @@ const MainContent = ({ session }) => {
             <Chatbot session={session} />
           </div>
         </div>
-        <div className="text-center text-gray-400 text-sm mt-2">
+        <div className="text-center text-gray-400 text-sm mt-4">
           Version {import.meta.env.VITE_APP_VERSION}
         </div>
       </main>
