@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { profileService } from '../services/profile';
-import Select, { CreatableSelect } from 'react-select';
+import Select from 'react-select';
+import CreatableSelect from 'react-select/creatable';
 import { countryOptions, majorOptions, degreeOptions } from '../services/selectOptions';
 
 const API_URL = 'http://localhost:8000/api';
