@@ -10,6 +10,7 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 class ProfileCreate(BaseModel):
     country: str
+    dob: date
     education_level: str
     major: str
     gpa: Optional[float] = None
@@ -20,7 +21,7 @@ class ProfileCreate(BaseModel):
     email: Optional[str] = None
     first_name: Optional[str] = None
     last_name: Optional[str] = None
-    dob: Optional[date] = None
+
 
 async def get_current_user(token: str = Depends(oauth2_scheme)):
     try:
@@ -46,24 +47,18 @@ async def create_profile(
         if existing_profile.data:
             raise HTTPException(status_code=400, detail="Profile already exists")
         
-        # Get user data from auth
-        full_name = current_user.user_metadata.get('full_name', '') if current_user.user_metadata else ''
-        name_parts = full_name.split(' ', 1)  # Split into first name and rest
-        first_name = name_parts[0] if name_parts else ''
-        last_name = name_parts[1] if len(name_parts) > 1 else ''
-        
-        auth_user_data = {
-            "email": current_user.email,
-            "first_name": first_name,
-            "last_name": last_name
-        }
+        # Get user metadata from auth
+        user_metadata = current_user.user_metadata or {}
+        email = current_user.email
+        first_name = user_metadata.get('first_name', '')
+        last_name = user_metadata.get('last_name', '')
         
         # Create new profile combining auth data and profile data
         result = supabase.table('User').insert({
             "user_id": current_user.id,
-            "email": auth_user_data["email"],
-            "first_name": auth_user_data["first_name"],
-            "last_name": auth_user_data["last_name"],
+            "email": email,
+            "first_name": first_name,
+            "last_name": last_name,
             **profile.dict()
         }).execute()
         
