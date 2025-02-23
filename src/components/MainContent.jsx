@@ -116,7 +116,7 @@ const MainContent = ({ session }) => {
       <Header session={session} onSignOut={handleSignOut} />
       
       <main className="container mx-auto px-4 py-4">
-      <div className="grid md:grid-cols-12 gap-4 h-[calc(100vh-8rem)]">
+        <div className="grid md:grid-cols-12 gap-4 h-[calc(100vh-8rem)]">
           <div className="md:col-span-8 grid grid-cols-12 gap-4 h-full">
             <div className="col-span-12 h-[250px] overflow-hidden">
               <InstructionsPanel />
@@ -128,6 +128,9 @@ const MainContent = ({ session }) => {
           <div className="md:col-span-4 h-[calc(100vh-8rem)] bg-white rounded-lg shadow-lg">
             <Chatbot session={session} />
           </div>
+        </div>
+        <div className="text-center text-gray-400 text-sm mt-2">
+          Version {import.meta.env.VITE_APP_VERSION}
         </div>
       </main>
     </div>
