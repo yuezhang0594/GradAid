@@ -3,6 +3,7 @@ from typing import Optional
 from pydantic import BaseModel
 from ..supabase_client import supabase
 from fastapi.security import OAuth2PasswordBearer
+from datetime import date
 
 router = APIRouter()
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
@@ -16,6 +17,10 @@ class ProfileCreate(BaseModel):
     toefl_score: Optional[int] = None
     ielts_score: Optional[float] = None
     profile_description: str
+    email: Optional[str] = None
+    first_name: Optional[str] = None
+    last_name: Optional[str] = None
+    dob: Optional[date] = None
 
 async def get_current_user(token: str = Depends(oauth2_scheme)):
     try:
@@ -41,9 +46,24 @@ async def create_profile(
         if existing_profile.data:
             raise HTTPException(status_code=400, detail="Profile already exists")
         
-        # Create new profile
+        # Get user data from auth
+        full_name = current_user.user_metadata.get('full_name', '') if current_user.user_metadata else ''
+        name_parts = full_name.split(' ', 1)  # Split into first name and rest
+        first_name = name_parts[0] if name_parts else ''
+        last_name = name_parts[1] if len(name_parts) > 1 else ''
+        
+        auth_user_data = {
+            "email": current_user.email,
+            "first_name": first_name,
+            "last_name": last_name
+        }
+        
+        # Create new profile combining auth data and profile data
         result = supabase.table('User').insert({
             "user_id": current_user.id,
+            "email": auth_user_data["email"],
+            "first_name": auth_user_data["first_name"],
+            "last_name": auth_user_data["last_name"],
             **profile.dict()
         }).execute()
         

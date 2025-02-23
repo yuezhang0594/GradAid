@@ -13,7 +13,8 @@ export default function UserProfileForm({ onComplete }) {
     gre_score: '',
     toefl_score: '',
     ielts_score: '',
-    profile_desc: ''
+    profile_desc: '',
+    dob: ''
   });
 
   const educationLevels = [
@@ -25,6 +26,14 @@ export default function UserProfileForm({ onComplete }) {
   ];
 
   const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
@@ -151,6 +160,21 @@ export default function UserProfileForm({ onComplete }) {
               min="0"
               max="9"
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+            />
+          </div>
+
+          <div className="mb-4">
+            <label htmlFor="dob" className="block text-sm font-medium text-gray-700">
+              Date of Birth
+            </label>
+            <input
+              type="date"
+              id="dob"
+              name="dob"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              value={formData.dob || ''}
+              onChange={handleInputChange}
+              required
             />
           </div>
 

@@ -8,12 +8,14 @@ class ProfileService {
       
       if (!user) throw new Error('No user authenticated');
 
+      const formattedData = {
+        ...profileData,
+        dob: profileData.dob ? new Date(profileData.dob).toISOString().split('T')[0] : null,
+      };
+
       const { data, error } = await supabase
         .from('User')
-        .upsert({
-          id: user.id,
-          ...profileData
-        });
+        .upsert(formattedData);
 
       if (error) throw error;
       return data;
