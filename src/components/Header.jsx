@@ -6,7 +6,7 @@ import { profileService } from '../services/profile';
 const Header = ({ session, onSignOut }) => {
   const location = useLocation();
   const [showProfileForm, setShowProfileForm] = useState(false);
-  const [hasProfile, setHasProfile] = useState(false);
+  const [hasCompleteProfile, setHasCompleteProfile] = useState(false);
 
   useEffect(() => {
     const checkProfile = async () => {
@@ -14,10 +14,18 @@ const Header = ({ session, onSignOut }) => {
       
       try {
         const profile = await profileService.getProfile();
-        setHasProfile(!!profile);
+        // Check if all required fields are filled
+        const isComplete = profile && 
+          profile.country && 
+          profile.education_level && 
+          profile.major && 
+          profile.dob &&
+          profile.profile_desc;
+        
+        setHasCompleteProfile(!!isComplete);
       } catch (error) {
         console.error('Error checking profile:', error);
-        setHasProfile(false);
+        setHasCompleteProfile(false);
       }
     };
 
@@ -30,7 +38,7 @@ const Header = ({ session, onSignOut }) => {
 
   const handleFormComplete = () => {
     setShowProfileForm(false);
-    setHasProfile(true);
+    setHasCompleteProfile(true);
   };
   
   return (
@@ -67,12 +75,12 @@ const Header = ({ session, onSignOut }) => {
                   <button 
                     onClick={handleProfileClick}
                     className={`px-3 py-2 rounded-md text-sm font-medium ${
-                      hasProfile 
+                      hasCompleteProfile 
                         ? 'text-blue-100 hover:bg-blue-700 hover:text-white'
                         : 'bg-yellow-500 text-white hover:bg-yellow-600 animate-pulse'
                     }`}
                   >
-                    {hasProfile ? 'Edit Profile' : 'Complete Profile'}
+                    {hasCompleteProfile ? 'Edit Profile' : 'Complete Profile'}
                   </button>
                 </nav>
               )}
@@ -102,7 +110,7 @@ const Header = ({ session, onSignOut }) => {
           <div className="bg-white rounded-lg p-6 w-full max-w-2xl mx-4">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-xl font-semibold text-gray-800">
-                {hasProfile ? 'Edit Your Profile' : 'Complete Your Profile'}
+                {hasCompleteProfile ? 'Edit Your Profile' : 'Complete Your Profile'}
               </h2>
               <button 
                 onClick={() => setShowProfileForm(false)}
