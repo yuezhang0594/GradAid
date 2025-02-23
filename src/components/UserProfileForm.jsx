@@ -3,7 +3,7 @@ import { profileService } from '../services/profile';
 
 const API_URL = 'http://localhost:8000/api';
 
-// Add this helper component at the top of the file
+// Helper component for required fields
 const RequiredLabel = ({ children }) => (
   <label className="block text-sm font-medium text-gray-700">
     {children} <span className="text-red-500">*</span>
@@ -21,7 +21,7 @@ export default function UserProfileForm({ onComplete }) {
     gre_score: '',
     toefl_score: '',
     ielts_score: '',
-    profile_desc: '',
+    profile_description: '',
     dob: ''
   });
 
@@ -43,7 +43,7 @@ export default function UserProfileForm({ onComplete }) {
             gre_score: profile.gre_score || '',
             toefl_score: profile.toefl_score || '',
             ielts_score: profile.ielts_score || '',
-            profile_desc: profile.profile_description || '',
+            profile_description: profile.profile_description || '',
             dob: formattedDob
           });
         }
@@ -281,8 +281,8 @@ export default function UserProfileForm({ onComplete }) {
           <div>
             <RequiredLabel>Profile Description</RequiredLabel>
             <textarea
-              name="profile_desc"
-              value={formData.profile_desc}
+              name="profile_description"
+              value={formData.profile_description}
               onChange={handleChange}
               rows="3"
               onKeyDown={handleKeyDown}

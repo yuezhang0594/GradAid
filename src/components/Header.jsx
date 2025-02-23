@@ -20,7 +20,7 @@ const Header = ({ session, onSignOut }) => {
           profile.education_level && 
           profile.major && 
           profile.dob &&
-          profile.profile_desc;
+          profile.profile_description;
         
         setHasCompleteProfile(!!isComplete);
       } catch (error) {

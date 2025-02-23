@@ -11,10 +11,7 @@ class ProfileService {
       const formattedData = {
         ...profileData,
         dob: profileData.dob ? new Date(profileData.dob).toISOString().split('T')[0] : null,
-        profile_description: profileData.profile_desc,
       };
-
-      delete formattedData.profile_desc;
 
       const { data, error } = await supabase
         .from('User')
