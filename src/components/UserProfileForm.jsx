@@ -13,8 +13,8 @@ export default function UserProfileForm({ onComplete }) {
     gre_score: '',
     toefl_score: '',
     ielts_score: '',
-    profile_description: '',
-    career_goal: ''
+    profile_desc: '',
+    career_goals: ''
   });
 
   const educationLevels = [
@@ -149,8 +149,8 @@ export default function UserProfileForm({ onComplete }) {
           <div>
             <label className="block text-sm font-medium text-gray-700">Profile Description</label>
             <textarea
-              name="profile_description"
-              value={formData.profile_description}
+              name="profile_desc"
+              value={formData.profile_desc}
               onChange={handleChange}
               rows="3"
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
@@ -161,8 +161,8 @@ export default function UserProfileForm({ onComplete }) {
           <div>
             <label className="block text-sm font-medium text-gray-700">Career Goal</label>
             <textarea
-              name="career_goal"
-              value={formData.career_goal}
+              name="career_goals"
+              value={formData.career_goals}
               onChange={handleChange}
               rows="3"
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"

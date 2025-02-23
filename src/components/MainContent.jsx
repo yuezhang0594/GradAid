@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { supabase } from '../supabaseClient';
 import Chatbot from './Chatbot';
-import UserProfileForm from './UserProfileForm';
 import UniversityTracker from './UniversityTracker';
 import Header from './Header';
 
@@ -88,12 +87,6 @@ const InstructionsPanel = () => {
 };
 
 const MainContent = ({ session }) => {
-  const [showProfileForm, setShowProfileForm] = useState(true);
-
-  const handleFormComplete = () => {
-    setShowProfileForm(false);
-  };
-
   const handleSignOut = async () => {
     await supabase.auth.signOut();
   };
@@ -103,16 +96,7 @@ const MainContent = ({ session }) => {
       <Header session={session} onSignOut={handleSignOut} />
       
       <main className="container mx-auto px-4 py-4">
-        {showProfileForm && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-            <div className="bg-white rounded-lg p-6 w-full max-w-2xl mx-4">
-              <UserProfileForm 
-                onComplete={handleFormComplete}
-              />
-            </div>
-          </div>
-        )}
-        <div className="grid md:grid-cols-12 gap-4 h-[calc(100vh-8rem)]">
+      <div className="grid md:grid-cols-12 gap-4 h-[calc(100vh-8rem)]">
           <div className="md:col-span-8 grid grid-cols-12 gap-4 h-full">
             <div className="col-span-12 h-[250px] overflow-hidden">
               <InstructionsPanel />

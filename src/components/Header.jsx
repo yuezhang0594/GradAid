@@ -1,56 +1,123 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import UserProfileForm from './UserProfileForm';
+import { profileService } from '../services/profile';
 
 const Header = ({ session, onSignOut }) => {
   const location = useLocation();
+  const [showProfileForm, setShowProfileForm] = useState(false);
+  const [hasProfile, setHasProfile] = useState(false);
+
+  useEffect(() => {
+    const checkProfile = async () => {
+      if (!session) return;
+      
+      try {
+        const profile = await profileService.getProfile();
+        setHasProfile(!!profile);
+      } catch (error) {
+        console.error('Error checking profile:', error);
+        setHasProfile(false);
+      }
+    };
+
+    checkProfile();
+  }, [session]);
+
+  const handleProfileClick = () => {
+    setShowProfileForm(true);
+  };
+
+  const handleFormComplete = () => {
+    setShowProfileForm(false);
+    setHasProfile(true);
+  };
   
   return (
-    <header className="bg-blue-600 text-white">
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex justify-between items-center">
-          <div className="flex items-center space-x-8">
-            <Link to="/" className="text-xl font-bold text-white">
-              GradAid
-            </Link>
+    <>
+      <header className="bg-blue-600 text-white">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex justify-between items-center">
+            <div className="flex items-center space-x-8">
+              <Link to="/" className="text-xl font-bold text-white">
+                GradAid
+              </Link>
+              {session && (
+                <nav className="hidden md:flex space-x-4">
+                  <Link 
+                    to="/" 
+                    className={`px-3 py-2 rounded-md text-sm font-medium ${
+                      location.pathname === '/' 
+                        ? 'bg-blue-700 text-white'
+                        : 'text-blue-100 hover:bg-blue-700 hover:text-white'
+                    }`}
+                  >
+                    Dashboard
+                  </Link>
+                  <Link 
+                    to="/tracker" 
+                    className={`px-3 py-2 rounded-md text-sm font-medium ${
+                      location.pathname === '/tracker'
+                        ? 'bg-blue-700 text-white'
+                        : 'text-blue-100 hover:bg-blue-700 hover:text-white'
+                    }`}
+                  >
+                    University Tracker
+                  </Link>
+                  <button 
+                    onClick={handleProfileClick}
+                    className={`px-3 py-2 rounded-md text-sm font-medium ${
+                      hasProfile 
+                        ? 'text-blue-100 hover:bg-blue-700 hover:text-white'
+                        : 'bg-yellow-500 text-white hover:bg-yellow-600 animate-pulse'
+                    }`}
+                  >
+                    {hasProfile ? 'Edit Profile' : 'Complete Profile'}
+                  </button>
+                </nav>
+              )}
+            </div>
             {session && (
-              <nav className="hidden md:flex space-x-4">
-                <Link 
-                  to="/" 
-                  className={`px-3 py-2 rounded-md text-sm font-medium ${
-                    location.pathname === '/' 
-                      ? 'bg-blue-700 text-white'
-                      : 'text-blue-100 hover:bg-blue-700 hover:text-white'
-                  }`}
+              <div className="flex items-center space-x-4">
+                <span className="text-sm text-blue-100">
+                  {session.user.user_metadata?.full_name || 
+                   session.user.user_metadata?.name || 
+                   session.user.email}
+                </span>
+                <button 
+                  onClick={onSignOut}
+                  className="px-3 py-2 rounded-md text-sm font-medium text-blue-100 hover:bg-blue-700 hover:text-white"
                 >
-                  Dashboard
-                </Link>
-                <Link 
-                  to="/tracker" 
-                  className={`px-3 py-2 rounded-md text-sm font-medium ${
-                    location.pathname === '/tracker'
-                      ? 'bg-blue-700 text-white'
-                      : 'text-blue-100 hover:bg-blue-700 hover:text-white'
-                  }`}
-                >
-                  University Tracker
-                </Link>
-              </nav>
+                  Sign Out
+                </button>
+              </div>
             )}
           </div>
-          {session && (
-            <div className="flex items-center space-x-4">
-              <span className="text-sm text-blue-100">{session.user.email}</span>
+        </div>
+      </header>
+
+      {/* Profile Form Modal */}
+      {showProfileForm && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg p-6 w-full max-w-2xl mx-4">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-xl font-semibold text-gray-800">
+                {hasProfile ? 'Edit Your Profile' : 'Complete Your Profile'}
+              </h2>
               <button 
-                onClick={onSignOut}
-                className="px-3 py-2 rounded-md text-sm font-medium text-blue-100 hover:bg-blue-700 hover:text-white"
+                onClick={() => setShowProfileForm(false)}
+                className="text-gray-500 hover:text-gray-700"
               >
-                Sign Out
+                ✕
               </button>
             </div>
-          )}
+            <UserProfileForm 
+              onComplete={handleFormComplete}
+            />
+          </div>
         </div>
-      </div>
-    </header>
+      )}
+    </>
   );
 };
 
