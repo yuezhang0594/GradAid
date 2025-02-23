@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { profileService } from '../services/profile';
-import countryList from 'react-select-country-list';
-import Select from 'react-select';
+import Select, { CreatableSelect } from 'react-select';
+import { countryOptions, majorOptions, degreeOptions } from '../services/selectOptions';
 
 const API_URL = 'http://localhost:8000/api';
 
@@ -42,9 +42,6 @@ export default function UserProfileForm({ onComplete }) {
     profile_description: '',
     dob: ''
   });
-
-  // Initialize country options
-  const countryOptions = useMemo(() => countryList().getData(), []);
 
   // Fetch existing profile data when component mounts
   useEffect(() => {
@@ -93,18 +90,15 @@ export default function UserProfileForm({ onComplete }) {
     };
   }, [onComplete]);
 
-  // Available education levels for dropdown
-  const educationLevels = [
-    'High School',
-    'Bachelor\'s',
-    'Master\'s',
-    'PhD',
-    'Other'
-  ];
-
-  // Modify handleChange to handle both regular inputs and country select
-  const handleChange = (e) => {
-    if (e && e.target) {
+  // Handle both regular inputs and select components
+  const handleChange = (e, selectName) => {
+    if (selectName) {
+      // Handle select changes
+      setFormData(prev => ({
+        ...prev,
+        [selectName]: e?.label || ''
+      }));
+    } else if (e && e.target) {
       // Handle regular input changes
       const { name, value } = e.target;
       setFormData(prev => ({
@@ -112,14 +106,6 @@ export default function UserProfileForm({ onComplete }) {
         [name]: value
       }));
     }
-  };
-
-  // Add specific handler for country select
-  const handleCountryChange = (option) => {
-    setFormData(prev => ({
-      ...prev,
-      country: option.label
-    }));
   };
 
   // Handle Enter key for form navigation
@@ -169,7 +155,6 @@ export default function UserProfileForm({ onComplete }) {
   };
 
   return (
-    // Overlay container with click-outside handler
     <div 
       className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4"
       onClick={(e) => {
@@ -200,7 +185,7 @@ export default function UserProfileForm({ onComplete }) {
             <Select
               options={countryOptions}
               value={countryOptions.find(option => option.label === formData.country)}
-              onChange={handleCountryChange}
+              onChange={(option) => handleChange(option, 'country')}
               className="mt-1"
               classNamePrefix="react-select"
               styles={customStyles}
@@ -216,7 +201,7 @@ export default function UserProfileForm({ onComplete }) {
               name="dob"
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
               value={formData.dob || ''}
-              onChange={handleChange}
+              onChange={(e) => handleChange(e, 'dob')}
               onKeyDown={handleKeyDown}
               required
             />
@@ -224,31 +209,35 @@ export default function UserProfileForm({ onComplete }) {
 
           <div>
             <RequiredLabel>Education Level</RequiredLabel>
-            <select
-              name="education_level"
-              value={formData.education_level}
-              onChange={handleChange}
-              onKeyDown={handleKeyDown}
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+            <CreatableSelect
+              options={degreeOptions}
+              value={degreeOptions.find(option => option.label === formData.education_level) || 
+                (formData.education_level ? { value: formData.education_level.toLowerCase(), label: formData.education_level } : null)}
+              onChange={(option) => handleChange(option, 'education_level')}
+              className="mt-1"
+              classNamePrefix="react-select"
+              styles={customStyles}
               required
-            >
-              <option value="">Select Education Level</option>
-              {educationLevels.map(level => (
-                <option key={level} value={level}>{level}</option>
-              ))}
-            </select>
+              placeholder="Select or type your education level..."
+              formatCreateLabel={(inputValue) => `Use "${inputValue}"`}
+              isClearable
+            />
           </div>
 
           <div>
             <RequiredLabel>Major</RequiredLabel>
-            <input
-              type="text"
-              name="major"
-              value={formData.major}
-              onChange={handleChange}
-              onKeyDown={handleKeyDown}
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+            <CreatableSelect
+              options={majorOptions}
+              value={majorOptions.find(option => option.label === formData.major) || 
+                (formData.major ? { value: formData.major.toLowerCase(), label: formData.major } : null)}
+              onChange={(option) => handleChange(option, 'major')}
+              className="mt-1"
+              classNamePrefix="react-select"
+              styles={customStyles}
               required
+              placeholder="Select or type your major..."
+              formatCreateLabel={(inputValue) => `Use "${inputValue}"`}
+              isClearable
             />
           </div>
 
@@ -258,7 +247,7 @@ export default function UserProfileForm({ onComplete }) {
               type="number"
               name="gpa"
               value={formData.gpa}
-              onChange={handleChange}
+              onChange={(e) => handleChange(e, 'gpa')}
               step="0.01"
               min="0"
               max="4"
@@ -273,7 +262,7 @@ export default function UserProfileForm({ onComplete }) {
               type="number"
               name="gre_score"
               value={formData.gre_score}
-              onChange={handleChange}
+              onChange={(e) => handleChange(e, 'gre_score')}
               min="260"
               max="340"
               onKeyDown={handleKeyDown}
@@ -287,7 +276,7 @@ export default function UserProfileForm({ onComplete }) {
               type="number"
               name="toefl_score"
               value={formData.toefl_score}
-              onChange={handleChange}
+              onChange={(e) => handleChange(e, 'toefl_score')}
               min="0"
               max="120"
               onKeyDown={handleKeyDown}
@@ -301,7 +290,7 @@ export default function UserProfileForm({ onComplete }) {
               type="number"
               name="ielts_score"
               value={formData.ielts_score}
-              onChange={handleChange}
+              onChange={(e) => handleChange(e, 'ielts_score')}
               step="0.5"
               min="0"
               max="9"
@@ -315,7 +304,7 @@ export default function UserProfileForm({ onComplete }) {
             <textarea
               name="profile_description"
               value={formData.profile_description}
-              onChange={handleChange}
+              onChange={(e) => handleChange(e, 'profile_description')}
               rows="3"
               onKeyDown={handleKeyDown}
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
