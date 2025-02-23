@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { profileService } from '../services/profile';
 
 const API_URL = 'http://localhost:8000/api';
@@ -16,6 +16,50 @@ export default function UserProfileForm({ onComplete }) {
     profile_desc: '',
     dob: ''
   });
+
+  useEffect(() => {
+    const fetchProfile = async () => {
+      try {
+        const profile = await profileService.getProfile();
+        if (profile) {
+          const formattedDob = profile.dob ? new Date(profile.dob).toISOString().split('T')[0] : '';
+          
+          setFormData({
+            country: profile.country || '',
+            education_level: profile.education_level || '',
+            major: profile.major || '',
+            gpa: profile.gpa || '',
+            gre_score: profile.gre_score || '',
+            toefl_score: profile.toefl_score || '',
+            ielts_score: profile.ielts_score || '',
+            profile_desc: profile.profile_description || '',
+            dob: formattedDob
+          });
+        }
+      } catch (error) {
+        console.error('Error fetching profile:', error);
+      }
+    };
+
+    fetchProfile();
+  }, []);
+
+  // Add escape key handler
+  useEffect(() => {
+    const handleEscape = (event) => {
+      if (event.key === 'Escape') {
+        onComplete();
+      }
+    };
+
+    // Add event listener
+    document.addEventListener('keydown', handleEscape);
+
+    // Cleanup listener on unmount
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
+    };
+  }, [onComplete]);
 
   const educationLevels = [
     'High School',
@@ -39,6 +83,13 @@ export default function UserProfileForm({ onComplete }) {
       ...prev,
       [name]: value
     }));
+  };
+
+  const handleKeyDown = (e) => {
+    // Allow Enter key only in the textarea or on the submit button
+    if (e.key === 'Enter' && e.target.type !== 'textarea' && e.target.type !== 'submit') {
+      e.preventDefault();
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -76,7 +127,24 @@ export default function UserProfileForm({ onComplete }) {
               name="country"
               value={formData.country}
               onChange={handleChange}
+              onKeyDown={handleKeyDown}
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+              required
+            />
+          </div>
+
+          <div>
+            <label htmlFor="dob" className="block text-sm font-medium text-gray-700">
+              Date of Birth
+            </label>
+            <input
+              type="date"
+              id="dob"
+              name="dob"
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+              value={formData.dob || ''}
+              onChange={handleInputChange}
+              onKeyDown={handleKeyDown}
               required
             />
           </div>
@@ -87,6 +155,7 @@ export default function UserProfileForm({ onComplete }) {
               name="education_level"
               value={formData.education_level}
               onChange={handleChange}
+              onKeyDown={handleKeyDown}
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
               required
             >
@@ -104,6 +173,7 @@ export default function UserProfileForm({ onComplete }) {
               name="major"
               value={formData.major}
               onChange={handleChange}
+              onKeyDown={handleKeyDown}
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
               required
             />
@@ -119,6 +189,7 @@ export default function UserProfileForm({ onComplete }) {
               step="0.01"
               min="0"
               max="4"
+              onKeyDown={handleKeyDown}
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
             />
           </div>
@@ -132,6 +203,7 @@ export default function UserProfileForm({ onComplete }) {
               onChange={handleChange}
               min="260"
               max="340"
+              onKeyDown={handleKeyDown}
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
             />
           </div>
@@ -145,6 +217,7 @@ export default function UserProfileForm({ onComplete }) {
               onChange={handleChange}
               min="0"
               max="120"
+              onKeyDown={handleKeyDown}
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
             />
           </div>
@@ -159,22 +232,8 @@ export default function UserProfileForm({ onComplete }) {
               step="0.5"
               min="0"
               max="9"
+              onKeyDown={handleKeyDown}
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
-            />
-          </div>
-
-          <div className="mb-4">
-            <label htmlFor="dob" className="block text-sm font-medium text-gray-700">
-              Date of Birth
-            </label>
-            <input
-              type="date"
-              id="dob"
-              name="dob"
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-              value={formData.dob || ''}
-              onChange={handleInputChange}
-              required
             />
           </div>
 
@@ -185,6 +244,7 @@ export default function UserProfileForm({ onComplete }) {
               value={formData.profile_desc}
               onChange={handleChange}
               rows="3"
+              onKeyDown={handleKeyDown}
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
               required
             />
