@@ -3,7 +3,15 @@ import { profileService } from '../services/profile';
 
 const API_URL = 'http://localhost:8000/api';
 
+// Add this helper component at the top of the file
+const RequiredLabel = ({ children }) => (
+  <label className="block text-sm font-medium text-gray-700">
+    {children} <span className="text-red-500">*</span>
+  </label>
+);
+
 export default function UserProfileForm({ onComplete }) {
+  // Form state management
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     country: '',
@@ -17,13 +25,16 @@ export default function UserProfileForm({ onComplete }) {
     dob: ''
   });
 
+  // Fetch existing profile data when component mounts
   useEffect(() => {
     const fetchProfile = async () => {
       try {
         const profile = await profileService.getProfile();
         if (profile) {
+          // Format date of birth for date input (YYYY-MM-DD)
           const formattedDob = profile.dob ? new Date(profile.dob).toISOString().split('T')[0] : '';
           
+          // Pre-fill form with existing profile data
           setFormData({
             country: profile.country || '',
             education_level: profile.education_level || '',
@@ -44,7 +55,7 @@ export default function UserProfileForm({ onComplete }) {
     fetchProfile();
   }, []);
 
-  // Add escape key handler
+  // Handle Escape key to close form
   useEffect(() => {
     const handleEscape = (event) => {
       if (event.key === 'Escape') {
@@ -52,15 +63,16 @@ export default function UserProfileForm({ onComplete }) {
       }
     };
 
-    // Add event listener
+    // Add event listener when component mounts
     document.addEventListener('keydown', handleEscape);
 
-    // Cleanup listener on unmount
+    // Clean up event listener when component unmounts
     return () => {
       document.removeEventListener('keydown', handleEscape);
     };
   }, [onComplete]);
 
+  // Available education levels for dropdown
   const educationLevels = [
     'High School',
     'Bachelor\'s',
@@ -69,6 +81,7 @@ export default function UserProfileForm({ onComplete }) {
     'Other'
   ];
 
+  // Generic form field change handler
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -77,21 +90,29 @@ export default function UserProfileForm({ onComplete }) {
     }));
   };
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
+  // Handle Enter key for form navigation
   const handleKeyDown = (e) => {
-    // Allow Enter key only in the textarea or on the submit button
     if (e.key === 'Enter' && e.target.type !== 'textarea' && e.target.type !== 'submit') {
       e.preventDefault();
+      
+      // Get all focusable form elements
+      const focusableElements = Array.from(
+        e.currentTarget.form.querySelectorAll(
+          'input, select, textarea, button[type="submit"]'
+        )
+      );
+      
+      // Find the index of the current element
+      const index = focusableElements.indexOf(e.target);
+      
+      // Focus the next element if it exists
+      if (index > -1 && index < focusableElements.length - 1) {
+        focusableElements[index + 1].focus();
+      }
     }
   };
 
+  // Form submission handler
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -116,12 +137,34 @@ export default function UserProfileForm({ onComplete }) {
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-lg p-6 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+    // Overlay container with click-outside handler
+    <div 
+      className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4"
+      onClick={(e) => {
+        // Close form when clicking the overlay (not the form itself)
+        if (e.target === e.currentTarget) {
+          onComplete();
+        }
+      }}
+    >
+      {/* Form container */}
+      <div className="bg-white rounded-lg p-6 max-w-2xl w-full max-h-[90vh] overflow-y-auto relative">
+        {/* Close button */}
+        <button
+          type="button"
+          onClick={onComplete}
+          className="absolute top-4 right-4 text-gray-400 hover:text-gray-600"
+          aria-label="Close form"
+        >
+          <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
         <h2 className="text-2xl font-bold mb-6">Complete Your Profile</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700">Country</label>
+            <RequiredLabel>Country</RequiredLabel>
             <input
               type="text"
               name="country"
@@ -134,23 +177,21 @@ export default function UserProfileForm({ onComplete }) {
           </div>
 
           <div>
-            <label htmlFor="dob" className="block text-sm font-medium text-gray-700">
-              Date of Birth
-            </label>
+            <RequiredLabel>Date of Birth</RequiredLabel>
             <input
               type="date"
               id="dob"
               name="dob"
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
               value={formData.dob || ''}
-              onChange={handleInputChange}
+              onChange={handleChange}
               onKeyDown={handleKeyDown}
               required
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700">Education Level</label>
+            <RequiredLabel>Education Level</RequiredLabel>
             <select
               name="education_level"
               value={formData.education_level}
@@ -167,7 +208,7 @@ export default function UserProfileForm({ onComplete }) {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700">Major</label>
+            <RequiredLabel>Major</RequiredLabel>
             <input
               type="text"
               name="major"
@@ -238,7 +279,7 @@ export default function UserProfileForm({ onComplete }) {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700">Profile Description</label>
+            <RequiredLabel>Profile Description</RequiredLabel>
             <textarea
               name="profile_desc"
               value={formData.profile_desc}
@@ -250,20 +291,18 @@ export default function UserProfileForm({ onComplete }) {
             />
           </div>
 
-          <div className="flex gap-4 mt-6">
+          {/* Add note about required fields */}
+          <div className="text-sm text-gray-500 mt-4">
+            <span className="text-red-500">*</span> = required field
+          </div>
+
+          <div className="flex mt-6">
             <button
               type="submit"
               disabled={loading}
-              className="flex-1 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 disabled:opacity-50"
+              className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 disabled:opacity-50"
             >
               {loading ? 'Saving...' : 'Save Profile'}
-            </button>
-            <button
-              type="button"
-              onClick={onComplete}
-              className="flex-1 bg-gray-200 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-300"
-            >
-              Fill Later
             </button>
           </div>
         </form>
