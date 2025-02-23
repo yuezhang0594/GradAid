@@ -13,6 +13,14 @@ const RequiredLabel = ({ children }) => (
   </label>
 );
 
+// Labels for form fields that require validation
+const fieldLabels = {
+  gpa: 'GPA',
+  gre_score: 'GRE Score', 
+  toefl_score: 'TOEFL Score',
+  ielts_score: 'IELTS Score'
+};
+
 const customStyles = {
   control: (provided) => ({
     ...provided,
@@ -43,6 +51,52 @@ export default function UserProfileForm({ onComplete }) {
     profile_description: '',
     dob: ''
   });
+
+  // Add validation functions
+  const validateScores = useMemo(() => ({
+    gpa: (value) => {
+      if (!value) return true; // Optional field
+      const num = parseFloat(value);
+      return num >= 0 && num <= 4;
+    },
+    gre_score: (value) => {
+      if (!value) return true; // Optional field
+      const num = parseInt(value);
+      return num >= 260 && num <= 340;
+    },
+    toefl_score: (value) => {
+      if (!value) return true; // Optional field
+      const num = parseInt(value);
+      return num >= 0 && num <= 120;
+    },
+    ielts_score: (value) => {
+      if (!value) return true; // Optional field
+      const num = parseFloat(value);
+      return num >= 0 && num <= 9;
+    }
+  }), []);
+
+  const validateDob = (dob) => {
+    if (!dob) return false;
+    const birthDate = new Date(dob);
+    const today = new Date();
+    
+    // Check if date is valid
+    if (isNaN(birthDate.getTime())) return false;
+    
+    // Calculate age
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+    
+    // Must be at least 16 years old and not born in the future
+    return age >= 16 && birthDate <= today;
+  };
+
+  // Add error state
+  const [errors, setErrors] = useState({});
 
   // Fetch existing profile data when component mounts
   useEffect(() => {
@@ -99,6 +153,7 @@ export default function UserProfileForm({ onComplete }) {
         ...prev,
         [fieldName]: event?.label || ''
       }));
+      setErrors(prev => ({ ...prev, [fieldName]: null }));
       return;
     }
 
@@ -110,6 +165,27 @@ export default function UserProfileForm({ onComplete }) {
       ...prev,
       [name]: value
     }));
+
+    // Validate the changed field
+    if (name === 'dob') {
+      if (!validateDob(value)) {
+        setErrors(prev => ({
+          ...prev,
+          dob: 'You must be at least 16 years old'
+        }));
+      } else {
+        setErrors(prev => ({ ...prev, dob: null }));
+      }
+    } else if (['gpa', 'gre_score', 'toefl_score', 'ielts_score'].includes(name)) {
+      if (value && !validateScores[name](value)) {
+        setErrors(prev => ({
+          ...prev,
+          [name]: `Invalid ${fieldLabels[name]}`
+        }));
+      } else {
+        setErrors(prev => ({ ...prev, [name]: null }));
+      }
+    }
   };
 
   // Handle Enter key for form navigation
@@ -137,6 +213,25 @@ export default function UserProfileForm({ onComplete }) {
   // Form submission handler
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // Validate all fields before submission
+    const newErrors = {};
+    
+    if (!validateDob(formData.dob)) {
+      newErrors.dob = 'You must be at least 16 years old';
+    }
+
+    ['gpa', 'gre_score', 'toefl_score', 'ielts_score'].forEach(field => {
+      if (formData[field] && !validateScores[field](formData[field])) {
+        newErrors[field] = `Invalid ${fieldLabels[field]}`;
+      }
+    });
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
+
     setLoading(true);
 
     try {
@@ -203,12 +298,15 @@ export default function UserProfileForm({ onComplete }) {
               type="date"
               id="dob"
               name="dob"
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+              className={`mt-1 block w-full px-3 py-2 border rounded-md ${
+                errors.dob ? 'border-red-500' : 'border-gray-300'
+              }`}
               value={formData.dob || ''}
               onChange={(e) => handleChange(e, 'dob')}
               onKeyDown={handleKeyDown}
               required
             />
+            {errors.dob && <p className="text-red-500 text-sm mt-1">{errors.dob}</p>}
           </div>
 
           <div>
@@ -256,8 +354,11 @@ export default function UserProfileForm({ onComplete }) {
               min="0"
               max="4"
               onKeyDown={handleKeyDown}
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+              className={`mt-1 block w-full px-3 py-2 border rounded-md ${
+                errors.gpa ? 'border-red-500' : 'border-gray-300'
+              }`}
             />
+            {errors.gpa && <p className="text-red-500 text-sm mt-1">{errors.gpa}</p>}
           </div>
 
           <div>
@@ -270,8 +371,11 @@ export default function UserProfileForm({ onComplete }) {
               min="260"
               max="340"
               onKeyDown={handleKeyDown}
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+              className={`mt-1 block w-full px-3 py-2 border rounded-md ${
+                errors.gre_score ? 'border-red-500' : 'border-gray-300'
+              }`}
             />
+            {errors.gre_score && <p className="text-red-500 text-sm mt-1">{errors.gre_score}</p>}
           </div>
 
           <div>
@@ -284,8 +388,11 @@ export default function UserProfileForm({ onComplete }) {
               min="0"
               max="120"
               onKeyDown={handleKeyDown}
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+              className={`mt-1 block w-full px-3 py-2 border rounded-md ${
+                errors.toefl_score ? 'border-red-500' : 'border-gray-300'
+              }`}
             />
+            {errors.toefl_score && <p className="text-red-500 text-sm mt-1">{errors.toefl_score}</p>}
           </div>
 
           <div>
@@ -299,8 +406,11 @@ export default function UserProfileForm({ onComplete }) {
               min="0"
               max="9"
               onKeyDown={handleKeyDown}
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+              className={`mt-1 block w-full px-3 py-2 border rounded-md ${
+                errors.ielts_score ? 'border-red-500' : 'border-gray-300'
+              }`}
             />
+            {errors.ielts_score && <p className="text-red-500 text-sm mt-1">{errors.ielts_score}</p>}
           </div>
 
           <div>

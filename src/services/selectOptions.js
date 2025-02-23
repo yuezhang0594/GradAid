@@ -1,34 +1,215 @@
 import countryList from 'react-select-country-list';
-import cipCodes from 'cip-codes';
 
 export const degreeOptions = [
-  { value: 'high_school', label: 'High School' },
-  { value: 'associates', label: 'Associate\'s' },
-  { value: 'bachelors', label: 'Bachelor\'s' },
-  { value: 'masters', label: 'Master\'s' },
+  { value: 'secondary', label: 'Secondary Education' },
+  { value: 'post_secondary', label: 'Post-Secondary Education' },
+  { value: 'bachelors', label: 'Bachelor\'s Degree' },
+  { value: 'masters', label: 'Master\'s Degree' },
   { value: 'doctorate', label: 'Doctorate' }
 ];
 
-// Generate major options from CIP codes
-const generateMajorOptions = () => {
-  const majorsList = [];
-
-  Object.entries(cipCodes).forEach(([code, program]) => {
-    // Only include programs that meet our criteria
-    if (program.title && 
-        !program.title.includes('Other') &&
-        !program.title.includes('General') &&
-        program.title.length < 50) {
-      majorsList.push({
-        value: program.title.toLowerCase().replace(/[^a-z0-9]+/g, '_'),
-        label: program.title
-      });
-    }
-  });
-
-  return majorsList.sort((a, b) => a.label.localeCompare(b.label));
-};
-
-export const majorOptions = generateMajorOptions();
+export const majorOptions = [
+  // Agriculture & Natural Resources
+  { value: "general_agriculture", label: "General Agriculture" },
+  { value: "agriculture_production", label: "Agriculture Production and Management" },
+  { value: "agricultural_economics", label: "Agricultural Economics" },
+  { value: "animal_sciences", label: "Animal Sciences" },
+  { value: "food_science", label: "Food Science" },
+  { value: "plant_science", label: "Plant Science and Agronomy" },
+  { value: "soil_science", label: "Soil Science" },
+  { value: "misc_agriculture", label: "Miscellaneous Agriculture" },
+  { value: "forestry", label: "Forestry" },
+  { value: "natural_resources", label: "Natural Resources Management" },
+  
+  // Arts
+  { value: "fine_arts", label: "Fine Arts" },
+  { value: "drama_theater", label: "Drama and Theater Arts" },
+  { value: "music", label: "Music" },
+  { value: "visual_performing_arts", label: "Visual and Performing Arts" },
+  { value: "commercial_art", label: "Commercial Art and Graphic Design" },
+  { value: "film_video_photo", label: "Film Video and Photographic Arts" },
+  { value: "studio_arts", label: "Studio Arts" },
+  { value: "misc_fine_arts", label: "Miscellaneous Fine Arts" },
+  
+  // Biology & Life Science
+  { value: "environmental_science", label: "Environmental Science" },
+  { value: "biology", label: "Biology" },
+  { value: "biochemical_sciences", label: "Biochemical Sciences" },
+  { value: "botany", label: "Botany" },
+  { value: "molecular_biology", label: "Molecular Biology" },
+  { value: "ecology", label: "Ecology" },
+  { value: "genetics", label: "Genetics" },
+  { value: "microbiology", label: "Microbiology" },
+  { value: "pharmacology", label: "Pharmacology" },
+  { value: "physiology", label: "Physiology" },
+  { value: "zoology", label: "Zoology" },
+  { value: "neuroscience", label: "Neuroscience" },
+  { value: "misc_biology", label: "Miscellaneous Biology" },
+  { value: "cognitive_science", label: "Cognitive Science and Biopsychology" },
+  
+  // Business
+  { value: "general_business", label: "General Business" },
+  { value: "accounting", label: "Accounting" },
+  { value: "actuarial_science", label: "Actuarial Science" },
+  { value: "business_management", label: "Business Management and Administration" },
+  { value: "operations_logistics", label: "Operations Logistics and E-Commerce" },
+  { value: "business_economics", label: "Business Economics" },
+  { value: "marketing_research", label: "Marketing and Marketing Research" },
+  { value: "finance", label: "Finance" },
+  { value: "human_resources", label: "Human Resources and Personnel Management" },
+  { value: "international_business", label: "International Business" },
+  { value: "hospitality_management", label: "Hospitality Management" },
+  { value: "management_info_systems", label: "Management Information Systems and Statistics" },
+  { value: "misc_business", label: "Miscellaneous Business & Medical Administration" },
+  
+  // Communications & Journalism
+  { value: "communications", label: "Communications" },
+  { value: "journalism", label: "Journalism" },
+  { value: "mass_media", label: "Mass Media" },
+  { value: "advertising_pr", label: "Advertising and Public Relations" },
+  
+  // Computers & Mathematics
+  { value: "communication_tech", label: "Communication Technologies" },
+  { value: "computer_info_systems", label: "Computer and Information Systems" },
+  { value: "computer_programming", label: "Computer Programming and Data Processing" },
+  { value: "computer_science", label: "Computer Science" },
+  { value: "information_sciences", label: "Information Sciences" },
+  { value: "computer_admin", label: "Computer Administration Management and Security" },
+  { value: "computer_networking", label: "Computer Networking and Telecommunications" },
+  { value: "mathematics", label: "Mathematics" },
+  { value: "applied_mathematics", label: "Applied Mathematics" },
+  { value: "statistics_decision", label: "Statistics and Decision Science" },
+  { value: "mathematics_cs", label: "Mathematics and Computer Science" },
+  
+  // Education
+  { value: "general_education", label: "General Education" },
+  { value: "educational_admin", label: "Educational Administration and Supervision" },
+  { value: "school_counseling", label: "School Student Counseling" },
+  { value: "elementary_education", label: "Elementary Education" },
+  { value: "mathematics_teacher", label: "Mathematics Teacher Education" },
+  { value: "physical_health_education", label: "Physical and Health Education Teaching" },
+  { value: "early_childhood_education", label: "Early Childhood Education" },
+  { value: "science_teacher", label: "Science and Computer Teacher Education" },
+  { value: "secondary_education", label: "Secondary Teacher Education" },
+  { value: "special_needs", label: "Special Needs Education" },
+  { value: "social_science_education", label: "Social Science or History Teacher Education" },
+  { value: "teacher_education", label: "Teacher Education: Multiple Levels" },
+  { value: "language_drama_education", label: "Language and Drama Education" },
+  { value: "art_music_education", label: "Art and Music Education" },
+  { value: "misc_education", label: "Miscellaneous Education" },
+  { value: "library_science", label: "Library Science" },
+  
+  // Engineering
+  { value: "architecture", label: "Architecture" },
+  { value: "general_engineering", label: "General Engineering" },
+  { value: "aerospace", label: "Aerospace Engineering" },
+  { value: "biological_engineering", label: "Biological Engineering" },
+  { value: "architectural_engineering", label: "Architectural Engineering" },
+  { value: "biomedical", label: "Biomedical Engineering" },
+  { value: "chemical", label: "Chemical Engineering" },
+  { value: "civil", label: "Civil Engineering" },
+  { value: "computer_engineering", label: "Computer Engineering" },
+  { value: "electrical", label: "Electrical Engineering" },
+  { value: "engineering_mechanics", label: "Engineering Mechanics Physics and Science" },
+  { value: "environmental_engineering", label: "Environmental Engineering" },
+  { value: "geological_engineering", label: "Geological and Geophysical Engineering" },
+  { value: "industrial_engineering", label: "Industrial and Manufacturing Engineering" },
+  { value: "materials_engineering", label: "Materials Engineering and Materials Science" },
+  { value: "mechanical", label: "Mechanical Engineering" },
+  { value: "metallurgical", label: "Metallurgical Engineering" },
+  { value: "mining_engineering", label: "Mining and Mineral Engineering" },
+  { value: "naval_engineering", label: "Naval Architecture and Marine Engineering" },
+  { value: "nuclear_engineering", label: "Nuclear Engineering" },
+  { value: "petroleum_engineering", label: "Petroleum Engineering" },
+  { value: "misc_engineering", label: "Miscellaneous Engineering" },
+  { value: "engineering_tech", label: "Engineering Technologies" },
+  { value: "engineering_industrial", label: "Engineering and Industrial Management" },
+  { value: "electrical_tech", label: "Electrical Engineering Technology" },
+  { value: "industrial_production", label: "Industrial Production Technologies" },
+  { value: "mechanical_tech", label: "Mechanical Engineering Related Technologies" },
+  { value: "misc_engineering_tech", label: "Miscellaneous Engineering Technologies" },
+  { value: "materials_science", label: "Materials Science" },
+  
+  // Health
+  { value: "nutrition_sciences", label: "Nutrition Sciences" },
+  { value: "general_medical", label: "General Medical and Health Services" },
+  { value: "communication_disorders", label: "Communication Disorders Sciences and Services" },
+  { value: "health_medical_admin", label: "Health and Medical Administrative Services" },
+  { value: "medical_assisting", label: "Medical Assisting Services" },
+  { value: "medical_tech", label: "Medical Technologies Technicians" },
+  { value: "health_preparatory", label: "Health and Medical Preparatory Programs" },
+  { value: "nursing", label: "Nursing" },
+  { value: "pharmacy", label: "Pharmacy Pharmaceutical Sciences and Administration" },
+  { value: "treatment_therapy", label: "Treatment Therapy Professions" },
+  { value: "community_health", label: "Community and Public Health" },
+  { value: "misc_health_medical", label: "Miscellaneous Health Medical Professions" },
+  
+  // Humanities & Liberal Arts
+  { value: "area_ethnic_studies", label: "Area Ethnic and Civilization Studies" },
+  { value: "linguistics", label: "Linguistics and Comparative Language and Literature" },
+  { value: "foreign_language", label: "French German Latin and Other Common Foreign Language Studies" },
+  { value: "other_foreign_language", label: "Other Foreign Languages" },
+  { value: "english", label: "English Language and Literature" },
+  { value: "composition_rhetoric", label: "Composition and Rhetoric" },
+  { value: "liberal_arts", label: "Liberal Arts" },
+  { value: "humanities", label: "Humanities" },
+  { value: "intercultural_studies", label: "Intercultural and International Studies" },
+  { value: "philosophy_religious", label: "Philosophy and Religious Studies" },
+  { value: "theology", label: "Theology and Religious Vocations" },
+  { value: "anthropology_archeology", label: "Anthropology and Archeology" },
+  { value: "art_history", label: "Art History and Criticism" },
+  { value: "history", label: "History" },
+  { value: "us_history", label: "United States History" },
+  
+  // Industrial Arts & Consumer Services
+  { value: "cosmetology", label: "Cosmetology Services and Culinary Arts" },
+  { value: "family_consumer_science", label: "Family and Consumer Sciences" },
+  { value: "military_tech", label: "Military Technologies" },
+  { value: "physical_fitness", label: "Physical Fitness Parks Recreation and Leisure" },
+  { value: "construction_services", label: "Construction Services" },
+  { value: "precision_production", label: "Electrical, Mechanical, and Precision Technologies and Production" },
+  { value: "transportation", label: "Transportation Sciences and Technologies" },
+  
+  // Law & Public Policy
+  { value: "court_reporting", label: "Court Reporting" },
+  { value: "pre_law", label: "Pre-Law and Legal Studies" },
+  { value: "criminal_justice", label: "Criminal Justice and Fire Protection" },
+  { value: "public_admin", label: "Public Administration" },
+  { value: "public_policy", label: "Public Policy" },
+  
+  // Physical Sciences
+  { value: "physical_sciences", label: "Physical Sciences" },
+  { value: "astronomy", label: "Astronomy and Astrophysics" },
+  { value: "atmospheric_sciences", label: "Atmospheric Sciences and Meteorology" },
+  { value: "chemistry", label: "Chemistry" },
+  { value: "geology", label: "Geology and Earth Science" },
+  { value: "geosciences", label: "Geosciences" },
+  { value: "oceanography", label: "Oceanography" },
+  { value: "physics", label: "Physics" },
+  { value: "multidisciplinary_science", label: "Multi-Disciplinary or General Science" },
+  { value: "nuclear_tech", label: "Nuclear, Industrial Radiology, and Biological Technologies" },
+  
+  // Psychology & Social Work
+  { value: "psychology", label: "Psychology" },
+  { value: "educational_psychology", label: "Educational Psychology" },
+  { value: "clinical_psychology", label: "Clinical Psychology" },
+  { value: "counseling_psychology", label: "Counseling Psychology" },
+  { value: "industrial_psychology", label: "Industrial and Organizational Psychology" },
+  { value: "social_psychology", label: "Social Psychology" },
+  { value: "misc_psychology", label: "Miscellaneous Psychology" },
+  { value: "human_services", label: "Human Services and Community Organization" },
+  { value: "social_work", label: "Social Work" },
+  
+  // Social Science
+  { value: "interdisciplinary_social_sciences", label: "Interdisciplinary Social Sciences" },
+  { value: "general_social_sciences", label: "General Social Sciences" },
+  { value: "economics", label: "Economics" },
+  { value: "criminology", label: "Criminology" },
+  { value: "geography", label: "Geography" },
+  { value: "international_relations", label: "International Relations" },
+  { value: "political_science", label: "Political Science and Government" },
+  { value: "sociology", label: "Sociology" },
+  { value: "misc_social_sciences", label: "Miscellaneous Social Sciences" }
+];
 
 export const countryOptions = countryList().getData(); 
