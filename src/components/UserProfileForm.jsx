@@ -91,22 +91,25 @@ export default function UserProfileForm({ onComplete }) {
     };
   }, [onComplete]);
 
-  // Handle both regular inputs and select components
-  const handleChange = (e, selectName) => {
-    if (selectName) {
-      // Handle select changes
+  // Handle form input changes
+  const handleChange = (event, fieldName = null) => {
+    // Handle react-select/creatable-select changes
+    if (event?.hasOwnProperty('label')) {
       setFormData(prev => ({
         ...prev,
-        [selectName]: e?.label || ''
+        [fieldName]: event?.label || ''
       }));
-    } else if (e && e.target) {
-      // Handle regular input changes
-      const { name, value } = e.target;
-      setFormData(prev => ({
-        ...prev,
-        [name]: value
-      }));
+      return;
     }
+
+    // Handle regular input changes
+    const name = fieldName || event.target.name;
+    const value = event.target?.value ?? event;
+    
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
   };
 
   // Handle Enter key for form navigation
@@ -248,7 +251,7 @@ export default function UserProfileForm({ onComplete }) {
               type="number"
               name="gpa"
               value={formData.gpa}
-              onChange={(e) => handleChange(e, 'gpa')}
+              onChange={handleChange}
               step="0.01"
               min="0"
               max="4"
@@ -263,7 +266,7 @@ export default function UserProfileForm({ onComplete }) {
               type="number"
               name="gre_score"
               value={formData.gre_score}
-              onChange={(e) => handleChange(e, 'gre_score')}
+              onChange={handleChange}
               min="260"
               max="340"
               onKeyDown={handleKeyDown}
@@ -277,7 +280,7 @@ export default function UserProfileForm({ onComplete }) {
               type="number"
               name="toefl_score"
               value={formData.toefl_score}
-              onChange={(e) => handleChange(e, 'toefl_score')}
+              onChange={handleChange}
               min="0"
               max="120"
               onKeyDown={handleKeyDown}
@@ -291,7 +294,7 @@ export default function UserProfileForm({ onComplete }) {
               type="number"
               name="ielts_score"
               value={formData.ielts_score}
-              onChange={(e) => handleChange(e, 'ielts_score')}
+              onChange={handleChange}
               step="0.5"
               min="0"
               max="9"
@@ -305,7 +308,7 @@ export default function UserProfileForm({ onComplete }) {
             <textarea
               name="profile_description"
               value={formData.profile_description}
-              onChange={(e) => handleChange(e, 'profile_description')}
+              onChange={handleChange}
               rows="3"
               onKeyDown={handleKeyDown}
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
