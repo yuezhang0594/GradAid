@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Auth from './Auth';
-import Header from './Header';
+import Auth from '../components/Auth';
+import Header from '../components/Header';
 
 const FeatureCard = ({ title, description }) => (
   <div className="p-6 bg-white rounded-lg shadow-md">

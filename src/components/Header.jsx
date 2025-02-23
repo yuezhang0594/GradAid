@@ -2,45 +2,51 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import UserProfileForm from './UserProfileForm';
 import { profileService } from '../services/profile';
+import { tooltipStyles } from '../styles/tooltips';
 
 const Header = ({ session, onSignOut }) => {
   const location = useLocation();
   const [showProfileForm, setShowProfileForm] = useState(false);
-  const [hasCompleteProfile, setHasCompleteProfile] = useState(false);
-
-  useEffect(() => {
-    const checkProfile = async () => {
-      if (!session) return;
-      
-      try {
-        const profile = await profileService.getProfile();
-        // Check if all required fields are filled
-        const isComplete = profile && 
-          profile.country && 
-          profile.education_level && 
-          profile.major && 
-          profile.dob &&
-          profile.profile_description;
-        
-        setHasCompleteProfile(!!isComplete);
-      } catch (error) {
-        console.error('Error checking profile:', error);
-        setHasCompleteProfile(false);
-      }
-    };
-
-    checkProfile();
-  }, [session]);
+  const [hasCompleteProfile, setHasCompleteProfile] = useState(true);
 
   const handleProfileClick = () => {
     setShowProfileForm(true);
   };
 
-  const handleFormComplete = () => {
+  const handleFormClose = async () => {
+    await checkProfile();
     setShowProfileForm(false);
-    setHasCompleteProfile(true);
   };
-  
+
+  const handleFormComplete = async () => {
+    await checkProfile();
+    setShowProfileForm(false);
+  };
+
+  const checkProfile = async () => {
+    if (!session) return;
+    
+    try {
+      const profile = await profileService.getProfile();
+      // Check if all required fields are filled
+      const isComplete = profile && 
+        profile.country && 
+        profile.education_level && 
+        profile.major && 
+        profile.dob &&
+        profile.profile_description;
+      
+      setHasCompleteProfile(!!isComplete);
+    } catch (error) {
+      console.error('Error checking profile:', error);
+      setHasCompleteProfile(false);
+    }
+    };
+
+  useEffect(() => {
+    checkProfile();
+  }, [session]);
+
   return (
     <>
       <header className="bg-blue-600 text-white">
@@ -71,17 +77,25 @@ const Header = ({ session, onSignOut }) => {
                         : 'text-blue-100 hover:bg-blue-700 hover:text-white'
                     }`}
                   >
-                    University Tracker
+                    Application Tracker
                   </Link>
                   <button 
                     onClick={handleProfileClick}
-                    className={`px-3 py-2 rounded-md text-sm font-medium ${
+                    data-tooltip={hasCompleteProfile ? undefined : "Missing information"}
+                    className={`px-3 py-2 rounded-md text-sm font-medium flex items-center gap-2 relative ${
                       hasCompleteProfile 
                         ? 'text-blue-100 hover:bg-blue-700 hover:text-white'
-                        : 'bg-yellow-500 text-white hover:bg-yellow-600 animate-pulse'
-                    }`}
+                        : 'text-blue-100 hover:bg-blue-700 hover:text-white'
+                    } ${tooltipStyles.tooltip}`}
                   >
-                    {hasCompleteProfile ? 'Edit Profile' : 'Complete Profile'}
+                    Edit Profile
+                    {!hasCompleteProfile && (
+                      <span 
+                        className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full flex items-center justify-center"
+                      >
+                        <span className="text-white text-xs font-bold">!</span>
+                      </span>
+                    )}
                   </button>
                 </nav>
               )}
@@ -114,7 +128,7 @@ const Header = ({ session, onSignOut }) => {
                 {hasCompleteProfile ? 'Edit Your Profile' : 'Complete Your Profile'}
               </h2>
               <button 
-                onClick={() => setShowProfileForm(false)}
+                onClick={handleFormClose}
                 className="text-gray-500 hover:text-gray-700"
               >
                 ✕

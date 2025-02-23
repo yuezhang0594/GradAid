@@ -1,89 +1,70 @@
 import React, { useState } from 'react';
-import UniversityCard from './UniversityCard';
+import ProgramCard from './ProgramCard';
 
-const UniversityTracker = () => {
-  const [universities, setUniversities] = useState([
+const ProgramTracker = ({ trackerName }) => {
+  const [programs, setPrograms] = useState([
     {
       id: 1,
-      name: 'Harvard University',
+      university: 'Harvard University',
       program: 'MS in Computer Science',
-      progress: 85,
-      status: 'In Progress',
-      deadline: 'Dec 15, 2025',
-      sopStatus: 'Final Draft Ready',
-      lorStatus: '2/3 Received',
+      website: 'https://www.harvard.edu',
     },
     {
       id: 2,
-      name: 'MIT',
+      university: 'MIT',
       program: 'MS in Software Engineering',
-      progress: 60,
-      status: 'In Progress',
-      deadline: 'Jan 15, 2026',
-      sopStatus: 'First Draft',
-      lorStatus: '1/3 Received'
+      website: 'https://www.mit.edu',
     },
     {
       id: 3,
-      name: 'Boston University',
+      university: 'Boston University',
       program: 'MS in Computer Information Systems',
-      progress: 40,
-      status: 'Not Started',
-      deadline: 'Feb 1, 2026',
-      sopStatus: 'Not Started',
-      lorStatus: 'Pending'
+      website: 'https://www.bu.edu',
     }
   ]);
 
   const [showAddForm, setShowAddForm] = useState(false);
-  const [newUniversity, setNewUniversity] = useState({
+  const [newProgram, setNewProgram] = useState({
     name: '',
     program: '',
     deadline: ''
   });
 
-  const handleAddUniversity = (e) => {
+  const handleAddProgram = (e) => {
     e.preventDefault();
-    const university = {
-      id: universities.length + 1,
-      ...newUniversity,
-      progress: 0,
-      status: 'Not Started',
-      sopStatus: 'Not Started',
-      lorStatus: 'Not Started'
+    const program = {
+      id: programs.length + 1,
+      ...newProgram,
     };
-    setUniversities([...universities, university]);
-    setNewUniversity({ name: '', program: '', deadline: '' });
+    setPrograms([...programs, program]);
+    setNewProgram({ name: '', program: '', deadline: '' });
     setShowAddForm(false);
   };
 
   return (
     <div className="bg-white p-4 rounded-lg shadow-lg h-full flex flex-col">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-lg font-semibold text-gray-800">Application Tracker</h2>
-        <div className="flex gap-2">
-          
-          <button
-            onClick={() => setShowAddForm(true)}
-            className="px-3 py-1.5 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700 transition-colors"
-          >
-            Add University
-          </button>
-        </div>
+        <h2 className="text-lg font-semibold text-gray-800">{trackerName}</h2>
+        <button
+          onClick={() => setShowAddForm(true)}
+          className="px-3 py-1.5 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700 transition-colors"
+        >
+          Add Program
+        </button>
       </div>
 
       {showAddForm && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded-lg w-96">
-            <h3 className="text-lg font-semibold mb-4">Add New University</h3>
-            <form onSubmit={handleAddUniversity}>
+            <h3 className="text-lg font-semibold mb-4">Add New Program</h3>
+            <form onSubmit={handleAddProgram}>
               <div className="space-y-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700">University Name</label>
                   <input
                     type="text"
-                    value={newUniversity.name}
-                    onChange={(e) => setNewUniversity({...newUniversity, name: e.target.value})}
+                    value={newProgram.university}
+                    onChange={(e) => setNewProgram({...newProgram, university: e.target.value})}
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                     required
                   />
@@ -92,8 +73,8 @@ const UniversityTracker = () => {
                   <label className="block text-sm font-medium text-gray-700">Program</label>
                   <input
                     type="text"
-                    value={newUniversity.program}
-                    onChange={(e) => setNewUniversity({...newUniversity, program: e.target.value})}
+                    value={newProgram.program}
+                    onChange={(e) => setNewProgram({...newProgram, program: e.target.value})}
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                     required
                   />
@@ -102,8 +83,8 @@ const UniversityTracker = () => {
                   <label className="block text-sm font-medium text-gray-700">Deadline</label>
                   <input
                     type="date"
-                    value={newUniversity.deadline}
-                    onChange={(e) => setNewUniversity({...newUniversity, deadline: e.target.value})}
+                    value={newProgram.deadline}
+                    onChange={(e) => setNewProgram({...newProgram, deadline: e.target.value})}
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                     required
                   />
@@ -130,9 +111,9 @@ const UniversityTracker = () => {
       )}
 
       <div className="flex flex-wrap gap-4 overflow-y-auto h-[calc(100%-4rem)]">
-        {universities.map((university) => (
-          <div key={university.id} className="w-[250px] flex-none">
-            <UniversityCard university={university} />
+        {programs.map((program) => (
+          <div key={program.id} className="w-[250px] flex-none">
+            <ProgramCard program={program} />
           </div>
         ))}
       </div>
@@ -140,4 +121,4 @@ const UniversityTracker = () => {
   );
 };
 
-export default UniversityTracker;
+export default ProgramTracker; 

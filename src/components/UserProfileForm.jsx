@@ -40,6 +40,7 @@ const customStyles = {
 export default function UserProfileForm({ onComplete }) {
   // Form state management
   const [loading, setLoading] = useState(false);
+  const [profileLoading, setProfileLoading] = useState(true);
   const [formData, setFormData] = useState({
     country: '',
     education_level: '',
@@ -101,6 +102,7 @@ export default function UserProfileForm({ onComplete }) {
   // Fetch existing profile data when component mounts
   useEffect(() => {
     const fetchProfile = async () => {
+      setProfileLoading(true);
       try {
         const profile = await profileService.getProfile();
         if (profile) {
@@ -122,6 +124,8 @@ export default function UserProfileForm({ onComplete }) {
         }
       } catch (error) {
         console.error('Error fetching profile:', error);
+      } finally {
+        setProfileLoading(false);
       }
     };
 
@@ -252,6 +256,11 @@ export default function UserProfileForm({ onComplete }) {
       setLoading(false);
     }
   };
+  
+  // Render loading state or form
+  if (profileLoading) {
+    return <div>Loading profile...</div>;
+  }
 
   return (
     <div 
