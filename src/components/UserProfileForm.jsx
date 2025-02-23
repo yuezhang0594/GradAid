@@ -1,5 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { profileService } from '../services/profile';
+import countryList from 'react-select-country-list';
+import Select from 'react-select';
 
 const API_URL = 'http://localhost:8000/api';
 
@@ -9,6 +11,22 @@ const RequiredLabel = ({ children }) => (
     {children} <span className="text-red-500">*</span>
   </label>
 );
+
+const customStyles = {
+  control: (provided) => ({
+    ...provided,
+    border: '1px solid rgb(209, 213, 219)',
+    borderRadius: '0.375rem',
+    padding: '1px'
+  }),
+  option: (provided, state) => ({
+    ...provided,
+    backgroundColor: state.isSelected ? '#2563eb' : provided.backgroundColor,
+    '&:hover': {
+      backgroundColor: state.isSelected ? '#2563eb' : '#f3f4f6'
+    }
+  })
+};
 
 export default function UserProfileForm({ onComplete }) {
   // Form state management
@@ -24,6 +42,9 @@ export default function UserProfileForm({ onComplete }) {
     profile_description: '',
     dob: ''
   });
+
+  // Initialize country options
+  const countryOptions = useMemo(() => countryList().getData(), []);
 
   // Fetch existing profile data when component mounts
   useEffect(() => {
@@ -81,12 +102,23 @@ export default function UserProfileForm({ onComplete }) {
     'Other'
   ];
 
-  // Generic form field change handler
+  // Modify handleChange to handle both regular inputs and country select
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    if (e && e.target) {
+      // Handle regular input changes
+      const { name, value } = e.target;
+      setFormData(prev => ({
+        ...prev,
+        [name]: value
+      }));
+    }
+  };
+
+  // Add specific handler for country select
+  const handleCountryChange = (option) => {
     setFormData(prev => ({
       ...prev,
-      [name]: value
+      country: option.label
     }));
   };
 
@@ -165,13 +197,13 @@ export default function UserProfileForm({ onComplete }) {
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <RequiredLabel>Country</RequiredLabel>
-            <input
-              type="text"
-              name="country"
-              value={formData.country}
-              onChange={handleChange}
-              onKeyDown={handleKeyDown}
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+            <Select
+              options={countryOptions}
+              value={countryOptions.find(option => option.label === formData.country)}
+              onChange={handleCountryChange}
+              className="mt-1"
+              classNamePrefix="react-select"
+              styles={customStyles}
               required
             />
           </div>

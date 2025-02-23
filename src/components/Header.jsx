@@ -47,7 +47,8 @@ const Header = ({ session, onSignOut }) => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-8">
-              <Link to="/" className="text-xl font-bold text-white">
+              <Link to="/" className="text-xl font-bold text-white flex items-center gap-2">
+                <img src="/images/gradaid-logo-white.png" alt="GradAid Logo" className="w-8 h-8" />
                 GradAid
               </Link>
               {session && (
