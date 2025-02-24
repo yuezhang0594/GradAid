@@ -1,34 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ProgramCard from './ProgramCard';
 
-const ProgramTracker = ({ trackerName }) => {
-  const [programs, setPrograms] = useState([
-    {
-      id: 1,
-      university: 'Harvard University',
-      program: 'MS in Computer Science',
-      website: 'https://www.harvard.edu',
-    },
-    {
-      id: 2,
-      university: 'MIT',
-      program: 'MS in Software Engineering',
-      website: 'https://www.mit.edu',
-    },
-    {
-      id: 3,
-      university: 'Boston University',
-      program: 'MS in Computer Information Systems',
-      website: 'https://www.bu.edu',
-    }
-  ]);
-
+const ProgramTracker = ({ trackerName, fetchPrograms }) => {
+  const [programs, setPrograms] = useState([]);
   const [showAddForm, setShowAddForm] = useState(false);
   const [newProgram, setNewProgram] = useState({
-    name: '',
+    university: '',
     program: '',
+    description: '',
+    website: '',
     deadline: ''
   });
+
+  // Fetch programs when the component mounts or when fetchPrograms changes
+  useEffect(() => {
+    const loadPrograms = async () => {
+      const fetchedPrograms = await fetchPrograms();
+      setPrograms(fetchedPrograms);
+    };
+    loadPrograms();
+  }, [fetchPrograms]);
 
   const handleAddProgram = (e) => {
     e.preventDefault();
@@ -37,7 +28,7 @@ const ProgramTracker = ({ trackerName }) => {
       ...newProgram,
     };
     setPrograms([...programs, program]);
-    setNewProgram({ name: '', program: '', deadline: '' });
+    setNewProgram({ university_id: '', program_name: '', description: '', website: '', deadline: '' });
     setShowAddForm(false);
   };
 
@@ -89,6 +80,26 @@ const ProgramTracker = ({ trackerName }) => {
                     required
                   />
                 </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700">Description</label>
+                  <input
+                    type="text"
+                    value={newProgram.description}
+                    onChange={(e) => setNewProgram({...newProgram, description: e.target.value})}
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700">Website</label>
+                  <input
+                    type="url"
+                    value={newProgram.website}
+                    onChange={(e) => setNewProgram({...newProgram, website: e.target.value})}
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                    required
+                  />
+                </div>
               </div>
               <div className="mt-6 flex justify-end space-x-3">
                 <button
@@ -112,7 +123,7 @@ const ProgramTracker = ({ trackerName }) => {
 
       <div className="flex flex-wrap gap-4 overflow-y-auto h-[calc(100%-4rem)]">
         {programs.map((program) => (
-          <div key={program.id} className="w-[250px] flex-none">
+          <div key={program.program_id} className="w-[250px] flex-none">
             <ProgramCard program={program} />
           </div>
         ))}

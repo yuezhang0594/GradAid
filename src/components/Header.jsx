@@ -77,7 +77,7 @@ const Header = ({ session, onSignOut }) => {
                         : 'text-blue-100 hover:bg-blue-700 hover:text-white'
                     }`}
                   >
-                    Application Tracker
+                    Applications
                   </Link>
                   <button 
                     onClick={handleProfileClick}

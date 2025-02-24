@@ -1,10 +1,10 @@
 import React from 'react';
 import ProgramTracker from '../components/ProgramTracker';
+import SavedPrograms from '../components/SavedPrograms';
 import ApplicationTracker from '../components/ApplicationTracker';
 import Header from '../components/Header';
 import { Link } from 'react-router-dom';
 import { supabase } from '../supabaseClient';
-
 const TrackerPage = ({ session }) => {
   const handleSignOut = async () => {
     await supabase.auth.signOut();
@@ -16,7 +16,7 @@ const TrackerPage = ({ session }) => {
       
       <main className="container mx-auto px-4 py-8">
         <div className="flex justify-between items-center mb-6">
-          <h1 className="text-2xl font-bold text-gray-800">Program Application Tracker</h1>
+          <h1 className="text-2xl font-bold text-gray-800">Programs & Applications</h1>
           <Link 
             to="/"
             className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
@@ -26,8 +26,9 @@ const TrackerPage = ({ session }) => {
         </div>
         <div className="bg-white rounded-lg shadow-lg p-6">
           <div className="flex flex-col space-y-6">
-            <ApplicationTracker trackerName="Application Tracker" />
-            <ProgramTracker trackerName="Favorite Programs" />
+            <ApplicationTracker trackerName="Submitted Applications" />
+            <ApplicationTracker trackerName="In Progress" />
+            <SavedPrograms/>
           </div>
         </div>
       </main>
