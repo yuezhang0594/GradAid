@@ -101,4 +101,5 @@ class ProfileService {
   }
 }
 
-export const profileService = new ProfileService();
+const profileService = new ProfileService();
+export default profileService;

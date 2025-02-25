@@ -126,7 +126,7 @@ const ApplicationTracker = ({ trackerName }) => {
         </div>
       )}
 
-      <div className="flex flex-wrap gap-4 overflow-y-auto h-[calc(100%-4rem)]">
+      <div className="flex flex-wrap gap-4 overflow-y-auto h-[calc(100%-4rem)] pl-4 pb-4">
         {applications.map((application) => (
           <div key={application.id} className="w-[250px] flex-none">
             <ApplicationCard application={application} />

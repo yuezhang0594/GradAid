@@ -1,38 +1,32 @@
 import PropTypes from 'prop-types';
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { supabase } from '../supabaseClient';
+import programService from '../services/program';
+import universityService from '../services/university';
 
 const ProgramCard = ({ program }) => {
-  const [universityName, setUniversityName] = useState('');
-  const [universityLocation, setUniversityLocation] = useState('');
+  const [university, setUniversity] = useState('');
   const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
-    const fetchUniversityDetails = async () => {
-      const { data, error } = await supabase
-        .from('University')
-        .select('university_name, location')
-        .eq('university_id', program.university_id)
-        .single();
-
-      if (error) {
+    const fetchUniversity = async () => {
+      try {
+        const university = await universityService.getUniversityById(program.university_id);
+        setUniversity(university);
+      } catch (error) {
         console.error('Error fetching university details:', error);
-      } else {
-        setUniversityName(data.university_name);
-        setUniversityLocation(data.location);
       }
     };
 
-    fetchUniversityDetails();
+    fetchUniversity();
   }, [program.university_id]);
 
   return (
-    <motion.div 
+    <motion.div
       className="relative h-36 cursor-pointer"
-      whileHover={{ 
-        scale: 1.05, 
-        height: 'auto', 
+      whileHover={{
+        scale: 1.05,
+        height: 'auto',
         transition: { duration: 0.3, ease: "easeInOut" }
       }}
       onHoverStart={() => setIsHovered(true)}
@@ -41,8 +35,8 @@ const ProgramCard = ({ program }) => {
       <div className="bg-white rounded-lg shadow-lg p-3 h-full min-h-36">
         <div className="flex justify-between items-start">
           <div className="flex-1 min-w-0 mr-2">
-            <h3 className={`text-base font-semibold ${isHovered ? '' : 'truncate'}`}>{universityName || program.university_id}</h3>
-            <p className={`text-xs text-gray-600 ${isHovered ? '' : 'truncate'}`}>{universityLocation || undefined}</p>
+            <h3 className={`text-base font-semibold ${isHovered ? '' : 'truncate'}`}>{university.university_name}</h3>
+            <p className={`text-xs text-gray-600 ${isHovered ? '' : 'truncate'}`}>{university.location || undefined}</p>
             <p className={`text-xs text-gray-600 ${isHovered ? '' : 'truncate'}`}>{program.degree_type} in {program.program_name}</p>
             <p className={`text-xs text-gray-600 ${isHovered ? '' : 'truncate'}`}>{program.description}</p>
             <p className={`text-xs text-gray-600 ${isHovered ? '' : 'truncate'}`}>Deadline: {program.deadline}</p>
@@ -64,4 +58,4 @@ ProgramCard.propTypes = {
   }).isRequired,
 };
 
-export default ProgramCard; 
+export default ProgramCard;

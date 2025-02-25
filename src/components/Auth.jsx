@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import UserProfileForm from './UserProfileForm'
-import { authService } from '../services/auth'
+import authService from '../services/auth'
 
 export default function Auth({ onBackClick }) {
   const [loading, setLoading] = useState(false)

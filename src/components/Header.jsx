@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import UserProfileForm from './UserProfileForm';
-import { profileService } from '../services/profile';
+import profileService from '../services/profile';
 import { tooltipStyles } from '../styles/tooltips';
 
 const Header = ({ session, onSignOut }) => {

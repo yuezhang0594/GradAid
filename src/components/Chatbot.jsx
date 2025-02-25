@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-import { chatbotService, INTERVIEW_QUESTIONS } from '../services/chatbot';
+import { INTERVIEW_QUESTIONS } from '../services/chatbot';
+import chatbotService from '../services/chatbot';
 
 export default function Chatbot({ session }) {
   console.log('Chatbot rendering with session:', session);

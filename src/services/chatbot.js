@@ -22,4 +22,5 @@ class ChatbotService {
   }
 }
 
-export const chatbotService = new ChatbotService();
+const chatbotService = new ChatbotService();
+export default chatbotService;

@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
-import { profileService } from '../services/profile';
+import profileService from '../services/profile';
 import Select from 'react-select';
 import CreatableSelect from 'react-select/creatable';
 import { countryOptions, majorOptions, degreeOptions } from '../services/selectOptions';
@@ -249,7 +249,7 @@ export default function UserProfileForm({ onComplete }) {
       };
       
       await profileService.createProfile(processedData);
-      if (onComplete) onComplete();
+      onComplete();
     } catch (error) {
       alert('Error saving profile: ' + error.message);
     } finally {
