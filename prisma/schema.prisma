@@ -1,0 +1,77 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model Applications {
+  status          String?   @db.VarChar
+  submission_date DateTime? @db.Date
+  user            String    @default(dbgenerated("auth.uid()")) @db.Uuid
+  id              String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  program         String    @db.Uuid
+  Programs        Programs  @relation(fields: [program], references: [id], onDelete: Cascade)
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model Programs {
+  name                     String?                    @db.VarChar
+  website                  String?                    @db.VarChar
+  degree_type              String?                    @db.VarChar
+  description              String?
+  deadline                 DateTime?                  @db.Date
+  application_fee          Float?                     @db.Real
+  avg_gpa_admit            Float?                     @db.Real
+  avg_gre_admit            Float?                     @db.Real
+  id                       String                     @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  university               String?                    @db.Uuid
+  Applications             Applications[]
+  Universities             Universities?              @relation(fields: [university], references: [id], onDelete: Cascade)
+  User_Program_Preferences User_Program_Preferences[]
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model Universities {
+  name        String     @unique(map: "University_university_name_key")
+  location    String?
+  website     String?    @db.VarChar
+  description String?
+  id          String     @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  Programs    Programs[]
+}
+
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model User_Program_Preferences {
+  preference_level Int?     @db.SmallInt
+  user             String   @default(dbgenerated("auth.uid()")) @db.Uuid
+  id               String   @id(map: "User_Program_Preference_pkey") @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  favorite         Boolean  @default(false)
+  program          String   @db.Uuid
+  Programs         Programs @relation(fields: [program], references: [id], onDelete: Cascade)
+}
+
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model Users {
+  created_at          DateTime  @default(now()) @db.Timestamptz(6)
+  email               String?   @db.VarChar
+  first_name          String?   @db.VarChar
+  last_name           String?   @db.VarChar
+  dob                 DateTime? @db.Date
+  country             String?   @db.VarChar
+  education_level     String?   @db.VarChar
+  major               String?   @db.VarChar
+  gpa                 Float?    @db.Real
+  gre_score           BigInt?
+  toefl_score         BigInt?
+  ielts_score         BigInt?
+  profile_description String?
+  chat_response       Json?     @db.Json
+  id                  String    @id(map: "User_pkey") @unique(map: "User_id_key") @default(dbgenerated("auth.uid()")) @db.Uuid
+}
