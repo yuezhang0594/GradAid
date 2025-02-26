@@ -30,3 +30,18 @@ class Profile(Base):
     updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
     
     user = relationship("User", back_populates="profile")
+    
+    # Add relationship to SOP
+    sop = relationship("SOP", back_populates="profile", uselist=False)
+
+class SOP(Base):
+    __tablename__ = "sops"
+
+    id = Column(Integer, primary_key=True, index=True)
+    profile_id = Column(Integer, ForeignKey("User.id"), unique=True)
+    content = Column(String)
+    prompt_template = Column(String)
+    generated_at = Column(DateTime(timezone=True), server_default=func.now())
+    last_updated = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+    
+    profile = relationship("Profile", back_populates="sop")
