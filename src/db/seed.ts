@@ -1,4 +1,4 @@
-import db from '../index.ts';
+import db from './index.ts';
 import * as schema from './schema.ts';
 import { seed, reset } from 'drizzle-seed'; 
 

@@ -1,11 +1,12 @@
 import { pgTable, unique, pgPolicy, timestamp, varchar, date, real, bigint, text, json, uuid, foreignKey, smallint, boolean } from "drizzle-orm/pg-core"
-import { ne, sql } from "drizzle-orm"
+import { sql } from "drizzle-orm"
+import { authUsers } from "drizzle-orm/supabase"
 
 export const Users = pgTable("Users", {
 	id: uuid().default(sql`auth.uid()`).primaryKey().notNull(),
-	email: varchar(),
-	first_name: varchar(),
-	last_name: varchar(),
+	email: varchar().default(sql`(SELECT email FROM auth.users WHERE id = auth.uid())`),
+	first_name: varchar().default(sql`(SELECT raw_user_meta_data->>'first_name' FROM auth.users WHERE id = auth.uid())`),
+	last_name: varchar().default(sql`(SELECT raw_user_meta_data->>'last_name' FROM auth.users WHERE id = auth.uid())`),
 	dob: date(),
 	country: varchar(),
 	education_level: varchar(),
@@ -24,6 +25,9 @@ export const Users = pgTable("Users", {
 	pgPolicy("Enable update for users based on email", { as: "permissive", for: "update", to: ["public"] }),
 ]);
 
+export type InsertUser = typeof Users.$inferInsert;
+export type SelectUser = typeof Users.$inferSelect;
+
 export const Universities = pgTable("Universities", {
 	id: uuid().defaultRandom().primaryKey().notNull(),
 	name: text().notNull(),
@@ -36,17 +40,20 @@ export const Universities = pgTable("Universities", {
 	unique("University_university_name_key").on(table.name),
 ]);
 
+export type InsertUniversity = typeof Universities.$inferInsert;
+export type SelectUniversity = typeof Universities.$inferSelect;
+
 export const Programs = pgTable("Programs", {
 	id: uuid().defaultRandom().primaryKey().notNull(),
-	name: varchar(),
+	degree_type: varchar().notNull(),
+	name: varchar().notNull(),
 	website: varchar(),
-	degree_type: varchar(),
 	description: text(),
 	deadline: date(),
 	application_fee: real(),
 	avg_gpa_admit: real(),
 	avg_gre_admit: real(),
-	university: uuid(),
+	university: uuid().notNull(),
 	created_at: timestamp({ withTimezone: true, mode: 'date' }).defaultNow().notNull(),
 	updated_at: timestamp({ withTimezone: true, mode: 'date' }).defaultNow().notNull().$onUpdate(() => new Date()),
 }, (table) => [
@@ -57,12 +64,15 @@ export const Programs = pgTable("Programs", {
 		}).onUpdate("cascade").onDelete("cascade"),
 ]);
 
+export type InsertProgram = typeof Programs.$inferInsert;
+export type SelectProgram = typeof Programs.$inferSelect;
+
 export const User_Program_Preferences = pgTable("User_Program_Preferences", {
 	id: uuid().defaultRandom().primaryKey().notNull(),
 	user: uuid().default(sql`auth.uid()`).notNull(),
 	program: uuid().notNull(),
-	preference_level: smallint(),
 	favorite: boolean().default(false).notNull(),
+	preference_level: smallint(),
 	created_at: timestamp({ withTimezone: true, mode: 'date' }).defaultNow().notNull(),
 	updated_at: timestamp({ withTimezone: true, mode: 'date' }).defaultNow().notNull().$onUpdate(() => new Date()),
 }, (table) => [
@@ -72,6 +82,9 @@ export const User_Program_Preferences = pgTable("User_Program_Preferences", {
 			name: "User_Program_Preferences_program_fkey"
 		}).onUpdate("cascade").onDelete("cascade"),
 ]);
+
+export type InsertPreferences = typeof User_Program_Preferences.$inferInsert;
+export type SelectPreferences = typeof User_Program_Preferences.$inferSelect;
 
 export const Applications = pgTable("Applications", {
 	id: uuid().defaultRandom().primaryKey().notNull(),
@@ -88,3 +101,6 @@ export const Applications = pgTable("Applications", {
 			name: "Applications_program_fkey"
 		}).onUpdate("cascade").onDelete("cascade"),
 ]);
+
+export type InsertApplication = typeof Applications.$inferInsert;
+export type SelectApplication = typeof Applications.$inferSelect;
