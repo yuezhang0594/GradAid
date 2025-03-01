@@ -9,11 +9,14 @@ import {
 } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import { Link } from "react-router-dom"
+import { useAuthActions } from "@convex-dev/auth/react";
 
 export function LoginForm({
   className,
   ...props
 }: React.ComponentProps<"div">) {
+  const { signIn } = useAuthActions();
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Card>
@@ -51,16 +54,17 @@ export function LoginForm({
                 <Button type="submit" className="w-full">
                   Login
                 </Button>
-                <Button variant="outline" className="w-full">
+                <Button variant="outline" className="w-full"
+                  onClick={() => void signIn("google", { redirectTo: "/dashboard" })}>
                   Login with Google
                 </Button>
               </div>
             </div>
             <div className="mt-4 text-center text-sm">
               Don&apos;t have an account?{" "}
-              <a href="#" className="underline underline-offset-4">
+              <Link to="/signup" className="underline underline-offset-4">
                 Sign up
-              </a>
+              </Link>
             </div>
           </form>
         </CardContent>
