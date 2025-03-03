@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 import {
   Button,
   Card,
@@ -12,7 +11,7 @@ import {
 } from "@/components/ui"
 import { Link } from "react-router-dom"
 import { useAuthActions } from "@convex-dev/auth/react";
-import { Eye, EyeOff, GithubIcon, Mail } from "lucide-react";
+import { Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
 import { Checkbox } from "@/components/ui/checkbox";
 import { motion } from "framer-motion";
@@ -24,8 +23,8 @@ export function LoginForm({
   ...props
 }: React.ComponentProps<"div">) {
   const { signIn } = useAuthActions();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
   return (
@@ -129,11 +128,14 @@ export function LoginForm({
                       void signIn("google", { redirectTo: "/dashboard" })
                     }
                   >
-                    <Mail className="mr-2 h-4 w-4" />
+                    <GoogleLogo />
                     Login with Google
                   </Button>
-                  <Button variant="outline" className="w-full">
-                    <GithubIcon className="mr-2 h-4 w-4" />
+                  <Button
+                  variant="outline"
+                  className="w-full"
+                  onClick={() => signIn("github", { redirectTo: "/dashboard" })}>
+                    <GitHubLogo />
                     Login with GitHub
                   </Button>
                 </div>
