@@ -1,7 +1,20 @@
 import * as React from "react"
 
 import { SearchForm } from "@/components/search-form"
-import { VersionSwitcher } from "@/components/version-switcher"
+// import { VersionSwitcher } from "@/components/version-switcher"
+import {
+  UserPenIcon,
+  FilePlus2Icon,
+  MessageCircleQuestionIcon,
+  InfoIcon,
+  SettingsIcon,
+  FileTextIcon,
+  ClipboardListIcon,
+  HeartIcon,
+  SearchIcon,
+  FileUpIcon,
+  Link
+} from 'lucide-react';
 import {
   Sidebar,
   SidebarContent,
@@ -14,8 +27,8 @@ import {
   SidebarMenuItem,
   SidebarRail,
 } from "@/components/ui/sidebar"
+import { GradAidLogo } from "@/assets/GradAidLogo";
 
-// This is sample data.
 const data = {
   versions: ["1.0.1", "1.1.0-alpha", "2.0.0-beta1"],
   navMain: [
@@ -24,12 +37,14 @@ const data = {
       url: "#",
       items: [
         {
-          title: "Installation",
+          title: "Create Profile",
           url: "#",
+          icon: UserPenIcon,
         },
         {
-          title: "Project Structure",
+          title: "Upload Documents",
           url: "#",
+          icon: FileUpIcon,
         },
       ],
     },
@@ -38,109 +53,57 @@ const data = {
       url: "#",
       items: [
         {
-          title: "Routing",
+          title: "Program Search",
           url: "#",
+          icon: SearchIcon,
         },
         {
-          title: "Data Fetching",
+          title: "Saved Programs",
           url: "#",
+          icon: HeartIcon,
+        },
+        {
+          title: "Apply",
+          url: "#",
+          icon: FilePlus2Icon,
+        },
+      ],
+    },
+    {
+      title: "Tracking Your Progress",
+      url: "#",
+      items: [
+        {
+          title: "Applications",
+          url: "#",
+          icon: ClipboardListIcon,
           isActive: true,
         },
         {
-          title: "Rendering",
+          title: "Documents",
           url: "#",
-        },
-        {
-          title: "Caching",
-          url: "#",
-        },
-        {
-          title: "Styling",
-          url: "#",
-        },
-        {
-          title: "Optimizing",
-          url: "#",
-        },
-        {
-          title: "Configuring",
-          url: "#",
-        },
-        {
-          title: "Testing",
-          url: "#",
-        },
-        {
-          title: "Authentication",
-          url: "#",
-        },
-        {
-          title: "Deploying",
-          url: "#",
-        },
-        {
-          title: "Upgrading",
-          url: "#",
-        },
-        {
-          title: "Examples",
-          url: "#",
+          icon: FileTextIcon,
         },
       ],
     },
     {
-      title: "API Reference",
+      title: "Support",
       url: "#",
       items: [
         {
-          title: "Components",
+          title: "Settings",
           url: "#",
+          icon: SettingsIcon,
         },
         {
-          title: "File Conventions",
+          title: "FAQ",
           url: "#",
+          icon: InfoIcon,
         },
         {
-          title: "Functions",
+          title: "Contact Us",
           url: "#",
-        },
-        {
-          title: "next.config.js Options",
-          url: "#",
-        },
-        {
-          title: "CLI",
-          url: "#",
-        },
-        {
-          title: "Edge Runtime",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Architecture",
-      url: "#",
-      items: [
-        {
-          title: "Accessibility",
-          url: "#",
-        },
-        {
-          title: "Fast Refresh",
-          url: "#",
-        },
-        {
-          title: "Next.js Compiler",
-          url: "#",
-        },
-        {
-          title: "Supported Browsers",
-          url: "#",
-        },
-        {
-          title: "Turbopack",
-          url: "#",
+          icon: MessageCircleQuestionIcon,
         },
       ],
     },
@@ -151,10 +114,15 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar {...props}>
       <SidebarHeader>
-        <VersionSwitcher
+        {/* Logo */}
+            <div className="flex items-center justify-center gap-2">
+            <GradAidLogo className="h-8 w-auto" />
+            <span className="text-2xl font-bold text-primary">GradAid</span>
+            </div>
+        {/* <VersionSwitcher
           versions={data.versions}
           defaultVersion={data.versions[0]}
-        />
+        /> */}
         <SearchForm />
       </SidebarHeader>
       <SidebarContent>
@@ -166,8 +134,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               <SidebarMenu>
                 {item.items.map((item) => (
                   <SidebarMenuItem key={item.title}>
-                    <SidebarMenuButton asChild isActive={item.isActive}>
-                      <a href={item.url}>{item.title}</a>
+                    <SidebarMenuButton asChild isActive={item.isActive} >
+                      <a href={item.url}><item.icon size={20} />{item.title}</a>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
                 ))}

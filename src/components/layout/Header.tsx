@@ -1,108 +1,42 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
-import { UserButton, SignedIn, SignInButton, SignedOut } from '@clerk/clerk-react';
-import { GradAidLogo } from '@/assets/GradAidLogo';
+import { UserButton, useUser } from '@clerk/clerk-react';
+import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from '../ui/breadcrumb';
+import { SidebarTrigger } from '@/components/ui/sidebar';
 
-const Header: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  const closeMenu = () => setIsMenuOpen(false);
 
+export default function Header() {
+  const { user } = useUser();
   return (
-    <header className="bg-white border-b border-border shadow-sm sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-3">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <h1 className="text-2xl font-bold text-primary text-left">
-            <GradAidLogo className="h-8 w-auto" />GradAid
-          </h1>
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/dashboard" className="text-text-secondary hover:text-primary transition-colors">
-              Dashboard
-            </Link>
-            <Link to="/documents" className="text-text-secondary hover:text-primary transition-colors">
-              Documents
-            </Link>
-            <Link to="/universities" className="text-text-secondary hover:text-primary transition-colors">
-              Universities
-            </Link>
-            <Link to="/applications" className="text-text-secondary hover:text-primary transition-colors">
-              Applications
-            </Link>
-          </nav>
-
-          {/* Auth Section - Desktop */}
-          <div className="hidden md:flex items-center space-x-4">
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
-            <SignedOut>
-              <SignInButton withSignUp={true} />
-            </SignedOut>
+    <header className="flex h-16 shrink-0 items-center gap-2 w-full">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between w-full">
+          {/* Breadcrumb Section */}
+          {/* TODO: make it dynamically update based on page */}
+          <div className="flex items-center gap-2 px-4">
+            <SidebarTrigger className="-ml-1" />
+            <div className="mx-2 h-6 w-px bg-border" />
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem className="hidden md:block">
+                  <BreadcrumbLink href="/dashboard">
+                    Dashboard
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator className="hidden md:block" />
+                <BreadcrumbItem>
+                  <BreadcrumbPage>Applications</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
           </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden text-text-primary focus:outline-none"
-            onClick={toggleMenu}
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* User Profile Section */}
+          <div className='flex items-center gap-2'>
+            <div className="hidden md:block mr-2 text-sm font-medium">
+              {user!.fullName}
+            </div>
+            <UserButton />
+          </div>
         </div>
       </div>
-
-      {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-white border-t border-border">
-          <div className="container mx-auto px-4 py-3">
-            <nav className="flex flex-col space-y-4">
-              <Link
-                to="/dashboard"
-                className="text-text-secondary hover:text-primary transition-colors py-2"
-                onClick={closeMenu}
-              >
-                Dashboard
-              </Link>
-              <Link
-                to="/documents"
-                className="text-text-secondary hover:text-primary transition-colors py-2"
-                onClick={closeMenu}
-              >
-                Documents
-              </Link>
-              <Link
-                to="/universities"
-                className="text-text-secondary hover:text-primary transition-colors py-2"
-                onClick={closeMenu}
-              >
-                Universities
-              </Link>
-              <Link
-                to="/applications"
-                className="text-text-secondary hover:text-primary transition-colors py-2"
-                onClick={closeMenu}
-              >
-                Applications
-              </Link>
-
-              {/* Auth Section - Mobile */}
-              <div className="pt-4 border-t border-border">
-                <SignedIn>
-                  <UserButton />
-                </SignedIn>
-                <SignedOut>
-                  <SignInButton withSignUp={true} />
-                </SignedOut>
-              </div>
-            </nav>
-          </div>
-        </div>
-      )}
     </header>
   );
 };
-
-export default Header;
