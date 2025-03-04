@@ -4,7 +4,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from "@/app/components/ui/card";
 import {
   BarChart,
   LineChart,
@@ -17,14 +17,14 @@ import {
   Line,
   ResponsiveContainer,
 } from "recharts";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback } from "@/app/components/ui/avatar";
+import { Button } from "@/app/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/app/components/ui/dropdown-menu";
 import {
   CalendarIcon,
   ChevronDownIcon,
@@ -36,7 +36,7 @@ import {
   TrendingUpIcon,
   ClockIcon,
 } from "lucide-react";
-import { UserButton } from "@clerk/clerk-react";
+import { Header } from "@/app/components/layout";
 
 // Mock data for charts
 const performanceData = [
@@ -59,15 +59,7 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       {/* Header */}
-      <header className="sticky top-0 z-10 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
-        <div className="px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
-          <div className="flex items-center">
-            <GraduationCapIcon className="h-8 w-8 text-primary" />
-            <h1 className="ml-2 text-xl font-bold text-gray-900 dark:text-white">GradAid</h1>
-          </div>
-          <UserButton />
-        </div>
-      </header>
+      <Header />
 
       <div className="flex">
         {/* Sidebar */}

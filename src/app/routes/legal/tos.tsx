@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Button } from "@/components/ui";
+import { Button } from "@/app/components/ui";
 
 export default function TermsOfService() {
   // Set the document title when component mounts

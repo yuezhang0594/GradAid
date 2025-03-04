@@ -1,5 +1,5 @@
 import { AuthLoading, Authenticated, Unauthenticated } from 'convex/react'
-import SignInPage from '@/routes/auth/SignIn';
+import SignInPage from '@/app/routes/auth/SignIn';
 import { useLocation } from 'react-router-dom'
 
 export default function ProtectedRoute({ children }: { children: React.ReactNode }) {
