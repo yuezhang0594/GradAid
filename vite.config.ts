@@ -9,6 +9,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+      "react-dom/server.browser": "react-dom/server.edge",
     },
   },
 })

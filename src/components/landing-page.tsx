@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { cn } from "@/lib/utils"
+import { SignInButton } from "@clerk/clerk-react"
 import { Link } from "react-router-dom"
 
 export function LandingPage({
@@ -17,13 +18,12 @@ export function LandingPage({
                         Your complete solution for graduate school application management and success
                     </p>
                     <div className="space-x-4 mt-8">
-                        <Button asChild>
-                            <Link to="/login">Get Started</Link>
-                        </Button>
+                        <SignInButton forceRedirectUrl={"/dashboard"}>
+                            <Button>Get Started</Button>
+                        </SignInButton>
                     </div>
                 </div>
             </section>
-
             {/* Features Section */}
             <section className="w-full py-12 md:py-24 lg:py-32">
                 <div className="container px-4 md:px-6">

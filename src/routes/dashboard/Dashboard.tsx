@@ -17,30 +17,26 @@ import {
   Line,
   ResponsiveContainer,
 } from "recharts";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import {
   CalendarIcon,
   ChevronDownIcon,
-  MoreHorizontalIcon,
   PlusIcon,
   SettingsIcon,
   UserIcon,
-  BellIcon,
   BookOpenIcon,
   GraduationCapIcon,
   TrendingUpIcon,
   ClockIcon,
 } from "lucide-react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { UserButton } from "@clerk/clerk-react";
 
 // Mock data for charts
 const performanceData = [
@@ -59,7 +55,7 @@ const courseData = [
   { name: "History", completed: 73 },
 ];
 
-export function Dashboard() {
+export default function Dashboard() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       {/* Header */}
@@ -69,35 +65,7 @@ export function Dashboard() {
             <GraduationCapIcon className="h-8 w-8 text-primary" />
             <h1 className="ml-2 text-xl font-bold text-gray-900 dark:text-white">GradAid</h1>
           </div>
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon">
-              <BellIcon className="h-5 w-5" />
-            </Button>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="relative h-8 w-8 rounded-full">
-                  <Avatar className="h-8 w-8">
-                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-                    <AvatarFallback>SC</AvatarFallback>
-                  </Avatar>
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuLabel>My Account</DropdownMenuLabel>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem>
-                  <UserIcon className="mr-2 h-4 w-4" />
-                  <span>Profile</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <SettingsIcon className="mr-2 h-4 w-4" />
-                  <span>Settings</span>
-                </DropdownMenuItem>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem>Log out</DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
+          <UserButton />
         </div>
       </header>
 
