@@ -62,11 +62,11 @@ Using GradAid's customization feature, he selects the target programs and receiv
 | Feature | User Story | Persona or Scenario | Technical Requirements |
 |---------|------------|---------------------|------------------------|
 | Interactive form to collect user information and store in a database. | As an aspiring graduate student, I need to provide information about myself through an interactive form. | All personas and scenarios | - Form must capture academic history, work experience, achievements, skills, and career goals<br>- Progressive form with multi-step validation<br>- Form state must persist between sessions<br>- Data should be stored in Convex database with appropriate schema |
-| User authentication. | As a multi-device user, I need to log in so that my activity and history are saved and synchronized across all devices. | Basic feature for all web applications | - Email/password authentication with OAuth options (Google, GitHub)<br>- JWT-based session management with refresh tokens<br>- Password reset functionality<br>- Account verification via email |
+| User authentication. | As a multi-device user, I need to log in so that my activity and history are saved and synchronized across all devices. | Basic feature for all web applications | - Authentication via Clerk with email/password and OAuth options (Google, GitHub)<br>- Account verification via email<br>- Session management through Clerk SDK<br>- Password reset functionality |
 | Customized SOP generation, specific to university requirements. | As an applicant applying to many graduate programs, I need automated document creation based on my university choice. | Astha's scenario | - University database with program-specific requirements<br>- AI prompting system that incorporates university-specific details<br>- Document template system with dynamic sections<br>- Ability to generate multiple variations for different programs |
 | Customized SOP generation, specific to user information. | As a mid-career professional seeking a graduate degree abroad, I need to have my diverse background and skillset reflected in my SOP. | Astha's scenario | - AI model integration for personalized content generation<br>- Natural language processing for coherent narrative creation<br>- Tone and style adjustment features<br>- Skill mapping algorithm to highlight relevant experiences |
 | Cross-platform support. | As a global applicant with limited internet access, I need to interact with GradAid in a web browser on my phone. | Global accessibility requirement | - Responsive design using Tailwind CSS<br>- Progressive Web App (PWA) features<br>- Optimized asset loading for slow connections<br>- Offline capability for document editing |
-| User authentication and data security (RBAC, OAuth, etc.) | As a privacy-conscious user, I need data encryption and security measures so that my personal information is protected. | Common security concern | - HTTPS implementation<br>- Data encryption at rest and in transit<br>- GDPR and CCPA compliance measures<br>- Role-based access control<br>- Regular security audits |
+| User authentication and data security (RBAC, OAuth, etc.) | As a privacy-conscious user, I need data encryption and security measures so that my personal information is protected. | Common security concern | - HTTPS implementation<br>- Data encryption at rest and in transit<br>- GDPR and CCPA compliance measures<br>- Clerk's role-based access control<br>- Regular security audits |
 
 ### Want to Have – improves on a required feature or additional functionality
 
@@ -96,7 +96,7 @@ GradAid employs a modern, modular architecture designed for maintainability, sca
 Built with **React** and **Vite** for fast rendering and development experience, the frontend includes:
 - **Document Editor**: Rich-text editing interface for SOPs and LORs using Shadcn components
 - **User Dashboard**: Displays saved documents and application insights
-- **Auth & Profile**: Manages user authentication and profile settings
+- **Auth & Profile**: Manages user authentication and profile settings using Clerk
 - **Convex Client**: Facilitates real-time communication with the backend
 - **React Router**: Handles client-side routing with nested routes and navigation
 
@@ -183,17 +183,15 @@ GradAid/
 │   │   ├── create.ts                    # Application creation
 │   │   ├── update.ts                    # Status update logic
 │   │   └── deadlines.ts                 # Deadline management
-│   ├── otp/                             # One-time password functionality
-│   ├── passwordReset/                   # Password reset functionality
 │   ├── schema.ts                        # Database schema definitions
 │   └── tsconfig.json                    # TypeScript configuration for backend
 ├── src/                                 # Frontend source code
 │   ├── routes/                      # Application routes
 │   │   ├── index.tsx                # Main routing configuration
-│   │   ├── auth/                    # Authentication routes
-│   │   │   ├── login.tsx            # Login page
-│   │   │   ├── register.tsx         # Registration page
-│   │   │   └── reset-password.tsx   # Password reset page
+│   │   ├── auth/                    # Authentication routes handled by Clerk
+│   │   │   ├── sign-in.tsx          # Clerk sign-in page
+│   │   │   ├── sign-up.tsx          # Clerk registration page
+│   │   │   └── reset-password.tsx   # Clerk password reset page
 │   │   ├── dashboard/               # Dashboard routes
 │   │   │   ├── index.tsx            # Main dashboard page
 │   │   │   ├── documents.tsx        # Documents listing page
@@ -222,7 +220,7 @@ GradAid/
 │   │       ├── ApplicationCard.tsx  # Application card component
 │   │       └── StatusBadge.tsx      # Status indicator badge
 │   ├── hooks/                       # Custom React hooks
-│   │   ├── useAuth.ts               # Authentication hook
+│   │   ├── useAuth.ts               # Clerk authentication hook
 │   │   ├── useDocuments.ts          # Document management hook
 │   │   ├── useUniversities.ts       # University data hook
 │   │   └── useApplications.ts       # Application tracking hook
@@ -809,17 +807,34 @@ interface Application {
 
 #### User Authentication
 
-**Register User:**
+**Get Current User:**
 ```typescript
-// convex/auth.ts
-export const registerUser = mutation({
-  args: {
-    email: v.string(),
-    password: v.string(),
-    name: v.string()
-  },
-  handler: async (ctx, args) => {
-    // Implementation details
+// convex/users/current.ts
+import { query } from "./_generated/server";
+import { v } from "convex/values";
+
+export const getCurrentUser = query({
+  args: {},
+  handler: async (ctx) => {
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) {
+      return null;
+    }
+    
+    // Get Clerk user data
+    const userId = identity.subject;
+    const email = identity.email;
+    const name = identity.name;
+    
+    // Get or create user in Convex database
+    // ...implementation details...
+    
+    return {
+      userId,
+      email,
+      name,
+      // other user data from database
+    };
   }
 });
 ```
@@ -827,20 +842,19 @@ export const registerUser = mutation({
 **Example Request:**
 ```typescript
 import { api } from "../convex/_generated/api";
-import { useMutation } from "convex/react";
+import { useQuery } from "convex/react";
+import { useAuth } from "@clerk/clerk-react";
 
-const registerUser = useMutation(api.auth.registerUser);
-registerUser({ 
-  email: "user@example.com", 
-  password: "securePassword123", 
-  name: "John Doe" 
-});
+// Use Clerk's useAuth hook for authentication status
+const { isSignedIn } = useAuth();
+// Use Convex query to fetch current user data if signed in
+const user = useQuery(api.users.current.getCurrentUser);
 ```
 
 **Example Response:**
 ```json
 {
-  "userId": "usr_1a2b3c4d5e",
+  "userId": "user_2abc123def456",
   "email": "user@example.com",
   "name": "John Doe",
   "createdAt": "2025-03-03T21:56:23.000Z"
@@ -1648,6 +1662,7 @@ export default Input;
    ```typescript
    // src/utils/api.ts
    import { ConvexError } from "convex/values";
+   import { ClerkAPIError } from '@clerk/types';
 
    export enum ErrorType {
      VALIDATION = "VALIDATION",
@@ -1671,6 +1686,15 @@ export default Input;
        return {
          type: ErrorType.SERVER,
          message: error.message
+       };
+     }
+     
+     if (error instanceof ClerkAPIError) {
+       // Handle Clerk authentication errors
+       return {
+         type: ErrorType.AUTHENTICATION,
+         message: error.errors[0]?.message || "Authentication error",
+         details: error.errors
        };
      }
      
@@ -1735,7 +1759,7 @@ describe('truncateText', () => {
 // cypress/e2e/document-creation.cy.ts
 describe('Document Creation Flow', () => {
   beforeEach(() => {
-    cy.login('test@example.com', 'password123');
+    cy.signInWithClerk('test@example.com', 'password123');
     cy.visit('/documents/new');
   });
   
@@ -1789,10 +1813,10 @@ describe('Document Creation Flow', () => {
 The Minimum Viable Product must include:
 
 1. **User Authentication**
-   - Registration and login functionality
+   - Registration and login functionality using Clerk
    - Password reset capability
    - Profile creation
-
+   
 2. **Document Management**
    - Create, edit, and delete documents
    - Basic document generation with AI
