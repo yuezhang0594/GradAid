@@ -6,7 +6,7 @@ import { Dashboard } from "./components/dashboard";
 import SignupPage from "./app/signup/page";
 import TOSPage from "./app/legal/tos";
 import PrivacyPolicy from "./app/legal/privacy";
-import ResendVerifyButton from "./auth/ResendVerifyButton";
+import ResendDashboard from "./auth/ResendDashboard";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/tos" element={<TOSPage />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
-        <Route path="/resend" element={<ResendVerifyButton />} />
+        <Route path="/resend" element={<ResendDashboard />} />
       </Routes>
     </>
   )

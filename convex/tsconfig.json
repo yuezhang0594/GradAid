@@ -20,6 +20,6 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": ["./**/*", "../src/auth/ResendVerify.tsx"],
+  "include": ["./**/*"],
   "exclude": ["./_generated"]
 }
