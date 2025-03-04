@@ -2,7 +2,7 @@ import {
     Button,
     Card,
     CardContent
-} from "@/app/components/ui";
+} from "@/components/ui";
 
 export default function PrivacyPolicy() {
     const handleGoBack = () => {

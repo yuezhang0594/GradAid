@@ -4,7 +4,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/app/components/ui/card";
+} from "@/components/ui/card";
 import {
   BarChart,
   LineChart,
@@ -17,14 +17,14 @@ import {
   Line,
   ResponsiveContainer,
 } from "recharts";
-import { Avatar, AvatarFallback } from "@/app/components/ui/avatar";
-import { Button } from "@/app/components/ui/button";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/app/components/ui/dropdown-menu";
+} from "@/components/ui/dropdown-menu";
 import {
   CalendarIcon,
   ChevronDownIcon,
@@ -36,7 +36,7 @@ import {
   TrendingUpIcon,
   ClockIcon,
 } from "lucide-react";
-import { Header } from "@/app/components/layout";
+import { Header } from "@/components/layout";
 
 // Mock data for charts
 const performanceData = [

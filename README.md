@@ -188,67 +188,65 @@ GradAid/
 │   ├── schema.ts                        # Database schema definitions
 │   └── tsconfig.json                    # TypeScript configuration for backend
 ├── src/                                 # Frontend source code
-│   ├── app/                             # Main application code
-│   │   ├── routes/                      # Application routes
-│   │   │   ├── index.tsx                # Main routing configuration
-│   │   │   ├── auth/                    # Authentication routes
-│   │   │   │   ├── login.tsx            # Login page
-│   │   │   │   ├── register.tsx         # Registration page
-│   │   │   │   └── reset-password.tsx   # Password reset page
-│   │   │   ├── dashboard/               # Dashboard routes
-│   │   │   │   ├── index.tsx            # Main dashboard page
-│   │   │   │   ├── documents.tsx        # Documents listing page
-│   │   │   │   └── applications.tsx     # Applications tracking page
-│   │   │   └── editor/                  # Document editor routes
-│   │   │       ├── index.tsx            # Document listing
-│   │   │       ├── [documentId].tsx     # Document editor page
-│   │   │       └── new.tsx              # New document page
-│   │   ├── components/                  # Reusable components
-│   │   │   ├── common/                  # Common UI components
-│   │   │   │   ├── Button.tsx           # Button component
-│   │   │   │   ├── Card.tsx             # Card component
-│   │   │   │   ├── Input.tsx            # Form input component
-│   │   │   │   └── Modal.tsx            # Modal dialog component
-│   │   │   ├── layout/                  # Layout components
-│   │   │   │   ├── Header.tsx           # Header component
-│   │   │   │   ├── Footer.tsx           # Footer component
-│   │   │   │   ├── Sidebar.tsx          # Sidebar navigation
-│   │   │   │   └── Layout.tsx           # Main layout wrapper
-│   │   │   ├── editor/                  # Editor-specific components
-│   │   │   │   ├── RichTextEditor.tsx   # Rich text editor
-│   │   │   │   ├── FormatControls.tsx   # Text formatting controls
-│   │   │   │   └── AIAssistant.tsx      # AI writing assistant
-│   │   │   └── dashboard/               # Dashboard-specific components
-│   │   │       ├── DocumentCard.tsx     # Document card component
-│   │   │       ├── ApplicationCard.tsx  # Application card component
-│   │   │       └── StatusBadge.tsx      # Status indicator badge
-│   │   ├── hooks/                       # Custom React hooks
-│   │   │   ├── useAuth.ts               # Authentication hook
-│   │   │   ├── useDocuments.ts          # Document management hook
-│   │   │   ├── useUniversities.ts       # University data hook
-│   │   │   └── useApplications.ts       # Application tracking hook
-│   │   ├── utils/                       # Utility functions
-│   │   │   ├── api.ts                   # API interaction utilities
-│   │   │   ├── formatting.ts            # Text formatting helpers
-│   │   │   ├── validation.ts            # Form validation functions
-│   │   │   └── dates.ts                 # Date manipulation utilities
-│   │   ├── store/                       # State management
-│   │   │   ├── index.ts                 # Store configuration
-│   │   │   ├── authSlice.ts             # Authentication state
-│   │   │   ├── documentSlice.ts         # Document state
-│   │   │   └── applicationSlice.ts      # Application tracking state
-│   │   └── types/                       # TypeScript type definitions
-│   │       ├── document.ts              # Document-related types
-│   │       ├── user.ts                  # User-related types
-│   │       ├── university.ts            # University-related types
-│   │       └── application.ts           # Application-related types
+│   ├── routes/                      # Application routes
+│   │   ├── index.tsx                # Main routing configuration
+│   │   ├── auth/                    # Authentication routes
+│   │   │   ├── login.tsx            # Login page
+│   │   │   ├── register.tsx         # Registration page
+│   │   │   └── reset-password.tsx   # Password reset page
+│   │   ├── dashboard/               # Dashboard routes
+│   │   │   ├── index.tsx            # Main dashboard page
+│   │   │   ├── documents.tsx        # Documents listing page
+│   │   │   └── applications.tsx     # Applications tracking page
+│   │   └── editor/                  # Document editor routes
+│   │       ├── index.tsx            # Document listing
+│   │       ├── [documentId].tsx     # Document editor page
+│   │       └── new.tsx              # New document page
+│   ├── components/                  # Reusable components
+│   │   ├── common/                  # Common UI components
+│   │   │   ├── Button.tsx           # Button component
+│   │   │   ├── Card.tsx             # Card component
+│   │   │   ├── Input.tsx            # Form input component
+│   │   │   └── Modal.tsx            # Modal dialog component
+│   │   ├── layout/                  # Layout components
+│   │   │   ├── Header.tsx           # Header component
+│   │   │   ├── Footer.tsx           # Footer component
+│   │   │   ├── Sidebar.tsx          # Sidebar navigation
+│   │   │   └── Layout.tsx           # Main layout wrapper
+│   │   ├── editor/                  # Editor-specific components
+│   │   │   ├── RichTextEditor.tsx   # Rich text editor
+│   │   │   ├── FormatControls.tsx   # Text formatting controls
+│   │   │   └── AIAssistant.tsx      # AI writing assistant
+│   │   └── dashboard/               # Dashboard-specific components
+│   │       ├── DocumentCard.tsx     # Document card component
+│   │       ├── ApplicationCard.tsx  # Application card component
+│   │       └── StatusBadge.tsx      # Status indicator badge
+│   ├── hooks/                       # Custom React hooks
+│   │   ├── useAuth.ts               # Authentication hook
+│   │   ├── useDocuments.ts          # Document management hook
+│   │   ├── useUniversities.ts       # University data hook
+│   │   └── useApplications.ts       # Application tracking hook
+│   ├── utils/                       # Utility functions
+│   │   ├── api.ts                   # API interaction utilities
+│   │   ├── formatting.ts            # Text formatting helpers
+│   │   ├── validation.ts            # Form validation functions
+│   │   └── dates.ts                 # Date manipulation utilities
+│   ├── store/                       # State management
+│   │   ├── index.ts                 # Store configuration
+│   │   ├── authSlice.ts             # Authentication state
+│   │   ├── documentSlice.ts         # Document state
+│   │   └── applicationSlice.ts      # Application tracking state
+│   ├── types/                       # TypeScript type definitions
+│   │   ├── document.ts              # Document-related types
+│   │   ├── user.ts                  # User-related types
+│   │   ├── university.ts            # University-related types
+│   │   └── application.ts           # Application-related types
 │   ├── assets/                          # Static assets
 │   │   └── images/                      # Image files
 │   ├── App.tsx                          # Main App component
 │   ├── main.tsx                         # Application entry point
 │   └── vite-env.d.ts                    # Vite environment types
 ├── public/                              # Public assets
-│   └── vite.svg                         # Vite logo
 ├── eslint.config.js                     # ESLint configuration
 ├── netlify.toml                         # Netlify deployment config
 ├── package.json                         # NPM package definition
