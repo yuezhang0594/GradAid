@@ -112,10 +112,7 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
   }, []);
 
   return (
-    <SidebarProvider>
-      <AppSidebar />
-      <SidebarInset>
-        <Header />
+
         <div className="container mx-auto p-6">
           {/* Header */}
           <div className="flex items-center justify-between mb-6">
@@ -276,7 +273,6 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
             </div>
           </div>
         </div>
-      </SidebarInset>
-    </SidebarProvider>
+ 
   );
 }

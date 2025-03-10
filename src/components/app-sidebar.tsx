@@ -1,7 +1,12 @@
 import * as React from "react"
-
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { GradAidLogo } from "@/assets/GradAidLogo";
+import { useNavigate } from "react-router-dom";
 import { SearchForm } from "@/components/search-form"
-// import { VersionSwitcher } from "@/components/version-switcher"
+
 import {
   UserPenIcon,
   FilePlus2Icon,
@@ -27,7 +32,6 @@ import {
   SidebarMenuItem,
   SidebarRail,
 } from "@/components/ui/sidebar"
-import { GradAidLogo } from "@/assets/GradAidLogo";
 
 const data = {
   versions: ["1.0.1", "1.1.0-alpha", "2.0.0-beta1"],
@@ -111,14 +115,21 @@ const data = {
 }
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+  const navigate = useNavigate();
+  
   return (
     <Sidebar {...props}>
       <SidebarHeader>
         {/* Logo */}
-            <div className="flex items-center justify-center gap-2">
-            <GradAidLogo className="h-8 w-auto" />
-            <span className="text-2xl font-bold text-primary">GradAid</span>
-            </div>
+        <div 
+          className="flex items-center justify-center cursor-pointer" 
+          onClick={() => navigate("/dashboard")}
+        >
+          <GradAidLogo className="h-8 w-auto" />
+          <span className="ml-2 text-2xl font-bold text-primary">
+            GradAid
+          </span>
+        </div>
         {/* <VersionSwitcher
           versions={data.versions}
           defaultVersion={data.versions[0]}

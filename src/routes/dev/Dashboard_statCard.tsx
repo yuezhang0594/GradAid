@@ -206,10 +206,7 @@ export default function Dashboard() {
   const navigate = useNavigate();
 
   return (
-    <SidebarProvider>
-      <AppSidebar />
-      <SidebarInset>
-        <Header />
+    
         <main className="flex-1 flex-col overflow-auto p-4 sm:p-6 lg:p-8">
           {/* Application Progress Stats */}
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -375,10 +372,8 @@ export default function Dashboard() {
             </Card>
           </div>
 
-          {/* Existing ChatBot */}
-          <ChatBot />
+
         </main>
-      </SidebarInset>
-    </SidebarProvider>
+  
   );
 }

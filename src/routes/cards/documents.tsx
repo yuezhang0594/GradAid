@@ -94,10 +94,7 @@ export default function DocumentsPage() {
   };
 
   return (
-    <SidebarProvider>
-      <AppSidebar />
-      <SidebarInset>
-        <Header />
+
         <main className="flex-1 flex-col space-y-8 p-8">
           <div className="flex items-center justify-between space-y-2">
             <div>
@@ -166,9 +163,8 @@ export default function DocumentsPage() {
               </Card>
             ))}
           </div>
-          <ChatBot />
+  
         </main>
-      </SidebarInset>
-    </SidebarProvider>
+
   );
 }

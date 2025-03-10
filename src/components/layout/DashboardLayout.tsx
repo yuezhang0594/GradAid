@@ -1,8 +1,8 @@
-import { Header } from "@/components/layout";
 import { AppSidebar } from "@/components/app-sidebar";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
-import { ChatBot } from "@/components/chatbot";
+import Header from "./Header";
 import { Outlet } from "react-router-dom";
+import { ChatBot } from "@/components/chatbot";
 
 export function DashboardLayout() {
   return (
@@ -10,10 +10,12 @@ export function DashboardLayout() {
       <AppSidebar />
       <SidebarInset>
         <Header />
-        <main className="flex-1 flex-col overflow-auto p-4 sm:p-6 lg:p-8">
+        <div className="flex flex-col min-h-[calc(100vh-4rem)]">
           <Outlet />
-          <ChatBot />
-        </main>
+          <div className="mt-6 mx-4 sm:mx-6 lg:mx-8 mb-4">
+            <ChatBot />
+          </div>
+        </div>
       </SidebarInset>
     </SidebarProvider>
   );
