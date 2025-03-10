@@ -38,12 +38,12 @@ const data = {
       items: [
         {
           title: "Create Profile",
-          url: "/profile",
+          url: "#",
           icon: UserPenIcon,
         },
         {
           title: "Upload Documents",
-          url: "/documents",
+          url: "#",
           icon: FileUpIcon,
         },
       ],
@@ -54,17 +54,17 @@ const data = {
       items: [
         {
           title: "Program Search",
-          url: "/search",
+          url: "#",
           icon: SearchIcon,
         },
         {
           title: "Saved Programs",
-          url: "/saved",
+          url: "#",
           icon: HeartIcon,
         },
         {
           title: "Apply",
-          url: "/apply",
+          url: "#",
           icon: FilePlus2Icon,
         },
       ],
@@ -75,13 +75,13 @@ const data = {
       items: [
         {
           title: "Applications",
-          url: "/applications",
+          url: "#",
           icon: ClipboardListIcon,
           isActive: true,
         },
         {
           title: "Documents",
-          url: "/documents",
+          url: "#",
           icon: FileTextIcon,
         },
       ],
@@ -92,17 +92,17 @@ const data = {
       items: [
         {
           title: "Settings",
-          url: "/settings",
+          url: "#",
           icon: SettingsIcon,
         },
         {
           title: "FAQ",
-          url: "/faq",
+          url: "#",
           icon: InfoIcon,
         },
         {
           title: "Contact Us",
-          url: "/contact",
+          url: "#",
           icon: MessageCircleQuestionIcon,
         },
       ],
