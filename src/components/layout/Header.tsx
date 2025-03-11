@@ -95,7 +95,7 @@ export default function Header() {
             <div className="hidden md:block mr-2 text-sm font-medium">
               {user?.firstName} {user?.lastName}
             </div>
-            <UserButton afterSignOutUrl="/sign-in" />
+            <UserButton afterSignOutUrl="/signout" />
           </div>
         </div>
       </div>
