@@ -37,7 +37,7 @@ export default function TimelinePage() {
   ];
 
   return (
-    <div>
+    <main className="flex-1 flex-col space-y-8 p-8">
       <div className="flex justify-between items-center mb-6">
         <div>
           <h1 className="text-2xl font-bold">Application Timeline</h1>
@@ -111,6 +111,6 @@ export default function TimelinePage() {
           </Card>
         ))}
       </div>
-    </div>
+    </main>
   );
 }

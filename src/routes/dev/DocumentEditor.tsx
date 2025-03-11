@@ -19,9 +19,6 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useState, useCallback } from "react";
-import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
-import { Header } from "@/components/layout";
-import { AppSidebar } from "@/components/app-sidebar";
 
 interface AIFeedback {
   id: string;

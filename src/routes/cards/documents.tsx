@@ -9,10 +9,6 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { PlusCircle } from "lucide-react";
-import { Header } from "@/components/layout";
-import { AppSidebar } from "@/components/app-sidebar";
-import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
-import { ChatBot } from "@/components/chatbot";
 import { useNavigate } from "react-router-dom";
 import { cn } from "@/lib/utils";
 

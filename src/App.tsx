@@ -15,6 +15,7 @@ import ApplicationDetail from "./routes/dev/ApplicationDetail";
 import DocumentEditor from "./routes/dev/DocumentEditor";
 import TimelinePage from "./routes/cards/timeline";
 import CreditsPage from "./routes/cards/credits";
+import ActivityPage from "./routes/cards/activity";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           />
           <Route path="/timeline" element={<TimelinePage />} />
           <Route path="/credits" element={<CreditsPage />} />
+          <Route path="/activity" element={<ActivityPage />} />
         </Route>
       </Routes>
     </>

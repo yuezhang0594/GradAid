@@ -7,166 +7,157 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Progress } from "@/components/ui/progress";
 import {
   SparklesIcon,
-  TrendingUpIcon,
+  BarChart3,
+  Clock,
   CreditCard,
-  History,
+  PlusCircle,
 } from "lucide-react";
 
 export default function CreditsPage() {
-  const creditInfo = {
-    available: 250,
-    used: 750,
-    total: 1000,
-    expiryDate: "2024-06-01",
-    usageHistory: [
-      {
-        date: "2024-03-01",
-        credits: 50,
-        action: "SOP Generation",
-        document: "Stanford MS CS - Statement of Purpose",
-      },
-      {
-        date: "2024-03-02",
-        credits: 30,
-        action: "LOR Review",
-        document: "MIT PhD - Letter of Recommendation",
-      },
-      {
-        date: "2024-03-03",
-        credits: 20,
-        action: "Document Edit",
-        document: "Research Statement Draft",
-      },
-    ],
-    packages: [
-      {
-        name: "Basic",
-        credits: 100,
-        price: 10,
-        features: ["SOP Generation", "Basic Editing"],
-      },
-      {
-        name: "Pro",
-        credits: 500,
-        price: 40,
-        features: ["SOP Generation", "Advanced Editing", "LOR Review"],
-      },
-      {
-        name: "Ultimate",
-        credits: 1000,
-        price: 70,
-        features: ["Unlimited Documents", "Priority Support", "All Features"],
-      },
-    ],
+  const creditStats = {
+    total: 500,
+    used: 250,
+    remaining: 250,
+    nextRefill: "April 1, 2024",
   };
 
+  const usageByType = [
+    {
+      type: "Document Review",
+      used: 100,
+      percentage: 40,
+    },
+    {
+      type: "Essay Feedback",
+      used: 75,
+      percentage: 30,
+    },
+    {
+      type: "Research Help",
+      used: 50,
+      percentage: 20,
+    },
+    {
+      type: "Other",
+      used: 25,
+      percentage: 10,
+    },
+  ];
+
   return (
-    <div>
-      <div className="flex justify-between items-center mb-6">
+    <main className="flex-1 flex-col space-y-8 p-8">
+      <div className="flex items-center justify-between space-y-2">
         <div>
-          <h1 className="text-2xl font-bold">AI Credits</h1>
+          <h2 className="text-2xl font-bold tracking-tight">AI Credits</h2>
           <p className="text-muted-foreground">
-            Manage your AI credit balance and usage
+            Monitor and manage your AI credit usage
           </p>
         </div>
-        <Button>
-          <CreditCard className="mr-2 h-4 w-4" />
-          Purchase Credits
-        </Button>
+        <div className="flex items-center space-x-2">
+          <Button>
+            <PlusCircle className="mr-2 h-4 w-4" />
+            Purchase Credits
+          </Button>
+        </div>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <SparklesIcon className="h-5 w-5" />
+          <CardHeader className="flex flex-row items-center justify-between pb-2">
+            <CardTitle className="text-sm font-medium">
               Available Credits
             </CardTitle>
+            <SparklesIcon className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="space-y-4">
-              <div className="text-3xl font-bold">{creditInfo.available}</div>
-              <div className="h-2 rounded-full bg-secondary">
-                <div
-                  className="h-full rounded-full bg-primary transition-all duration-300 ease-in-out"
-                  style={{
-                    width: `${(creditInfo.used / creditInfo.total) * 100}%`,
-                  }}
-                />
-              </div>
-              <p className="text-sm text-muted-foreground">
-                {creditInfo.used} of {creditInfo.total} credits used
-              </p>
-              <p className="text-sm text-muted-foreground">
-                Expires: {new Date(creditInfo.expiryDate).toLocaleDateString()}
-              </p>
-            </div>
+            <div className="text-2xl font-bold">{creditStats.remaining}</div>
+            <p className="text-xs text-muted-foreground">
+              of {creditStats.total} total credits
+            </p>
+            <Progress
+              value={(creditStats.remaining / creditStats.total) * 100}
+              className="mt-3"
+            />
           </CardContent>
         </Card>
 
         <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <History className="h-5 w-5" />
-              Recent Activity
+          <CardHeader className="flex flex-row items-center justify-between pb-2">
+            <CardTitle className="text-sm font-medium">
+              Credits Used
             </CardTitle>
+            <BarChart3 className="h-4 w-4 text-muted-foreground" />
+          </CardHeader>
+          <CardContent>
+            <div className="text-2xl font-bold">{creditStats.used}</div>
+            <p className="text-xs text-muted-foreground">
+              {((creditStats.used / creditStats.total) * 100).toFixed(0)}% of total credits
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between pb-2">
+            <CardTitle className="text-sm font-medium">
+              Next Refill
+            </CardTitle>
+            <Clock className="h-4 w-4 text-muted-foreground" />
+          </CardHeader>
+          <CardContent>
+            <div className="text-2xl font-bold">{creditStats.nextRefill}</div>
+            <p className="text-xs text-muted-foreground">
+              Monthly credit refresh
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between pb-2">
+            <CardTitle className="text-sm font-medium">
+              Subscription
+            </CardTitle>
+            <CreditCard className="h-4 w-4 text-muted-foreground" />
+          </CardHeader>
+          <CardContent>
+            <div className="text-2xl font-bold">Pro Plan</div>
+            <p className="text-xs text-muted-foreground">
+              500 credits/month
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+
+      <div className="grid gap-4">
+        <Card>
+          <CardHeader>
+            <CardTitle>Usage by Type</CardTitle>
+            <CardDescription>
+              Breakdown of credit usage by activity
+            </CardDescription>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
-              {creditInfo.usageHistory.map((item, index) => (
-                <div
-                  key={index}
-                  className="flex justify-between items-start border-b pb-2 last:border-0"
-                >
-                  <div>
-                    <p className="font-medium">{item.action}</p>
-                    <p className="text-sm text-muted-foreground">
-                      {item.document}
-                    </p>
-                    <p className="text-xs text-muted-foreground">
-                      {new Date(item.date).toLocaleDateString()}
-                    </p>
+              {usageByType.map((usage, index) => (
+                <div key={index} className="space-y-2">
+                  <div className="flex justify-between text-sm">
+                    <span className="flex items-center">
+                      <Badge variant="secondary" className="mr-2">
+                        {usage.used} credits
+                      </Badge>
+                      {usage.type}
+                    </span>
+                    <span>{usage.percentage}%</span>
                   </div>
-                  <Badge variant="secondary">{item.credits} credits</Badge>
+                  <Progress value={usage.percentage} />
                 </div>
               ))}
             </div>
           </CardContent>
         </Card>
-
-        <div className="md:col-span-2">
-          <h2 className="text-xl font-semibold mb-4">Credit Packages</h2>
-          <div className="grid gap-4 md:grid-cols-3">
-            {creditInfo.packages.map((pkg, index) => (
-              <Card key={index}>
-                <CardHeader>
-                  <CardTitle>{pkg.name}</CardTitle>
-                  <CardDescription>{pkg.credits} Credits</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <p className="text-2xl font-bold">${pkg.price}</p>
-                    <ul className="space-y-2">
-                      {pkg.features.map((feature, idx) => (
-                        <li
-                          key={idx}
-                          className="text-sm flex items-center gap-2"
-                        >
-                          <SparklesIcon className="h-4 w-4 text-primary" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                    <Button className="w-full">Purchase</Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
       </div>
-    </div>
+    </main>
   );
 }

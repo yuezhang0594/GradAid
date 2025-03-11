@@ -26,10 +26,6 @@ import {
   BellIcon,
   TargetIcon,
 } from "lucide-react";
-import { Header } from "@/components/layout";
-import { AppSidebar } from "@/components/app-sidebar";
-import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
-import { ChatBot } from "@/components/chatbot";
 
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
@@ -68,7 +64,7 @@ const applicationStats = [
     description: "50% remaining this month",
     action: {
       label: "View usage",
-      href: "/ai-usage",
+      href: "/credits",
       tooltip: "Monitor your AI credit usage",
     },
   },
