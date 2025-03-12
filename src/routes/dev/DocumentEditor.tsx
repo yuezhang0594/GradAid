@@ -188,15 +188,15 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ScrollArea className="h-[300px] pr-4">
-                    <div className="space-y-4">
+                  <ScrollArea className="h-[300px] w-full max-w-[600px] p-4">
+                    <div className="space-y-4 min-w-[100px]">
                       {document.aiFeedback.map((feedback) => (
                         <div
                           key={feedback.id}
-                          className="p-3 rounded-lg bg-muted/50 space-y-2"
+                          className="p-4 rounded-lg bg-muted/50 space-y-3"
                         >
                           <div className="flex justify-between items-center">
-                            <Badge variant="outline" className="text-xs">
+                            <Badge variant="outline" className="text-xs px-2 py-1">
                               {feedback.section}
                             </Badge>
                             <Badge
@@ -207,18 +207,18 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
                                   ? "destructive"
                                   : "secondary"
                               }
-                              className="text-xs"
+                              className="text-xs px-2 py-1"
                             >
                               {feedback.status}
                             </Badge>
                           </div>
-                          <p className="text-sm">{feedback.content}</p>
+                          <p className="text-sm leading-relaxed">{feedback.content}</p>
                           {feedback.status === "pending" && (
-                            <div className="flex gap-2">
-                              <Button variant="outline" size="sm" className="w-full">
+                            <div className="flex gap-3 pt-1">
+                              <Button variant="outline" size="sm" className="flex-1 h-8">
                                 Reject
                               </Button>
-                              <Button size="sm" className="w-full">
+                              <Button size="sm" className="flex-1 h-8">
                                 Accept
                               </Button>
                             </div>
