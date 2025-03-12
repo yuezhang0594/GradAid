@@ -33,13 +33,8 @@ export const searchUniversities = query({
       universitiesQuery = ctx.db.query("universities").withSearchIndex("search_name", (q) => 
         q.search("name", searchQuery)
       );
-    } else if (filters.location && filters.location !== "all") {
-      // If we have a location filter without search, use the location index
-      universitiesQuery = ctx.db.query("universities").withIndex("by_country", (q) => 
-        q.eq("location.country", filters.location as string)
-      );
     } else {
-      // Default query with no special index
+      // Default query with no special index - we'll apply location filter after fetching
       universitiesQuery = ctx.db.query("universities");
     }
     
@@ -59,8 +54,22 @@ export const searchUniversities = query({
     // Step 3: Fetch paginated results
     const paginationResult = await universitiesQuery.paginate(paginationOpts);
     
-    // Step 4: Apply program-specific filters
-    const filteredUniversities = paginationResult.page
+    // Step 4: Apply client-side filtering for location and programs
+    let filteredUniversities = paginationResult.page;
+    
+    // Apply location filter if specified (city, state format)
+    if (filters.location && filters.location !== "all") {
+      // Split the "city, state" format into components
+      const [filterCity, filterState] = filters.location.split(", ");
+      
+      filteredUniversities = filteredUniversities.filter(university => 
+        university.location?.city === filterCity && 
+        university.location?.state === filterState
+      );
+    }
+    
+    // Apply program filters
+    filteredUniversities = filteredUniversities
       .map(university => {
         // Apply program filters if needed
         if (!hasProgramFilters(filters)) {
@@ -126,7 +135,7 @@ function isProgramMatchingFilters(program: any, filters: any): boolean {
   
   // Minimum GPA filter
   if (filters.minimumGPA !== undefined && 
-      program.requirements.minimumGPA > filters.minimumGPA) {
+      program.requirements.minimumGPA < filters.minimumGPA) {
     return false;
   }
   
@@ -154,3 +163,44 @@ export const getUniqueLocations = query({
       return Array.from(locations).sort();
     },
   });
+
+/**
+ * Get a list of unique degree types from all university programs
+ */
+export const getUniqueDegreeTypes = query({
+  args: {},
+  returns: v.array(v.object({ value: v.string(), label: v.string() })),
+  handler: async (ctx) => {
+    const universities = await ctx.db.query("universities").collect();
+    
+    // Extract all unique degree types
+    const degreeTypes = new Set<string>();
+    universities.forEach(university => {
+      university.programs.forEach(program => {
+        if (program.degree) {
+          degreeTypes.add(program.degree);
+        }
+      });
+    });
+    
+    // Map degree codes to readable labels
+    const degreeLabels: Record<string, string> = {
+      'MS': 'Master of Science (MS)',
+      'MA': 'Master of Arts (MA)',
+      'PhD': 'Doctor of Philosophy (PhD)',
+      'MBA': 'Master of Business Admin (MBA)',
+      'MFA': 'Master of Fine Arts (MFA)',
+      'MEng': 'Master of Engineering (MEng)',
+      'MCS': 'Master of Computer Science (MCS)',
+      'MSE': 'Master of Science in Engineering (MSE)',
+      'MFin': 'Master in Finance (MFin)',
+      // Add other degree types as needed
+    };
+    
+    // Convert to array of objects with value and label
+    return Array.from(degreeTypes).map(degreeType => ({
+      value: degreeType,
+      label: degreeLabels[degreeType] || degreeType
+    })).sort((a, b) => a.label.localeCompare(b.label));
+  },
+});

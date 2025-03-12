@@ -7,7 +7,7 @@ import { useQuery } from 'convex/react';
 
 interface ProgramSearchProps {
   onSearch: (query: string) => void;
-  onFilterChange: (filters: UniversityFilters) => void;
+  onFilterChange: (filters: UniversityFilters, filterType?: string) => void;
   initialFilters?: Partial<UniversityFilters>;
   initialQuery?: string;
 }
@@ -23,6 +23,9 @@ const ProgramSearch: React.FC<ProgramSearchProps> = ({
   
   // Get unique locations from the database for the location filter
   const uniqueLocations = useQuery(api.universities.search.getUniqueLocations) || [];
+  
+  // Get unique degree types from the database for the program type filter
+  const uniqueDegreeTypes = useQuery(api.universities.search.getUniqueDegreeTypes) || [];
 
   // Trigger search when query changes
   useEffect(() => {
@@ -30,9 +33,9 @@ const ProgramSearch: React.FC<ProgramSearchProps> = ({
   }, [searchQuery, onSearch]);
 
   // Update filters and notify parent component
-  const handleFilterChange = (newFilters: UniversityFilters) => {
+  const handleFilterChange = (newFilters: UniversityFilters, filterType?: string) => {
     setFilters(newFilters);
-    onFilterChange(newFilters);
+    onFilterChange(newFilters, filterType);
   };
 
   return (
@@ -47,6 +50,7 @@ const ProgramSearch: React.FC<ProgramSearchProps> = ({
         filters={filters} 
         onChange={handleFilterChange}
         locations={uniqueLocations}
+        degreeTypes={uniqueDegreeTypes}
       />
     </div>
   );

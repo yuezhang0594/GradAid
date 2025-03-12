@@ -2,14 +2,10 @@ import { useState, useCallback } from 'react';
 import { api } from '../../convex/_generated/api';
 import { useQuery, useMutation } from 'convex/react';
 import { useUser } from '@clerk/clerk-react'
-import { Id } from '../../convex/_generated/dataModel';
+import { Id, Doc } from '../../convex/_generated/dataModel';
 
-// Define the proper University type
-interface University {
-    _id: Id<"universities">;
-    name: string;
-    // Add any other properties your university has
-}
+// Use Convex's generated type
+type University = Doc<"universities"> & { _id: Id<"universities"> };
 
 // Define the filter interface to match the API
 export interface UniversityFilters {
