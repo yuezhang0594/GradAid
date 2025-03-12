@@ -16,6 +16,7 @@ import DocumentEditor from "./routes/dev/DocumentEditor";
 import TimelinePage from "./routes/cards/timeline";
 import CreditsPage from "./routes/cards/credits";
 import ActivityPage from "./routes/cards/activity";
+import UniversitySearchPage from "./routes/UniversitySearchPage";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         {/* Protected Routes */}
         <Route element={<ProtectedRoute><DashboardLayout /></ProtectedRoute>}>
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/universities" element={<UniversitySearchPage />} />
           <Route path="/applications" element={<ApplicationsPage />} />
           <Route path="/documents" element={<DocumentsPage />} />
           <Route path="/applications/:universityId" element={<ApplicationDetail />} />

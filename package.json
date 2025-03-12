@@ -9,7 +9,8 @@
     "dev:backend": "npx convex dev",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predev": "convex dev --run init --until-success"
   },
   "dependencies": {
     "@auth/core": "^0.37.0",
