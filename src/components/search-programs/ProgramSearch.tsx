@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import SearchField from './SearchField';
 import FilterPanel from './FilterPanel';
-import { UniversityFilters, DEFAULT_FILTERS } from '../../hooks/useUniversities';
+import { ProgramSearchFilters, DEFAULT_FILTERS } from '../../hooks/useProgramSearch';
 import { api } from '../../../convex/_generated/api';
 import { useQuery } from 'convex/react';
 
 interface ProgramSearchProps {
   onSearch: (query: string) => void;
-  onFilterChange: (filters: UniversityFilters, filterType?: string) => void;
-  initialFilters?: Partial<UniversityFilters>;
+  onFilterChange: (filters: ProgramSearchFilters, filterType?: string) => void;
+  initialFilters?: Partial<ProgramSearchFilters>;
   initialQuery?: string;
 }
 
@@ -19,13 +19,13 @@ const ProgramSearch: React.FC<ProgramSearchProps> = ({
   initialQuery = '',
 }) => {
   const [searchQuery, setSearchQuery] = useState(initialQuery);
-  const [filters, setFilters] = useState<UniversityFilters>({...DEFAULT_FILTERS, ...initialFilters});
+  const [filters, setFilters] = useState<ProgramSearchFilters>({...DEFAULT_FILTERS, ...initialFilters});
   
   // Get unique locations from the database for the location filter
-  const uniqueLocations = useQuery(api.universities.search.getUniqueLocations) || [];
+  const uniqueLocations = useQuery(api.programs.search.getUniqueLocations) || [];
   
   // Get unique degree types from the database for the program type filter
-  const uniqueDegreeTypes = useQuery(api.universities.search.getUniqueDegreeTypes) || [];
+  const uniqueDegreeTypes = useQuery(api.programs.search.getUniqueDegreeTypes) || [];
 
   // Trigger search when query changes
   useEffect(() => {
@@ -33,7 +33,7 @@ const ProgramSearch: React.FC<ProgramSearchProps> = ({
   }, [searchQuery, onSearch]);
 
   // Update filters and notify parent component
-  const handleFilterChange = (newFilters: UniversityFilters, filterType?: string) => {
+  const handleFilterChange = (newFilters: ProgramSearchFilters, filterType?: string) => {
     setFilters(newFilters);
     onFilterChange(newFilters, filterType);
   };

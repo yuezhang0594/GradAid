@@ -14,9 +14,11 @@ import type {
   FunctionReference,
 } from "convex/server";
 import type * as init from "../init.js";
+import type * as profile from "../profile.js";
+import type * as programs_favorites from "../programs/favorites.js";
+import type * as programs_search from "../programs/search.js";
 import type * as resend from "../resend.js";
-import type * as universities_favorites from "../universities/favorites.js";
-import type * as universities_search from "../universities/search.js";
+import type * as validators from "../validators.js";
 
 /**
  * A utility for referencing Convex functions in your app's API.
@@ -28,9 +30,11 @@ import type * as universities_search from "../universities/search.js";
  */
 declare const fullApi: ApiFromModules<{
   init: typeof init;
+  profile: typeof profile;
+  "programs/favorites": typeof programs_favorites;
+  "programs/search": typeof programs_search;
   resend: typeof resend;
-  "universities/favorites": typeof universities_favorites;
-  "universities/search": typeof universities_search;
+  validators: typeof validators;
 }>;
 export declare const api: FilterApi<
   typeof fullApi,

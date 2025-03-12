@@ -1,5 +1,6 @@
-import React, { useState, useCallback, useRef } from 'react';
-import { useUniversities } from '../hooks/useUniversities';
+import React, { useState, useCallback, useRef, useMemo } from 'react';
+import { useProgramSearch } from '../hooks/useProgramSearch';
+import { useFavorites } from '../hooks/useFavorites';
 import ProgramSearch from '../components/search-programs/ProgramSearch';
 import UniversityCard from '../components/search-programs/UniversityCard';
 import { Id } from 'convex/_generated/dataModel';
@@ -15,13 +16,36 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import { useQuery } from 'convex/react';
+import { api } from '../../convex/_generated/api';
 
 const FILTER_DELAY = 500; // delay for filtering to smooth UX
 const ITEMS_PER_PAGE = 5; // Define how many items per page for pagination
 
+/**
+ * UniversitySearchPage Component
+ * 
+ * Renders a searchable and filterable page for graduate programs across universities.
+ * 
+ * Features:
+ * - Advanced search functionality with filters
+ * - Pagination with dynamic page loading
+ * - Favorite/save program functionality for authenticated users
+ * - Responsive layout with loading states
+ * 
+ * The component uses custom hooks:
+ * - useUniversities: Manages university data, filtering, and pagination
+ * - useFavorites: Handles saving/favoriting functionality
+ * 
+ * State management:
+ * - Manages search query and filters with debouncing for slider filters
+ * - Tracks pagination state and loading states
+ * - Handles scroll position when changing pages
+ * 
+ * @returns React component displaying the university search interface with results
+ */
 const UniversitySearchPage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState<string>('');
-  const [favoriteIds, setFavoriteIds] = useState<Map<string, Set<string>>>(new Map());
   const filterTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [isLoadingPage, setIsLoadingPage] = useState(false);
@@ -29,14 +53,49 @@ const UniversitySearchPage: React.FC = () => {
   // Use the universities hook for fetching and filtering data
   const {
     universities,
+    programIds,
     filters,
     updateFilters,
     loadMore,
-    toggleFavorite,
     status,
     loading,
     hasMore
-  } = useUniversities(searchQuery);
+  } = useProgramSearch(searchQuery);
+
+  // Get the actual program objects for the programIds
+  const programs = useQuery(api.programs.search.getProgramsByIds, { 
+    programIds: programIds || [] 
+  }) || [];
+
+  // Use the favorites hook to manage favorite programs
+  const { 
+    toggleFavorite,
+    isFavorite,
+    favoritesLoading,
+  } = useFavorites();
+
+  // Map programs to their corresponding universities
+  const universitiesWithFilteredPrograms = useMemo(() => {
+    const programsByUniversityId = programs.reduce((acc, program) => {
+      if (!program.universityId) return acc;
+      
+      if (!acc[program.universityId]) {
+        acc[program.universityId] = [];
+      }
+      acc[program.universityId].push(program);
+      return acc;
+    }, {} as Record<string, any[]>);
+
+    // Filter universities to only those with programs from our search
+    const filteredUniversities = universities
+      .filter(university => programsByUniversityId[university._id])
+      .map(university => ({
+        ...university,
+        filteredPrograms: programsByUniversityId[university._id] || []
+      }));
+
+    return filteredUniversities;
+  }, [universities, programs]);
 
   // Handle search query changes
   const handleSearch = useCallback((query: string) => {
@@ -47,7 +106,6 @@ const UniversitySearchPage: React.FC = () => {
 
   // Create a delayed filter handler
   const handleFilterChange = useCallback((newFilters: any, filterType?: string) => {
-    // Clear any pending timeout
     if (filterTimeoutRef.current) {
       clearTimeout(filterTimeoutRef.current);
     }
@@ -60,11 +118,9 @@ const UniversitySearchPage: React.FC = () => {
         filterTimeoutRef.current = null;
       }, FILTER_DELAY);
     } else {
-      // Apply other filter changes immediately
       updateFilters(newFilters);
     }
     
-    // Reset to first page when filters change
     setCurrentPage(1);
   }, [updateFilters]);
 
@@ -77,56 +133,21 @@ const UniversitySearchPage: React.FC = () => {
     };
   }, []);
 
-  // Handle saving/favoriting a university or program
-  const handleSave = useCallback((universityId: string, programId?: string) => {
-    toggleFavorite(universityId as Id<"universities">);
-
-    // Update local favorite state for immediate UI feedback
-    setFavoriteIds(prev => {
-      const newMap = new Map(prev);
-
-      if (!newMap.has(universityId)) {
-        newMap.set(universityId, new Set());
-      }
-
-      const programSet = newMap.get(universityId)!;
-
-      if (programId) {
-        if (programSet.has(programId)) {
-          programSet.delete(programId);
-        } else {
-          programSet.add(programId);
-        }
-      } else {
-        // If just the university is being toggled
-        if (programSet.size > 0) {
-          newMap.delete(universityId);
-        } else {
-          newMap.set(universityId, new Set());
-        }
-      }
-
-      return newMap;
-    });
+  // Handle saving/favoriting a program
+  const handleSave = useCallback(async (programId: string) => {
+    // The toggleFavorite function now handles user authentication internally
+    await toggleFavorite(programId as Id<"programs">);
   }, [toggleFavorite]);
 
-  // Check if a university or program is favorited
-  const isFavorite = useCallback((universityId: string, programId?: string) => {
-    if (!favoriteIds.has(universityId)) return false;
-    if (programId) {
-      return favoriteIds.get(universityId)?.has(programId) || false;
-    }
-    return true;
-  }, [favoriteIds]);
-
-  // Calculate total number of pages based on loaded universities and hasMore
-  const totalPages = hasMore ? Math.floor(universities.length / ITEMS_PER_PAGE) + 1 : Math.max(1, Math.ceil(universities.length / ITEMS_PER_PAGE));
+  // Calculate total number of pages
+  const totalPages = hasMore ? 
+    Math.floor(universitiesWithFilteredPrograms.length / ITEMS_PER_PAGE) + 1 : 
+    Math.max(1, Math.ceil(universitiesWithFilteredPrograms.length / ITEMS_PER_PAGE));
 
   // Handle page change from pagination
   const handlePageChange = async (page: number) => {
-    const maxLoadedPage = Math.ceil(universities.length / ITEMS_PER_PAGE);
+    const maxLoadedPage = Math.ceil(universitiesWithFilteredPrograms.length / ITEMS_PER_PAGE);
     
-    // If requesting a page beyond currently loaded data and more data is available
     if (page > maxLoadedPage && hasMore) {
       setIsLoadingPage(true);
       await loadMore();
@@ -135,7 +156,6 @@ const UniversitySearchPage: React.FC = () => {
     
     setCurrentPage(page);
     
-    // Scroll to top of results
     window.scrollTo({
       top: document.getElementById('results-section')?.offsetTop || 0,
       behavior: 'smooth'
@@ -146,7 +166,7 @@ const UniversitySearchPage: React.FC = () => {
   const getCurrentPageUniversities = () => {
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
     const endIndex = startIndex + ITEMS_PER_PAGE;
-    return universities.slice(startIndex, endIndex);
+    return universitiesWithFilteredPrograms.slice(startIndex, endIndex);
   };
 
   const currentUniversities = getCurrentPageUniversities();
@@ -155,10 +175,8 @@ const UniversitySearchPage: React.FC = () => {
   const getPageNumbers = () => {
     const pageNumbers = [];
     
-    // Always show first page
     pageNumbers.push(1);
     
-    // Show pages around current page
     const rangeStart = Math.max(2, currentPage - 1);
     const rangeEnd = Math.min(totalPages - 1, currentPage + 1);
     
@@ -174,7 +192,6 @@ const UniversitySearchPage: React.FC = () => {
       pageNumbers.push('ellipsis-end');
     }
     
-    // Always show last page if there are multiple pages
     if (totalPages > 1) {
       pageNumbers.push(totalPages);
     }
@@ -205,7 +222,7 @@ const UniversitySearchPage: React.FC = () => {
 
       {/* Results section */}
       <section id="results-section">
-        {(loading && status === "LoadingFirstPage") || isLoadingPage ? (
+        {(loading && status === "LoadingFirstPage") || isLoadingPage || favoritesLoading ? (
           <div className="flex justify-center py-12">
             <div className="space-y-4 w-full">
               <Skeleton className="h-12 w-full" />
@@ -213,7 +230,7 @@ const UniversitySearchPage: React.FC = () => {
               <Skeleton className="h-[300px] w-full" />
             </div>
           </div>
-        ) : universities.length === 0 ? (
+        ) : universitiesWithFilteredPrograms.length === 0 ? (
           <Card className="text-center py-16">
             <CardContent className="pt-10">
               <h3 className="text-xl font-medium text-gray-700 mb-2">No programs found</h3>
@@ -225,9 +242,9 @@ const UniversitySearchPage: React.FC = () => {
         ) : (
           <>
             <div className="mb-4 flex justify-between items-center">
-                <p className="text-muted-foreground">
-                {universities.reduce((count, university) => count + (university.programs?.length || 0), 0)} results found
-                </p>
+              <p className="text-muted-foreground">
+                {programs.length} programs found across {universitiesWithFilteredPrograms.length} universities
+              </p>
               <p className="text-sm text-muted-foreground">
                 Page {currentPage} of {totalPages}
               </p>
@@ -236,11 +253,12 @@ const UniversitySearchPage: React.FC = () => {
             <div className="grid grid-cols-1 gap-6">
               {currentUniversities.map(university => (
                 <UniversityCard
-                  key={university._id}
-                  university={university}
-                  onSave={handleSave}
-                  isFavorite={isFavorite}
-                />
+                    key={university._id}
+                    university={university}
+                    programs={university.filteredPrograms}
+                    onSave={handleSave}
+                    isFavorite={(_, programId) => isFavorite(programId as Id<"programs">)}
+                  />
               ))}
             </div>
 

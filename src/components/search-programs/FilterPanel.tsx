@@ -1,5 +1,5 @@
 import React from 'react';
-import { UniversityFilters } from '../../hooks/useUniversities';
+import { ProgramSearchFilters } from '../../hooks/useProgramSearch';
 import { formatLocation } from "../../lib/formatLocation";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -9,8 +9,8 @@ import { Label } from "@/components/ui/label";
 import { RefreshCw } from "lucide-react";
 
 interface FilterPanelProps {
-  filters: UniversityFilters;
-  onChange: (filters: UniversityFilters, filterType?: string) => void;
+  filters: ProgramSearchFilters;
+  onChange: (filters: ProgramSearchFilters, filterType?: string) => void;
   locations?: string[];
   degreeTypes?: Array<{ value: string; label: string }>;
 }
@@ -21,12 +21,12 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
   locations = [],
   degreeTypes = []
 }) => {
-  const handleFilterChange = (key: keyof UniversityFilters, value: any, filterType: string = 'default') => {
+  const handleFilterChange = (key: keyof ProgramSearchFilters, value: any, filterType: string = 'default') => {
     onChange({ ...filters, [key]: value }, filterType);
   };
 
   // Default filter values to reset to
-  const defaultFilters: UniversityFilters = {
+  const defaultFilters: ProgramSearchFilters = {
     programType: 'all',
     location: 'all',
     ranking: 'all',

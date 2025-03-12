@@ -1,73 +1,53 @@
 import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
+import { educationValidator, workExperienceValidator, publicationValidator, researchExperienceValidator } from './validators';
 
 const schema = defineSchema({
+
+  // Do not alter users table. It is set by Clerk.
+  users: defineTable({
+    email: v.string(),
+    emailVerificationTime: v.float64(),
+    image: v.string(),
+    name: v.string(),
+  }),
+
+  profiles: defineTable({
+    userId: v.id("users"),
+    // User profile fields for document generation
+    description: v.optional(v.string()),
+    websiteUrl: v.optional(v.string()),
+    githubUrl: v.optional(v.string()),
+    linkedInUrl: v.optional(v.string()),
+    profileComplete: v.boolean(),
+
+    // Education details
+    education: v.optional(v.array(educationValidator)),
+
+    // Work experience details
+    workExperience: v.optional(v.array(workExperienceValidator)),
+
+    // Academic achievements
+    achievements: v.optional(v.array(v.string())),
+
+    // Research experience
+    researchExperience: v.optional(v.array(researchExperienceValidator)),
+
+    // Skills and career goals
+    skills: v.optional(v.array(v.string())),
+    careerGoals: v.optional(v.string()),
+  })
+    .index("by_user", ["userId"]),
+
   universities: defineTable({
     name: v.string(),
     location: v.object({
       city: v.string(),
       state: v.string(),
       country: v.string(),
-      region: v.optional(v.string()),
     }),
-    programs: v.array(
-      v.object({
-        id: v.string(),
-        name: v.string(),
-        degree: v.string(),
-        department: v.string(),
-        requirements: v.object({
-          gre: v.boolean(),
-          greRequired: v.optional(v.boolean()),
-          grePreferred: v.optional(v.boolean()),
-          greWaiver: v.optional(v.boolean()),
-          toefl: v.boolean(),
-          toeflMinimum: v.optional(v.number()),
-          ielts: v.optional(v.boolean()),
-          ieltsMinimum: v.optional(v.number()),
-          minimumGPA: v.number(),
-          applicationFee: v.number(),
-          recommendationLetters: v.number(),
-          statementRequired: v.boolean(),
-          cvRequired: v.boolean(),
-          writingSampleRequired: v.optional(v.boolean()),
-          portfolioRequired: v.optional(v.boolean()),
-          interviewRequired: v.optional(v.boolean()),
-        }),
-        deadlines: v.object({
-          fall: v.union(v.string(), v.null()),
-          spring: v.union(v.string(), v.null()),
-          summer: v.union(v.string(), v.null()),
-          priority: v.optional(v.union(v.string(), v.null())),
-          funding: v.optional(v.union(v.string(), v.null())),
-        }),
-        acceptanceRate: v.optional(v.number()),
-        tuition: v.optional(v.number()),
-        duration: v.optional(v.string()),
-        website: v.optional(v.string()),
-        facultyStrengths: v.optional(v.array(v.string())),
-        researchAreas: v.optional(v.array(v.string())),
-      })
-    ),
     ranking: v.optional(v.number()),
     website: v.string(),
-    description: v.optional(v.string()),
-    admissionStats: v.optional(
-      v.object({
-        applicants: v.optional(v.number()),
-        admitted: v.optional(v.number()),
-        enrolled: v.optional(v.number()),
-        acceptanceRate: v.optional(v.number()),
-        averageGPA: v.optional(v.number()),
-        averageGRE: v.optional(
-          v.object({
-            verbal: v.optional(v.number()),
-            quantitative: v.optional(v.number()),
-            analytical: v.optional(v.number()),
-          })
-        ),
-      })
-    ),
     imageUrl: v.optional(v.string()),
   })
     .index("by_name", ["name"])
@@ -78,14 +58,37 @@ const schema = defineSchema({
       filterFields: ["location.country", "ranking"],
     }),
 
+  programs: defineTable({
+    universityId: v.id("universities"),
+    name: v.string(),
+    degree: v.string(),
+    department: v.string(),
+    requirements: v.object({
+      minimumGPA: v.optional(v.number()),
+      gre: v.optional(v.boolean()),
+      toefl: v.optional(v.boolean()),
+      recommendationLetters: v.optional(v.number()),
+    }),
+    deadlines: v.object({
+      fall: v.optional(v.string()),
+      spring: v.optional(v.string()),
+    }),
+    website: v.optional(v.string()),
+  })
+    .index("by_university", ["universityId"])
+    .index("by_degree", ["degree"])
+    .searchIndex("search_programs", {
+      searchField: "name",
+      filterFields: ["universityId", "degree"],
+    }),
+
   favorites: defineTable({
     userId: v.string(),
-    universityId: v.id("universities"),
-    programId: v.union(v.string(), v.null()),
+    programId: v.id("programs"),
     createdAt: v.string(),
   })
     .index("by_user", ["userId"])
-    .index("by_user_and_university", ["userId", "universityId"]),
+    .index("by_program", ["programId"]),
 });
 
 export default schema;

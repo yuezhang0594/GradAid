@@ -3,15 +3,62 @@ import { Heart, ChevronDown, ChevronUp, ExternalLink, Calendar, DollarSign, Awar
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Id, Doc } from 'convex/_generated/dataModel';
+
+// Define the Program type based on the schema
+type Program = {
+  id: string;
+  name: string;
+  degree: string;
+  department: string;
+  requirements: {
+    gre: boolean;
+    greRequired?: boolean;
+    grePreferred?: boolean;
+    greWaiver?: boolean;
+    toefl: boolean;
+    toeflMinimum?: number;
+    ielts?: boolean;
+    ieltsMinimum?: number;
+    minimumGPA: number;
+    applicationFee: number;
+    recommendationLetters: number;
+    statementRequired: boolean;
+    cvRequired: boolean;
+    writingSampleRequired?: boolean;
+    portfolioRequired?: boolean;
+    interviewRequired?: boolean;
+  };
+  deadlines: {
+    fall: string | null;
+    spring: string | null;
+    summer: string | null;
+    priority?: string | null;
+    funding?: string | null;
+  };
+  acceptanceRate?: number;
+  tuition?: number;
+  duration?: string;
+  website?: string;
+  facultyStrengths?: string[];
+  researchAreas?: string[];
+};
+
+// Define the University type based on the schema
+type University = Doc<"universities"> & {
+  programs?: Program[];
+};
 
 interface UniversityCardProps {
-  university: any;
-  onSave: (universityId: string, programId?: string) => void;
-  isFavorite: (universityId: string, programId?: string) => boolean;
+  university: University;
+  programs: any[]; // Use the programs passed from parent
+  onSave: (universityId: Id<"universities">, programId: string) => void;
+  isFavorite: (universityId: Id<"universities">, programId: string) => boolean;
 }
 
 const UniversityCard: React.FC<UniversityCardProps> = ({
   university,
+  programs,
   onSave,
   isFavorite
 }) => {
@@ -49,39 +96,29 @@ const UniversityCard: React.FC<UniversityCardProps> = ({
                 Rank #{university.ranking}
               </Badge>
             )}
-            <Button
-              onClick={() => onSave(university._id)}
-              variant="ghost"
-              size="icon"
-              className={isFavorite(university._id) ? "text-red-500" : "text-gray-400"}
-            >
-              <Heart className="h-5 w-5" fill={isFavorite(university._id) ? "currentColor" : "none"} />
-            </Button>
           </div>
         </div>
       </CardHeader>
 
       {/* Programs List */}
       <CardContent className="pt-2">
-        <h4 className="text-sm font-medium text-gray-700 mb-2">Programs ({university.programs.length})</h4>
-
         <div className="space-y-2">
-          {university.programs.slice(0, expanded ? undefined : 2).map((program: any) => (
-            <div key={program.id} className="border rounded-md p-3 bg-slate-50">
+          {programs.slice(0, expanded ? undefined : 2).map((program) => (
+            <div key={program._id} className="border rounded-md p-3 bg-slate-50">
               <div className="flex justify-between items-start">
                 <div>
                   <h5 className="font-medium">{program.degree} in {program.name}</h5>
                   <p className="text-sm text-gray-600">{program.department}</p>
                 </div>
                 <Button
-                  onClick={() => onSave(university._id, program.id)}
+                  onClick={() => onSave(university._id, program._id)}
                   variant="ghost"
                   size="icon"
-                  className={isFavorite(university._id, program.id) ? "text-red-500 h-8 w-8" : "text-gray-400 h-8 w-8"}
+                  className={isFavorite(university._id, program._id) ? "text-red-500 h-8 w-8" : "text-gray-400 h-8 w-8"}
                 >
                   <Heart
                     className="h-4 w-4"
-                    fill={isFavorite(university._id, program.id) ? "currentColor" : "none"}
+                    fill={isFavorite(university._id, program._id) ? "currentColor" : "none"}
                   />
                 </Button>
               </div>
@@ -127,7 +164,7 @@ const UniversityCard: React.FC<UniversityCardProps> = ({
         </div>
 
         {/* Show more/less toggle */}
-        {university.programs.length > 2 && (
+        {programs.length > 2 && (
           <Button
             variant="ghost"
             className="w-full mt-2 text-sm justify-center"
@@ -136,7 +173,7 @@ const UniversityCard: React.FC<UniversityCardProps> = ({
             {expanded ? (
               <>Show Less <ChevronUp className="ml-1 h-4 w-4" /></>
             ) : (
-              <>Show {university.programs.length - 2} More <ChevronDown className="ml-1 h-4 w-4" /></>
+              <>Show {programs.length - 2} More <ChevronDown className="ml-1 h-4 w-4" /></>
             )}
           </Button>
         )}
