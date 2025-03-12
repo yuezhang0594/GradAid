@@ -2,7 +2,7 @@ import { useState, useCallback } from 'react';
 import { api } from '../../convex/_generated/api';
 import { useQuery, useMutation } from 'convex/react';
 import { useUser } from '@clerk/clerk-react'
-import { Id } from 'convex/_generated/dataModel';
+import { Id } from '../../convex/_generated/dataModel';
 
 // Define the proper University type
 interface University {

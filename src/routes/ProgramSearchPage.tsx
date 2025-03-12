@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { useUniversities } from '../hooks/useUniversities';
-import UniversitySearch from '../components/universities/UniversitySearch';
+import UniversitySearch from '../components/universities/ProgramSearch';
 import UniversityCard from '../components/universities/UniversityCard';
 import { Id } from 'convex/_generated/dataModel';
 
@@ -70,7 +70,7 @@ const UniversitySearchPage: React.FC = () => {
   return (
     <div className="container mx-auto py-8 px-4 max-w-7xl">
       <header className="mb-8">
-        <h1 className="text-3xl font-bold mb-2">University Search</h1>
+        <h1 className="text-3xl font-bold mb-2">Program Search</h1>
         <p className="text-gray-600">
           Find the perfect graduate program for your academic journey
         </p>
@@ -91,12 +91,12 @@ const UniversitySearchPage: React.FC = () => {
         {loading && status === "LoadingFirstPage" ? (
           <div className="flex justify-center py-12">
             <div className="animate-pulse text-center">
-              <p className="text-gray-500">Loading universities...</p>
+              <p className="text-gray-500">Loading programs...</p>
             </div>
           </div>
         ) : universities.length === 0 ? (
           <div className="text-center py-16 bg-gray-50 rounded-lg">
-            <h3 className="text-xl font-medium text-gray-700 mb-2">No universities found</h3>
+            <h3 className="text-xl font-medium text-gray-700 mb-2">No programs found</h3>
             <p className="text-gray-500">
               Try adjusting your search criteria or filters to see more results.
             </p>

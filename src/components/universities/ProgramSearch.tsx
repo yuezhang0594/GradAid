@@ -5,14 +5,14 @@ import { UniversityFilters, DEFAULT_FILTERS } from '../../hooks/useUniversities'
 import { api } from '../../../convex/_generated/api';
 import { useQuery } from 'convex/react';
 
-interface UniversitySearchProps {
+interface ProgramSearchProps {
   onSearch: (query: string) => void;
   onFilterChange: (filters: UniversityFilters) => void;
   initialFilters?: Partial<UniversityFilters>;
   initialQuery?: string;
 }
 
-const UniversitySearch: React.FC<UniversitySearchProps> = ({
+const ProgramSearch: React.FC<ProgramSearchProps> = ({
   onSearch,
   onFilterChange,
   initialFilters = {},
@@ -40,7 +40,7 @@ const UniversitySearch: React.FC<UniversitySearchProps> = ({
       <SearchField 
         value={searchQuery} 
         onChange={setSearchQuery} 
-        placeholder="Search for universities or programs..."
+        placeholder="Search for graduate programs..."
       />
       
       <FilterPanel 
@@ -52,4 +52,4 @@ const UniversitySearch: React.FC<UniversitySearchProps> = ({
   );
 };
 
-export default UniversitySearch;
+export default ProgramSearch;

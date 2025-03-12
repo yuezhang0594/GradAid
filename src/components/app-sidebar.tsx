@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { GradAidLogo } from "@/assets/GradAidLogo";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { SearchForm } from "@/components/search-form"
 
 import {
@@ -81,7 +81,6 @@ const data = {
           title: "Applications",
           url: "/applications",
           icon: ClipboardListIcon,
-          isActive: true,
         },
         {
           title: "Documents",
@@ -116,6 +115,8 @@ const data = {
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const navigate = useNavigate();
+  const location = useLocation();
+  const currentPath = location.pathname;
   
   return (
     <Sidebar {...props}>
@@ -145,7 +146,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               <SidebarMenu>
                 {item.items.map((item) => (
                   <SidebarMenuItem key={item.title}>
-                    <SidebarMenuButton asChild isActive={item.isActive} >
+                    <SidebarMenuButton asChild isActive={currentPath === item.url}>
                       <a href={item.url}><item.icon size={20} />{item.title}</a>
                     </SidebarMenuButton>
                   </SidebarMenuItem>

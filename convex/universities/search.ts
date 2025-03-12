@@ -135,7 +135,7 @@ function isProgramMatchingFilters(program: any, filters: any): boolean {
 }
 
 /**
- * Get a list of unique countries where universities are located
+ * Get a list of unique city and state combinations where US universities are located
  */
 export const getUniqueLocations = query({
     args: {},
@@ -143,15 +143,14 @@ export const getUniqueLocations = query({
     handler: async (ctx) => {
       const universities = await ctx.db.query("universities").collect();
       
-      // Extract all unique countries
+      // Extract all unique city-state combinations
       const locations = new Set<string>();
       universities.forEach(university => {
-        if (university.location?.country) {
-          locations.add(university.location.country);
+        if (university.location?.city && university.location?.state) {
+          locations.add(`${university.location.city}, ${university.location.state}`);
         }
       });
       
       return Array.from(locations).sort();
     },
   });
-  
