@@ -22,7 +22,7 @@ export function LandingPage({
                     Your complete solution for graduate school application management and success
                     </p>
                     <div className="space-x-4 mt-8">
-                    <SignInButton forceRedirectUrl={"/dashboard"}>
+                    <SignInButton>
                         <Button>Get Started</Button>
                     </SignInButton>
                     </div>

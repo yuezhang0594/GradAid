@@ -11,12 +11,12 @@ export default function Header() {
   const getBreadcrumbs = () => {
     const pathSegments = location.pathname.split('/').filter(Boolean);
     const breadcrumbs: { label: string; path: string }[] = [];
-    
+
     // Build up breadcrumb paths
     pathSegments.forEach((segment, index) => {
       const path = `/${pathSegments.slice(0, index + 1).join('/')}`;
       let label = segment.charAt(0).toUpperCase() + segment.slice(1);
-      
+
       // Skip dashboard in the loop since we'll add it separately
       if (segment === 'dashboard') return;
 
@@ -93,9 +93,9 @@ export default function Header() {
           {/* User Profile Section */}
           <div className='flex items-center gap-2'>
             <div className="hidden md:block mr-2 text-sm font-medium">
-              {user?.firstName} {user?.lastName}
+              {user?.fullName}
             </div>
-            <UserButton afterSignOutUrl="/signout" />
+            <UserButton />
           </div>
         </div>
       </div>

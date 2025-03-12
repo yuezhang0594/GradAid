@@ -18,12 +18,17 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
       <ClerkProvider
-      publishableKey={PUBLISHABLE_KEY}
-      afterSignOutUrl="/signout"
-      signInFallbackRedirectUrl="/dashboard"
-      signUpFallbackRedirectUrl="/dashboard"
+        publishableKey={PUBLISHABLE_KEY}
+        signInUrl="/signin"
+        signUpUrl="/signup"
+        afterSignOutUrl="/signout"
+        signInFallbackRedirectUrl="/dashboard"
+        signUpForceRedirectUrl="/onboarding"
       >
-        <ConvexProviderWithClerk client={convex} useAuth={useAuth}>
+        <ConvexProviderWithClerk
+          client={convex}
+          useAuth={useAuth}
+        >
           <App />
         </ConvexProviderWithClerk>
       </ClerkProvider>
