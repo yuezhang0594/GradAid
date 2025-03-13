@@ -17,6 +17,9 @@ import TimelinePage from "./routes/cards/timeline";
 import CreditsPage from "./routes/cards/credits";
 import ActivityPage from "./routes/cards/activity";
 import ProgramSearchPage from "./routes/ProgramSearchPage";
+import OnboardingPage from "./routes/onboarding/page";
+import ProfilePage from "./routes/profile/page";
+
 
 function App() {
   return (
@@ -32,6 +35,8 @@ function App() {
 
         {/* Protected Routes */}
         <Route element={<ProtectedRoute><DashboardLayout /></ProtectedRoute>}>
+          <Route path="/onboarding" element={<OnboardingPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/search" element={<ProgramSearchPage />} />
           <Route path="/applications" element={<ApplicationsPage />} />

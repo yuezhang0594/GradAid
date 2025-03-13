@@ -38,6 +38,53 @@ const schema = defineSchema({
     careerGoals: v.optional(v.string()),
   })
     .index("by_user", ["userId"]),
+  userProfiles: defineTable({
+    userId: v.string(),
+    // Personal Info
+    countryOfOrigin: v.string(),
+    dateOfBirth: v.string(),
+    currentLocation: v.string(),
+    nativeLanguage: v.string(),
+    
+    // Education
+    educationLevel: v.string(),
+    major: v.string(),
+    university: v.string(),
+    gpa: v.number(),
+    gpaScale: v.number(),
+    graduationDate: v.string(),
+    researchExperience: v.optional(v.string()),
+    
+    // Test Scores
+    greScores: v.optional(v.object({
+      verbal: v.number(),
+      quantitative: v.number(),
+      analyticalWriting: v.number(),
+      testDate: v.string(),
+    })),
+    englishTest: v.optional(v.object({
+      type: v.union(v.literal("TOEFL"), v.literal("IELTS")),
+      overallScore: v.number(),
+      sectionScores: v.record(v.string(), v.number()),
+      testDate: v.string(),
+    })),
+    
+    // Career Goals
+    targetDegree: v.string(),
+    intendedField: v.string(),
+    researchInterests: v.array(v.string()),
+    careerObjectives: v.string(),
+    targetLocations: v.array(v.string()),
+    expectedStartDate: v.string(),
+    budgetRange: v.optional(v.string()),
+    
+    // Metadata
+    createdAt: v.string(),
+    updatedAt: v.string(),
+    onboardingCompleted: v.boolean(),
+  })
+    .index("by_user", ["userId"])
+    .index("by_completion", ["onboardingCompleted"]),
 
   universities: defineTable({
     name: v.string(),
