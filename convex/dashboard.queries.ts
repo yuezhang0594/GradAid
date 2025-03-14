@@ -2,40 +2,6 @@ import { query } from "./_generated/server";
 import { v } from "convex/values";
 import { Doc, Id } from "./_generated/dataModel";
 
-export const getProfile = query({
-  args: { userId: v.string() },
-  handler: async (ctx, args) => {
-    return await ctx.db
-      .query("userProfiles")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
-      .first();
-  },
-});
-
-export const checkOnboardingStatus = query({
-  args: { userId: v.string() },
-  handler: async (ctx, args) => {
-    const profile = await ctx.db
-      .query("userProfiles")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
-      .first();
-    
-    return profile ? getNextIncompleteStep(profile) : "personal-info";
-  },
-});
-
-function getNextIncompleteStep(profile: any): string {
-  if (!profile.personalInfo) return "personal-info";
-  if (!profile.education || profile.education.length === 0) return "education";
-  if (!profile.testScores) return "test-scores";
-  if (!profile.careerGoals) return "career-goals";
-  if (!profile.researchInterests) return "research-interests";
-  if (!profile.publications || profile.publications.length === 0) return "publications";
-  if (!profile.workExperience || profile.workExperience.length === 0) return "work-experience";
-  if (!profile.researchExperience || profile.researchExperience.length === 0) return "research-experience";
-  return "complete";
-}
-
 // Get all applications for a user with their associated documents and LORs
 export const getApplications = query({
   args: { userId: v.string() },
