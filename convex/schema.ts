@@ -38,6 +38,7 @@ const schema = defineSchema({
     careerGoals: v.optional(v.string()),
   })
     .index("by_user", ["userId"]),
+
   userProfiles: defineTable({
     userId: v.string(),
     // Personal Info
@@ -128,6 +129,109 @@ const schema = defineSchema({
       searchField: "name",
       filterFields: ["universityId", "degree"],
     }),
+
+  applications: defineTable({
+    userId: v.string(),
+    universityId: v.id("universities"),
+    program: v.string(),
+    status: v.union(
+      v.literal("draft"),
+      v.literal("in_progress"),
+      v.literal("submitted"),
+      v.literal("accepted"),
+      v.literal("rejected")
+    ),
+    submissionDate: v.optional(v.string()),
+    deadline: v.string(),
+    priority: v.union(v.literal("high"), v.literal("medium"), v.literal("low")),
+    notes: v.optional(v.string()),
+    lastUpdated: v.string(),
+  })
+    .index("by_user", ["userId"])
+    .index("by_university", ["universityId"])
+    .index("by_deadline", ["deadline"]),
+
+  applicationDocuments: defineTable({
+    applicationId: v.id("applications"),
+    userId: v.string(),
+    title: v.string(),
+    type: v.union(
+      v.literal("sop"),
+      v.literal("research_statement"),
+      v.literal("lor"),
+      v.literal("transcript"),
+      v.literal("cv"),
+      v.literal("other")
+    ),
+    status: v.union(
+      v.literal("draft"),
+      v.literal("in_review"),
+      v.literal("complete")
+    ),
+    progress: v.number(),
+    lastEdited: v.string(),
+    aiSuggestionsCount: v.optional(v.number()),
+    content: v.optional(v.string()),
+  })
+    .index("by_user", ["userId"])
+    .index("by_application", ["applicationId"])
+    .index("by_type", ["type"]),
+
+  letterOfRecommendations: defineTable({
+    applicationId: v.id("applications"),
+    userId: v.string(),
+    recommenderName: v.string(),
+    recommenderEmail: v.string(),
+    status: v.union(
+      v.literal("pending"),
+      v.literal("in_progress"),
+      v.literal("submitted")
+    ),
+    requestedDate: v.string(),
+    submittedDate: v.optional(v.string()),
+    remindersSent: v.number(),
+    lastReminderDate: v.optional(v.string()),
+  })
+    .index("by_user", ["userId"])
+    .index("by_application", ["applicationId"])
+    .index("by_email", ["recommenderEmail"]),
+
+  aiCredits: defineTable({
+    userId: v.string(),
+    totalCredits: v.number(),
+    usedCredits: v.number(),
+    resetDate: v.string(),
+    lastUpdated: v.string(),
+  })
+    .index("by_user", ["userId"])
+    .index("by_reset_date", ["resetDate"]),
+
+  userActivity: defineTable({
+    userId: v.string(),
+    type: v.union(
+      v.literal("document_edit"),
+      v.literal("application_update"),
+      v.literal("lor_request"),
+      v.literal("lor_update"),
+      v.literal("ai_usage")
+    ),
+    description: v.string(),
+    timestamp: v.string(),
+    metadata: v.object({
+      documentId: v.optional(v.id("applicationDocuments")),
+      applicationId: v.optional(v.id("applications")),
+      lorId: v.optional(v.id("letterOfRecommendations")),
+      creditsUsed: v.optional(v.number()),
+      oldStatus: v.optional(v.string()),
+      newStatus: v.optional(v.string()),
+      oldProgress: v.optional(v.number()),
+      newProgress: v.optional(v.number()),
+      remainingCredits: v.optional(v.number()),
+    }),
+  })
+    .index("by_user", ["userId"])
+    .index("by_type", ["type"])
+    .index("by_timestamp", ["timestamp"]),
 
   favorites: defineTable({
     userId: v.string(),
