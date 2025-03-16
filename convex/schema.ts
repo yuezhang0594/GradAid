@@ -40,7 +40,7 @@ const schema = defineSchema({
     .index("by_user", ["userId"]),
 
   userProfiles: defineTable({
-    userId: v.string(),
+    userId: v.id("users"),
     // Personal Info
     countryOfOrigin: v.string(),
     dateOfBirth: v.string(),
@@ -131,7 +131,7 @@ const schema = defineSchema({
     }),
 
   applications: defineTable({
-    userId: v.string(),
+    userId: v.id("users"),
     universityId: v.id("universities"),
     program: v.string(),
     status: v.union(
@@ -153,7 +153,7 @@ const schema = defineSchema({
 
   applicationDocuments: defineTable({
     applicationId: v.id("applications"),
-    userId: v.string(),
+    userId: v.id("users"),
     title: v.string(),
     type: v.union(
       v.literal("sop"),
@@ -179,7 +179,7 @@ const schema = defineSchema({
 
   letterOfRecommendations: defineTable({
     applicationId: v.id("applications"),
-    userId: v.string(),
+    userId: v.id("users"),
     recommenderName: v.string(),
     recommenderEmail: v.string(),
     status: v.union(
@@ -197,7 +197,7 @@ const schema = defineSchema({
     .index("by_email", ["recommenderEmail"]),
 
   aiCredits: defineTable({
-    userId: v.string(),
+    userId: v.id("users"),
     totalCredits: v.number(),
     usedCredits: v.number(),
     resetDate: v.string(),
@@ -207,7 +207,7 @@ const schema = defineSchema({
     .index("by_reset_date", ["resetDate"]),
 
   userActivity: defineTable({
-    userId: v.string(),
+    userId: v.id("users"),
     type: v.union(
       v.literal("document_edit"),
       v.literal("application_update"),
@@ -234,7 +234,7 @@ const schema = defineSchema({
     .index("by_timestamp", ["timestamp"]),
 
   favorites: defineTable({
-    userId: v.string(),
+    userId: v.id("users"),
     programId: v.id("programs"),
     createdAt: v.string(),
   })

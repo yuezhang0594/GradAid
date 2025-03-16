@@ -45,11 +45,11 @@ const data = {
           url: "/profile",
           icon: UserPenIcon,
         },
-        {
-          title: "Upload Documents",
-          url: "/documents",
-          icon: FileUpIcon,
-        },
+        // {
+        //   title: "Upload Documents",
+        //   url: "/documents",
+        //   icon: FileUpIcon,
+        // },
       ],
     },
     {
