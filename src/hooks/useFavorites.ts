@@ -1,19 +1,20 @@
 import { useMutation, useQuery } from 'convex/react';
+import { useCallback } from "react";
 import { useUser } from '@clerk/clerk-react';
 import { api } from '../../convex/_generated/api';
-import { Id } from 'convex/_generated/dataModel';
+import { Id } from '../../convex/_generated/dataModel';
 
 export function useFavorites() {
   // Get authenticated user from Clerk
   const { user, isSignedIn, isLoaded } = useUser();
-  const userId = isSignedIn ? user?.id : undefined;
+  const userId = isSignedIn ? (user?.id as Id<"users">) : undefined;
   
   // Directly use Convex mutations and queries
   const toggleFavoriteMutation = useMutation(api.programs.favorites.toggleFavorite);
   
-  // Get favorite program IDs with proper handling for null userId
+  // Get all favorite program IDs
   const favoriteProgramIdsResult = useQuery(
-    api.programs.favorites.getFavoriteProgramIds, 
+    api.programs.favorites.getFavoriteProgramIds,
     userId ? { userId } : "skip"
   );
   
@@ -36,11 +37,10 @@ export function useFavorites() {
 
   // Check if a specific program is favorited synchronously
   const isFavorite = (programId: Id<"programs">) => {
-    const result = isFavoriteQuery(programId);
-    return result === true; // Will be undefined when loading or false when not favorited
+    return isFavoriteQuery(programId) ?? false;
   };
 
-  // Get all favorited program IDs for a user
+  // Get all favorited program IDs
   const getFavoriteProgramIds = () => {
     return favoriteProgramIdsResult || [];
   };
@@ -50,6 +50,5 @@ export function useFavorites() {
     getFavoriteProgramIds,
     isFavorite,
     favoritesLoading,
-    userId
   };
 }

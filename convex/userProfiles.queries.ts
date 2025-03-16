@@ -3,24 +3,34 @@ import { v } from "convex/values";
 import { Doc, Id } from "./_generated/dataModel";
 
 export const getProfile = query({
-  args: { userId: v.string() },
+  args: { userId: v.id("users") },
   handler: async (ctx, args) => {
     return await ctx.db
       .query("userProfiles")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .filter((q) => q.eq(q.field("userId"), args.userId))
       .first();
   },
 });
 
 export const checkOnboardingStatus = query({
-  args: { userId: v.string() },
+  args: { userId: v.id("users") },
   handler: async (ctx, args) => {
     const profile = await ctx.db
       .query("userProfiles")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .filter((q) => q.eq(q.field("userId"), args.userId))
       .first();
-    
-    return profile ? getNextIncompleteStep(profile) : "personal-info";
+
+    if (!profile) {
+      return {
+        currentStep: "personal",
+        isComplete: false,
+      };
+    }
+
+    return {
+      currentStep: profile.onboardingCompleted ? "complete" : "personal",
+      isComplete: profile.onboardingCompleted,
+    };
   },
 });
 
@@ -38,24 +48,24 @@ function getNextIncompleteStep(profile: any): string {
 
 // Get all applications for a user with their associated documents and LORs
 export const getApplications = query({
-  args: { userId: v.string() },
+  args: { userId: v.id("users") },
   handler: async (ctx, args) => {
     const applications = await ctx.db
       .query("applications")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .filter((q) => q.eq(q.field("userId"), args.userId))
       .collect();
 
     // Get documents and LORs for each application
-    const applicationsWithDetails = await Promise.all(
+    const result = await Promise.all(
       applications.map(async (application) => {
         const documents = await ctx.db
           .query("applicationDocuments")
-          .withIndex("by_application", (q) => q.eq("applicationId", application._id))
+          .filter((q) => q.eq(q.field("applicationId"), application._id))
           .collect();
 
         const lors = await ctx.db
           .query("letterOfRecommendations")
-          .withIndex("by_application", (q) => q.eq("applicationId", application._id))
+          .filter((q) => q.eq(q.field("applicationId"), application._id))
           .collect();
 
         return {
@@ -66,18 +76,18 @@ export const getApplications = query({
       })
     );
 
-    return applicationsWithDetails;
+    return result;
   },
 });
 
 // Get dashboard stats for a user
 export const getDashboardStats = query({
-  args: { userId: v.string() },
+  args: { userId: v.id("users") },
   handler: async (ctx, args) => {
     // Get applications count and status
     const applications = await ctx.db
       .query("applications")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .filter((q) => q.eq(q.field("userId"), args.userId))
       .collect();
 
     const applicationStats = {
@@ -89,42 +99,42 @@ export const getDashboardStats = query({
         ?.deadline,
     };
 
-    // Get document progress
+    // Get documents count and status
     const documents = await ctx.db
       .query("applicationDocuments")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .filter((q) => q.eq(q.field("userId"), args.userId))
       .collect();
 
     const documentStats = {
-      totalDocuments: documents.length,
-      averageProgress: documents.length > 0
-        ? documents.reduce((sum, doc) => sum + doc.progress, 0) / documents.length
-        : 0,
-      completedDocuments: documents.filter((d) => d.progress === 100).length,
+      total: documents.length,
+      complete: documents.filter((d) => d.status === "complete").length,
+      inReview: documents.filter((d) => d.status === "in_review").length,
+      draft: documents.filter((d) => d.status === "draft").length,
     };
 
-    // Get LOR stats
+    // Get LORs count and status
     const lors = await ctx.db
       .query("letterOfRecommendations")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .filter((q) => q.eq(q.field("userId"), args.userId))
       .collect();
 
     const lorStats = {
       total: lors.length,
       submitted: lors.filter((l) => l.status === "submitted").length,
-      pending: lors.filter((l) => l.status === "in_progress").length,
+      pending: lors.filter((l) => l.status === "pending").length,
+      inProgress: lors.filter((l) => l.status === "in_progress").length,
     };
 
     // Get AI credits
     const aiCredits = await ctx.db
       .query("aiCredits")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .filter((q) => q.eq(q.field("userId"), args.userId))
       .first();
 
     // Get recent activity
     const recentActivity = await ctx.db
       .query("userActivity")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .filter((q) => q.eq(q.field("userId"), args.userId))
       .order("desc")
       .take(12);
 
@@ -141,14 +151,14 @@ export const getDashboardStats = query({
 // Get recent activity for a user
 export const getRecentActivity = query({
   args: { 
-    userId: v.string(),
+    userId: v.id("users"),
     limit: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
     const limit = args.limit ?? 12;
     return await ctx.db
       .query("userActivity")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .filter((q) => q.eq(q.field("userId"), args.userId))
       .order("desc")
       .take(limit);
   },
@@ -156,11 +166,11 @@ export const getRecentActivity = query({
 
 // Get AI credits for a user
 export const getAiCredits = query({
-  args: { userId: v.string() },
+  args: { userId: v.id("users") },
   handler: async (ctx, args) => {
     return await ctx.db
       .query("aiCredits")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .filter((q) => q.eq(q.field("userId"), args.userId))
       .first();
   },
 });

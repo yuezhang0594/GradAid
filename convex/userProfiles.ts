@@ -1,9 +1,51 @@
-import { mutation } from "./_generated/server";
+import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
+import { Id } from "./_generated/dataModel";
 
+// Helper function to determine next incomplete step
+function getNextIncompleteStep(profile: any) {
+  if (!profile.countryOfOrigin || !profile.dateOfBirth || !profile.currentLocation || !profile.nativeLanguage) {
+    return "personal-info";
+  }
+  
+  if (!profile.educationLevel || !profile.major || !profile.university || !profile.gpa || !profile.graduationDate) {
+    return "education";
+  }
+  
+  if (!profile.targetDegree || !profile.intendedField || !profile.researchInterests || !profile.careerObjectives) {
+    return "career-goals";
+  }
+  
+  return "complete";
+}
+
+// Queries
+export const getProfile = query({
+  args: { userId: v.id("users") },
+  handler: async (ctx, args) => {
+    return await ctx.db
+      .query("userProfiles")
+      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .first();
+  },
+});
+
+export const checkOnboardingStatus = query({
+  args: { userId: v.id("users") },
+  handler: async (ctx, args) => {
+    const profile = await ctx.db
+      .query("userProfiles")
+      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .first();
+    
+    return profile ? getNextIncompleteStep(profile) : "personal-info";
+  },
+});
+
+// Mutations
 export const savePersonalInfo = mutation({
   args: {
-    userId: v.string(),
+    userId: v.id("users"),
     countryOfOrigin: v.string(),
     dateOfBirth: v.string(),
     currentLocation: v.string(),
@@ -60,7 +102,7 @@ export const savePersonalInfo = mutation({
 
 export const saveEducation = mutation({
   args: {
-    userId: v.string(),
+    userId: v.id("users"),
     educationLevel: v.string(),
     major: v.string(),
     university: v.string(),
@@ -94,7 +136,7 @@ export const saveEducation = mutation({
 
 export const saveTestScores = mutation({
   args: {
-    userId: v.string(),
+    userId: v.id("users"),
     greScores: v.optional(
       v.object({
         verbal: v.number(),
@@ -132,7 +174,7 @@ export const saveTestScores = mutation({
 
 export const saveCareerGoals = mutation({
   args: {
-    userId: v.string(),
+    userId: v.id("users"),
     targetDegree: v.string(),
     intendedField: v.string(),
     researchInterests: v.array(v.string()),

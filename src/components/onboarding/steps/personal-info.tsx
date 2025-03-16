@@ -4,6 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { useMutation } from "convex/react";
 import { api } from "../../../../convex/_generated/api";
+import { Id } from "../../../../convex/_generated/dataModel";
 
 import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
@@ -22,11 +23,11 @@ type PersonalInfoForm = z.infer<typeof personalInfoSchema>;
 
 interface PersonalInfoStepProps {
   onComplete: () => void;
-  userId?: string;
+  userId?: Id<"users">;
   initialData?: Partial<PersonalInfoForm>;
 }
 
-export function PersonalInfoStep({ onComplete, userId = "", initialData }: PersonalInfoStepProps) {
+export function PersonalInfoStep({ onComplete, userId, initialData }: PersonalInfoStepProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const savePersonalInfo = useMutation(api.userProfiles.savePersonalInfo);
 
@@ -41,15 +42,17 @@ export function PersonalInfoStep({ onComplete, userId = "", initialData }: Perso
   });
 
   const onSubmit = async (data: PersonalInfoForm) => {
+    if (!userId) return;
+    
+    setIsSubmitting(true);
     try {
-      setIsSubmitting(true);
       await savePersonalInfo({
         userId,
         ...data,
       });
       onComplete();
     } catch (error) {
-      console.error("Failed to save personal info:", error);
+      console.error("Error saving personal info:", error);
     } finally {
       setIsSubmitting(false);
     }

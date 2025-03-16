@@ -4,6 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { useMutation } from "convex/react";
 import { api } from "../../../../convex/_generated/api";
+import { Id } from "../../../../convex/_generated/dataModel";
 
 import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
@@ -16,8 +17,8 @@ const educationSchema = z.object({
   educationLevel: z.string().min(1, "Education level is required"),
   major: z.string().min(1, "Major is required"),
   university: z.string().min(1, "University is required"),
-  gpa: z.string().min(1, "GPA is required"),
-  gpaScale: z.string().min(1, "GPA scale is required"),
+  gpa: z.number().min(0).max(4),
+  gpaScale: z.number().min(0).max(10),
   graduationDate: z.string().min(1, "Graduation date is required"),
   researchExperience: z.string().optional(),
 });
@@ -26,15 +27,15 @@ interface EducationForm {
   educationLevel: string;
   major: string;
   university: string;
-  gpa: string;
-  gpaScale: string;
+  gpa: number;
+  gpaScale: number;
   graduationDate: string;
   researchExperience?: string;
 }
 
 interface EducationStepProps {
   onComplete: () => void;
-  userId: string;
+  userId?: Id<"users">;
   initialData?: {
     educationLevel?: string;
     major?: string;
@@ -56,29 +57,31 @@ export function EducationStep({ onComplete, userId, initialData }: EducationStep
       educationLevel: initialData?.educationLevel || "",
       major: initialData?.major || "",
       university: initialData?.university || "",
-      gpa: initialData?.gpa?.toString() || "",
-      gpaScale: initialData?.gpaScale?.toString() || "4.0",
+      gpa: initialData?.gpa || 0,
+      gpaScale: initialData?.gpaScale || 4,
       graduationDate: initialData?.graduationDate || "",
       researchExperience: initialData?.researchExperience || "",
     },
   });
 
   const onSubmit = async (data: EducationForm) => {
+    if (!userId) return;
+    
+    setIsSubmitting(true);
     try {
-      setIsSubmitting(true);
       await saveEducation({
         userId,
         educationLevel: data.educationLevel,
         major: data.major,
         university: data.university,
-        gpa: parseFloat(data.gpa),
-        gpaScale: parseFloat(data.gpaScale),
+        gpa: data.gpa,
+        gpaScale: data.gpaScale,
         graduationDate: data.graduationDate,
         researchExperience: data.researchExperience,
       });
       onComplete();
     } catch (error) {
-      console.error("Failed to save education info:", error);
+      console.error("Error saving education info:", error);
     } finally {
       setIsSubmitting(false);
     }
@@ -102,9 +105,9 @@ export function EducationStep({ onComplete, userId, initialData }: EducationStep
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      <SelectItem value="bachelors">Bachelor's Degree</SelectItem>
-                      <SelectItem value="masters">Master's Degree</SelectItem>
-                      <SelectItem value="phd">Ph.D.</SelectItem>
+                      <SelectItem value="bachelor">Bachelor's</SelectItem>
+                      <SelectItem value="master">Master's</SelectItem>
+                      <SelectItem value="phd">PhD</SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />
@@ -119,7 +122,7 @@ export function EducationStep({ onComplete, userId, initialData }: EducationStep
                 <FormItem>
                   <FormLabel>Major</FormLabel>
                   <FormControl>
-                    <Input placeholder="e.g., Computer Science" {...field} />
+                    <Input placeholder="Enter your major" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -133,7 +136,7 @@ export function EducationStep({ onComplete, userId, initialData }: EducationStep
                 <FormItem>
                   <FormLabel>University</FormLabel>
                   <FormControl>
-                    <Input placeholder="e.g., Boston University" {...field} />
+                    <Input placeholder="Enter your university" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -148,7 +151,13 @@ export function EducationStep({ onComplete, userId, initialData }: EducationStep
                   <FormItem>
                     <FormLabel>GPA</FormLabel>
                     <FormControl>
-                      <Input type="number" step="0.01" min="0" max="4" placeholder="e.g., 3.50" {...field} />
+                      <Input
+                        type="number"
+                        step="0.01"
+                        placeholder="Enter your GPA"
+                        {...field}
+                        onChange={(e) => field.onChange(parseFloat(e.target.value))}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -161,16 +170,16 @@ export function EducationStep({ onComplete, userId, initialData }: EducationStep
                 render={({ field }: { field: ControllerRenderProps<EducationForm, "gpaScale"> }) => (
                   <FormItem>
                     <FormLabel>GPA Scale</FormLabel>
-                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                    <Select onValueChange={(value) => field.onChange(parseFloat(value))} defaultValue={field.value.toString()}>
                       <FormControl>
                         <SelectTrigger>
                           <SelectValue placeholder="Select GPA scale" />
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
-                        <SelectItem value="4.0">4.0</SelectItem>
-                        <SelectItem value="5.0">5.0</SelectItem>
-                        <SelectItem value="10.0">10.0</SelectItem>
+                        <SelectItem value="4">4.0</SelectItem>
+                        <SelectItem value="5">5.0</SelectItem>
+                        <SelectItem value="10">10.0</SelectItem>
                       </SelectContent>
                     </Select>
                     <FormMessage />
@@ -201,8 +210,8 @@ export function EducationStep({ onComplete, userId, initialData }: EducationStep
                   <FormLabel>Research Experience (Optional)</FormLabel>
                   <FormControl>
                     <Textarea
-                      placeholder="Describe any research experience you have..."
-                      className="min-h-[100px]"
+                      placeholder="Describe your research experience"
+                      className="resize-none"
                       {...field}
                     />
                   </FormControl>
@@ -211,8 +220,8 @@ export function EducationStep({ onComplete, userId, initialData }: EducationStep
               )}
             />
 
-            <Button type="submit" className="w-full" disabled={isSubmitting}>
-              {isSubmitting ? "Saving..." : "Save and Continue"}
+            <Button type="submit" disabled={isSubmitting}>
+              {isSubmitting ? "Saving..." : "Save & Continue"}
             </Button>
           </form>
         </Form>

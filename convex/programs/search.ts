@@ -27,23 +27,46 @@ export const searchPrograms = query({
   handler: async (ctx, args) => {
     const { query: searchQuery, filters = {} } = args;
 
-    // Step 1: Create the base queries
-    let programsQuery = ctx.db.query("programs");
-    let universitiesQuery;
+    // Step 1: Create the base queries with proper initialization
+    let programsQuery = ctx.db.query("programs")
+      .withIndex("by_university")
+      .filter(q => q.gt(q.field("_id"), null)); // Ensure we have an ordered query
+
+    let universitiesQuery = ctx.db.query("universities")
+      .withIndex("by_name")
+      .filter(q => q.gt(q.field("_id"), null)); // Ensure we have an ordered query
 
     // Step 2: Apply text search if provided
     if (searchQuery && searchQuery.trim()) {
-      // Search must be applied first
-      universitiesQuery = ctx.db.query("universities")
+      // Search programs first using name and department
+      const searchedPrograms = await ctx.db.query("programs")
+        .withSearchIndex("search_programs", (q) =>
+          q.search("name", searchQuery)
+        )
+        .collect();
+
+      // Then search universities
+      const searchedUniversities = await ctx.db.query("universities")
         .withSearchIndex("search_name", (q) =>
           q.search("name", searchQuery)
+        )
+        .collect();
+
+      // Filter base queries by search results
+      if (searchedPrograms.length > 0) {
+        programsQuery = programsQuery.filter(q =>
+          q.or(...searchedPrograms.map(p => q.eq(q.field("_id"), p._id)))
         );
-    } else {
-      universitiesQuery = ctx.db.query("universities");
+      }
+
+      if (searchedUniversities.length > 0) {
+        universitiesQuery = universitiesQuery.filter(q =>
+          q.or(...searchedUniversities.map(u => q.eq(q.field("_id"), u._id)))
+        );
+      }
     }
 
     // Step 3: Apply university-level filters
-
     // Apply ranking filter
     if (filters.ranking && filters.ranking !== "all") {
       const [operator, value] = filters.ranking.split("_");
@@ -68,17 +91,20 @@ export const searchPrograms = query({
       );
     }
 
-    // Filter programs based on university-level filters
+    // Get matching universities
     const universities = await universitiesQuery.collect();
-    programsQuery = programsQuery.filter((q) =>
-      q.or(
-        ...universities.map((univeristy) => q.eq(q.field("universityId"), univeristy._id))
-      )
-    );
-
-
+    const universityIds = universities.map(u => u._id);
 
     // Step 4: Apply program-level filters
+    // Filter by matching universities
+    if (universityIds.length > 0) {
+      programsQuery = programsQuery.filter((q) =>
+        q.or(
+          ...universityIds.map((id) => q.eq(q.field("universityId"), id))
+        )
+      );
+    }
+
     // Program type filter
     if (filters.programType && filters.programType !== "all") {
       programsQuery = programsQuery.filter((q) =>
@@ -87,14 +113,14 @@ export const searchPrograms = query({
     }
 
     // GRE requirement filter (user selects "GRE not required")
-    if (filters.gre == true) {
+    if (filters.gre === true) {
       programsQuery = programsQuery.filter((q) =>
         q.eq(q.field("requirements.gre"), false)
       );
     }
 
     // TOEFL requirement filter (user selects "TOEFL not required")
-    if (filters.toefl == true) {
+    if (filters.toefl === true) {
       programsQuery = programsQuery.filter((q) =>
         q.eq(q.field("requirements.toefl"), false)
       );
@@ -103,10 +129,12 @@ export const searchPrograms = query({
     // Minimum GPA filter
     if (filters.minimumGPA !== undefined) {
       programsQuery = programsQuery.filter((q) =>
-        q.gte(q.field("requirements.minimumGPA"), filters.minimumGPA!)
+        q.or(
+          q.eq(q.field("requirements.minimumGPA"), null),
+          q.gte(q.field("requirements.minimumGPA"), filters.minimumGPA!)
+        )
       );
     }
-
 
     // Step 5: Return results
     const programs = await programsQuery.collect();

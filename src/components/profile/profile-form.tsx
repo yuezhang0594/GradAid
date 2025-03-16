@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Id, Doc } from "convex/_generated/dataModel";
 // import { useQuery } from "convex/react";
 // import { api } from "@/convex/_generated/api";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -12,7 +13,7 @@ const STEPS = ["personal", "education", "tests", "career"] as const;
 type Step = (typeof STEPS)[number];
 
 interface ProfileFormProps {
-  userId?: string;
+  userId?: Id<"users">;
 }
 
 // Mock data for testing each step
@@ -62,6 +63,9 @@ const mockCareerGoals = {
   expectedStartDate: "2024-09",
   budgetRange: "$30,000 - $40,000"
 };
+
+// type UsersProfile = Doc<"userProfiles">;  
+// const usersProfile = createQuery(api.userProfiles.getProfile, { userId: userId ?? "" });
 
 export function ProfileForm({ userId }: ProfileFormProps) {
   const [activeTab, setActiveTab] = useState<Step>("personal");

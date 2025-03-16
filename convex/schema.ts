@@ -125,9 +125,10 @@ const schema = defineSchema({
   })
     .index("by_university", ["universityId"])
     .index("by_degree", ["degree"])
+    .index("by_department", ["department"])
     .searchIndex("search_programs", {
       searchField: "name",
-      filterFields: ["universityId", "degree"],
+      filterFields: ["universityId", "degree", "department"],
     }),
 
   applications: defineTable({

@@ -140,7 +140,7 @@ export const updateLorStatus = mutation({
 // Use AI credits
 export const useAiCredits = mutation({
   args: {
-    userId: v.string(),
+    userId: v.id("users"),
     creditsUsed: v.number(),
     description: v.string(),
   },

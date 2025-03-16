@@ -1,6 +1,5 @@
-import { useState, useCallback } from 'react';
-import { api } from '../../convex/_generated/api';
 import { useQuery, useMutation } from 'convex/react';
+import { api } from '../../convex/_generated/api';
 import { useUser } from '@clerk/clerk-react';
 import { Doc, Id } from '../../convex/_generated/dataModel';
 
@@ -47,22 +46,18 @@ export interface CareerGoals {
   careerObjectives: string;
   targetLocations: string[];
   expectedStartDate: string;
-  budgetRange: string;
+  budgetRange?: string;
 }
 
 export function useProfile() {
   const { user } = useUser();
-  const userId = user?.id;
+  const userId = user?.id as Id<"users"> | undefined;
 
   // Get profile data
-  const profile = useQuery(api.userProfiles.getProfile, { 
-    userId: userId ?? "" 
-  });
+  const profile = useQuery(api.userProfiles.getProfile, userId ? { userId } : "skip");
 
   // Get onboarding status
-  const onboardingStatus = useQuery(api.userProfiles.checkOnboardingStatus, {
-    userId: userId ?? ""
-  });
+  const onboardingStatus = useQuery(api.userProfiles.checkOnboardingStatus, userId ? { userId } : "skip");
 
   // Mutations for each section
   const savePersonalInfo = useMutation(api.userProfiles.savePersonalInfo);
@@ -70,44 +65,48 @@ export function useProfile() {
   const saveTestScores = useMutation(api.userProfiles.saveTestScores);
   const saveCareerGoals = useMutation(api.userProfiles.saveCareerGoals);
 
-  // Save handlers for each section
-  const updatePersonalInfo = useCallback(async (data: PersonalInfo) => {
+  // Save functions for each section
+  const savePersonalInfoSection = async (data: PersonalInfo) => {
     if (!userId) return;
-    return await savePersonalInfo({ userId, ...data });
-  }, [userId, savePersonalInfo]);
+    await savePersonalInfo({
+      userId,
+      ...data,
+    });
+  };
 
-  const updateEducation = useCallback(async (data: Education) => {
+  const saveEducationSection = async (data: Education) => {
     if (!userId) return;
-    return await saveEducation({ userId, ...data });
-  }, [userId, saveEducation]);
+    await saveEducation({
+      userId,
+      ...data,
+    });
+  };
 
-  const updateTestScores = useCallback(async (data: TestScores) => {
+  const saveTestScoresSection = async (data: TestScores) => {
     if (!userId) return;
-    return await saveTestScores({ userId, ...data });
-  }, [userId, saveTestScores]);
+    await saveTestScores({
+      userId,
+      ...data,
+    });
+  };
 
-  const updateCareerGoals = useCallback(async (data: CareerGoals) => {
+  const saveCareerGoalsSection = async (data: CareerGoals) => {
     if (!userId) return;
-    return await saveCareerGoals({ userId, ...data });
-  }, [userId, saveCareerGoals]);
+    await saveCareerGoals({
+      userId,
+      ...data,
+    });
+  };
 
   return {
     // Profile data
     profile,
-    onboardingStatus,
-    isLoading: profile === undefined || onboardingStatus === undefined,
     
-    // Update functions
-    updatePersonalInfo,
-    updateEducation,
-    updateTestScores,
-    updateCareerGoals,
-    
-    // Helper getters
-    personalInfo: profile as PersonalInfo | undefined,
-    education: profile as Education | undefined,
-    testScores: profile as TestScores | undefined,
-    careerGoals: profile as CareerGoals | undefined,
+    // Save functions
+    savePersonalInfo: savePersonalInfoSection,
+    saveEducation: saveEducationSection,
+    saveTestScores: saveTestScoresSection,
+    saveCareerGoals: saveCareerGoalsSection,
     
     // Status
     isComplete: onboardingStatus?.isComplete ?? false,

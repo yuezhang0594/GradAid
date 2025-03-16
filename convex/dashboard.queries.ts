@@ -4,11 +4,11 @@ import { Doc, Id } from "./_generated/dataModel";
 
 // Get all applications for a user with their associated documents and LORs
 export const getApplications = query({
-  args: { userId: v.string() },
+  args: { userId: v.id("users") },
   handler: async (ctx, args) => {
     const applications = await ctx.db
       .query("applications")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .filter((q) => q.eq(q.field("userId"), args.userId))
       .collect();
 
     // Get documents and LORs for each application
@@ -16,12 +16,12 @@ export const getApplications = query({
       applications.map(async (application) => {
         const documents = await ctx.db
           .query("applicationDocuments")
-          .withIndex("by_application", (q) => q.eq("applicationId", application._id))
+          .filter((q) => q.eq(q.field("applicationId"), application._id))
           .collect();
 
         const lors = await ctx.db
           .query("letterOfRecommendations")
-          .withIndex("by_application", (q) => q.eq("applicationId", application._id))
+          .filter((q) => q.eq(q.field("applicationId"), application._id))
           .collect();
 
         return {
@@ -38,12 +38,12 @@ export const getApplications = query({
 
 // Get dashboard stats for a user
 export const getDashboardStats = query({
-  args: { userId: v.string() },
+  args: { userId: v.id("users") },
   handler: async (ctx, args) => {
     // Get applications count and status
     const applications = await ctx.db
       .query("applications")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .filter((q) => q.eq(q.field("userId"), args.userId))
       .collect();
 
     const applicationStats = {
@@ -58,7 +58,7 @@ export const getDashboardStats = query({
     // Get document progress
     const documents = await ctx.db
       .query("applicationDocuments")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .filter((q) => q.eq(q.field("userId"), args.userId))
       .collect();
 
     const documentStats = {
@@ -72,7 +72,7 @@ export const getDashboardStats = query({
     // Get LOR stats
     const lors = await ctx.db
       .query("letterOfRecommendations")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .filter((q) => q.eq(q.field("userId"), args.userId))
       .collect();
 
     const lorStats = {
@@ -84,13 +84,13 @@ export const getDashboardStats = query({
     // Get AI credits
     const aiCredits = await ctx.db
       .query("aiCredits")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .filter((q) => q.eq(q.field("userId"), args.userId))
       .first();
 
     // Get recent activity
     const recentActivity = await ctx.db
       .query("userActivity")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .filter((q) => q.eq(q.field("userId"), args.userId))
       .order("desc")
       .take(12);
 
@@ -107,14 +107,14 @@ export const getDashboardStats = query({
 // Get recent activity for a user
 export const getRecentActivity = query({
   args: { 
-    userId: v.string(),
+    userId: v.id("users"),
     limit: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
     const limit = args.limit ?? 12;
     return await ctx.db
       .query("userActivity")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .filter((q) => q.eq(q.field("userId"), args.userId))
       .order("desc")
       .take(limit);
   },
@@ -122,11 +122,11 @@ export const getRecentActivity = query({
 
 // Get AI credits for a user
 export const getAiCredits = query({
-  args: { userId: v.string() },
+  args: { userId: v.id("users") },
   handler: async (ctx, args) => {
     return await ctx.db
       .query("aiCredits")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .filter((q) => q.eq(q.field("userId"), args.userId))
       .first();
   },
 });
