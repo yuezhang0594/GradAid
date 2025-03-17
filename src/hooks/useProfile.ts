@@ -49,6 +49,12 @@ export interface CareerGoals {
   budgetRange?: string;
 }
 
+// Define onboarding status type
+export interface OnboardingStatus {
+  isComplete: boolean;
+  currentStep: "personal-info" | "education" | "career-goals" | "complete";
+}
+
 export function useProfile() {
   const { user } = useUser();
   const userId = user?.id as Id<"users"> | undefined;
@@ -57,7 +63,7 @@ export function useProfile() {
   const profile = useQuery(api.userProfiles.getProfile, userId ? { userId } : "skip");
 
   // Get onboarding status
-  const onboardingStatus = useQuery(api.userProfiles.checkOnboardingStatus, userId ? { userId } : "skip");
+  const onboardingStatus = useQuery(api.userProfiles.checkOnboardingStatus, userId ? { userId } : "skip") as OnboardingStatus | undefined;
 
   // Mutations for each section
   const savePersonalInfo = useMutation(api.userProfiles.savePersonalInfo);
@@ -110,6 +116,6 @@ export function useProfile() {
     
     // Status
     isComplete: onboardingStatus?.isComplete ?? false,
-    currentStep: onboardingStatus?.currentStep ?? "personal"
+    currentStep: onboardingStatus?.currentStep ?? "personal-info"
   };
 }

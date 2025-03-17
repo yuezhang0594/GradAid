@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -33,6 +34,7 @@ interface TestScoresStepProps {
 }
 
 export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps) {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { user } = useUser();
   const saveTestScores = useMutation(api.userProfiles.saveTestScores);
 
@@ -47,9 +49,12 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
   });
 
   async function onSubmit(data: TestScoresFormValues) {
+    if (!user) return;
+
+    setIsSubmitting(true);
     try {
       await saveTestScores({
-        userId: user?.id as Id<"users">,
+        userId: user.id as Id<"users">,
         greScores: {
           verbal: data.verbal,
           quantitative: data.quantitative,
@@ -60,6 +65,8 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
       onComplete();
     } catch (error) {
       console.error("Failed to save test scores:", error);
+    } finally {
+      setIsSubmitting(false);
     }
   }
 
@@ -124,7 +131,14 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
               )}
             />
 
-            <Button type="submit">Save Test Scores</Button>
+            <div className="flex justify-end space-x-2">
+              <Button variant="outline" type="button" onClick={() => window.history.back()}>
+                Back
+              </Button>
+              <Button type="submit" disabled={isSubmitting}>
+                {isSubmitting ? "Saving..." : "Complete"}
+              </Button>
+            </div>
           </form>
         </Form>
       </CardContent>

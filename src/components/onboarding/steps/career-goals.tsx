@@ -2,12 +2,16 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import { useUser } from "@clerk/clerk-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
+import { useMutation } from "convex/react";
+import { api } from "../../../../convex/_generated/api";
+import { Id } from "../../../../convex/_generated/dataModel";
 
 const careerGoalsSchema = z.object({
   targetDegree: z.string().min(1, "Target degree is required"),
@@ -23,7 +27,6 @@ type CareerGoalsForm = z.infer<typeof careerGoalsSchema>;
 
 interface CareerGoalsStepProps {
   onComplete: () => void;
-  userId: string;
   initialData?: {
     targetDegree?: string;
     intendedField?: string;
@@ -35,8 +38,10 @@ interface CareerGoalsStepProps {
   };
 }
 
-export function CareerGoalsStep({ onComplete, userId, initialData }: CareerGoalsStepProps) {
+export function CareerGoalsStep({ onComplete, initialData }: CareerGoalsStepProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { user } = useUser();
+  const saveCareerGoals = useMutation(api.userProfiles.saveCareerGoals);
   
   const form = useForm<CareerGoalsForm>({
     resolver: zodResolver(careerGoalsSchema),
@@ -52,10 +57,20 @@ export function CareerGoalsStep({ onComplete, userId, initialData }: CareerGoals
   });
 
   const onSubmit = async (data: CareerGoalsForm) => {
+    if (!user) return;
+
     try {
       setIsSubmitting(true);
-      // TODO: Save to Convex
-      console.log("Saving career goals:", data);
+      await saveCareerGoals({
+        userId: user.id as Id<"users">,
+        targetDegree: data.targetDegree,
+        intendedField: data.intendedField,
+        researchInterests: data.researchInterests.split(",").map(s => s.trim()),
+        careerObjectives: data.careerObjectives,
+        targetLocations: data.targetLocations.split(",").map(s => s.trim()),
+        expectedStartDate: data.expectedStartDate,
+        budgetRange: data.budgetRange,
+      });
       onComplete();
     } catch (error) {
       console.error("Error saving career goals:", error);

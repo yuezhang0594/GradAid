@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useForm, ControllerRenderProps } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import { useUser } from "@clerk/clerk-react";
 import { useMutation } from "convex/react";
 import { api } from "../../../../convex/_generated/api";
 import { Id } from "../../../../convex/_generated/dataModel";
@@ -35,7 +36,6 @@ interface EducationForm {
 
 interface EducationStepProps {
   onComplete: () => void;
-  userId?: Id<"users">;
   initialData?: {
     educationLevel?: string;
     major?: string;
@@ -47,8 +47,9 @@ interface EducationStepProps {
   };
 }
 
-export function EducationStep({ onComplete, userId, initialData }: EducationStepProps) {
+export function EducationStep({ onComplete, initialData }: EducationStepProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { user } = useUser();
   const saveEducation = useMutation(api.userProfiles.saveEducation);
   
   const form = useForm<EducationForm>({
@@ -65,12 +66,12 @@ export function EducationStep({ onComplete, userId, initialData }: EducationStep
   });
 
   const onSubmit = async (data: EducationForm) => {
-    if (!userId) return;
+    if (!user) return;
     
     setIsSubmitting(true);
     try {
       await saveEducation({
-        userId,
+        userId: user.id as Id<"users">,
         educationLevel: data.educationLevel,
         major: data.major,
         university: data.university,
@@ -175,57 +176,62 @@ export function EducationStep({ onComplete, userId, initialData }: EducationStep
                         <SelectTrigger>
                           <SelectValue placeholder="Select GPA scale" />
                         </SelectTrigger>
-                      </FormControl>
-                      <SelectContent>
-                        <SelectItem value="4">4.0</SelectItem>
-                        <SelectItem value="5">5.0</SelectItem>
-                        <SelectItem value="10">10.0</SelectItem>
-                      </SelectContent>
-                    </Select>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-            </div>
-
-            <FormField
-              control={form.control}
-              name="graduationDate"
-              render={({ field }: { field: ControllerRenderProps<EducationForm, "graduationDate"> }) => (
-                <FormItem>
-                  <FormLabel>Graduation Date</FormLabel>
-                  <FormControl>
-                    <Input type="month" {...field} />
-                  </FormControl>
+                    </FormControl>
+                    <SelectContent>
+                      <SelectItem value="4">4.0</SelectItem>
+                      <SelectItem value="5">5.0</SelectItem>
+                      <SelectItem value="10">10.0</SelectItem>
+                    </SelectContent>
+                  </Select>
                   <FormMessage />
                 </FormItem>
               )}
             />
+          </div>
 
-            <FormField
-              control={form.control}
-              name="researchExperience"
-              render={({ field }: { field: ControllerRenderProps<EducationForm, "researchExperience"> }) => (
-                <FormItem>
-                  <FormLabel>Research Experience (Optional)</FormLabel>
-                  <FormControl>
-                    <Textarea
-                      placeholder="Describe your research experience"
-                      className="resize-none"
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+          <FormField
+            control={form.control}
+            name="graduationDate"
+            render={({ field }: { field: ControllerRenderProps<EducationForm, "graduationDate"> }) => (
+              <FormItem>
+                <FormLabel>Graduation Date</FormLabel>
+                <FormControl>
+                  <Input type="month" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
 
-            <Button type="submit" disabled={isSubmitting}>
-              {isSubmitting ? "Saving..." : "Save & Continue"}
+          <FormField
+            control={form.control}
+            name="researchExperience"
+            render={({ field }: { field: ControllerRenderProps<EducationForm, "researchExperience"> }) => (
+              <FormItem>
+                <FormLabel>Research Experience (Optional)</FormLabel>
+                <FormControl>
+                  <Textarea
+                    placeholder="Describe your research experience"
+                    className="h-32"
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
+          <div className="flex justify-end space-x-2">
+            <Button variant="outline" type="button" onClick={() => window.history.back()}>
+              Back
             </Button>
-          </form>
-        </Form>
-      </CardContent>
-    </Card>
-  );
+            <Button type="submit" disabled={isSubmitting}>
+              {isSubmitting ? "Saving..." : "Complete"}
+            </Button>
+          </div>
+        </form>
+      </Form>
+    </CardContent>
+  </Card>
+);
 }

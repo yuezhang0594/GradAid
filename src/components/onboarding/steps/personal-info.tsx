@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useForm, ControllerRenderProps } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import { useUser } from "@clerk/clerk-react";
 import { useMutation } from "convex/react";
 import { api } from "../../../../convex/_generated/api";
 import { Id } from "../../../../convex/_generated/dataModel";
@@ -23,12 +24,12 @@ type PersonalInfoForm = z.infer<typeof personalInfoSchema>;
 
 interface PersonalInfoStepProps {
   onComplete: () => void;
-  userId?: Id<"users">;
   initialData?: Partial<PersonalInfoForm>;
 }
 
-export function PersonalInfoStep({ onComplete, userId, initialData }: PersonalInfoStepProps) {
+export function PersonalInfoStep({ onComplete, initialData }: PersonalInfoStepProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { user } = useUser();
   const savePersonalInfo = useMutation(api.userProfiles.savePersonalInfo);
 
   const form = useForm<PersonalInfoForm>({
@@ -42,12 +43,12 @@ export function PersonalInfoStep({ onComplete, userId, initialData }: PersonalIn
   });
 
   const onSubmit = async (data: PersonalInfoForm) => {
-    if (!userId) return;
+    if (!user) return;
     
     setIsSubmitting(true);
     try {
       await savePersonalInfo({
-        userId,
+        userId: user.id as Id<"users">,
         ...data,
       });
       onComplete();
@@ -119,9 +120,14 @@ export function PersonalInfoStep({ onComplete, userId, initialData }: PersonalIn
               )}
             />
 
-            <Button type="submit" className="w-full" disabled={isSubmitting}>
-              {isSubmitting ? "Saving..." : "Save and Continue"}
-            </Button>
+            <div className="flex justify-end space-x-2">
+              <Button variant="outline" type="button" onClick={() => window.history.back()}>
+                Back
+              </Button>
+              <Button type="submit" disabled={isSubmitting}>
+                {isSubmitting ? "Saving..." : "Complete"}
+              </Button>
+            </div>
           </form>
         </Form>
       </CardContent>

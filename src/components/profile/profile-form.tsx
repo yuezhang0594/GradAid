@@ -1,7 +1,8 @@
-import { useState, useEffect } from "react";
-import { Id, Doc } from "convex/_generated/dataModel";
-// import { useQuery } from "convex/react";
-// import { api } from "@/convex/_generated/api";
+import { useState } from "react";
+import { useUser } from "@clerk/clerk-react";
+import { Id } from "./../../../convex/_generated/dataModel";
+import { useQuery } from "convex/react";
+import { api } from "./../../../convex/_generated/api";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { PersonalInfoStep } from "../onboarding/steps/personal-info";
 import { EducationStep } from "../onboarding/steps/education";
@@ -12,76 +13,154 @@ import { Card } from "@/components/ui/card";
 const STEPS = ["personal", "education", "tests", "career"] as const;
 type Step = (typeof STEPS)[number];
 
-interface ProfileFormProps {
-  userId?: Id<"users">;
+// Types matching Convex schema
+interface PersonalInfo {
+  countryOfOrigin: string;
+  dateOfBirth: string;
+  currentLocation: string;
+  nativeLanguage: string;
 }
 
-// Mock data for testing each step
-const mockPersonalInfo = {
-  countryOfOrigin: "United States",
-  dateOfBirth: "1995-01-01",
-  currentLocation: "Boston, MA",
-  nativeLanguage: "English"
-};
+interface Education {
+  educationLevel: string;
+  major: string;
+  university: string;
+  gpa: number;
+  gpaScale: number;
+  graduationDate: string;
+  researchExperience?: string;
+}
 
-const mockEducation = {
-  educationLevel: "Bachelor's",
-  major: "Computer Science",
-  university: "Sample University",
-  gpa: 3.8,
-  gpaScale: 4.0,
-  graduationDate: "2024-05",
-  researchExperience: "Worked on ML projects"
-};
+interface TestScores {
+  greScores?: {
+    verbal: number;
+    quantitative: number;
+    analyticalWriting: number;
+    testDate: string;
+  };
+  englishTest?: {
+    type: "TOEFL" | "IELTS";
+    overallScore: number;
+    sectionScores: Record<string, number>;
+    testDate: string;
+  };
+}
 
-const mockTestScores = {
-  greScores: {
-    verbal: 160,
-    quantitative: 165,
-    analyticalWriting: 5.0,
-    testDate: "2024-01-15"
-  },
-  englishTest: {
-    type: "TOEFL" as const,
-    overallScore: 105,
-    sectionScores: {
-      reading: 28,
-      listening: 27,
-      speaking: 25,
-      writing: 25
-    },
-    testDate: "2024-01-20"
-  }
-};
+interface CareerGoals {
+  targetDegree: string;
+  intendedField: string;
+  researchInterests: string[];
+  careerObjectives: string;
+  targetLocations: string[];
+  expectedStartDate: string;
+  budgetRange?: string;
+}
 
-const mockCareerGoals = {
-  targetDegree: "PhD",
-  intendedField: "Computer Science",
-  researchInterests: ["Machine Learning", "Natural Language Processing"],
-  careerObjectives: "Research Scientist in AI",
-  targetLocations: ["United States", "Canada"],
-  expectedStartDate: "2024-09",
-  budgetRange: "$30,000 - $40,000"
-};
+interface UserProfile {
+  personalInfo: PersonalInfo;
+  education: Education;
+  testScores: TestScores;
+  careerGoals: CareerGoals;
+}
 
-// type UsersProfile = Doc<"userProfiles">;  
-// const usersProfile = createQuery(api.userProfiles.getProfile, { userId: userId ?? "" });
-
-export function ProfileForm({ userId }: ProfileFormProps) {
+export function ProfileForm() {
   const [activeTab, setActiveTab] = useState<Step>("personal");
+  const { user } = useUser();
+  
+  // Use the actual mock user ID from our Convex database
+  const mockUserId = "jx70gaj4b27bmmrxwgkxxq64pd7c9e8n";
+  // Skip profile query if no user is logged in
+  const profile = useQuery(api.userProfiles.getProfile, { 
+    userId: mockUserId as Id<"users">
+  });
 
-  // const profile = useQuery(api.userProfiles.getProfile, { 
-  //   userId: userId ?? "" 
-  // });
+  // Use mock data if profile is not found
+  const mockData: UserProfile = {
+    personalInfo: {
+      countryOfOrigin: "United States",
+      dateOfBirth: "1995-01-01",
+      currentLocation: "Boston, MA",
+      nativeLanguage: "English"
+    },
+    education: {
+      educationLevel: "Bachelor's",
+      major: "Computer Science",
+      university: "Sample University",
+      gpa: 3.8,
+      gpaScale: 4.0,
+      graduationDate: "2024-05",
+      researchExperience: "Worked on ML projects"
+    },
+    testScores: {
+      greScores: {
+        verbal: 160,
+        quantitative: 165,
+        analyticalWriting: 5.0,
+        testDate: "2024-01-15"
+      },
+      englishTest: {
+        type: "TOEFL",
+        overallScore: 105,
+        sectionScores: {
+          reading: 28,
+          listening: 27,
+          speaking: 25,
+          writing: 25
+        },
+        testDate: "2024-01-20"
+      }
+    },
+    careerGoals: {
+      targetDegree: "PhD",
+      intendedField: "Computer Science",
+      researchInterests: ["Machine Learning", "Natural Language Processing"],
+      careerObjectives: "Research Scientist in AI",
+      targetLocations: ["United States", "Canada"],
+      expectedStartDate: "2024-09",
+      budgetRange: "$30,000 - $40,000"
+    }
+  };
 
   const handleStepComplete = () => {
     // In profile form, we don't automatically advance to next step
     // Just stay on the current tab and show success message
   };
 
-  if (!userId) {
+  if (!user) {
     return null;
   }
+
+  // Transform Convex profile data to our UserProfile structure
+  const data: UserProfile = profile ? {
+    personalInfo: {
+      countryOfOrigin: profile.countryOfOrigin,
+      dateOfBirth: profile.dateOfBirth,
+      currentLocation: profile.currentLocation,
+      nativeLanguage: profile.nativeLanguage
+    },
+    education: {
+      educationLevel: profile.educationLevel,
+      major: profile.major,
+      university: profile.university,
+      gpa: profile.gpa,
+      gpaScale: profile.gpaScale,
+      graduationDate: profile.graduationDate,
+      researchExperience: profile.researchExperience
+    },
+    testScores: {
+      greScores: profile.greScores,
+      englishTest: profile.englishTest
+    },
+    careerGoals: {
+      targetDegree: profile.targetDegree,
+      intendedField: profile.intendedField,
+      researchInterests: profile.researchInterests,
+      careerObjectives: profile.careerObjectives,
+      targetLocations: profile.targetLocations,
+      expectedStartDate: profile.expectedStartDate,
+      budgetRange: profile.budgetRange
+    }
+  } : mockData;
 
   return (
     <Card className="w-full">
@@ -105,32 +184,28 @@ export function ProfileForm({ userId }: ProfileFormProps) {
           <TabsContent value="personal">
             <PersonalInfoStep
               onComplete={handleStepComplete}
-              userId={userId}
-              initialData={mockPersonalInfo}
+              initialData={data.personalInfo}
             />
           </TabsContent>
 
           <TabsContent value="education">
             <EducationStep
               onComplete={handleStepComplete}
-              userId={userId}
-              initialData={mockEducation}
+              initialData={data.education}
             />
           </TabsContent>
 
           <TabsContent value="tests">
             <TestScoresStep
               onComplete={handleStepComplete}
-              userId={userId}
-              initialData={mockTestScores}
+              initialData={data.testScores}
             />
           </TabsContent>
 
           <TabsContent value="career">
             <CareerGoalsStep
               onComplete={handleStepComplete}
-              userId={userId}
-              initialData={mockCareerGoals}
+              initialData={data.careerGoals}
             />
           </TabsContent>
         </div>
