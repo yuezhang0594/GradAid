@@ -91,19 +91,21 @@ export const searchPrograms = query({
       );
     }
 
-    // Get matching universities
-    const universities = await universitiesQuery.collect();
-    const universityIds = universities.map(u => u._id);
 
     // Step 4: Apply program-level filters
-    // Filter by matching universities
-    if (universityIds.length > 0) {
-      programsQuery = programsQuery.filter((q) =>
-        q.or(
-          ...universityIds.map((id) => q.eq(q.field("universityId"), id))
-        )
-      );
+    // Get matching universities
+    const universities = await universitiesQuery.collect();
+    if (universities.length === 0) {
+      console.log("No universities found");
+      return [];
     }
+    // Filter programs by matching universities
+    programsQuery = programsQuery.filter((q) =>
+      q.or(
+        ...universities.map((university) =>
+          q.eq(q.field("universityId"), university._id))
+      )
+    );
 
     // Program type filter
     if (filters.programType && filters.programType !== "all") {
@@ -138,6 +140,10 @@ export const searchPrograms = query({
 
     // Step 5: Return results
     const programs = await programsQuery.collect();
+    if (programs.length === 0) {
+      console.log("No programs found");
+      return [];
+    }
     return Promise.all(programs.map((program) => program._id));
   },
 });
@@ -161,10 +167,10 @@ export const getUniversitiesForPrograms = query({
     const programs = await Promise.all(
       programIds.map(programId => ctx.db.get(programId))
     );
-    
+
     // Filter out any null values (in case some IDs were invalid)
     const validPrograms = programs.filter((p): p is Program => p !== null);
-    
+
     // Step 2: Extract unique university IDs
     const uniqueUniversityIds = new Set<Id<"universities">>();
     validPrograms.forEach(program => {
@@ -172,21 +178,21 @@ export const getUniversitiesForPrograms = query({
         uniqueUniversityIds.add(program.universityId);
       }
     });
-    
+
     if (uniqueUniversityIds.size === 0) {
       // Return empty result if no universities found
       return null;
     }
-    
+
     // Step 3: Query universities with pagination
     const universitiesQuery = ctx.db
       .query("universities")
-      .filter(q => 
-        q.or(...Array.from(uniqueUniversityIds).map(id => 
+      .filter(q =>
+        q.or(...Array.from(uniqueUniversityIds).map(id =>
           q.eq(q.field("_id"), id)
         ))
       );
-    
+
     // Apply pagination and return results
     return await universitiesQuery.paginate(paginationOpts);
   },
@@ -275,16 +281,16 @@ export const getProgramsByIds = query({
   },
   handler: async (ctx, args) => {
     const { programIds } = args;
-    
+
     if (!programIds || programIds.length === 0) {
       return [];
     }
-    
+
     // Query all programs with the given IDs
     const programs = await Promise.all(
       programIds.map(id => ctx.db.get(id))
     );
-    
+
     // Filter out any null values
     return programs.filter(program => program !== null);
   },

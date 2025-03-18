@@ -129,9 +129,9 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
         <div className="flex items-center space-x-2">
           <Checkbox
             id="gre-waiver"
-            checked={filters.gre === false}
+            checked={filters.gre === true}
             onCheckedChange={(checked) =>
-              handleFilterChange('gre', checked ? false : undefined, 'checkbox')
+              handleFilterChange('gre', checked ? true : false, 'checkbox')
             }
           />
           <Label htmlFor="gre-waiver">GRE Waiver Available</Label>
@@ -146,7 +146,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
               handleFilterChange('toefl', checked ? true : undefined, 'checkbox')
             }
           />
-          <Label htmlFor="toefl-required">TOEFL Required</Label>
+          <Label htmlFor="toefl-required">TOEFL Waiver Available</Label>
         </div>
 
         {/* Minimum GPA Filter */}

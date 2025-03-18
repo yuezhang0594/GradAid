@@ -247,7 +247,7 @@ export default internalMutation({
         department: "College of Engineering",
         requirements: {
           minimumGPA: 3.0,
-          gre: true,
+          gre: false,
           toefl: true,
           recommendationLetters: 3,
         },
@@ -265,7 +265,7 @@ export default internalMutation({
         requirements: {
           minimumGPA: 3.6,
           gre: true,
-          toefl: true,
+          toefl: false,
           recommendationLetters: 3,
         },
         deadlines: {
@@ -281,7 +281,7 @@ export default internalMutation({
         department: "College of Computing",
         requirements: {
           minimumGPA: 3.0,
-          gre: true,
+          gre: false,
           toefl: true,
           recommendationLetters: 2,
         },
@@ -298,7 +298,7 @@ export default internalMutation({
         department: "College of Computing",
         requirements: {
           minimumGPA: 3.0,
-          gre: true,
+          gre: false,
           toefl: true,
           recommendationLetters: 2,
         },

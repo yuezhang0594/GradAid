@@ -20,7 +20,7 @@ import { useQuery } from 'convex/react';
 import { api } from '../../convex/_generated/api';
 
 const FILTER_DELAY = 500; // delay for filtering to smooth UX
-const ITEMS_PER_PAGE = 5; // Define how many items per page for pagination
+const ITEMS_PER_PAGE = 2; // Define how many items per page for pagination
 
 /**
  * UniversitySearchPage Component
@@ -58,7 +58,6 @@ const UniversitySearchPage: React.FC = () => {
     updateFilters,
     loadMore,
     status,
-    loading,
     hasMore
   } = useProgramSearch(searchQuery);
 
@@ -109,7 +108,7 @@ const UniversitySearchPage: React.FC = () => {
     if (filterTimeoutRef.current) {
       clearTimeout(filterTimeoutRef.current);
     }
-    
+
     // Only apply delay for slider filters
     if (filterType === 'slider') {
       // Set a new timeout to apply filters after delay
@@ -222,7 +221,7 @@ const UniversitySearchPage: React.FC = () => {
 
       {/* Results section */}
       <section id="results-section">
-        {(loading && status === "LoadingFirstPage") || isLoadingPage || favoritesLoading ? (
+        {status === "LoadingFirstPage" || isLoadingPage || favoritesLoading ? (
           <div className="flex justify-center py-12">
             <div className="space-y-4 w-full">
               <Skeleton className="h-12 w-full" />

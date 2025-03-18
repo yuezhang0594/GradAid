@@ -12,8 +12,8 @@ export interface ProgramSearchFilters {
     programType: string;
     location: string;
     ranking: string;
-    gre: boolean;
-    toefl: boolean;
+    gre?: boolean;
+    toefl?: boolean;
     minimumGPA?: number;
 }
 
@@ -62,14 +62,21 @@ export function useProgramSearch(query?: string, initialFilters?: Partial<Progra
 
     // Update universities and pagination status when results change
     useEffect(() => {
+        if (paginationResult === null) {
+            // Explicitly handle the "no results" case
+            setUniversities([]);
+            setStatus("Exhausted");
+            return;
+        }
+
         if (!paginationResult) return;
-        
+
         if (status === "LoadingFirstPage") {
             setUniversities(paginationResult.page);
         } else if (status === "LoadingMore") {
             setUniversities(prev => [...prev, ...paginationResult.page]);
         }
-        
+
         // Update pagination status
         if (!paginationResult.isDone) {
             setCursor(paginationResult.continueCursor || null);
@@ -87,7 +94,6 @@ export function useProgramSearch(query?: string, initialFilters?: Partial<Progra
         updateFilters,
         loadMore,
         status,
-        loading: status === "LoadingFirstPage" || status === "LoadingMore",
         hasMore: status === "CanLoadMore"
     };
 }
