@@ -60,10 +60,10 @@ export function useProfile() {
   const userId = user?.id as Id<"users"> | undefined;
 
   // Get profile data
-  const profile = useQuery(api.userProfiles.getProfile, userId ? { userId } : "skip");
+  const profile = useQuery(api.userProfiles.getProfile);
 
   // Get onboarding status
-  const onboardingStatus = useQuery(api.userProfiles.checkOnboardingStatus, userId ? { userId } : "skip") as OnboardingStatus | undefined;
+  const onboardingStatus = useQuery(api.userProfiles.checkOnboardingStatus) as OnboardingStatus | undefined;
 
   // Mutations for each section
   const savePersonalInfo = useMutation(api.userProfiles.savePersonalInfo);

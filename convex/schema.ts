@@ -233,8 +233,7 @@ const schema = defineSchema({
 
   favorites: defineTable({
     userId: v.id("users"),
-    programId: v.id("programs"),
-    createdAt: v.string(),
+    programId: v.id("programs")
   })
     .index("by_user", ["userId"])
     .index("by_program", ["programId"]),

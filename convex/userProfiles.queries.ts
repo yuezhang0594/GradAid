@@ -1,6 +1,7 @@
 import { query } from "./_generated/server";
 import { v } from "convex/values";
 import { Doc, Id } from "./_generated/dataModel";
+import { getCurrentUserIdOrThrow } from "./users";
 
 export const getProfile = query({
   args: { userId: v.id("users") },
@@ -166,11 +167,12 @@ export const getRecentActivity = query({
 
 // Get AI credits for a user
 export const getAiCredits = query({
-  args: { userId: v.id("users") },
+  args: {},
   handler: async (ctx, args) => {
+    const userId = await getCurrentUserIdOrThrow(ctx);
     return await ctx.db
       .query("aiCredits")
-      .filter((q) => q.eq(q.field("userId"), args.userId))
+      .filter((q) => q.eq(q.field("userId"), userId))
       .first();
   },
 });
