@@ -1,6 +1,6 @@
-import { mutation } from "./_generated/server";
+import { mutation } from "../_generated/server";
 import { v } from "convex/values";
-import { Doc, Id } from "./_generated/dataModel";
+import { Doc, Id } from "../_generated/dataModel";
 
 // Update application status
 export const updateApplicationStatus = mutation({

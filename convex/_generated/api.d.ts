@@ -13,6 +13,8 @@ import type {
   FilterApi,
   FunctionReference,
 } from "convex/server";
+import type * as dashboard_mutations from "../dashboard/mutations.js";
+import type * as dashboard_queries from "../dashboard/queries.js";
 import type * as http from "../http.js";
 import type * as init from "../init.js";
 import type * as profile from "../profile.js";
@@ -33,6 +35,8 @@ import type * as validators from "../validators.js";
  * ```
  */
 declare const fullApi: ApiFromModules<{
+  "dashboard/mutations": typeof dashboard_mutations;
+  "dashboard/queries": typeof dashboard_queries;
   http: typeof http;
   init: typeof init;
   profile: typeof profile;

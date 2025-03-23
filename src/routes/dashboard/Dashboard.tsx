@@ -31,7 +31,6 @@ import {
   SidebarInset,
   SidebarProvider,
 } from "@/components/ui/sidebar"
-import { Separator } from "@radix-ui/react-separator";
 
 // Mock data for charts
 const performanceData = [
