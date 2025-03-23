@@ -46,6 +46,17 @@ export const deleteFromClerk = internalMutation({
   },
 });
 
+export async function getCurrentUserIdOrThrow(ctx: QueryCtx) {
+  const userRecord = await getCurrentUser(ctx);
+  if (!userRecord) throw new Error("Can't get current user ID");
+  return userRecord._id;
+}
+
+export async function getCurrentUserId(ctx: QueryCtx) {
+  const userRecord = await getCurrentUser(ctx);
+  return userRecord ? userRecord._id : null;
+}
+
 export async function getCurrentUserOrThrow(ctx: QueryCtx) {
   const userRecord = await getCurrentUser(ctx);
   if (!userRecord) throw new Error("Can't get current user");
@@ -60,7 +71,7 @@ export async function getCurrentUser(ctx: QueryCtx) {
   return await userByClerkId(ctx, identity.subject);
 }
 
-async function userByClerkId(ctx: QueryCtx, clerkId: string) {
+export async function userByClerkId(ctx: QueryCtx, clerkId: string) {
   return await ctx.db
     .query("users")
     .withIndex("byClerkId", (q) => q.eq("clerkId", clerkId))
