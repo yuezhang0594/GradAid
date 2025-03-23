@@ -3,14 +3,12 @@ import { v } from "convex/values";
 import { educationValidator, workExperienceValidator, publicationValidator, researchExperienceValidator } from './validators';
 
 const schema = defineSchema({
-
-  // Do not alter users table. It is set by Clerk.
   users: defineTable({
-    email: v.string(),
-    emailVerificationTime: v.float64(),
-    image: v.string(),
     name: v.string(),
-  }),
+    email: v.string(),
+    // this the Clerk ID, stored in the subject JWT field
+    externalId: v.string(),
+  }).index("byExternalId", ["externalId"]),
 
   profiles: defineTable({
     userId: v.id("users"),
@@ -46,7 +44,7 @@ const schema = defineSchema({
     dateOfBirth: v.string(),
     currentLocation: v.string(),
     nativeLanguage: v.string(),
-    
+
     // Education
     educationLevel: v.string(),
     major: v.string(),
@@ -55,7 +53,7 @@ const schema = defineSchema({
     gpaScale: v.number(),
     graduationDate: v.string(),
     researchExperience: v.optional(v.string()),
-    
+
     // Test Scores
     greScores: v.optional(v.object({
       verbal: v.number(),
@@ -69,7 +67,7 @@ const schema = defineSchema({
       sectionScores: v.record(v.string(), v.number()),
       testDate: v.string(),
     })),
-    
+
     // Career Goals
     targetDegree: v.string(),
     intendedField: v.string(),
@@ -78,7 +76,7 @@ const schema = defineSchema({
     targetLocations: v.array(v.string()),
     expectedStartDate: v.string(),
     budgetRange: v.optional(v.string()),
-    
+
     // Metadata
     createdAt: v.string(),
     updatedAt: v.string(),

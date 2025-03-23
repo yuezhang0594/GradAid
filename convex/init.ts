@@ -84,8 +84,7 @@ export default internalMutation({
     const mockUserId = await ctx.db.insert("users", {
       name: "Demo User",
       email: "demo@example.com",
-      image: "https://storage.googleapis.com/gradaid-images/demo-user.jpg",
-      emailVerificationTime: Date.now()
+      externalId: "user_demo",
     });
 
     // Initialize user profile
