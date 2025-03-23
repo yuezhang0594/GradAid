@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Heart, ChevronDown, ChevronUp, ExternalLink, Calendar, DollarSign, Award } from 'lucide-react';
+import { Heart, ChevronDown, ChevronUp, ExternalLink, Calendar } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -16,8 +16,8 @@ type University = Doc<"universities"> & {
 interface UniversityCardProps {
   university: University;
   programs: Program[]; // Use the programs passed from parent
-  onSave: (universityId: Id<"universities">, programId: string) => void;
-  isFavorite: (universityId: Id<"universities">, programId: string) => boolean;
+  onSave: (programId: Id<"programs">) => Promise<boolean>;
+  isFavorite: (programId: Id<"programs">) => boolean;
 }
 
 /**
@@ -123,14 +123,14 @@ const UniversityCard: React.FC<UniversityCardProps> = ({
                   <p className="text-sm text-gray-600">{program.department}</p>
                 </div>
                 <Button
-                  onClick={() => onSave(university._id, program._id)}
+                  onClick={() => onSave(program._id)}
                   variant="ghost"
                   size="icon"
-                  className={isFavorite(university._id, program._id) ? "text-red-500 h-8 w-8" : "text-gray-400 h-8 w-8"}
+                  className={isFavorite(program._id) ? "text-red-500 h-8 w-8" : "text-gray-400 h-8 w-8"}
                 >
                   <Heart
                     className="h-4 w-4"
-                    fill={isFavorite(university._id, program._id) ? "currentColor" : "none"}
+                    fill={isFavorite(program._id) ? "currentColor" : "none"}
                   />
                 </Button>
               </div>

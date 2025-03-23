@@ -62,12 +62,12 @@ const UniversitySearchPage: React.FC = () => {
   } = useProgramSearch(searchQuery);
 
   // Get the actual program objects for the programIds
-  const programs = useQuery(api.programs.search.getProgramsByIds, { 
-    programIds: programIds || [] 
+  const programs = useQuery(api.programs.search.getProgramsByIds, {
+    programIds: programIds || []
   }) || [];
 
   // Use the favorites hook to manage favorite programs
-  const { 
+  const {
     toggleFavorite,
     isFavorite,
     favoritesLoading,
@@ -77,7 +77,7 @@ const UniversitySearchPage: React.FC = () => {
   const universitiesWithFilteredPrograms = useMemo(() => {
     const programsByUniversityId = programs.reduce((acc, program) => {
       if (!program.universityId) return acc;
-      
+
       if (!acc[program.universityId]) {
         acc[program.universityId] = [];
       }
@@ -119,7 +119,7 @@ const UniversitySearchPage: React.FC = () => {
     } else {
       updateFilters(newFilters);
     }
-    
+
     setCurrentPage(1);
   }, [updateFilters]);
 
@@ -132,29 +132,23 @@ const UniversitySearchPage: React.FC = () => {
     };
   }, []);
 
-  // Handle saving/favoriting a program
-  const handleSave = useCallback(async (programId: string) => {
-    // The toggleFavorite function now handles user authentication internally
-    await toggleFavorite(programId as Id<"programs">);
-  }, [toggleFavorite]);
-
   // Calculate total number of pages
-  const totalPages = hasMore ? 
-    Math.floor(universitiesWithFilteredPrograms.length / ITEMS_PER_PAGE) + 1 : 
+  const totalPages = hasMore ?
+    Math.floor(universitiesWithFilteredPrograms.length / ITEMS_PER_PAGE) + 1 :
     Math.max(1, Math.ceil(universitiesWithFilteredPrograms.length / ITEMS_PER_PAGE));
 
   // Handle page change from pagination
   const handlePageChange = async (page: number) => {
     const maxLoadedPage = Math.ceil(universitiesWithFilteredPrograms.length / ITEMS_PER_PAGE);
-    
+
     if (page > maxLoadedPage && hasMore) {
       setIsLoadingPage(true);
       await loadMore();
       setIsLoadingPage(false);
     }
-    
+
     setCurrentPage(page);
-    
+
     window.scrollTo({
       top: document.getElementById('results-section')?.offsetTop || 0,
       behavior: 'smooth'
@@ -173,28 +167,28 @@ const UniversitySearchPage: React.FC = () => {
   // Generate page numbers to display in pagination
   const getPageNumbers = () => {
     const pageNumbers = [];
-    
+
     pageNumbers.push(1);
-    
+
     const rangeStart = Math.max(2, currentPage - 1);
     const rangeEnd = Math.min(totalPages - 1, currentPage + 1);
-    
+
     if (rangeStart > 2) {
       pageNumbers.push('ellipsis-start');
     }
-    
+
     for (let i = rangeStart; i <= rangeEnd; i++) {
       pageNumbers.push(i);
     }
-    
+
     if (rangeEnd < totalPages - 1) {
       pageNumbers.push('ellipsis-end');
     }
-    
+
     if (totalPages > 1) {
       pageNumbers.push(totalPages);
     }
-    
+
     return pageNumbers;
   };
 
@@ -252,12 +246,12 @@ const UniversitySearchPage: React.FC = () => {
             <div className="grid grid-cols-1 gap-6">
               {currentUniversities.map(university => (
                 <UniversityCard
-                    key={university._id}
-                    university={university}
-                    programs={university.filteredPrograms}
-                    onSave={handleSave}
-                    isFavorite={(_, programId) => isFavorite(programId as Id<"programs">)}
-                  />
+                  key={university._id}
+                  university={university}
+                  programs={university.filteredPrograms}
+                  onSave={toggleFavorite}
+                  isFavorite={isFavorite}
+                />
               ))}
             </div>
 
@@ -267,13 +261,13 @@ const UniversitySearchPage: React.FC = () => {
                 <Pagination>
                   <PaginationContent>
                     <PaginationItem>
-                      <PaginationPrevious 
+                      <PaginationPrevious
                         onClick={() => currentPage > 1 && handlePageChange(currentPage - 1)}
                         className={currentPage <= 1 ? "pointer-events-none opacity-50" : "cursor-pointer"}
                         aria-disabled={currentPage <= 1}
                       />
                     </PaginationItem>
-                    
+
                     {getPageNumbers().map((pageNum, idx) => (
                       pageNum === 'ellipsis-start' || pageNum === 'ellipsis-end' ? (
                         <PaginationItem key={`ellipsis-${idx}`}>
@@ -293,7 +287,7 @@ const UniversitySearchPage: React.FC = () => {
                     ))}
 
                     <PaginationItem>
-                      <PaginationNext 
+                      <PaginationNext
                         onClick={() => currentPage < totalPages && handlePageChange(currentPage + 1)}
                         className={currentPage >= totalPages ? "pointer-events-none opacity-50" : "cursor-pointer"}
                         aria-disabled={currentPage >= totalPages}
