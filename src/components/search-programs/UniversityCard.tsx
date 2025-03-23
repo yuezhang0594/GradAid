@@ -6,43 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Id, Doc } from 'convex/_generated/dataModel';
 
 // Define the Program type based on the schema
-type Program = {
-  id: string;
-  name: string;
-  degree: string;
-  department: string;
-  requirements: {
-    gre: boolean;
-    greRequired?: boolean;
-    grePreferred?: boolean;
-    greWaiver?: boolean;
-    toefl: boolean;
-    toeflMinimum?: number;
-    ielts?: boolean;
-    ieltsMinimum?: number;
-    minimumGPA: number;
-    applicationFee: number;
-    recommendationLetters: number;
-    statementRequired: boolean;
-    cvRequired: boolean;
-    writingSampleRequired?: boolean;
-    portfolioRequired?: boolean;
-    interviewRequired?: boolean;
-  };
-  deadlines: {
-    fall: string | null;
-    spring: string | null;
-    summer: string | null;
-    priority?: string | null;
-    funding?: string | null;
-  };
-  acceptanceRate?: number;
-  tuition?: number;
-  duration?: string;
-  website?: string;
-  facultyStrengths?: string[];
-  researchAreas?: string[];
-};
+type Program = Doc<"programs">
 
 // Define the University type based on the schema
 type University = Doc<"universities"> & {
@@ -51,11 +15,42 @@ type University = Doc<"universities"> & {
 
 interface UniversityCardProps {
   university: University;
-  programs: any[]; // Use the programs passed from parent
+  programs: Program[]; // Use the programs passed from parent
   onSave: (universityId: Id<"universities">, programId: string) => void;
   isFavorite: (universityId: Id<"universities">, programId: string) => boolean;
 }
 
+/**
+ * A card component that displays a university's information and its associated programs.
+ * 
+ * @component
+ * @param {Object} props - The component props
+ * @param {Object} props.university - The university object to display
+ * @param {string} props.university._id - Unique identifier for the university
+ * @param {string} props.university.name - Name of the university
+ * @param {Object} props.university.location - Location information
+ * @param {string} props.university.location.city - City where the university is located
+ * @param {string} props.university.location.state - State where the university is located
+ * @param {number|null} props.university.ranking - Numerical ranking of the university (optional)
+ * @param {string} props.university.website - URL to the university's website
+ * @param {Array<Program>} props.programs - List of programs offered by the university
+ * @param {string} props.programs[].degree - Degree type (e.g., "Master's", "PhD")
+ * @param {string} props.programs[].name - Name of the program
+ * @param {string} props.programs[].department - Department offering the program
+ * @param {string} props.programs[]._id - Unique identifier for the program
+ * @param {Object} props.programs[].deadlines - Application deadlines
+ * @param {string|null} props.programs[].deadlines.fall - Fall semester application deadline (ISO date string)
+ * @param {number|undefined} props.programs[].tuition - Annual tuition cost
+ * @param {number|undefined} props.programs[].acceptanceRate - Program acceptance rate (0-1)
+ * @param {Object} props.programs[].requirements - Program requirements
+ * @param {boolean} props.programs[].requirements.gre - Whether GRE is required
+ * @param {boolean} props.programs[].requirements.toefl - Whether TOEFL is required
+ * @param {number} props.programs[].requirements.minimumGPA - Minimum GPA requirement
+ * @param {Function} props.onSave - Callback function when saving/favoriting a program
+ * @param {Function} props.isFavorite - Function to check if a program is favorited
+ * 
+ * @returns {JSX.Element} The rendered university card component
+ */
 const UniversityCard: React.FC<UniversityCardProps> = ({
   university,
   programs,
@@ -69,9 +64,28 @@ const UniversityCard: React.FC<UniversityCardProps> = ({
   };
 
   // Format a date from ISO string to readable format
-  const formatDate = (dateStr: string | null) => {
+  const formatDate = (dateStr: string | undefined) => {
     if (!dateStr) return 'N/A';
+    
     const date = new Date(dateStr);
+    
+    // Check if the dateStr includes a year specification
+    const hasYear = /\d{4}/.test(dateStr);
+    
+    // If no year is specified, set it to the next occurrence
+    if (!hasYear) {
+      const today = new Date();
+      const currentYear = today.getFullYear();
+      
+      // Set the date to this year
+      date.setFullYear(currentYear);
+      
+      // If this date has already passed this year, set to next year
+      if (date < today) {
+        date.setFullYear(currentYear + 1);
+      }
+    }
+    
     return date.toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'short',
@@ -80,17 +94,15 @@ const UniversityCard: React.FC<UniversityCardProps> = ({
   };
 
   return (
-    <Card>
+    <Card className="pb-0">
       {/* University Header */}
-      <CardHeader className="pb-3">
+      <CardHeader>
         <div className="flex items-start justify-between">
           <div className="text-left">
             <CardTitle>{university.name}</CardTitle>
             <CardDescription>
               {university.location.city}, {university.location.state}
             </CardDescription>
-          </div>
-          <div className="flex items-center space-x-2">
             {university.ranking && (
               <Badge variant="secondary">
                 Rank #{university.ranking}
@@ -101,11 +113,11 @@ const UniversityCard: React.FC<UniversityCardProps> = ({
       </CardHeader>
 
       {/* Programs List */}
-      <CardContent className="pt-2">
+      <CardContent>
         <div className="space-y-2">
           {programs.slice(0, expanded ? undefined : 2).map((program) => (
             <div key={program._id} className="border rounded-md p-3 bg-slate-50">
-              <div className="flex justify-between items-start">
+              <div className="flex justify-between items-start text-left">
                 <div>
                   <h5 className="font-medium">{program.degree} in {program.name}</h5>
                   <p className="text-sm text-gray-600">{program.department}</p>
@@ -128,20 +140,6 @@ const UniversityCard: React.FC<UniversityCardProps> = ({
                   <Calendar className="h-3 w-3 mr-1" />
                   <span>Fall: {formatDate(program.deadlines.fall)}</span>
                 </div>
-
-                {program.tuition && (
-                  <div className="flex items-center">
-                    <DollarSign className="h-3 w-3 mr-1" />
-                    <span>${program.tuition.toLocaleString()}/year</span>
-                  </div>
-                )}
-
-                {program.acceptanceRate !== undefined && (
-                  <div className="flex items-center">
-                    <Award className="h-3 w-3 mr-1" />
-                    <span>{(program.acceptanceRate * 100).toFixed(1)}% acceptance</span>
-                  </div>
-                )}
               </div>
 
               <div className="mt-2 flex flex-wrap gap-1">
@@ -180,7 +178,7 @@ const UniversityCard: React.FC<UniversityCardProps> = ({
       </CardContent>
 
       {/* University Footer */}
-      <CardFooter className="flex justify-between items-center border-t bg-slate-50 p-3">
+      <CardFooter className="flex justify-between items-center border-t p-3">
         <Button
           variant="link"
           asChild
@@ -193,15 +191,6 @@ const UniversityCard: React.FC<UniversityCardProps> = ({
             className="flex items-center"
           >
             Visit Website <ExternalLink className="ml-1 h-4 w-4" />
-          </a>
-        </Button>
-        <Button
-          variant="link"
-          asChild
-          className="text-sm font-medium p-0"
-        >
-          <a href={`/universities/${university._id}`}>
-            View Details
           </a>
         </Button>
       </CardFooter>

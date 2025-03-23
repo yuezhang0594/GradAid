@@ -20,7 +20,7 @@ import { useQuery } from 'convex/react';
 import { api } from '../../convex/_generated/api';
 
 const FILTER_DELAY = 500; // delay for filtering to smooth UX
-const ITEMS_PER_PAGE = 2; // Define how many items per page for pagination
+const ITEMS_PER_PAGE = 5; // Define how many items per page for pagination
 
 /**
  * UniversitySearchPage Component
