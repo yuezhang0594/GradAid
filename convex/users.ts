@@ -19,10 +19,10 @@ export const upsertFromClerk = internalMutation({
     const userAttributes = {
       name: `${data.first_name} ${data.last_name}`,
       email: primary_email_address,
-      externalId: data.id,
+      clerkId: data.id,
     };
 
-    const user = await userByExternalId(ctx, data.id);
+    const user = await userByClerkId(ctx, data.id);
     if (user === null) {
       await ctx.db.insert("users", userAttributes);
     } else {
@@ -34,7 +34,7 @@ export const upsertFromClerk = internalMutation({
 export const deleteFromClerk = internalMutation({
   args: { clerkUserId: v.string() },
   async handler(ctx, { clerkUserId }) {
-    const user = await userByExternalId(ctx, clerkUserId);
+    const user = await userByClerkId(ctx, clerkUserId);
 
     if (user !== null) {
       await ctx.db.delete(user._id);
@@ -57,12 +57,12 @@ export async function getCurrentUser(ctx: QueryCtx) {
   if (identity === null) {
     return null;
   }
-  return await userByExternalId(ctx, identity.subject);
+  return await userByClerkId(ctx, identity.subject);
 }
 
-async function userByExternalId(ctx: QueryCtx, externalId: string) {
+async function userByClerkId(ctx: QueryCtx, clerkId: string) {
   return await ctx.db
     .query("users")
-    .withIndex("byExternalId", (q) => q.eq("externalId", externalId))
+    .withIndex("byClerkId", (q) => q.eq("clerkId", clerkId))
     .unique();
 }

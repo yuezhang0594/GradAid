@@ -84,7 +84,7 @@ export default internalMutation({
     const mockUserId = await ctx.db.insert("users", {
       name: "Demo User",
       email: "demo@example.com",
-      externalId: "user_demo",
+      clerkId: "user_demo",
     });
 
     // Initialize user profile

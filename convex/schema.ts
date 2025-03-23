@@ -6,9 +6,8 @@ const schema = defineSchema({
   users: defineTable({
     name: v.string(),
     email: v.string(),
-    // this the Clerk ID, stored in the subject JWT field
-    externalId: v.string(),
-  }).index("byExternalId", ["externalId"]),
+    clerkId: v.string(),
+  }).index("byClerkId", ["clerkId"]),
 
   profiles: defineTable({
     userId: v.id("users"),
