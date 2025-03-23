@@ -1,6 +1,8 @@
 import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
 import { Id } from "./_generated/dataModel";
+import { get } from "http";
+import { getCurrentUserIdOrThrow } from "./users";
 
 // Helper function to determine next incomplete step
 function getNextIncompleteStep(profile: any) {
@@ -21,21 +23,23 @@ function getNextIncompleteStep(profile: any) {
 
 // Queries
 export const getProfile = query({
-  args: { userId: v.id("users") },
+  args: {},
   handler: async (ctx, args) => {
+    const userId = await getCurrentUserIdOrThrow(ctx);
     return await ctx.db
       .query("userProfiles")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .withIndex("by_user", (q) => q.eq("userId", userId))
       .first();
   },
 });
 
 export const checkOnboardingStatus = query({
-  args: { userId: v.id("users") },
+  args: {},
   handler: async (ctx, args) => {
+    const userId = await getCurrentUserIdOrThrow(ctx);
     const profile = await ctx.db
       .query("userProfiles")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .withIndex("by_user", (q) => q.eq("userId", userId))
       .first();
     
     return profile ? getNextIncompleteStep(profile) : "personal-info";
