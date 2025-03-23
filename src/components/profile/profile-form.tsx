@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { useUser } from "@clerk/clerk-react";
-import { Id } from "./../../../convex/_generated/dataModel";
 import { useQuery } from "convex/react";
 import { api } from "./../../../convex/_generated/api";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -65,14 +63,9 @@ interface UserProfile {
 
 export function ProfileForm() {
   const [activeTab, setActiveTab] = useState<Step>("personal");
-  const { user } = useUser();
-  
-  // Use the actual mock user ID from our Convex database
-  const mockUserId = "jx70gaj4b27bmmrxwgkxxq64pd7c9e8n";
+
   // Skip profile query if no user is logged in
-  const profile = useQuery(api.userProfiles.getProfile, { 
-    userId: mockUserId as Id<"users">
-  });
+  const profile = useQuery(api.userProfiles.queries.getProfile, {});
 
   // Use mock data if profile is not found
   const mockData: UserProfile = {
@@ -125,10 +118,6 @@ export function ProfileForm() {
     // In profile form, we don't automatically advance to next step
     // Just stay on the current tab and show success message
   };
-
-  if (!user) {
-    return null;
-  }
 
   // Transform Convex profile data to our UserProfile structure
   const data: UserProfile = profile ? {

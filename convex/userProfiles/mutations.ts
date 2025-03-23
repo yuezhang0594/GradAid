@@ -1,8 +1,8 @@
-import { mutation, query } from "./_generated/server";
+import { mutation, query } from "../_generated/server";
 import { v } from "convex/values";
-import { Id } from "./_generated/dataModel";
+import { Id } from "../_generated/dataModel";
 import { get } from "http";
-import { getCurrentUserIdOrThrow } from "./users";
+import { getCurrentUserIdOrThrow } from "../users";
 
 // Helper function to determine next incomplete step
 function getNextIncompleteStep(profile: any) {
@@ -49,16 +49,16 @@ export const checkOnboardingStatus = query({
 // Mutations
 export const savePersonalInfo = mutation({
   args: {
-    userId: v.id("users"),
     countryOfOrigin: v.string(),
     dateOfBirth: v.string(),
     currentLocation: v.string(),
     nativeLanguage: v.string(),
   },
   handler: async (ctx, args) => {
+    const userId = await getCurrentUserIdOrThrow(ctx);
     const existingProfile = await ctx.db
       .query("userProfiles")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .withIndex("by_user", (q) => q.eq("userId", userId))
       .first();
 
     if (existingProfile) {
@@ -73,7 +73,7 @@ export const savePersonalInfo = mutation({
 
     // Initialize with default values for required fields
     return await ctx.db.insert("userProfiles", {
-      userId: args.userId,
+      userId: userId,
       countryOfOrigin: args.countryOfOrigin,
       dateOfBirth: args.dateOfBirth,
       currentLocation: args.currentLocation,
@@ -106,7 +106,6 @@ export const savePersonalInfo = mutation({
 
 export const saveEducation = mutation({
   args: {
-    userId: v.id("users"),
     educationLevel: v.string(),
     major: v.string(),
     university: v.string(),
@@ -116,9 +115,10 @@ export const saveEducation = mutation({
     researchExperience: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    const userId = await getCurrentUserIdOrThrow(ctx);
     const existingProfile = await ctx.db
       .query("userProfiles")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .withIndex("by_user", (q) => q.eq("userId", userId))
       .first();
 
     if (!existingProfile) {
@@ -140,7 +140,6 @@ export const saveEducation = mutation({
 
 export const saveTestScores = mutation({
   args: {
-    userId: v.id("users"),
     greScores: v.optional(
       v.object({
         verbal: v.number(),
@@ -159,9 +158,10 @@ export const saveTestScores = mutation({
     ),
   },
   handler: async (ctx, args) => {
+    const userId = await getCurrentUserIdOrThrow(ctx);
     const existingProfile = await ctx.db
       .query("userProfiles")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .withIndex("by_user", (q) => q.eq("userId", userId))
       .first();
 
     if (!existingProfile) {
@@ -178,7 +178,6 @@ export const saveTestScores = mutation({
 
 export const saveCareerGoals = mutation({
   args: {
-    userId: v.id("users"),
     targetDegree: v.string(),
     intendedField: v.string(),
     researchInterests: v.array(v.string()),
@@ -188,9 +187,10 @@ export const saveCareerGoals = mutation({
     budgetRange: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    const userId = await getCurrentUserIdOrThrow(ctx);
     const existingProfile = await ctx.db
       .query("userProfiles")
-      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .withIndex("by_user", (q) => q.eq("userId", userId))
       .first();
 
     if (!existingProfile) {

@@ -19,7 +19,8 @@ import type * as profile from "../profile.js";
 import type * as programs_favorites from "../programs/favorites.js";
 import type * as programs_search from "../programs/search.js";
 import type * as resend from "../resend.js";
-import type * as userProfiles from "../userProfiles.js";
+import type * as userProfiles_mutations from "../userProfiles/mutations.js";
+import type * as userProfiles_queries from "../userProfiles/queries.js";
 import type * as users from "../users.js";
 import type * as validators from "../validators.js";
 
@@ -38,7 +39,8 @@ declare const fullApi: ApiFromModules<{
   "programs/favorites": typeof programs_favorites;
   "programs/search": typeof programs_search;
   resend: typeof resend;
-  userProfiles: typeof userProfiles;
+  "userProfiles/mutations": typeof userProfiles_mutations;
+  "userProfiles/queries": typeof userProfiles_queries;
   users: typeof users;
   validators: typeof validators;
 }>;

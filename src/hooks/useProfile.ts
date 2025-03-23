@@ -1,10 +1,7 @@
 import { useQuery, useMutation } from 'convex/react';
 import { api } from '../../convex/_generated/api';
 import { useUser } from '@clerk/clerk-react';
-import { Doc, Id } from '../../convex/_generated/dataModel';
-
-// Use Convex's generated type
-type UserProfile = Doc<"userProfiles"> & { _id: Id<"userProfiles"> };
+import { Id } from '../../convex/_generated/dataModel';
 
 // Define profile section types
 export interface PersonalInfo {
@@ -60,22 +57,21 @@ export function useProfile() {
   const userId = user?.id as Id<"users"> | undefined;
 
   // Get profile data
-  const profile = useQuery(api.userProfiles.getProfile);
+  const profile = useQuery(api.userProfiles.queries.getProfile);
 
   // Get onboarding status
-  const onboardingStatus = useQuery(api.userProfiles.checkOnboardingStatus) as OnboardingStatus | undefined;
+  const onboardingStatus = useQuery(api.userProfiles.queries.checkOnboardingStatus) as OnboardingStatus | undefined;
 
   // Mutations for each section
-  const savePersonalInfo = useMutation(api.userProfiles.savePersonalInfo);
-  const saveEducation = useMutation(api.userProfiles.saveEducation);
-  const saveTestScores = useMutation(api.userProfiles.saveTestScores);
-  const saveCareerGoals = useMutation(api.userProfiles.saveCareerGoals);
+  const savePersonalInfo = useMutation(api.userProfiles.mutations.savePersonalInfo);
+  const saveEducation = useMutation(api.userProfiles.mutations.saveEducation);
+  const saveTestScores = useMutation(api.userProfiles.mutations.saveTestScores);
+  const saveCareerGoals = useMutation(api.userProfiles.mutations.saveCareerGoals);
 
   // Save functions for each section
   const savePersonalInfoSection = async (data: PersonalInfo) => {
     if (!userId) return;
     await savePersonalInfo({
-      userId,
       ...data,
     });
   };
@@ -83,7 +79,6 @@ export function useProfile() {
   const saveEducationSection = async (data: Education) => {
     if (!userId) return;
     await saveEducation({
-      userId,
       ...data,
     });
   };
@@ -91,7 +86,6 @@ export function useProfile() {
   const saveTestScoresSection = async (data: TestScores) => {
     if (!userId) return;
     await saveTestScores({
-      userId,
       ...data,
     });
   };
@@ -99,7 +93,6 @@ export function useProfile() {
   const saveCareerGoalsSection = async (data: CareerGoals) => {
     if (!userId) return;
     await saveCareerGoals({
-      userId,
       ...data,
     });
   };
