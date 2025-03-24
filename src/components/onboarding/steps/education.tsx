@@ -192,7 +192,7 @@ export function EducationStep({ onComplete, initialData }: EducationStepProps) {
                 Back
               </Button>
               <Button type="submit" disabled={isSubmitting}>
-                {isSubmitting ? "Saving..." : "Complete"}
+                {isSubmitting ? "Saving..." : "Next"}
               </Button>
             </div>
           </form>

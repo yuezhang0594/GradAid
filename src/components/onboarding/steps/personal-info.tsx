@@ -113,7 +113,7 @@ export function PersonalInfoStep({ onComplete, initialData }: PersonalInfoStepPr
                 Back
               </Button>
               <Button type="submit" disabled={isSubmitting}>
-                {isSubmitting ? "Saving..." : "Complete"}
+                {isSubmitting ? "Saving..." : "Next"}
               </Button>
             </div>
           </form>

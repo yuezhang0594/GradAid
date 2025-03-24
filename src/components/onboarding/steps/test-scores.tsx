@@ -120,7 +120,7 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
                 Back
               </Button>
               <Button type="submit" disabled={isSubmitting}>
-                {isSubmitting ? "Saving..." : "Complete"}
+                {isSubmitting ? "Saving..." : "Next"}
               </Button>
             </div>
           </form>
