@@ -19,6 +19,7 @@ import ActivityPage from "./routes/cards/activity";
 import ProgramSearchPage from "./routes/ProgramSearchPage";
 import OnboardingPage from "./routes/onboarding/page";
 import ProfilePage from "./routes/profile/page";
+import SavedProgramsPage from "./routes/SavedProgramsPage";
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/search" element={<ProgramSearchPage />} />
+          <Route path="/saved" element={<SavedProgramsPage />} />
           <Route path="/applications" element={<ApplicationsPage />} />
           <Route path="/documents" element={<DocumentsPage />} />
           <Route path="/applications/:universityId" element={<ApplicationDetail />} />

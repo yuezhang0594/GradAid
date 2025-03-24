@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Id, Doc } from 'convex/_generated/dataModel';
+import formatDate from '@/lib/formatDate';
 
 // Define the Program type based on the schema
 type Program = Doc<"programs">
@@ -61,36 +62,6 @@ const UniversityCard: React.FC<UniversityCardProps> = ({
 
   const toggleExpanded = () => {
     setExpanded(!expanded);
-  };
-
-  // Format a date from ISO string to readable format
-  const formatDate = (dateStr: string | undefined) => {
-    if (!dateStr) return 'N/A';
-    
-    const date = new Date(dateStr);
-    
-    // Check if the dateStr includes a year specification
-    const hasYear = /\d{4}/.test(dateStr);
-    
-    // If no year is specified, set it to the next occurrence
-    if (!hasYear) {
-      const today = new Date();
-      const currentYear = today.getFullYear();
-      
-      // Set the date to this year
-      date.setFullYear(currentYear);
-      
-      // If this date has already passed this year, set to next year
-      if (date < today) {
-        date.setFullYear(currentYear + 1);
-      }
-    }
-    
-    return date.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'short',
-      day: 'numeric'
-    });
   };
 
   return (

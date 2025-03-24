@@ -272,6 +272,10 @@ export async function getUniversityIdByProgramID(ctx: QueryCtx, programId: Id<'p
 
 }
 
+export async function getUniversityById(ctx: QueryCtx, universityId: Id<'universities'>): Promise<University | null> {
+  return await ctx.db.get(universityId);
+}
+
 /**
  * Get program objects from an array of program IDs
  */
@@ -293,5 +297,39 @@ export const getProgramsByIds = query({
 
     // Filter out any null values
     return programs.filter(program => program !== null);
+  },
+});
+
+/**
+ * Get a university by its ID
+ */
+export const getUniversity = query({
+  args: {
+    universityId: v.id("universities"),
+  },
+  handler: async (ctx, { universityId }) => {
+    const university = await ctx.db.get(universityId);
+    if (!university) {
+      throw new Error(`University with ID ${universityId} not found`);
+    }
+    return university;
+  },
+});
+
+export const getUniversities = query({
+  args: { universityIds: v.array(v.id("universities")) },
+  handler: async (ctx, args) => {
+    const { universityIds } = args;
+    
+    if (universityIds.length === 0) {
+      return [];
+    }
+    
+    return await ctx.db
+      .query("universities")
+      .filter(q => 
+        q.or(...universityIds.map(id => q.eq(q.field("_id"), id)))
+      )
+      .collect();
   },
 });
