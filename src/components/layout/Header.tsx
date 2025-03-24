@@ -93,7 +93,7 @@ export default function Header() {
           {/* User Profile Section */}
           <div className='flex items-center gap-2'>
             <div className="hidden md:block mr-2 text-sm font-medium">
-              {user?.id}
+              {user?.fullName}
             </div>
             <UserButton />
           </div>

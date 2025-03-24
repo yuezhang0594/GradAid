@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { useQuery, useMutation } from "convex/react";
+import { useNavigate } from "react-router-dom";
 import { api } from "./../../../convex/_generated/api";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Progress } from "@/components/ui/progress";
 import { PersonalInfoStep } from "../onboarding/steps/personal-info";
 import { EducationStep } from "../onboarding/steps/education";
 import { TestScoresStep } from "../onboarding/steps/test-scores";
@@ -69,7 +71,9 @@ interface StepData {
 }
 
 export function ProfileForm() {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState<Step>("personal-info");
+  const [progress, setProgress] = useState(25);
 
   // Skip profile query if no user is logged in
   const profile = useQuery(api.userProfiles.queries.getProfile, {});
@@ -84,35 +88,51 @@ export function ProfileForm() {
       // Determine which tab to show based on profile data
       if (!profile.countryOfOrigin || !profile.dateOfBirth || !profile.currentLocation || !profile.nativeLanguage) {
         setActiveTab("personal-info");
+        setProgress(25);
       } else if (!profile.educationLevel || !profile.major || !profile.university || !profile.gpa || !profile.graduationDate) {
         setActiveTab("education");
+        setProgress(50);
       } else if (!profile.targetDegree || !profile.intendedField || !profile.researchInterests || !profile.careerObjectives) {
         setActiveTab("career-goals");
+        setProgress(75);
+      } else {
+        setProgress(100);
       }
     }
   }, [profile]);
+
+  const moveToNextStep = (currentStep: Step) => {
+    const currentIndex = STEPS.indexOf(currentStep);
+    if (currentIndex < STEPS.length - 1) {
+      const nextStep = STEPS[currentIndex + 1];
+      setActiveTab(nextStep);
+      setProgress((currentIndex + 2) * 25);
+    }
+  };
 
   const handleStepComplete = async <T extends keyof StepData>(step: T, data: StepData[T]): Promise<void> => {
     try {
       switch (step) {
         case "personal-info":
           await savePersonalInfoMutation(data as PersonalInfo);
+          moveToNextStep(step);
           break;
         case "education":
           await saveEducationMutation(data as Education);
+          moveToNextStep(step);
           break;
         case "test-scores":
           await saveTestScoresMutation(data as TestScores);
+          moveToNextStep(step);
           break;
         case "career-goals":
           await saveCareerGoalsMutation(data as CareerGoals);
+          navigate("/dashboard");
           break;
       }
-      // Show success message
       console.log("Profile section updated successfully");
     } catch (error) {
       console.error("Error saving step data:", error);
-      // You might want to show an error toast here
     }
   };
 
@@ -159,18 +179,21 @@ export function ProfileForm() {
 
   return (
     <Card className="w-full">
-      <Tabs value={activeTab} onValueChange={(value) => setActiveTab(value as Step)} className="w-full">
+      <div className="p-4">
+        <Progress value={progress} className="w-full" />
+      </div>
+      <Tabs value={activeTab} className="w-full">
         <TabsList className="grid w-full grid-cols-4">
-          <TabsTrigger value="personal-info">
+          <TabsTrigger value="personal-info" disabled={activeTab !== "personal-info"}>
             Personal Info
           </TabsTrigger>
-          <TabsTrigger value="education">
+          <TabsTrigger value="education" disabled={activeTab !== "education"}>
             Education
           </TabsTrigger>
-          <TabsTrigger value="test-scores">
+          <TabsTrigger value="test-scores" disabled={activeTab !== "test-scores"}>
             Test Scores
           </TabsTrigger>
-          <TabsTrigger value="career-goals">
+          <TabsTrigger value="career-goals" disabled={activeTab !== "career-goals"}>
             Career Goals
           </TabsTrigger>
         </TabsList>

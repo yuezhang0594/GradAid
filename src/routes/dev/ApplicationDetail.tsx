@@ -122,7 +122,7 @@ export default function ApplicationDetail() {
             <CardTitle>University Information</CardTitle>
           </CardHeader>
           <CardContent>
-            <p>University ID: {universityId}</p>
+            <p>University: {universityId}</p>
             <p>Program: {application.program}</p>
           </CardContent>
         </Card>
