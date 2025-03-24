@@ -43,13 +43,13 @@ export default function SavedProgramsPage() {
     }
 
     return (
-        <div className="container mx-auto py-8 max-w-6xl">
-            <div className="mb-8">
-                <h1 className="text-3xl font-bold mb-2">Saved Programs</h1>
+        <div className="container mx-auto py-8 px-4 max-w-7xl">
+            <header className="mb-8">
+                <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl mb-2">Saved Programs</h1>
                 <p className="text-muted-foreground">
                     Manage and compare your saved graduate programs
                 </p>
-            </div>
+            </header>
 
             {/* Results */}
             <div className="space-y-4">
@@ -70,35 +70,29 @@ export default function SavedProgramsPage() {
                         </div>
 
                         {sortedPrograms.map((program) => (
-                            <Card key={program._id} className="overflow-hidden">
-                                <div className="border-b px-6 py-4 flex justify-between items-start">
-                                    <div>
-                                        <CardTitle className="text-lg mb-1">{program.degree} in {program.name}</CardTitle>
-                                        <CardDescription className="text-sm">
-                                            {program.university?.name} • {program.university?.location.city}, {program.university?.location.state}
-                                            {program.university?.ranking && (
-                                                <span className="ml-2">
-                                                    <Badge variant="secondary" className="ml-1">
-                                                        Rank #{program.university.ranking}
-                                                    </Badge>
-                                                </span>
-                                            )}
-                                        </CardDescription>
-                                        <p className="text-sm text-muted-foreground mt-1">{program.department}</p>
+                            <Card key={program._id} className="overflow-hidden pb-0 pt-2">
+                                <div className = "text-left px-4">
+                                    <div className="flex items-center justify-between">
+                                        <CardTitle className="text-md">{program.degree} in {program.name}</CardTitle>
+                                        {/* TODO: add modal confirmation before deleting favorite */}
+                                        <Button
+                                            onClick={() => toggleFavorite(program._id)}
+                                            variant="ghost"
+                                            size="icon"
+                                            className="text-red-500 h-8 w-8"
+                                        >
+                                            <X
+                                                className="h-5 w-5"
+                                            />
+                                        </Button>
                                     </div>
-                                    <Button
-                                        onClick={() => toggleFavorite(program._id)}
-                                        variant="ghost"
-                                        size="icon"
-                                        className="text-red-500 h-8 w-8"
-                                    >
-                                        <X
-                                            className="h-5 w-5"
-                                        />
-                                    </Button>
+                                    <CardDescription className="text-sm">
+                                        <strong>{program.university?.name}</strong>  •  {program.university?.location.city}, {program.university?.location.state}
+                                        <br />
+                                        {program.department}
+                                    </CardDescription>
                                 </div>
-
-                                <CardContent className="px-6 py-4">
+                                <CardContent className="text-left px-4">
                                     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
                                         <div>
                                             <h4 className="text-sm font-medium mb-1">Deadline</h4>
@@ -107,7 +101,6 @@ export default function SavedProgramsPage() {
                                                 <span>Fall: {formatDate(program.deadlines.fall)}</span>
                                             </div>
                                         </div>
-
                                         <div>
                                             <h4 className="text-sm font-medium mb-1">Requirements</h4>
                                             <div className="flex flex-wrap gap-1.5">
@@ -120,9 +113,13 @@ export default function SavedProgramsPage() {
                                                         GRE Waiver
                                                     </Badge>
                                                 )}
-                                                {program.requirements.toefl && (
+                                                {program.requirements.toefl ? (
                                                     <Badge variant="outline" className="bg-blue-100 text-blue-800 hover:bg-blue-100">
                                                         TOEFL Required
+                                                    </Badge>
+                                                ) : (
+                                                    <Badge variant="outline" className="bg-green-100 text-green-800 hover:bg-green-100">
+                                                        TOEFL Waiver
                                                     </Badge>
                                                 )}
                                             </div>
@@ -137,12 +134,12 @@ export default function SavedProgramsPage() {
                                     </div>
                                 </CardContent>
 
-                                <CardFooter className="border-t px-6 py-3 bg-slate-50">
+                                <CardFooter className="border-t px-4 py-2">
                                     <div className="flex justify-between w-full">
                                         <Button
                                             variant="link"
                                             asChild
-                                            className="text-sm p-0"
+                                            className="text-sm p-0 px-0"
                                         >
                                             <a
                                                 href={program.university?.website}
@@ -153,13 +150,13 @@ export default function SavedProgramsPage() {
                                                 University Website <ExternalLink className="ml-1 h-4 w-4" />
                                             </a>
                                         </Button>
-
+                                        {/* TODO: route to application page, prefill program details */}
                                         <Button
                                             variant="outline"
                                             size="sm"
                                             onClick={() => window.location.href = `/search?university=${program.university?._id}`}
                                         >
-                                            Apply Now
+                                            Start Application
                                         </Button>
                                     </div>
                                 </CardFooter>
