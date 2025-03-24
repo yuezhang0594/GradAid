@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useQuery } from "convex/react";
+import { useState, useEffect } from "react";
+import { useQuery, useMutation } from "convex/react";
 import { api } from "./../../../convex/_generated/api";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { PersonalInfoStep } from "../onboarding/steps/personal-info";
@@ -8,7 +8,7 @@ import { TestScoresStep } from "../onboarding/steps/test-scores";
 import { CareerGoalsStep } from "../onboarding/steps/career-goals";
 import { Card } from "@/components/ui/card";
 
-const STEPS = ["personal", "education", "tests", "career"] as const;
+const STEPS = ["personal-info", "education", "test-scores", "career-goals"] as const;
 type Step = (typeof STEPS)[number];
 
 // Types matching Convex schema
@@ -61,139 +61,145 @@ interface UserProfile {
   careerGoals: CareerGoals;
 }
 
+interface StepData {
+  "personal-info": PersonalInfo;
+  education: Education;
+  "test-scores": TestScores;
+  "career-goals": CareerGoals;
+}
+
 export function ProfileForm() {
-  const [activeTab, setActiveTab] = useState<Step>("personal");
+  const [activeTab, setActiveTab] = useState<Step>("personal-info");
 
   // Skip profile query if no user is logged in
   const profile = useQuery(api.userProfiles.queries.getProfile, {});
+  const savePersonalInfoMutation = useMutation(api.userProfiles.mutations.savePersonalInfo);
+  const saveEducationMutation = useMutation(api.userProfiles.mutations.saveEducation);
+  const saveTestScoresMutation = useMutation(api.userProfiles.mutations.saveTestScores);
+  const saveCareerGoalsMutation = useMutation(api.userProfiles.mutations.saveCareerGoals);
 
-  // Use mock data if profile is not found
-  const mockData: UserProfile = {
-    personalInfo: {
-      countryOfOrigin: "United States",
-      dateOfBirth: "1995-01-01",
-      currentLocation: "Boston, MA",
-      nativeLanguage: "English"
-    },
-    education: {
-      educationLevel: "Bachelor's",
-      major: "Computer Science",
-      university: "Sample University",
-      gpa: 3.8,
-      gpaScale: 4.0,
-      graduationDate: "2024-05",
-      researchExperience: "Worked on ML projects"
-    },
-    testScores: {
-      greScores: {
-        verbal: 160,
-        quantitative: 165,
-        analyticalWriting: 5.0,
-        testDate: "2024-01-15"
-      },
-      englishTest: {
-        type: "TOEFL",
-        overallScore: 105,
-        sectionScores: {
-          reading: 28,
-          listening: 27,
-          speaking: 25,
-          writing: 25
-        },
-        testDate: "2024-01-20"
+  // Update active tab when profile changes
+  useEffect(() => {
+    if (profile) {
+      // Determine which tab to show based on profile data
+      if (!profile.countryOfOrigin || !profile.dateOfBirth || !profile.currentLocation || !profile.nativeLanguage) {
+        setActiveTab("personal-info");
+      } else if (!profile.educationLevel || !profile.major || !profile.university || !profile.gpa || !profile.graduationDate) {
+        setActiveTab("education");
+      } else if (!profile.targetDegree || !profile.intendedField || !profile.researchInterests || !profile.careerObjectives) {
+        setActiveTab("career-goals");
       }
-    },
-    careerGoals: {
-      targetDegree: "PhD",
-      intendedField: "Computer Science",
-      researchInterests: ["Machine Learning", "Natural Language Processing"],
-      careerObjectives: "Research Scientist in AI",
-      targetLocations: ["United States", "Canada"],
-      expectedStartDate: "2024-09",
-      budgetRange: "$30,000 - $40,000"
     }
-  };
+  }, [profile]);
 
-  const handleStepComplete = () => {
-    // In profile form, we don't automatically advance to next step
-    // Just stay on the current tab and show success message
+  const handleStepComplete = async <T extends keyof StepData>(step: T, data: StepData[T]): Promise<void> => {
+    try {
+      switch (step) {
+        case "personal-info":
+          await savePersonalInfoMutation(data as PersonalInfo);
+          break;
+        case "education":
+          await saveEducationMutation(data as Education);
+          break;
+        case "test-scores":
+          await saveTestScoresMutation(data as TestScores);
+          break;
+        case "career-goals":
+          await saveCareerGoalsMutation(data as CareerGoals);
+          break;
+      }
+      // Show success message
+      console.log("Profile section updated successfully");
+    } catch (error) {
+      console.error("Error saving step data:", error);
+      // You might want to show an error toast here
+    }
   };
 
   // Transform Convex profile data to our UserProfile structure
-  const data: UserProfile = profile ? {
+  const data: UserProfile = {
     personalInfo: {
-      countryOfOrigin: profile.countryOfOrigin,
-      dateOfBirth: profile.dateOfBirth,
-      currentLocation: profile.currentLocation,
-      nativeLanguage: profile.nativeLanguage
+      countryOfOrigin: profile?.countryOfOrigin ?? "",
+      dateOfBirth: profile?.dateOfBirth ?? "",
+      currentLocation: profile?.currentLocation ?? "",
+      nativeLanguage: profile?.nativeLanguage ?? ""
     },
     education: {
-      educationLevel: profile.educationLevel,
-      major: profile.major,
-      university: profile.university,
-      gpa: profile.gpa,
-      gpaScale: profile.gpaScale,
-      graduationDate: profile.graduationDate,
-      researchExperience: profile.researchExperience
+      educationLevel: profile?.educationLevel ?? "",
+      major: profile?.major ?? "",
+      university: profile?.university ?? "",
+      gpa: profile?.gpa ?? 0,
+      gpaScale: profile?.gpaScale ?? 4.0,
+      graduationDate: profile?.graduationDate ?? "",
+      researchExperience: profile?.researchExperience
     },
     testScores: {
-      greScores: profile.greScores,
-      englishTest: profile.englishTest
+      greScores: profile?.greScores ?? undefined,
+      englishTest: profile?.englishTest ?? undefined
     },
     careerGoals: {
-      targetDegree: profile.targetDegree,
-      intendedField: profile.intendedField,
-      researchInterests: profile.researchInterests,
-      careerObjectives: profile.careerObjectives,
-      targetLocations: profile.targetLocations,
-      expectedStartDate: profile.expectedStartDate,
-      budgetRange: profile.budgetRange
+      targetDegree: profile?.targetDegree ?? "",
+      intendedField: profile?.intendedField ?? "",
+      researchInterests: profile?.researchInterests ?? [],
+      careerObjectives: profile?.careerObjectives ?? "",
+      targetLocations: profile?.targetLocations ?? [],
+      expectedStartDate: profile?.expectedStartDate ?? "",
+      budgetRange: profile?.budgetRange
     }
-  } : mockData;
+  };
+
+  // Show loading state while profile is being fetched
+  if (profile === undefined) {
+    return (
+      <Card className="w-full">
+        <div className="p-6 text-center">Loading profile...</div>
+      </Card>
+    );
+  }
 
   return (
     <Card className="w-full">
       <Tabs value={activeTab} onValueChange={(value) => setActiveTab(value as Step)} className="w-full">
         <TabsList className="grid w-full grid-cols-4">
-          <TabsTrigger value="personal">
+          <TabsTrigger value="personal-info">
             Personal Info
           </TabsTrigger>
           <TabsTrigger value="education">
             Education
           </TabsTrigger>
-          <TabsTrigger value="tests">
+          <TabsTrigger value="test-scores">
             Test Scores
           </TabsTrigger>
-          <TabsTrigger value="career">
+          <TabsTrigger value="career-goals">
             Career Goals
           </TabsTrigger>
         </TabsList>
 
         <div className="p-6">
-          <TabsContent value="personal">
+          <TabsContent value="personal-info">
             <PersonalInfoStep
-              onComplete={handleStepComplete}
+              onComplete={(data) => handleStepComplete("personal-info", data)}
               initialData={data.personalInfo}
             />
           </TabsContent>
 
           <TabsContent value="education">
             <EducationStep
-              onComplete={handleStepComplete}
+              onComplete={(data) => handleStepComplete("education", data)}
               initialData={data.education}
             />
           </TabsContent>
 
-          <TabsContent value="tests">
+          <TabsContent value="test-scores">
             <TestScoresStep
-              onComplete={handleStepComplete}
+              onComplete={(data) => handleStepComplete("test-scores", data)}
               initialData={data.testScores}
             />
           </TabsContent>
 
-          <TabsContent value="career">
+          <TabsContent value="career-goals">
             <CareerGoalsStep
-              onComplete={handleStepComplete}
+              onComplete={(data) => handleStepComplete("career-goals", data)}
               initialData={data.careerGoals}
             />
           </TabsContent>

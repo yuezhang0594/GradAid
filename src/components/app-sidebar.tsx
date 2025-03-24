@@ -41,7 +41,7 @@ const data = {
       url: "#",
       items: [
         {
-          title: "Create Profile",
+          title: "Update Profile",
           url: "/profile",
           icon: UserPenIcon,
         },

@@ -6,13 +6,18 @@ import { getCurrentUserIdOrThrow } from "../users";
 
 // Helper function to determine next incomplete step
 function getNextIncompleteStep(profile: any) {
-  if (!profile.countryOfOrigin || !profile.dateOfBirth || !profile.currentLocation || !profile.nativeLanguage) {
+  if (!profile || !profile.countryOfOrigin || !profile.dateOfBirth || !profile.currentLocation || !profile.nativeLanguage) {
     return "personal-info";
   }
   
   if (!profile.educationLevel || !profile.major || !profile.university || !profile.gpa || !profile.graduationDate) {
     return "education";
   }
+  
+  // Test scores are optional, so we'll skip this check and move to career goals
+  // if (!profile.greScores && !profile.englishTest) {
+  //   return "test-scores";
+  // }
   
   if (!profile.targetDegree || !profile.intendedField || !profile.researchInterests || !profile.careerObjectives) {
     return "career-goals";
@@ -42,7 +47,11 @@ export const checkOnboardingStatus = query({
       .withIndex("by_user", (q) => q.eq("userId", userId))
       .first();
     
-    return profile ? getNextIncompleteStep(profile) : "personal-info";
+    const currentStep = profile ? getNextIncompleteStep(profile) : "personal-info";
+    return {
+      isComplete: currentStep === "complete",
+      currentStep
+    };
   },
 });
 
@@ -62,17 +71,18 @@ export const savePersonalInfo = mutation({
       .first();
 
     if (existingProfile) {
-      return await ctx.db.patch(existingProfile._id, {
+      await ctx.db.patch(existingProfile._id, {
         countryOfOrigin: args.countryOfOrigin,
         dateOfBirth: args.dateOfBirth,
         currentLocation: args.currentLocation,
         nativeLanguage: args.nativeLanguage,
         updatedAt: new Date().toISOString(),
       });
+      return { currentStep: "education" };
     }
 
     // Initialize with default values for required fields
-    return await ctx.db.insert("userProfiles", {
+    await ctx.db.insert("userProfiles", {
       userId: userId,
       countryOfOrigin: args.countryOfOrigin,
       dateOfBirth: args.dateOfBirth,
@@ -101,6 +111,7 @@ export const savePersonalInfo = mutation({
       updatedAt: new Date().toISOString(),
       onboardingCompleted: false,
     });
+    return { currentStep: "education" };
   },
 });
 
@@ -125,7 +136,7 @@ export const saveEducation = mutation({
       throw new Error("Personal information must be saved first");
     }
 
-    return await ctx.db.patch(existingProfile._id, {
+    await ctx.db.patch(existingProfile._id, {
       educationLevel: args.educationLevel,
       major: args.major,
       university: args.university,
@@ -135,6 +146,7 @@ export const saveEducation = mutation({
       researchExperience: args.researchExperience,
       updatedAt: new Date().toISOString(),
     });
+    return { currentStep: "test-scores" };
   },
 });
 
@@ -168,11 +180,12 @@ export const saveTestScores = mutation({
       throw new Error("Personal information must be saved first");
     }
 
-    return await ctx.db.patch(existingProfile._id, {
+    await ctx.db.patch(existingProfile._id, {
       greScores: args.greScores,
       englishTest: args.englishTest,
       updatedAt: new Date().toISOString(),
     });
+    return { currentStep: "career-goals" };
   },
 });
 
@@ -197,7 +210,7 @@ export const saveCareerGoals = mutation({
       throw new Error("Personal information must be saved first");
     }
 
-    return await ctx.db.patch(existingProfile._id, {
+    await ctx.db.patch(existingProfile._id, {
       targetDegree: args.targetDegree,
       intendedField: args.intendedField,
       researchInterests: args.researchInterests,
@@ -208,5 +221,6 @@ export const saveCareerGoals = mutation({
       onboardingCompleted: true,
       updatedAt: new Date().toISOString(),
     });
+    return { currentStep: "complete" };
   },
 });

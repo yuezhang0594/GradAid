@@ -25,27 +25,26 @@ export const checkOnboardingStatus = query({
 
     if (!profile) {
       return {
-        currentStep: "personal",
+        currentStep: "personal-info",
         isComplete: false,
       };
     }
 
+    // Determine the current step based on what's completed
+    const currentStep = getNextIncompleteStep(profile);
+    
     return {
-      currentStep: profile.onboardingCompleted ? "complete" : "personal",
-      isComplete: profile.onboardingCompleted,
+      currentStep,
+      isComplete: currentStep === "complete",
     };
   },
 });
 
 function getNextIncompleteStep(profile: any): string {
   if (!profile.personalInfo) return "personal-info";
-  if (!profile.education || profile.education.length === 0) return "education";
+  if (!profile.education) return "education";
   if (!profile.testScores) return "test-scores";
   if (!profile.careerGoals) return "career-goals";
-  if (!profile.researchInterests) return "research-interests";
-  if (!profile.publications || profile.publications.length === 0) return "publications";
-  if (!profile.workExperience || profile.workExperience.length === 0) return "work-experience";
-  if (!profile.researchExperience || profile.researchExperience.length === 0) return "research-experience";
   return "complete";
 }
 

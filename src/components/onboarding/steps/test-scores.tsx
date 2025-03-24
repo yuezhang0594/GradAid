@@ -2,15 +2,12 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { useUser } from "@clerk/clerk-react";
+import { TestScores } from "@/hooks/useProfile";
 
 import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
-import { useMutation } from "convex/react";
-import { api } from "../../../../convex/_generated/api";
-import { Id } from "../../../../convex/_generated/dataModel";
 
 const testScoresSchema = z.object({
   verbal: z.coerce.number().min(130, "GRE Verbal score must be at least 130").max(170, "GRE Verbal score must be at most 170"),
@@ -22,21 +19,12 @@ const testScoresSchema = z.object({
 type TestScoresFormValues = z.infer<typeof testScoresSchema>;
 
 interface TestScoresStepProps {
-  onComplete: () => void;
-  initialData?: {
-    greScores?: {
-      verbal: number;
-      quantitative: number;
-      analyticalWriting: number;
-      testDate: string;
-    };
-  };
+  onComplete: (data: TestScores) => void;
+  initialData?: TestScores;
 }
 
 export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const { user } = useUser();
-  const saveTestScores = useMutation(api.userProfiles.saveTestScores);
 
   const form = useForm<TestScoresFormValues>({
     resolver: zodResolver(testScoresSchema),
@@ -49,12 +37,9 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
   });
 
   async function onSubmit(data: TestScoresFormValues) {
-    if (!user) return;
-
     setIsSubmitting(true);
     try {
-      await saveTestScores({
-        userId: user.id as Id<"users">,
+      onComplete({
         greScores: {
           verbal: data.verbal,
           quantitative: data.quantitative,
@@ -62,7 +47,6 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
           testDate: data.testDate,
         },
       });
-      onComplete();
     } catch (error) {
       console.error("Failed to save test scores:", error);
     } finally {

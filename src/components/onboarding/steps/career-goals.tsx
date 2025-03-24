@@ -2,16 +2,14 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { useUser } from "@clerk/clerk-react";
+import { CareerGoals } from "@/hooks/useProfile";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import { useMutation } from "convex/react";
-import { api } from "../../../../convex/_generated/api";
-import { Id } from "../../../../convex/_generated/dataModel";
 
 const careerGoalsSchema = z.object({
   targetDegree: z.string().min(1, "Target degree is required"),
@@ -26,22 +24,12 @@ const careerGoalsSchema = z.object({
 type CareerGoalsForm = z.infer<typeof careerGoalsSchema>;
 
 interface CareerGoalsStepProps {
-  onComplete: () => void;
-  initialData?: {
-    targetDegree?: string;
-    intendedField?: string;
-    researchInterests?: string[];
-    careerObjectives?: string;
-    targetLocations?: string[];
-    expectedStartDate?: string;
-    budgetRange?: string;
-  };
+  onComplete: (data: CareerGoals) => void;
+  initialData?: CareerGoals;
 }
 
 export function CareerGoalsStep({ onComplete, initialData }: CareerGoalsStepProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const { user } = useUser();
-  const saveCareerGoals = useMutation(api.userProfiles.saveCareerGoals);
   
   const form = useForm<CareerGoalsForm>({
     resolver: zodResolver(careerGoalsSchema),
@@ -57,12 +45,9 @@ export function CareerGoalsStep({ onComplete, initialData }: CareerGoalsStepProp
   });
 
   const onSubmit = async (data: CareerGoalsForm) => {
-    if (!user) return;
-
     try {
       setIsSubmitting(true);
-      await saveCareerGoals({
-        userId: user.id as Id<"users">,
+      onComplete({
         targetDegree: data.targetDegree,
         intendedField: data.intendedField,
         researchInterests: data.researchInterests.split(",").map(s => s.trim()),
@@ -71,7 +56,6 @@ export function CareerGoalsStep({ onComplete, initialData }: CareerGoalsStepProp
         expectedStartDate: data.expectedStartDate,
         budgetRange: data.budgetRange,
       });
-      onComplete();
     } catch (error) {
       console.error("Error saving career goals:", error);
     } finally {

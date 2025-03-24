@@ -2,15 +2,11 @@ import { useState } from "react";
 import { useForm, ControllerRenderProps } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { useUser } from "@clerk/clerk-react";
-import { useMutation } from "convex/react";
-import { api } from "../../../../convex/_generated/api";
-import { Id } from "../../../../convex/_generated/dataModel";
+import { PersonalInfo } from "@/hooks/useProfile";
 
 import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent } from "@/components/ui/card";
 
 const personalInfoSchema = z.object({
@@ -23,14 +19,12 @@ const personalInfoSchema = z.object({
 type PersonalInfoForm = z.infer<typeof personalInfoSchema>;
 
 interface PersonalInfoStepProps {
-  onComplete: () => void;
-  initialData?: Partial<PersonalInfoForm>;
+  onComplete: (data: PersonalInfo) => void;
+  initialData?: PersonalInfo;
 }
 
 export function PersonalInfoStep({ onComplete, initialData }: PersonalInfoStepProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const { user } = useUser();
-  const savePersonalInfo = useMutation(api.userProfiles.savePersonalInfo);
 
   const form = useForm<PersonalInfoForm>({
     resolver: zodResolver(personalInfoSchema),
@@ -43,15 +37,9 @@ export function PersonalInfoStep({ onComplete, initialData }: PersonalInfoStepPr
   });
 
   const onSubmit = async (data: PersonalInfoForm) => {
-    if (!user) return;
-    
     setIsSubmitting(true);
     try {
-      await savePersonalInfo({
-        userId: user.id as Id<"users">,
-        ...data,
-      });
-      onComplete();
+      onComplete(data);
     } catch (error) {
       console.error("Error saving personal info:", error);
     } finally {

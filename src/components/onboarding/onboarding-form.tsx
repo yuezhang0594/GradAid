@@ -1,34 +1,81 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
+import { Progress } from "@/components/ui/progress";
 import { PersonalInfoStep } from "./steps/personal-info";
 import { EducationStep } from "./steps/education";
 import { TestScoresStep } from "./steps/test-scores";
 import { CareerGoalsStep } from "./steps/career-goals";
-import { Progress } from "@/components/ui/progress";
+import { useProfile, PersonalInfo, Education, TestScores, CareerGoals } from "@/hooks/useProfile";
 
-const STEPS = ["personal", "education", "tests", "career"] as const;
+const STEPS = ["personal-info", "education", "test-scores", "career-goals", "complete"] as const;
 type Step = (typeof STEPS)[number];
 
-interface OnboardingFormProps {
-  userId?: string;
-}
+type StepData = {
+  "personal-info": PersonalInfo;
+  "education": Education;
+  "test-scores": TestScores;
+  "career-goals": CareerGoals;
+};
 
-export function OnboardingForm({ userId }: OnboardingFormProps) {
-  const [currentStep, setCurrentStep] = useState<Step>("personal");
-  const [progress, setProgress] = useState(25);
+export function OnboardingForm() {
   const navigate = useNavigate();
+  const { 
+    profile,
+    savePersonalInfo,
+    saveEducation,
+    saveTestScores,
+    saveCareerGoals,
+    currentStep
+  } = useProfile();
 
-  const handleStepComplete = (step: Step) => {
-    const currentIndex = STEPS.indexOf(step);
-    if (currentIndex < STEPS.length - 1) {
-      const nextStep = STEPS[currentIndex + 1];
-      setCurrentStep(nextStep);
-      setProgress((currentIndex + 2) * 25);
-    } else {
-      // All steps completed
-      navigate("/dashboard");
+  const [progress, setProgress] = useState(() => {
+    // Calculate initial progress based on currentStep
+    const stepIndex = STEPS.indexOf(currentStep as Step);
+    return ((stepIndex + 1) * 20);
+  });
+
+  useEffect(() => {
+    setActiveStep(currentStep as Step);
+    const stepIndex = STEPS.indexOf(currentStep as Step);
+    setProgress((stepIndex + 1) * 20);
+  }, [currentStep]);
+
+  const [activeStep, setActiveStep] = useState<Step>(currentStep as Step);
+
+  const handleStepComplete = async <T extends keyof StepData>(step: T, data: StepData[T]): Promise<void> => {
+    try {
+      let response: { currentStep: string };
+      
+      // Save data based on step
+      switch (step) {
+        case "personal-info":
+          response = await savePersonalInfo(data as PersonalInfo);
+          setActiveStep(response.currentStep as Step);
+          break;
+        case "education":
+          response = await saveEducation(data as Education);
+          setActiveStep(response.currentStep as Step);
+          break;
+        case "test-scores":
+          response = await saveTestScores(data as TestScores);
+          setActiveStep(response.currentStep as Step);
+          break;
+        case "career-goals":
+          response = await saveCareerGoals(data as CareerGoals);
+          if (response.currentStep === "complete") {
+            navigate("/dashboard");
+          } else {
+            setActiveStep(response.currentStep as Step);
+          }
+          break;
+        default:
+          return;
+      }
+    } catch (error) {
+      console.error("Error saving step data:", error);
+      // You might want to show an error toast here
     }
   };
 
@@ -36,40 +83,55 @@ export function OnboardingForm({ userId }: OnboardingFormProps) {
     <div className="space-y-6">
       <Progress value={progress} className="w-full" />
       
-      <Tabs value={currentStep} className="w-full">
-        <TabsList className="grid w-full grid-cols-4">
-          <TabsTrigger value="personal">Personal</TabsTrigger>
-          <TabsTrigger value="education">Education</TabsTrigger>
-          <TabsTrigger value="tests">Test Scores</TabsTrigger>
-          <TabsTrigger value="career">Career Goals</TabsTrigger>
+      <Tabs value={activeStep} className="w-full">
+        <TabsList className="grid w-full grid-cols-5">
+          <TabsTrigger value="personal-info" disabled={activeStep !== "personal-info"}>
+            Personal Info
+          </TabsTrigger>
+          <TabsTrigger value="education" disabled={activeStep !== "education"}>
+            Education
+          </TabsTrigger>
+          <TabsTrigger value="test-scores" disabled={activeStep !== "test-scores"}>
+            Test Scores
+          </TabsTrigger>
+          <TabsTrigger value="career-goals" disabled={activeStep !== "career-goals"}>
+            Career Goals
+          </TabsTrigger>
+          <TabsTrigger value="complete" disabled={activeStep !== "complete"}>
+            Complete
+          </TabsTrigger>
         </TabsList>
 
-        <TabsContent value="personal">
+        <TabsContent value="personal-info">
           <PersonalInfoStep
-            onComplete={() => handleStepComplete("personal")}
-            userId={userId}
+            onComplete={(data: PersonalInfo) => handleStepComplete("personal-info", data)}
+            initialData={profile?.personalInfo}
           />
         </TabsContent>
 
         <TabsContent value="education">
           <EducationStep
-            onComplete={() => handleStepComplete("education")}
-            userId={userId}
+            onComplete={(data: Education) => handleStepComplete("education", data)}
+            initialData={profile?.education}
           />
         </TabsContent>
 
-        <TabsContent value="tests">
+        <TabsContent value="test-scores">
           <TestScoresStep
-            onComplete={() => handleStepComplete("tests")}
-            userId={userId}
+            onComplete={(data: TestScores) => handleStepComplete("test-scores", data)}
+            initialData={profile?.testScores}
           />
         </TabsContent>
 
-        <TabsContent value="career">
+        <TabsContent value="career-goals">
           <CareerGoalsStep
-            onComplete={() => handleStepComplete("career")}
-            userId={userId}
+            onComplete={(data: CareerGoals) => handleStepComplete("career-goals", data)}
+            initialData={profile?.careerGoals}
           />
+        </TabsContent>
+
+        <TabsContent value="complete">
+          Complete
         </TabsContent>
       </Tabs>
     </div>

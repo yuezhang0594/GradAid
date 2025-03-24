@@ -1,6 +1,5 @@
 import { useQuery, useMutation } from 'convex/react';
 import { api } from '../../convex/_generated/api';
-import { useUser } from '@clerk/clerk-react';
 import { Id } from '../../convex/_generated/dataModel';
 
 // Define profile section types
@@ -46,18 +45,22 @@ export interface CareerGoals {
   budgetRange?: string;
 }
 
+export interface Profile {
+  personalInfo: PersonalInfo;
+  education: Education;
+  testScores: TestScores;
+  careerGoals: CareerGoals;
+}
+
 // Define onboarding status type
 export interface OnboardingStatus {
   isComplete: boolean;
-  currentStep: "personal-info" | "education" | "career-goals" | "complete";
+  currentStep: "personal-info" | "education" | "test-scores" | "career-goals" | "complete";
 }
 
 export function useProfile() {
-  const { user } = useUser();
-  const userId = user?.id as Id<"users"> | undefined;
-
   // Get profile data
-  const profile = useQuery(api.userProfiles.queries.getProfile);
+  const profile = useQuery(api.userProfiles.queries.getProfile) as Profile | undefined;
 
   // Get onboarding status
   const onboardingStatus = useQuery(api.userProfiles.queries.checkOnboardingStatus) as OnboardingStatus | undefined;
@@ -69,30 +72,26 @@ export function useProfile() {
   const saveCareerGoals = useMutation(api.userProfiles.mutations.saveCareerGoals);
 
   // Save functions for each section
-  const savePersonalInfoSection = async (data: PersonalInfo) => {
-    if (!userId) return;
-    await savePersonalInfo({
+  const savePersonalInfoSection = async (data: PersonalInfo): Promise<{ currentStep: string }> => {
+    return await savePersonalInfo({
       ...data,
     });
   };
 
-  const saveEducationSection = async (data: Education) => {
-    if (!userId) return;
-    await saveEducation({
+  const saveEducationSection = async (data: Education): Promise<{ currentStep: string }> => {
+    return await saveEducation({
       ...data,
     });
   };
 
-  const saveTestScoresSection = async (data: TestScores) => {
-    if (!userId) return;
-    await saveTestScores({
+  const saveTestScoresSection = async (data: TestScores): Promise<{ currentStep: string }> => {
+    return await saveTestScores({
       ...data,
     });
   };
 
-  const saveCareerGoalsSection = async (data: CareerGoals) => {
-    if (!userId) return;
-    await saveCareerGoals({
+  const saveCareerGoalsSection = async (data: CareerGoals): Promise<{ currentStep: string }> => {
+    return await saveCareerGoals({
       ...data,
     });
   };
