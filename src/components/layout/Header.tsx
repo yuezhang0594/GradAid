@@ -3,7 +3,7 @@ import { UserButton, useUser } from '@clerk/clerk-react';
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from '../ui/breadcrumb';
 import { SidebarTrigger } from '@/components/ui/sidebar';
 import { useLocation } from 'react-router-dom';
-
+// TODO: Make header stick to top of screen
 export default function Header() {
   const { user } = useUser();
   const location = useLocation();

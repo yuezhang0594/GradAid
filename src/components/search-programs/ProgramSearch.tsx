@@ -4,7 +4,7 @@ import FilterPanel from './FilterPanel';
 import { ProgramSearchFilters, DEFAULT_FILTERS } from '../../hooks/useProgramSearch';
 import { api } from '../../../convex/_generated/api';
 import { useQuery } from 'convex/react';
-
+// TODO: Fix bug where filters are not applied when no results are found
 interface ProgramSearchProps {
   onSearch: (query: string) => void;
   onFilterChange: (filters: ProgramSearchFilters, filterType?: string) => void;
