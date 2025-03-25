@@ -15,67 +15,39 @@ import {
   Clock,
   Filter,
 } from "lucide-react";
+import { useQuery } from "convex/react";
+import { api } from "../../../convex/_generated/api";
+import { formatDistanceToNow } from "date-fns";
+
+// Helper function to get icon based on activity type
+function getActivityIcon(type: string) {
+  switch (type) {
+    case "document_edit":
+      return <FileText className="h-4 w-4" />;
+    case "ai_usage":
+      return <SparklesIcon className="h-4 w-4" />;
+    case "lor_request":
+    case "lor_update":
+      return <MessageSquare className="h-4 w-4" />;
+    case "application_update":
+      return <Clock className="h-4 w-4" />;
+    default:
+      return <Activity className="h-4 w-4" />;
+  }
+}
 
 export default function ActivityPage() {
-  const activityData = {
-    recentActivities: [
-      {
-        id: 1,
-        type: "document_edit",
-        title: "Statement of Purpose Updated",
-        description: "Made changes to Stanford MS CS Statement of Purpose",
-        timestamp: "2 hours ago",
-        metadata: {
-          university: "Stanford University",
-          program: "MS Computer Science",
-          wordCount: 850,
-        },
-        icon: <FileText className="h-4 w-4" />,
-      },
-      {
-        id: 2,
-        type: "ai_feedback",
-        title: "AI Review Completed",
-        description: "Received feedback on Research Statement draft",
-        timestamp: "4 hours ago",
-        metadata: {
-          university: "MIT",
-          program: "PhD Computer Science",
-          suggestions: 3,
-        },
-        icon: <SparklesIcon className="h-4 w-4" />,
-      },
-      {
-        id: 3,
-        type: "chat",
-        title: "Chat Session",
-        description: "Discussed application strategy with AI assistant",
-        timestamp: "1 day ago",
-        metadata: {
-          duration: "15 minutes",
-          topics: ["Research Focus", "Program Selection"],
-        },
-        icon: <MessageSquare className="h-4 w-4" />,
-      },
-      {
-        id: 4,
-        type: "deadline",
-        title: "Deadline Approaching",
-        description: "Stanford MS CS application due in 5 days",
-        timestamp: "2 days ago",
-        metadata: {
-          dueDate: "2024-03-15",
-          completed: "8/10 requirements",
-        },
-        icon: <Clock className="h-4 w-4" />,
-      },
-    ],
-    activityStats: {
-      today: 5,
-      thisWeek: 12,
-      thisMonth: 45,
-    },
-  };
+  const recentActivities = useQuery(api.userActivity.queries.getRecentActivity, {});
+  const activityStats = useQuery(api.userActivity.queries.getActivityStats, {});
+
+  // Show loading state while data is being fetched
+  if (!recentActivities || !activityStats) {
+    return (
+      <main className="flex-1 flex-col space-y-8 p-8">
+        <div>Loading activity...</div>
+      </main>
+    );
+  }
 
   return (
     <main className="flex-1 flex-col space-y-8 p-8">
@@ -102,7 +74,7 @@ export default function ActivityPage() {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">
-              {activityData.activityStats.today}
+              {activityStats.today}
             </div>
             <p className="text-xs text-muted-foreground">activities</p>
           </CardContent>
@@ -115,7 +87,7 @@ export default function ActivityPage() {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">
-              {activityData.activityStats.thisWeek}
+              {activityStats.thisWeek}
             </div>
             <p className="text-xs text-muted-foreground">activities</p>
           </CardContent>
@@ -128,7 +100,7 @@ export default function ActivityPage() {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">
-              {activityData.activityStats.thisMonth}
+              {activityStats.thisMonth}
             </div>
             <p className="text-xs text-muted-foreground">activities</p>
           </CardContent>
@@ -142,51 +114,49 @@ export default function ActivityPage() {
         </CardHeader>
         <CardContent>
           <div className="space-y-8">
-            {activityData.recentActivities.map((activity) => (
+            {recentActivities.map((activity) => (
               <div
-                key={activity.id}
+                key={activity._id}
                 className="flex items-start space-x-4 border-b pb-8 last:border-0 last:pb-0"
               >
                 <div className="rounded-full bg-secondary p-2">
-                  {activity.icon}
+                  {getActivityIcon(activity.type)}
                 </div>
                 <div className="space-y-1 flex-1">
                   <div className="flex items-center justify-between">
                     <p className="text-sm font-medium leading-none">
-                      {activity.title}
+                      {activity.type.replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase())}
                     </p>
-                    <Badge variant="secondary">{activity.timestamp}</Badge>
+                    <Badge variant="secondary">
+                      {formatDistanceToNow(new Date(activity.timestamp), { addSuffix: true })}
+                    </Badge>
                   </div>
                   <p className="text-sm text-muted-foreground">
                     {activity.description}
                   </p>
                   <div className="flex gap-2 mt-2">
-                    {activity.metadata.university && (
+                    {activity.metadata.applicationId && (
+                      <Badge variant="outline">Application Update</Badge>
+                    )}
+                    {activity.metadata.documentId && (
+                      <Badge variant="outline">Document Update</Badge>
+                    )}
+                    {activity.metadata.lorId && (
+                      <Badge variant="outline">LOR Update</Badge>
+                    )}
+                    {activity.metadata.creditsUsed && (
                       <Badge variant="outline">
-                        {activity.metadata.university}
+                        {activity.metadata.creditsUsed} credits used
                       </Badge>
                     )}
-                    {activity.metadata.program && (
-                      <Badge variant="outline">{activity.metadata.program}</Badge>
-                    )}
-                    {activity.metadata.suggestions && (
+                    {activity.metadata.oldStatus && activity.metadata.newStatus && (
                       <Badge variant="outline">
-                        {activity.metadata.suggestions} suggestions
+                        Status: {activity.metadata.oldStatus} → {activity.metadata.newStatus}
                       </Badge>
                     )}
-                    {activity.metadata.wordCount && (
+                    {activity.metadata.oldProgress !== undefined && activity.metadata.newProgress !== undefined && (
                       <Badge variant="outline">
-                        {activity.metadata.wordCount} words
-                      </Badge>
-                    )}
-                    {activity.metadata.duration && (
-                      <Badge variant="outline">
-                        {activity.metadata.duration}
-                      </Badge>
-                    )}
-                    {activity.metadata.completed && (
-                      <Badge variant="outline">
-                        {activity.metadata.completed}
+                        Progress: {activity.metadata.oldProgress}% → {activity.metadata.newProgress}%
                       </Badge>
                     )}
                   </div>
