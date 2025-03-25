@@ -100,12 +100,12 @@ const data = {
         // },
         {
           title: "FAQ",
-          url: "/faq",
+          url: "/tos",
           icon: InfoIcon,
         },
         {
           title: "Contact Us",
-          url: "/contact",
+          url: "/privacy",
           icon: MessageCircleQuestionIcon,
         },
       ],
