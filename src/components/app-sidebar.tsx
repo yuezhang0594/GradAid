@@ -93,11 +93,11 @@ const data = {
       title: "Support",
       url: "#",
       items: [
-        {
-          title: "Settings",
-          url: "/settings",
-          icon: SettingsIcon,
-        },
+        // {
+        //   title: "Settings",
+        //   url: "/settings",
+        //   icon: SettingsIcon,
+        // },
         {
           title: "FAQ",
           url: "/faq",

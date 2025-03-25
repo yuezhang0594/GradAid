@@ -143,6 +143,7 @@ export const useAiCredits = mutation({
     userId: v.id("users"),
     creditsUsed: v.number(),
     description: v.string(),
+    type: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
     const { userId, creditsUsed, description } = args;
@@ -164,7 +165,15 @@ export const useAiCredits = mutation({
     // Update AI credits
     await ctx.db.patch(aiCredits._id, {
       usedCredits: aiCredits.usedCredits + creditsUsed,
-      lastUpdated: new Date().toISOString(),
+    });
+
+    // Log AI credit usage
+    await ctx.db.insert("aiCreditUsage", {
+      userId,
+      type: args.type || "Other",
+      credits: creditsUsed,
+      timestamp: new Date().toISOString(),
+      description: description,
     });
 
     // Log activity

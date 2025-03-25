@@ -320,8 +320,21 @@ export default internalMutation({
       totalCredits: 500,
       usedCredits: 250,
       resetDate: "2025-04-01",
-      lastUpdated: new Date().toISOString(),
     });
+
+    // Initialize AI credit usage data
+    const usageTypes = ["Document Review", "Essay Feedback", "Research Help", "Other"];
+    const usageCredits = [100, 75, 50, 25];
+    
+    for (let i = 0; i < usageTypes.length; i++) {
+      await ctx.db.insert("aiCreditUsage", {
+        userId: mockUserId,
+        type: usageTypes[i],
+        credits: usageCredits[i],
+        timestamp: new Date().toISOString(),
+        description: `Initial ${usageTypes[i]} credit usage`,
+      });
+    }
 
     // Create applications data (matches /applications route)
     const applicationData: ApplicationInput[] = [

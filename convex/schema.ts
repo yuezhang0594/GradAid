@@ -199,10 +199,15 @@ const schema = defineSchema({
     totalCredits: v.number(),
     usedCredits: v.number(),
     resetDate: v.string(),
-    lastUpdated: v.string(),
-  })
-    .index("by_user", ["userId"])
-    .index("by_reset_date", ["resetDate"]),
+  }).index("by_user", ["userId"]),
+
+  aiCreditUsage: defineTable({
+    userId: v.id("users"),
+    type: v.string(),
+    credits: v.number(),
+    timestamp: v.string(),
+    description: v.optional(v.string()),
+  }).index("by_user", ["userId"]),
 
   userActivity: defineTable({
     userId: v.id("users"),
