@@ -8,33 +8,24 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CalendarIcon, ChevronRight, AlertCircle } from "lucide-react";
+import { useQuery } from "convex/react";
+import { api } from "../../../convex/_generated/api";
+import { useState } from "react";
+import { Switch } from "@/components/ui/switch";
+import { Label } from "@/components/ui/label";
+import { format } from "date-fns";
 
 export default function TimelinePage() {
-  const timeline = [
-    {
-      date: "2025-05-15",
-      university: "Stanford University",
-      program: "MS Computer Science",
-      requirements: [
-        { type: "SOP", status: "completed" },
-        { type: "Transcripts", status: "pending" },
-        { type: "LORs", status: "in_progress" },
-      ],
-      priority: "high",
-    },
-    {
-      date: "2025-06-01",
-      university: "MIT",
-      program: "PhD Computer Science",
-      requirements: [
-        { type: "SOP", status: "in_progress" },
-        { type: "Research Statement", status: "pending" },
-        { type: "LORs", status: "not_started" },
-      ],
-      priority: "medium",
-    },
-    // Add more timeline items as needed
-  ];
+  const [demoMode, setDemoMode] = useState(true);
+  const timeline = useQuery(api.applications.timeline.getTimeline, { demoMode });
+
+  if (!timeline) {
+    return (
+      <main className="flex-1 flex-col space-y-8 p-8">
+        <div>Loading timeline...</div>
+      </main>
+    );
+  }
 
   return (
     <main className="flex-1 flex-col space-y-8 p-8">
@@ -45,10 +36,14 @@ export default function TimelinePage() {
             Track your application deadlines and requirements
           </p>
         </div>
-        {/* <Button>
-          <CalendarIcon className="mr-2 h-4 w-4" />
-          Add Deadline
-        </Button> */}
+        <div className="flex items-center space-x-2">
+          <Switch
+            id="demo-mode"
+            checked={demoMode}
+            onCheckedChange={setDemoMode}
+          />
+          <Label htmlFor="demo-mode">Demo Mode</Label>
+        </div>
       </div>
 
       <div className="space-y-4">
@@ -59,7 +54,7 @@ export default function TimelinePage() {
                 <div className="flex items-center gap-2">
                   <CalendarIcon className="h-4 w-4 text-muted-foreground" />
                   <CardTitle className="text-lg">
-                    {new Date(item.date).toLocaleDateString()}
+                    {format(new Date(item.date), "MMM d, yyyy")}
                   </CardTitle>
                   {item.priority === "high" && (
                     <Badge variant="destructive" className="ml-2">
@@ -72,6 +67,7 @@ export default function TimelinePage() {
                   {item.university} - {item.program}
                 </CardDescription>
               </div>
+
               <Button variant="ghost" size="icon">
                 <ChevronRight className="h-4 w-4" />
               </Button>
@@ -96,7 +92,7 @@ export default function TimelinePage() {
                 </div>
                 <div className="flex justify-between text-sm text-muted-foreground">
                   <span>
-                    {Math.floor(Math.random() * 30) + 1} days remaining
+                    {Math.ceil((new Date(item.date).getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))} days remaining
                   </span>
                   <span>
                     {
