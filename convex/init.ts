@@ -348,6 +348,10 @@ export default internalMutation({
         priority: "high",
         notes: "Top choice program, strong research alignment with AI lab",
         lastUpdated: new Date().toISOString(),
+        requirements: [
+          { type: "SOP", status: "completed" },
+          { type: "LORs", status: "completed" }
+        ]
       },
       {
         userId: mockUserId,
@@ -359,6 +363,10 @@ export default internalMutation({
         priority: "high",
         notes: "Excellent fit for AI research interests",
         lastUpdated: new Date().toISOString(),
+        requirements: [
+          { type: "SOP", status: "completed" },
+          { type: "LORs", status: "completed" }
+        ]
       },
       {
         userId: mockUserId,
@@ -369,6 +377,10 @@ export default internalMutation({
         priority: "high",
         notes: "Strong systems research group",
         lastUpdated: new Date().toISOString(),
+        requirements: [
+          { type: "SOP", status: "in_progress" },
+          { type: "LORs", status: "pending" }
+        ]
       },
       {
         userId: mockUserId,
@@ -379,6 +391,10 @@ export default internalMutation({
         priority: "medium",
         notes: "Interested in ML/Robotics lab",
         lastUpdated: new Date().toISOString(),
+        requirements: [
+          { type: "SOP", status: "in_progress" },
+          { type: "LORs", status: "in_progress" }
+        ]
       },
       {
         userId: mockUserId,
@@ -389,6 +405,10 @@ export default internalMutation({
         priority: "medium",
         notes: "Good funding opportunities",
         lastUpdated: new Date().toISOString(),
+        requirements: [
+          { type: "SOP", status: "not_started" },
+          { type: "LORs", status: "not_started" }
+        ]
       },
     ];
 

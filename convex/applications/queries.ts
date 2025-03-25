@@ -1,5 +1,5 @@
 import { query } from "../_generated/server";
-import { getCurrentUserIdOrThrow } from "../users";
+import { getCurrentUserIdOrThrow, getDemoUserId } from "../users";
 import { Id } from "../_generated/dataModel";
 import { v } from "convex/values";
 
@@ -13,7 +13,7 @@ export const getApplications = query({
     let userId: Id<"users">;
     try {
       if (args.demoMode) {
-        userId = "jx7an55kvsrqnqn40xqm71xvzn7cpcq2" as Id<"users">;
+        userId = await getDemoUserId(ctx);
       } else {
         userId = await getCurrentUserIdOrThrow(ctx);
       }

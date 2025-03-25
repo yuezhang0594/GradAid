@@ -144,6 +144,17 @@ const schema = defineSchema({
     priority: v.union(v.literal("high"), v.literal("medium"), v.literal("low")),
     notes: v.optional(v.string()),
     lastUpdated: v.string(),
+    requirements: v.array(
+      v.object({
+        type: v.string(),
+        status: v.union(
+          v.literal("completed"),
+          v.literal("in_progress"),
+          v.literal("pending"),
+          v.literal("not_started")
+        ),
+      })
+    ),
   })
     .index("by_user", ["userId"])
     .index("by_university", ["universityId"])
