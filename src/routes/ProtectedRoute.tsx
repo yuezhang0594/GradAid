@@ -1,4 +1,5 @@
 import { AuthLoading, Authenticated, Unauthenticated } from 'convex/react'
+import AuthenticatedRoute from '@/routes/AuthenticatedRoute'
 import SignInPage from '@/routes/auth/SignIn';
 import { useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
@@ -14,7 +15,7 @@ export default function ProtectedRoute({ children }: { children: React.ReactNode
         const timer = setTimeout(() => setShowLoading(true), 500);
         return () => clearTimeout(timer);
     }, []);
-    
+
     return (
         <>
             <AuthLoading>
@@ -29,7 +30,9 @@ export default function ProtectedRoute({ children }: { children: React.ReactNode
                 <SignInPage redirectUrl={redirectUrl} />
             </Unauthenticated>
             <Authenticated>
-                {children}
+                <AuthenticatedRoute>
+                    {children}
+                </AuthenticatedRoute>
             </Authenticated>
         </>
     )

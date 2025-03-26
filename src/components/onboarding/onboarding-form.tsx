@@ -7,16 +7,17 @@ import { PersonalInfoStep } from "./steps/personal-info";
 import { EducationStep } from "./steps/education";
 import { TestScoresStep } from "./steps/test-scores";
 import { CareerGoalsStep } from "./steps/career-goals";
-import { useProfile, PersonalInfo, Education, TestScores, CareerGoals } from "@/hooks/useProfile";
+import { useProfile } from "@/hooks/useProfile";
+import type * as ProfileType from "../profile/validators";
 
 const STEPS = ["personal-info", "education", "test-scores", "career-goals", "complete"] as const;
 type Step = (typeof STEPS)[number];
 
 type StepData = {
-  "personal-info": PersonalInfo;
-  "education": Education;
-  "test-scores": TestScores;
-  "career-goals": CareerGoals;
+  "personal-info": ProfileType.PersonalInfo;
+  "education": ProfileType.Education;
+  "test-scores": ProfileType.TestScores;
+  "career-goals": ProfileType.CareerGoals;
 };
 
 export function OnboardingForm() {
@@ -51,19 +52,19 @@ export function OnboardingForm() {
       // Save data based on step
       switch (step) {
         case "personal-info":
-          response = await savePersonalInfo(data as PersonalInfo);
+          response = await savePersonalInfo(data as ProfileType.PersonalInfo);
           setActiveStep(response.currentStep as Step);
           break;
         case "education":
-          response = await saveEducation(data as Education);
+          response = await saveEducation(data as ProfileType.Education);
           setActiveStep(response.currentStep as Step);
           break;
         case "test-scores":
-          response = await saveTestScores(data as TestScores);
+          response = await saveTestScores(data as ProfileType.TestScores);
           setActiveStep(response.currentStep as Step);
           break;
         case "career-goals":
-          response = await saveCareerGoals(data as CareerGoals);
+          response = await saveCareerGoals(data as ProfileType.CareerGoals);
           if (response.currentStep === "complete") {
             navigate("/dashboard");
           } else {
@@ -104,28 +105,28 @@ export function OnboardingForm() {
 
         <TabsContent value="personal-info">
           <PersonalInfoStep
-            onComplete={(data: PersonalInfo) => handleStepComplete("personal-info", data)}
+            onComplete={(data: ProfileType.PersonalInfo) => handleStepComplete("personal-info", data)}
             initialData={profile?.personalInfo}
           />
         </TabsContent>
 
         <TabsContent value="education">
           <EducationStep
-            onComplete={(data: Education) => handleStepComplete("education", data)}
+            onComplete={(data: ProfileType.Education) => handleStepComplete("education", data)}
             initialData={profile?.education}
           />
         </TabsContent>
 
         <TabsContent value="test-scores">
           <TestScoresStep
-            onComplete={(data: TestScores) => handleStepComplete("test-scores", data)}
+            onComplete={(data: ProfileType.TestScores) => handleStepComplete("test-scores", data)}
             initialData={profile?.testScores}
           />
         </TabsContent>
 
         <TabsContent value="career-goals">
           <CareerGoalsStep
-            onComplete={(data: CareerGoals) => handleStepComplete("career-goals", data)}
+            onComplete={(data: ProfileType.CareerGoals) => handleStepComplete("career-goals", data)}
             initialData={profile?.careerGoals}
           />
         </TabsContent>

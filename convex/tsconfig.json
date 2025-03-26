@@ -20,6 +20,6 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": ["./**/*"],
+  "include": ["./**/*", "../src/components/profile/validators.ts"],
   "exclude": ["./_generated"]
 }

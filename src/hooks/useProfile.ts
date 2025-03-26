@@ -1,56 +1,7 @@
 import { useQuery, useMutation } from 'convex/react';
 import { api } from '../../convex/_generated/api';
-import { Id } from '../../convex/_generated/dataModel';
-
-// Define profile section types
-export interface PersonalInfo {
-  countryOfOrigin: string;
-  dateOfBirth: string;
-  currentLocation: string;
-  nativeLanguage: string;
-}
-
-export interface Education {
-  educationLevel: string;
-  major: string;
-  university: string;
-  gpa: number;
-  gpaScale: number;
-  graduationDate: string;
-  researchExperience?: string;
-}
-
-export interface TestScores {
-  greScores?: {
-    verbal: number;
-    quantitative: number;
-    analyticalWriting: number;
-    testDate: string;
-  };
-  englishTest?: {
-    type: "TOEFL" | "IELTS";
-    overallScore: number;
-    sectionScores: Record<string, number>;
-    testDate: string;
-  };
-}
-
-export interface CareerGoals {
-  targetDegree: string;
-  intendedField: string;
-  researchInterests: string[];
-  careerObjectives: string;
-  targetLocations: string[];
-  expectedStartDate: string;
-  budgetRange?: string;
-}
-
-export interface Profile {
-  personalInfo: PersonalInfo;
-  education: Education;
-  testScores: TestScores;
-  careerGoals: CareerGoals;
-}
+import { Doc, Id } from '../../convex/_generated/dataModel';
+import type * as ProfileType from '../components/profile/validators';
 
 // Define onboarding status type
 export interface OnboardingStatus {
@@ -58,10 +9,47 @@ export interface OnboardingStatus {
   currentStep: "personal-info" | "education" | "test-scores" | "career-goals" | "complete";
 }
 
+// Convert from DB format to frontend format
+function convertProfile(profileData: Doc<"userProfiles"> | null | undefined): ProfileType.Profile | undefined {
+  if (!profileData) return undefined;
+  
+  return {
+    personalInfo: {
+      countryOfOrigin: profileData.countryOfOrigin,
+      dateOfBirth: profileData.dateOfBirth,
+      currentLocation: profileData.currentLocation,
+      nativeLanguage: profileData.nativeLanguage,
+    },
+    education: {
+      educationLevel: profileData.educationLevel,
+      major: profileData.major,
+      university: profileData.university,
+      gpa: profileData.gpa,
+      gpaScale: profileData.gpaScale,
+      graduationDate: profileData.graduationDate,
+      researchExperience: profileData.researchExperience,
+    },
+    testScores: {
+      greScores: profileData.greScores,
+      englishTest: profileData.englishTest,
+    },
+    careerGoals: {
+      targetDegree: profileData.targetDegree,
+      intendedField: profileData.intendedField,
+      researchInterests: profileData.researchInterests,
+      careerObjectives: profileData.careerObjectives,
+      targetLocations: profileData.targetLocations,
+      expectedStartDate: profileData.expectedStartDate,
+      budgetRange: profileData.budgetRange,
+    },
+  };
+}
+
 export function useProfile() {
   // Get profile data
-  const profile = useQuery(api.userProfiles.queries.getProfile) as Profile | undefined;
-
+  const rawProfile = useQuery(api.userProfiles.queries.getProfile) as Doc<"userProfiles"> | null | undefined;
+  // Convert profile to frontend format
+  const profile = convertProfile(rawProfile);
   // Get onboarding status
   const onboardingStatus = useQuery(api.userProfiles.queries.checkOnboardingStatus) as OnboardingStatus | undefined;
 
@@ -72,25 +60,25 @@ export function useProfile() {
   const saveCareerGoals = useMutation(api.userProfiles.mutations.saveCareerGoals);
 
   // Save functions for each section
-  const savePersonalInfoSection = async (data: PersonalInfo): Promise<{ currentStep: string }> => {
+  const savePersonalInfoSection = async (data: ProfileType.PersonalInfo): Promise<{ currentStep: string }> => {
     return await savePersonalInfo({
       ...data,
     });
   };
 
-  const saveEducationSection = async (data: Education): Promise<{ currentStep: string }> => {
+  const saveEducationSection = async (data: ProfileType.Education): Promise<{ currentStep: string }> => {
     return await saveEducation({
       ...data,
     });
   };
 
-  const saveTestScoresSection = async (data: TestScores): Promise<{ currentStep: string }> => {
+  const saveTestScoresSection = async (data: ProfileType.TestScores): Promise<{ currentStep: string }> => {
     return await saveTestScores({
       ...data,
     });
   };
 
-  const saveCareerGoalsSection = async (data: CareerGoals): Promise<{ currentStep: string }> => {
+  const saveCareerGoalsSection = async (data: ProfileType.CareerGoals): Promise<{ currentStep: string }> => {
     return await saveCareerGoals({
       ...data,
     });
@@ -107,7 +95,7 @@ export function useProfile() {
     saveCareerGoals: saveCareerGoalsSection,
     
     // Status
-    isComplete: onboardingStatus?.isComplete ?? false,
+    isComplete: onboardingStatus?.isComplete ?? null,
     currentStep: onboardingStatus?.currentStep ?? "personal-info"
   };
 }

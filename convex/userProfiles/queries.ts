@@ -32,7 +32,7 @@ export const checkOnboardingStatus = query({
 
     // Determine the current step based on what's completed
     const currentStep = getNextIncompleteStep(profile);
-    
+
     return {
       currentStep,
       isComplete: currentStep === "complete",
@@ -40,11 +40,43 @@ export const checkOnboardingStatus = query({
   },
 });
 
-function getNextIncompleteStep(profile: any): string {
-  if (!profile.personalInfo) return "personal-info";
-  if (!profile.education) return "education";
-  if (!profile.testScores) return "test-scores";
-  if (!profile.careerGoals) return "career-goals";
+function getNextIncompleteStep(profile: Doc<"userProfiles">): string {
+  // Check if personalInfo exists and has all required fields
+  if (!profile.countryOfOrigin ||
+    !profile.dateOfBirth ||
+    !profile.currentLocation ||
+    !profile.nativeLanguage) {
+    return "personal-info";
+  }
+
+  // Check if education exists and has all required fields
+  if (!profile.educationLevel ||
+    !profile.major ||
+    !profile.university ||
+    typeof profile.gpa !== 'number' ||
+    typeof profile.gpaScale !== 'number' ||
+    !profile.graduationDate) {
+    return "education";
+  }
+
+  // Check if test scores section has been visited (all fields are optional)
+  // We'll consider this step incomplete if neither greScores nor englishTest exists
+  if (!profile.greScores && !profile.englishTest) {
+    return "test-scores";
+  }
+
+  // Check if careerGoals exists and has all required fields
+  if (!profile.targetDegree ||
+    !profile.intendedField ||
+    !Array.isArray(profile.researchInterests) ||
+    profile.researchInterests.length === 0 ||
+    !profile.careerObjectives ||
+    !Array.isArray(profile.targetLocations) ||
+    profile.targetLocations.length === 0 ||
+    !profile.expectedStartDate) {
+    return "career-goals";
+  }
+
   return "complete";
 }
 

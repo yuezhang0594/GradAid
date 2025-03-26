@@ -2,11 +2,12 @@ import React from 'react';
 import { UserButton, useUser } from '@clerk/clerk-react';
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from '../ui/breadcrumb';
 import { SidebarTrigger } from '@/components/ui/sidebar';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 // TODO: Make header stick to top of screen
 export default function Header() {
   const { user } = useUser();
   const location = useLocation();
+  const navigate = useNavigate();
 
   const getBreadcrumbs = () => {
     const pathSegments = location.pathname.split('/').filter(Boolean);
@@ -58,7 +59,7 @@ export default function Header() {
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between w-full">
           {/* Breadcrumb Section */}
-          <div className="flex items-center gap-2 px-4">
+          <div className="flex items-center gap-2">
             <SidebarTrigger className="-ml-1" />
             <div className="mx-2 h-6 w-px bg-border" />
             <Breadcrumb>
@@ -67,19 +68,25 @@ export default function Header() {
                   {isDashboard ? (
                     <BreadcrumbPage>Dashboard</BreadcrumbPage>
                   ) : (
-                    <BreadcrumbLink href="/dashboard">
+                    <BreadcrumbLink 
+                      onClick={() => navigate('/dashboard')}
+                      className="cursor-pointer"
+                    >
                       Dashboard
                     </BreadcrumbLink>
                   )}
                 </BreadcrumbItem>
                 {breadcrumbs.map((item, index) => (
                   <React.Fragment key={item.path}>
-                    <BreadcrumbSeparator className="hidden md:block" />
+                    <BreadcrumbSeparator />
                     <BreadcrumbItem>
                       {index === breadcrumbs.length - 1 ? (
                         <BreadcrumbPage>{item.label}</BreadcrumbPage>
                       ) : (
-                        <BreadcrumbLink href={item.path}>
+                        <BreadcrumbLink 
+                          onClick={() => navigate(item.path)}
+                          className="cursor-pointer"
+                        >
                           {item.label}
                         </BreadcrumbLink>
                       )}

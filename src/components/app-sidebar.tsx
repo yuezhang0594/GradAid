@@ -146,8 +146,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               <SidebarMenu>
                 {item.items.map((item) => (
                   <SidebarMenuItem key={item.title}>
-                    <SidebarMenuButton asChild isActive={currentPath === item.url}>
-                      <a href={item.url}><item.icon size={20} />{item.title}</a>
+                    <SidebarMenuButton 
+                      isActive={currentPath === item.url}
+                      onClick={() => navigate(item.url)}
+                    >
+                      <item.icon size={20} />
+                      {item.title}
                     </SidebarMenuButton>
                   </SidebarMenuItem>
                 ))}

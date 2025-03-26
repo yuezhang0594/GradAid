@@ -20,49 +20,81 @@ import { Label } from "@/components/ui/label";
 import { useApply } from "@/hooks/useApply";
 import { Skeleton } from "@/components/ui/skeleton";
 import { EmptyState } from "@/components/ui/empty-state";
-import { BookmarkPlus, ExternalLink, Calendar } from "lucide-react";
+import { BookmarkPlus, ExternalLink, Calendar, Search } from "lucide-react";
 import { useFavorites } from "@/hooks/useFavorites";
 import { Badge } from "@/components/ui/badge";
 import formatDate from "@/lib/formatDate";
+import { PageWrapper } from "@/components/ui/page-wrapper";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import * as z from "zod";
+import {
+    Form,
+    FormControl,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
+} from "@/components/ui/form";
+
+// Form schema for validation
+const formSchema = z.object({
+    programId: z.string().min(1, "Please select a program"),
+});
+
+type FormValues = z.infer<typeof formSchema>;
 
 const ProgramApplyPage = () => {
     const navigate = useNavigate();
     const location = useLocation();
-    // const { savedPrograms, isLoading } = useApply();
     const { savedProgramsWithUniversity, favoritesLoading } = useFavorites();
     const savedPrograms = savedProgramsWithUniversity
     console.table(savedPrograms)
+    
     // Parse program ID from URL query parameters
     const queryParams = new URLSearchParams(location.search);
-    const programIdFromUrl = queryParams.get("programId");
+    const programIdFromUrl = queryParams.get("programId") || "";
 
-    const [selectedProgram, setSelectedProgram] = useState(programIdFromUrl || "");
+    // Initialize form with the defaultValues
+    const form = useForm<FormValues>({
+        resolver: zodResolver(formSchema),
+        defaultValues: {
+            programId: programIdFromUrl,
+        },
+    });
 
     // Update URL when selected program changes
     useEffect(() => {
-        if (selectedProgram) {
-            navigate(`?programId=${selectedProgram}`, { replace: true });
-        } else {
-            navigate("", { replace: true });
+        // Get current programId value
+        const programId = form.watch("programId");
+        
+        // Only update URL if we're still on the apply page and not being redirected
+        if (location.pathname === "/apply") {
+            const updatedUrl = programId 
+                ? `/apply?${programId}`
+                : "/apply";
+                
+            // Only navigate if the URL actually needs to change
+            if (location.search !== (programId ? `?${programId}` : "")) {
+                navigate(updatedUrl, { replace: true });
+            }
         }
-    }, [selectedProgram, navigate]);
+    }, [form.watch("programId"), location.pathname, location.search, navigate]);
 
-    const handleProgramChange = (value: string) => {
-        setSelectedProgram(value);
-    };
-
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        alert(`Starting application for program: ${selectedProgram}`);
+    const onSubmit = (data: FormValues) => {
+        alert(`Starting application for program: ${data.programId}`);
         // Here you would normally proceed to the next step
     };
 
     // Find the selected program details
-    const selectedProgramDetails = savedPrograms?.find(p => p._id === selectedProgram);
+    const selectedProgramDetails = savedPrograms?.find(p => p._id === form.watch("programId"));
 
     return (
-        <div className="container mx-auto px-4 py-8 max-w-3xl">
-            <h1 className="text-3xl font-bold mb-6">Apply to a Graduate Program</h1>
+        <PageWrapper
+            title="New Application"
+            description="Choose the graduate program you want to apply to"
+        >
             {favoritesLoading ? (
                 <div className="space-y-2">
                     <Skeleton className="h-10 w-full" />
@@ -77,41 +109,43 @@ const ProgramApplyPage = () => {
                     actionHref="/search"
                 />
             ) : (
-                <Card>
-                    <CardHeader>
-                        <CardTitle>Program Selection</CardTitle>
-                        <CardDescription>Choose the graduate program you want to apply to</CardDescription>
-                    </CardHeader>
+                <div className="max-w-3xl mx-auto">
+                    <Form {...form}>
+                        <form onSubmit={form.handleSubmit(onSubmit)}>
+                            <FormField
+                                control={form.control}
+                                name="programId"
+                                render={({ field }) => (
+                                    <FormItem>
+                                        <FormControl>
+                                            <Select
+                                                value={field.value}
+                                                onValueChange={field.onChange}
+                                            >
+                                                <SelectTrigger id="program" className="w-full">
+                                                    <SelectValue placeholder="-- Select a Program --" />
+                                                </SelectTrigger>
+                                                <SelectContent
+                                                    position="popper"
+                                                    className="max-h-[300px] overflow-y-auto w-[var(--radix-select-trigger-width)]"
+                                                    side="bottom"
+                                                    sideOffset={4}
+                                                >
+                                                    {savedPrograms.map((program) => (
+                                                        <SelectItem key={program._id} value={program._id}>
+                                                            {program.degree} in {program.name} at {program.university.name}
+                                                        </SelectItem>
+                                                    ))}
+                                                </SelectContent>
+                                            </Select>
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                )}
+                            />
 
-                    <form onSubmit={handleSubmit}>
-                        <CardContent className="space-y-4">
-                            <div className="space-y-2">
-                                <Label htmlFor="program">Select a Program</Label>
-
-                                <Select
-                                    value={selectedProgram}
-                                    onValueChange={handleProgramChange}
-                                >
-                                    <SelectTrigger id="program" className="w-full">
-                                        <SelectValue placeholder="-- Select a Program --" />
-                                    </SelectTrigger>
-                                    <SelectContent 
-                                        position="popper" 
-                                        className="max-h-[300px] overflow-y-auto w-[var(--radix-select-trigger-width)]"
-                                        side="bottom"
-                                        sideOffset={4}
-                                    >
-                                        {savedPrograms.map((program) => (
-                                            <SelectItem key={program._id} value={program._id}>
-                                                {program.degree} in {program.name} at {program.university.name}
-                                            </SelectItem>
-                                        ))}
-                                    </SelectContent>
-                                </Select>
-                            </div>
-
-                            {selectedProgram && selectedProgramDetails && (
-                                <Card className="overflow-hidden pb-0 pt-2">
+                            {form.watch("programId") && selectedProgramDetails && (
+                                <Card className="overflow-hidden pb-0 pt-2 mt-4">
                                     <div className="text-left px-4">
                                         <div className="flex items-center justify-between">
                                             <CardTitle className="text-md">{selectedProgramDetails.degree} in {selectedProgramDetails.name}</CardTitle>
@@ -180,7 +214,7 @@ const ProgramApplyPage = () => {
                                             </Button>
                                             <Button
                                                 type="submit"
-                                                disabled={!selectedProgram || favoritesLoading}
+                                                disabled={!form.watch("programId") || favoritesLoading}
                                                 className="w-full sm:w-auto"
                                             >
                                                 Start Application
@@ -189,11 +223,27 @@ const ProgramApplyPage = () => {
                                     </CardFooter>
                                 </Card>
                             )}
-                        </CardContent>
-                    </form>
-                </Card>
+                        </form>
+                    </Form>
+                </div>
             )}
-        </div>
+            {(savedPrograms?.length || 0) > 0 && (
+                <Alert className="mt-4 max-w-3xl mx-auto">
+                    <AlertDescription className="flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <span>Don't see the program you want to apply for? <br className="block md:hidden"/>Save the program first.</span>
+                        <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={() => navigate('/search')}
+                            className="shrink-0"
+                        >
+                            <Search className="h-4 w-4 mr-2" />
+                            Search Programs
+                        </Button>
+                    </AlertDescription>
+                </Alert>
+            )}
+        </PageWrapper>
     );
 };
 

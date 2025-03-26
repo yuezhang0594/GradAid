@@ -8,6 +8,7 @@ import { BookmarkX, ExternalLink, Calendar, X } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import formatDate from "@/lib/formatDate";
 import { useNavigate } from "react-router-dom";
+import { PageWrapper } from "@/components/ui/page-wrapper";
 
 export default function SavedProgramsPage() {
     const { toggleFavorite, savedProgramsWithUniversity, favoritesLoading, } = useFavorites();
@@ -33,25 +34,23 @@ export default function SavedProgramsPage() {
 
     if (favoritesLoading) {
         return (
-            <div className="flex justify-center py-12">
-                <div className="space-y-4 w-full">
-                    <Skeleton className="h-12 w-full" />
-                    <Skeleton className="h-[300px] w-full" />
-                    <Skeleton className="h-[300px] w-full" />
+            <PageWrapper title="Saved Programs">
+                <div className="flex justify-center py-12">
+                    <div className="space-y-4 w-full">
+                        <Skeleton className="h-12 w-full" />
+                        <Skeleton className="h-[300px] w-full" />
+                        <Skeleton className="h-[300px] w-full" />
+                    </div>
                 </div>
-            </div>
+            </PageWrapper>
         );
     }
 
     return (
-        <div className="container mx-auto py-8 px-4 max-w-7xl">
-            <header className="mb-8">
-                <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl mb-2">Saved Programs</h1>
-                <p className="text-muted-foreground">
-                    Manage and compare your saved graduate programs
-                </p>
-            </header>
-
+        <PageWrapper 
+            title="Saved Programs" 
+            description="Manage and compare your saved graduate programs"
+        >
             {/* Results */}
             <div className="space-y-4">
                 {sortedPrograms.length === 0 ? (
@@ -166,7 +165,17 @@ export default function SavedProgramsPage() {
                         ))}
                     </>
                 )}
+                {sortedPrograms.length > 0 && (
+                    <div className="flex justify-center pt-4">
+                        <Button 
+                            onClick={() => navigate("/search")}
+                            className="w-full sm:w-auto"
+                        >
+                            Search for More Programs
+                        </Button>
+                    </div>
+                )}
             </div>
-        </div>
+        </PageWrapper>
     );
 }

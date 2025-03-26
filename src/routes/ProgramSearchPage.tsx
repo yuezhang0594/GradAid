@@ -3,7 +3,6 @@ import { useProgramSearch } from '../hooks/useProgramSearch';
 import { useFavorites } from '../hooks/useFavorites';
 import ProgramSearch from '../components/search-programs/ProgramSearch';
 import UniversityCard from '../components/search-programs/UniversityCard';
-import { Id } from 'convex/_generated/dataModel';
 import { Card, CardContent } from '@/components/ui/card';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Separator } from '@/components/ui/separator';
@@ -18,6 +17,7 @@ import {
 } from "@/components/ui/pagination";
 import { useQuery } from 'convex/react';
 import { api } from '../../convex/_generated/api';
+import { PageWrapper } from '@/components/ui/page-wrapper';
 
 const FILTER_DELAY = 500; // delay for filtering to smooth UX
 const ITEMS_PER_PAGE = 5; // Define how many items per page for pagination
@@ -193,14 +193,10 @@ const UniversitySearchPage: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-7xl">
-      <header className="mb-8">
-        <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl mb-2">Program Search</h1>
-        <p className="text-muted-foreground">
-          Find the perfect graduate program for your academic journey
-        </p>
-      </header>
-
+    <PageWrapper 
+      title="Program Search" 
+      description="Find the perfect graduate program for your academic journey"
+    >
       {/* Search component */}
       <div className="mb-8">
         <ProgramSearch
@@ -238,7 +234,7 @@ const UniversitySearchPage: React.FC = () => {
               <p className="text-muted-foreground">
                 {programs.length} programs found across {universitiesWithFilteredPrograms.length} universities
               </p>
-              <p className="text-sm text-muted-foreground">
+              <p className="hidden md:block text-sm text-muted-foreground">
                 Page {currentPage} of {totalPages}
               </p>
             </div>
@@ -300,7 +296,7 @@ const UniversitySearchPage: React.FC = () => {
           </>
         )}
       </section>
-    </div>
+    </PageWrapper>
   );
 };
 
