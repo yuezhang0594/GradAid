@@ -7,3 +7,5 @@ export * from './input';
 export * from './label';
 export * from './table';
 export * from './tabs';
+export * from './select';
+export * from './tooltip';

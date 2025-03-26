@@ -2,9 +2,11 @@ import { v } from "convex/values";
 import { Doc, Id } from "../_generated/dataModel";
 import { mutation, query, MutationCtx, QueryCtx } from "../_generated/server";
 import { getCurrentUserIdOrThrow } from "../users";
+import { getUniversitiesHelper } from "./search";
 
 // Define types for better type safety
 type Program = Doc<"programs">;
+type ProgramWithUniversity = Program & { university: Doc<"universities"> };
 type Favorite = Doc<"favorites">;
 type User = Doc<"users">;
 
@@ -63,27 +65,34 @@ export const isFavorite = query({
   },
 });
 
+// Helper function for getting favorited programs
+async function getFavoriteProgramsHelper(
+  ctx: QueryCtx,
+): Promise<Array<Program>> {
+  const userId = await getCurrentUserIdOrThrow(ctx);
+  const favorites = await ctx.db
+    .query("favorites")
+    .withIndex("by_user", q => q.eq("userId", userId))
+    .collect();
+
+  // Get all program objects directly
+  const programs = await Promise.all(
+    favorites.map(async (favorite: Favorite) => {
+      const program = await ctx.db.get(favorite.programId);
+      return program;
+    })
+  );
+
+  // Filter out any null values
+  return programs.filter((program: Program | null): program is Program => program !== null);
+}
+
 // Get all favorited programs for a user
 export const getFavoritePrograms = query({
   args: {},
   handler: async (ctx: QueryCtx, args): Promise<Array<Program>> => {
     const userId = await getCurrentUserIdOrThrow(ctx);
-
-    const favorites = await ctx.db
-      .query("favorites")
-      .withIndex("by_user", q => q.eq("userId", userId))
-      .collect();
-
-    // Get all program objects directly
-    const programs = await Promise.all(
-      favorites.map(async (favorite: Favorite) => {
-        const program = await ctx.db.get(favorite.programId);
-        return program;
-      })
-    );
-
-    // Filter out any null values
-    return programs.filter((program: Program | null): program is Program => program !== null);
+    return getFavoriteProgramsHelper(ctx);
   },
 });
 
@@ -118,5 +127,30 @@ export const deleteFavorite = mutation({
   handler: async (ctx: MutationCtx, args) => {
     await ctx.db.delete(args.favoriteId);
     return true;
+  },
+});
+
+export const getFavoriteProgramsWithUniversity = query({
+  args: {},
+  handler: async (ctx: QueryCtx, args): Promise<Array<ProgramWithUniversity>> => {
+    // Get all favorited programs
+    const programs = await getFavoriteProgramsHelper(ctx);
+    // Get universities associated with these programs
+    const universityIds = programs.map(favorite => favorite.universityId);
+    const universities = await getUniversitiesHelper(ctx, universityIds);
+
+    // Attach university details to each program and filter out programs without matching university
+    const programsWithUniversity = programs
+      .map(program => {
+        const university = universities.find(u => u._id === program.universityId);
+        if (!university) return null;
+        return {
+          ...program,
+          university: university,
+        };
+      })
+      .filter((p): p is ProgramWithUniversity => p !== null);
+
+    return programsWithUniversity;
   },
 });

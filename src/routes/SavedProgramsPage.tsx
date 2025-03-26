@@ -7,15 +7,16 @@ import { EmptyState } from "@/components/ui/empty-state";
 import { BookmarkX, ExternalLink, Calendar, X } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import formatDate from "@/lib/formatDate";
+import { useNavigate } from "react-router-dom";
 
 export default function SavedProgramsPage() {
-    const { toggleFavorite, getFavoriteProgramsWithUniversity, isFavorite, favoritesLoading, } = useFavorites();
+    const { toggleFavorite, savedProgramsWithUniversity, favoritesLoading, } = useFavorites();
     const [sortOption, setSortOption] = useState("savedAt");
-    const savedPrograms = getFavoriteProgramsWithUniversity();
+    const navigate = useNavigate();
 
     // Sort programs
     const sortedPrograms = useMemo(() => {
-        return savedPrograms.sort((a, b) => {
+        return (savedProgramsWithUniversity || []).sort((a, b) => {
             if (sortOption === "savedAt") {
                 return new Date(b._creationTime).getTime() - new Date(a._creationTime).getTime();
             } else if (sortOption === "name") {
@@ -27,7 +28,7 @@ export default function SavedProgramsPage() {
             }
             return 0;
         });
-    }, [savedPrograms, sortOption]);
+    }, [savedProgramsWithUniversity, sortOption]);
 
 
     if (favoritesLoading) {
@@ -135,7 +136,7 @@ export default function SavedProgramsPage() {
                                 </CardContent>
 
                                 <CardFooter className="border-t px-4 py-2">
-                                    <div className="flex justify-between w-full">
+                                    <div className="flex flex-col sm:flex-row justify-between w-full gap-2">
                                         <Button
                                             variant="link"
                                             asChild
@@ -154,7 +155,8 @@ export default function SavedProgramsPage() {
                                         <Button
                                             variant="outline"
                                             size="sm"
-                                            onClick={() => window.location.href = `/search?university=${program.university?._id}`}
+                                            onClick={() => navigate(`/apply?programId=${program._id}`)}
+                                            className="w-full sm:w-auto"
                                         >
                                             Start Application
                                         </Button>

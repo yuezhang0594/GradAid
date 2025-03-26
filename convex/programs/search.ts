@@ -316,20 +316,27 @@ export const getUniversity = query({
   },
 });
 
+// Helper function to get universities by IDs
+export async function getUniversitiesHelper(
+  ctx: QueryCtx, 
+  universityIds: Id<"universities">[]
+): Promise<Array<Doc<"universities">>> {
+  if (universityIds.length === 0) {
+    return [];
+  }
+  
+  return await ctx.db
+    .query("universities")
+    .filter(q => 
+      q.or(...universityIds.map(id => q.eq(q.field("_id"), id)))
+    )
+    .collect();
+}
+
 export const getUniversities = query({
   args: { universityIds: v.array(v.id("universities")) },
   handler: async (ctx, args) => {
     const { universityIds } = args;
-    
-    if (universityIds.length === 0) {
-      return [];
-    }
-    
-    return await ctx.db
-      .query("universities")
-      .filter(q => 
-        q.or(...universityIds.map(id => q.eq(q.field("_id"), id)))
-      )
-      .collect();
+    return await getUniversitiesHelper(ctx, universityIds);
   },
 });

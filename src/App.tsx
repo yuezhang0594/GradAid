@@ -20,7 +20,7 @@ import ProgramSearchPage from "./routes/ProgramSearchPage";
 import OnboardingPage from "./routes/onboarding/page";
 import ProfilePage from "./routes/profile/page";
 import SavedProgramsPage from "./routes/SavedProgramsPage";
-
+import ProgramApplyPage from "./routes/ProgramApplyPage";
 
 function App() {
   return (
@@ -41,6 +41,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/search" element={<ProgramSearchPage />} />
           <Route path="/saved" element={<SavedProgramsPage />} />
+          <Route path="/apply" element={<ProgramApplyPage />} />
           <Route path="/applications" element={<ApplicationsPage />} />
           <Route path="/documents" element={<DocumentsPage />} />
           <Route path="/applications/:universityId" element={<ApplicationDetail />} />

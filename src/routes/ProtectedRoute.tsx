@@ -1,8 +1,8 @@
 import { AuthLoading, Authenticated, Unauthenticated } from 'convex/react'
 import SignInPage from '@/routes/auth/SignIn';
 import { useLocation } from 'react-router-dom'
-import { Skeleton } from "@/components/ui/skeleton"
 import { useState, useEffect } from 'react'
+import { LoaderIcon } from 'lucide-react'
 
 export default function ProtectedRoute({ children }: { children: React.ReactNode }) {
     const location = useLocation();
@@ -19,15 +19,9 @@ export default function ProtectedRoute({ children }: { children: React.ReactNode
         <>
             <AuthLoading>
                 {showLoading && (
-                    <div className="flex min-h-screen items-center justify-center bg-background">
-                        <div className="space-y-4 w-[600px]">
-                            <Skeleton className="h-12 w-full" />
-                            <div className="space-y-2">
-                                <Skeleton className="h-4 w-full" />
-                                <Skeleton className="h-4 w-[90%]" />
-                                <Skeleton className="h-4 w-[80%]" />
-                            </div>
-                        </div>
+                    <div className="fixed inset-0 flex flex-col items-center justify-center">
+                        <LoaderIcon className="animate-spin h-10 w-10 text-primary" />
+                        <p className="mt-4 text-primary font-medium">Verifying your credentials...</p>
                     </div>
                 )}
             </AuthLoading>
