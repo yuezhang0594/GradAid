@@ -1,30 +1,32 @@
 import { internalMutation } from "./_generated/server";
 import { Doc, Id } from "./_generated/dataModel";
+import { WithoutSystemFields } from "convex/server";
+import { v } from "convex/values";
 
 // Define types based on our schema
 type University = Doc<"universities">
-type UniversityInput = Omit<University, "_id" | "_creationTime">
+type UniversityInput = WithoutSystemFields<University>
 
 type Program = Doc<"programs">
-type ProgramInput = Omit<Program, "_id" | "_creationTime">
+type ProgramInput = WithoutSystemFields<Program>
 
 type Application = Doc<"applications">
-type ApplicationInput = Omit<Application, "_id" | "_creationTime">
+type ApplicationInput = WithoutSystemFields<Application>
 
 type ApplicationDocument = Doc<"applicationDocuments">
-type ApplicationDocumentInput = Omit<ApplicationDocument, "_id" | "_creationTime">
+type ApplicationDocumentInput = WithoutSystemFields<ApplicationDocument>
 
 type LOR = Doc<"letterOfRecommendations">
-type LORInput = Omit<LOR, "_id" | "_creationTime">
+type LORInput = WithoutSystemFields<LOR>
 
 type UserActivity = Doc<"userActivity">
-type UserActivityInput = Omit<UserActivity, "_id" | "_creationTime">
+type UserActivityInput = WithoutSystemFields<UserActivity>
 
 type AICredits = Doc<"aiCredits">
-type AICreditsInput = Omit<AICredits, "_id" | "_creationTime">
+type AICreditsInput = WithoutSystemFields<AICredits>
 
 type UserProfile = Doc<"userProfiles">
-type UserProfileInput = Omit<UserProfile, "_id" | "_creationTime">
+type UserProfileInput = WithoutSystemFields<UserProfile>
 
 // Map of university names to common abbreviations
 const universityAbbreviations: Record<string, string> = {
@@ -49,22 +51,33 @@ const universityAbbreviations: Record<string, string> = {
 
 // Default export that safely seeds the database
 export default internalMutation({
-  handler: async (ctx) => {
+  args: {
+    keepProfileData: v.optional(v.boolean())
+  },
+  handler: async (ctx, args) => {
     console.log("Deleting existing data from the database...");
-
-    // Clear all existing data
+    const keepProfileData = args.keepProfileData ?? true;
+    
+    // Tables that contain profile data
+    const profileTables = [
+      "userProfiles",
+      "aiCredits",
+      "userActivity",
+    ] as const;
+    
+    // Clear all existing data (except user data)
     const tablesToClear = [
-      "users",
       "universities",
       "programs",
+      "favorites",
       "applications",
       "applicationDocuments",
       "letterOfRecommendations",
-      "aiCredits",
-      "userActivity",
-      "userProfiles"
+      ...(keepProfileData ? [] : profileTables)
     ] as const;
 
+    const clearedTables: string[] = [];
+    
     for (const table of tablesToClear) {
       await ctx.db
         .query(table)
@@ -76,8 +89,11 @@ export default internalMutation({
             )
           );
         });
+      clearedTables.push(table);
     }
 
+    console.log(`Database tables cleared: ${clearedTables.join(", ")}`);
+    console.log(`Tables kept: ${keepProfileData ? profileTables.join(", ") : "None"}`);
     console.log("Initializing database with seed data...");
 
     // Create mock user first - following Clerk schema
@@ -1175,6 +1191,10 @@ export default internalMutation({
 
     console.log("Database initialization complete!");
 
-    return { success: true };
+    return { 
+      success: true,
+      clearedTables,
+      keptTables: keepProfileData ? profileTables : []
+    };
   },
 });
