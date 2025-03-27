@@ -123,13 +123,16 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarHeader>
         {/* Logo */}
         <div 
-          className="flex items-center justify-center cursor-pointer" 
+          className="flex flex-col items-center justify-center cursor-pointer pt-2" 
           onClick={() => navigate("/dashboard")}
         >
-          <GradAidLogo className="h-8 w-auto" />
-          <span className="ml-2 text-2xl font-bold text-primary">
-            GradAid
-          </span>
+          <div className="flex items-center">
+            <GradAidLogo className="h-8 w-auto" />
+            <span className="ml-2 text-2xl font-bold text-primary">
+              GradAid
+            </span>
+          </div>
+          <span className="text-xs text-muted-foreground mt-0">by Admissions Alchemists</span>
         </div>
         {/* <VersionSwitcher
           versions={data.versions}
