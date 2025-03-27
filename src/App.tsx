@@ -21,6 +21,7 @@ import OnboardingPage from "./routes/onboarding/page";
 import ProfilePage from "./routes/profile/page";
 import SavedProgramsPage from "./routes/SavedProgramsPage";
 import ProgramApplyPage from "./routes/ProgramApplyPage";
+import { Header } from "./components/layout";
 
 function App() {
   return (
@@ -35,8 +36,8 @@ function App() {
         <Route path="/privacy" element={<PrivacyPolicy />} />
 
         {/* Protected Routes */}
+        <Route path="/onboarding" element={<ProtectedRoute> <OnboardingPage /> </ProtectedRoute>} />
         <Route element={<ProtectedRoute><DashboardLayout /></ProtectedRoute>}>
-          <Route path="/onboarding" element={<OnboardingPage />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/search" element={<ProgramSearchPage />} />
@@ -46,9 +47,9 @@ function App() {
           <Route path="/documents" element={<DocumentsPage />} />
           <Route path="/applications/:universityId" element={<ApplicationDetail />} />
           <Route path="/applications/:universityId/documents" element={<DocumentsPage />} />
-          <Route 
-            path="/applications/:universityId/documents/:documentId" 
-            element={<DocumentEditor />} 
+          <Route
+            path="/applications/:universityId/documents/:documentId"
+            element={<DocumentEditor />}
           />
           <Route path="/timeline" element={<TimelinePage />} />
           <Route path="/credits" element={<CreditsPage />} />

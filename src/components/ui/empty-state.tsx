@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { LucideIcon } from 'lucide-react';
+import { useNavigate } from "react-router-dom";
 
 interface EmptyStateProps {
   icon: LucideIcon;
@@ -19,6 +20,16 @@ export function EmptyState({
   actionHref,
   onAction
 }: EmptyStateProps) {
+  const navigate = useNavigate();
+
+  const handleAction = () => {
+    if (onAction) {
+      onAction();
+    } else if (actionHref) {
+      navigate(actionHref);
+    }
+  };
+
   return (
     <Card className="py-12">
       <CardContent className="flex flex-col items-center justify-center text-center">
@@ -28,9 +39,7 @@ export function EmptyState({
           {description}
         </p>
         {(actionLabel && (actionHref || onAction)) && (
-          <Button 
-            onClick={onAction || (() => actionHref && (window.location.href = actionHref))}
-          >
+          <Button onClick={handleAction}>
             {actionLabel}
           </Button>
         )}

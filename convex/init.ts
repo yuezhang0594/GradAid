@@ -57,14 +57,14 @@ export default internalMutation({
   handler: async (ctx, args) => {
     console.log("Deleting existing data from the database...");
     const keepProfileData = args.keepProfileData ?? true;
-    
+
     // Tables that contain profile data
     const profileTables = [
       "userProfiles",
       "aiCredits",
       "userActivity",
     ] as const;
-    
+
     // Clear all existing data (except user data)
     const tablesToClear = [
       "universities",
@@ -77,7 +77,7 @@ export default internalMutation({
     ] as const;
 
     const clearedTables: string[] = [];
-    
+
     for (const table of tablesToClear) {
       await ctx.db
         .query(table)
@@ -91,49 +91,119 @@ export default internalMutation({
         });
       clearedTables.push(table);
     }
-
-    console.log(`Database tables cleared: ${clearedTables.join(", ")}`);
-    console.log(`Tables kept: ${keepProfileData ? profileTables.join(", ") : "None"}`);
+    console.log("Data deleted successfully");
     console.log("Initializing database with seed data...");
 
+    // First, delete existing mock users and their data
+    const oldDemoUser = await ctx.db
+      .query("users")
+      .filter(q => q.eq(q.field("clerkId"), "user_demo"))
+      .unique();
+
+    if (oldDemoUser) {
+      console.log("Found existing demo user, deleting all associated data...");
+      
+      // Delete data from all tables that reference the user ID
+      const tablesWithUserData = [
+        "profiles",
+        "userProfiles", 
+        "applications", 
+        "applicationDocuments", 
+        "letterOfRecommendations", 
+        "aiCredits",
+        "aiCreditUsage", 
+        "userActivity",
+        "favorites"
+      ] as const;
+      
+      for (const table of tablesWithUserData) {
+        const items = await ctx.db
+          .query(table)
+          .filter(q => q.eq(q.field("userId"), oldDemoUser._id))
+          .collect();
+          
+        if  (items.length > 0) {
+          console.log(`Deleting ${items.length} items from ${table}`);
+        }
+        for (const item of items) {
+          await ctx.db.delete(item._id);
+        }
+      }
+      
+      // Special handling for applications: we need to get their IDs first to delete related documents
+      const oldApplications = await ctx.db
+        .query("applications")
+        .filter(q => q.eq(q.field("userId"), oldDemoUser._id))
+        .collect();
+        
+      // Get application IDs
+      const oldApplicationIds = oldApplications.map(app => app._id);
+      
+      // Delete application documents and LORs that reference these applications
+      for (const appId of oldApplicationIds) {
+        // Delete application documents
+        const appDocs = await ctx.db
+          .query("applicationDocuments")
+          .filter(q => q.eq(q.field("applicationId"), appId))
+          .collect();
+          
+        for (const doc of appDocs) {
+          await ctx.db.delete(doc._id);
+        }
+        
+        // Delete letters of recommendation
+        const lors = await ctx.db
+          .query("letterOfRecommendations")
+          .filter(q => q.eq(q.field("applicationId"), appId))
+          .collect();
+          
+        for (const lor of lors) {
+          await ctx.db.delete(lor._id);
+        }
+      }
+      
+      // Finally delete the demo user itself
+      await ctx.db.delete(oldDemoUser._id);
+      console.log("Old demo user and all associated data deleted successfully");
+    }
+    
     // Create mock user first - following Clerk schema
     const mockUserId = await ctx.db.insert("users", {
       name: "Demo User",
       email: "demo@example.com",
       clerkId: "user_demo",
     });
-
-    // Initialize user profile
-    await ctx.db.insert("userProfiles", {
-      userId: mockUserId,
-      countryOfOrigin: "United States",
-      dateOfBirth: "1995-01-01",
-      currentLocation: "Boston, MA",
-      nativeLanguage: "English",
-      educationLevel: "Bachelor's",
-      major: "Computer Science",
-      university: "Boston University",
-      gpa: 3.8,
-      gpaScale: 4.0,
-      graduationDate: "2024-05",
-      researchExperience: "2 years of research in machine learning and natural language processing",
-      greScores: {
-        verbal: 165,
-        quantitative: 168,
-        analyticalWriting: 5.0,
-        testDate: "2024-01-15"
-      },
-      targetDegree: "MS",
-      intendedField: "Computer Science",
-      researchInterests: ["Artificial Intelligence", "Machine Learning", "Natural Language Processing"],
-      careerObjectives: "Pursue research in AI/ML with focus on practical applications",
-      targetLocations: ["California", "Massachusetts", "New York"],
-      expectedStartDate: "2025-09",
-      budgetRange: "$30,000-$50,000",
-      createdAt: new Date().toISOString(),
-      updatedAt: new Date().toISOString(),
-      onboardingCompleted: true
-    });
+      // Initialize user profile
+      await ctx.db.insert("userProfiles", {
+        userId: mockUserId,
+        countryOfOrigin: "United States",
+        dateOfBirth: "1995-01-01",
+        currentLocation: "Boston, MA",
+        nativeLanguage: "English",
+        educationLevel: "Bachelor's",
+        major: "Computer Science",
+        university: "Boston University",
+        gpa: 3.8,
+        gpaScale: 4.0,
+        graduationDate: "2024-05",
+        researchExperience: "2 years of research in machine learning and natural language processing",
+        greScores: {
+          verbal: 165,
+          quantitative: 168,
+          analyticalWriting: 5.0,
+          testDate: "2024-01-15"
+        },
+        targetDegree: "MS",
+        intendedField: "Computer Science",
+        researchInterests: ["Artificial Intelligence", "Machine Learning", "Natural Language Processing"],
+        careerObjectives: "Pursue research in AI/ML with focus on practical applications",
+        targetLocations: ["California", "Massachusetts", "New York"],
+        expectedStartDate: "2025-09",
+        budgetRange: "$30,000-$50,000",
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+        onboardingCompleted: true
+      });
 
     // University data
     const universityData: UniversityInput[] = [
@@ -959,18 +1029,18 @@ export default internalMutation({
       await ctx.db.insert("programs", program);
     }
 
-    // Initialize AI credits
-    await ctx.db.insert("aiCredits", {
-      userId: mockUserId,
-      totalCredits: 500,
-      usedCredits: 250,
-      resetDate: "2025-04-01",
-    });
+    // Initialize AI credits only if we're not keeping profile data
+      await ctx.db.insert("aiCredits", {
+        userId: mockUserId,
+        totalCredits: 500,
+        usedCredits: 250,
+        resetDate: "2025-04-01",
+      });
 
     // Initialize AI credit usage data
     const usageTypes = ["Document Review", "Essay Feedback", "Research Help", "Other"];
     const usageCredits = [100, 75, 50, 25];
-    
+
     for (let i = 0; i < usageTypes.length; i++) {
       await ctx.db.insert("aiCreditUsage", {
         userId: mockUserId,
@@ -1184,14 +1254,13 @@ export default internalMutation({
         },
       },
     ];
-
-    for (const activity of activityData) {
-      await ctx.db.insert("userActivity", activity);
-    }
-
+    
+      for (const activity of activityData) {
+        await ctx.db.insert("userActivity", activity);
+      }
     console.log("Database initialization complete!");
 
-    return { 
+    return {
       success: true,
       clearedTables,
       keptTables: keepProfileData ? profileTables : []
