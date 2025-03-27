@@ -74,9 +74,9 @@ export function LandingPage({
                     <p className="mx-auto max-w-[700px] text-lg text-muted-foreground md:text-xl">
                     Start your graduate school journey with GradAid today
                     </p>
-                    <Button asChild>
-                    <Link to="/login">Get Started Now</Link>
-                    </Button>
+                    <SignInButton>
+                        <Button>Get Started Now</Button>
+                    </SignInButton>
                 </div>
             </section>
         </div>
