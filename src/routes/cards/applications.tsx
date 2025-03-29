@@ -7,6 +7,14 @@ import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 
+// Helper function to format status text
+function formatStatus(status: string) {
+  return status
+    .split('_')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+
 export default function ApplicationsPage() {
   const navigate = useNavigate();
   const [demoMode, setDemoMode] = useState(true);
@@ -35,29 +43,30 @@ export default function ApplicationsPage() {
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         {applications.map((app) => (
           <Card 
-            key={app.university} 
-            className="cursor-pointer" 
+            className="cursor-pointer flex flex-col h-[200px] p-4" 
             onClick={() => navigate(`/applications/${app.university}`)}
           >
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">{app.university}</CardTitle>
+            <CardHeader className="flex flex-col items-center justify-center space-y-1 p-0 pb-6">
+              <CardTitle className="text-sm font-medium truncate max-w-full">{app.university}</CardTitle>
+              <p className="text-xs text-muted-foreground truncate max-w-[180px]" title={app.program}>
+                {app.program}
+              </p>
             </CardHeader>
-            <CardContent>
-              <p className="text-xs text-muted-foreground">{app.program}</p>
-              <div className="mt-2">
-                <div className="flex items-center justify-between text-xs">
-                  <span className={`capitalize ${app.status === "submitted" ? "text-green-600" : "text-orange-600"}`}>
-                    {app.status}
+            <CardContent className="flex flex-col flex-1 p-0">
+              <div className="w-full space-y-3 mt-auto">
+                <div className="flex items-center justify-between text-xs w-full">
+                  <span className={`min-w-[80px] text-left ${app.status === "submitted" ? "text-green-600" : "text-orange-600"}`}>
+                    {formatStatus(app.status)}
                   </span>
-                  <span className={`capitalize ${app.priority === "high" ? "text-red-600" : "text-blue-600"}`}>
-                    {app.priority}
+                  <span className={`min-w-[80px] text-right ${app.priority === "high" ? "text-red-600" : "text-blue-600"}`}>
+                    {formatStatus(app.priority)}
                   </span>
                 </div>
-                <div className="flex items-center justify-between text-xs text-muted-foreground mt-1">
-                  <span>Due {new Date(app.deadline).toLocaleDateString()}</span>
-                  <span>{app.documentsComplete}/{app.totalDocuments} docs</span>
+                <div className="flex items-center justify-between text-xs text-muted-foreground w-full">
+                  <span className="min-w-[80px] text-left">Due {new Date(app.deadline).toLocaleDateString()}</span>
+                  <span className="min-w-[80px] text-right">{app.documentsComplete}/{app.totalDocuments} docs</span>
                 </div>
-                <div className="w-full bg-secondary h-1.5 rounded-full mt-2">
+                <div className="w-full bg-secondary h-1.5 rounded-full">
                   <div 
                     className="bg-primary h-1.5 rounded-full" 
                     style={{ width: `${app.progress}%` }}
