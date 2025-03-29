@@ -18,6 +18,7 @@ import {
 import { useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 import { format } from "date-fns";
+import { PageWrapper } from "@/components/ui/page-wrapper";
 
 export default function CreditsPage() {
   const credits = useQuery(api.aiCredits.queries.getAiCredits);
@@ -25,29 +26,27 @@ export default function CreditsPage() {
 
   // Show loading state while data is being fetched
   if (!credits || !usageByType) {
-    return (
-      <main className="flex-1 flex-col space-y-8 p-8">
-        <div>Loading credits...</div>
-      </main>
-    );
+    return <PageWrapper title="AI Credits">Loading credits...</PageWrapper>;
   }
 
   return (
-    <main className="flex-1 flex-col space-y-8 p-8">
-      <div className="flex items-center justify-between space-y-2">
-        <div>
-          <h2 className="text-2xl font-bold tracking-tight">AI Credits</h2>
-          <p className="text-muted-foreground">
-            Monitor your AI credit usage and see detailed statistics
-          </p>
-        </div>
-        <div className="flex items-center space-x-2">
-          <Button>
-            <PlusCircle className="mr-2 h-4 w-4" />
-            Purchase Credits
-          </Button>
-        </div>
+    <PageWrapper
+      title="AI Credits"
+      description={
+        <div className="space-y-4">
+          <div className="space-y-1">
+            <p className="text-muted-foreground">Monitor your AI credit usage and see detailed statistics</p>
+          </div>
+          <div className="flex items-center justify-end mb-8">
+        <Button>
+          <PlusCircle className="mr-2 h-4 w-4" />
+          Purchase Credits
+        </Button>
       </div>
+        </div>
+      }
+    >
+      
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <Card>
@@ -135,6 +134,6 @@ export default function CreditsPage() {
           </CardContent>
         </Card>
       </div>
-    </main>
+    </PageWrapper>
   );
 }

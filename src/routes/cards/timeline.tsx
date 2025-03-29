@@ -14,38 +14,37 @@ import { useState } from "react";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { format } from "date-fns";
+import { PageWrapper } from "@/components/ui/page-wrapper";
 
 export default function TimelinePage() {
   const [demoMode, setDemoMode] = useState(true);
   const timeline = useQuery(api.applications.timeline.getTimeline, { demoMode });
 
   if (!timeline) {
-    return (
-      <main className="flex-1 flex-col space-y-8 p-8">
-        <div>Loading timeline...</div>
-      </main>
-    );
+    return <PageWrapper title="Application Timeline">Loading timeline...</PageWrapper>;
   }
 
   return (
-    <main className="flex-1 flex-col space-y-8 p-8">
-      <div className="flex justify-between items-center mb-6">
-        <div>
-          <h1 className="text-2xl font-bold">Application Timeline</h1>
-          <p className="text-muted-foreground">
-            Track your application deadlines and requirements
-          </p>
+    <PageWrapper
+      title="Application Timeline"
+      description={
+        <div className="space-y-4">
+          <div className="space-y-1">
+            <p className="text-muted-foreground">Track your application deadlines and requirements</p>
+          </div>
+          <div className="flex items-center justify-end">
+            <div className="flex items-center space-x-2">
+              <Switch
+                id="demo-mode"
+                checked={demoMode}
+                onCheckedChange={setDemoMode}
+              />
+              <Label htmlFor="demo-mode">Demo Mode</Label>
+            </div>
+          </div>
         </div>
-        <div className="flex items-center space-x-2">
-          <Switch
-            id="demo-mode"
-            checked={demoMode}
-            onCheckedChange={setDemoMode}
-          />
-          <Label htmlFor="demo-mode">Demo Mode</Label>
-        </div>
-      </div>
-
+      }
+    >
       <div className="space-y-4">
         {timeline.map((item, index) => (
           <Card key={index} className="group hover:shadow-md transition-all">
@@ -107,6 +106,6 @@ export default function TimelinePage() {
           </Card>
         ))}
       </div>
-    </main>
+    </PageWrapper>
   );
 }
