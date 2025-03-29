@@ -54,7 +54,7 @@ export default function TimelinePage() {
                 <div className="flex items-center gap-2">
                   <CalendarIcon className="h-4 w-4 text-muted-foreground" />
                   <CardTitle className="text-lg">
-                    {format(new Date(item.date), "MMM d, yyyy")}
+                    {format(new Date(item.deadline), "MMM d, yyyy")}
                   </CardTitle>
                   {item.priority === "high" && (
                     <Badge variant="destructive" className="ml-2">
@@ -92,7 +92,7 @@ export default function TimelinePage() {
                 </div>
                 <div className="flex justify-between text-sm text-muted-foreground">
                   <span>
-                    {Math.ceil((new Date(item.date).getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))} days remaining
+                    {Math.ceil((new Date(item.deadline).getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))} days remaining
                   </span>
                   <span>
                     {

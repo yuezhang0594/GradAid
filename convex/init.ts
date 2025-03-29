@@ -11,7 +11,21 @@ type Program = Doc<"programs">
 type ProgramInput = WithoutSystemFields<Program>
 
 type Application = Doc<"applications">
-type ApplicationInput = WithoutSystemFields<Application>
+type ApplicationInput = {
+  userId: Id<"users">;
+  universityId: Id<"universities">;
+  programId: Id<"programs">;
+  status: "draft" | "in_progress" | "submitted" | "accepted" | "rejected";
+  submissionDate?: string;
+  deadline: string;
+  priority: "high" | "medium" | "low";
+  notes?: string;
+  lastUpdated: string;
+  requirements: Array<{
+    type: string;
+    status: "completed" | "in_progress" | "pending" | "not_started";
+  }>;
+}
 
 type ApplicationDocument = Doc<"applicationDocuments">
 type ApplicationDocumentInput = WithoutSystemFields<ApplicationDocument>
@@ -54,6 +68,23 @@ export default internalMutation({
   args: {
     keepProfileData: v.optional(v.boolean())
   },
+  /**
+   * Initializes the database with mock data for testing purposes.
+   * 
+   * This function deletes existing data in specified tables and inserts
+   * predefined mock data, including user profiles, universities, programs,
+   * applications, application documents, letters of recommendation, AI credits,
+   * and user activity logs. It handles the removal of an old demo user and its
+   * associated data if present.
+   * 
+   * @param ctx - The context containing the database instance.
+   * @param args - The arguments to the handler function.
+   * @param args.keepProfileData - A boolean that indicates whether to retain
+   * user profile data during the data deletion process.
+   * 
+   * @returns An object containing the success status, list of cleared tables,
+   * and list of kept tables.
+   */
   handler: async (ctx, args) => {
     console.log("Deleting existing data from the database...");
     const keepProfileData = args.keepProfileData ?? true;
@@ -1024,9 +1055,15 @@ export default internalMutation({
       }
     ];
 
-    // Insert programs
+    // Insert programs and store their IDs
+    const programIds: Record<string, Id<"programs">> = {};
     for (const program of programData) {
-      await ctx.db.insert("programs", program);
+      const id = await ctx.db.insert("programs", program);
+      // Store program ID using composite key of university name and program name
+      const university = await ctx.db.get(program.universityId);
+      if (university) {
+        programIds[`${university.name}-${program.name}`] = id;
+      }
     }
 
     // Initialize AI credits only if we're not keeping profile data
@@ -1056,7 +1093,7 @@ export default internalMutation({
       {
         userId: mockUserId,
         universityId: universityIds["Stanford University"],
-        program: "MS Computer Science",
+        programId: programIds["Stanford University-Computer Science"],
         status: "submitted",
         submissionDate: "2025-03-01",
         deadline: "2025-05-15",
@@ -1071,7 +1108,7 @@ export default internalMutation({
       {
         userId: mockUserId,
         universityId: universityIds["Massachusetts Institute of Technology"],
-        program: "MS Artificial Intelligence",
+        programId: programIds["Massachusetts Institute of Technology-Electrical Engineering and Computer Science"],
         status: "submitted",
         submissionDate: "2025-02-15",
         deadline: "2025-05-30",
@@ -1086,7 +1123,7 @@ export default internalMutation({
       {
         userId: mockUserId,
         universityId: universityIds["University of California Berkeley"],
-        program: "MS Computer Science",
+        programId: programIds["University of California Berkeley-Computer Science"],
         status: "in_progress",
         deadline: "2025-06-15",
         priority: "high",
@@ -1100,7 +1137,7 @@ export default internalMutation({
       {
         userId: mockUserId,
         universityId: universityIds["Carnegie Mellon University"],
-        program: "MS Computer Science",
+        programId: programIds["Carnegie Mellon University-Computer Science"],
         status: "in_progress",
         deadline: "2025-07-01",
         priority: "medium",
@@ -1114,7 +1151,7 @@ export default internalMutation({
       {
         userId: mockUserId,
         universityId: universityIds["Georgia Institute of Technology"],
-        program: "MS Computer Science",
+        programId: programIds["Georgia Institute of Technology-Computer Science"],
         status: "in_progress",
         deadline: "2025-08-15",
         priority: "medium",
@@ -1130,14 +1167,18 @@ export default internalMutation({
     const applicationIds: Record<string, Id<"applications">> = {};
     for (const application of applicationData) {
       const id = await ctx.db.insert("applications", application);
-      applicationIds[`${application.universityId}-${application.program}`] = id;
+      const university = await ctx.db.get(application.universityId);
+      const program = await ctx.db.get(application.programId);
+      if (university && program) {
+        applicationIds[`${university.name}-${program.name}`] = id;
+      }
     }
 
     // Create application documents data
     const documentData: ApplicationDocumentInput[] = [
       {
         userId: mockUserId,
-        applicationId: applicationIds[`${universityIds["Stanford University"]}-MS Computer Science`],
+        applicationId: applicationIds["Stanford University-Computer Science"],
         title: "Statement of Purpose",
         type: "sop",
         status: "in_review",
@@ -1148,7 +1189,7 @@ export default internalMutation({
       },
       {
         userId: mockUserId,
-        applicationId: applicationIds[`${universityIds["Stanford University"]}-MS Computer Science`],
+        applicationId: applicationIds["Stanford University-Computer Science"],
         title: "Research Statement",
         type: "research_statement",
         status: "in_review",
@@ -1159,7 +1200,7 @@ export default internalMutation({
       },
       {
         userId: mockUserId,
-        applicationId: applicationIds[`${universityIds["Stanford University"]}-MS Computer Science`],
+        applicationId: applicationIds["Stanford University-Computer Science"],
         title: "CV",
         type: "cv",
         status: "complete",
@@ -1178,7 +1219,7 @@ export default internalMutation({
     const lorData: LORInput[] = [
       {
         userId: mockUserId,
-        applicationId: applicationIds[`${universityIds["Stanford University"]}-MS Computer Science`],
+        applicationId: applicationIds["Stanford University-Computer Science"],
         recommenderName: "Prof. Johnson",
         recommenderEmail: "johnson@university.edu",
         status: "submitted",
@@ -1189,7 +1230,7 @@ export default internalMutation({
       },
       {
         userId: mockUserId,
-        applicationId: applicationIds[`${universityIds["Stanford University"]}-MS Computer Science`],
+        applicationId: applicationIds["Stanford University-Computer Science"],
         recommenderName: "Dr. Smith",
         recommenderEmail: "smith@research.org",
         status: "submitted",
@@ -1199,7 +1240,7 @@ export default internalMutation({
       },
       {
         userId: mockUserId,
-        applicationId: applicationIds[`${universityIds["Stanford University"]}-MS Computer Science`],
+        applicationId: applicationIds["Stanford University-Computer Science"],
         recommenderName: "Dr. Wilson",
         recommenderEmail: "wilson@institute.edu",
         status: "submitted",
@@ -1222,7 +1263,7 @@ export default internalMutation({
         description: "Submitted application to Stanford University",
         timestamp: "2025-03-01T12:00:00Z",
         metadata: {
-          applicationId: applicationIds[`${universityIds["Stanford University"]}-MS Computer Science`],
+          applicationId: applicationIds["Stanford University-Computer Science"],
           oldStatus: "in_progress",
           newStatus: "submitted"
         },

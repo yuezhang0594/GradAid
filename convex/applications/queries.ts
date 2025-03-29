@@ -28,15 +28,16 @@ export const getApplications = query({
       .withIndex("by_user", (q) => q.eq("userId", userId))
       .collect();
 
-    // Get university details and document counts for each application
+    // Get university and program details for each application
     const applicationsWithDetails = await Promise.all(
-      applications.map(async (app) => {
-        const university = await ctx.db.get(app.universityId);
+      applications.map(async (application) => {
+        const university = await ctx.db.get(application.universityId);
+        const program = await ctx.db.get(application.programId);
         
         // Get documents for this application
         const documents = await ctx.db
           .query("applicationDocuments")
-          .withIndex("by_application", (q) => q.eq("applicationId", app._id))
+          .withIndex("by_application", (q) => q.eq("applicationId", application._id))
           .collect();
 
         // Calculate document completion
@@ -45,12 +46,12 @@ export const getApplications = query({
         const progress = totalDocuments > 0 ? Math.round((completeDocuments / totalDocuments) * 100) : 0;
 
         return {
-          id: app._id,
+          id: application._id,
           university: university?.name ?? "Unknown University",
-          program: app.program,
-          status: app.status,
-          priority: app.priority,
-          deadline: app.deadline,
+          program: program?.name ?? "Unknown Program",
+          status: application.status,
+          priority: application.priority,
+          deadline: application.deadline,
           documentsComplete: completeDocuments,
           totalDocuments,
           progress,

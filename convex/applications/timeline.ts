@@ -25,24 +25,22 @@ export const getTimeline = query({
       .withIndex("by_user", (q) => q.eq("userId", userId))
       .collect();
 
-    // Get university details for each application
-    const timelineItems = await Promise.all(
-      applications.map(async (app) => {
-        const university = await ctx.db.get(app.universityId);
-        
+    // Get university and program details for each application
+    const applicationsWithDetails = await Promise.all(
+      applications.map(async (application) => {
+        const university = await ctx.db.get(application.universityId);
+        const program = await ctx.db.get(application.programId);
         return {
-          date: app.deadline,
+          ...application,
           university: university?.name ?? "Unknown University",
-          program: app.program,
-          requirements: app.requirements,
-          priority: app.priority,
+          program: program?.name ?? "Unknown Program",
         };
       })
     );
 
     // Sort by deadline
-    return timelineItems.sort((a, b) => 
-      new Date(a.date).getTime() - new Date(b.date).getTime()
+    return applicationsWithDetails.sort((a, b) => 
+      new Date(a.deadline).getTime() - new Date(b.deadline).getTime()
     );
   },
 });

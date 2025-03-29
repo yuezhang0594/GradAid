@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
+import { PageWrapper } from "@/components/ui/page-wrapper";
 
 export default function ApplicationsPage() {
   const navigate = useNavigate();
@@ -13,10 +13,14 @@ export default function ApplicationsPage() {
   const applications = useQuery(api.applications.queries.getApplications, { demoMode }) ?? [];
 
   return (
-    <div className="flex-1 space-y-4 p-4 md:p-8 pt-6">
-      <div className="flex items-center justify-between space-y-2">
-        <h2 className="text-3xl font-bold tracking-tight">Applications</h2>
-        <div className="flex items-center space-x-4">
+    <PageWrapper
+      title="Applications"
+      description={
+        <div className="space-y-4">
+          <div className="space-y-1">
+            {/* <p className="text-muted-foreground">Track and manage your graduate school applications.</p> */}
+            <p className="text-muted-foreground">View deadlines, requirements, and progress for each university.</p>
+          </div>
           <div className="flex items-center space-x-2">
             <Switch
               id="demo-mode"
@@ -25,9 +29,9 @@ export default function ApplicationsPage() {
             />
             <Label htmlFor="demo-mode">Demo Mode</Label>
           </div>
-          <Button onClick={() => navigate("/applications/new")}>Add Application</Button>
         </div>
-      </div>
+      }
+    >
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         {applications.map((app) => (
           <Card 
@@ -64,6 +68,6 @@ export default function ApplicationsPage() {
           </Card>
         ))}
       </div>
-    </div>
+    </PageWrapper>
   );
 }

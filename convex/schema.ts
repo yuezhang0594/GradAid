@@ -131,7 +131,7 @@ const schema = defineSchema({
   applications: defineTable({
     userId: v.id("users"),
     universityId: v.id("universities"),
-    program: v.string(),
+    programId: v.id("programs"),
     status: v.union(
       v.literal("draft"),
       v.literal("in_progress"),
@@ -158,6 +158,7 @@ const schema = defineSchema({
   })
     .index("by_user", ["userId"])
     .index("by_university", ["universityId"])
+    .index("by_program", ["programId"])
     .index("by_deadline", ["deadline"]),
 
   applicationDocuments: defineTable({
