@@ -1,5 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
+import { UserProfile } from "@clerk/clerk-react";
 import { LandingPage } from "./components/landing-page";
 import { DashboardLayout } from "@/components/layout/DashboardLayout";
 import Dashboard from "./routes/dev/Dashboard_statCard";
@@ -21,7 +22,6 @@ import OnboardingPage from "./routes/onboarding/page";
 import ProfilePage from "./routes/profile/page";
 import SavedProgramsPage from "./routes/SavedProgramsPage";
 import ProgramApplyPage from "./routes/ProgramApplyPage";
-import { Header } from "./components/layout";
 
 function App() {
   return (
@@ -32,6 +32,7 @@ function App() {
         <Route path="/signin" element={<SignInPage redirectUrl={"/dashboard"} />} />
         <Route path="/signup" element={<SignUpPage redirectUrl={"/onboarding"} />} />
         <Route path="/signout" element={<SignOutPage />} />
+        <Route path="/clerk" element={<UserProfile />} />
         <Route path="/tos" element={<TOSPage />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
 
