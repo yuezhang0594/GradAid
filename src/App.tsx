@@ -46,10 +46,10 @@ function App() {
           <Route path="/apply" element={<ProgramApplyPage />} />
           <Route path="/applications" element={<ApplicationsPage />} />
           <Route path="/documents" element={<DocumentsPage />} />
-          <Route path="/applications/:universityId" element={<ApplicationDetail />} />
-          <Route path="/applications/:universityId/documents" element={<DocumentsPage />} />
+          <Route path="/applications/:universityName" element={<ApplicationDetail />} />
+          <Route path="/applications/:universityName/documents" element={<DocumentsPage />} />
           <Route
-            path="/applications/:universityId/documents/:documentId"
+            path="/applications/:universityName/documents/:documentId"
             element={<DocumentEditor />}
           />
           <Route path="/timeline" element={<TimelinePage />} />

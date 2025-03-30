@@ -44,7 +44,7 @@ export default function Dashboard() {
               {stat.icon}
             </CardHeader>
             <CardContent className="pt-4">
-              <div className="text-2xl font-bold">{stat.value}</div>
+              <div className="text-xl font-bold mb-2">{stat.value}</div>
               <p className="text-xs text-muted-foreground">{stat.description}</p>
             </CardContent>
           </ClickableCard>
@@ -131,8 +131,7 @@ export default function Dashboard() {
                   onClick={() =>
                     navigate(
                       `/applications/${event.university
-                        .toLowerCase()
-                        .replace(/\s+/g, "-")}`
+                        .replace(/\s+/g, " ")}`
                     )
                   }
                 >

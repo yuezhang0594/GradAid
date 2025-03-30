@@ -144,7 +144,7 @@ export const useDashboardData = (demoMode?: boolean): DashboardData => {
     aiSuggestions: uni.documents[0]?.aiSuggestionsCount,
     action: {
       label: "Edit document",
-      href: `/applications/${uni.name.toLowerCase().replace(/\s+/g, "-")}/documents/${uni.documents[0]?.type ?? "new"}`,
+      href: `/applications/${uni.name.replace(/\s+/g, " ")}/documents/${uni.documents[0]?.type ?? "new"}`,
       tooltip: "Continue editing your document",
     },
   }));

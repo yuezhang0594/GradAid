@@ -61,7 +61,13 @@ export default function ApplicationsPage() {
             key={app.id}
             title={app.university}
             description={`${app.degree} in ${app.program}`}
-            onClick={() => navigate(`/applications/${app.university}`)}
+            onClick={() => navigate(`/applications/${encodeURIComponent(app.university)}`, { 
+              state: { 
+                applicationId: app.id,
+                universityName: app.university,
+                demoMode 
+              } 
+            })}
           >
             <div className="space-y-2 flex-1">
               <div className="flex items-center justify-between text-sm w-full">

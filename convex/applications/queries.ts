@@ -148,3 +148,88 @@ export const getDocumentsByUniversity = query({
     }));
   }
 });
+
+// Query to get application details, documents, and LORs for a specific university
+export const getApplicationDetails = query({
+  args: {
+    applicationId: v.string(),
+    demoMode: v.optional(v.boolean()),
+  },
+  handler: async (ctx, args) => {
+    // Get user ID
+    let userId: Id<"users">;
+    try {
+      if (args.demoMode) {
+        userId = await getDemoUserId(ctx);
+      } else {
+        userId = await getCurrentUserIdOrThrow(ctx);
+      }
+    } catch {
+      userId = "mock-user-id" as Id<"users">;
+    }
+
+    // Get application details
+    const application = await ctx.db
+      .query("applications")
+      .withIndex("by_user", (q) => q.eq("userId", userId))
+      .filter((q) => q.eq(q.field("_id"), args.applicationId))
+      .first();
+
+    if (!application) {
+      return null;
+    }
+
+    // Get university and program details
+    const university = await ctx.db.get(application.universityId);
+    const program = await ctx.db.get(application.programId);
+
+    // Get documents
+    const documents = await ctx.db
+      .query("applicationDocuments")
+      .withIndex("by_application", (q) => q.eq("applicationId", application._id))
+      .collect();
+
+    // Get LORs
+    const lors = await ctx.db
+      .query("letterOfRecommendations")
+      .withIndex("by_application", (q) => q.eq("applicationId", application._id))
+      .collect();
+
+    return {
+      ...application,
+      university: university?.name ?? "Unknown University",
+      program: program?.name ?? "Unknown Program",
+      degree: program?.degree ?? "Unknown Degree",
+      documents: documents.map(doc => ({
+        id: doc._id,
+        type: doc.type,
+        title: doc.title,
+        status: doc.status,
+        progress: doc.progress,
+        lastEdited: doc.lastEdited,
+        aiSuggestions: doc.aiSuggestionsCount,
+      })),
+      lors: lors.map(lor => ({
+        id: lor._id,
+        status: lor.status,
+        requestedDate: lor.requestedDate,
+        submittedDate: lor.submittedDate,
+        remindersSent: lor.remindersSent,
+      })),
+    };
+  },
+});
+
+// Query to get university by name
+export const getUniversityByName = query({
+  args: {
+    name: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const university = await ctx.db
+      .query("universities")
+      .filter((q) => q.eq(q.field("name"), args.name))
+      .first();
+    return university;
+  },
+});
