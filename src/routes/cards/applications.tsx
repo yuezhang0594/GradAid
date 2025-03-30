@@ -1,11 +1,26 @@
 import React, { useState } from "react";
 import { useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
+import { Id } from "../../../convex/_generated/dataModel";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { PageWrapper } from "@/components/ui/page-wrapper";
+
+// Define the application type
+type Application = {
+  id: Id<"applications">;
+  university: string;
+  program: string;
+  degree: string;
+  status: "draft" | "in_progress" | "submitted" | "accepted" | "rejected";
+  priority: "high" | "medium" | "low";
+  deadline: string;
+  documentsComplete: number;
+  totalDocuments: number;
+  progress: number;
+};
 
 // Helper function to format status text
 function formatStatus(status: string) {
@@ -41,15 +56,15 @@ export default function ApplicationsPage() {
       }
     >
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        {applications.map((app) => (
+        {applications.map((app: Application) => (
           <Card 
             className="cursor-pointer flex flex-col h-[200px] p-4" 
             onClick={() => navigate(`/applications/${app.university}`)}
           >
             <CardHeader className="flex flex-col items-center justify-center space-y-1 p-0 pb-6">
               <CardTitle className="text-sm font-medium truncate max-w-full">{app.university}</CardTitle>
-              <p className="text-xs text-muted-foreground truncate max-w-[180px]" title={app.program}>
-                {app.program}
+              <p className="text-xs text-muted-foreground truncate max-w-[180px]" title={`${app.degree} in ${app.program}`}>
+                {app.degree} in {app.program}
               </p>
             </CardHeader>
             <CardContent className="flex flex-col flex-1 p-0">

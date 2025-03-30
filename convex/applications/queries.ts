@@ -49,6 +49,7 @@ export const getApplications = query({
           id: application._id,
           university: university?.name ?? "Unknown University",
           program: program?.name ?? "Unknown Program",
+          degree: program?.degree ?? "Unknown Degree",
           status: application.status,
           priority: application.priority,
           deadline: application.deadline,

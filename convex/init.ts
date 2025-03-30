@@ -1062,7 +1062,7 @@ export default internalMutation({
       // Store program ID using composite key of university name and program name
       const university = await ctx.db.get(program.universityId);
       if (university) {
-        programIds[`${university.name}-${program.name}`] = id;
+        programIds[`${university.name}-${program.degree}-${program.name}`] = id;
       }
     }
 
@@ -1093,7 +1093,7 @@ export default internalMutation({
       {
         userId: mockUserId,
         universityId: universityIds["Stanford University"],
-        programId: programIds["Stanford University-Computer Science"],
+        programId: programIds["Stanford University-PhD-Computer Science"],
         status: "submitted",
         submissionDate: "2025-03-01",
         deadline: "2025-05-15",
@@ -1108,7 +1108,7 @@ export default internalMutation({
       {
         userId: mockUserId,
         universityId: universityIds["Massachusetts Institute of Technology"],
-        programId: programIds["Massachusetts Institute of Technology-Electrical Engineering and Computer Science"],
+        programId: programIds["Massachusetts Institute of Technology-PhD-Electrical Engineering and Computer Science"],
         status: "submitted",
         submissionDate: "2025-02-15",
         deadline: "2025-05-30",
@@ -1123,7 +1123,7 @@ export default internalMutation({
       {
         userId: mockUserId,
         universityId: universityIds["University of California Berkeley"],
-        programId: programIds["University of California Berkeley-Computer Science"],
+        programId: programIds["University of California Berkeley-MS-Computer Science"],
         status: "in_progress",
         deadline: "2025-06-15",
         priority: "high",
@@ -1137,7 +1137,7 @@ export default internalMutation({
       {
         userId: mockUserId,
         universityId: universityIds["Carnegie Mellon University"],
-        programId: programIds["Carnegie Mellon University-Computer Science"],
+        programId: programIds["Carnegie Mellon University-MS-Computer Science"],
         status: "in_progress",
         deadline: "2025-07-01",
         priority: "medium",
@@ -1151,7 +1151,7 @@ export default internalMutation({
       {
         userId: mockUserId,
         universityId: universityIds["Georgia Institute of Technology"],
-        programId: programIds["Georgia Institute of Technology-Computer Science"],
+        programId: programIds["Georgia Institute of Technology-MS-Computer Science"],
         status: "in_progress",
         deadline: "2025-08-15",
         priority: "medium",
@@ -1170,7 +1170,7 @@ export default internalMutation({
       const university = await ctx.db.get(application.universityId);
       const program = await ctx.db.get(application.programId);
       if (university && program) {
-        applicationIds[`${university.name}-${program.name}`] = id;
+        applicationIds[`${university.name}-${program.degree}-${program.name}`] = id;
       }
     }
 
@@ -1178,7 +1178,7 @@ export default internalMutation({
     const documentData: ApplicationDocumentInput[] = [
       {
         userId: mockUserId,
-        applicationId: applicationIds["Stanford University-Computer Science"],
+        applicationId: applicationIds["Stanford University-PhD-Computer Science"],
         title: "Statement of Purpose",
         type: "sop",
         status: "in_review",
@@ -1189,7 +1189,7 @@ export default internalMutation({
       },
       {
         userId: mockUserId,
-        applicationId: applicationIds["Stanford University-Computer Science"],
+        applicationId: applicationIds["Stanford University-PhD-Computer Science"],
         title: "Research Statement",
         type: "research_statement",
         status: "in_review",
@@ -1200,7 +1200,7 @@ export default internalMutation({
       },
       {
         userId: mockUserId,
-        applicationId: applicationIds["Stanford University-Computer Science"],
+        applicationId: applicationIds["Stanford University-PhD-Computer Science"],
         title: "CV",
         type: "cv",
         status: "complete",
@@ -1219,7 +1219,7 @@ export default internalMutation({
     const lorData: LORInput[] = [
       {
         userId: mockUserId,
-        applicationId: applicationIds["Stanford University-Computer Science"],
+        applicationId: applicationIds["Stanford University-PhD-Computer Science"],
         recommenderName: "Prof. Johnson",
         recommenderEmail: "johnson@university.edu",
         status: "submitted",
@@ -1230,7 +1230,7 @@ export default internalMutation({
       },
       {
         userId: mockUserId,
-        applicationId: applicationIds["Stanford University-Computer Science"],
+        applicationId: applicationIds["Stanford University-PhD-Computer Science"],
         recommenderName: "Dr. Smith",
         recommenderEmail: "smith@research.org",
         status: "submitted",
@@ -1240,7 +1240,7 @@ export default internalMutation({
       },
       {
         userId: mockUserId,
-        applicationId: applicationIds["Stanford University-Computer Science"],
+        applicationId: applicationIds["Stanford University-PhD-Computer Science"],
         recommenderName: "Dr. Wilson",
         recommenderEmail: "wilson@institute.edu",
         status: "submitted",
@@ -1263,7 +1263,7 @@ export default internalMutation({
         description: "Submitted application to Stanford University",
         timestamp: "2025-03-01T12:00:00Z",
         metadata: {
-          applicationId: applicationIds["Stanford University-Computer Science"],
+          applicationId: applicationIds["Stanford University-PhD-Computer Science"],
           oldStatus: "in_progress",
           newStatus: "submitted"
         },
