@@ -12,13 +12,29 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { useNavigate } from "react-router-dom";
 import { ClickableCard } from "@/components/dashboard/clickablecard";
-import { applicationStats, documentStats, applicationTimeline } from "@/components/dashboard/demo-data";
+import { useDashboardData } from "@/hooks/useDashboardData";
+import { useState } from "react";
+import { Switch } from "@/components/ui/switch";
+import { Label } from "@/components/ui/label";
 
 export default function Dashboard() {
   const navigate = useNavigate();
+  const [demoMode, setDemoMode] = useState(true);
+  const { applicationStats, documentStats, applicationTimeline } = useDashboardData(demoMode);
 
   return (
     <main className="flex-1 flex-col overflow-auto p-4 sm:p-6 lg:p-8">
+      <div className="flex items-center justify-end mb-4">
+        <div className="flex items-center space-x-2">
+          <Switch
+            id="demo-mode"
+            checked={demoMode}
+            onCheckedChange={setDemoMode}
+          />
+          <Label htmlFor="demo-mode">Demo Mode</Label>
+        </div>
+      </div>
+
       {/* Application Progress Stats */}
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         {applicationStats.map((stat, index) => (
@@ -78,9 +94,6 @@ export default function Dashboard() {
                     <span>{document.progress}%</span>
                   </div>
                   <Progress value={document.progress} className="h-2" />
-                  {document.count && (
-                    <p className="text-xs text-muted-foreground">{document.count}</p>
-                  )}
                 </div>
               </CardContent>
             </ClickableCard>
@@ -154,9 +167,6 @@ export default function Dashboard() {
                           className="flex items-center"
                         >
                           {requirement.type}
-                          {requirement.count && (
-                            <span className="ml-1 text-xs">({requirement.count})</span>
-                          )}
                         </Badge>
                       ))}
                     </div>
