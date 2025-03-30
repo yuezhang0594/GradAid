@@ -81,13 +81,13 @@ export default function Header() {
                     <BreadcrumbSeparator />
                     <BreadcrumbItem>
                       {index === breadcrumbs.length - 1 ? (
-                        <BreadcrumbPage>{item.label}</BreadcrumbPage>
+                        <BreadcrumbPage>{decodeURIComponent(item.label)}</BreadcrumbPage>
                       ) : (
                         <BreadcrumbLink 
                           onClick={() => navigate(item.path)}
                           className="cursor-pointer"
                         >
-                          {item.label}
+                          {decodeURIComponent(item.label)}
                         </BreadcrumbLink>
                       )}
                     </BreadcrumbItem>
