@@ -156,7 +156,7 @@ export const useDashboardData = (demoMode?: boolean): DashboardData => {
     .map(app => ({
       date: app.deadline,
       university: app.university,
-      program: app.program,
+      program: `${app.degree} in ${app.program}`,
       priority: app.priority as "high" | "medium" | "low",
       requirements: [
         {

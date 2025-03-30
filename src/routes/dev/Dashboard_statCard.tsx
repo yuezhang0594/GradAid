@@ -43,7 +43,7 @@ export default function Dashboard() {
               <CardTitle className="text-sm font-medium">{stat.title}</CardTitle>
               {stat.icon}
             </CardHeader>
-            <CardContent>
+            <CardContent className="pt-4">
               <div className="text-2xl font-bold">{stat.value}</div>
               <p className="text-xs text-muted-foreground">{stat.description}</p>
             </CardContent>
@@ -79,7 +79,7 @@ export default function Dashboard() {
                   )}
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="pt-8">
                 <div className="space-y-2">
                   <div className="flex justify-between text-sm">
                     <span className="flex items-center">
@@ -103,17 +103,15 @@ export default function Dashboard() {
 
       {/* Application Timeline */}
       <div className="mt-6">
+        <h2 className="text-lg font-semibold mb-4 flex items-center">
+          <Calendar className="h-5 w-5 mr-2" />
+          Application Timeline
+        </h2>
         <Card>
           <CardHeader className="flex flex-row items-center justify-between">
-            <div className="flex items-center">
-              <Calendar className="h-5 w-5 mr-2" />
-              <div>
-                <CardTitle>Application Timeline</CardTitle>
-                <CardDescription>
-                  Track your application deadlines and requirements
-                </CardDescription>
-              </div>
-            </div>
+              <CardDescription>
+                Track your application deadlines and requirements
+              </CardDescription>
             <Button
               variant="ghost"
               size="sm"
@@ -124,7 +122,7 @@ export default function Dashboard() {
               <ExternalLink className="ml-2 h-4 w-4" />
             </Button>
           </CardHeader>
-          <CardContent>
+          <CardContent className="pt-4">
             <div className="space-y-4">
               {applicationTimeline.map((event, index) => (
                 <div
@@ -150,12 +148,12 @@ export default function Dashboard() {
                     </Badge>
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-sm font-medium flex items-center">
+                    <h4 className="text-sm font-medium flex items-center justify-center">
                       {event.university}
                       <TargetIcon className="h-4 w-4 ml-2 text-muted-foreground" />
                     </h4>
-                    <p className="text-sm text-muted-foreground">{event.program}</p>
-                    <div className="mt-2 flex gap-2 flex-wrap">
+                    <p className="text-sm text-muted-foreground hidden md:block">{event.program}</p>
+                    <div className="mt-2 flex gap-2 flex-wrap hidden md:flex">
                       {event.requirements.map((requirement, idx) => (
                         <Badge
                           key={idx}
