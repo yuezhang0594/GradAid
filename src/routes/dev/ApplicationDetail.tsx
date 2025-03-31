@@ -139,11 +139,11 @@ export default function ApplicationDetail() {
           {applicationStats.map((stat, index) => (
             <Card key={index} className="group flex flex-col">
               <CardHeader className="flex flex-row items-center justify-between pb-2">
-                <CardTitle className="text-sm font-medium">{stat.title}</CardTitle>
+                <CardTitle className="text-sm group-hover:text-primary transition-colors text-left font-bold">{stat.title}</CardTitle>
                 {stat.icon}
               </CardHeader>
-              <CardContent className="pt-4">
-                <div className="text-xl font-bold">{formatStatus(stat.value)}</div>
+              <CardContent className="pt-4 flex flex-col justify-center h-full">
+                <div className="text-xl font-bold mb-2">{formatStatus(stat.value)}</div>
                 <p className="text-xs text-muted-foreground">{stat.description}</p>
               </CardContent>
             </Card>
@@ -161,9 +161,9 @@ export default function ApplicationDetail() {
             <ClickableCard key={index} action={doc.action}>
               <CardHeader>
                 <div className="flex justify-between items-center">
-                  <CardTitle className="text-sm group-hover:text-primary transition-colors">{doc.title}</CardTitle>
+                  <CardTitle className="text-sm group-hover:text-primary transition-colors text-left">{doc.title}</CardTitle>
                   {doc.aiSuggestions && (
-                    <Badge variant="secondary" className="ml-2">
+                    <Badge variant="secondary" className="ml-2 hidden xl:inline-flex">
                       <span className="mr-1">🤖</span>
                       {doc.aiSuggestions} suggestions
                     </Badge>

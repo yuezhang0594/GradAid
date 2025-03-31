@@ -51,10 +51,23 @@ export default function DocumentEditor() {
   console.log("Editor State:", editorState);
 
   const formatDocumentType = (type: string) => {
-    if (type.toLowerCase() === "sop") {
+    if (!type) return "Document";
+    
+    const lowerType = type.toLowerCase();
+    if (lowerType === "sop") {
       return "SOP";
     }
-    return type.charAt(0).toUpperCase() + type.slice(1).toLowerCase();
+    if (lowerType === "cv") {
+      return "CV";
+    }
+
+    // Replace underscores and hyphens with spaces
+    const words = type.replace(/[_-]/g, ' ').split(' ');
+    
+    // Capitalize first letter of each word
+    return words
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      .join(' ');
   };
 
   const formatLastEdited = (dateString: string | undefined) => {
