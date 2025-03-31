@@ -2,19 +2,18 @@ import { useParams, useNavigate } from "react-router-dom";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+import { PageWrapper } from "@/components/ui/page-wrapper";
 import {
   SparklesIcon,
   SaveIcon,
-  HistoryIcon,
   ArrowLeftIcon,
   MessageSquareIcon,
-  CheckCircleIcon,
+  HistoryIcon,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -54,25 +53,27 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
     wordCount: 850,
     targetWordCount: 1000,
     status: "in_progress",
+    aiSuggestionsCount: 3,
+    aiCreditsUsed: 50,
     aiFeedback: [
       {
         id: "1",
         type: "suggestion",
-        content: "Consider adding more specific details about your research experience",
+        content: "Consider adding more specific details about your research experience in AI and machine learning projects",
         section: "Research Background",
         status: "pending",
       },
       {
         id: "2",
         type: "improvement",
-        content: "Strengthen the connection between your past work and future goals",
+        content: "Strengthen the connection between your past work and future research goals at Stanford",
         section: "Career Goals",
         status: "accepted",
       },
       {
         id: "3",
         type: "correction",
-        content: "Fix grammar in the third paragraph",
+        content: "Fix grammar in the third paragraph discussing your technical contributions",
         section: "Introduction",
         status: "rejected",
       },
@@ -81,12 +82,12 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
       {
         id: "1",
         date: "2025-03-09",
-        changes: "Added research experience section",
+        changes: "Added research experience section and AI projects",
       },
       {
         id: "2",
         date: "2025-03-08",
-        changes: "Initial draft",
+        changes: "Initial draft with academic background",
       },
     ] as DocumentVersion[],
   };
@@ -94,7 +95,7 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
   const handleSave = useCallback(async () => {
     setIsSaving(true);
     try {
-      // In real app, save to backend
+      // In real app, save to backend and update document progress
       await new Promise(resolve => setTimeout(resolve, 1000));
       // Show success message
     } catch (error) {
@@ -105,171 +106,179 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
   }, []);
 
   const handleSubmit = useCallback(async () => {
-    // In real app, submit document for review
+    // In real app, submit document for review and update status
   }, []);
 
   return (
-
-        <div className="container mx-auto p-6">
-          {/* Header */}
-          <div className="flex items-center justify-between mb-6">
+    <PageWrapper
+      title={document.type}
+      description={
+        <>
+          <p className="text-muted-foreground mb-4">
+            {document.university} - {document.program}
+          </p>
+          <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <Button
                 variant="ghost"
                 size="sm"
-                onClick={() => navigate(`/applications/${universityId}`)}
+                className="h-8 px-2"
+                onClick={() => navigate(`/applications`)}
               >
                 <ArrowLeftIcon className="h-4 w-4 mr-2" />
-                Back to Application
+                Back to Applications
               </Button>
-              <div>
-                <h1 className="text-2xl font-bold">{document.type}</h1>
-                <p className="text-muted-foreground">
-                  {document.university} - {document.program}
-                </p>
-              </div>
             </div>
             <div className="flex items-center gap-2">
-              <Badge variant="outline" className="text-xs">
-                Last edited: {document.lastEdited}
-              </Badge>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 size="sm"
+                className="h-8"
                 onClick={handleSave}
                 disabled={isSaving}
               >
                 <SaveIcon className="h-4 w-4 mr-2" />
                 {isSaving ? "Saving..." : "Save Draft"}
               </Button>
-              <Button size="sm" onClick={handleSubmit}>
-                <CheckCircleIcon className="h-4 w-4 mr-2" />
-                Submit
+              <Button
+                variant="default"
+                size="sm"
+                className="h-8"
+                onClick={handleSubmit}
+              >
+                Submit for Review
               </Button>
             </div>
           </div>
+        </>
+      }
+    >
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* Main Editor */}
+        <div className="lg:col-span-2">
+          <Card>
+            <CardHeader>
+              <div className="flex justify-between items-center">
+                <div>
+                  <CardTitle>Editor</CardTitle>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Badge variant="outline" className="text-xs">
+                    Last edited: {document.lastEdited}
+                  </Badge>
+                  <Badge variant="secondary" className="text-xs">
+                    <SparklesIcon className="h-3 w-3 mr-1" />
+                    {document.aiCreditsUsed} AI credits used
+                  </Badge>
+                  <Badge variant={document.status === "completed" ? "default" : "secondary"}>
+                    {document.status}
+                  </Badge>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <Textarea
+                value={content}
+                onChange={(e) => setContent(e.target.value)}
+                className="min-h-[600px] font-mono resize-none"
+                placeholder="Start writing your document..."
+              />
+            </CardContent>
+          </Card>
+        </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {/* Main Editor */}
-            <div className="lg:col-span-2">
-              <Card>
-                <CardHeader>
-                  <div className="flex justify-between items-center">
-                    <div>
-                      <CardTitle>Editor</CardTitle>
-                      <CardDescription>
-                        {document.wordCount} / {document.targetWordCount} words
-                      </CardDescription>
-                    </div>
-                    <Badge variant={document.status === "completed" ? "default" : "secondary"}>
-                      {document.status}
-                    </Badge>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <Textarea
-                    value={content}
-                    onChange={(e) => setContent(e.target.value)}
-                    className="min-h-[600px] font-mono resize-none"
-                    placeholder="Start writing your document..."
-                  />
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* Sidebar */}
-            <div className="space-y-6">
-              {/* AI Feedback */}
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <SparklesIcon className="h-4 w-4" />
-                    AI Feedback
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ScrollArea className="h-[300px] w-full max-w-[600px] p-4">
-                    <div className="space-y-4 min-w-[100px]">
-                      {document.aiFeedback.map((feedback) => (
-                        <div
-                          key={feedback.id}
-                          className="p-4 rounded-lg bg-muted/50 space-y-3"
+        {/* Sidebar */}
+        <div className="space-y-6">
+          {/* AI Feedback */}
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <SparklesIcon className="h-4 w-4" />
+                AI Feedback
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ScrollArea className="h-[300px] w-full max-w-[600px] p-4">
+                <div className="space-y-4 min-w-[100px]">
+                  {document.aiFeedback.map((feedback) => (
+                    <div
+                      key={feedback.id}
+                      className="p-4 rounded-lg bg-muted/50 space-y-3"
+                    >
+                      <div className="flex justify-between items-center">
+                        <Badge variant="outline" className="text-xs px-2 py-1">
+                          {feedback.section}
+                        </Badge>
+                        <Badge
+                          variant={
+                            feedback.status === "accepted"
+                              ? "default"
+                              : feedback.status === "rejected"
+                              ? "destructive"
+                              : "secondary"
+                          }
+                          className="text-xs px-2 py-1"
                         >
-                          <div className="flex justify-between items-center">
-                            <Badge variant="outline" className="text-xs px-2 py-1">
-                              {feedback.section}
-                            </Badge>
-                            <Badge
-                              variant={
-                                feedback.status === "accepted"
-                                  ? "default"
-                                  : feedback.status === "rejected"
-                                  ? "destructive"
-                                  : "secondary"
-                              }
-                              className="text-xs px-2 py-1"
-                            >
-                              {feedback.status}
-                            </Badge>
-                          </div>
-                          <p className="text-sm leading-relaxed">{feedback.content}</p>
-                          {feedback.status === "pending" && (
-                            <div className="flex gap-3 pt-1">
-                              <Button variant="outline" size="sm" className="flex-1 h-8">
-                                Reject
-                              </Button>
-                              <Button size="sm" className="flex-1 h-8">
-                                Accept
-                              </Button>
-                            </div>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  </ScrollArea>
-                  <Button variant="outline" size="sm" className="w-full mt-4">
-                    <MessageSquareIcon className="h-4 w-4 mr-2" />
-                    Get More Feedback
-                  </Button>
-                </CardContent>
-              </Card>
-
-              {/* Version History */}
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <HistoryIcon className="h-4 w-4" />
-                    Version History
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ScrollArea className="h-[200px] pr-4">
-                    <div className="space-y-4">
-                      {document.versions.map((version) => (
-                        <div
-                          key={version.id}
-                          className="flex justify-between items-center p-3 rounded-lg bg-muted/50 cursor-pointer hover:bg-muted"
-                        >
-                          <div>
-                            <p className="text-sm font-medium">
-                              {new Date(version.date).toLocaleDateString()}
-                            </p>
-                            <p className="text-xs text-muted-foreground">
-                              {version.changes}
-                            </p>
-                          </div>
-                          <Button variant="ghost" size="sm">
-                            View
+                          {feedback.status}
+                        </Badge>
+                      </div>
+                      <p className="text-sm leading-relaxed">{feedback.content}</p>
+                      {feedback.status === "pending" && (
+                        <div className="flex gap-3 pt-1">
+                          <Button variant="outline" size="sm" className="flex-1 h-8">
+                            Reject
+                          </Button>
+                          <Button size="sm" className="flex-1 h-8">
+                            Accept
                           </Button>
                         </div>
-                      ))}
+                      )}
                     </div>
-                  </ScrollArea>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
+                  ))}
+                </div>
+              </ScrollArea>
+              <Button variant="outline" size="sm" className="w-full mt-4">
+                <MessageSquareIcon className="h-4 w-4 mr-2" />
+                Get More Feedback
+              </Button>
+            </CardContent>
+          </Card>
+
+          {/* Version History */}
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <HistoryIcon className="h-4 w-4" />
+                Version History
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ScrollArea className="h-[200px] pr-4">
+                <div className="space-y-4">
+                  {document.versions.map((version) => (
+                    <div
+                      key={version.id}
+                      className="flex justify-between items-center p-3 rounded-lg bg-muted/50 cursor-pointer hover:bg-muted"
+                    >
+                      <div>
+                        <p className="text-sm font-medium">
+                          {new Date(version.date).toLocaleDateString()}
+                        </p>
+                        <p className="text-xs text-muted-foreground">
+                          {version.changes}
+                        </p>
+                      </div>
+                      <Button variant="ghost" size="sm">
+                        View
+                      </Button>
+                    </div>
+                  ))}
+                </div>
+              </ScrollArea>
+            </CardContent>
+          </Card>
         </div>
- 
+      </div>
+    </PageWrapper>
   );
 }

@@ -71,9 +71,9 @@ export default function Dashboard() {
                   )}
                 </div>
                 <CardDescription className="flex items-center">
-                  {document.university}
+                  <span className="truncate max-w-[200px] text-xs text-muted-foreground">{document.university}</span>
                   {document.lastEdited && (
-                    <span className="text-xs text-muted-foreground ml-2">
+                    <span className="text-xs text-muted-foreground ml-2 whitespace-nowrap">
                       · Edited {document.lastEdited}
                     </span>
                   )}
