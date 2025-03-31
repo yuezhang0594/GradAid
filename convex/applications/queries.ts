@@ -239,3 +239,69 @@ export const getUniversityByName = query({
     return university;
   },
 });
+
+// Query to get document by ID
+export const getDocumentById = query({
+  args: {
+    applicationId: v.id("applications"),
+    documentType: v.string(),
+    demoMode: v.optional(v.boolean())
+  },
+  handler: async (ctx, args) => {
+    let userId: Id<"users">;
+    try {
+      if (args.demoMode) {
+        userId = await getDemoUserId(ctx);
+      } else {
+        userId = await getCurrentUserIdOrThrow(ctx);
+      }
+    } catch {
+      userId = "mock-user-id" as Id<"users">;
+    }
+    console.log("Getting document for:", { userId, ...args });
+
+    // Get the application to verify ownership
+    const application = await ctx.db.get(args.applicationId);
+    console.log("Found application:", application);
+    if (!application || application.userId !== userId) {
+      console.log("Application not found or unauthorized");
+      return null;
+    }
+
+    // Get university and program info
+    const university = await ctx.db.get(application.universityId);
+    const program = await ctx.db.get(application.programId);
+    console.log("Found university and program:", { university, program });
+    if (!university || !program) {
+      console.log("University or program not found");
+      return null;
+    }
+
+    // Get the document
+    const document = await ctx.db
+      .query("applicationDocuments")
+      .withIndex("by_application", (q) => 
+        q.eq("applicationId", args.applicationId)
+      )
+      .filter((q) => q.eq(q.field("type"), args.documentType))
+      .first();
+    console.log("Found document:", document);
+
+    if (!document) {
+      console.log("Document not found");
+      return null;
+    }
+
+    const result = {
+      type: document.type,
+      university: university.name,
+      program: `${program.degree} in ${program.name}`,
+      lastEdited: document.lastEdited,
+      status: document.status,
+      content: document.content ?? "",
+      aiSuggestionsCount: document.aiSuggestionsCount ?? 0,
+    };
+    console.log("Returning document data:", result);
+    return result;
+  }
+});

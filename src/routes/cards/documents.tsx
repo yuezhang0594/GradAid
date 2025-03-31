@@ -7,27 +7,42 @@ import { Label } from "@/components/ui/label";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 import { CardWrapper } from "@/components/ui/card-wrapper";
 import { Id } from "../../../convex/_generated/dataModel";
+import { atom, useSetAtom } from "jotai";
 
-type Document = {
+export const documentEditorAtom = atom<{
+  applicationId: Id<"applications"> | null;
+  documentType: string | null;
+  demoMode: boolean;
+}>({
+  applicationId: null,
+  documentType: null,
+  demoMode: false
+});
+
+interface Program {
+  name: string;
+  applicationId: Id<"applications">;
+}
+
+interface Document {
   type: string;
-  status: "Complete" | "In Review" | "Draft";
+  status: string;
   progress: number;
   count: number;
-  applicationId: Id<"applications">;
   program: string;
-};
+}
 
-type Program = {
-  name: string;
-  applicationId: Id<"applications">;
-};
-
-type Card = {
+interface Card {
   name: string;
   program: string;
-  documents: Document[];
-  applicationId: Id<"applications"> | undefined;
-};
+  applicationId: Id<"applications">;
+  documents: Array<{
+    type: string;
+    status: string;
+    progress: number;
+    count: number;
+  }>;
+}
 
 // Helper function to format text
 function formatText(text: string) {
@@ -48,29 +63,39 @@ export default function DocumentsPage() {
   const navigate = useNavigate();
   const [demoMode, setDemoMode] = useState(true);
   const universities = useQuery(api.applications.queries.getDocumentsByUniversity, { demoMode }) ?? [];
+  const setDocumentEditor = useSetAtom(documentEditorAtom);
 
   // Transform data to create separate cards for multiple programs
   const cards = universities.flatMap((uni) => {
-    // For universities with multiple programs, create separate cards
-    if (uni.programs.length > 1) {
-      return uni.programs.map((prog: Program) => ({
-        name: uni.name,
-        program: prog.name,
-        documents: uni.documents.filter((doc: Document) => doc.applicationId === prog.applicationId),
-        applicationId: prog.applicationId
-      }));
-    }
-    // For universities with single program, keep as is
-    return [{
+    return uni.programs.map((program: Program) => ({
       name: uni.name,
-      program: uni.programs[0]?.name || "",
-      documents: uni.documents,
-      applicationId: uni.programs[0]?.applicationId
-    }];
+      program: program.name,
+      applicationId: program.applicationId,
+      documents: uni.documents
+        .filter((doc: Document) => doc.program === program.name)
+        .map((doc: Document) => ({
+          type: doc.type,
+          status: doc.status,
+          progress: doc.progress,
+          count: doc.count
+        }))
+    }));
   });
 
-  const handleDocumentClick = (applicationId: Id<"applications">, documentType: string) => {
-    navigate(`/applications/${applicationId}/documents/${documentType.toLowerCase()}`);
+  const handleDocumentClick = (card: Card, documentType: string) => {
+    console.log("Handling document click:", { card, documentType });
+    if (card.applicationId) {
+      const state = {
+        applicationId: card.applicationId,
+        documentType: documentType.toLowerCase(),
+        demoMode
+      };
+      console.log("Setting editor state:", state);
+      setDocumentEditor(state);
+      navigate(`/applications/${encodeURIComponent(card.name)}/documents/${documentType.toLowerCase()}`);
+    } else {
+      console.error("No applicationId found for card:", card);
+    }
   };
 
   return (
@@ -100,23 +125,23 @@ export default function DocumentsPage() {
             description={card.program}
             badges={
               card.documents.length > 0 
-                ? card.documents.map((doc: Document) => ({
+                ? card.documents.map((doc) => ({
                     text: formatText(doc.type),
                     count: doc.count,
                     variant: doc.status === "Complete" ? "default" :
                             doc.status === "In Review" ? "secondary" : "outline",
-                    onClick: () => handleDocumentClick(card.applicationId!, doc.type)
+                    onClick: () => handleDocumentClick(card, doc.type)
                   }))
                 : [{
                     text: "Start Generate Doc",
                     variant: "secondary",
-                    onClick: () => handleDocumentClick(card.applicationId!, "new")
+                    onClick: () => handleDocumentClick(card, "new")
                   }]
             }
             progress={
               card.documents.length > 0 
                 ? {
-                    value: Math.round(card.documents.reduce((acc: number, doc: Document) => acc + doc.progress, 0) / card.documents.length),
+                    value: Math.round(card.documents.reduce((acc: number, doc) => acc + doc.progress, 0) / card.documents.length),
                     label: "Overall Progress"
                   }
                 : {

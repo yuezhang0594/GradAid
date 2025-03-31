@@ -49,7 +49,7 @@ function App() {
           <Route path="/applications/:universityName" element={<ApplicationDetail />} />
           <Route path="/applications/:universityName/documents" element={<DocumentsPage />} />
           <Route
-            path="/applications/:universityName/documents/:documentId"
+            path="/applications/:universityName/documents/:documentType"
             element={<DocumentEditor />}
           />
           <Route path="/timeline" element={<TimelinePage />} />

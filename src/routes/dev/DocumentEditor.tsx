@@ -1,4 +1,10 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useState, useCallback, useEffect } from "react";
+import { useQuery } from "convex/react";
+import { api } from "@/../convex/_generated/api";
+import { useNavigate } from "react-router-dom";
+import { useAtomValue } from "jotai";
+import { documentEditorAtom } from "../cards/documents";
+
 import {
   Card,
   CardContent,
@@ -17,7 +23,6 @@ import {
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { useState, useCallback } from "react";
 
 interface AIFeedback {
   id: string;
@@ -34,26 +39,56 @@ interface DocumentVersion {
 }
 
 export default function DocumentEditor() {
-  const { universityId, documentId } = useParams();
   const navigate = useNavigate();
-  const [content, setContent] = useState(`Dear Graduate Admissions Committee,
+  const editorState = useAtomValue(documentEditorAtom);
+  
+  const document = editorState.applicationId ? useQuery(api.applications.queries.getDocumentById, {
+    applicationId: editorState.applicationId,
+    documentType: editorState.documentType ?? "",
+    demoMode: editorState.demoMode
+  }) : null;
+  console.log("Document:", document);
+  console.log("Editor State:", editorState);
+
+  const formatDocumentType = (type: string) => {
+    if (type.toLowerCase() === "sop") {
+      return "SOP";
+    }
+    return type.charAt(0).toUpperCase() + type.slice(1).toLowerCase();
+  };
+
+  const formatLastEdited = (dateString: string | undefined) => {
+    if (!dateString) return "Not edited";
+    
+    const date = new Date(dateString);
+    return new Intl.DateTimeFormat('en-US', {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+      hour12: true
+    }).format(date);
+  };
+
+  const EXAMPLE_TEXT = `Dear Graduate Admissions Committee,
 
 I am writing to express my strong interest in the Master of Science program in Computer Science at Stanford University. With my background in software engineering and my passion for artificial intelligence research, I believe I would be an excellent fit for your program.
 
-During my undergraduate studies at UNAM, I developed a strong foundation in computer science fundamentals...`);
+During my undergraduate studies at UNAM, I developed a strong foundation in computer science fundamentals...`;
+
+  const [content, setContent] = useState(EXAMPLE_TEXT);
+
+  useEffect(() => {
+    if (document?.content) {
+      setContent(document.content);
+    }
+  }, [document?.content]);
 
   const [isSaving, setIsSaving] = useState(false);
 
-  // Mock data - in real app, fetch from backend
-  const document = {
-    type: "Statement of Purpose",
-    university: "Stanford University",
-    program: "MS Computer Science",
-    lastEdited: "2025-03-09",
-    wordCount: 850,
-    targetWordCount: 1000,
-    status: "in_progress",
-    aiSuggestionsCount: 3,
+  // Mock AI feedback and versions until we implement those features
+  const mockData = {
     aiCreditsUsed: 50,
     aiFeedback: [
       {
@@ -111,11 +146,11 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
 
   return (
     <PageWrapper
-      title={document.type}
+      title={formatDocumentType(document?.type ?? "Document")}
       description={
         <>
           <p className="text-muted-foreground mb-4">
-            {document.university} - {document.program}
+            {document ? `${document.university} - ${document.program}` : "Loading..."}
           </p>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
@@ -164,14 +199,14 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
                 </div>
                 <div className="flex items-center gap-2">
                   <Badge variant="outline" className="text-xs">
-                    Last edited: {document.lastEdited}
+                    Last edited: {formatLastEdited(document?.lastEdited)}
                   </Badge>
                   <Badge variant="secondary" className="text-xs">
                     <SparklesIcon className="h-3 w-3 mr-1" />
-                    {document.aiCreditsUsed} AI credits used
+                    {mockData.aiCreditsUsed} AI credits used
                   </Badge>
-                  <Badge variant={document.status === "completed" ? "default" : "secondary"}>
-                    {document.status}
+                  <Badge variant={document?.status === "complete" ? "default" : "secondary"}>
+                    {document?.status ?? "draft"}
                   </Badge>
                 </div>
               </div>
@@ -200,7 +235,7 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
             <CardContent>
               <ScrollArea className="h-[300px] w-full max-w-[600px] p-4">
                 <div className="space-y-4 min-w-[100px]">
-                  {document.aiFeedback.map((feedback) => (
+                  {mockData.aiFeedback.map((feedback) => (
                     <div
                       key={feedback.id}
                       className="p-4 rounded-lg bg-muted/50 space-y-3"
@@ -255,7 +290,7 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
             <CardContent>
               <ScrollArea className="h-[200px] pr-4">
                 <div className="space-y-4">
-                  {document.versions.map((version) => (
+                  {mockData.versions.map((version) => (
                     <div
                       key={version.id}
                       className="flex justify-between items-center p-3 rounded-lg bg-muted/50 cursor-pointer hover:bg-muted"
