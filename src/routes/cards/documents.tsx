@@ -6,18 +6,27 @@ import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 import { CardWrapper } from "@/components/ui/card-wrapper";
+import { Id } from "../../../convex/_generated/dataModel";
 
 type Document = {
   type: string;
   status: "Complete" | "In Review" | "Draft";
   progress: number;
   count: number;
+  applicationId: Id<"applications">;
+  program: string;
 };
 
-type University = {
+type Program = {
+  name: string;
+  applicationId: Id<"applications">;
+};
+
+type Card = {
   name: string;
   program: string;
   documents: Document[];
+  applicationId: Id<"applications"> | undefined;
 };
 
 // Helper function to format text
@@ -40,9 +49,28 @@ export default function DocumentsPage() {
   const [demoMode, setDemoMode] = useState(true);
   const universities = useQuery(api.applications.queries.getDocumentsByUniversity, { demoMode }) ?? [];
 
-  const handleDocumentClick = (universityName: string, documentType: string) => {
-    const universityId = universityName.toLowerCase().replace(/\s+/g, "-");
-    navigate(`/applications/${universityId}/documents/${documentType.toLowerCase()}`);
+  // Transform data to create separate cards for multiple programs
+  const cards = universities.flatMap((uni) => {
+    // For universities with multiple programs, create separate cards
+    if (uni.programs.length > 1) {
+      return uni.programs.map((prog: Program) => ({
+        name: uni.name,
+        program: prog.name,
+        documents: uni.documents.filter((doc: Document) => doc.applicationId === prog.applicationId),
+        applicationId: prog.applicationId
+      }));
+    }
+    // For universities with single program, keep as is
+    return [{
+      name: uni.name,
+      program: uni.programs[0]?.name || "",
+      documents: uni.documents,
+      applicationId: uni.programs[0]?.applicationId
+    }];
+  });
+
+  const handleDocumentClick = (applicationId: Id<"applications">, documentType: string) => {
+    navigate(`/applications/${applicationId}/documents/${documentType.toLowerCase()}`);
   };
 
   return (
@@ -65,30 +93,30 @@ export default function DocumentsPage() {
       }
     >
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        {(universities as University[]).map((uni) => (
+        {cards.map((card: Card) => (
           <CardWrapper
-            key={uni.name}
-            title={uni.name}
-            description={uni.program}
+            key={`${card.name}-${card.applicationId}`}
+            title={card.name}
+            description={card.program}
             badges={
-              uni.documents.length > 0 
-                ? uni.documents.map(doc => ({
+              card.documents.length > 0 
+                ? card.documents.map((doc: Document) => ({
                     text: formatText(doc.type),
                     count: doc.count,
                     variant: doc.status === "Complete" ? "default" :
                             doc.status === "In Review" ? "secondary" : "outline",
-                    onClick: () => handleDocumentClick(uni.name, doc.type)
+                    onClick: () => handleDocumentClick(card.applicationId!, doc.type)
                   }))
                 : [{
                     text: "Start Generate Doc",
                     variant: "secondary",
-                    onClick: () => handleDocumentClick(uni.name, "new")
+                    onClick: () => handleDocumentClick(card.applicationId!, "new")
                   }]
             }
             progress={
-              uni.documents.length > 0 
+              card.documents.length > 0 
                 ? {
-                    value: Math.round(uni.documents.reduce((acc, doc) => acc + doc.progress, 0) / uni.documents.length),
+                    value: Math.round(card.documents.reduce((acc: number, doc: Document) => acc + doc.progress, 0) / card.documents.length),
                     label: "Overall Progress"
                   }
                 : {

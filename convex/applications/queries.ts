@@ -105,47 +105,53 @@ export const getDocumentsByUniversity = query({
       if (!universitiesMap.has(universityKey)) {
         universitiesMap.set(universityKey, {
           name: university.name,
-          program: `${program.degree} in ${program.name}`,
+          programs: [{
+            name: `${program.degree} in ${program.name}`,
+            applicationId: application._id
+          }],
           documents: new Map()
         });
+      } else {
+        // Add program if it doesn't exist
+        const uniData = universitiesMap.get(universityKey);
+        if (!uniData.programs.find((p: { name: string }) => p.name === `${program.degree} in ${program.name}`)) {
+          uniData.programs.push({
+            name: `${program.degree} in ${program.name}`,
+            applicationId: application._id
+          });
+        }
       }
 
       // Group documents by type
       const docsByType = new Map();
       for (const doc of documents) {
-        if (!docsByType.has(doc.type)) {
-          docsByType.set(doc.type, {
-            type: doc.type,
-            status: doc.status === "complete" ? "Complete" : 
-                   doc.status === "in_review" ? "In Review" : "Draft",
-            progress: doc.progress,
-            count: 1
-          });
-        } else {
-          const existing = docsByType.get(doc.type);
-          existing.count++;
-          existing.progress = (existing.progress + doc.progress) / 2;
-        }
+        const docKey = `${doc.type}-${application._id}`;
+        docsByType.set(docKey, {
+          type: doc.type,
+          status: doc.status === "complete" ? "Complete" : 
+                 doc.status === "in_review" ? "In Review" : "Draft",
+          progress: doc.progress,
+          count: 1,
+          applicationId: application._id,
+          program: `${program.degree} in ${program.name}`
+        });
       }
 
       // Merge documents into university's document map
       const uniData = universitiesMap.get(universityKey);
-      docsByType.forEach((doc, type) => {
-        if (!uniData.documents.has(type)) {
-          uniData.documents.set(type, doc);
-        } else {
-          const existing = uniData.documents.get(type);
-          existing.count += doc.count;
-          existing.progress = (existing.progress + doc.progress) / 2;
-        }
+      docsByType.forEach((doc, key) => {
+        uniData.documents.set(key, doc);
       });
     }
 
     // Convert map to array and format documents
-    return Array.from(universitiesMap.values()).map(uni => ({
+    const result = Array.from(universitiesMap.values()).map(uni => ({
       ...uni,
       documents: Array.from(uni.documents.values())
     }));
+
+    console.log("Universities with documents:", result);
+    return result;
   }
 });
 

@@ -1107,6 +1107,21 @@ export default internalMutation({
       },
       {
         userId: mockUserId,
+        universityId: universityIds["Stanford University"],
+        programId: programIds["Stanford University-MS-Artificial Intelligence"],
+        status: "submitted",
+        submissionDate: "2025-03-01",
+        deadline: "2025-05-15",
+        priority: "high",
+        notes: "Top choice program, strong research alignment with AI lab",
+        lastUpdated: new Date().toISOString(),
+        requirements: [
+          { type: "SOP", status: "completed" },
+          { type: "LORs", status: "completed" }
+        ]
+      },
+      {
+        userId: mockUserId,
         universityId: universityIds["Massachusetts Institute of Technology"],
         programId: programIds["Massachusetts Institute of Technology-PhD-Electrical Engineering and Computer Science"],
         status: "submitted",

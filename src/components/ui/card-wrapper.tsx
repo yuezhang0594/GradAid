@@ -51,7 +51,7 @@ export function CardWrapper({
         )}
       </CardHeader>
       <CardContent className="flex-1 flex flex-col">
-        <div className="space-y-8 flex-1">
+        <div className="space-y-4 flex-1">
           {badges && badges.length > 0 && (
             <div className="flex flex-wrap gap-2">
               {badges.map((badge, idx) => (
@@ -86,7 +86,7 @@ export function CardWrapper({
           {children}
           {progress && (
             <div className="mt-auto space-y-2">
-              <div className="flex justify-between text-sm">
+              <div className="flex justify-between text-xs">
                 <span className="text-muted-foreground">
                   {progress.label || "Overall Progress"}
                 </span>
