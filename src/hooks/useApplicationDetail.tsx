@@ -24,6 +24,7 @@ interface ApplicationDetailData {
     university: string;
     lastEdited?: string;
     aiSuggestions?: number;
+    type: string; // Add type to the interface
     action: {
       label: string;
       href: string;
@@ -144,6 +145,7 @@ export function useApplicationDetail(applicationId: string, demoMode = true): Ap
       university: applicationData.university,
       lastEdited: doc.lastEdited,
       aiSuggestions: doc.aiSuggestions,
+      type: doc.type,
       action: {
         label: "Edit Document",
         href: `/applications/${applicationData.university}/documents/${doc.type.toLowerCase()}`,

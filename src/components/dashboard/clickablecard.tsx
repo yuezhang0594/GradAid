@@ -13,6 +13,7 @@ export interface CardAction {
   label: string;
   href: string;
   tooltip: string;
+  onClick?: () => void;
 }
 
 interface ClickableCardProps {
@@ -24,13 +25,21 @@ interface ClickableCardProps {
 export function ClickableCard({ children, action, className }: ClickableCardProps) {
   const navigate = useNavigate();
 
+  const handleClick = () => {
+    if (action.onClick) {
+      action.onClick();
+    } else {
+      navigate(action.href);
+    }
+  };
+
   return (
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger asChild>
           <Card
             className={`group transition-all hover:shadow-md cursor-pointer ${className}`}
-            onClick={() => navigate(action.href)}
+            onClick={handleClick}
           >
             <div className="relative">
               {children}

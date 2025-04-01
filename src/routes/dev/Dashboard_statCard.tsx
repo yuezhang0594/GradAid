@@ -16,11 +16,25 @@ import { useDashboardData } from "@/hooks/useDashboardData";
 import { useState } from "react";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
+import { useSetAtom } from "jotai";
+import { documentEditorAtom } from "../cards/documents";
+import { Id } from "../../../convex/_generated/dataModel";
 
 export default function Dashboard() {
   const navigate = useNavigate();
+  const setDocumentEditor = useSetAtom(documentEditorAtom);
   const [demoMode, setDemoMode] = useState(true);
   const { applicationStats, documentStats, applicationTimeline } = useDashboardData(demoMode);
+
+  const handleDocumentClick = (doc: any) => {
+    const state = {
+      applicationId: doc.applicationId as Id<"applications">,
+      documentType: doc.type.toLowerCase(),
+      demoMode
+    };
+    setDocumentEditor(state);
+    navigate(`/applications/${doc.university}/documents/${doc.type.toLowerCase()}`);
+  };
 
   return (
     <main className="flex-1 flex-col overflow-auto p-4 sm:p-6 lg:p-8">
@@ -59,7 +73,14 @@ export default function Dashboard() {
         </h2>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {documentStats.map((document, index) => (
-            <ClickableCard key={index} action={document.action}>
+            <ClickableCard
+              key={index}
+              action={{
+                ...document.action,
+                href: document.action.href,
+                onClick: () => handleDocumentClick(document)
+              }}
+            >
               <CardHeader>
                 <div className="flex justify-between items-center">
                   <CardTitle className="text-sm">{document.title}</CardTitle>

@@ -8,6 +8,10 @@ import { Progress } from "@/components/ui/progress";
 import { ClickableCard } from "@/components/dashboard/clickablecard";
 import { useState, useEffect } from "react";
 import { FileTextIcon, CheckSquare2Icon, GraduationCapIcon } from "lucide-react";
+import { useSetAtom } from "jotai";
+import { documentEditorAtom } from "../cards/documents";
+import { Id } from "../../../convex/_generated/dataModel";
+import { useNavigate } from "react-router-dom";
 
 interface LocationState {
   applicationId: string;
@@ -27,7 +31,9 @@ export default function ApplicationDetail() {
   const location = useLocation();
   const state = location.state as LocationState;
   const [demoMode, setDemoMode] = useState(state?.demoMode ?? true);
-  
+  const setDocumentEditor = useSetAtom(documentEditorAtom);
+  const navigate = useNavigate();
+
   console.log("[ApplicationDetail] Rendering with state:", { state, demoMode });
   
   const { application, applicationStats, documentStats, requirementStats, isLoading } = useApplicationDetail(
@@ -120,6 +126,18 @@ export default function ApplicationDetail() {
     status: application.status
   });
 
+  const handleDocumentClick = (doc: any) => {
+    if (application?._id) {
+      const state = {
+        applicationId: application._id as Id<"applications">,
+        documentType: doc.type.toLowerCase(),
+        demoMode
+      };
+      setDocumentEditor(state);
+      navigate(`/applications/${application.university}/documents/${doc.type.toLowerCase()}`);
+    }
+  };
+
   return (
     <PageWrapper
       title={application.university}
@@ -158,7 +176,14 @@ export default function ApplicationDetail() {
         </h2>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {documentStats.map((doc, index) => (
-            <ClickableCard key={index} action={doc.action}>
+            <ClickableCard
+              key={index}
+              action={{
+                ...doc.action,
+                href: doc.action.href,
+                onClick: () => handleDocumentClick(doc)
+              }}
+            >
               <CardHeader>
                 <div className="flex justify-between items-center">
                   <CardTitle className="text-sm group-hover:text-primary transition-colors text-left">{doc.title}</CardTitle>

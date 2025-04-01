@@ -1224,6 +1224,17 @@ export default internalMutation({
         content: "Professional CV with academic and research experience...",
         aiSuggestionsCount: 2,
       },
+      {
+        userId: mockUserId,
+        applicationId: applicationIds["Georgia Institute of Technology-MS-Computer Science"],
+        title: "Personal Statement",
+        type: "sop",
+        status: "draft",
+        progress: 30,
+        lastEdited: new Date().toISOString(),
+        content: "Personal statement about your background and interests...",
+        aiSuggestionsCount: 2,
+      },
     ];
 
     for (const document of documentData) {

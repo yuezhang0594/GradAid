@@ -2,6 +2,7 @@ import { useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
 import { Activity, FileTextIcon, SparklesIcon, ClockIcon } from "lucide-react";
 import React from "react";
+import { Id } from "../../convex/_generated/dataModel";
 
 export interface DashboardData {
   stats: {
@@ -43,6 +44,8 @@ export interface DashboardData {
     progress: number;
     status: string;
     university: string;
+    type: string;
+    applicationId: string | undefined;
     lastEdited?: string;
     aiSuggestions?: number;
     action: {
@@ -64,6 +67,24 @@ export interface DashboardData {
   }>;
 }
 
+interface Document {
+  title: string;
+  type: string;
+  status: string;
+  progress: number;
+  lastEdited?: string;
+  aiSuggestions?: number;
+}
+
+interface University {
+  name: string;
+  documents: Document[];
+  programs: Array<{
+    applicationId: Id<"applications">;
+    name: string;
+  }>;
+}
+
 export const useDashboardData = (demoMode?: boolean): DashboardData => {
   // Fetch data from Convex
   const stats = useQuery(api.dashboard.queries.getDashboardStats, { demoMode }) ?? {
@@ -76,7 +97,7 @@ export const useDashboardData = (demoMode?: boolean): DashboardData => {
 
   const applications = useQuery(api.applications.queries.getApplications, { demoMode }) ?? [];
   const recentDocuments = useQuery(api.applications.queries.getDocumentsByUniversity, { demoMode }) ?? [];
-
+  
   // Get next deadline application
   const nextDeadlineApp = applications.length > 0 
     ? applications.sort((a, b) => new Date(a.deadline).getTime() - new Date(b.deadline).getTime())[0]
@@ -134,20 +155,39 @@ export const useDashboardData = (demoMode?: boolean): DashboardData => {
     },
   ];
 
+  // Helper function to format document type
+  const formatDocumentType = (type: string): string => {
+    // Special cases for acronyms
+    const upperCaseTypes = ['sop', 'lor', 'cv'];
+    if (upperCaseTypes.includes(type.toLowerCase())) {
+      return type.toUpperCase();
+    }
+    
+    // For other types: capitalize first letter and replace - or _ with space
+    return type
+      .split(/[-_]/)
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      .join(' ');
+  };
+
   // Format document stats
-  const documentStats = recentDocuments.slice(0, 4).map(uni => ({
-    title: uni.documents[0]?.type.toUpperCase() ?? "New Document",
-    progress: uni.documents[0]?.progress ?? 0,
-    status: uni.documents[0]?.status ?? "Not Started",
-    university: uni.name,
-    lastEdited: uni.documents[0]?.lastEdited ? new Date(uni.documents[0].lastEdited).toLocaleDateString() : undefined,
-    aiSuggestions: uni.documents[0]?.aiSuggestionsCount,
-    action: {
-      label: "Edit document",
-      href: `/applications/${uni.name.replace(/\s+/g, " ")}/documents/${uni.documents[0]?.type ?? "new"}`,
-      tooltip: "Continue editing your document",
-    },
-  }));
+  const documentStats = recentDocuments.flatMap((uni: University) => 
+    uni.documents.map((doc: Document) => ({
+      title: formatDocumentType(doc.type) ?? "New Document",
+      progress: doc.progress,
+      status: doc.status,
+      university: uni.name,
+      type: doc.type,
+      applicationId: uni.programs[0]?.applicationId,
+      lastEdited: doc.lastEdited,
+      aiSuggestions: doc.aiSuggestions,
+      action: {
+        label: "Edit Document",
+        href: `/applications/${uni.name}/documents/${doc.type.toLowerCase()}`,
+        tooltip: "Continue editing document",
+      },
+    }))
+  );
 
   // Format application timeline
   const applicationTimeline = applications
