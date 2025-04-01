@@ -1,9 +1,10 @@
 import { useState, useCallback, useEffect } from "react";
-import { useQuery } from "convex/react";
+import { useQuery, useMutation } from "convex/react";
 import { api } from "@/../convex/_generated/api";
 import { useNavigate } from "react-router-dom";
 import { useAtomValue } from "jotai";
 import { documentEditorAtom } from "../cards/documents";
+import { toast } from "@/components/ui/toast";
 
 import {
   Card,
@@ -100,6 +101,44 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
 
   const [isSaving, setIsSaving] = useState(false);
 
+  const saveDocument = useMutation(api.applications.mutations.saveDocumentDraft);
+
+  const handleSave = useCallback(async () => {
+    if (!editorState.applicationId || !editorState.documentType) {
+      console.error("Missing required state for saving:", editorState);
+      return;
+    }
+
+    setIsSaving(true);
+    try {
+      await saveDocument({
+        applicationId: editorState.applicationId,
+        documentType: editorState.documentType,
+        content,
+        demoMode: editorState.demoMode
+      });
+      toast({
+        title: "Document saved",
+        description: "Your changes have been saved successfully.",
+        duration: 3000
+      });
+    } catch (error) {
+      console.error("Error saving document:", error);
+      toast({
+        title: "Error saving document",
+        description: "There was a problem saving your changes. Please try again.",
+        variant: "destructive",
+        duration: 5000
+      });
+    } finally {
+      setIsSaving(false);
+    }
+  }, [editorState, content, saveDocument, toast]);
+
+  const handleSubmit = useCallback(async () => {
+    // In real app, submit document for review and update status
+  }, []);
+
   // Mock AI feedback and versions until we implement those features
   const mockData = {
     aiCreditsUsed: 50,
@@ -140,23 +179,6 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
     ] as DocumentVersion[],
   };
 
-  const handleSave = useCallback(async () => {
-    setIsSaving(true);
-    try {
-      // In real app, save to backend and update document progress
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      // Show success message
-    } catch (error) {
-      // Show error message
-    } finally {
-      setIsSaving(false);
-    }
-  }, []);
-
-  const handleSubmit = useCallback(async () => {
-    // In real app, submit document for review and update status
-  }, []);
-
   return (
     <PageWrapper
       title={formatDocumentType(document?.type ?? "Document")}
@@ -188,14 +210,14 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
                 <SaveIcon className="h-4 w-4 mr-2" />
                 {isSaving ? "Saving..." : "Save Draft"}
               </Button>
-              <Button
+              {/* <Button
                 variant="default"
                 size="sm"
                 className="h-8"
                 onClick={handleSubmit}
               >
                 Submit for Review
-              </Button>
+              </Button> */}
             </div>
           </div>
         </>
