@@ -67,9 +67,20 @@ export default function Dashboard() {
 
       {/* Document Progress Section */}
       <div className="mt-6">
-        <h2 className="text-lg font-semibold mb-4 flex items-center">
-          <FileTextIcon className="h-5 w-5 mr-2" />
-          Application Documents
+        <h2 className="text-lg font-semibold mb-4 flex items-center justify-between">
+          <div className="flex items-center">
+            <FileTextIcon className="h-5 w-5 mr-2" />
+            Application Documents
+          </div>
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => navigate("/documents")}
+            className="hover:bg-primary/10"
+          >
+            <span>View all</span>
+            <ExternalLink className="ml-2 h-4 w-4" />
+          </Button>
         </h2>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {documentStats.map((document, index) => (
@@ -124,24 +135,26 @@ export default function Dashboard() {
 
       {/* Application Timeline */}
       <div className="mt-6">
-        <h2 className="text-lg font-semibold mb-4 flex items-center">
-          <Calendar className="h-5 w-5 mr-2" />
-          Application Timeline
+        <h2 className="text-lg font-semibold mb-4 flex items-center justify-between">
+          <div className="flex items-center">
+            <Calendar className="h-5 w-5 mr-2" />
+            Application Timeline
+          </div>
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => navigate("/timeline")}
+            className="hover:bg-primary/10"
+          >
+            <span>View all</span>
+            <ExternalLink className="ml-2 h-4 w-4" />
+          </Button>
         </h2>
         <Card>
           <CardHeader className="flex flex-row items-center justify-between">
               <CardDescription>
                 Track your application deadlines and requirements
               </CardDescription>
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => navigate("/timeline")}
-              className="hover:bg-primary/10"
-            >
-              <span>View all</span>
-              <ExternalLink className="ml-2 h-4 w-4" />
-            </Button>
           </CardHeader>
           <CardContent className="pt-4">
             <div className="space-y-4">
