@@ -154,7 +154,7 @@ export default function SavedProgramsPage() {
                                         <Button
                                             variant="outline"
                                             size="sm"
-                                            onClick={() => navigate(`/apply?programId=${program._id}`)}
+                                            onClick={() => navigate(`/apply?programId=${program._id}&create`)}
                                             className="w-full sm:w-auto"
                                         >
                                             Start Application
