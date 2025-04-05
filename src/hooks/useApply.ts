@@ -4,11 +4,28 @@ import { api } from "../../convex/_generated/api";
 import { Doc, Id } from "../../convex/_generated/dataModel";
 import { toast } from "sonner";
 
+export type Program = Doc<"programs">;
+export type University = Doc<"universities">;
+
 /**
  * Hook for managing the application process
  */
-export function useApply() {
+export function useApply(programId?: Id<"programs"> | null) {
   const [isCreating, setIsCreating] = useState(false);
+  
+  // Get program data
+  const programsQuery = useQuery(
+    api.programs.search.getProgramsByIds, 
+    programId ? { programIds: [programId] } : "skip"
+  );
+  const program: Program | null = programsQuery?.length ? programsQuery[0] : null;
+  
+  // Get university data for the program
+  const universityQuery = useQuery(
+    api.programs.search.getUniversity,
+    program ? { universityId: program.universityId } : "skip"
+  );
+  const university: University | null = universityQuery ?? null;
   
   // Mutations
   const createApplicationMutation = useMutation(api.applications.mutations.createApplication);
@@ -51,8 +68,12 @@ export function useApply() {
       
       return applicationId;
     } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "An unknown error occurred";
+      const truncatedMessage = errorMessage.includes("Uncaught Error:") 
+        ? errorMessage.split("Uncaught Error:")[1].split(/\s+at\s+/)[0].trim()
+        : errorMessage;
       toast.error("Error Creating Application", {
-        description: error instanceof Error ? error.message : "An unknown error occurred"
+        description: truncatedMessage
       });
       return null;
     } finally {
@@ -93,21 +114,12 @@ export function useApply() {
     }
   };
 
-  // Function to get program details given a program ID
-  const useProgram = (programId: Id<"programs"> | null) => {
-    return useQuery(api.programs.search.getProgramsByIds, programId ? { programIds: [programId] } : "skip");
-  };
-
-  // Function to get university details given a university ID
-  const useUniversity = (universityId: Id<"universities"> | null) => {
-    return useQuery(api.programs.search.getUniversity, universityId ? { universityId: universityId } : "skip");
-  };
-
   return {
     createApplication,
     updateApplicationStatus,
-    useProgram,
-    useUniversity,
-    isCreating
+    isCreating,
+    program,
+    university,
+    isLoading: !programsQuery && programId !== null && programId !== undefined
   };
 }

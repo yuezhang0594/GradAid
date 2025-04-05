@@ -22,10 +22,12 @@ import OnboardingPage from "./routes/onboarding/page";
 import ProfilePage from "./routes/profile/page";
 import SavedProgramsPage from "./routes/SavedProgramsPage";
 import ProgramApplyPage from "./routes/ProgramApplyPage";
+import { Toaster } from "sonner";
 
 function App() {
   return (
     <>
+      <Toaster position="bottom-right" richColors closeButton />
       <Routes>
         {/* Public Routes */}
         <Route path="/" element={<LandingPage />} />

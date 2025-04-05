@@ -21,20 +21,17 @@ const ProgramApplyPage = () => {
     const queryParams = new URLSearchParams(location.search);
     const programIdFromUrl = queryParams.get("programId") || "";
     // Add a new parameter to check if we should show the create application form
-    const showCreateForm = queryParams.get("create") !== null;
+    const showCreateForm = queryParams.get("create") !== null && programIdFromUrl;
 
     const handleSubmit = (programId: string) => {
         // Navigate to the same page but with create=true parameter
         navigate(`/apply?programId=${programId}&create`);
     };
 
-    // Show create application form if the parameter is present and we have a valid programId
-    const shouldShowCreateForm = showCreateForm && programIdFromUrl;
-
     return (
         <PageWrapper
             title={"New Application"}
-            description={shouldShowCreateForm 
+            description={showCreateForm 
                 ? "Complete your application details" 
                 : "Choose the graduate program you want to apply to"
             }
@@ -52,7 +49,7 @@ const ProgramApplyPage = () => {
                     actionLabel="Search Programs"
                     actionHref="/search"
                 />
-            ) : shouldShowCreateForm ? (
+            ) : showCreateForm ? (
                 <CreateApplicationForm programId={programIdFromUrl as Id<"programs">} />
             ) : (
                 <ApplyProgramSelector 
@@ -61,7 +58,7 @@ const ProgramApplyPage = () => {
                     onSubmit={handleSubmit}
                 />
             )}
-            {!shouldShowCreateForm && (savedPrograms?.length || 0) > 0 && (
+            {!showCreateForm && (savedPrograms?.length || 0) > 0 && (
                 <Alert className="mt-4 max-w-3xl mx-auto">
                     <AlertDescription className="flex flex-col sm:flex-row items-center justify-between gap-4">
                         <span>Don't see the program you want to apply for? <br className="block md:hidden"/>Save the program first.</span>

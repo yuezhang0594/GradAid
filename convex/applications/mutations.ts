@@ -177,6 +177,18 @@ export const createApplication = mutation({
       throw new Error("Program does not belong to the specified university");
     }
 
+    // Check if the user already has an application for this program
+    const existingApplication = await ctx.db
+      .query("applications")
+      .withIndex("by_user", (q) => 
+        q.eq("userId", userId)
+      )
+      .filter((q) => q.eq(q.field("programId"), args.programId))
+      .first();
+    if (existingApplication) {
+      throw new Error("You already have an application for this program");
+    }
+
     // Set default requirements if not provided
     const defaultRequirements = [
       {
