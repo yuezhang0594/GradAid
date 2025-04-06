@@ -32,7 +32,7 @@ function formatStatus(status: string) {
 
 export default function ApplicationsPage() {
   const navigate = useNavigate();
-  const [demoMode, setDemoMode] = useState(true);
+  const [demoMode, setDemoMode] = useState(false);
   const applications = useQuery(api.applications.queries.getApplications, { demoMode }) ?? [];
 
   return (

@@ -17,7 +17,7 @@ import { format } from "date-fns";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 
 export default function TimelinePage() {
-  const [demoMode, setDemoMode] = useState(true);
+  const [demoMode, setDemoMode] = useState(false);
   const timeline = useQuery(api.applications.timeline.getTimeline, { demoMode });
 
   if (!timeline) {

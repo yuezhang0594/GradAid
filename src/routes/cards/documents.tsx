@@ -61,7 +61,7 @@ function formatText(text: string) {
 
 export default function DocumentsPage() {
   const navigate = useNavigate();
-  const [demoMode, setDemoMode] = useState(true);
+  const [demoMode, setDemoMode] = useState(false);
   const universities = useQuery(api.applications.queries.getDocumentsByUniversity, { demoMode }) ?? [];
   const setDocumentEditor = useSetAtom(documentEditorAtom);
 

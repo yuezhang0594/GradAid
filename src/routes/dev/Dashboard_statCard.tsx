@@ -23,7 +23,7 @@ import { Id } from "../../../convex/_generated/dataModel";
 export default function Dashboard() {
   const navigate = useNavigate();
   const setDocumentEditor = useSetAtom(documentEditorAtom);
-  const [demoMode, setDemoMode] = useState(true);
+  const [demoMode, setDemoMode] = useState(false);
   const { applicationStats, documentStats, applicationTimeline } = useDashboardData(demoMode);
 
   const handleDocumentClick = (doc: any) => {
