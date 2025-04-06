@@ -13,6 +13,8 @@ dist/
 .env.production
 .env.pub
 
+/llm-service/venv/
+
 # Logs
 npm-debug.log*
 yarn-debug.log*
