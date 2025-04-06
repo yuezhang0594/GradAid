@@ -19,12 +19,15 @@ import { Label } from "@/components/ui/label";
 import { useSetAtom } from "jotai";
 import { documentEditorAtom } from "../cards/documents";
 import { Id } from "../../../convex/_generated/dataModel";
+import { useQuery } from "convex/react";
+import { api } from "../../../convex/_generated/api";
 
 export default function Dashboard() {
   const navigate = useNavigate();
   const setDocumentEditor = useSetAtom(documentEditorAtom);
   const [demoMode, setDemoMode] = useState(false);
   const { applicationStats, documentStats, applicationTimeline } = useDashboardData(demoMode);
+  const applications = useQuery(api.applications.queries.getApplications, { demoMode }) ?? [];
 
   const handleDocumentClick = (doc: any) => {
     const state = {
@@ -162,12 +165,24 @@ export default function Dashboard() {
                 <div
                   key={index}
                   className="flex items-start gap-4 p-2 rounded-lg hover:bg-muted/50 cursor-pointer transition-colors"
-                  onClick={() =>
+                  onClick={() => {
+                    // Find the application that matches this event
+                    const matchingApp = applications.find(
+                      (app: { university: string; program: string; id: Id<"applications"> }) => 
+                        app.university === event.university && app.program === event.program.split(" in ")[1]
+                    );
+                    
                     navigate(
-                      `/applications/${event.university
-                        .replace(/\s+/g, " ")}`
-                    )
-                  }
+                      `/applications/${event.university.replace(/\s+/g, " ")}`,
+                      {
+                        state: {
+                          applicationId: matchingApp?.id || "",
+                          universityName: event.university,
+                          demoMode: demoMode
+                        }
+                      }
+                    );
+                  }}
                 >
                   <div className="min-w-[100px] text-sm">
                     <div className="font-medium">
