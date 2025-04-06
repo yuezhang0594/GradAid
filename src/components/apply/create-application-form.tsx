@@ -164,7 +164,13 @@ const CreateApplicationForm = ({ programId }: CreateApplicationFormProps) => {
 
         if (applicationId) {
             // Navigate to the application detail page after successful creation
-            navigate(`/applications/${applicationId}`);
+            navigate(`/applications/${university.name}`, {
+                state: {
+                    applicationId,
+                    universityName: university.name,
+                    demoMode: false
+                }
+            });
         }
     };
 

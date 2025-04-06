@@ -35,6 +35,9 @@ export default function Header() {
         case 'lor':
           label = 'Letters of Recommendation';
           break;
+        case 'cv':
+          label = 'CV';
+          break;
       }
 
       // Format university names (they contain hyphens)
