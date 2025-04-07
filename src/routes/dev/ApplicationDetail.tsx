@@ -1,13 +1,12 @@
 import { useLocation } from "react-router-dom";
 import { useApplicationDetail } from "@/hooks/useApplicationDetail";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { ClickableCard } from "@/components/dashboard/clickablecard";
 import { useState, useEffect } from "react";
-import { FileTextIcon, CheckSquare2Icon, GraduationCapIcon } from "lucide-react";
+import { FileTextIcon, CheckSquare2Icon, GraduationCapIcon, CheckCircleIcon, ClockIcon } from "lucide-react";
 import { useSetAtom } from "jotai";
 import { documentEditorAtom } from "../cards/documents";
 import { Id } from "../../../convex/_generated/dataModel";
@@ -40,6 +39,11 @@ export default function ApplicationDetail() {
     state?.applicationId ?? "", 
     demoMode
   );
+  const icons = {
+    "Status": <FileTextIcon className="h-4 w-4 text-muted-foreground" />,
+    "Documents": <CheckCircleIcon className="h-4 w-4 text-muted-foreground" />,
+    "Deadline": <ClockIcon className="h-4 w-4 text-muted-foreground" />,
+  };
 
   useEffect(() => {
     if (state?.demoMode !== undefined) {
@@ -158,7 +162,7 @@ export default function ApplicationDetail() {
             <Card key={index} className="group flex flex-col">
               <CardHeader className="flex flex-row items-center justify-between pb-2">
                 <CardTitle className="text-sm group-hover:text-primary transition-colors text-left font-bold">{stat.title}</CardTitle>
-                {stat.icon}
+                {icons[stat.title as keyof typeof icons]}
               </CardHeader>
               <CardContent className="pt-4 flex flex-col justify-center h-full">
                 <div className="text-xl font-bold mb-2">{formatStatus(stat.value)}</div>

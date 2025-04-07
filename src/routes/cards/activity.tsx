@@ -104,7 +104,7 @@ export default function ActivityPage() {
         </Card>
       </div>
 
-      <Card>
+      <Card className="mt-8">
         <CardHeader>
           <CardTitle>Activity Feed</CardTitle>
           <CardDescription>Your recent actions and updates</CardDescription>

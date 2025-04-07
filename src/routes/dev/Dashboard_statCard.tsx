@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-import { Calendar, ChevronRight, ExternalLink, BellIcon, TargetIcon, FileTextIcon, SparklesIcon } from "lucide-react";
+import { Calendar, ChevronRight, ExternalLink, BellIcon, TargetIcon, FileTextIcon, SparklesIcon, ClockIcon, Activity } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
@@ -28,6 +28,12 @@ export default function Dashboard() {
   const [demoMode, setDemoMode] = useState(false);
   const { applicationStats, documentStats, applicationTimeline } = useDashboardData(demoMode);
   const applications = useQuery(api.applications.queries.getApplications, { demoMode }) ?? [];
+
+  const icons = {
+    "Active Applications": <FileTextIcon className="h-4 w-4 text-muted-foreground" />,
+    "Next Deadline": <ClockIcon className="h-4 w-4 text-muted-foreground" />,
+    "Recent Activity": <Activity className="h-4 w-4 text-muted-foreground" />,
+  };
 
   const handleDocumentClick = (doc: any) => {
     const state = {
@@ -53,12 +59,12 @@ export default function Dashboard() {
       </div>
 
       {/* Application Progress Stats */}
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {applicationStats.map((stat, index) => (
           <ClickableCard key={index} action={stat.action}>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-sm font-medium">{stat.title}</CardTitle>
-              {stat.icon}
+              {icons[stat.title as keyof typeof icons]}
             </CardHeader>
             <CardContent className="pt-4">
               <div className="text-xl font-bold mb-2">{stat.value}</div>

@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
-import { FileTextIcon, ClockIcon, CheckCircleIcon } from "lucide-react";
+// import { ReactNode } from "react";
+// import { FileTextIcon, ClockIcon, CheckCircleIcon } from "lucide-react";
 import { useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
 import { formatDistanceToNow } from "date-fns";
@@ -8,7 +8,7 @@ import { formatDistanceToNow } from "date-fns";
 interface ApplicationDetailData {
   applicationStats: Array<{
     title: string;
-    icon: ReactNode;
+    // icon: ReactNode;
     value: string;
     description: string;
     action: {
@@ -103,7 +103,7 @@ export function useApplicationDetail(applicationId: string, demoMode = true): Ap
   const applicationStats = [
     {
       title: "Status",
-      icon: <FileTextIcon className="h-4 w-4 text-muted-foreground" />,
+      // icon: <FileTextIcon className="h-4 w-4 text-muted-foreground" />,
       value: applicationData.status,
       description: `Priority: ${applicationData.priority}`,
       action: {
@@ -114,7 +114,7 @@ export function useApplicationDetail(applicationId: string, demoMode = true): Ap
     },
     {
       title: "Documents",
-      icon: <CheckCircleIcon className="h-4 w-4 text-muted-foreground" />,
+      // icon: <CheckCircleIcon className="h-4 w-4 text-muted-foreground" />,
       value: `${applicationData.documents.length} Required`,
       description: `${applicationData.documents.filter((d: Document) => d.status === "complete").length} Completed`,
       action: {
@@ -125,7 +125,7 @@ export function useApplicationDetail(applicationId: string, demoMode = true): Ap
     },
     {
       title: "Deadline",
-      icon: <ClockIcon className="h-4 w-4 text-muted-foreground" />,
+      // icon: <ClockIcon className="h-4 w-4 text-muted-foreground" />,
       value: new Date(applicationData.deadline).toLocaleDateString(),
       description: `${formatDistanceToNow(new Date(applicationData.deadline))} remaining`,
       action: {

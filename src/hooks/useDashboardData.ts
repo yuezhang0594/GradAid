@@ -1,6 +1,6 @@
 import { useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
-import { Activity, FileTextIcon, SparklesIcon, ClockIcon } from "lucide-react";
+// import { Activity, FileTextIcon, SparklesIcon, ClockIcon } from "lucide-react";
 import React from "react";
 import { Id } from "../../convex/_generated/dataModel";
 
@@ -30,7 +30,7 @@ export interface DashboardData {
   };
   applicationStats: Array<{
     title: string;
-    icon: React.ReactNode;
+    // icon: React.ReactNode;
     value: string;
     description: string;
     action: {
@@ -107,7 +107,7 @@ export const useDashboardData = (demoMode?: boolean): DashboardData => {
   const applicationStats = [
     {
       title: "Active Applications",
-      icon: <FileTextIcon className="h-4 w-4 text-muted-foreground" />,
+      // icon: <FileTextIcon className="h-4 w-4 text-muted-foreground" />,
       value: applications.length.toString(),
       description: `${applications.filter(a => a.status === "submitted").length} submitted, ${applications.filter(a => a.status === "in_progress").length} in progress`,
       action: {
@@ -116,20 +116,20 @@ export const useDashboardData = (demoMode?: boolean): DashboardData => {
         tooltip: "View summary of all your applications",
       },
     },
-    {
-      title: "AI Credits Used",
-      icon: <SparklesIcon className="h-4 w-4 text-muted-foreground" />,
-      value: `${stats.aiCredits.usedCredits}/${stats.aiCredits.totalCredits}`,
-      description: "Reset on Apr 1, 2025",
-      action: {
-        label: "View usage",
-        href: "/credits",
-        tooltip: "Monitor your AI credit usage",
-      },
-    },
+    // {
+    //   title: "AI Credits Used",
+    //   icon: <SparklesIcon className="h-4 w-4 text-muted-foreground" />,
+    //   value: `${stats.aiCredits.usedCredits}/${stats.aiCredits.totalCredits}`,
+    //   description: "Reset on Apr 1, 2025",
+    //   action: {
+    //     label: "View usage",
+    //     href: "/credits",
+    //     tooltip: "Monitor your AI credit usage",
+    //   },
+    // },
     {
       title: "Next Deadline",
-      icon: <ClockIcon className="h-4 w-4 text-muted-foreground" />,
+      // icon: <ClockIcon className="h-4 w-4 text-muted-foreground" />,
       value: applications.length > 0 ? 
         applications.sort((a, b) => new Date(a.deadline).getTime() - new Date(b.deadline).getTime())[0].university :
         "No deadlines",
@@ -144,7 +144,7 @@ export const useDashboardData = (demoMode?: boolean): DashboardData => {
     },
     {
       title: "Recent Activity",
-      icon: <Activity className="h-4 w-4 text-muted-foreground" />,
+      // icon: <Activity className="h-4 w-4 text-muted-foreground" />,
       value: stats.recentActivity.length.toString(),
       description: "Last 7 days",
       action: {

@@ -107,7 +107,7 @@ export default function CreditsPage() {
       </div>
 
       <div className="grid gap-4">
-        <Card>
+        <Card className="mt-8">
           <CardHeader>
             <CardTitle>Usage by Type</CardTitle>
             <CardDescription>
