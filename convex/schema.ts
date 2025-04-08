@@ -167,11 +167,7 @@ const schema = defineSchema({
     title: v.string(),
     type: v.union(
       v.literal("sop"),
-      v.literal("research_statement"),
-      v.literal("lor"),
-      v.literal("transcript"),
-      v.literal("cv"),
-      v.literal("other")
+      v.literal("lor")
     ),
     status: v.union(
       v.literal("draft"),
@@ -179,6 +175,8 @@ const schema = defineSchema({
       v.literal("complete")
     ),
     progress: v.number(),
+    recommenderName: v.optional(v.string()),
+    recommenderEmail: v.optional(v.string()),
     lastEdited: v.string(),
     aiSuggestionsCount: v.optional(v.number()),
     content: v.optional(v.string()),

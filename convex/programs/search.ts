@@ -316,6 +316,49 @@ export const getUniversity = query({
   },
 });
 
+/**
+ * Get a program by its ID
+ */
+export const getProgram = query({
+  args: {
+    programId: v.id("programs"),
+  },
+  handler: async (ctx, { programId }) => {
+    const program = await ctx.db.get(programId);
+    if (!program) {
+      throw new Error(`Program with ID ${programId} not found`);
+    }
+    return program;
+  },
+});
+
+/**
+ * Get recommender information for a letter of recommendation document
+ */
+export const getRecommender = query({
+  args: {
+    documentId: v.id("applicationDocuments"),
+  },
+  handler: async (ctx, { documentId }) => {
+    const document = await ctx.db.get(documentId);
+    if (!document) {
+      throw new Error(`Document with ID ${documentId} not found`);
+    }
+    if (document.type !== "lor") {
+      throw new Error(`Document with ID ${documentId} is not a letter of recommendation`);
+    }
+    const recommenderName = document.recommenderName;
+    const recommenderEmail = document.recommenderEmail;
+    if (!recommenderName || !recommenderEmail) {
+      throw new Error(`Recommender information not found for document ID ${documentId}`);
+    }
+    return {
+      name: recommenderName,
+      email: recommenderEmail,
+    };
+  },
+});
+
 // Helper function to get universities by IDs
 export async function getUniversitiesHelper(
   ctx: QueryCtx, 
