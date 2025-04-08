@@ -85,7 +85,7 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
                   <FormLabel>Select Test Scores to Input</FormLabel>
                   <FormControl>
                     <div className="flex flex-col space-y-2">
-                      {["TOEFL", "IELTS", "GRE"].map((test) => (
+                      {["TOEFL", "IELTS", "GRE (optional)"].map((test) => (
                         <div key={test} className="flex items-center space-x-2">
                           <Checkbox
                             checked={field.value?.includes(test)}
@@ -118,42 +118,21 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
               )}
             />
 
-            {selectedTests.includes("TOEFL") && (
-              <div className="space-y-4">
-                <h3 className="text-lg font-medium">TOEFL Scores</h3>
-                <FormField
-                  control={form.control}
-                  name="englishTest.overallScore"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Total Score (0-120)</FormLabel>
-                      <FormControl>
-                        <Input 
-                          type="number" 
-                          min={0}
-                          max={120}
-                          {...field} 
-                          value={field.value?.toString() || ''} 
-                          onChange={e => field.onChange(e.target.valueAsNumber)}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                {toeflSections.map((section) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {selectedTests.includes("TOEFL") && (
+                <div className="space-y-4 p-4 border rounded-lg">
+                  <h3 className="text-lg font-medium">TOEFL Scores</h3>
                   <FormField
-                    key={section}
                     control={form.control}
-                    name={`englishTest.sectionScores.${section.toLowerCase()}`}
+                    name="englishTest.overallScore"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>{section} (0-30)</FormLabel>
+                        <FormLabel>Total Score (0-120)</FormLabel>
                         <FormControl>
                           <Input 
-                            type="number"
+                            type="number" 
                             min={0}
-                            max={30}
+                            max={120}
                             {...field} 
                             value={field.value?.toString() || ''} 
                             onChange={e => field.onChange(e.target.valueAsNumber)}
@@ -163,58 +142,57 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
                       </FormItem>
                     )}
                   />
-                ))}
-                <FormField
-                  control={form.control}
-                  name="englishTest.testDate"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Test Date</FormLabel>
-                      <FormControl>
-                        <Input type="date" {...field} value={field.value?.toString() || ''} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-              </div>
-            )}
-
-            {selectedTests.includes("IELTS") && (
-              <div className="space-y-4">
-                <h3 className="text-lg font-medium">IELTS Scores</h3>
-                <FormField
-                  control={form.control}
-                  name="englishTest.overallScore"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Overall Band Score (0-9)</FormLabel>
-                      <FormControl>
-                        <Input 
-                          type="number" 
-                          min={0}
-                          max={9}
-                          step={0.5}
-                          {...field} 
-                          value={field.value?.toString() || ''} 
-                          onChange={e => field.onChange(e.target.valueAsNumber)}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                {ieltsSections.map((section) => (
+                  {toeflSections.map((section) => (
+                    <FormField
+                      key={section}
+                      control={form.control}
+                      name={`englishTest.sectionScores.${section.toLowerCase()}`}
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>{section} (0-30)</FormLabel>
+                          <FormControl>
+                            <Input 
+                              type="number"
+                              min={0}
+                              max={30}
+                              {...field} 
+                              value={field.value?.toString() || ''} 
+                              onChange={e => field.onChange(e.target.valueAsNumber)}
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  ))}
                   <FormField
-                    key={section}
                     control={form.control}
-                    name={`englishTest.sectionScores.${section.toLowerCase()}`}
+                    name="englishTest.testDate"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>{section} (0-9)</FormLabel>
+                        <FormLabel>Test Date</FormLabel>
+                        <FormControl>
+                          <Input type="date" {...field} value={field.value?.toString() || ''} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+              )}
+
+              {selectedTests.includes("IELTS") && (
+                <div className="space-y-4 p-4 border rounded-lg">
+                  <h3 className="text-lg font-medium">IELTS Scores</h3>
+                  <FormField
+                    control={form.control}
+                    name="englishTest.overallScore"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Overall Band Score (0-9)</FormLabel>
                         <FormControl>
                           <Input 
-                            type="number"
+                            type="number" 
                             min={0}
                             max={9}
                             step={0.5}
@@ -227,102 +205,126 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
                       </FormItem>
                     )}
                   />
-                ))}
-                <FormField
-                  control={form.control}
-                  name="englishTest.testDate"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Test Date</FormLabel>
-                      <FormControl>
-                        <Input type="date" {...field} value={field.value?.toString() || ''} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-              </div>
-            )}
+                  {ieltsSections.map((section) => (
+                    <FormField
+                      key={section}
+                      control={form.control}
+                      name={`englishTest.sectionScores.${section.toLowerCase()}`}
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>{section} (0-9)</FormLabel>
+                          <FormControl>
+                            <Input 
+                              type="number"
+                              min={0}
+                              max={9}
+                              step={0.5}
+                              {...field} 
+                              value={field.value?.toString() || ''} 
+                              onChange={e => field.onChange(e.target.valueAsNumber)}
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  ))}
+                  <FormField
+                    control={form.control}
+                    name="englishTest.testDate"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Test Date</FormLabel>
+                        <FormControl>
+                          <Input type="date" {...field} value={field.value?.toString() || ''} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+              )}
 
-            {selectedTests.includes("GRE") && (
-              <div className="space-y-4">
-                <h3 className="text-lg font-medium">GRE Scores</h3>
-                <FormField
-                  control={form.control}
-                  name="greScores.verbal"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Verbal (130-170)</FormLabel>
-                      <FormControl>
-                        <Input 
-                          type="number" 
-                          min={130}
-                          max={170}
-                          {...field} 
-                          value={field.value?.toString() || ''} 
-                          onChange={e => field.onChange(e.target.valueAsNumber)}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="greScores.quantitative"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Quantitative (130-170)</FormLabel>
-                      <FormControl>
-                        <Input 
-                          type="number" 
-                          min={130}
-                          max={170}
-                          {...field} 
-                          value={field.value?.toString() || ''} 
-                          onChange={e => field.onChange(e.target.valueAsNumber)}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="greScores.analyticalWriting"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Analytical Writing (0-6)</FormLabel>
-                      <FormControl>
-                        <Input 
-                          type="number" 
-                          min={0}
-                          max={6}
-                          step={0.5}
-                          {...field} 
-                          value={field.value?.toString() || ''} 
-                          onChange={e => field.onChange(e.target.valueAsNumber)}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="greScores.testDate"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Test Date</FormLabel>
-                      <FormControl>
-                        <Input type="date" {...field} value={field.value?.toString() || ''} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-              </div>
-            )}
+              {selectedTests.includes("GRE (optional)") && (
+                <div className="space-y-4 p-4 border rounded-lg">
+                  <h3 className="text-lg font-medium">GRE Scores</h3>
+                  <FormField
+                    control={form.control}
+                    name="greScores.verbal"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Verbal (130-170)</FormLabel>
+                        <FormControl>
+                          <Input 
+                            type="number" 
+                            min={130}
+                            max={170}
+                            {...field} 
+                            value={field.value?.toString() || ''} 
+                            onChange={e => field.onChange(e.target.valueAsNumber)}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="greScores.quantitative"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Quantitative (130-170)</FormLabel>
+                        <FormControl>
+                          <Input 
+                            type="number" 
+                            min={130}
+                            max={170}
+                            {...field} 
+                            value={field.value?.toString() || ''} 
+                            onChange={e => field.onChange(e.target.valueAsNumber)}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="greScores.analyticalWriting"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Analytical Writing (0-6)</FormLabel>
+                        <FormControl>
+                          <Input 
+                            type="number" 
+                            min={0}
+                            max={6}
+                            step={0.5}
+                            {...field} 
+                            value={field.value?.toString() || ''} 
+                            onChange={e => field.onChange(e.target.valueAsNumber)}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="greScores.testDate"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Test Date</FormLabel>
+                        <FormControl>
+                          <Input type="date" {...field} value={field.value?.toString() || ''} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+              )}
+            </div>
 
             <div className="flex justify-end space-x-2">
               <Button variant="outline" type="button" onClick={() => window.history.back()}>
