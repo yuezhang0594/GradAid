@@ -135,36 +135,8 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
     }
   }, [editorState, content, saveDocument, toast]);
 
-  const handleSubmit = useCallback(async () => {
-    // In real app, submit document for review and update status
-  }, []);
-
   // Mock AI feedback and versions until we implement those features
   const mockData = {
-    aiCreditsUsed: 50,
-    aiFeedback: [
-      {
-        id: "1",
-        type: "suggestion",
-        content: "Consider adding more specific details about your research experience in AI and machine learning projects",
-        section: "Research Background",
-        status: "pending",
-      },
-      {
-        id: "2",
-        type: "improvement",
-        content: "Strengthen the connection between your past work and future research goals at Stanford",
-        section: "Career Goals",
-        status: "accepted",
-      },
-      {
-        id: "3",
-        type: "correction",
-        content: "Fix grammar in the third paragraph discussing your technical contributions",
-        section: "Introduction",
-        status: "rejected",
-      },
-    ] as AIFeedback[],
     versions: [
       {
         id: "1",
@@ -236,12 +208,8 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
                   <Badge variant="outline" className="text-xs">
                     Last edited: {formatLastEdited(document?.lastEdited)}
                   </Badge>
-                  <Badge variant="secondary" className="text-xs">
-                    <SparklesIcon className="h-3 w-3 mr-1" />
-                    {mockData.aiCreditsUsed} AI credits used
-                  </Badge>
                   <Badge variant={document?.status === "complete" ? "default" : "secondary"}>
-                    {document?.status ?? "draft"}
+                  {(document?.status ?? "draft").replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase())}
                   </Badge>
                 </div>
               </div>
@@ -259,60 +227,6 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
 
         {/* Sidebar */}
         <div className="space-y-6">
-          {/* AI Feedback */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <SparklesIcon className="h-4 w-4" />
-                AI Feedback
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ScrollArea className="h-[300px] w-full max-w-[600px] p-4">
-                <div className="space-y-4 min-w-[100px]">
-                  {mockData.aiFeedback.map((feedback) => (
-                    <div
-                      key={feedback.id}
-                      className="p-4 rounded-lg bg-muted/50 space-y-3"
-                    >
-                      <div className="flex justify-between items-center">
-                        <Badge variant="outline" className="text-xs px-2 py-1">
-                          {feedback.section}
-                        </Badge>
-                        <Badge
-                          variant={
-                            feedback.status === "accepted"
-                              ? "default"
-                              : feedback.status === "rejected"
-                              ? "destructive"
-                              : "secondary"
-                          }
-                          className="text-xs px-2 py-1"
-                        >
-                          {feedback.status}
-                        </Badge>
-                      </div>
-                      <p className="text-sm leading-relaxed">{feedback.content}</p>
-                      {feedback.status === "pending" && (
-                        <div className="flex gap-3 pt-1">
-                          <Button variant="outline" size="sm" className="flex-1 h-8">
-                            Reject
-                          </Button>
-                          <Button size="sm" className="flex-1 h-8">
-                            Accept
-                          </Button>
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </ScrollArea>
-              <Button variant="outline" size="sm" className="w-full mt-4">
-                <MessageSquareIcon className="h-4 w-4 mr-2" />
-                Get More Feedback
-              </Button>
-            </CardContent>
-          </Card>
 
           {/* Version History */}
           <Card>

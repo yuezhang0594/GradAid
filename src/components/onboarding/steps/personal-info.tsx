@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useForm, ControllerRenderProps } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -7,10 +6,51 @@ import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue, SelectSeparator } from "@/components/ui/select";
+import { languages } from "countries-list";
+import { Country, State, City } from "country-state-city";
+import { useState } from "react";
+
+// Convert languages object to sorted array of unique languages
+const languageList = Object.entries(languages)
+  .map(([code, lang]) => ({
+    code,
+    name: lang.name
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+
+// Popular countries to show at the top
+const popularCountries = [
+  "United States",
+  "China",
+  "India",
+  "Mexico",
+  "Brazil"
+];
+
+// Get all countries and sort them
+const allCountries = Country.getAllCountries();
+const popularCountryObjects = popularCountries
+  .map(name => allCountries.find(c => c.name === name))
+  .filter(country => country !== undefined);
+const otherCountries = allCountries
+  .filter(country => !popularCountries.includes(country.name))
+  .sort((a, b) => a.name.localeCompare(b.name));
 
 const personalInfoSchema = z.object({
   countryOfOrigin: z.string().min(1, "Country of origin is required"),
-  dateOfBirth: z.string().min(1, "Date of birth is required"),
+  dateOfBirth: z.string()
+    .min(1, "Date of birth is required")
+    .refine((dob) => {
+      const birthDate = new Date(dob);
+      const today = new Date();
+      let age = today.getFullYear() - birthDate.getFullYear();
+      const monthDiff = today.getMonth() - birthDate.getMonth();
+      if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+      }
+      return age >= 16;
+    }, "You must be at least 16 years old to use this service"),
   currentLocation: z.string().min(1, "Current location is required"),
   nativeLanguage: z.string().min(1, "Native language is required"),
 });
@@ -24,6 +64,25 @@ interface PersonalInfoStepProps {
 
 export function PersonalInfoStep({ onComplete, initialData }: PersonalInfoStepProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Parse initial location data
+  const initialLocationParts = initialData?.currentLocation?.split(", ") || [];
+  const initialCity = initialLocationParts[0] || "";
+  const hasState = initialLocationParts.length === 3;
+  const initialState = hasState ? initialLocationParts[1] : "";
+  const initialCountry = initialLocationParts[hasState ? 2 : 1] || "";
+
+  // Find country and state codes from names
+  const initialCountryObj = Country.getAllCountries().find(c => c.name === initialCountry);
+  const initialStateObj = initialCountryObj 
+    ? State.getStatesOfCountry(initialCountryObj.isoCode).find(s => s.name === initialState)
+    : undefined;
+
+  const [selectedCountry, setSelectedCountry] = useState<string>(initialCountry);
+  const [selectedCountryCode, setSelectedCountryCode] = useState<string>(initialCountryObj?.isoCode || "");
+  const [selectedCity, setSelectedCity] = useState<string>(initialCity);
+  const [selectedState, setSelectedState] = useState<string>(initialState);
+  const [selectedStateCode, setSelectedStateCode] = useState<string>(initialStateObj?.isoCode || "");
 
   const form = useForm<PersonalInfoForm>({
     resolver: zodResolver(personalInfoSchema),
@@ -58,7 +117,32 @@ export function PersonalInfoStep({ onComplete, initialData }: PersonalInfoStepPr
                 <FormItem>
                   <FormLabel>Country of Origin</FormLabel>
                   <FormControl>
-                    <Input placeholder="e.g., United States" {...field} />
+                    <Select 
+                      onValueChange={field.onChange}
+                      value={field.value}
+                    >
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select your country of origin" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {/* Popular Countries */}
+                        {popularCountryObjects.map((country) => (
+                          <SelectItem key={country?.isoCode} value={country?.name || ""}>
+                            {country?.flag} {country?.name}
+                          </SelectItem>
+                        ))}
+                        
+                        {/* Divider */}
+                        <SelectSeparator className="my-2" />
+                        
+                        {/* All Other Countries */}
+                        {otherCountries.map((country) => (
+                          <SelectItem key={country.isoCode} value={country.name}>
+                            {country.flag} {country.name}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -72,7 +156,10 @@ export function PersonalInfoStep({ onComplete, initialData }: PersonalInfoStepPr
                 <FormItem>
                   <FormLabel>Date of Birth</FormLabel>
                   <FormControl>
-                    <Input type="date" {...field} />
+                    <Input 
+                      type="date" 
+                      {...field} 
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -86,7 +173,86 @@ export function PersonalInfoStep({ onComplete, initialData }: PersonalInfoStepPr
                 <FormItem>
                   <FormLabel>Current Location</FormLabel>
                   <FormControl>
-                    <Input placeholder="e.g., Boston, MA" {...field} />
+                    <div className="flex flex-col space-y-2">
+                      <Select 
+                        onValueChange={(value) => {
+                          const country = Country.getAllCountries().find(c => c.name === value);
+                          setSelectedCountry(value);
+                          setSelectedCountryCode(country?.isoCode || "");
+                          setSelectedCity("");
+                          setSelectedState("");
+                          field.onChange(`${value}`);
+                        }}
+                        value={selectedCountry}
+                      >
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select your country" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {/* Popular Countries */}
+                          {popularCountryObjects.map((country) => (
+                            <SelectItem key={country?.isoCode} value={country?.name || ""}>
+                              {country?.flag} {country?.name}
+                            </SelectItem>
+                          ))}
+                          
+                          {/* Divider */}
+                          <SelectSeparator className="my-2" />
+                          
+                          {/* All Other Countries */}
+                          {otherCountries.map((country) => (
+                            <SelectItem key={country.isoCode} value={country.name}>
+                              {country.flag} {country.name}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+
+                      {selectedCountryCode && State.getStatesOfCountry(selectedCountryCode).length > 0 && (
+                        <Select
+                          onValueChange={(value) => {
+                            const state = State.getStatesOfCountry(selectedCountryCode).find(s => s.name === value);
+                            setSelectedState(value);
+                            setSelectedStateCode(state?.isoCode || "");
+                            field.onChange(`${selectedCity}${selectedCity ? ", " : ""}${value}, ${selectedCountry}`);
+                          }}
+                          value={selectedState}
+                        >
+                          <SelectTrigger>
+                            <SelectValue placeholder="Select state/province" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            {State.getStatesOfCountry(selectedCountryCode).map((state) => (
+                              <SelectItem key={state.isoCode} value={state.name}>
+                                {state.name}
+                              </SelectItem>
+                            ))}
+                          </SelectContent>
+                        </Select>
+                      )}
+
+                      {selectedCountryCode && (
+                        <Select
+                          onValueChange={(value) => {
+                            setSelectedCity(value);
+                            field.onChange(`${value}, ${selectedState ? selectedState + ", " : ""}${selectedCountry}`);
+                          }}
+                          value={selectedCity}
+                        >
+                          <SelectTrigger>
+                            <SelectValue placeholder="Select city" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            {City.getCitiesOfState(selectedCountryCode, selectedStateCode)
+                              .map((city) => (
+                                <SelectItem key={city.name} value={city.name}>
+                                  {city.name}
+                                </SelectItem>
+                            ))}
+                          </SelectContent>
+                        </Select>
+                      )}
+                    </div>
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -100,7 +266,21 @@ export function PersonalInfoStep({ onComplete, initialData }: PersonalInfoStepPr
                 <FormItem>
                   <FormLabel>Native Language</FormLabel>
                   <FormControl>
-                    <Input placeholder="e.g., English" {...field} />
+                    <Select 
+                      onValueChange={field.onChange} 
+                      defaultValue={field.value}
+                    >
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select your native language" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {languageList.map((language) => (
+                          <SelectItem key={language.code} value={language.name}>
+                            {language.name}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
                   </FormControl>
                   <FormMessage />
                 </FormItem>

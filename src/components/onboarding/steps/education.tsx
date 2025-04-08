@@ -14,10 +14,13 @@ const educationSchema = z.object({
   educationLevel: z.string().min(1, "Education level is required"),
   major: z.string().min(1, "Major is required"),
   university: z.string().min(1, "University is required"),
-  gpa: z.number().min(0).max(4),
   gpaScale: z.number().min(0).max(10),
+  gpa: z.number().min(0),
   graduationDate: z.string().min(1, "Graduation date is required"),
   researchExperience: z.string().optional(),
+}).refine((data) => data.gpa <= data.gpaScale, {
+  message: "GPA cannot be greater than the selected scale",
+  path: ["gpa"]
 });
 
 type EducationForm = z.infer<typeof educationSchema>;
@@ -37,16 +40,16 @@ export function EducationStep({ onComplete, initialData }: EducationStepProps) {
       major: initialData?.major || "",
       university: initialData?.university || "",
       gpa: initialData?.gpa || 0,
-      gpaScale: initialData?.gpaScale || 4,
+      gpaScale: initialData?.gpaScale || 4, // Default to 4.0 scale
       graduationDate: initialData?.graduationDate || "",
       researchExperience: initialData?.researchExperience || "",
-    },
+    }
   });
 
   const onSubmit = async (data: EducationForm) => {
     setIsSubmitting(true);
     try {
-      onComplete(data);
+      await onComplete(data as Education);
     } catch (error) {
       console.error("Error saving education info:", error);
     } finally {
