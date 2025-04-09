@@ -11,9 +11,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 
 const careerGoalsSchema = z.object({
-  targetDegree: z.string().min(1, "Please select a target degree"),
+  targetDegree: z.string().min(1, "Please select your target degree"),
   intendedField: z.string().min(1, "Please enter your intended field of study"),
-  researchInterests: z.array(z.string()).min(1, "Please enter at least one research interest"),
+  researchInterests: z.string().min(1, "Please describe your research interests"),
   careerObjectives: z.string().min(1, "Please describe your career objectives"),
   targetLocations: z.array(z.string()).min(1, "Please select at least one target location"),
   expectedStartDate: z.string().min(1, "Please select your expected start date"),
@@ -30,9 +30,6 @@ interface CareerGoalsStepProps {
 
 export function CareerGoalsStep({ onComplete, initialData, onBack }: CareerGoalsStepProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [researchInterests, setResearchInterests] = useState<string[]>(
-    initialData?.researchInterests || []
-  );
   const [targetLocations, setTargetLocations] = useState<string[]>(
     initialData?.targetLocations || []
   );
@@ -42,7 +39,7 @@ export function CareerGoalsStep({ onComplete, initialData, onBack }: CareerGoals
     defaultValues: {
       targetDegree: initialData?.targetDegree || "",
       intendedField: initialData?.intendedField || "",
-      researchInterests: initialData?.researchInterests || [],
+      researchInterests: initialData?.researchInterests?.join(", ") || "",
       careerObjectives: initialData?.careerObjectives || "",
       targetLocations: initialData?.targetLocations || [],
       expectedStartDate: initialData?.expectedStartDate || "",
@@ -56,7 +53,7 @@ export function CareerGoalsStep({ onComplete, initialData, onBack }: CareerGoals
       const careerGoals: CareerGoals = {
         targetDegree: data.targetDegree,
         intendedField: data.intendedField,
-        researchInterests: data.researchInterests,
+        researchInterests: data.researchInterests.split(",").map(s => s.trim()).filter(Boolean),
         careerObjectives: data.careerObjectives,
         targetLocations: data.targetLocations,
         expectedStartDate: data.expectedStartDate,
@@ -127,16 +124,8 @@ export function CareerGoalsStep({ onComplete, initialData, onBack }: CareerGoals
                     <FormLabel>Research Interests</FormLabel>
                     <FormControl>
                       <Textarea
-                        placeholder="Enter your research interests."
-                        value={researchInterests.join(", ")}
-                        onChange={(e) => {
-                          const interests = e.target.value
-                            .split(",")
-                            .map((interest) => interest.trim())
-                            .filter(Boolean);
-                          setResearchInterests(interests);
-                          field.onChange(interests);
-                        }}
+                        {...field}
+                        placeholder="Describe your research interests."
                       />
                     </FormControl>
                     <FormMessage />
