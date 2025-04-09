@@ -1,23 +1,16 @@
 import * as React from "react"
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { GradAidLogo } from "@/assets/GradAidLogo";
 import { useNavigate, useLocation } from "react-router-dom";
-import { SearchForm } from "@/components/search-form"
 
 import {
   UserPenIcon,
   FilePlus2Icon,
   MessageCircleQuestionIcon,
   InfoIcon,
-  SettingsIcon,
   FileTextIcon,
   ClipboardListIcon,
   HeartIcon,
   SearchIcon,
-  FileUpIcon,
   Link
 } from 'lucide-react';
 import {
@@ -31,6 +24,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarRail,
+  useSidebar
 } from "@/components/ui/sidebar"
 
 const data = {
@@ -117,14 +111,21 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const navigate = useNavigate();
   const location = useLocation();
   const currentPath = location.pathname;
-  
+  const { toggleSidebar, isMobile } = useSidebar()
+
+  const handleNavigation = (url: string) => {
+    navigate(url)
+    if (isMobile) {
+      toggleSidebar()
+    }
+  }
   return (
     <Sidebar {...props}>
       <SidebarHeader>
         {/* Logo */}
-        <div 
-          className="flex flex-col items-center justify-center cursor-pointer pt-2" 
-          onClick={() => navigate("/dashboard")}
+        <div
+          className="flex flex-col items-center justify-center cursor-pointer pt-2"
+          onClick={() => handleNavigation("/dashboard")}
         >
           <div className="flex items-center">
             <GradAidLogo className="h-8 w-auto" />
@@ -149,9 +150,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               <SidebarMenu>
                 {item.items.map((item) => (
                   <SidebarMenuItem key={item.title}>
-                    <SidebarMenuButton 
+                    <SidebarMenuButton
                       isActive={currentPath === item.url}
-                      onClick={() => navigate(item.url)}
+                      onClick={() => handleNavigation(item.url)}
                     >
                       <item.icon size={20} />
                       {item.title}
