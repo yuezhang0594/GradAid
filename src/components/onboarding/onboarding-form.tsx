@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { PersonalInfoStep } from "./steps/personal-info";
 import { EducationStep } from "./steps/education";
@@ -92,21 +91,25 @@ export function OnboardingForm() {
       <Progress value={progress} className="w-full" />
       
       <Tabs value={activeStep} className="w-full">
-        <TabsList className="grid w-full grid-cols-5">
+        <TabsList className="grid w-full grid-cols-5 text-xs sm:text-sm">
           <TabsTrigger value="personal-info" disabled={activeStep !== "personal-info"}>
-            Personal Info
+            <span className="hidden sm:inline">Personal Info</span>
+            <span className="sm:hidden">Personal</span>
           </TabsTrigger>
           <TabsTrigger value="education" disabled={activeStep !== "education"}>
             Education
           </TabsTrigger>
           <TabsTrigger value="test-scores" disabled={activeStep !== "test-scores"}>
-            Test Scores
+            <span className="hidden sm:inline">Test Scores</span>
+            <span className="sm:hidden">Tests</span>
           </TabsTrigger>
           <TabsTrigger value="career-goals" disabled={activeStep !== "career-goals"}>
-            Career Goals
+            <span className="hidden sm:inline">Career Goals</span>
+            <span className="sm:hidden">Career</span>
           </TabsTrigger>
           <TabsTrigger value="complete" disabled={activeStep !== "complete"}>
-            Complete
+            <span className="hidden sm:inline">Complete</span>
+            <span className="sm:hidden">Done</span>
           </TabsTrigger>
         </TabsList>
 

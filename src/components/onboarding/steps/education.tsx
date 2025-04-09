@@ -122,12 +122,12 @@ export function EducationStep({ onComplete, initialData, onBack }: EducationStep
               )}
             />
 
-            <div className="grid grid-cols-8 gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <FormField
                 control={form.control}
                 name="gpa"
                 render={({ field }: { field: ControllerRenderProps<EducationForm, "gpa"> }) => (
-                  <FormItem>
+                  <FormItem className="w-full sm:max-w-[150px]">
                     <FormLabel>GPA</FormLabel>
                     <FormControl>
                       <Input
@@ -147,7 +147,7 @@ export function EducationStep({ onComplete, initialData, onBack }: EducationStep
                 control={form.control}
                 name="gpaScale"
                 render={({ field }: { field: ControllerRenderProps<EducationForm, "gpaScale"> }) => (
-                  <FormItem>
+                  <FormItem className="w-full sm:max-w-[150px]">
                     <FormLabel>GPA Scale</FormLabel>
                     <Select onValueChange={(value) => field.onChange(parseFloat(value))} defaultValue={field.value.toString()}>
                       <FormControl>
@@ -177,7 +177,7 @@ export function EducationStep({ onComplete, initialData, onBack }: EducationStep
                 const maxDateString = maxDate.toISOString().slice(0, 7); // Format as YYYY-MM
 
                 return (
-                  <FormItem className="w-full lg:w-1/6">
+                  <FormItem className="w-full sm:max-w-[150px]">
                     <FormLabel>Graduation Date</FormLabel>
                     <FormControl>
                       <Input 

@@ -9,6 +9,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
+import { X } from "lucide-react";
 
 const careerGoalsSchema = z.object({
   targetDegree: z.string().min(1, "Please select your target degree"),
@@ -71,206 +72,180 @@ export function CareerGoalsStep({ onComplete, initialData, onBack }: CareerGoals
     <Card>
       <CardContent className="pt-6">
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-            <div className="space-y-4">
-              <FormField
-                control={form.control}
-                name="targetDegree"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Target Degree</FormLabel>
-                    <Select
-                      onValueChange={field.onChange}
-                      defaultValue={field.value}
-                    >
-                      <FormControl>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select your target degree" />
-                        </SelectTrigger>
-                      </FormControl>
-                      <SelectContent>
-                        <SelectItem value="ms">Master of Science (MS)</SelectItem>
-                        <SelectItem value="ma">Master of Arts (MA)</SelectItem>
-                        <SelectItem value="meng">Master of Engineering (MEng)</SelectItem>
-                        <SelectItem value="mba">Master of Business Administration (MBA)</SelectItem>
-                        <SelectItem value="phd">Doctor of Philosophy (PhD)</SelectItem>
-                        <SelectItem value="other">Other</SelectItem>
-                      </SelectContent>
-                    </Select>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              <FormField
-                control={form.control}
-                name="intendedField"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Intended Field of Study</FormLabel>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+            <FormField
+              control={form.control}
+              name="targetDegree"
+              render={({ field }) => (
+                <FormItem className="w-full sm:max-w-[250px]">
+                  <FormLabel>Target Degree</FormLabel>
+                  <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <FormControl>
-                      <Input {...field} placeholder="e.g., Computer Science, Data Science" />
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select target degree" />
+                      </SelectTrigger>
                     </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+                    <SelectContent>
+                      <SelectItem value="ms">Master of Science (MS)</SelectItem>
+                      <SelectItem value="phd">Doctor of Philosophy (PhD)</SelectItem>
+                      <SelectItem value="meng">Master of Engineering (MEng)</SelectItem>
+                    </SelectContent>
+                  </Select>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
-              <FormField
-                control={form.control}
-                name="researchInterests"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Research Interests</FormLabel>
+            <FormField
+              control={form.control}
+              name="intendedField"
+              render={({ field }) => (
+                <FormItem className="w-full sm:max-w-[300px]">
+                  <FormLabel>Intended Field of Study</FormLabel>
+                  <FormControl>
+                    <Input {...field} placeholder="e.g., Computer Science" />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="researchInterests"
+              render={({ field }) => (
+                <FormItem className="w-full sm:max-w-[500px]">
+                  <FormLabel>Research Interests</FormLabel>
+                  <FormControl>
+                    <Textarea
+                      {...field}
+                      placeholder="Describe your research interests."
+                      className="min-h-[100px]"
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="careerObjectives"
+              render={({ field }) => (
+                <FormItem className="w-full sm:max-w-[500px]">
+                  <FormLabel>Career Objectives</FormLabel>
+                  <FormControl>
+                    <Textarea
+                      {...field}
+                      placeholder="Describe your career objectives."
+                      className="min-h-[100px]"
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="targetLocations"
+              render={({ field }) => (
+                <FormItem className="w-full sm:max-w-[300px]">
+                  <FormLabel>Preferred University Locations</FormLabel>
+                  <Select
+                    onValueChange={(value) => {
+                      const newLocations = [...targetLocations];
+                      if (!newLocations.includes(value)) {
+                        newLocations.push(value);
+                        setTargetLocations(newLocations);
+                        field.onChange(newLocations);
+                      }
+                    }}
+                  >
                     <FormControl>
-                      <Textarea
-                        {...field}
-                        placeholder="Describe your research interests."
-                      />
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select preferred locations" />
+                      </SelectTrigger>
                     </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+                    <SelectContent>
+                      <SelectItem value="northeast">Northeast US</SelectItem>
+                      <SelectItem value="midwest">Midwest US</SelectItem>
+                      <SelectItem value="south">Southern US</SelectItem>
+                      <SelectItem value="west">Western US</SelectItem>
+                      <SelectItem value="california">California</SelectItem>
+                      <SelectItem value="anywhere">Anywhere in US</SelectItem>
+                    </SelectContent>
+                  </Select>
+                  {targetLocations.length > 0 && (
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      {targetLocations.map((location) => (
+                        <div
+                          key={location}
+                          className="bg-secondary text-secondary-foreground px-2 py-1 rounded-md flex items-center gap-2 text-sm"
+                        >
+                          {location}
+                          <X
+                            className="h-4 w-4 cursor-pointer hover:text-destructive"
+                            onClick={() => {
+                              const newLocations = targetLocations.filter((l) => l !== location);
+                              setTargetLocations(newLocations);
+                              field.onChange(newLocations);
+                            }}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
-              <FormField
-                control={form.control}
-                name="careerObjectives"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Career Objectives</FormLabel>
+            <FormField
+              control={form.control}
+              name="expectedStartDate"
+              render={({ field }) => (
+                <FormItem className="w-full sm:max-w-[200px]">
+                  <FormLabel>Expected Start Date</FormLabel>
+                  <FormControl>
+                    <Input type="month" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="budgetRange"
+              render={({ field }) => (
+                <FormItem className="w-full sm:max-w-[200px]">
+                  <FormLabel>Budget Range (USD)</FormLabel>
+                  <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <FormControl>
-                      <Textarea
-                        {...field}
-                        placeholder="What are your long-term career goals after completing your degree?"
-                      />
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select budget range" />
+                      </SelectTrigger>
                     </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              <FormField
-                control={form.control}
-                name="targetLocations"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Preferred University Locations</FormLabel>
-                    <Select
-                      onValueChange={(value) => {
-                        const newLocations = [...targetLocations];
-                        if (!newLocations.includes(value)) {
-                          newLocations.push(value);
-                          setTargetLocations(newLocations);
-                          field.onChange(newLocations);
-                        }
-                      }}
-                    >
-                      <FormControl>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select preferred locations" />
-                        </SelectTrigger>
-                      </FormControl>
-                      <SelectContent>
-                        <SelectItem value="northeast">Northeast US</SelectItem>
-                        <SelectItem value="midwest">Midwest US</SelectItem>
-                        <SelectItem value="south">Southern US</SelectItem>
-                        <SelectItem value="west">Western US</SelectItem>
-                        <SelectItem value="california">California</SelectItem>
-                        <SelectItem value="anywhere">Anywhere in US</SelectItem>
-                      </SelectContent>
-                    </Select>
-                    {targetLocations.length > 0 && (
-                      <div className="mt-2 flex flex-wrap gap-2">
-                        {targetLocations.map((location) => (
-                          <div
-                            key={location}
-                            className="bg-secondary text-secondary-foreground px-2 py-1 rounded-md flex items-center gap-2"
-                          >
-                            <span>{location}</span>
-                            <button
-                              type="button"
-                              onClick={() => {
-                                const newLocations = targetLocations.filter(l => l !== location);
-                                setTargetLocations(newLocations);
-                                field.onChange(newLocations);
-                              }}
-                              className="text-sm hover:text-destructive"
-                            >
-                              ×
-                            </button>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              <FormField
-                control={form.control}
-                name="expectedStartDate"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Expected Start Date</FormLabel>
-                    <Select
-                      onValueChange={field.onChange}
-                      defaultValue={field.value}
-                    >
-                      <FormControl>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select expected start date" />
-                        </SelectTrigger>
-                      </FormControl>
-                      <SelectContent>
-                        <SelectItem value="fall2024">Fall 2024</SelectItem>
-                        <SelectItem value="spring2025">Spring 2025</SelectItem>
-                        <SelectItem value="fall2025">Fall 2025</SelectItem>
-                        <SelectItem value="spring2026">Spring 2026</SelectItem>
-                        <SelectItem value="undecided">Undecided</SelectItem>
-                      </SelectContent>
-                    </Select>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              <FormField
-                control={form.control}
-                name="budgetRange"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Budget Range (Optional)</FormLabel>
-                    <Select
-                      onValueChange={field.onChange}
-                      defaultValue={field.value}
-                    >
-                      <FormControl>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select your budget range" />
-                        </SelectTrigger>
-                      </FormControl>
-                      <SelectContent>
-                        <SelectItem value="under30k">Under $30,000/year</SelectItem>
-                        <SelectItem value="30k-50k">$30,000 - $50,000/year</SelectItem>
-                        <SelectItem value="50k-70k">$50,000 - $70,000/year</SelectItem>
-                        <SelectItem value="over70k">Over $70,000/year</SelectItem>
-                        <SelectItem value="needaid">Need Financial Aid</SelectItem>
-                      </SelectContent>
-                    </Select>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-            </div>
+                    <SelectContent>
+                      <SelectItem value="0-30k">$0 - $30,000</SelectItem>
+                      <SelectItem value="30k-50k">$30,000 - $50,000</SelectItem>
+                      <SelectItem value="50k-70k">$50,000 - $70,000</SelectItem>
+                      <SelectItem value="70k-100k">$70,000 - $100,000</SelectItem>
+                      <SelectItem value="100k+">$100,000+</SelectItem>
+                    </SelectContent>
+                  </Select>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
             <div className="flex justify-end space-x-2">
               <Button variant="outline" type="button" onClick={onBack}>
                 Back
               </Button>
               <Button type="submit" disabled={isSubmitting}>
-                {isSubmitting ? "Saving..." : "Continue"}
+                {isSubmitting ? "Saving..." : "Complete"}
               </Button>
             </div>
           </form>

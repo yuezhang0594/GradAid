@@ -115,7 +115,7 @@ export function PersonalInfoStep({ onComplete, initialData, onBack }: PersonalIn
               control={form.control}
               name="countryOfOrigin"
               render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "countryOfOrigin"> }) => (
-                <FormItem>
+                <FormItem className="w-full sm:max-w-[250px]">
                   <FormLabel>Country of Origin</FormLabel>
                   <FormControl>
                     <Select 
@@ -154,7 +154,7 @@ export function PersonalInfoStep({ onComplete, initialData, onBack }: PersonalIn
               control={form.control}
               name="dateOfBirth"
               render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "dateOfBirth"> }) => (
-                <FormItem className="max-w-[150px]">
+                <FormItem className="w-full sm:max-w-[150px]">
                   <FormLabel>Date of Birth</FormLabel>
                   <FormControl>
                     <Input 
@@ -171,7 +171,7 @@ export function PersonalInfoStep({ onComplete, initialData, onBack }: PersonalIn
               control={form.control}
               name="currentLocation"
               render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "currentLocation"> }) => (
-                <FormItem>
+                <FormItem className="w-full sm:max-w-[300px]">
                   <FormLabel>Current Location</FormLabel>
                   <FormControl>
                     <div className="flex flex-col space-y-2">
@@ -264,7 +264,7 @@ export function PersonalInfoStep({ onComplete, initialData, onBack }: PersonalIn
               control={form.control}
               name="nativeLanguage"
               render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "nativeLanguage"> }) => (
-                <FormItem>
+                <FormItem className="w-full sm:max-w-[200px]">
                   <FormLabel>Native Language</FormLabel>
                   <FormControl>
                     <Select 
@@ -289,9 +289,6 @@ export function PersonalInfoStep({ onComplete, initialData, onBack }: PersonalIn
             />
 
             <div className="flex justify-end space-x-2">
-              <Button variant="outline" type="button" onClick={onBack}>
-                Back
-              </Button>
               <Button type="submit" disabled={isSubmitting}>
                 {isSubmitting ? "Saving..." : "Continue"}
               </Button>
