@@ -9,43 +9,64 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
 
-// English test schema
-const englishTestSchema = z.object({
-  type: z.enum(["TOEFL", "IELTS"]),
-  overallScore: z.coerce.number(),
-  sectionScores: z.record(z.coerce.number()),
-  testDate: z.string().min(1, "Test date is required"),
-}).optional();
+const validateTestDate = (date: string) => {
+  const testDate = new Date(date);
+  const today = new Date();
+  today.setHours(0, 0, 0, 0); // Reset time part for accurate date comparison
+  return testDate <= today;
+};
 
 // GRE scores schema
 const greScoresSchema = z.object({
   verbal: z.coerce.number().min(130, "GRE Verbal score must be at least 130").max(170, "GRE Verbal score must be at most 170"),
   quantitative: z.coerce.number().min(130, "GRE Quantitative score must be at least 130").max(170, "GRE Quantitative score must be at most 170"),
   analyticalWriting: z.coerce.number().min(0, "GRE Analytical Writing score must be at least 0").max(6, "GRE Analytical Writing score must be at most 6"),
-  testDate: z.string().min(1, "Test date is required"),
+  testDate: z.string()
+    .min(1, "Test date is required")
+    .refine(validateTestDate, { message: "Test date cannot be in the future" }),
 }).optional();
 
 const testScoresSchema = z.object({
-  selectedTests: z.array(z.string()).min(1, "You must select at least one test"),
+  selectedTests: z.array(z.string()).refine(
+    (tests) => tests.includes("TOEFL") || tests.includes("IELTS"),
+    { message: "You must select either TOEFL or IELTS" }
+  ),
   greScores: greScoresSchema,
-  englishTest: englishTestSchema,
+  englishTest: z.object({
+    type: z.enum(["TOEFL", "IELTS"]),
+    overallScore: z.coerce.number(),
+    sectionScores: z.record(z.coerce.number()),
+    testDate: z.string().min(1, "Test date is required"),
+  }).refine(
+    (data) => {
+      // Validate based on test type
+      if (data.type === "TOEFL") {
+        return data.overallScore >= 0 && data.overallScore <= 120;
+      } else {
+        return data.overallScore >= 0 && data.overallScore <= 9;
+      }
+    },
+    { message: "Invalid overall score for the selected test type" }
+  ),
 });
 
 type TestScoresFormValues = z.infer<typeof testScoresSchema>;
 
 interface TestScoresStepProps {
-  onComplete: (data: TestScores) => void;
+  onComplete: (data: TestScores) => Promise<void>;
   initialData?: TestScores;
+  onBack: () => void;
 }
 
 const toeflSections = ["Reading", "Listening", "Speaking", "Writing"] as const;
 const ieltsSections = ["Reading", "Listening", "Speaking", "Writing"] as const;
 
-export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps) {
+export function TestScoresStep({ onComplete, initialData, onBack }: TestScoresStepProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [selectedTests, setSelectedTests] = useState<string[]>([
-    initialData?.englishTest ? initialData.englishTest.type : "",
-    initialData?.greScores ? "GRE" : "",
+    // Default to TOEFL if no initial test type
+    initialData?.englishTest ? initialData.englishTest.type : "TOEFL",
+    initialData?.greScores ? "GRE (optional)" : "",
   ].filter(Boolean));
 
   const form = useForm<TestScoresFormValues>({
@@ -53,20 +74,34 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
     defaultValues: {
       selectedTests,
       greScores: initialData?.greScores,
-      englishTest: initialData?.englishTest,
+      englishTest: initialData?.englishTest || {
+        type: "TOEFL",
+        overallScore: 0,
+        sectionScores: {},
+        testDate: "",
+      },
     },
   });
 
   const onSubmit = async (data: TestScoresFormValues) => {
     setIsSubmitting(true);
     try {
+      // Ensure we have either TOEFL or IELTS
+      if (!data.selectedTests.some(test => test === "TOEFL" || test === "IELTS")) {
+        form.setError("selectedTests", {
+          type: "manual",
+          message: "You must select either TOEFL or IELTS"
+        });
+        return;
+      }
+
       const testScores: TestScores = {
-        greScores: data.selectedTests.includes("GRE") ? data.greScores : undefined,
-        englishTest: (data.selectedTests.includes("TOEFL") || data.selectedTests.includes("IELTS")) 
-          ? data.englishTest 
-          : undefined,
+        greScores: data.selectedTests.includes("GRE (optional)") ? data.greScores : undefined,
+        englishTest: data.englishTest,
       };
       await onComplete(testScores);
+    } catch (error) {
+      console.error("Error saving test scores:", error);
     } finally {
       setIsSubmitting(false);
     }
@@ -84,9 +119,9 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
                 <FormItem>
                   <FormLabel>Select Test Scores to Input</FormLabel>
                   <FormControl>
-                    <div className="flex flex-col space-y-2">
+                    <div className="flex flex-wrap gap-6 items-center">
                       {["TOEFL", "IELTS", "GRE (optional)"].map((test) => (
-                        <div key={test} className="flex items-center space-x-2">
+                        <div key={test} className="flex items-center gap-2 min-w-[150px]">
                           <Checkbox
                             checked={field.value?.includes(test)}
                             onCheckedChange={(checked) => {
@@ -101,14 +136,28 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
                                 if (otherTestIndex !== -1) {
                                   newValue.splice(otherTestIndex, 1);
                                 }
+                                // Reset all form values for the English test
                                 form.setValue("englishTest.type", test);
+                                form.setValue("englishTest.overallScore", 0);
+                                form.setValue("englishTest.testDate", "");
+                                
+                                // Reset section scores
+                                const sections = test === "TOEFL" ? toeflSections : ieltsSections;
+                                sections.forEach(section => {
+                                  form.setValue(`englishTest.sectionScores.${section.toLowerCase()}`, 0);
+                                });
+
+                                // Clear all form errors
+                                form.clearErrors();
                               }
                               
                               field.onChange(newValue);
                               setSelectedTests(newValue);
                             }}
                           />
-                          <label>{test}</label>
+                          <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+                            {test}
+                          </label>
                         </div>
                       ))}
                     </div>
@@ -134,8 +183,8 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
                             min={0}
                             max={120}
                             {...field} 
-                            value={field.value?.toString() || ''} 
-                            onChange={e => field.onChange(e.target.valueAsNumber)}
+                            value={field.value === 0 ? '' : field.value?.toString() || ''} 
+                            onChange={e => field.onChange(e.target.valueAsNumber || 0)}
                           />
                         </FormControl>
                         <FormMessage />
@@ -156,8 +205,8 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
                               min={0}
                               max={30}
                               {...field} 
-                              value={field.value?.toString() || ''} 
-                              onChange={e => field.onChange(e.target.valueAsNumber)}
+                              value={field.value === 0 ? '' : field.value?.toString() || ''} 
+                              onChange={e => field.onChange(e.target.valueAsNumber || 0)}
                             />
                           </FormControl>
                           <FormMessage />
@@ -168,15 +217,23 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
                   <FormField
                     control={form.control}
                     name="englishTest.testDate"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Test Date</FormLabel>
-                        <FormControl>
-                          <Input type="date" {...field} value={field.value?.toString() || ''} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
+                    render={({ field }) => {
+                      const today = new Date().toISOString().split('T')[0];
+                      return (
+                        <FormItem>
+                          <FormLabel>Test Date</FormLabel>
+                          <FormControl>
+                            <Input 
+                              type="date" 
+                              max={today}
+                              {...field} 
+                              value={field.value?.toString() || ''} 
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      );
+                    }}
                   />
                 </div>
               )}
@@ -197,8 +254,8 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
                             max={9}
                             step={0.5}
                             {...field} 
-                            value={field.value?.toString() || ''} 
-                            onChange={e => field.onChange(e.target.valueAsNumber)}
+                            value={field.value === 0 ? '' : field.value?.toString() || ''} 
+                            onChange={e => field.onChange(e.target.valueAsNumber || 0)}
                           />
                         </FormControl>
                         <FormMessage />
@@ -220,8 +277,8 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
                               max={9}
                               step={0.5}
                               {...field} 
-                              value={field.value?.toString() || ''} 
-                              onChange={e => field.onChange(e.target.valueAsNumber)}
+                              value={field.value === 0 ? '' : field.value?.toString() || ''} 
+                              onChange={e => field.onChange(e.target.valueAsNumber || 0)}
                             />
                           </FormControl>
                           <FormMessage />
@@ -232,15 +289,23 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
                   <FormField
                     control={form.control}
                     name="englishTest.testDate"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Test Date</FormLabel>
-                        <FormControl>
-                          <Input type="date" {...field} value={field.value?.toString() || ''} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
+                    render={({ field }) => {
+                      const today = new Date().toISOString().split('T')[0];
+                      return (
+                        <FormItem>
+                          <FormLabel>Test Date</FormLabel>
+                          <FormControl>
+                            <Input 
+                              type="date" 
+                              max={today}
+                              {...field} 
+                              value={field.value?.toString() || ''} 
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      );
+                    }}
                   />
                 </div>
               )}
@@ -260,8 +325,8 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
                             min={130}
                             max={170}
                             {...field} 
-                            value={field.value?.toString() || ''} 
-                            onChange={e => field.onChange(e.target.valueAsNumber)}
+                            value={field.value === 0 ? '' : field.value?.toString() || ''} 
+                            onChange={e => field.onChange(e.target.valueAsNumber || 0)}
                           />
                         </FormControl>
                         <FormMessage />
@@ -280,8 +345,8 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
                             min={130}
                             max={170}
                             {...field} 
-                            value={field.value?.toString() || ''} 
-                            onChange={e => field.onChange(e.target.valueAsNumber)}
+                            value={field.value === 0 ? '' : field.value?.toString() || ''} 
+                            onChange={e => field.onChange(e.target.valueAsNumber || 0)}
                           />
                         </FormControl>
                         <FormMessage />
@@ -301,8 +366,8 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
                             max={6}
                             step={0.5}
                             {...field} 
-                            value={field.value?.toString() || ''} 
-                            onChange={e => field.onChange(e.target.valueAsNumber)}
+                            value={field.value === 0 ? '' : field.value?.toString() || ''} 
+                            onChange={e => field.onChange(e.target.valueAsNumber || 0)}
                           />
                         </FormControl>
                         <FormMessage />
@@ -312,26 +377,34 @@ export function TestScoresStep({ onComplete, initialData }: TestScoresStepProps)
                   <FormField
                     control={form.control}
                     name="greScores.testDate"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Test Date</FormLabel>
-                        <FormControl>
-                          <Input type="date" {...field} value={field.value?.toString() || ''} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
+                    render={({ field }) => {
+                      const today = new Date().toISOString().split('T')[0];
+                      return (
+                        <FormItem>
+                          <FormLabel>Test Date</FormLabel>
+                          <FormControl>
+                            <Input 
+                              type="date" 
+                              max={today}
+                              {...field} 
+                              value={field.value?.toString() || ''} 
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      );
+                    }}
                   />
                 </div>
               )}
             </div>
 
             <div className="flex justify-end space-x-2">
-              <Button variant="outline" type="button" onClick={() => window.history.back()}>
+              <Button variant="outline" type="button" onClick={onBack}>
                 Back
               </Button>
               <Button type="submit" disabled={isSubmitting}>
-                {isSubmitting ? "Saving..." : "Next"}
+                {isSubmitting ? "Saving..." : "Continue"}
               </Button>
             </div>
           </form>

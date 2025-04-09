@@ -45,6 +45,13 @@ export function OnboardingForm() {
 
   const [activeStep, setActiveStep] = useState<Step>(currentStep as Step);
 
+  const handleBack = () => {
+    const currentIndex = STEPS.indexOf(activeStep);
+    if (currentIndex > 0) {
+      setActiveStep(STEPS[currentIndex - 1]);
+    }
+  };
+
   const handleStepComplete = async <T extends keyof StepData>(step: T, data: StepData[T]): Promise<void> => {
     try {
       let response: { currentStep: string };
@@ -107,6 +114,7 @@ export function OnboardingForm() {
           <PersonalInfoStep
             onComplete={(data: ProfileType.PersonalInfo) => handleStepComplete("personal-info", data)}
             initialData={profile?.personalInfo}
+            onBack={handleBack}
           />
         </TabsContent>
 
@@ -114,6 +122,7 @@ export function OnboardingForm() {
           <EducationStep
             onComplete={(data: ProfileType.Education) => handleStepComplete("education", data)}
             initialData={profile?.education}
+            onBack={handleBack}
           />
         </TabsContent>
 
@@ -121,6 +130,7 @@ export function OnboardingForm() {
           <TestScoresStep
             onComplete={(data: ProfileType.TestScores) => handleStepComplete("test-scores", data)}
             initialData={profile?.testScores}
+            onBack={handleBack}
           />
         </TabsContent>
 
@@ -128,6 +138,7 @@ export function OnboardingForm() {
           <CareerGoalsStep
             onComplete={(data: ProfileType.CareerGoals) => handleStepComplete("career-goals", data)}
             initialData={profile?.careerGoals}
+            onBack={handleBack}
           />
         </TabsContent>
 

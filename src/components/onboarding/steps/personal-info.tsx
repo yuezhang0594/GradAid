@@ -58,11 +58,12 @@ const personalInfoSchema = z.object({
 type PersonalInfoForm = z.infer<typeof personalInfoSchema>;
 
 interface PersonalInfoStepProps {
-  onComplete: (data: PersonalInfo) => void;
+  onComplete: (data: PersonalInfo) => Promise<void>;
   initialData?: PersonalInfo;
+  onBack: () => void;
 }
 
-export function PersonalInfoStep({ onComplete, initialData }: PersonalInfoStepProps) {
+export function PersonalInfoStep({ onComplete, initialData, onBack }: PersonalInfoStepProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Parse initial location data
@@ -97,7 +98,7 @@ export function PersonalInfoStep({ onComplete, initialData }: PersonalInfoStepPr
   const onSubmit = async (data: PersonalInfoForm) => {
     setIsSubmitting(true);
     try {
-      onComplete(data);
+      await onComplete(data);
     } catch (error) {
       console.error("Error saving personal info:", error);
     } finally {
@@ -153,7 +154,7 @@ export function PersonalInfoStep({ onComplete, initialData }: PersonalInfoStepPr
               control={form.control}
               name="dateOfBirth"
               render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "dateOfBirth"> }) => (
-                <FormItem>
+                <FormItem className="max-w-[150px]">
                   <FormLabel>Date of Birth</FormLabel>
                   <FormControl>
                     <Input 
@@ -288,11 +289,11 @@ export function PersonalInfoStep({ onComplete, initialData }: PersonalInfoStepPr
             />
 
             <div className="flex justify-end space-x-2">
-              <Button variant="outline" type="button" onClick={() => window.history.back()}>
+              <Button variant="outline" type="button" onClick={onBack}>
                 Back
               </Button>
               <Button type="submit" disabled={isSubmitting}>
-                {isSubmitting ? "Saving..." : "Next"}
+                {isSubmitting ? "Saving..." : "Continue"}
               </Button>
             </div>
           </form>

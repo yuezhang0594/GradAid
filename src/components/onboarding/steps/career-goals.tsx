@@ -23,11 +23,12 @@ const careerGoalsSchema = z.object({
 type CareerGoalsFormValues = z.infer<typeof careerGoalsSchema>;
 
 interface CareerGoalsStepProps {
-  onComplete: (data: CareerGoals) => void;
+  onComplete: (data: CareerGoals) => Promise<void>;
   initialData?: CareerGoals;
+  onBack: () => void;
 }
 
-export function CareerGoalsStep({ onComplete, initialData }: CareerGoalsStepProps) {
+export function CareerGoalsStep({ onComplete, initialData, onBack }: CareerGoalsStepProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [researchInterests, setResearchInterests] = useState<string[]>(
     initialData?.researchInterests || []
@@ -126,7 +127,7 @@ export function CareerGoalsStep({ onComplete, initialData }: CareerGoalsStepProp
                     <FormLabel>Research Interests</FormLabel>
                     <FormControl>
                       <Textarea
-                        placeholder="Enter your research interests, separated by commas"
+                        placeholder="Enter your research interests."
                         value={researchInterests.join(", ")}
                         onChange={(e) => {
                           const interests = e.target.value
@@ -276,11 +277,11 @@ export function CareerGoalsStep({ onComplete, initialData }: CareerGoalsStepProp
             </div>
 
             <div className="flex justify-end space-x-2">
-              <Button variant="outline" type="button" onClick={() => window.history.back()}>
+              <Button variant="outline" type="button" onClick={onBack}>
                 Back
               </Button>
               <Button type="submit" disabled={isSubmitting}>
-                {isSubmitting ? "Saving..." : "Complete"}
+                {isSubmitting ? "Saving..." : "Continue"}
               </Button>
             </div>
           </form>
