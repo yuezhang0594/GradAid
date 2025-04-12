@@ -45,7 +45,7 @@ export function useApply(programId?: Id<"programs"> | null) {
     deadline: string;
     priority: "high" | "medium" | "low";
     notes?: string;
-    requirements?: Array<{
+    requirements: Array<{
       type: string;
       status: "completed" | "in_progress" | "pending" | "not_started";
     }>;

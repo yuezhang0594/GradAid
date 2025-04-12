@@ -144,23 +144,22 @@ export const createApplication = mutation({
       v.literal("low")
     ),
     notes: v.optional(v.string()),
-    requirements: v.optional(v.array(
+    requirements: v.array(
       v.object({
-        type: v.string(),
-        status: v.union(
-          v.literal("completed"),
-          v.literal("in_progress"),
-          v.literal("pending"),
-          v.literal("not_started")
+      type: v.string(),
+      status: v.union(
+        v.literal("completed"),
+        v.literal("in_progress"),
+        v.literal("pending"),
+        v.literal("not_started")
         ),
-      })
+      }
     ))
   },
-  returns: v.id("applications"),
   handler: async (ctx, args) => {
     // Get user ID from auth
     const userId = await getCurrentUserIdOrThrow(ctx);
-
+    
     // Verify the university and program exist
     const university = await ctx.db.get(args.universityId);
     if (!university) {
@@ -210,10 +209,11 @@ export const createApplication = mutation({
       userId,
       universityId: args.universityId,
       programId: args.programId,
-      status: "draft",
       deadline: args.deadline,
       priority: args.priority,
-      notes: args.notes || "",
+      notes: args.notes ?? "",
+      status: "in_progress",
+      submissionDate: undefined,
       lastUpdated: new Date().toISOString(),
       requirements: args.requirements || defaultRequirements
     });
@@ -226,9 +226,25 @@ export const createApplication = mutation({
       timestamp: new Date().toISOString(),
       metadata: {
         applicationId: applicationId,
-        newStatus: "draft"
+        newStatus: "in_progress"
       }
     });
+
+    // Create application documents for each requirement
+    const requirements = args.requirements || defaultRequirements;
+    for (const requirement of requirements) {
+      const docType = requirement.type.startsWith("lor") ? "lor" : requirement.type;
+      await ctx.db.insert("applicationDocuments", {
+        applicationId,
+        userId,
+        type: docType as DocumentType,
+        status: "draft", // Initialize as draft
+        progress: 0,
+        content: "",
+        title: `${requirement.type.toUpperCase()} - Draft`, // Keep original type in title
+        lastEdited: new Date().toISOString()
+      });
+    }
 
     return applicationId;
   }
