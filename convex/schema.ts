@@ -167,7 +167,11 @@ const schema = defineSchema({
     title: v.string(),
     type: v.union(
       v.literal("sop"),
-      v.literal("lor")
+      v.literal("lor"),
+      v.literal("research_statement"),
+      v.literal("transcript"),
+      v.literal("cv"),
+      v.literal("other")
     ),
     status: v.union(
       v.literal("draft"),
