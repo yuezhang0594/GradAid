@@ -36,7 +36,7 @@ export const saveDocumentDraft = mutation({
       .withIndex("by_application", (q) => 
         q.eq("applicationId", args.applicationId)
       )
-      .filter((q) => q.eq(q.field("type"), args.documentType as DocumentType))
+      .filter((q) => q.eq(q.field("type"), args.documentType))
       .first();
 
     if (existingDoc) {
@@ -50,13 +50,13 @@ export const saveDocumentDraft = mutation({
       // Create new document
       const docId = await ctx.db.insert("applicationDocuments", {
         applicationId: args.applicationId,
-        type: args.documentType as DocumentType,
+        type: args.documentType as "sop" | "lor",
         content: args.content,
         status: "draft" as DocumentStatus,
         progress: 0,
         lastEdited: new Date().toISOString(),
         userId,
-        title: `${args.documentType.toUpperCase()} - Draft`
+        title: `${args.documentType} - Draft`
       });
       return docId;
     }

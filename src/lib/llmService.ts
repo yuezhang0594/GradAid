@@ -1,6 +1,27 @@
 import { api } from '../../convex/_generated/api';
 import { Id } from '../../convex/_generated/dataModel';
+import { ConvexHttpClient } from 'convex/browser';
 // import { useQuery } from 'convex/react';
+
+/**
+ * Get the Convex URL from environment variables
+ * Prioritizes VITE_CONVEX_URL from .env.local
+ */
+export function getConvexUrl(): string {
+  const convexUrl = import.meta.env.VITE_CONVEX_URL || process.env.VITE_CONVEX_URL;
+  if (!convexUrl) {
+    throw new Error('VITE_CONVEX_URL environment variable is not defined');
+  }
+  return convexUrl;
+}
+
+/**
+ * Create a Convex client with the correct URL
+ */
+export function createConvexClient(): ConvexHttpClient {
+  const convexUrl = getConvexUrl();
+  return new ConvexHttpClient(convexUrl);
+}
 
 /**
  * LLMWrapper class for handling interactions with the LLM model
@@ -13,6 +34,7 @@ export class LLMWrapper {
   private userProfile: any;
   private university: any;
   private program: any;
+  private convexClient: ConvexHttpClient;
 
   constructor(
     userId: Id<"users">,
@@ -25,28 +47,29 @@ export class LLMWrapper {
     this.userProfile = null;
     this.university = null;
     this.program = null;
+    this.convexClient = createConvexClient();
   }
 
   /**
    * Fetch all necessary data from Convex
    */
-  async fetchData(convexClient: any) {
+  async fetchData() {
     try {
       // Fetch user profile data using userProfiles.queries.getProfile
       // Note: getProfile automatically uses the current user's ID from the session
       // If we need to use a specific userId in the future, we can pass it as an argument
-      this.userProfile = await convexClient.query(api.userProfiles.queries.getProfile);
+      this.userProfile = await this.convexClient.query(api.userProfiles.queries.getProfile);
       
       // Log the userId for verification
       console.log(`Fetching data for user: ${this.userId}`);
 
       // Fetch university data using programs.search.getUniversity
-      this.university = await convexClient.query(api.programs.search.getUniversity, {
+      this.university = await this.convexClient.query(api.programs.search.getUniversity, {
         universityId: this.universityId
       });
 
       // Fetch program data using programs.search.getProgram
-      this.program = await convexClient.query(api.programs.search.getProgram, {
+      this.program = await this.convexClient.query(api.programs.search.getProgram, {
         programId: this.programId
       });
 
@@ -161,7 +184,6 @@ export class LLMWrapper {
  * @returns Generated SOP and LORs
  */
 export async function generateApplicationDocuments(
-  convexClient: any,
   userId: Id<"users">,
   universityId: Id<"universities">,
   programId: Id<"programs">,
@@ -172,7 +194,7 @@ export async function generateApplicationDocuments(
     const llmWrapper = new LLMWrapper(userId, universityId, programId);
     
     // Fetch necessary data
-    await llmWrapper.fetchData(convexClient);
+    await llmWrapper.fetchData();
     
     // Generate SOP
     const sop = await llmWrapper.generateSOP();
@@ -196,14 +218,12 @@ export async function generateApplicationDocuments(
  */
 export function useGenerateDocuments() {
   return async (
-    convexClient: any,
     userId: Id<"users">,
     universityId: Id<"universities">,
     programId: Id<"programs">,
     recommenders: Array<{ name: string; email: string }>
   ) => {
     return generateApplicationDocuments(
-      convexClient,
       userId,
       universityId,
       programId,

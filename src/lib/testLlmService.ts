@@ -147,20 +147,41 @@ const mockProgram: MockProgram = {
   website: "https://cs.berkeley.edu/grad"
 };
 
-// Mock Convex client
-const mockConvexClient = {
-  query: async (apiPath: string, args?: any) => {
-    // Simulate API calls based on the path
-    if (apiPath === mockApi.userProfiles.queries.getProfile) {
-      return mockUserProfile;
-    } else if (apiPath === mockApi.programs.search.getUniversity) {
-      return mockUniversity;
-    } else if (apiPath === mockApi.programs.search.getProgram) {
-      return mockProgram;
+// Mock environment variables
+(global as any).import = {
+  meta: {
+    env: {
+      VITE_CONVEX_URL: 'https://dynamic-horse-288.convex.cloud'
     }
-    throw new Error(`Unknown API path: ${apiPath}`);
   }
 };
+
+// Mock ConvexHttpClient
+class MockConvexHttpClient {
+  query(apiPath: string, args?: any) {
+    // Simulate API calls based on the path
+    if (apiPath === mockApi.userProfiles.queries.getProfile || 
+        String(apiPath).includes('userProfiles.queries.getProfile')) {
+      return Promise.resolve(mockUserProfile);
+    } else if (apiPath === mockApi.programs.search.getUniversity || 
+               String(apiPath).includes('programs.search.getUniversity')) {
+      return Promise.resolve(mockUniversity);
+    } else if (apiPath === mockApi.programs.search.getProgram || 
+               String(apiPath).includes('programs.search.getProgram')) {
+      return Promise.resolve(mockProgram);
+    }
+    return Promise.reject(new Error(`Unknown API path: ${apiPath}`));
+  }
+}
+
+// Mock the getConvexUrl and createConvexClient functions
+function getConvexUrl(): string {
+  return 'https://dynamic-horse-288.convex.cloud';
+}
+
+function createConvexClient(): any {
+  return new MockConvexHttpClient();
+}
 
 // Mock LLMWrapper class (simplified version of the actual class)
 class LLMWrapper {
@@ -170,6 +191,7 @@ class LLMWrapper {
   private userProfile: any;
   private university: any;
   private program: any;
+  private convexClient: any;
 
   constructor(
     userId: MockId<"users">,
@@ -182,23 +204,24 @@ class LLMWrapper {
     this.userProfile = null;
     this.university = null;
     this.program = null;
+    this.convexClient = createConvexClient();
   }
 
-  async fetchData(convexClient: any) {
+  async fetchData() {
     try {
       // Fetch user profile data using userProfiles.queries.getProfile
-      this.userProfile = await convexClient.query(mockApi.userProfiles.queries.getProfile);
+      this.userProfile = await this.convexClient.query(mockApi.userProfiles.queries.getProfile);
       
       // Log the userId for verification
       console.log(`Fetching data for user: ${this.userId}`);
 
       // Fetch university data using programs.search.getUniversity
-      this.university = await convexClient.query(mockApi.programs.search.getUniversity, {
+      this.university = await this.convexClient.query(mockApi.programs.search.getUniversity, {
         universityId: this.universityId
       });
 
       // Fetch program data using programs.search.getProgram
-      this.program = await convexClient.query(mockApi.programs.search.getProgram, {
+      this.program = await this.convexClient.query(mockApi.programs.search.getProgram, {
         programId: this.programId
       });
 
@@ -260,7 +283,7 @@ async function testLlmService() {
     
     // Test fetchData method
     console.log('\nTesting fetchData method...');
-    const data = await llmWrapper.fetchData(mockConvexClient);
+    const data = await llmWrapper.fetchData();
     
     // Verify the data
     console.log('User profile:', data.userProfile ? 'Retrieved' : 'Not retrieved');

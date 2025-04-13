@@ -6,7 +6,6 @@
  */
 
 import { ConvexHttpClient } from 'convex/browser';
-import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
 
@@ -35,10 +34,10 @@ if (fs.existsSync(envLocalPath)) {
   });
 }
 
-// Create Convex client
+// Create Convex client - prioritize VITE_CONVEX_URL from .env.local
 const convexUrl = process.env.VITE_CONVEX_URL || process.env.NEXT_PUBLIC_CONVEX_URL;
 if (!convexUrl) {
-  console.error('VITE_CONVEX_URL or NEXT_PUBLIC_CONVEX_URL environment variable is not defined');
+  console.error('VITE_CONVEX_URL environment variable is not defined in .env.local');
   process.exit(1);
 }
 
