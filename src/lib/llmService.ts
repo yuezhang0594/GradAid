@@ -6,7 +6,7 @@ import { Id } from '../../convex/_generated/dataModel';
  * LLMWrapper class for handling interactions with the LLM model
  * This class fetches necessary data and generates SOPs and LORs
  */
-class LLMWrapper {
+export class LLMWrapper {
   private userId: Id<"users">;
   private universityId: Id<"universities">;
   private programId: Id<"programs">;
@@ -32,15 +32,20 @@ class LLMWrapper {
    */
   async fetchData(convexClient: any) {
     try {
-      // Fetch user profile data
+      // Fetch user profile data using userProfiles.queries.getProfile
+      // Note: getProfile automatically uses the current user's ID from the session
+      // If we need to use a specific userId in the future, we can pass it as an argument
       this.userProfile = await convexClient.query(api.userProfiles.queries.getProfile);
+      
+      // Log the userId for verification
+      console.log(`Fetching data for user: ${this.userId}`);
 
-      // Fetch university data
+      // Fetch university data using programs.search.getUniversity
       this.university = await convexClient.query(api.programs.search.getUniversity, {
         universityId: this.universityId
       });
 
-      // Fetch program data
+      // Fetch program data using programs.search.getProgram
       this.program = await convexClient.query(api.programs.search.getProgram, {
         programId: this.programId
       });
