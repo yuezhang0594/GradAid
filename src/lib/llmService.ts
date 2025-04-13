@@ -1,6 +1,6 @@
 import { api } from '../../convex/_generated/api';
 import { Id } from '../../convex/_generated/dataModel';
-import { useQuery } from 'convex/react';
+// import { useQuery } from 'convex/react';
 
 /**
  * LLMWrapper class for handling interactions with the LLM model
@@ -33,9 +33,7 @@ class LLMWrapper {
   async fetchData(convexClient: any) {
     try {
       // Fetch user profile data
-      this.userProfile = await convexClient.query(api.userProfiles.queries.getProfileById, {
-        userId: this.userId
-      });
+      this.userProfile = await convexClient.query(api.userProfiles.queries.getProfile);
 
       // Fetch university data
       this.university = await convexClient.query(api.programs.search.getUniversity, {
