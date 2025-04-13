@@ -1,7 +1,7 @@
 import { api } from '../../convex/_generated/api';
 import { Id } from '../../convex/_generated/dataModel';
 import { ConvexHttpClient } from 'convex/browser';
-// import { useQuery } from 'convex/react';
+import { useState } from 'react';
 
 /**
  * Get the Convex URL from environment variables
@@ -214,20 +214,139 @@ export async function generateApplicationDocuments(
 }
 
 /**
- * React hook to generate application documents
+ * React hook to generate Statement of Purpose
  */
-export function useGenerateDocuments() {
-  return async (
+export function useGenerateSOP() {
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<Error | null>(null);
+  const [sop, setSOP] = useState<string | null>(null);
+
+  const generateSOP = async (
+    userId: Id<"users">,
+    universityId: Id<"universities">,
+    programId: Id<"programs">
+  ) => {
+    setIsLoading(true);
+    setError(null);
+    
+    try {
+      // Create an instance of the LLMWrapper
+      const llmWrapper = new LLMWrapper(userId, universityId, programId);
+      
+      // Fetch necessary data
+      await llmWrapper.fetchData();
+      
+      // Generate SOP
+      const generatedSOP = await llmWrapper.generateSOP();
+      
+      setSOP(generatedSOP);
+      return generatedSOP;
+    } catch (err) {
+      const error = err instanceof Error ? err : new Error(String(err));
+      setError(error);
+      throw error;
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  return {
+    generateSOP,
+    isLoading,
+    error,
+    sop
+  };
+}
+
+/**
+ * React hook to generate Letters of Recommendation
+ */
+export function useGenerateLORs() {
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<Error | null>(null);
+  const [lors, setLORs] = useState<string[] | null>(null);
+
+  const generateLORs = async (
     userId: Id<"users">,
     universityId: Id<"universities">,
     programId: Id<"programs">,
     recommenders: Array<{ name: string; email: string }>
   ) => {
-    return generateApplicationDocuments(
-      userId,
-      universityId,
-      programId,
-      recommenders
-    );
+    setIsLoading(true);
+    setError(null);
+    
+    try {
+      // Create an instance of the LLMWrapper
+      const llmWrapper = new LLMWrapper(userId, universityId, programId);
+      
+      // Fetch necessary data
+      await llmWrapper.fetchData();
+      
+      // Generate LORs
+      const generatedLORs = await llmWrapper.generateLORs(recommenders);
+      
+      setLORs(generatedLORs);
+      return generatedLORs;
+    } catch (err) {
+      const error = err instanceof Error ? err : new Error(String(err));
+      setError(error);
+      throw error;
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  return {
+    generateLORs,
+    isLoading,
+    error,
+    lors
+  };
+}
+
+/**
+ * React hook to generate application documents
+ */
+export function useGenerateDocuments() {
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<Error | null>(null);
+  const [documents, setDocuments] = useState<{
+    sop: string | null;
+    lors: string[] | null;
+  }>({ sop: null, lors: null });
+
+  const generateDocuments = async (
+    userId: Id<"users">,
+    universityId: Id<"universities">,
+    programId: Id<"programs">,
+    recommenders: Array<{ name: string; email: string }>
+  ) => {
+    setIsLoading(true);
+    setError(null);
+    
+    try {
+      const result = await generateApplicationDocuments(
+        userId,
+        universityId,
+        programId,
+        recommenders
+      );
+      
+      setDocuments(result);
+      return result;
+    } catch (err) {
+      const error = err instanceof Error ? err : new Error(String(err));
+      setError(error);
+      throw error;
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  return {
+    generateDocuments,
+    isLoading,
+    error,
+    documents
   };
 }
