@@ -158,7 +158,7 @@ programs: {
     return result;
   } catch (error) {
     // Type assertion for the caught error
-    const err = error;
+    const err = error as Error;
     console.error("Test failed with error:", err.message);
     console.error("Error stack:", err.stack);
     throw error;
