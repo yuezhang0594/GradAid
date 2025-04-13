@@ -82,12 +82,12 @@ export default function ApplicationsPage() {
                 <span className="text-left">Due {new Date(app.deadline).toLocaleDateString()}</span>
                 <span className="text-right">{app.documentsComplete}/{app.totalDocuments} docs</span>
               </div>
-              <div className="w-full bg-secondary h-1.5 rounded-full">
+              {/* <div className="w-full bg-secondary h-1.5 rounded-full">
                 <div 
                   className="bg-primary h-1.5 rounded-full" 
                   style={{ width: `${app.progress}%` }}
                 />
-              </div>
+              </div> */}
             </div>
           </CardWrapper>
         ))}

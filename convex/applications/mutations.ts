@@ -6,8 +6,7 @@ import { getCurrentUserIdOrThrow, getDemoUserId } from "../users";
 
 export const saveDocumentDraft = mutation({
   args: {
-    applicationId: v.id("applications"),
-    documentType: v.string(),
+    applicationDocumentId: v.id("applicationDocuments"),
     content: v.string(),
     demoMode: v.optional(v.boolean())
   },
@@ -24,42 +23,25 @@ export const saveDocumentDraft = mutation({
       userId = "mock-user-id" as Id<"users">;
     }
 
+    // Get the document
+    const document = await ctx.db.get(args.applicationDocumentId);
+    if (!document) {
+      throw new Error("Document not found");
+    }
+
     // Get the application to verify ownership
-    const application = await ctx.db.get(args.applicationId);
+    const application = await ctx.db.get(document.applicationId);
     if (!application || application.userId !== userId) {
       throw new Error("Unauthorized: Cannot save document");
     }
 
-    // Find the existing document
-    const existingDoc = await ctx.db
-      .query("applicationDocuments")
-      .withIndex("by_application", (q) => 
-        q.eq("applicationId", args.applicationId)
-      )
-      .filter((q) => q.eq(q.field("type"), args.documentType as DocumentType))
-      .first();
+    // Update the document
+    await ctx.db.patch(args.applicationDocumentId, {
+      content: args.content,
+      lastEdited: new Date().toISOString()
+    });
 
-    if (existingDoc) {
-      // Update existing document
-      await ctx.db.patch(existingDoc._id, {
-        content: args.content,
-        lastEdited: new Date().toISOString()
-      });
-      return existingDoc._id;
-    } else {
-      // Create new document
-      const docId = await ctx.db.insert("applicationDocuments", {
-        applicationId: args.applicationId,
-        type: args.documentType as DocumentType,
-        content: args.content,
-        status: "draft" as DocumentStatus,
-        progress: 0,
-        lastEdited: new Date().toISOString(),
-        userId,
-        title: `${args.documentType.toUpperCase()} - Draft`
-      });
-      return docId;
-    }
+    return { success: true };
   }
 });
 

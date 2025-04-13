@@ -44,7 +44,9 @@ export interface DashboardData {
     progress: number;
     status: string;
     university: string;
+    program: string;
     type: string;
+    documentId: string;
     applicationId: string | undefined;
     lastEdited?: string;
     aiSuggestions?: number;
@@ -74,6 +76,8 @@ interface Document {
   progress: number;
   lastEdited?: string;
   aiSuggestions?: number;
+  documentId: string;
+  program: string;
 }
 
 interface University {
@@ -96,7 +100,7 @@ export const useDashboardData = (demoMode?: boolean): DashboardData => {
   };
 
   const applications = useQuery(api.applications.queries.getApplications, { demoMode }) ?? [];
-  const recentDocuments = useQuery(api.applications.queries.getDocumentsByUniversity, { demoMode }) ?? [];
+  const recentDocuments = useQuery(api.applications.queries.getDocumentDetails, { demoMode }) ?? [];
   
   // Get next deadline application
   const nextDeadlineApp = applications.length > 0 
@@ -177,7 +181,9 @@ export const useDashboardData = (demoMode?: boolean): DashboardData => {
       progress: doc.progress,
       status: doc.status,
       university: uni.name,
+      program: doc.program,
       type: doc.type,
+      documentId: doc.documentId,
       applicationId: uni.programs[0]?.applicationId,
       lastEdited: doc.lastEdited,
       aiSuggestions: doc.aiSuggestions,

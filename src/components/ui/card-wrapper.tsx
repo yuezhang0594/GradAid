@@ -17,6 +17,7 @@ interface CardWrapperProps {
   progress?: {
     value: number;
     label?: string;
+    hidePercentage?: boolean;
   };
   className?: string;
   children?: ReactNode;
@@ -90,7 +91,7 @@ export function CardWrapper({
                 <span className="text-muted-foreground">
                   {progress.label || "Overall Progress"}
                 </span>
-                <span>{progress.value}%</span>
+                {!progress.hidePercentage && <span>{progress.value}%</span>}
               </div>
               <Progress value={progress.value} />
             </div>

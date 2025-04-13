@@ -64,8 +64,8 @@ export const getApplications = query({
   },
 });
 
-// Query to get documents grouped by university
-export const getDocumentsByUniversity = query({
+// Query to get document details with application info
+export const getDocumentDetails = query({
   args: {
     demoMode: v.optional(v.boolean())
   },
@@ -94,65 +94,48 @@ export const getDocumentsByUniversity = query({
     for (const application of applications) {
       const university = await ctx.db.get(application.universityId);
       const program = await ctx.db.get(application.programId);
+
       if (!university || !program) continue;
 
+      // Get documents for this application
       const documents = await ctx.db
         .query("applicationDocuments")
         .withIndex("by_application", (q) => q.eq("applicationId", application._id))
         .collect();
 
-      const universityKey = university.name;
-      if (!universitiesMap.has(universityKey)) {
-        universitiesMap.set(universityKey, {
-          name: university.name,
-          programs: [{
-            name: `${program.degree} in ${program.name}`,
-            applicationId: application._id
-          }],
-          documents: new Map()
+      const universityData = universitiesMap.get(university.name) || {
+        name: university.name,
+        documents: [],
+        programs: []
+      };
+
+      // Add program if not already present
+      if (!universityData.programs.some((p: { applicationId: Id<"applications"> }) => p.applicationId === application._id)) {
+        universityData.programs.push({
+          applicationId: application._id,
+          name: `${program.degree} in ${program.name}`
         });
-      } else {
-        // Add program if it doesn't exist
-        const uniData = universitiesMap.get(universityKey);
-        if (!uniData.programs.find((p: { name: string }) => p.name === `${program.degree} in ${program.name}`)) {
-          uniData.programs.push({
-            name: `${program.degree} in ${program.name}`,
-            applicationId: application._id
-          });
-        }
       }
 
-      // Group documents by type
-      const docsByType = new Map();
+      // Add documents with their IDs
       for (const doc of documents) {
-        const docKey = `${doc.type}-${application._id}`;
-        docsByType.set(docKey, {
+        universityData.documents.push({
+          documentId: doc._id, // Include the applicationDocuments ID
           type: doc.type,
-          status: doc.status === "complete" ? "Complete" : 
-                 doc.status === "in_review" ? "In Review" : "Draft",
-          progress: doc.progress,
+          status: doc.status,
+          progress: doc.progress ?? 0,
           count: 1,
-          applicationId: application._id,
           program: `${program.degree} in ${program.name}`
         });
       }
 
-      // Merge documents into university's document map
-      const uniData = universitiesMap.get(universityKey);
-      docsByType.forEach((doc, key) => {
-        uniData.documents.set(key, doc);
-      });
+      universitiesMap.set(university.name, universityData);
     }
 
-    // Convert map to array and format documents
-    const result = Array.from(universitiesMap.values()).map(uni => ({
-      ...uni,
-      documents: Array.from(uni.documents.values())
-    }));
-
-    console.log("Universities with documents:", result);
+    const result = Array.from(universitiesMap.values());
+    console.log("Document details query output:", result);
     return result;
-  }
+  },
 });
 
 // Query to get application details, documents, and LORs for a specific university
@@ -243,8 +226,7 @@ export const getUniversityByName = query({
 // Query to get document by ID
 export const getDocumentById = query({
   args: {
-    applicationId: v.id("applications"),
-    documentType: v.string(),
+    applicationDocumentId: v.id("applicationDocuments"),
     demoMode: v.optional(v.boolean())
   },
   handler: async (ctx, args) => {
@@ -260,48 +242,21 @@ export const getDocumentById = query({
     }
     console.log("Getting document for:", { userId, ...args });
 
-    // Get the application to verify ownership
-    const application = await ctx.db.get(args.applicationId);
-    console.log("Found application:", application);
-    if (!application || application.userId !== userId) {
-      console.log("Application not found or unauthorized");
-      return null;
-    }
-
-    // Get university and program info
-    const university = await ctx.db.get(application.universityId);
-    const program = await ctx.db.get(application.programId);
-    console.log("Found university and program:", { university, program });
-    if (!university || !program) {
-      console.log("University or program not found");
-      return null;
-    }
-
-    // Get the document
-    const document = await ctx.db
-      .query("applicationDocuments")
-      .withIndex("by_application", (q) => 
-        q.eq("applicationId", args.applicationId)
-      )
-      .filter((q) => q.eq(q.field("type"), args.documentType))
-      .first();
+    // Get the document to verify ownership
+    const document = await ctx.db.get(args.applicationDocumentId);
     console.log("Found document:", document);
-
     if (!document) {
       console.log("Document not found");
       return null;
     }
 
-    const result = {
-      type: document.type,
-      university: university.name,
-      program: `${program.degree} in ${program.name}`,
-      lastEdited: document.lastEdited,
-      status: document.status,
-      content: document.content ?? "",
-      aiSuggestionsCount: document.aiSuggestionsCount ?? 0,
-    };
-    console.log("Returning document data:", result);
-    return result;
+    // Get the application to verify ownership
+    const application = await ctx.db.get(document.applicationId);
+    if (!application || application.userId !== userId) {
+      console.log("Application not found or unauthorized");
+      return null;
+    }
+
+    return document;
   }
 });

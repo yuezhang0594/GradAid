@@ -37,8 +37,7 @@ export default function Dashboard() {
 
   const handleDocumentClick = (doc: any) => {
     const state = {
-      applicationId: doc.applicationId as Id<"applications">,
-      documentType: doc.type.toLowerCase(),
+      applicationDocumentId: doc.documentId as Id<"applicationDocuments">,
       demoMode
     };
     setDocumentEditor(state);
@@ -104,20 +103,10 @@ export default function Dashboard() {
               <CardHeader>
                 <div className="flex justify-between items-center">
                   <CardTitle className="text-sm">{document.title}</CardTitle>
-                  {document.aiSuggestions && (
-                    <Badge variant="secondary" className="ml-2">
-                      <SparklesIcon className="h-3 w-3 mr-1" />
-                      {document.aiSuggestions} suggestions
-                    </Badge>
-                  )}
                 </div>
-                <CardDescription className="flex items-center">
-                  <span className="truncate max-w-[200px] text-xs text-muted-foreground">{document.university}</span>
-                  {document.lastEdited && (
-                    <span className="text-xs text-muted-foreground ml-2 whitespace-nowrap">
-                      · Edited {document.lastEdited}
-                    </span>
-                  )}
+                <CardDescription className="flex flex-col space-y-1 text-left">
+                  <span className="truncate max-w-[200px] text-xs text-muted-foreground text-left">{document.university}</span>
+                  <span className="truncate max-w-[200px] text-xs text-muted-foreground text-left">{document.program}</span>
                 </CardDescription>
               </CardHeader>
               <CardContent className="pt-8">

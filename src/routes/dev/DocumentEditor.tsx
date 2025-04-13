@@ -43,23 +43,36 @@ export default function DocumentEditor() {
   const navigate = useNavigate();
   const editorState = useAtomValue(documentEditorAtom);
   
-  const document = editorState.applicationId ? useQuery(api.applications.queries.getDocumentById, {
-    applicationId: editorState.applicationId,
-    documentType: editorState.documentType ?? "",
+  const document = editorState.applicationDocumentId ? useQuery(api.applications.queries.getDocumentById, {
+    applicationDocumentId: editorState.applicationDocumentId,
     demoMode: editorState.demoMode
   }) : null;
   console.log("Document:", document);
   console.log("Editor State:", editorState);
+
+  if (!editorState.applicationDocumentId) {
+    return (
+      <div className="flex items-center justify-center h-[calc(100vh-4rem)]">
+        <div className="text-center space-y-4">
+          <h2 className="text-xl font-semibold">Please configure application documents first</h2>
+          <Button variant="outline" onClick={() => navigate(-1)}>Go Back</Button>
+        </div>
+      </div>
+    );
+  }
 
   const formatDocumentType = (type: string) => {
     if (!type) return "Document";
     
     const lowerType = type.toLowerCase();
     if (lowerType === "sop") {
-      return "SOP";
+      return "Statement of Purpose";
     }
     if (lowerType === "cv") {
-      return "CV";
+      return "Curriculum Vitae";
+    }
+    if (lowerType === "lor") {
+      return "Letter of Recommendation";
     }
 
     // Replace underscores and hyphens with spaces
@@ -104,36 +117,32 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
   const saveDocument = useMutation(api.applications.mutations.saveDocumentDraft);
 
   const handleSave = useCallback(async () => {
-    if (!editorState.applicationId || !editorState.documentType) {
+    if (!editorState.applicationDocumentId) {
       console.error("Missing required state for saving:", editorState);
       return;
     }
-
     setIsSaving(true);
     try {
       await saveDocument({
-        applicationId: editorState.applicationId,
-        documentType: editorState.documentType,
+        applicationDocumentId: editorState.applicationDocumentId,
         content,
         demoMode: editorState.demoMode
       });
       toast({
-        title: "Document saved",
-        description: "Your changes have been saved successfully.",
-        duration: 3000
+        title: "Document saved successfully!",
+        variant: "default",
       });
     } catch (error) {
       console.error("Error saving document:", error);
       toast({
         title: "Error saving document",
-        description: "There was a problem saving your changes. Please try again.",
+        description: "Please try again later",
         variant: "destructive",
-        duration: 5000
       });
     } finally {
       setIsSaving(false);
     }
-  }, [editorState, content, saveDocument, toast]);
+  }, [content, editorState, saveDocument]);
 
   // Mock AI feedback and versions until we implement those features
   const mockData = {
@@ -157,7 +166,7 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
       description={
         <>
           <p className="text-muted-foreground mb-4">
-            {document ? `${document.university} - ${document.program}` : "Loading..."}
+            {document ? formatDocumentType(document.type) : "Loading..."}
           </p>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">

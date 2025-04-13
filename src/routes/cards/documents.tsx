@@ -10,12 +10,10 @@ import { Id } from "../../../convex/_generated/dataModel";
 import { atom, useSetAtom } from "jotai";
 
 export const documentEditorAtom = atom<{
-  applicationId: Id<"applications"> | null;
-  documentType: string | null;
+  applicationDocumentId: Id<"applicationDocuments"> | null;
   demoMode: boolean;
 }>({
-  applicationId: null,
-  documentType: null,
+  applicationDocumentId: null,
   demoMode: false
 });
 
@@ -30,6 +28,7 @@ interface Document {
   progress: number;
   count: number;
   program: string;
+  documentId: Id<"applicationDocuments">;
 }
 
 interface Card {
@@ -41,13 +40,14 @@ interface Card {
     status: string;
     progress: number;
     count: number;
+    documentId: Id<"applicationDocuments">;
   }>;
 }
 
 // Helper function to format text
 function formatText(text: string) {
   // Special cases for acronyms
-  const upperCaseTypes = ['sop', 'cv'];
+  const upperCaseTypes = ['sop', 'cv', 'lor'];
   if (upperCaseTypes.includes(text.toLowerCase())) {
     return text.toUpperCase();
   }
@@ -62,11 +62,11 @@ function formatText(text: string) {
 export default function DocumentsPage() {
   const navigate = useNavigate();
   const [demoMode, setDemoMode] = useState(false);
-  const universities = useQuery(api.applications.queries.getDocumentsByUniversity, { demoMode }) ?? [];
+  const documents = useQuery(api.applications.queries.getDocumentDetails, { demoMode }) ?? [];
   const setDocumentEditor = useSetAtom(documentEditorAtom);
 
   // Transform data to create separate cards for multiple programs
-  const cards = universities.flatMap((uni) => {
+  const cards = documents.flatMap((uni: { name: string, programs: Program[], documents: Document[] }) => {
     return uni.programs.map((program: Program) => ({
       name: uni.name,
       program: program.name,
@@ -76,26 +76,22 @@ export default function DocumentsPage() {
         .map((doc: Document) => ({
           type: doc.type,
           status: doc.status,
-          progress: doc.progress,
-          count: doc.count
+          progress: doc.status.toLowerCase() === "complete" ? 100 : doc.progress ?? 0,
+          count: doc.count,
+          documentId: doc.documentId
         }))
     }));
   });
 
-  const handleDocumentClick = (card: Card, documentType: string) => {
-    console.log("Handling document click:", { card, documentType });
-    if (card.applicationId) {
-      const state = {
-        applicationId: card.applicationId,
-        documentType: documentType.toLowerCase(),
-        demoMode
-      };
-      console.log("Setting editor state:", state);
-      setDocumentEditor(state);
-      navigate(`/applications/${encodeURIComponent(card.name)}/documents/${documentType.toLowerCase()}`);
-    } else {
-      console.error("No applicationId found for card:", card);
-    }
+  const handleDocumentClick = (documentId: Id<"applicationDocuments"> | null, universityName: string, documentType: string) => {
+    console.log("Handling document click:", { documentId, universityName, documentType });
+    const state = {
+      applicationDocumentId: documentId,
+      demoMode
+    };
+    console.log("Setting editor state:", state);
+    setDocumentEditor(state);
+    navigate(`/applications/${encodeURIComponent(universityName)}/documents/${documentType.toLowerCase()}`);
   };
 
   return (
@@ -130,23 +126,25 @@ export default function DocumentsPage() {
                     count: doc.count,
                     variant: doc.status === "Complete" ? "default" :
                             doc.status === "In Review" ? "secondary" : "outline",
-                    onClick: () => handleDocumentClick(card, doc.type)
+                    onClick: () => handleDocumentClick(doc.documentId, card.name, doc.type)
                   }))
                 : [{
                     text: "Start Generate Doc",
                     variant: "secondary",
-                    onClick: () => handleDocumentClick(card, "new")
+                    onClick: () => handleDocumentClick(null, card.name, "new")
                   }]
             }
             progress={
               card.documents.length > 0 
                 ? {
-                    value: Math.round(card.documents.reduce((acc: number, doc) => acc + doc.progress, 0) / card.documents.length),
-                    label: "Overall Progress"
+                    value: Math.round((card.documents.filter(doc => doc.status.toLowerCase() === "complete").length / card.documents.length) * 100),
+                    label: `${card.documents.filter(doc => doc.status.toLowerCase() === "complete").length}/${card.documents.length} Documents Complete`,
+                    hidePercentage: true
                   }
                 : {
                     value: 0,
-                    label: "Overall Progress"
+                    label: "No Documents",
+                    hidePercentage: true
                   }
             }
           />
