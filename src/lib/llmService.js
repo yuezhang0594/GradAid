@@ -4,7 +4,7 @@ import { api } from '../../convex/_generated/api';
  * LLMWrapper class for handling interactions with the LLM model
  * This class fetches necessary data and generates SOPs and LORs
  */
-class LLMWrapper {
+export class LLMWrapper {
     constructor(userId, universityId, programId) {
         this.userId = userId;
         this.universityId = universityId;

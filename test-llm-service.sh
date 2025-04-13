@@ -12,12 +12,12 @@ if ! npm list dotenv &>/dev/null; then
   npm install dotenv @types/dotenv
 fi
 
-# Compile TypeScript with proper module settings for ES modules
+# Compile TypeScript with proper module settings for CommonJS to avoid ES module issues
 echo "Compiling TypeScript..."
-npx tsc --esModuleInterop --module ES2020 --moduleResolution node --target ES2020 src/lib/testLlmService.ts
+npx tsc --esModuleInterop --module CommonJS --moduleResolution node --target ES2020 src/lib/testLlmService.ts
 
-# Run the test with proper ES module settings
+# Run the test
 echo "Running test..."
-node --experimental-modules src/lib/testLlmService.js
+node src/lib/testLlmService.js
 
 echo "Test completed."

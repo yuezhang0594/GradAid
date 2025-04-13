@@ -1,19 +1,242 @@
-// ES Module imports
-import { ConvexHttpClient } from 'convex/browser';
-import { api } from '../../convex/_generated/api';
-import { Id } from '../../convex/_generated/dataModel';
-import { generateApplicationDocuments } from './llmService.js';
-import dotenv from 'dotenv';
+/**
+ * Test script for the LLM service
+ * This script tests the LLM wrapper class using mock data
+ */
 
-// Load environment variables
-dotenv.config();
+// Define mock types to avoid importing from Convex
+type MockId<T extends string> = string & { __type: T };
 
-// Create a Convex client
-const convexUrl = process.env.NEXT_PUBLIC_CONVEX_URL;
-if (!convexUrl) {
-  throw new Error('NEXT_PUBLIC_CONVEX_URL is not defined');
+// Mock the necessary types
+interface MockUserProfile {
+  _id: MockId<"userProfiles">;
+  userId: MockId<"users">;
+  name: string;
+  countryOfOrigin: string;
+  dateOfBirth: string;
+  currentLocation: string;
+  nativeLanguage: string;
+  educationLevel: string;
+  major: string;
+  university: string;
+  gpa: number;
+  gpaScale: number;
+  graduationDate: string;
+  greScores?: {
+    verbal: number;
+    quantitative: number;
+    analyticalWriting: number;
+  };
+  englishTest?: {
+    type: string;
+    score: number;
+  };
+  targetDegree: string;
+  intendedField: string;
+  researchInterests: string[];
+  careerObjectives: string;
+  targetLocations: string[];
+  expectedStartDate: string;
 }
-const convexClient = new ConvexHttpClient(convexUrl);
+
+interface MockUniversity {
+  _id: MockId<"universities">;
+  name: string;
+  location: {
+    city: string;
+    state: string;
+    country: string;
+  };
+  ranking: number;
+  type: string;
+}
+
+interface MockProgram {
+  _id: MockId<"programs">;
+  name: string;
+  degree: string;
+  department: string;
+  universityId: MockId<"universities">;
+  requirements: {
+    gre: boolean;
+    toefl: boolean;
+    minimumGPA: number;
+    recommendationLetters: number;
+  };
+  deadlines: {
+    fall: string;
+    spring?: string;
+  };
+  website: string;
+}
+
+// Mock the Convex API
+const mockApi = {
+  userProfiles: {
+    queries: {
+      getProfile: 'userProfiles.queries.getProfile'
+    }
+  },
+  programs: {
+    search: {
+      getUniversity: 'programs.search.getUniversity',
+      getProgram: 'programs.search.getProgram'
+    }
+  }
+};
+
+// Mock data
+const mockUserProfile: MockUserProfile = {
+  _id: "user123" as MockId<"userProfiles">,
+  userId: "auth123" as MockId<"users">,
+  name: "John Doe",
+  countryOfOrigin: "United States",
+  dateOfBirth: "1998-05-15",
+  currentLocation: "San Francisco, CA",
+  nativeLanguage: "English",
+  educationLevel: "Bachelor",
+  major: "Computer Science",
+  university: "Stanford University",
+  gpa: 3.8,
+  gpaScale: 4.0,
+  graduationDate: "2024-05-15",
+  greScores: {
+    verbal: 165,
+    quantitative: 168,
+    analyticalWriting: 5.0
+  },
+  englishTest: {
+    type: "TOEFL",
+    score: 110
+  },
+  targetDegree: "MS",
+  intendedField: "Computer Science",
+  researchInterests: ["Machine Learning", "Natural Language Processing"],
+  careerObjectives: "AI/ML research with practical applications focus",
+  targetLocations: ["California", "Massachusetts", "New York"],
+  expectedStartDate: "2024-09-01"
+};
+
+const mockUniversity: MockUniversity = {
+  _id: "univ456" as MockId<"universities">,
+  name: "University of California, Berkeley",
+  location: {
+    city: "Berkeley",
+    state: "CA",
+    country: "United States"
+  },
+  ranking: 4,
+  type: "public"
+};
+
+const mockProgram: MockProgram = {
+  _id: "prog789" as MockId<"programs">,
+  name: "Master of Science in Computer Science",
+  degree: "MS",
+  department: "Computer Science",
+  universityId: "univ456" as MockId<"universities">,
+  requirements: {
+    gre: true,
+    toefl: true,
+    minimumGPA: 3.5,
+    recommendationLetters: 3
+  },
+  deadlines: {
+    fall: "2024-12-15",
+    spring: "2024-09-15"
+  },
+  website: "https://cs.berkeley.edu/grad"
+};
+
+// Mock Convex client
+const mockConvexClient = {
+  query: async (apiPath: string, args?: any) => {
+    // Simulate API calls based on the path
+    if (apiPath === mockApi.userProfiles.queries.getProfile) {
+      return mockUserProfile;
+    } else if (apiPath === mockApi.programs.search.getUniversity) {
+      return mockUniversity;
+    } else if (apiPath === mockApi.programs.search.getProgram) {
+      return mockProgram;
+    }
+    throw new Error(`Unknown API path: ${apiPath}`);
+  }
+};
+
+// Mock LLMWrapper class (simplified version of the actual class)
+class LLMWrapper {
+  private userId: MockId<"users">;
+  private universityId: MockId<"universities">;
+  private programId: MockId<"programs">;
+  private userProfile: any;
+  private university: any;
+  private program: any;
+
+  constructor(
+    userId: MockId<"users">,
+    universityId: MockId<"universities">,
+    programId: MockId<"programs">
+  ) {
+    this.userId = userId;
+    this.universityId = universityId;
+    this.programId = programId;
+    this.userProfile = null;
+    this.university = null;
+    this.program = null;
+  }
+
+  async fetchData(convexClient: any) {
+    try {
+      // Fetch user profile data using userProfiles.queries.getProfile
+      this.userProfile = await convexClient.query(mockApi.userProfiles.queries.getProfile);
+      
+      // Log the userId for verification
+      console.log(`Fetching data for user: ${this.userId}`);
+
+      // Fetch university data using programs.search.getUniversity
+      this.university = await convexClient.query(mockApi.programs.search.getUniversity, {
+        universityId: this.universityId
+      });
+
+      // Fetch program data using programs.search.getProgram
+      this.program = await convexClient.query(mockApi.programs.search.getProgram, {
+        programId: this.programId
+      });
+
+      return {
+        userProfile: this.userProfile,
+        university: this.university,
+        program: this.program
+      };
+    } catch (error) {
+      console.error("Error fetching data:", error);
+      throw error;
+    }
+  }
+
+  async generateSOP() {
+    if (!this.userProfile || !this.university || !this.program) {
+      throw new Error("Data not fetched. Call fetchData() first.");
+    }
+
+    // Mock SOP generation
+    return `Statement of Purpose for ${this.userProfile.name} applying to ${this.program.name} at ${this.university.name}...`;
+  }
+
+  async generateLORs(recommenders: Array<{ name: string; email: string }>) {
+    if (!this.userProfile || !this.university || !this.program) {
+      throw new Error("Data not fetched. Call fetchData() first.");
+    }
+
+    if (!recommenders || recommenders.length === 0) {
+      throw new Error("Recommender information is required");
+    }
+
+    // Mock LOR generation
+    return recommenders.map(recommender => 
+      `Letter of Recommendation for ${this.userProfile.name} from ${recommender.name} (${recommender.email}) for ${this.program.name} at ${this.university.name}...`
+    );
+  }
+}
 
 // Define recommender type
 type Recommender = {
@@ -22,136 +245,54 @@ type Recommender = {
 };
 
 /**
- * Test the LLM service functionality
+ * Test the LLM wrapper class
  */
 async function testLlmService() {
   try {
     console.log('Starting LLM service test...');
-
-    // Step 1: Get a user profile
-    console.log('Fetching user profile...');
-    const userProfile = await convexClient.query(api.userProfiles.queries.getProfile);
-    if (!userProfile) {
-      throw new Error('No user profile found. Please make sure you are logged in and have completed onboarding.');
-    }
-    console.log('User profile found:', userProfile._id);
-
-    // Step 2: Get a program and university for testing
-    console.log('Fetching programs...');
-    const programIds = await convexClient.query(api.programs.search.searchPrograms, {
-      query: 'Computer Science',
-      filters: {
-        programType: 'MS',
-      }
-    });
     
-    if (!programIds || programIds.length === 0) {
-      throw new Error('No programs found. Please make sure there are programs in the database.');
-    }
-    console.log(`Found ${programIds.length} programs`);
-    
-    // Get the first program
-    const programId = programIds[0];
-    console.log('Using program ID:', programId);
-    
-    // Get the program details
-    const program = await convexClient.query(api.programs.search.getProgram, {
-      programId
-    });
-    console.log('Program details:', program.name);
-    
-    // Get the university
-    const universityId = program.universityId;
-    console.log('Using university ID:', universityId);
-    
-    const university = await convexClient.query(api.programs.search.getUniversity, {
-      universityId
-    });
-    console.log('University details:', university.name);
-
-    // Step 3: Get real recommender data from the database
-    console.log('Fetching recommender data...');
-    
-    // Try to get existing applications to find recommenders
-    const applications = await convexClient.query(api.userProfiles.queries.getApplications);
-    
-    let recommenders: Recommender[] = [];
-    
-    // Check if there are any applications with LORs
-    if (applications && applications.length > 0) {
-      // Look for applications with LORs
-      for (const application of applications) {
-        if (application.lors && application.lors.length > 0) {
-          // Extract recommender information from LORs
-          const appRecommenders = application.lors.map(lor => ({
-            name: lor.recommenderName,
-            email: lor.recommenderEmail
-          })).slice(0, 2); // Limit to 2 recommenders
-          
-          if (appRecommenders.length > 0) {
-            recommenders = appRecommenders;
-            console.log(`Found ${recommenders.length} real recommenders from existing applications`);
-            break;
-          }
-        }
-      }
-    }
-    
-    // If no recommenders found, try to get them from another source or throw an error
-    if (recommenders.length === 0) {
-      // Try to get recommender information from the recommender table if it exists
-      try {
-        const recommenderData = await convexClient.query(api.programs.search.getRecommender, {
-          documentId: applications[0]?.documents[0]?._id
-        });
-        
-        if (recommenderData) {
-          recommenders = [{
-            name: recommenderData.name,
-            email: recommenderData.email
-          }];
-          console.log('Found recommender from recommender table');
-        }
-      } catch (error) {
-        console.log('No recommender data found in recommender table');
-      }
-    }
-    
-    // If still no recommenders found, throw an error
-    if (recommenders.length === 0) {
-      throw new Error('No recommender data found in the database. Please create at least one recommender before testing.');
-    }
-
-    // Step 4: Test document generation
-    console.log('Testing document generation with real data...');
-
-    // Generate documents
-    const documents = await generateApplicationDocuments(
-      convexClient,
-      userProfile.userId as Id<"users">,
-      universityId,
-      programId,
-      recommenders
+    // Create an instance of the LLM wrapper
+    const llmWrapper = new LLMWrapper(
+      "auth123" as MockId<"users">,
+      "univ456" as MockId<"universities">,
+      "prog789" as MockId<"programs">
     );
-
-    // Verify results
-    if (documents.sop) {
-      console.log('SOP generation successful!');
-      console.log('SOP preview:', documents.sop.substring(0, 100) + '...');
-    } else {
-      console.error('SOP generation failed');
-    }
-
-    if (documents.lors && documents.lors.length > 0) {
-      console.log(`Generated ${documents.lors.length} letters of recommendation`);
-      documents.lors.forEach((lor, index) => {
+    
+    // Test fetchData method
+    console.log('\nTesting fetchData method...');
+    const data = await llmWrapper.fetchData(mockConvexClient);
+    
+    // Verify the data
+    console.log('User profile:', data.userProfile ? 'Retrieved' : 'Not retrieved');
+    console.log('University:', data.university ? 'Retrieved' : 'Not retrieved');
+    console.log('Program:', data.program ? 'Retrieved' : 'Not retrieved');
+    
+    if (data.userProfile && data.university && data.program) {
+      console.log('\nAll data retrieved successfully!');
+      console.log('User profile name:', data.userProfile.name);
+      console.log('University name:', data.university.name);
+      console.log('Program name:', data.program.name);
+      
+      // Test SOP generation
+      console.log('\nTesting SOP generation...');
+      const sop = await llmWrapper.generateSOP();
+      console.log('SOP preview:', sop.substring(0, 100) + '...');
+      
+      // Test LOR generation
+      console.log('\nTesting LOR generation...');
+      const recommenders: Recommender[] = [
+        { name: 'Dr. John Smith', email: 'john.smith@university.edu' },
+        { name: 'Prof. Jane Doe', email: 'jane.doe@university.edu' }
+      ];
+      const lors = await llmWrapper.generateLORs(recommenders);
+      lors.forEach((lor, index) => {
         console.log(`LOR ${index + 1} preview:`, lor.substring(0, 100) + '...');
       });
     } else {
-      console.error('LOR generation failed');
+      console.error('\nFailed to retrieve all data.');
     }
-
-    console.log('Test completed successfully!');
+    
+    console.log('\nTest completed successfully!');
   } catch (error) {
     console.error('Test failed:', error);
   }

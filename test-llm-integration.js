@@ -46,72 +46,63 @@ console.log('Using Convex URL:', convexUrl);
 const convexClient = new ConvexHttpClient(convexUrl);
 
 /**
- * Test Convex integration
+ * Test Convex integration using direct function names instead of references
  */
 async function testConvexIntegration() {
   console.log('Starting Convex integration test...');
   
   try {
     // Test fetching user profile
-    console.log('\nTesting userProfiles.queries.getProfile...');
+    console.log('\nTesting userProfiles/queries:getProfile...');
     try {
-      const userProfile = await convexClient.query({ path: 'userProfiles/queries:getProfile' });
-      console.log('User profile fetch ' + (userProfile ? 'successful' : 'failed'));
-      if (userProfile) {
-        console.log('User profile ID: ' + userProfile._id);
-      }
+      // Use the direct function name format that Convex expects
+      const result = await convexClient.query("userProfiles/queries:getProfile");
+      console.log('User profile fetch result:', result ? 'Success' : 'Failed');
     } catch (error) {
-      console.error('Error fetching user profile:', error);
+      console.error('Error fetching user profile:', error.message);
     }
     
     // Test program search
     console.log('\nTesting programs/search:searchPrograms...');
     try {
-      const programIds = await convexClient.query({ 
-        path: 'programs/search:searchPrograms',
-        args: {
-          query: 'Computer Science',
-          filters: {
-            programType: 'MS'
-          }
+      // Use the direct function name format that Convex expects
+      const result = await convexClient.query("programs/search:searchPrograms", {
+        query: 'Computer Science',
+        filters: {
+          programType: 'MS'
         }
       });
       
-      console.log('Program search ' + (programIds && programIds.length > 0 ? 'successful' : 'failed'));
-      if (programIds && programIds.length > 0) {
-        console.log(`Found ${programIds.length} programs`);
+      console.log('Program search result:', result ? 'Success' : 'Failed');
+      
+      if (result && result.length > 0) {
+        console.log(`Found ${result.length} programs`);
         
         // Test fetching program
         console.log('\nTesting programs/search:getProgram...');
-        const programId = programIds[0];
-        const program = await convexClient.query({
-          path: 'programs/search:getProgram',
-          args: { programId }
+        const programId = result[0];
+        const program = await convexClient.query("programs/search:getProgram", {
+          programId
         });
         
-        console.log('Program fetch ' + (program ? 'successful' : 'failed'));
-        if (program) {
-          console.log('Program name: ' + program.name);
-          
+        console.log('Program fetch result:', program ? 'Success' : 'Failed');
+        
+        if (program && program.universityId) {
           // Test fetching university
           console.log('\nTesting programs/search:getUniversity...');
           const universityId = program.universityId;
-          const university = await convexClient.query({
-            path: 'programs/search:getUniversity',
-            args: { universityId }
+          const university = await convexClient.query("programs/search:getUniversity", {
+            universityId
           });
           
-          console.log('University fetch ' + (university ? 'successful' : 'failed'));
-          if (university) {
-            console.log('University name: ' + university.name);
-          }
+          console.log('University fetch result:', university ? 'Success' : 'Failed');
         }
       }
     } catch (error) {
-      console.error('Error with program/university tests:', error);
+      console.error('Error with program/university tests:', error.message);
     }
     
-    console.log('\nTest completed successfully!');
+    console.log('\nTest completed!');
   } catch (error) {
     console.error('Test failed:', error);
   }
