@@ -1,11 +1,9 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
 import { Id } from "../../convex/_generated/dataModel";
 
 export function useProgram() {
-  const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
   
   // Fetch universities for dropdown
@@ -40,9 +38,6 @@ export function useProgram() {
     
     try {
       const programId = await createProgram(data);
-      
-      // Show success message or redirect
-      navigate("/programs");
       return programId;
     } catch (error) {
       console.error("Error creating program:", error);

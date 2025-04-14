@@ -44,7 +44,7 @@ const formSchema = z.object({
     degree: z.string({
         required_error: "Please select a degree type",
     }),
-    customDegree: z.string().min(1, "Custom degree must be provided").optional(),
+    customDegree: z.string().min(1, "New degree must be provided").optional(),
     department: z.string().min(2, "Department name must be at least 2 characters"),
     website: z.string().url("Please enter a valid URL").optional(),
     // Requirements
@@ -186,7 +186,7 @@ const AddProgramForm = ({ trigger, open: controlledOpen, onOpenChange }: AddProg
 
     const customDegreeField: FieldDefinition = {
         name: "customDegree",
-        label: "Custom Degree",
+        label: "New Degree",
         description: "Enter the title of the degree. MS, PhD, etc.",
         renderField: (field) => (
             <FormControl>
@@ -350,21 +350,11 @@ const AddProgramForm = ({ trigger, open: controlledOpen, onOpenChange }: AddProg
     );
 
     const onSubmit = async (data: FormValues) => {
-        try {
-            let degreeValue = data.degree;
-            
-            // If "Other" is selected, combine code and name in a structured format
-            if (data.degree === "Other" && data.customDegree) {
-                // Store as an object to preserve both values separately
-                degreeValue = JSON.stringify({
-                    code: data.customDegree
-                });
-            }
-            
+        try {            
             const programId = await createProgram({
                 universityId: data.universityId as any, // Type assertion to match Id<"universities">
                 name: data.name,
-                degree: degreeValue,
+                degree: data.degree === "Other" && data.customDegree ? data.customDegree : data.degree,
                 department: data.department,
                 requirements: {
                     minimumGPA: data.minimumGPA,
