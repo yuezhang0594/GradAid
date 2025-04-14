@@ -1,0 +1,950 @@
+2025-04-11 14:59:49,573 - INFO - Loaded 700 proxies from /Users/jirissman/Documents/GradAid/webscraping/data/proxies_list.txt
+2025-04-11 14:59:49,573 - INFO - Processing Princeton University (waiting 1.22s)
+2025-04-11 14:59:50,796 - INFO - Using specialized US News handler for Princeton University
+2025-04-11 14:59:50,796 - INFO - Accessing US News data for Princeton University with protective measures
+2025-04-11 14:59:50,796 - INFO - Accessing US News with proxy http://103.216.50.2:8080 for Princeton University (attempt 1)
+2025-04-11 14:59:50,796 - INFO - Waiting 2.76s before US News request
+2025-04-11 14:59:54,147 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'BadStatusLine('<html>\r\n')': /best-colleges/princeton-university-2627
+2025-04-11 14:59:55,787 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'BadStatusLine('<html>\r\n')': /best-colleges/princeton-university-2627
+2025-04-11 14:59:58,341 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'BadStatusLine('<html>\r\n')': /best-colleges/princeton-university-2627
+2025-04-11 14:59:58,899 - WARNING - Error accessing US News with proxy http://103.216.50.2:8080 for Princeton University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/princeton-university-2627 (Caused by ProtocolError('Connection aborted.', BadStatusLine('<html>\r\n')))
+2025-04-11 15:00:00,586 - INFO - Accessing US News with proxy http://103.169.139.13:8081 for Princeton University (attempt 2)
+2025-04-11 15:00:00,586 - INFO - Waiting 3.87s before US News request
+2025-04-11 15:00:11,964 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x106684190>, 'Connection to 103.169.139.13 timed out. (connect timeout=7.5)')': /best-colleges/princeton-university-2627
+2025-04-11 15:00:20,469 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1066842d0>, 'Connection to 103.169.139.13 timed out. (connect timeout=7.5)')': /best-colleges/princeton-university-2627
+2025-04-11 15:00:29,977 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x106684410>, 'Connection to 103.169.139.13 timed out. (connect timeout=7.5)')': /best-colleges/princeton-university-2627
+2025-04-11 15:00:37,480 - WARNING - Error accessing US News with proxy http://103.169.139.13:8081 for Princeton University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/princeton-university-2627 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x106684550>, 'Connection to 103.169.139.13 timed out. (connect timeout=7.5)')))
+2025-04-11 15:00:38,777 - INFO - Accessing US News with proxy http://52.221.180.97:8080 for Princeton University (attempt 3)
+2025-04-11 15:00:38,778 - INFO - Waiting 3.71s before US News request
+2025-04-11 15:00:49,999 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x106684e10>, 'Connection to 52.221.180.97 timed out. (connect timeout=7.5)')': /best-colleges/princeton-university-2627
+2025-04-11 15:00:58,505 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x106684f50>, 'Connection to 52.221.180.97 timed out. (connect timeout=7.5)')': /best-colleges/princeton-university-2627
+2025-04-11 15:01:08,010 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x106685090>, 'Connection to 52.221.180.97 timed out. (connect timeout=7.5)')': /best-colleges/princeton-university-2627
+2025-04-11 15:01:15,514 - WARNING - Error accessing US News with proxy http://52.221.180.97:8080 for Princeton University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/princeton-university-2627 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1066851d0>, 'Connection to 52.221.180.97 timed out. (connect timeout=7.5)')))
+2025-04-11 15:01:16,563 - INFO - Accessing US News with proxy http://36.67.194.162:8042 for Princeton University (attempt 4)
+2025-04-11 15:01:16,563 - INFO - Waiting 3.01s before US News request
+2025-04-11 15:01:27,080 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x106685450>, 'Connection to 36.67.194.162 timed out. (connect timeout=7.5)')': /best-colleges/princeton-university-2627
+2025-04-11 15:01:35,588 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x106685590>, 'Connection to 36.67.194.162 timed out. (connect timeout=7.5)')': /best-colleges/princeton-university-2627
+2025-04-11 15:01:37,071 - WARNING - Script interrupted by user. Saving progress...
+2025-04-11 15:01:37,076 - INFO - Progress saved at index 0
+2025-04-11 15:01:37,085 - INFO - Data saved. Exiting.
+2025-04-11 15:01:48,724 - INFO - Loaded 700 proxies from /Users/jirissman/Documents/GradAid/webscraping/data/proxies_list.txt
+2025-04-11 15:01:48,724 - INFO - Loaded progress from index 0
+2025-04-11 15:01:48,725 - INFO - Processing Princeton University (waiting 0.74s)
+2025-04-11 15:01:49,467 - INFO - Using specialized US News handler for Princeton University
+2025-04-11 15:01:49,467 - INFO - Accessing US News data for Princeton University with protective measures
+2025-04-11 15:01:49,468 - INFO - Accessing US News with proxy http://37.220.81.36:3785 for Princeton University (attempt 1)
+2025-04-11 15:01:49,468 - INFO - Waiting 3.66s before US News request
+2025-04-11 15:02:00,648 - WARNING - Error accessing US News with proxy http://37.220.81.36:3785 for Princeton University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/princeton-university-2627 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101c0ba10>, 'Connection to 37.220.81.36 timed out. (connect timeout=7.5)')))
+2025-04-11 15:02:02,473 - INFO - Accessing US News with proxy http://103.212.211.69:8080 for Princeton University (attempt 2)
+2025-04-11 15:02:02,474 - INFO - Waiting 2.81s before US News request
+2025-04-11 15:02:12,798 - WARNING - Error accessing US News with proxy http://103.212.211.69:8080 for Princeton University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/princeton-university-2627 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101c03d90>, 'Connection to 103.212.211.69 timed out. (connect timeout=7.5)')))
+2025-04-11 15:02:14,161 - INFO - Accessing US News with proxy http://170.106.197.21:13001 for Princeton University (attempt 3)
+2025-04-11 15:02:14,162 - INFO - Waiting 3.36s before US News request
+2025-04-11 15:02:17,693 - WARNING - Error accessing US News with proxy http://170.106.197.21:13001 for Princeton University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/princeton-university-2627 (Caused by ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+2025-04-11 15:02:19,210 - INFO - Accessing US News with proxy http://170.106.108.142:13001 for Princeton University (attempt 4)
+2025-04-11 15:02:19,211 - INFO - Waiting 2.02s before US News request
+2025-04-11 15:02:21,405 - WARNING - Error accessing US News with proxy http://170.106.108.142:13001 for Princeton University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/princeton-university-2627 (Caused by ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+2025-04-11 15:02:22,493 - INFO - Accessing US News with proxy http://13.36.87.105:3128 for Princeton University (attempt 5)
+2025-04-11 15:02:22,494 - INFO - Waiting 3.13s before US News request
+2025-04-11 15:02:26,137 - INFO - Successfully accessed US News data for Princeton University
+2025-04-11 15:02:26,143 - WARNING - Could not find website link for Princeton University
+2025-04-11 15:02:26,144 - WARNING - Could not find website link for Princeton University
+2025-04-11 15:02:26,144 - INFO - Processing Massachusetts Institute of Technology (waiting 1.91s)
+2025-04-11 15:02:28,061 - INFO - Using proxy http://103.118.46.64:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,061 - INFO - Using proxy http://43.159.148.136:13001 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,061 - INFO - Using proxy http://45.174.176.161:8088 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,061 - INFO - Using proxy http://43.153.48.134:13001 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,061 - INFO - Using proxy http://110.74.192.124:8181 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,061 - INFO - Using proxy http://43.153.113.65:13001 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,061 - INFO - Using proxy http://158.160.136.57:3128 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,061 - INFO - Using proxy http://170.106.171.100:13001 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,061 - INFO - Using proxy http://103.8.59.12:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,061 - INFO - Using proxy http://43.135.166.98:13001 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,061 - INFO - Using proxy http://13.38.176.104:3128 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,061 - INFO - Using proxy http://190.103.205.253:9097 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,061 - INFO - Using proxy http://103.216.50.2:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,061 - INFO - Using proxy http://107.150.105.176:8001 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,061 - INFO - Using proxy http://79.143.177.29:21972 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,061 - INFO - Using proxy http://43.130.15.214:13001 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,061 - INFO - Using proxy http://78.28.152.113:80 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,061 - INFO - Using proxy http://171.5.189.84:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://179.60.53.28:999 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://2.188.210.10:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://42.114.11.82:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://27.66.219.72:25100 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://45.92.108.112:80 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://50.169.222.243:80 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://78.26.146.59:443 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://54.151.37.26:3128 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://203.162.13.222:6868 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://8.213.195.191:4006 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://185.21.13.91:40969 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://43.130.12.39:13001 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://34.143.143.61:7777 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://177.93.58.41:999 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://102.182.134.53:8082 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://66.191.31.158:80 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://154.197.119.182:39181 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://190.121.136.185:999 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://155.54.239.64:80 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://103.212.211.69:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://38.159.229.74:999 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://43.135.162.60:13001 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://218.75.224.4:3309 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://78.80.228.150:80 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://43.159.139.163:13001 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://185.130.28.5:56789 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://91.229.28.110:3128 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://103.212.211.69:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://198.49.68.80:80 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://103.126.87.155:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://43.153.14.194:13001 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://15.157.64.188:20201 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://18.133.16.21:3128 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://62.210.215.36:80 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://83.168.72.172:8081 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://213.131.85.26:1981 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://103.118.46.64:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://43.135.142.6:13001 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://84.46.236.228:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://78.187.53.60:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://49.48.93.222:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://5.228.144.64:8081 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://103.119.51.158:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://171.237.102.13:1001 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://154.197.119.182:39181 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://160.3.168.70:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://45.130.8.198:3128 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://185.162.60.46:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://76.169.129.241:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://176.208.101.50:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://188.68.52.244:80 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://125.26.4.219:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://152.26.229.52:9443 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://5.228.144.64:8081 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://23.82.137.159:80 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://99.80.11.54:3128 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://43.135.132.101:13001 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://121.200.61.221:6564 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://180.254.145.22:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://1.2.176.36:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://13.208.56.180:80 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://107.150.105.176:8001 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://43.159.133.199:13001 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://43.130.15.214:13001 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://51.161.56.52:80 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://103.156.15.83:1111 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,062 - INFO - Using proxy http://177.234.217.82:999 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,063 - INFO - Using proxy http://50.217.226.40:80 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,063 - INFO - Using proxy http://43.153.112.164:13001 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,063 - INFO - Using proxy http://147.124.222.230:3128 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,063 - INFO - Using proxy http://91.107.187.112:80 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,063 - INFO - Using proxy http://152.70.90.45:8118 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,063 - INFO - Using proxy http://180.254.145.22:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,063 - INFO - Using proxy http://36.37.163.113:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,063 - INFO - Using proxy http://189.22.234.47:80 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,063 - INFO - Using proxy http://103.8.59.12:8080 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,063 - INFO - Using proxy http://85.214.107.177:80 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,063 - INFO - Using proxy http://43.131.241.122:3808 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,063 - INFO - Using proxy http://13.56.192.187:80 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,063 - INFO - Using proxy http://80.242.56.115:3128 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,063 - INFO - Using proxy http://203.162.13.222:6868 for Massachusetts Institute of Technology
+2025-04-11 15:02:28,063 - ERROR - Failed to access http://web.mit.edu/ for Massachusetts Institute of Technology after multiple attempts
+2025-04-11 15:02:28,063 - WARNING - Failed to get response for Massachusetts Institute of Technology, will try again later
+2025-04-11 15:02:28,063 - INFO - Processing Harvard University (waiting 1.25s)
+2025-04-11 15:02:29,318 - INFO - Using proxy http://50.231.104.58:80 for Harvard University
+2025-04-11 15:02:29,318 - INFO - Using proxy http://103.165.155.45:8080 for Harvard University
+2025-04-11 15:02:29,318 - INFO - Using proxy http://85.10.199.48:80 for Harvard University
+2025-04-11 15:02:29,318 - INFO - Using proxy http://13.214.122.121:20202 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://121.200.61.221:6564 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://44.218.183.55:80 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://197.155.230.206:8080 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://196.216.84.40:8080 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://103.79.131.70:13001 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://43.153.113.65:13001 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://102.223.23.250:82 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://170.106.84.125:13001 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://182.72.203.255:80 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://50.207.199.82:80 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://103.165.155.45:8080 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://95.216.148.196:80 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://35.76.62.196:80 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://170.106.114.25:13001 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://46.47.197.210:3128 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://43.153.85.209:13001 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://13.37.73.214:80 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://190.121.136.185:999 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://49.229.100.235:8080 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://162.240.19.30:80 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://114.141.54.75:8080 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://160.30.83.10:83 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://41.32.39.118:3128 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://103.75.117.85:80 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://171.226.233.195:4014 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://170.106.181.112:13001 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://190.60.48.171:999 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://43.153.48.134:13001 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://170.106.84.182:13001 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://15.204.100.91:3128 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://60.50.128.61:8081 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://103.255.222.1:80 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://35.79.120.242:3128 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://50.174.7.155:80 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://204.199.139.126:999 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://103.215.207.85:83 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://189.22.234.47:80 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://204.199.139.126:999 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://124.105.102.167:8082 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://3.21.101.158:3128 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://124.121.2.146:8080 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://152.70.90.45:8118 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://170.106.181.112:13001 for Harvard University
+2025-04-11 15:02:29,319 - INFO - Using proxy http://43.153.48.134:13001 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://92.255.196.39:8080 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://103.59.44.33:8181 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://50.174.7.156:80 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://62.162.193.125:8081 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://13.40.239.130:1080 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://103.170.64.200:1111 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://181.174.231.139:999 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://170.106.84.182:13001 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://43.159.133.199:13001 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://84.46.236.228:8080 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://185.21.13.91:40969 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://49.51.73.95:13001 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://37.235.23.217:8080 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://78.28.152.113:80 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://45.180.62.238:8080 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://138.118.149.22:53281 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://43.135.136.234:13001 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://102.211.216.18:8080 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://97.74.87.226:80 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://189.205.215.202:8080 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://158.255.77.166:80 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://181.174.231.139:999 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://43.130.12.65:13001 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://190.60.48.171:999 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://139.59.1.14:80 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://103.79.131.70:13001 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://103.155.167.229:8070 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://66.96.233.62:8085 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://170.106.135.2:13001 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://37.26.86.206:47464 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://27.66.219.72:25100 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://115.245.89.250:8080 for Harvard University
+2025-04-11 15:02:29,320 - INFO - Using proxy http://51.79.207.21:8080 for Harvard University
+2025-04-11 15:02:29,321 - INFO - Using proxy http://150.109.238.145:3808 for Harvard University
+2025-04-11 15:02:29,321 - INFO - Using proxy http://217.160.224.54:8118 for Harvard University
+2025-04-11 15:02:29,321 - INFO - Using proxy http://103.155.64.47:8080 for Harvard University
+2025-04-11 15:02:29,321 - INFO - Using proxy http://27.65.239.3:8080 for Harvard University
+2025-04-11 15:02:29,321 - INFO - Using proxy http://195.114.209.50:80 for Harvard University
+2025-04-11 15:02:29,321 - INFO - Using proxy http://211.128.96.206:80 for Harvard University
+2025-04-11 15:02:29,321 - INFO - Using proxy http://43.153.8.65:13001 for Harvard University
+2025-04-11 15:02:29,321 - INFO - Using proxy http://181.78.3.170:999 for Harvard University
+2025-04-11 15:02:29,321 - INFO - Using proxy http://141.147.9.254:80 for Harvard University
+2025-04-11 15:02:29,321 - INFO - Using proxy http://34.143.143.61:7777 for Harvard University
+2025-04-11 15:02:29,321 - INFO - Using proxy http://43.130.62.137:13001 for Harvard University
+2025-04-11 15:02:29,321 - INFO - Using proxy http://102.211.216.18:8080 for Harvard University
+2025-04-11 15:02:29,321 - INFO - Using proxy http://201.174.171.139:999 for Harvard University
+2025-04-11 15:02:29,321 - INFO - Using proxy http://50.217.226.41:80 for Harvard University
+2025-04-11 15:02:29,321 - INFO - Using proxy http://35.72.118.126:80 for Harvard University
+2025-04-11 15:02:29,321 - INFO - Using proxy http://182.72.203.255:80 for Harvard University
+2025-04-11 15:02:29,321 - INFO - Using proxy http://116.125.141.115:80 for Harvard University
+2025-04-11 15:02:29,321 - INFO - Using proxy http://103.156.17.27:8818 for Harvard University
+2025-04-11 15:02:29,321 - ERROR - Failed to access http://www.harvard.edu for Harvard University after multiple attempts
+2025-04-11 15:02:29,321 - WARNING - Failed to get response for Harvard University, will try again later
+2025-04-11 15:02:29,321 - INFO - Processing Stanford University (waiting 0.56s)
+2025-04-11 15:02:29,885 - INFO - Using specialized US News handler for Stanford University
+2025-04-11 15:02:29,885 - INFO - Accessing US News data for Stanford University with protective measures
+2025-04-11 15:02:29,886 - INFO - Accessing US News with proxy http://216.250.11.178:3128 for Stanford University (attempt 1)
+2025-04-11 15:02:29,886 - INFO - Waiting 3.92s before US News request
+2025-04-11 15:02:41,917 - WARNING - Error accessing US News with proxy http://216.250.11.178:3128 for Stanford University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/stanford-university-1305 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=7.5)"))
+2025-04-11 15:02:43,646 - INFO - Accessing US News with proxy http://13.125.98.173:3128 for Stanford University (attempt 2)
+2025-04-11 15:02:43,646 - INFO - Waiting 3.53s before US News request
+2025-04-11 15:02:48,305 - INFO - Successfully accessed US News data for Stanford University
+2025-04-11 15:02:48,307 - WARNING - Could not find website link for Stanford University
+2025-04-11 15:02:48,307 - WARNING - Could not find website link for Stanford University
+2025-04-11 15:02:48,307 - INFO - Processing Yale University (waiting 0.75s)
+2025-04-11 15:02:49,062 - INFO - Using specialized US News handler for Yale University
+2025-04-11 15:02:49,063 - INFO - Accessing US News data for Yale University with protective measures
+2025-04-11 15:02:49,064 - INFO - Accessing US News with proxy http://34.211.92.223:3128 for Yale University (attempt 1)
+2025-04-11 15:02:49,065 - INFO - Waiting 2.19s before US News request
+2025-04-11 15:02:58,762 - WARNING - Error accessing US News with proxy http://34.211.92.223:3128 for Yale University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/yale-university-1426 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101ef1950>, 'Connection to 34.211.92.223 timed out. (connect timeout=7.5)')))
+2025-04-11 15:03:00,541 - INFO - Accessing US News with proxy http://103.115.198.179:8082 for Yale University (attempt 2)
+2025-04-11 15:03:00,542 - INFO - Waiting 3.11s before US News request
+2025-04-11 15:03:11,162 - WARNING - Error accessing US News with proxy http://103.115.198.179:8082 for Yale University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/yale-university-1426 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101ef1bd0>, 'Connection to 103.115.198.179 timed out. (connect timeout=7.5)')))
+2025-04-11 15:03:12,439 - INFO - Accessing US News with proxy http://5.135.103.166:80 for Yale University (attempt 3)
+2025-04-11 15:03:12,439 - INFO - Waiting 3.47s before US News request
+2025-04-11 15:03:27,536 - WARNING - Error accessing US News with proxy http://5.135.103.166:80 for Yale University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/yale-university-1426 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=7.5)"))
+2025-04-11 15:03:28,779 - INFO - Accessing US News with proxy http://204.199.139.126:999 for Yale University (attempt 4)
+2025-04-11 15:03:28,779 - INFO - Waiting 3.53s before US News request
+2025-04-11 15:03:39,820 - WARNING - Error accessing US News with proxy http://204.199.139.126:999 for Yale University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/yale-university-1426 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101ef20d0>, 'Connection to 204.199.139.126 timed out. (connect timeout=7.5)')))
+2025-04-11 15:03:41,311 - INFO - Accessing US News with proxy http://180.251.254.204:8080 for Yale University (attempt 5)
+2025-04-11 15:03:41,312 - INFO - Waiting 3.07s before US News request
+2025-04-11 15:03:51,896 - WARNING - Error accessing US News with proxy http://180.251.254.204:8080 for Yale University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/yale-university-1426 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101ef2350>, 'Connection to 180.251.254.204 timed out. (connect timeout=7.5)')))
+2025-04-11 15:03:52,937 - INFO - Accessing US News with proxy http://170.106.181.112:13001 for Yale University (attempt 6)
+2025-04-11 15:03:52,937 - INFO - Waiting 2.91s before US News request
+2025-04-11 15:03:56,031 - WARNING - Error accessing US News with proxy http://170.106.181.112:13001 for Yale University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/yale-university-1426 (Caused by ProtocolError('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')))
+2025-04-11 15:03:57,835 - INFO - Accessing US News with proxy http://15.236.186.15:45554 for Yale University (attempt 7)
+2025-04-11 15:03:57,836 - INFO - Waiting 3.96s before US News request
+2025-04-11 15:04:01,439 - WARNING - Script interrupted by user. Saving progress...
+2025-04-11 15:04:01,442 - INFO - Progress saved at index 4
+2025-04-11 15:04:01,449 - INFO - Data saved. Exiting.
+2025-04-11 15:04:04,417 - INFO - Loaded 700 proxies from /Users/jirissman/Documents/GradAid/webscraping/data/proxies_list.txt
+2025-04-11 15:04:04,418 - INFO - Loaded progress from index 4
+2025-04-11 15:04:04,418 - INFO - Processing Yale University (waiting 1.76s)
+2025-04-11 15:04:06,185 - INFO - Using specialized US News handler for Yale University
+2025-04-11 15:04:06,185 - INFO - Accessing US News data for Yale University with protective measures
+2025-04-11 15:04:06,186 - INFO - Accessing US News with proxy http://103.124.251.12:8081 for Yale University (attempt 1)
+2025-04-11 15:04:11,204 - WARNING - Error accessing US News with proxy http://103.124.251.12:8081 for Yale University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/yale-university-1426 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x105113b60>, 'Connection to 103.124.251.12 timed out. (connect timeout=5)')))
+2025-04-11 15:04:13,194 - INFO - Accessing US News with proxy http://42.114.11.82:8080 for Yale University (attempt 2)
+2025-04-11 15:04:19,246 - WARNING - Error accessing US News with proxy http://42.114.11.82:8080 for Yale University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/yale-university-1426 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=5)"))
+2025-04-11 15:04:20,848 - INFO - Accessing US News with proxy http://159.223.174.128:3128 for Yale University (attempt 3)
+2025-04-11 15:04:25,853 - WARNING - Error accessing US News with proxy http://159.223.174.128:3128 for Yale University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/yale-university-1426 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x105270690>, 'Connection to 159.223.174.128 timed out. (connect timeout=5)')))
+2025-04-11 15:04:27,026 - INFO - Accessing US News with proxy http://50.207.199.81:80 for Yale University (attempt 4)
+2025-04-11 15:04:32,032 - WARNING - Error accessing US News with proxy http://50.207.199.81:80 for Yale University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/yale-university-1426 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x105270910>, 'Connection to 50.207.199.81 timed out. (connect timeout=5)')))
+2025-04-11 15:04:33,136 - INFO - Accessing US News with proxy http://8.243.163.126:3128 for Yale University (attempt 5)
+2025-04-11 15:04:40,459 - INFO - Successfully accessed US News data for Yale University
+2025-04-11 15:04:40,488 - INFO - Found website for Yale University: http://www.yale.edu/
+2025-04-11 15:04:40,488 - INFO - Updated website for Yale University: http://www.yale.edu/
+2025-04-11 15:04:40,488 - INFO - Processed 5 universities
+2025-04-11 15:04:40,489 - INFO - Progress saved at index 5
+2025-04-11 15:04:40,489 - INFO - Processing California Institute of Technology (waiting 0.53s)
+2025-04-11 15:04:41,024 - INFO - Using specialized US News handler for California Institute of Technology
+2025-04-11 15:04:41,024 - INFO - Accessing US News data for California Institute of Technology with protective measures
+2025-04-11 15:04:41,025 - INFO - Accessing US News with proxy http://203.115.101.51:82 for California Institute of Technology (attempt 1)
+2025-04-11 15:04:42,824 - WARNING - Script interrupted by user. Saving progress...
+2025-04-11 15:04:42,827 - INFO - Progress saved at index 5
+2025-04-11 15:04:42,834 - INFO - Data saved. Exiting.
+2025-04-11 15:04:44,992 - INFO - Loaded 700 proxies from /Users/jirissman/Documents/GradAid/webscraping/data/proxies_list.txt
+2025-04-11 15:04:44,993 - INFO - Loaded progress from index 5
+2025-04-11 15:04:44,993 - INFO - Processed 5 universities
+2025-04-11 15:04:44,994 - INFO - Progress saved at index 5
+2025-04-11 15:04:44,994 - INFO - Processing California Institute of Technology (waiting 1.01s)
+2025-04-11 15:04:46,010 - INFO - Using specialized US News handler for California Institute of Technology
+2025-04-11 15:04:46,010 - INFO - Accessing US News data for California Institute of Technology with protective measures
+2025-04-11 15:04:46,011 - INFO - Accessing US News with proxy http://54.37.214.253:80 for California Institute of Technology (attempt 1)
+2025-04-11 15:04:46,126 - WARNING - Error accessing US News with proxy http://54.37.214.253:80 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10209fa10>, 'Connection to 54.37.214.253 timed out. (connect timeout=0.1)')))
+2025-04-11 15:04:48,057 - INFO - Accessing US News with proxy http://13.208.56.180:80 for California Institute of Technology (attempt 2)
+2025-04-11 15:04:48,160 - WARNING - Error accessing US News with proxy http://13.208.56.180:80 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x102097d90>, 'Connection to 13.208.56.180 timed out. (connect timeout=0.1)')))
+2025-04-11 15:04:49,902 - INFO - Accessing US News with proxy http://154.26.134.167:8080 for California Institute of Technology (attempt 3)
+2025-04-11 15:04:50,008 - WARNING - Error accessing US News with proxy http://154.26.134.167:8080 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fc690>, 'Connection to 154.26.134.167 timed out. (connect timeout=0.1)')))
+2025-04-11 15:04:51,829 - INFO - Accessing US News with proxy http://43.153.97.47:8080 for California Institute of Technology (attempt 4)
+2025-04-11 15:04:51,936 - WARNING - Error accessing US News with proxy http://43.153.97.47:8080 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fc910>, 'Connection to 43.153.97.47 timed out. (connect timeout=0.1)')))
+2025-04-11 15:04:53,689 - INFO - Accessing US News with proxy http://54.248.238.110:80 for California Institute of Technology (attempt 5)
+2025-04-11 15:04:53,795 - WARNING - Error accessing US News with proxy http://54.248.238.110:80 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fcb90>, 'Connection to 54.248.238.110 timed out. (connect timeout=0.1)')))
+2025-04-11 15:04:54,871 - INFO - Accessing US News with proxy http://43.130.14.101:13001 for California Institute of Technology (attempt 6)
+2025-04-11 15:04:54,977 - WARNING - Error accessing US News with proxy http://43.130.14.101:13001 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fce10>, 'Connection to 43.130.14.101 timed out. (connect timeout=0.1)')))
+2025-04-11 15:04:56,532 - INFO - Accessing US News with proxy http://171.226.233.195:4014 for California Institute of Technology (attempt 7)
+2025-04-11 15:04:56,638 - WARNING - Error accessing US News with proxy http://171.226.233.195:4014 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fd090>, 'Connection to 171.226.233.195 timed out. (connect timeout=0.1)')))
+2025-04-11 15:04:58,461 - INFO - Accessing US News with proxy http://122.2.116.87:5050 for California Institute of Technology (attempt 8)
+2025-04-11 15:04:58,567 - WARNING - Error accessing US News with proxy http://122.2.116.87:5050 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fd310>, 'Connection to 122.2.116.87 timed out. (connect timeout=0.1)')))
+2025-04-11 15:04:59,691 - INFO - Accessing US News with proxy http://116.206.242.110:3888 for California Institute of Technology (attempt 9)
+2025-04-11 15:04:59,796 - WARNING - Error accessing US News with proxy http://116.206.242.110:3888 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fd590>, 'Connection to 116.206.242.110 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:00,803 - INFO - Accessing US News with proxy http://190.120.252.174:999 for California Institute of Technology (attempt 10)
+2025-04-11 15:05:00,909 - WARNING - Error accessing US News with proxy http://190.120.252.174:999 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fd810>, 'Connection to 190.120.252.174 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:02,083 - INFO - Accessing US News with proxy http://43.159.152.105:13001 for California Institute of Technology (attempt 11)
+2025-04-11 15:05:02,267 - WARNING - Error accessing US News with proxy http://43.159.152.105:13001 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+2025-04-11 15:05:03,374 - INFO - Accessing US News with proxy http://54.37.51.2:3128 for California Institute of Technology (attempt 12)
+2025-04-11 15:05:03,479 - WARNING - Error accessing US News with proxy http://54.37.51.2:3128 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fdd10>, 'Connection to 54.37.51.2 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:04,598 - INFO - Accessing US News with proxy http://139.59.1.14:80 for California Institute of Technology (attempt 13)
+2025-04-11 15:05:04,703 - WARNING - Error accessing US News with proxy http://139.59.1.14:80 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fdf90>, 'Connection to 139.59.1.14 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:06,325 - INFO - Accessing US News with proxy http://160.19.19.17:7777 for California Institute of Technology (attempt 14)
+2025-04-11 15:05:06,430 - WARNING - Error accessing US News with proxy http://160.19.19.17:7777 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fe210>, 'Connection to 160.19.19.17 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:07,661 - INFO - Accessing US News with proxy http://36.37.163.113:8080 for California Institute of Technology (attempt 15)
+2025-04-11 15:05:07,767 - WARNING - Error accessing US News with proxy http://36.37.163.113:8080 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fe490>, 'Connection to 36.37.163.113 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:09,502 - INFO - Accessing US News with proxy http://110.76.145.59:89 for California Institute of Technology (attempt 16)
+2025-04-11 15:05:09,607 - WARNING - Error accessing US News with proxy http://110.76.145.59:89 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fe710>, 'Connection to 110.76.145.59 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:10,922 - INFO - Accessing US News with proxy http://91.229.28.110:3128 for California Institute of Technology (attempt 17)
+2025-04-11 15:05:11,027 - WARNING - Error accessing US News with proxy http://91.229.28.110:3128 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fe990>, 'Connection to 91.229.28.110 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:12,588 - INFO - Accessing US News with proxy http://47.245.117.43:80 for California Institute of Technology (attempt 18)
+2025-04-11 15:05:12,694 - WARNING - Error accessing US News with proxy http://47.245.117.43:80 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fec10>, 'Connection to 47.245.117.43 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:14,343 - INFO - Accessing US News with proxy http://124.106.223.156:8082 for California Institute of Technology (attempt 19)
+2025-04-11 15:05:14,450 - WARNING - Error accessing US News with proxy http://124.106.223.156:8082 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x102097ed0>, 'Connection to 124.106.223.156 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:16,437 - INFO - Accessing US News with proxy http://188.136.208.253:8080 for California Institute of Technology (attempt 20)
+2025-04-11 15:05:16,542 - WARNING - Error accessing US News with proxy http://188.136.208.253:8080 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x102097750>, 'Connection to 188.136.208.253 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:18,228 - INFO - Accessing US News with proxy http://52.196.1.182:80 for California Institute of Technology (attempt 21)
+2025-04-11 15:05:18,335 - WARNING - Error accessing US News with proxy http://52.196.1.182:80 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x102097610>, 'Connection to 52.196.1.182 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:20,082 - INFO - Accessing US News with proxy http://41.204.63.118:80 for California Institute of Technology (attempt 22)
+2025-04-11 15:05:20,187 - WARNING - Error accessing US News with proxy http://41.204.63.118:80 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x102097390>, 'Connection to 41.204.63.118 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:21,583 - INFO - Accessing US News with proxy http://99.80.11.54:3128 for California Institute of Technology (attempt 23)
+2025-04-11 15:05:21,688 - WARNING - Error accessing US News with proxy http://99.80.11.54:3128 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x102096d50>, 'Connection to 99.80.11.54 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:23,271 - INFO - Accessing US News with proxy http://49.51.253.252:13001 for California Institute of Technology (attempt 24)
+2025-04-11 15:05:23,470 - WARNING - Error accessing US News with proxy http://49.51.253.252:13001 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=0.1)"))
+2025-04-11 15:05:25,273 - INFO - Accessing US News with proxy http://223.204.167.241:8080 for California Institute of Technology (attempt 25)
+2025-04-11 15:05:25,379 - WARNING - Error accessing US News with proxy http://223.204.167.241:8080 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fe990>, 'Connection to 223.204.167.241 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:26,479 - INFO - Accessing US News with proxy http://89.213.172.202:999 for California Institute of Technology (attempt 26)
+2025-04-11 15:05:26,584 - WARNING - Error accessing US News with proxy http://89.213.172.202:999 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fe710>, 'Connection to 89.213.172.202 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:28,091 - INFO - Accessing US News with proxy http://180.180.123.40:8080 for California Institute of Technology (attempt 27)
+2025-04-11 15:05:28,194 - WARNING - Error accessing US News with proxy http://180.180.123.40:8080 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fe490>, 'Connection to 180.180.123.40 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:30,051 - INFO - Accessing US News with proxy http://216.250.11.178:3128 for California Institute of Technology (attempt 28)
+2025-04-11 15:05:30,158 - WARNING - Error accessing US News with proxy http://216.250.11.178:3128 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fe210>, 'Connection to 216.250.11.178 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:32,161 - INFO - Accessing US News with proxy http://43.135.136.212:13001 for California Institute of Technology (attempt 29)
+2025-04-11 15:05:32,339 - WARNING - Error accessing US News with proxy http://43.135.136.212:13001 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 500 Internal Server Error')))
+2025-04-11 15:05:34,154 - INFO - Accessing US News with proxy http://103.156.17.27:8818 for California Institute of Technology (attempt 30)
+2025-04-11 15:05:34,261 - WARNING - Error accessing US News with proxy http://103.156.17.27:8818 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fdd10>, 'Connection to 103.156.17.27 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:36,085 - INFO - Accessing US News with proxy http://43.153.44.254:13001 for California Institute of Technology (attempt 31)
+2025-04-11 15:05:36,260 - WARNING - Error accessing US News with proxy http://43.153.44.254:13001 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+2025-04-11 15:05:37,788 - INFO - Accessing US News with proxy http://154.70.134.151:6969 for California Institute of Technology (attempt 32)
+2025-04-11 15:05:37,892 - WARNING - Error accessing US News with proxy http://154.70.134.151:6969 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fd810>, 'Connection to 154.70.134.151 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:39,344 - INFO - Accessing US News with proxy http://190.97.226.26:999 for California Institute of Technology (attempt 33)
+2025-04-11 15:05:39,449 - WARNING - Error accessing US News with proxy http://190.97.226.26:999 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fd590>, 'Connection to 190.97.226.26 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:40,562 - INFO - Accessing US News with proxy http://203.95.196.34:8080 for California Institute of Technology (attempt 34)
+2025-04-11 15:05:40,668 - WARNING - Error accessing US News with proxy http://203.95.196.34:8080 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fd310>, 'Connection to 203.95.196.34 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:42,320 - INFO - Accessing US News with proxy http://43.159.144.69:13001 for California Institute of Technology (attempt 35)
+2025-04-11 15:05:42,494 - WARNING - Error accessing US News with proxy http://43.159.144.69:13001 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+2025-04-11 15:05:44,410 - INFO - Accessing US News with proxy http://43.153.11.82:13001 for California Institute of Technology (attempt 36)
+2025-04-11 15:05:44,588 - WARNING - Error accessing US News with proxy http://43.153.11.82:13001 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 500 Internal Server Error')))
+2025-04-11 15:05:46,136 - INFO - Accessing US News with proxy http://103.152.93.157:8080 for California Institute of Technology (attempt 37)
+2025-04-11 15:05:46,242 - WARNING - Error accessing US News with proxy http://103.152.93.157:8080 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fcb90>, 'Connection to 103.152.93.157 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:47,346 - INFO - Accessing US News with proxy http://77.243.15.83:3246 for California Institute of Technology (attempt 38)
+2025-04-11 15:05:47,452 - WARNING - Error accessing US News with proxy http://77.243.15.83:3246 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fc910>, 'Connection to 77.243.15.83 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:48,934 - INFO - Accessing US News with proxy http://62.162.193.125:8081 for California Institute of Technology (attempt 39)
+2025-04-11 15:05:49,040 - WARNING - Error accessing US News with proxy http://62.162.193.125:8081 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fc190>, 'Connection to 62.162.193.125 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:50,056 - INFO - Accessing US News with proxy http://186.0.144.81:9797 for California Institute of Technology (attempt 40)
+2025-04-11 15:05:50,162 - WARNING - Error accessing US News with proxy http://186.0.144.81:9797 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1022fc690>, 'Connection to 186.0.144.81 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:51,961 - INFO - Accessing US News with proxy http://43.153.99.158:13001 for California Institute of Technology (attempt 41)
+2025-04-11 15:05:52,144 - WARNING - Error accessing US News with proxy http://43.153.99.158:13001 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+2025-04-11 15:05:53,779 - INFO - Accessing US News with proxy http://43.153.14.2:13001 for California Institute of Technology (attempt 42)
+2025-04-11 15:05:53,973 - WARNING - Error accessing US News with proxy http://43.153.14.2:13001 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=0.1)"))
+2025-04-11 15:05:54,980 - INFO - Accessing US News with proxy http://103.216.50.206:8080 for California Institute of Technology (attempt 43)
+2025-04-11 15:05:55,086 - WARNING - Error accessing US News with proxy http://103.216.50.206:8080 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x102097390>, 'Connection to 103.216.50.206 timed out. (connect timeout=0.1)')))
+2025-04-11 15:05:55,859 - WARNING - Script interrupted by user. Saving progress...
+2025-04-11 15:05:55,862 - INFO - Progress saved at index 5
+2025-04-11 15:05:55,870 - INFO - Data saved. Exiting.
+2025-04-11 15:07:00,959 - INFO - Loaded 700 proxies from /Users/jirissman/Documents/GradAid/webscraping/data/proxies_list.txt
+2025-04-11 15:07:00,960 - INFO - Loaded progress from index 5
+2025-04-11 15:07:00,960 - INFO - Processed 5 universities
+2025-04-11 15:07:00,961 - INFO - Progress saved at index 5
+2025-04-11 15:07:00,961 - INFO - Processing California Institute of Technology (waiting 8.94s)
+2025-04-11 15:07:09,906 - INFO - Using specialized US News handler for California Institute of Technology
+2025-04-11 15:07:09,908 - INFO - Accessing US News data for California Institute of Technology with protective measures
+2025-04-11 15:07:09,909 - INFO - Accessing US News with proxy http://78.26.146.59:443 for California Institute of Technology (attempt 1)
+2025-04-11 15:07:39,929 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101e53b60>, 'Connection to 78.26.146.59 timed out. (connect timeout=30)')': /best-colleges/california-institute-of-technology-1131
+2025-04-11 15:08:13,940 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101e47610>, 'Connection to 78.26.146.59 timed out. (connect timeout=30)')': /best-colleges/california-institute-of-technology-1131
+2025-04-11 15:08:51,953 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101e47750>, 'Connection to 78.26.146.59 timed out. (connect timeout=30)')': /best-colleges/california-institute-of-technology-1131
+2025-04-11 15:09:21,960 - WARNING - Error accessing US News with proxy http://78.26.146.59:443 for California Institute of Technology: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/california-institute-of-technology-1131 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101e47890>, 'Connection to 78.26.146.59 timed out. (connect timeout=30)')))
+2025-04-11 15:09:29,677 - INFO - Accessing US News with proxy http://51.16.199.206:3128 for California Institute of Technology (attempt 2)
+2025-04-11 15:09:30,451 - INFO - Successfully accessed US News data for California Institute of Technology
+2025-04-11 15:09:30,455 - WARNING - Could not find website link for California Institute of Technology
+2025-04-11 15:09:30,455 - WARNING - Could not find website link for California Institute of Technology
+2025-04-11 15:09:30,455 - INFO - Processing Duke University (waiting 7.92s)
+2025-04-11 15:09:38,382 - INFO - Using specialized US News handler for Duke University
+2025-04-11 15:09:38,382 - INFO - Accessing US News data for Duke University with protective measures
+2025-04-11 15:09:38,383 - INFO - Accessing US News with proxy http://43.135.137.249:13001 for Duke University (attempt 1)
+2025-04-11 15:09:38,565 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(54, 'Connection reset by peer')': /best-colleges/duke-university-2920
+2025-04-11 15:09:42,749 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/duke-university-2920
+2025-04-11 15:09:50,921 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 500 Internal Server Error')': /best-colleges/duke-university-2920
+2025-04-11 15:09:51,099 - WARNING - Error accessing US News with proxy http://43.135.137.249:13001 for Duke University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/duke-university-2920 (Caused by ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+2025-04-11 15:09:59,834 - INFO - Accessing US News with proxy http://171.226.233.195:4012 for Duke University (attempt 2)
+2025-04-11 15:10:29,841 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f15090>, 'Connection to 171.226.233.195 timed out. (connect timeout=30)')': /best-colleges/duke-university-2920
+2025-04-11 15:11:03,848 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f151d0>, 'Connection to 171.226.233.195 timed out. (connect timeout=30)')': /best-colleges/duke-university-2920
+2025-04-11 15:11:41,855 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f15310>, 'Connection to 171.226.233.195 timed out. (connect timeout=30)')': /best-colleges/duke-university-2920
+2025-04-11 15:12:11,864 - WARNING - Error accessing US News with proxy http://171.226.233.195:4012 for Duke University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/duke-university-2920 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f15450>, 'Connection to 171.226.233.195 timed out. (connect timeout=30)')))
+2025-04-11 15:12:21,385 - INFO - Accessing US News with proxy http://49.51.73.96:13001 for Duke University (attempt 3)
+2025-04-11 15:12:24,272 - WARNING - Access forbidden (403) from US News for Duke University. Trying different proxy.
+2025-04-11 15:12:37,575 - INFO - Accessing US News with proxy http://51.79.207.21:8080 for Duke University (attempt 4)
+2025-04-11 15:12:42,542 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 502 Bad Gateway')': /best-colleges/duke-university-2920
+2025-04-11 15:12:47,271 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 502 Bad Gateway')': /best-colleges/duke-university-2920
+2025-04-11 15:12:55,861 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 502 Bad Gateway')': /best-colleges/duke-university-2920
+2025-04-11 15:12:57,140 - WARNING - Error accessing US News with proxy http://51.79.207.21:8080 for Duke University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/duke-university-2920 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 502 Bad Gateway')))
+2025-04-11 15:13:04,301 - INFO - Accessing US News with proxy http://13.37.89.201:80 for Duke University (attempt 5)
+2025-04-11 15:13:04,813 - INFO - Successfully accessed US News data for Duke University
+2025-04-11 15:13:04,818 - WARNING - Could not find website link for Duke University
+2025-04-11 15:13:04,818 - WARNING - Could not find website link for Duke University
+2025-04-11 15:13:04,818 - INFO - Processing Johns Hopkins University (waiting 8.68s)
+2025-04-11 15:13:13,498 - INFO - Using specialized US News handler for Johns Hopkins University
+2025-04-11 15:13:13,499 - INFO - Accessing US News data for Johns Hopkins University with protective measures
+2025-04-11 15:13:13,499 - INFO - Accessing US News with proxy http://124.121.86.59:8080 for Johns Hopkins University (attempt 1)
+2025-04-11 15:13:27,507 - INFO - Successfully accessed US News data for Johns Hopkins University
+2025-04-11 15:13:27,549 - INFO - Found website for Johns Hopkins University: http://www.jhu.edu
+2025-04-11 15:13:27,549 - INFO - Updated website for Johns Hopkins University: http://www.jhu.edu
+2025-04-11 15:13:27,549 - INFO - Processing Northwestern University (waiting 9.58s)
+2025-04-11 15:13:37,137 - INFO - Using specialized US News handler for Northwestern University
+2025-04-11 15:13:37,137 - INFO - Accessing US News data for Northwestern University with protective measures
+2025-04-11 15:13:37,138 - INFO - Accessing US News with proxy http://103.79.131.70:13001 for Northwestern University (attempt 1)
+2025-04-11 15:13:38,753 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 400 Bad Request')': /best-colleges/northwestern-university-1739
+2025-04-11 15:13:43,332 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 400 Bad Request')': /best-colleges/northwestern-university-1739
+2025-04-11 15:13:51,905 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/northwestern-university-1739
+2025-04-11 15:13:52,472 - WARNING - Error accessing US News with proxy http://103.79.131.70:13001 for Northwestern University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/northwestern-university-1739 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 400 Bad Request')))
+2025-04-11 15:14:01,688 - INFO - Accessing US News with proxy http://206.42.19.65:8080 for Northwestern University (attempt 2)
+2025-04-11 15:14:31,695 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f16c10>, 'Connection to 206.42.19.65 timed out. (connect timeout=30)')': /best-colleges/northwestern-university-1739
+2025-04-11 15:15:05,707 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f16350>, 'Connection to 206.42.19.65 timed out. (connect timeout=30)')': /best-colleges/northwestern-university-1739
+2025-04-11 15:15:43,721 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f16850>, 'Connection to 206.42.19.65 timed out. (connect timeout=30)')': /best-colleges/northwestern-university-1739
+2025-04-11 15:16:13,726 - WARNING - Error accessing US News with proxy http://206.42.19.65:8080 for Northwestern University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/northwestern-university-1739 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101e46d50>, 'Connection to 206.42.19.65 timed out. (connect timeout=30)')))
+2025-04-11 15:16:21,440 - INFO - Accessing US News with proxy http://36.67.194.162:8042 for Northwestern University (attempt 3)
+2025-04-11 15:16:51,452 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101e47610>, 'Connection to 36.67.194.162 timed out. (connect timeout=30)')': /best-colleges/northwestern-university-1739
+2025-04-11 15:17:25,466 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f16ad0>, 'Connection to 36.67.194.162 timed out. (connect timeout=30)')': /best-colleges/northwestern-university-1739
+2025-04-11 15:18:03,476 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f16990>, 'Connection to 36.67.194.162 timed out. (connect timeout=30)')': /best-colleges/northwestern-university-1739
+2025-04-11 15:18:33,484 - WARNING - Error accessing US News with proxy http://36.67.194.162:8042 for Northwestern University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/northwestern-university-1739 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f16710>, 'Connection to 36.67.194.162 timed out. (connect timeout=30)')))
+2025-04-11 15:18:43,301 - INFO - Accessing US News with proxy http://37.26.86.206:47464 for Northwestern University (attempt 4)
+2025-04-11 15:19:13,325 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f16210>, 'Connection to 37.26.86.206 timed out. (connect timeout=30)')': /best-colleges/northwestern-university-1739
+2025-04-11 15:19:47,340 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f160d0>, 'Connection to 37.26.86.206 timed out. (connect timeout=30)')': /best-colleges/northwestern-university-1739
+2025-04-11 15:20:25,356 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f15f90>, 'Connection to 37.26.86.206 timed out. (connect timeout=30)')': /best-colleges/northwestern-university-1739
+2025-04-11 15:20:55,366 - WARNING - Error accessing US News with proxy http://37.26.86.206:47464 for Northwestern University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/northwestern-university-1739 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f15bd0>, 'Connection to 37.26.86.206 timed out. (connect timeout=30)')))
+2025-04-11 15:21:02,435 - INFO - Accessing US News with proxy http://203.162.13.222:6868 for Northwestern University (attempt 5)
+2025-04-11 15:21:43,013 - INFO - Successfully accessed US News data for Northwestern University
+2025-04-11 15:21:43,063 - INFO - Found website for Northwestern University: http://www.northwestern.edu
+2025-04-11 15:21:43,063 - INFO - Updated website for Northwestern University: http://www.northwestern.edu
+2025-04-11 15:21:43,064 - INFO - Processing University of Pennsylvania (waiting 5.30s)
+2025-04-11 15:21:48,364 - INFO - Using specialized US News handler for University of Pennsylvania
+2025-04-11 15:21:48,365 - INFO - Accessing US News data for University of Pennsylvania with protective measures
+2025-04-11 15:21:48,366 - INFO - Accessing US News with proxy http://43.130.35.202:13001 for University of Pennsylvania (attempt 1)
+2025-04-11 15:21:49,713 - WARNING - Access forbidden (403) from US News for University of Pennsylvania. Trying different proxy.
+2025-04-11 15:22:04,336 - INFO - Accessing US News with proxy http://89.151.133.216:8080 for University of Pennsylvania (attempt 2)
+2025-04-11 15:22:34,344 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101e47610>, 'Connection to 89.151.133.216 timed out. (connect timeout=30)')': /best-colleges/university-of-pennsylvania-3378
+2025-04-11 15:23:08,361 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101e46d50>, 'Connection to 89.151.133.216 timed out. (connect timeout=30)')': /best-colleges/university-of-pennsylvania-3378
+2025-04-11 15:23:46,384 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f16850>, 'Connection to 89.151.133.216 timed out. (connect timeout=30)')': /best-colleges/university-of-pennsylvania-3378
+2025-04-11 15:24:16,394 - WARNING - Error accessing US News with proxy http://89.151.133.216:8080 for University of Pennsylvania: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-pennsylvania-3378 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f16350>, 'Connection to 89.151.133.216 timed out. (connect timeout=30)')))
+2025-04-11 15:24:25,570 - INFO - Accessing US News with proxy http://94.23.171.143:50001 for University of Pennsylvania (attempt 3)
+2025-04-11 15:24:55,576 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f15a90>, 'Connection to 94.23.171.143 timed out. (connect timeout=30)')': /best-colleges/university-of-pennsylvania-3378
+2025-04-11 15:25:29,588 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f15e50>, 'Connection to 94.23.171.143 timed out. (connect timeout=30)')': /best-colleges/university-of-pennsylvania-3378
+2025-04-11 15:26:07,600 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f15590>, 'Connection to 94.23.171.143 timed out. (connect timeout=30)')': /best-colleges/university-of-pennsylvania-3378
+2025-04-11 15:26:37,605 - WARNING - Error accessing US News with proxy http://94.23.171.143:50001 for University of Pennsylvania: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-pennsylvania-3378 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f15bd0>, 'Connection to 94.23.171.143 timed out. (connect timeout=30)')))
+2025-04-11 15:26:44,525 - INFO - Accessing US News with proxy http://190.95.183.242:2020 for University of Pennsylvania (attempt 4)
+2025-04-11 15:27:14,532 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f160d0>, 'Connection to 190.95.183.242 timed out. (connect timeout=30)')': /best-colleges/university-of-pennsylvania-3378
+2025-04-11 15:27:48,543 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f16210>, 'Connection to 190.95.183.242 timed out. (connect timeout=30)')': /best-colleges/university-of-pennsylvania-3378
+2025-04-11 15:27:56,758 - INFO - Successfully accessed US News data for University of Pennsylvania
+2025-04-11 15:27:56,799 - INFO - Found website for University of Pennsylvania: http://www.upenn.edu
+2025-04-11 15:27:56,800 - INFO - Updated website for University of Pennsylvania: http://www.upenn.edu
+2025-04-11 15:27:56,800 - INFO - Processed 10 universities
+2025-04-11 15:27:56,803 - INFO - Progress saved at index 10
+2025-04-11 15:27:56,803 - INFO - Processing Cornell University (waiting 6.40s)
+2025-04-11 15:28:03,213 - INFO - Using specialized US News handler for Cornell University
+2025-04-11 15:28:03,213 - INFO - Accessing US News data for Cornell University with protective measures
+2025-04-11 15:28:03,213 - INFO - Accessing US News with proxy http://65.108.203.37:28080 for Cornell University (attempt 1)
+2025-04-11 15:28:05,348 - INFO - Successfully accessed US News data for Cornell University
+2025-04-11 15:28:05,378 - INFO - Found website for Cornell University: http://www.cornell.edu
+2025-04-11 15:28:05,378 - INFO - Updated website for Cornell University: http://www.cornell.edu
+2025-04-11 15:28:05,378 - INFO - Processing University of Chicago (waiting 7.61s)
+2025-04-11 15:28:12,992 - INFO - Using specialized US News handler for University of Chicago
+2025-04-11 15:28:12,994 - INFO - Accessing US News data for University of Chicago with protective measures
+2025-04-11 15:28:12,995 - INFO - Accessing US News with proxy http://90.68.150.113:4321 for University of Chicago (attempt 1)
+2025-04-11 15:28:43,003 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f16710>, 'Connection to 90.68.150.113 timed out. (connect timeout=30)')': /best-colleges/university-of-chicago-1774
+2025-04-11 15:29:17,016 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f160d0>, 'Connection to 90.68.150.113 timed out. (connect timeout=30)')': /best-colleges/university-of-chicago-1774
+2025-04-11 15:29:55,036 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f16210>, 'Connection to 90.68.150.113 timed out. (connect timeout=30)')': /best-colleges/university-of-chicago-1774
+2025-04-11 15:30:13,772 - INFO - Successfully accessed US News data for University of Chicago
+2025-04-11 15:30:13,820 - INFO - Found website for University of Chicago: http://www.uchicago.edu
+2025-04-11 15:30:13,820 - INFO - Updated website for University of Chicago: http://www.uchicago.edu
+2025-04-11 15:30:13,820 - INFO - Processing Brown University (waiting 7.10s)
+2025-04-11 15:30:20,928 - INFO - Using specialized US News handler for Brown University
+2025-04-11 15:30:20,928 - INFO - Accessing US News data for Brown University with protective measures
+2025-04-11 15:30:20,929 - INFO - Accessing US News with proxy http://23.247.136.248:80 for Brown University (attempt 1)
+2025-04-11 15:30:32,114 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 400 Bad Request')': /best-colleges/brown-university-3401
+2025-04-11 15:30:36,302 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 400 Bad Request')': /best-colleges/brown-university-3401
+2025-04-11 15:30:44,482 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 400 Bad Request')': /best-colleges/brown-university-3401
+2025-04-11 15:30:44,661 - WARNING - Error accessing US News with proxy http://23.247.136.248:80 for Brown University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/brown-university-3401 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 400 Bad Request')))
+2025-04-11 15:30:51,830 - INFO - Accessing US News with proxy http://103.8.59.12:8080 for Brown University (attempt 2)
+2025-04-11 15:31:21,840 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107698190>, 'Connection to 103.8.59.12 timed out. (connect timeout=30)')': /best-colleges/brown-university-3401
+2025-04-11 15:31:55,861 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1076982d0>, 'Connection to 103.8.59.12 timed out. (connect timeout=30)')': /best-colleges/brown-university-3401
+2025-04-11 15:32:06,626 - INFO - Successfully accessed US News data for Brown University
+2025-04-11 15:32:06,660 - INFO - Found website for Brown University: https://www.brown.edu
+2025-04-11 15:32:06,662 - INFO - Updated website for Brown University: https://www.brown.edu
+2025-04-11 15:32:06,662 - INFO - Processing Columbia University (waiting 6.99s)
+2025-04-11 15:32:13,653 - INFO - Using specialized US News handler for Columbia University
+2025-04-11 15:32:13,653 - INFO - Accessing US News data for Columbia University with protective measures
+2025-04-11 15:32:13,653 - INFO - Accessing US News with proxy http://211.225.214.241:80 for Columbia University (attempt 1)
+2025-04-11 15:32:48,953 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)")': /best-colleges/columbia-university-2707
+2025-04-11 15:33:22,965 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f17c50>, 'Connection to 211.225.214.241 timed out. (connect timeout=30)')': /best-colleges/columbia-university-2707
+2025-04-11 15:34:00,976 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f17d90>, 'Connection to 211.225.214.241 timed out. (connect timeout=30)')': /best-colleges/columbia-university-2707
+2025-04-11 15:34:34,207 - WARNING - Error accessing US News with proxy http://211.225.214.241:80 for Columbia University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/columbia-university-2707 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)"))
+2025-04-11 15:34:43,395 - INFO - Accessing US News with proxy http://13.37.89.201:80 for Columbia University (attempt 2)
+2025-04-11 15:34:43,816 - INFO - Successfully accessed US News data for Columbia University
+2025-04-11 15:34:43,833 - WARNING - Could not find website link for Columbia University
+2025-04-11 15:34:43,833 - WARNING - Could not find website link for Columbia University
+2025-04-11 15:34:43,833 - INFO - Processing Dartmouth College (waiting 5.67s)
+2025-04-11 15:34:49,513 - INFO - Using specialized US News handler for Dartmouth College
+2025-04-11 15:34:49,513 - INFO - Accessing US News data for Dartmouth College with protective measures
+2025-04-11 15:34:49,513 - INFO - Accessing US News with proxy http://190.97.226.26:999 for Dartmouth College (attempt 1)
+2025-04-11 15:35:19,518 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107699090>, 'Connection to 190.97.226.26 timed out. (connect timeout=30)')': /best-colleges/dartmouth-college-2573
+2025-04-11 15:35:53,531 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1076991d0>, 'Connection to 190.97.226.26 timed out. (connect timeout=30)')': /best-colleges/dartmouth-college-2573
+2025-04-11 15:36:31,540 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107699310>, 'Connection to 190.97.226.26 timed out. (connect timeout=30)')': /best-colleges/dartmouth-college-2573
+2025-04-11 15:37:01,533 - WARNING - Error accessing US News with proxy http://190.97.226.26:999 for Dartmouth College: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/dartmouth-college-2573 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107699450>, 'Connection to 190.97.226.26 timed out. (connect timeout=30)')))
+2025-04-11 15:37:08,141 - INFO - Accessing US News with proxy http://103.79.131.70:13001 for Dartmouth College (attempt 2)
+2025-04-11 15:37:08,802 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 400 Bad Request')': /best-colleges/dartmouth-college-2573
+2025-04-11 15:37:13,425 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 400 Bad Request')': /best-colleges/dartmouth-college-2573
+2025-04-11 15:37:21,996 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 400 Bad Request')': /best-colleges/dartmouth-college-2573
+2025-04-11 15:37:22,598 - WARNING - Error accessing US News with proxy http://103.79.131.70:13001 for Dartmouth College: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/dartmouth-college-2573 (Caused by ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+2025-04-11 15:37:31,720 - INFO - Accessing US News with proxy http://158.255.77.166:80 for Dartmouth College (attempt 3)
+2025-04-11 15:37:32,113 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 400 Bad Request')': /best-colleges/dartmouth-college-2573
+2025-04-11 15:37:36,493 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 400 Bad Request')': /best-colleges/dartmouth-college-2573
+2025-04-11 15:37:44,878 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 400 Bad Request')': /best-colleges/dartmouth-college-2573
+2025-04-11 15:37:45,253 - WARNING - Error accessing US News with proxy http://158.255.77.166:80 for Dartmouth College: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/dartmouth-college-2573 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 400 Bad Request')))
+2025-04-11 15:37:50,590 - INFO - Accessing US News with proxy http://170.106.114.25:13001 for Dartmouth College (attempt 4)
+2025-04-11 15:37:51,466 - WARNING - Access forbidden (403) from US News for Dartmouth College. Trying different proxy.
+2025-04-11 15:38:05,838 - INFO - Accessing US News with proxy http://168.196.112.1:56000 for Dartmouth College (attempt 5)
+2025-04-11 15:38:35,874 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769a490>, 'Connection to 168.196.112.1 timed out. (connect timeout=30)')': /best-colleges/dartmouth-college-2573
+2025-04-11 15:39:09,893 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769a5d0>, 'Connection to 168.196.112.1 timed out. (connect timeout=30)')': /best-colleges/dartmouth-college-2573
+2025-04-11 15:39:47,911 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769a710>, 'Connection to 168.196.112.1 timed out. (connect timeout=30)')': /best-colleges/dartmouth-college-2573
+2025-04-11 15:40:17,927 - WARNING - Error accessing US News with proxy http://168.196.112.1:56000 for Dartmouth College: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/dartmouth-college-2573 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769a850>, 'Connection to 168.196.112.1 timed out. (connect timeout=30)')))
+2025-04-11 15:40:23,084 - ERROR - Failed to access US News data for Dartmouth College after trying multiple proxies
+2025-04-11 15:40:23,084 - WARNING - Failed to get response for Dartmouth College, will try again later
+2025-04-11 15:40:23,085 - INFO - Processed 15 universities
+2025-04-11 15:40:23,090 - INFO - Progress saved at index 15
+2025-04-11 15:40:23,090 - INFO - Processing University of California--Los Angeles (waiting 5.92s)
+2025-04-11 15:40:29,016 - INFO - Using specialized US News handler for University of California--Los Angeles
+2025-04-11 15:40:29,016 - INFO - Accessing US News data for University of California--Los Angeles with protective measures
+2025-04-11 15:40:29,017 - INFO - Accessing US News with proxy http://13.36.113.81:3128 for University of California--Los Angeles (attempt 1)
+2025-04-11 15:40:29,457 - INFO - Successfully accessed US News data for University of California--Los Angeles
+2025-04-11 15:40:29,461 - WARNING - Could not find website link for University of California--Los Angeles
+2025-04-11 15:40:29,461 - WARNING - Could not find website link for University of California--Los Angeles
+2025-04-11 15:40:29,461 - INFO - Processing University of California, Berkeley (waiting 7.96s)
+2025-04-11 15:40:37,427 - INFO - Using specialized US News handler for University of California, Berkeley
+2025-04-11 15:40:37,428 - INFO - Accessing US News data for University of California, Berkeley with protective measures
+2025-04-11 15:40:37,428 - INFO - Accessing US News with proxy http://50.175.212.66:80 for University of California, Berkeley (attempt 1)
+2025-04-11 15:41:07,436 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f17c50>, 'Connection to 50.175.212.66 timed out. (connect timeout=30)')': /best-colleges/university-of-california-berkeley-1312
+2025-04-11 15:41:41,453 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f17ed0>, 'Connection to 50.175.212.66 timed out. (connect timeout=30)')': /best-colleges/university-of-california-berkeley-1312
+2025-04-11 15:42:19,465 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f16850>, 'Connection to 50.175.212.66 timed out. (connect timeout=30)')': /best-colleges/university-of-california-berkeley-1312
+2025-04-11 15:42:49,473 - WARNING - Error accessing US News with proxy http://50.175.212.66:80 for University of California, Berkeley: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-california-berkeley-1312 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f14f50>, 'Connection to 50.175.212.66 timed out. (connect timeout=30)')))
+2025-04-11 15:42:55,416 - INFO - Accessing US News with proxy http://38.180.159.105:3128 for University of California, Berkeley (attempt 2)
+2025-04-11 15:43:25,424 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f179d0>, 'Connection to 38.180.159.105 timed out. (connect timeout=30)')': /best-colleges/university-of-california-berkeley-1312
+2025-04-11 15:44:03,542 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)")': /best-colleges/university-of-california-berkeley-1312
+2025-04-11 15:44:41,553 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f160d0>, 'Connection to 38.180.159.105 timed out. (connect timeout=30)')': /best-colleges/university-of-california-berkeley-1312
+2025-04-11 15:45:11,561 - WARNING - Error accessing US News with proxy http://38.180.159.105:3128 for University of California, Berkeley: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-california-berkeley-1312 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f16710>, 'Connection to 38.180.159.105 timed out. (connect timeout=30)')))
+2025-04-11 15:45:18,898 - INFO - Accessing US News with proxy http://50.174.7.152:80 for University of California, Berkeley (attempt 3)
+2025-04-11 15:45:48,910 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f17890>, 'Connection to 50.174.7.152 timed out. (connect timeout=30)')': /best-colleges/university-of-california-berkeley-1312
+2025-04-11 15:46:22,920 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f17750>, 'Connection to 50.174.7.152 timed out. (connect timeout=30)')': /best-colleges/university-of-california-berkeley-1312
+2025-04-11 15:47:00,929 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f17610>, 'Connection to 50.174.7.152 timed out. (connect timeout=30)')': /best-colleges/university-of-california-berkeley-1312
+2025-04-11 15:47:30,935 - WARNING - Error accessing US News with proxy http://50.174.7.152:80 for University of California, Berkeley: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-california-berkeley-1312 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769a990>, 'Connection to 50.174.7.152 timed out. (connect timeout=30)')))
+2025-04-11 15:47:39,035 - INFO - Accessing US News with proxy http://43.153.113.65:13001 for University of California, Berkeley (attempt 4)
+2025-04-11 15:47:39,537 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 500 Internal Server Error')': /best-colleges/university-of-california-berkeley-1312
+2025-04-11 15:47:40,651 - WARNING - Access forbidden (403) from US News for University of California, Berkeley. Trying different proxy.
+2025-04-11 15:47:53,481 - INFO - Accessing US News with proxy http://45.174.176.161:8088 for University of California, Berkeley (attempt 5)
+2025-04-11 15:47:57,560 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(54, 'Connection reset by peer')': /best-colleges/university-of-california-berkeley-1312
+2025-04-11 15:48:09,177 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(54, 'Connection reset by peer')': /best-colleges/university-of-california-berkeley-1312
+2025-04-11 15:48:47,190 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107699f90>, 'Connection to 45.174.176.161 timed out. (connect timeout=30)')': /best-colleges/university-of-california-berkeley-1312
+2025-04-11 15:49:17,200 - WARNING - Error accessing US News with proxy http://45.174.176.161:8088 for University of California, Berkeley: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-california-berkeley-1312 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107699e50>, 'Connection to 45.174.176.161 timed out. (connect timeout=30)')))
+2025-04-11 15:49:23,286 - ERROR - Failed to access US News data for University of California, Berkeley after trying multiple proxies
+2025-04-11 15:49:23,287 - WARNING - Failed to get response for University of California, Berkeley, will try again later
+2025-04-11 15:49:23,288 - INFO - Processing Rice University (waiting 9.24s)
+2025-04-11 15:49:32,536 - INFO - Using specialized US News handler for Rice University
+2025-04-11 15:49:32,536 - INFO - Accessing US News data for Rice University with protective measures
+2025-04-11 15:49:32,537 - INFO - Accessing US News with proxy http://15.157.64.188:20201 for Rice University (attempt 1)
+2025-04-11 15:49:33,059 - INFO - Successfully accessed US News data for Rice University
+2025-04-11 15:49:33,067 - WARNING - Could not find website link for Rice University
+2025-04-11 15:49:33,067 - WARNING - Could not find website link for Rice University
+2025-04-11 15:49:33,067 - INFO - Processing University of Notre Dame (waiting 5.79s)
+2025-04-11 15:49:38,859 - INFO - Using specialized US News handler for University of Notre Dame
+2025-04-11 15:49:38,859 - INFO - Accessing US News data for University of Notre Dame with protective measures
+2025-04-11 15:49:38,860 - INFO - Accessing US News with proxy http://43.133.13.187:10809 for University of Notre Dame (attempt 1)
+2025-04-11 15:50:10,281 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)")': /best-colleges/university-of-notre-dame-1840
+2025-04-11 15:50:25,027 - WARNING - Access forbidden (403) from US News for University of Notre Dame. Trying different proxy.
+2025-04-11 15:50:39,779 - INFO - Accessing US News with proxy http://43.130.12.39:13001 for University of Notre Dame (attempt 2)
+2025-04-11 15:50:40,100 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 500 Internal Server Error')': /best-colleges/university-of-notre-dame-1840
+2025-04-11 15:50:44,288 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 500 Internal Server Error')': /best-colleges/university-of-notre-dame-1840
+2025-04-11 15:50:52,484 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/university-of-notre-dame-1840
+2025-04-11 15:50:52,656 - WARNING - Error accessing US News with proxy http://43.130.12.39:13001 for University of Notre Dame: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-notre-dame-1840 (Caused by ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+2025-04-11 15:51:00,613 - INFO - Accessing US News with proxy http://43.135.147.227:13001 for University of Notre Dame (attempt 3)
+2025-04-11 15:51:00,792 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(54, 'Connection reset by peer')': /best-colleges/university-of-notre-dame-1840
+2025-04-11 15:51:04,971 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/university-of-notre-dame-1840
+2025-04-11 15:51:05,470 - WARNING - Access forbidden (403) from US News for University of Notre Dame. Trying different proxy.
+2025-04-11 15:51:20,116 - INFO - Accessing US News with proxy http://158.255.77.169:80 for University of Notre Dame (attempt 4)
+2025-04-11 15:51:20,501 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 400 Bad Request')': /best-colleges/university-of-notre-dame-1840
+2025-04-11 15:51:24,889 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 400 Bad Request')': /best-colleges/university-of-notre-dame-1840
+2025-04-11 15:51:33,278 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 400 Bad Request')': /best-colleges/university-of-notre-dame-1840
+2025-04-11 15:51:33,619 - WARNING - Error accessing US News with proxy http://158.255.77.169:80 for University of Notre Dame: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-notre-dame-1840 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 400 Bad Request')))
+2025-04-11 15:51:42,204 - INFO - Accessing US News with proxy http://43.130.12.65:13001 for University of Notre Dame (attempt 5)
+2025-04-11 15:51:42,387 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/university-of-notre-dame-1840
+2025-04-11 15:51:46,564 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(54, 'Connection reset by peer')': /best-colleges/university-of-notre-dame-1840
+2025-04-11 15:51:54,735 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/university-of-notre-dame-1840
+2025-04-11 15:51:54,904 - WARNING - Error accessing US News with proxy http://43.130.12.65:13001 for University of Notre Dame: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-notre-dame-1840 (Caused by ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+2025-04-11 15:52:02,221 - ERROR - Failed to access US News data for University of Notre Dame after trying multiple proxies
+2025-04-11 15:52:02,222 - WARNING - Failed to get response for University of Notre Dame, will try again later
+2025-04-11 15:52:02,223 - INFO - Processing Vanderbilt University (waiting 8.31s)
+2025-04-11 15:52:10,537 - INFO - Using specialized US News handler for Vanderbilt University
+2025-04-11 15:52:10,539 - INFO - Accessing US News data for Vanderbilt University with protective measures
+2025-04-11 15:52:10,539 - INFO - Accessing US News with proxy http://43.159.137.110:13001 for Vanderbilt University (attempt 1)
+2025-04-11 15:52:10,714 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/vanderbilt-3535
+2025-04-11 15:52:14,897 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/vanderbilt-3535
+2025-04-11 15:52:15,713 - WARNING - Access forbidden (403) from US News for Vanderbilt University. Trying different proxy.
+2025-04-11 15:52:29,389 - INFO - Accessing US News with proxy http://124.105.102.167:8082 for Vanderbilt University (attempt 2)
+2025-04-11 15:52:59,397 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f16710>, 'Connection to 124.105.102.167 timed out. (connect timeout=30)')': /best-colleges/vanderbilt-3535
+2025-04-11 15:53:33,407 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f160d0>, 'Connection to 124.105.102.167 timed out. (connect timeout=30)')': /best-colleges/vanderbilt-3535
+2025-04-11 15:54:11,417 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f15bd0>, 'Connection to 124.105.102.167 timed out. (connect timeout=30)')': /best-colleges/vanderbilt-3535
+2025-04-11 15:54:41,425 - WARNING - Error accessing US News with proxy http://124.105.102.167:8082 for Vanderbilt University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/vanderbilt-3535 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f179d0>, 'Connection to 124.105.102.167 timed out. (connect timeout=30)')))
+2025-04-11 15:54:47,653 - INFO - Accessing US News with proxy http://103.118.44.237:8080 for Vanderbilt University (attempt 3)
+2025-04-11 15:54:48,202 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 400 Bad Request')': /best-colleges/vanderbilt-3535
+2025-04-11 15:54:52,762 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 400 Bad Request')': /best-colleges/vanderbilt-3535
+2025-04-11 15:55:01,381 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 400 Bad Request')': /best-colleges/vanderbilt-3535
+2025-04-11 15:55:01,942 - WARNING - Error accessing US News with proxy http://103.118.44.237:8080 for Vanderbilt University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/vanderbilt-3535 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 400 Bad Request')))
+2025-04-11 15:55:08,275 - INFO - Accessing US News with proxy http://180.254.145.22:8080 for Vanderbilt University (attempt 4)
+2025-04-11 15:55:42,245 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)")': /best-colleges/vanderbilt-3535
+2025-04-11 15:56:16,255 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107698f50>, 'Connection to 180.254.145.22 timed out. (connect timeout=30)')': /best-colleges/vanderbilt-3535
+2025-04-11 15:57:13,145 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)")': /best-colleges/vanderbilt-3535
+2025-04-11 15:57:43,155 - WARNING - Error accessing US News with proxy http://180.254.145.22:8080 for Vanderbilt University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/vanderbilt-3535 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1076982d0>, 'Connection to 180.254.145.22 timed out. (connect timeout=30)')))
+2025-04-11 15:57:49,027 - INFO - Accessing US News with proxy http://103.25.192.126:8181 for Vanderbilt University (attempt 5)
+2025-04-11 15:57:54,828 - INFO - Successfully accessed US News data for Vanderbilt University
+2025-04-11 15:57:54,865 - INFO - Found website for Vanderbilt University: http://www.vanderbilt.edu
+2025-04-11 15:57:54,865 - INFO - Updated website for Vanderbilt University: http://www.vanderbilt.edu
+2025-04-11 15:57:54,865 - INFO - Processed 20 universities
+2025-04-11 15:57:54,868 - INFO - Progress saved at index 20
+2025-04-11 15:57:54,868 - INFO - Processing Carnegie Mellon University (waiting 5.52s)
+2025-04-11 15:58:00,393 - INFO - Using specialized US News handler for Carnegie Mellon University
+2025-04-11 15:58:00,395 - INFO - Accessing US News data for Carnegie Mellon University with protective measures
+2025-04-11 15:58:00,396 - INFO - Accessing US News with proxy http://43.135.166.82:13001 for Carnegie Mellon University (attempt 1)
+2025-04-11 15:58:00,743 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 500 Internal Server Error')': /best-colleges/carnegie-mellon-university-3242
+2025-04-11 15:58:02,247 - WARNING - Access forbidden (403) from US News for Carnegie Mellon University. Trying different proxy.
+2025-04-11 15:58:16,058 - INFO - Accessing US News with proxy http://171.237.102.13:1001 for Carnegie Mellon University (attempt 2)
+2025-04-11 15:58:17,297 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 502 Bad Gateway')': /best-colleges/carnegie-mellon-university-3242
+2025-04-11 15:58:22,083 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 502 Bad Gateway')': /best-colleges/carnegie-mellon-university-3242
+2025-04-11 15:58:35,976 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1020)')': /best-colleges/carnegie-mellon-university-3242
+2025-04-11 15:58:36,941 - WARNING - Error accessing US News with proxy http://171.237.102.13:1001 for Carnegie Mellon University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/carnegie-mellon-university-3242 (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1020)')))
+2025-04-11 15:58:45,607 - INFO - Accessing US News with proxy http://13.59.156.167:3128 for Carnegie Mellon University (attempt 3)
+2025-04-11 15:58:46,025 - INFO - Successfully accessed US News data for Carnegie Mellon University
+2025-04-11 15:58:46,030 - WARNING - Could not find website link for Carnegie Mellon University
+2025-04-11 15:58:46,030 - WARNING - Could not find website link for Carnegie Mellon University
+2025-04-11 15:58:46,030 - INFO - Processing University of Michigan--Ann Arbor (waiting 6.01s)
+2025-04-11 15:58:52,043 - INFO - Using specialized US News handler for University of Michigan--Ann Arbor
+2025-04-11 15:58:52,043 - INFO - Accessing US News data for University of Michigan--Ann Arbor with protective measures
+2025-04-11 15:58:52,043 - INFO - Accessing US News with proxy http://203.74.125.18:8888 for University of Michigan--Ann Arbor (attempt 1)
+2025-04-11 15:58:52,488 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/university-of-michigan-ann-arbor-9092
+2025-04-11 15:58:57,006 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 500 Internal Server Error')': /best-colleges/university-of-michigan-ann-arbor-9092
+2025-04-11 15:59:05,458 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/university-of-michigan-ann-arbor-9092
+2025-04-11 15:59:05,905 - WARNING - Error accessing US News with proxy http://203.74.125.18:8888 for University of Michigan--Ann Arbor: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-michigan-ann-arbor-9092 (Caused by ProtocolError('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')))
+2025-04-11 15:59:12,077 - INFO - Accessing US News with proxy http://38.253.126.18:8080 for University of Michigan--Ann Arbor (attempt 2)
+2025-04-11 15:59:42,099 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107698e10>, 'Connection to 38.253.126.18 timed out. (connect timeout=30)')': /best-colleges/university-of-michigan-ann-arbor-9092
+2025-04-11 16:00:20,273 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)")': /best-colleges/university-of-michigan-ann-arbor-9092
+2025-04-11 16:00:58,287 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107699450>, 'Connection to 38.253.126.18 timed out. (connect timeout=30)')': /best-colleges/university-of-michigan-ann-arbor-9092
+2025-04-11 16:01:28,292 - WARNING - Error accessing US News with proxy http://38.253.126.18:8080 for University of Michigan--Ann Arbor: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-michigan-ann-arbor-9092 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107698f50>, 'Connection to 38.253.126.18 timed out. (connect timeout=30)')))
+2025-04-11 16:01:33,733 - INFO - Accessing US News with proxy http://49.51.197.183:13001 for University of Michigan--Ann Arbor (attempt 3)
+2025-04-11 16:01:34,495 - WARNING - Access forbidden (403) from US News for University of Michigan--Ann Arbor. Trying different proxy.
+2025-04-11 16:01:49,419 - INFO - Accessing US News with proxy http://43.135.137.249:13001 for University of Michigan--Ann Arbor (attempt 4)
+2025-04-11 16:01:49,604 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/university-of-michigan-ann-arbor-9092
+2025-04-11 16:01:55,791 - WARNING - Access forbidden (403) from US News for University of Michigan--Ann Arbor. Trying different proxy.
+2025-04-11 16:02:10,222 - INFO - Accessing US News with proxy http://43.130.35.202:13001 for University of Michigan--Ann Arbor (attempt 5)
+2025-04-11 16:02:10,402 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/university-of-michigan-ann-arbor-9092
+2025-04-11 16:02:14,589 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/university-of-michigan-ann-arbor-9092
+2025-04-11 16:02:22,923 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 500 Internal Server Error')': /best-colleges/university-of-michigan-ann-arbor-9092
+2025-04-11 16:02:23,125 - WARNING - Error accessing US News with proxy http://43.130.35.202:13001 for University of Michigan--Ann Arbor: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-michigan-ann-arbor-9092 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 500 Internal Server Error')))
+2025-04-11 16:02:28,153 - ERROR - Failed to access US News data for University of Michigan--Ann Arbor after trying multiple proxies
+2025-04-11 16:02:28,154 - WARNING - Failed to get response for University of Michigan--Ann Arbor, will try again later
+2025-04-11 16:02:28,155 - INFO - Processing Washington University in St. Louis (waiting 9.17s)
+2025-04-11 16:02:37,330 - INFO - Using specialized US News handler for Washington University in St. Louis
+2025-04-11 16:02:37,331 - INFO - Accessing US News data for Washington University in St. Louis with protective measures
+2025-04-11 16:02:37,332 - INFO - Accessing US News with proxy http://189.22.234.34:80 for Washington University in St. Louis (attempt 1)
+2025-04-11 16:03:07,347 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f16850>, 'Connection to 189.22.234.34 timed out. (connect timeout=30)')': /best-colleges/washington-university-in-st-louis-2520
+2025-04-11 16:03:41,360 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f17ed0>, 'Connection to 189.22.234.34 timed out. (connect timeout=30)')': /best-colleges/washington-university-in-st-louis-2520
+2025-04-11 16:04:19,370 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f17d90>, 'Connection to 189.22.234.34 timed out. (connect timeout=30)')': /best-colleges/washington-university-in-st-louis-2520
+2025-04-11 16:04:49,380 - WARNING - Error accessing US News with proxy http://189.22.234.34:80 for Washington University in St. Louis: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/washington-university-in-st-louis-2520 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107699f90>, 'Connection to 189.22.234.34 timed out. (connect timeout=30)')))
+2025-04-11 16:04:55,360 - INFO - Accessing US News with proxy http://187.251.222.69:8080 for Washington University in St. Louis (attempt 2)
+2025-04-11 16:05:25,382 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107699450>, 'Connection to 187.251.222.69 timed out. (connect timeout=30)')': /best-colleges/washington-university-in-st-louis-2520
+2025-04-11 16:05:59,390 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1076982d0>, 'Connection to 187.251.222.69 timed out. (connect timeout=30)')': /best-colleges/washington-university-in-st-louis-2520
+2025-04-11 16:06:37,400 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107698e10>, 'Connection to 187.251.222.69 timed out. (connect timeout=30)')': /best-colleges/washington-university-in-st-louis-2520
+2025-04-11 16:07:07,409 - WARNING - Error accessing US News with proxy http://187.251.222.69:8080 for Washington University in St. Louis: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/washington-university-in-st-louis-2520 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107698cd0>, 'Connection to 187.251.222.69 timed out. (connect timeout=30)')))
+2025-04-11 16:07:13,745 - INFO - Accessing US News with proxy http://102.134.98.222:8081 for Washington University in St. Louis (attempt 3)
+2025-04-11 16:07:26,754 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 500 Internal Server Error')': /best-colleges/washington-university-in-st-louis-2520
+2025-04-11 16:07:43,351 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 500 Internal Server Error')': /best-colleges/washington-university-in-st-louis-2520
+2025-04-11 16:08:21,361 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769a710>, 'Connection to 102.134.98.222 timed out. (connect timeout=30)')': /best-colleges/washington-university-in-st-louis-2520
+2025-04-11 16:08:53,611 - WARNING - Error accessing US News with proxy http://102.134.98.222:8081 for Washington University in St. Louis: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/washington-university-in-st-louis-2520 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)"))
+2025-04-11 16:08:59,729 - INFO - Accessing US News with proxy http://102.134.98.222:8081 for Washington University in St. Louis (attempt 4)
+2025-04-11 16:09:33,983 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)")': /best-colleges/washington-university-in-st-louis-2520
+2025-04-11 16:10:08,004 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769b110>, 'Connection to 102.134.98.222 timed out. (connect timeout=30)')': /best-colleges/washington-university-in-st-louis-2520
+2025-04-11 16:10:46,021 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769afd0>, 'Connection to 102.134.98.222 timed out. (connect timeout=30)')': /best-colleges/washington-university-in-st-louis-2520
+2025-04-11 16:11:16,027 - WARNING - Error accessing US News with proxy http://102.134.98.222:8081 for Washington University in St. Louis: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/washington-university-in-st-louis-2520 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769b250>, 'Connection to 102.134.98.222 timed out. (connect timeout=30)')))
+2025-04-11 16:11:21,504 - INFO - Accessing US News with proxy http://43.130.15.214:13001 for Washington University in St. Louis (attempt 5)
+2025-04-11 16:11:22,356 - WARNING - Access forbidden (403) from US News for Washington University in St. Louis. Trying different proxy.
+2025-04-11 16:11:34,318 - ERROR - Failed to access US News data for Washington University in St. Louis after trying multiple proxies
+2025-04-11 16:11:34,318 - WARNING - Failed to get response for Washington University in St. Louis, will try again later
+2025-04-11 16:11:34,318 - INFO - Processing Emory University (waiting 7.56s)
+2025-04-11 16:11:41,879 - INFO - Using specialized US News handler for Emory University
+2025-04-11 16:11:41,879 - INFO - Accessing US News data for Emory University with protective measures
+2025-04-11 16:11:41,880 - INFO - Accessing US News with proxy http://54.228.164.102:3128 for Emory University (attempt 1)
+2025-04-11 16:11:42,395 - INFO - Successfully accessed US News data for Emory University
+2025-04-11 16:11:42,399 - WARNING - Could not find website link for Emory University
+2025-04-11 16:11:42,399 - WARNING - Could not find website link for Emory University
+2025-04-11 16:11:42,399 - INFO - Processing Georgetown University (waiting 7.68s)
+2025-04-11 16:11:50,079 - INFO - Using specialized US News handler for Georgetown University
+2025-04-11 16:11:50,079 - INFO - Accessing US News data for Georgetown University with protective measures
+2025-04-11 16:11:50,080 - INFO - Accessing US News with proxy http://185.130.28.5:56789 for Georgetown University (attempt 1)
+2025-04-11 16:12:05,073 - INFO - Successfully accessed US News data for Georgetown University
+2025-04-11 16:12:05,122 - INFO - Found website for Georgetown University: http://www.georgetown.edu
+2025-04-11 16:12:05,122 - INFO - Updated website for Georgetown University: http://www.georgetown.edu
+2025-04-11 16:12:05,122 - INFO - Processed 25 universities
+2025-04-11 16:12:05,123 - INFO - Progress saved at index 25
+2025-04-11 16:12:05,123 - INFO - Processing University of Virginia (waiting 7.71s)
+2025-04-11 16:12:12,839 - INFO - Using specialized US News handler for University of Virginia
+2025-04-11 16:12:12,840 - INFO - Accessing US News data for University of Virginia with protective measures
+2025-04-11 16:12:12,840 - INFO - Accessing US News with proxy http://47.247.141.78:8080 for University of Virginia (attempt 1)
+2025-04-11 16:12:42,844 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f16710>, 'Connection to 47.247.141.78 timed out. (connect timeout=30)')': /best-colleges/uva-6968
+2025-04-11 16:13:16,853 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f17d90>, 'Connection to 47.247.141.78 timed out. (connect timeout=30)')': /best-colleges/uva-6968
+2025-04-11 16:13:54,864 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f14f50>, 'Connection to 47.247.141.78 timed out. (connect timeout=30)')': /best-colleges/uva-6968
+2025-04-11 16:14:24,874 - WARNING - Error accessing US News with proxy http://47.247.141.78:8080 for University of Virginia: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/uva-6968 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f17b10>, 'Connection to 47.247.141.78 timed out. (connect timeout=30)')))
+2025-04-11 16:14:33,943 - INFO - Accessing US News with proxy http://198.199.86.11:8080 for University of Virginia (attempt 2)
+2025-04-11 16:15:03,989 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)")': /best-colleges/uva-6968
+2025-04-11 16:15:38,029 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)")': /best-colleges/uva-6968
+2025-04-11 16:16:16,066 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)")': /best-colleges/uva-6968
+2025-04-11 16:16:46,097 - WARNING - Error accessing US News with proxy http://198.199.86.11:8080 for University of Virginia: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/uva-6968 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)"))
+2025-04-11 16:16:53,479 - INFO - Accessing US News with proxy http://45.201.208.192:8080 for University of Virginia (attempt 3)
+2025-04-11 16:17:06,487 - INFO - Successfully accessed US News data for University of Virginia
+2025-04-11 16:17:06,528 - INFO - Found website for University of Virginia: http://www.virginia.edu
+2025-04-11 16:17:06,528 - INFO - Updated website for University of Virginia: http://www.virginia.edu
+2025-04-11 16:17:06,528 - INFO - Processing University of North Carolina--Chapel Hill (waiting 6.78s)
+2025-04-11 16:17:13,308 - INFO - Using specialized US News handler for University of North Carolina--Chapel Hill
+2025-04-11 16:17:13,309 - INFO - Accessing US News data for University of North Carolina--Chapel Hill with protective measures
+2025-04-11 16:17:13,309 - INFO - Accessing US News with proxy http://206.42.19.65:8080 for University of North Carolina--Chapel Hill (attempt 1)
+2025-04-11 16:17:27,801 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/university-of-north-carolina-chapel-hill-2974
+2025-04-11 16:18:01,805 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f17610>, 'Connection to 206.42.19.65 timed out. (connect timeout=30)')': /best-colleges/university-of-north-carolina-chapel-hill-2974
+2025-04-11 16:18:39,816 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f179d0>, 'Connection to 206.42.19.65 timed out. (connect timeout=30)')': /best-colleges/university-of-north-carolina-chapel-hill-2974
+2025-04-11 16:19:09,823 - WARNING - Error accessing US News with proxy http://206.42.19.65:8080 for University of North Carolina--Chapel Hill: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-north-carolina-chapel-hill-2974 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f15bd0>, 'Connection to 206.42.19.65 timed out. (connect timeout=30)')))
+2025-04-11 16:19:15,507 - INFO - Accessing US News with proxy http://35.79.120.242:3128 for University of North Carolina--Chapel Hill (attempt 2)
+2025-04-11 16:19:16,324 - INFO - Successfully accessed US News data for University of North Carolina--Chapel Hill
+2025-04-11 16:19:16,333 - WARNING - Could not find website link for University of North Carolina--Chapel Hill
+2025-04-11 16:19:16,334 - WARNING - Could not find website link for University of North Carolina--Chapel Hill
+2025-04-11 16:19:16,334 - INFO - Processing University of Southern California (waiting 6.15s)
+2025-04-11 16:19:22,491 - INFO - Using specialized US News handler for University of Southern California
+2025-04-11 16:19:22,492 - INFO - Accessing US News data for University of Southern California with protective measures
+2025-04-11 16:19:22,492 - INFO - Accessing US News with proxy http://109.109.166.176:8104 for University of Southern California (attempt 1)
+2025-04-11 16:19:52,497 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f16710>, 'Connection to 109.109.166.176 timed out. (connect timeout=30)')': /best-colleges/university-of-southern-california-1328
+2025-04-11 16:20:26,510 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107699310>, 'Connection to 109.109.166.176 timed out. (connect timeout=30)')': /best-colleges/university-of-southern-california-1328
+2025-04-11 16:21:04,523 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107699e50>, 'Connection to 109.109.166.176 timed out. (connect timeout=30)')': /best-colleges/university-of-southern-california-1328
+2025-04-11 16:21:34,527 - WARNING - Error accessing US News with proxy http://109.109.166.176:8104 for University of Southern California: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-southern-california-1328 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107699810>, 'Connection to 109.109.166.176 timed out. (connect timeout=30)')))
+2025-04-11 16:21:39,717 - INFO - Accessing US News with proxy http://103.169.139.13:8081 for University of Southern California (attempt 2)
+2025-04-11 16:22:09,729 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107698a50>, 'Connection to 103.169.139.13 timed out. (connect timeout=30)')': /best-colleges/university-of-southern-california-1328
+2025-04-11 16:22:43,739 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107698b90>, 'Connection to 103.169.139.13 timed out. (connect timeout=30)')': /best-colleges/university-of-southern-california-1328
+2025-04-11 16:23:21,749 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769ac10>, 'Connection to 103.169.139.13 timed out. (connect timeout=30)')': /best-colleges/university-of-southern-california-1328
+2025-04-11 16:23:51,759 - WARNING - Error accessing US News with proxy http://103.169.139.13:8081 for University of Southern California: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-southern-california-1328 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107699a90>, 'Connection to 103.169.139.13 timed out. (connect timeout=30)')))
+2025-04-11 16:23:58,719 - INFO - Accessing US News with proxy http://177.93.58.41:999 for University of Southern California (attempt 3)
+2025-04-11 16:24:28,725 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769b250>, 'Connection to 177.93.58.41 timed out. (connect timeout=30)')': /best-colleges/university-of-southern-california-1328
+2025-04-11 16:25:02,736 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769afd0>, 'Connection to 177.93.58.41 timed out. (connect timeout=30)')': /best-colleges/university-of-southern-california-1328
+2025-04-11 16:25:40,748 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769b110>, 'Connection to 177.93.58.41 timed out. (connect timeout=30)')': /best-colleges/university-of-southern-california-1328
+2025-04-11 16:26:10,760 - WARNING - Error accessing US News with proxy http://177.93.58.41:999 for University of Southern California: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-southern-california-1328 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769ae90>, 'Connection to 177.93.58.41 timed out. (connect timeout=30)')))
+2025-04-11 16:26:19,375 - INFO - Accessing US News with proxy http://109.230.82.172:3128 for University of Southern California (attempt 4)
+2025-04-11 16:26:49,382 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769a850>, 'Connection to 109.230.82.172 timed out. (connect timeout=30)')': /best-colleges/university-of-southern-california-1328
+2025-04-11 16:27:23,392 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769a710>, 'Connection to 109.230.82.172 timed out. (connect timeout=30)')': /best-colleges/university-of-southern-california-1328
+2025-04-11 16:28:01,402 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769a490>, 'Connection to 109.230.82.172 timed out. (connect timeout=30)')': /best-colleges/university-of-southern-california-1328
+2025-04-11 16:28:54,642 - WARNING - Error accessing US News with proxy http://109.230.82.172:3128 for University of Southern California: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-southern-california-1328 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)"))
+2025-04-11 16:29:01,779 - INFO - Accessing US News with proxy http://103.147.77.204:8080 for University of Southern California (attempt 5)
+2025-04-11 16:29:31,793 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f17b10>, 'Connection to 103.147.77.204 timed out. (connect timeout=30)')': /best-colleges/university-of-southern-california-1328
+2025-04-11 16:30:05,812 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f15bd0>, 'Connection to 103.147.77.204 timed out. (connect timeout=30)')': /best-colleges/university-of-southern-california-1328
+2025-04-11 16:30:43,866 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f179d0>, 'Connection to 103.147.77.204 timed out. (connect timeout=30)')': /best-colleges/university-of-southern-california-1328
+2025-04-11 16:31:13,877 - WARNING - Error accessing US News with proxy http://103.147.77.204:8080 for University of Southern California: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-southern-california-1328 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f17610>, 'Connection to 103.147.77.204 timed out. (connect timeout=30)')))
+2025-04-11 16:31:19,868 - ERROR - Failed to access US News data for University of Southern California after trying multiple proxies
+2025-04-11 16:31:19,872 - WARNING - Failed to get response for University of Southern California, will try again later
+2025-04-11 16:31:19,872 - INFO - Processing University of California, San Diego (waiting 8.74s)
+2025-04-11 16:31:28,616 - INFO - Using specialized US News handler for University of California, San Diego
+2025-04-11 16:31:28,616 - INFO - Accessing US News data for University of California, San Diego with protective measures
+2025-04-11 16:31:28,618 - INFO - Accessing US News with proxy http://202.61.120.182:8080 for University of California, San Diego (attempt 1)
+2025-04-11 16:31:58,629 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769a990>, 'Connection to 202.61.120.182 timed out. (connect timeout=30)')': /best-colleges/university-of-california-san-diego-1317
+2025-04-11 16:32:32,640 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769ae90>, 'Connection to 202.61.120.182 timed out. (connect timeout=30)')': /best-colleges/university-of-california-san-diego-1317
+2025-04-11 16:33:10,650 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769b110>, 'Connection to 202.61.120.182 timed out. (connect timeout=30)')': /best-colleges/university-of-california-san-diego-1317
+2025-04-11 16:33:42,767 - WARNING - Error accessing US News with proxy http://202.61.120.182:8080 for University of California, San Diego: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-california-san-diego-1317 (Caused by ProtocolError('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')))
+2025-04-11 16:33:51,730 - INFO - Accessing US News with proxy http://168.196.112.1:56000 for University of California, San Diego (attempt 2)
+2025-04-11 16:34:21,742 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769b390>, 'Connection to 168.196.112.1 timed out. (connect timeout=30)')': /best-colleges/university-of-california-san-diego-1317
+2025-04-11 16:34:55,750 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107699a90>, 'Connection to 168.196.112.1 timed out. (connect timeout=30)')': /best-colleges/university-of-california-san-diego-1317
+2025-04-11 16:35:33,760 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769ac10>, 'Connection to 168.196.112.1 timed out. (connect timeout=30)')': /best-colleges/university-of-california-san-diego-1317
+2025-04-11 16:36:00,263 - INFO - Successfully accessed US News data for University of California, San Diego
+2025-04-11 16:36:00,315 - INFO - Found website for University of California, San Diego: http://www.ucsd.edu/
+2025-04-11 16:36:00,315 - INFO - Updated website for University of California, San Diego: http://www.ucsd.edu/
+2025-04-11 16:36:00,315 - INFO - Processing New York University (waiting 6.93s)
+2025-04-11 16:36:07,256 - INFO - Using specialized US News handler for New York University
+2025-04-11 16:36:07,257 - INFO - Accessing US News data for New York University with protective measures
+2025-04-11 16:36:07,258 - INFO - Accessing US News with proxy http://38.159.227.194:999 for New York University (attempt 1)
+2025-04-11 16:36:37,267 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f16210>, 'Connection to 38.159.227.194 timed out. (connect timeout=30)')': /best-colleges/nyu-2785
+2025-04-11 16:37:11,295 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f17610>, 'Connection to 38.159.227.194 timed out. (connect timeout=30)')': /best-colleges/nyu-2785
+2025-04-11 16:37:49,306 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f179d0>, 'Connection to 38.159.227.194 timed out. (connect timeout=30)')': /best-colleges/nyu-2785
+2025-04-11 16:38:19,315 - WARNING - Error accessing US News with proxy http://38.159.227.194:999 for New York University: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/nyu-2785 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x101f15bd0>, 'Connection to 38.159.227.194 timed out. (connect timeout=30)')))
+2025-04-11 16:38:26,369 - INFO - Accessing US News with proxy http://15.237.115.153:20201 for New York University (attempt 2)
+2025-04-11 16:38:26,891 - INFO - Successfully accessed US News data for New York University
+2025-04-11 16:38:26,903 - WARNING - Could not find website link for New York University
+2025-04-11 16:38:26,903 - WARNING - Could not find website link for New York University
+2025-04-11 16:38:26,903 - INFO - Processed 30 universities
+2025-04-11 16:38:26,906 - INFO - Progress saved at index 30
+2025-04-11 16:38:26,907 - INFO - Processing University of Florida (waiting 5.65s)
+2025-04-11 16:38:32,566 - INFO - Using specialized US News handler for University of Florida
+2025-04-11 16:38:32,568 - INFO - Accessing US News data for University of Florida with protective measures
+2025-04-11 16:38:32,568 - INFO - Accessing US News with proxy http://43.135.165.192:13001 for University of Florida (attempt 1)
+2025-04-11 16:38:32,747 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 500 Internal Server Error')': /best-colleges/university-of-florida-1535
+2025-04-11 16:38:36,928 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/university-of-florida-1535
+2025-04-11 16:38:45,089 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/university-of-florida-1535
+2025-04-11 16:38:45,266 - WARNING - Error accessing US News with proxy http://43.135.165.192:13001 for University of Florida: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-florida-1535 (Caused by ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+2025-04-11 16:38:52,251 - INFO - Accessing US News with proxy http://154.26.134.167:8080 for University of Florida (attempt 2)
+2025-04-11 16:39:06,156 - INFO - Successfully accessed US News data for University of Florida
+2025-04-11 16:39:06,228 - INFO - Found website for University of Florida: //www.ufl.edu
+2025-04-11 16:39:06,229 - INFO - Updated website for University of Florida: //www.ufl.edu
+2025-04-11 16:39:06,229 - INFO - Processing The University of Texas--Austin (waiting 8.52s)
+2025-04-11 16:39:14,754 - INFO - Using specialized US News handler for The University of Texas--Austin
+2025-04-11 16:39:14,754 - INFO - Accessing US News data for The University of Texas--Austin with protective measures
+2025-04-11 16:39:14,755 - INFO - Accessing US News with proxy http://13.56.192.187:80 for The University of Texas--Austin (attempt 1)
+2025-04-11 16:39:15,135 - INFO - Successfully accessed US News data for The University of Texas--Austin
+2025-04-11 16:39:15,145 - WARNING - Could not find website link for The University of Texas--Austin
+2025-04-11 16:39:15,146 - WARNING - Could not find website link for The University of Texas--Austin
+2025-04-11 16:39:15,146 - INFO - Processing Georgia Institute of Technology (waiting 6.69s)
+2025-04-11 16:39:21,836 - INFO - Using specialized US News handler for Georgia Institute of Technology
+2025-04-11 16:39:21,837 - INFO - Accessing US News data for Georgia Institute of Technology with protective measures
+2025-04-11 16:39:21,837 - INFO - Accessing US News with proxy http://175.106.11.172:8080 for Georgia Institute of Technology (attempt 1)
+2025-04-11 16:39:51,843 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769a210>, 'Connection to 175.106.11.172 timed out. (connect timeout=30)')': /best-colleges/georgia-institute-of-technology-1569
+2025-04-11 16:40:14,529 - INFO - Successfully accessed US News data for Georgia Institute of Technology
+2025-04-11 16:40:14,585 - INFO - Found website for Georgia Institute of Technology: https://www.gatech.edu/
+2025-04-11 16:40:14,585 - INFO - Updated website for Georgia Institute of Technology: https://www.gatech.edu/
+2025-04-11 16:40:14,586 - INFO - Processing University of California, Davis (waiting 8.05s)
+2025-04-11 16:40:22,644 - INFO - Using specialized US News handler for University of California, Davis
+2025-04-11 16:40:22,644 - INFO - Accessing US News data for University of California, Davis with protective measures
+2025-04-11 16:40:22,645 - INFO - Accessing US News with proxy http://8.219.97.248:80 for University of California, Davis (attempt 1)
+2025-04-11 16:40:37,761 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/university-of-california-davis-1313
+2025-04-11 16:40:56,376 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/university-of-california-davis-1313
+2025-04-11 16:41:30,652 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1020)')': /best-colleges/university-of-california-davis-1313
+2025-04-11 16:41:43,310 - WARNING - Error accessing US News with proxy http://8.219.97.248:80 for University of California, Davis: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-california-davis-1313 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-04-11 16:41:51,022 - INFO - Accessing US News with proxy http://218.75.224.4:3309 for University of California, Davis (attempt 2)
+2025-04-11 16:41:51,547 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 400 Bad Request')': /best-colleges/university-of-california-davis-1313
+2025-04-11 16:41:56,082 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 400 Bad Request')': /best-colleges/university-of-california-davis-1313
+2025-04-11 16:42:04,610 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'OSError('Tunnel connection failed: 400 Bad Request')': /best-colleges/university-of-california-davis-1313
+2025-04-11 16:42:05,133 - WARNING - Error accessing US News with proxy http://218.75.224.4:3309 for University of California, Davis: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-california-davis-1313 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 400 Bad Request')))
+2025-04-11 16:42:14,219 - INFO - Accessing US News with proxy http://217.66.215.86:8080 for University of California, Davis (attempt 3)
+2025-04-11 16:42:44,228 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769ad50>, 'Connection to 217.66.215.86 timed out. (connect timeout=30)')': /best-colleges/university-of-california-davis-1313
+2025-04-11 16:43:18,239 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107698690>, 'Connection to 217.66.215.86 timed out. (connect timeout=30)')': /best-colleges/university-of-california-davis-1313
+2025-04-11 16:43:56,250 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107698050>, 'Connection to 217.66.215.86 timed out. (connect timeout=30)')': /best-colleges/university-of-california-davis-1313
+2025-04-11 16:44:26,260 - WARNING - Error accessing US News with proxy http://217.66.215.86:8080 for University of California, Davis: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-california-davis-1313 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107698190>, 'Connection to 217.66.215.86 timed out. (connect timeout=30)')))
+2025-04-11 16:44:35,253 - INFO - Accessing US News with proxy http://217.66.215.86:8080 for University of California, Davis (attempt 4)
+2025-04-11 16:45:05,265 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107699f90>, 'Connection to 217.66.215.86 timed out. (connect timeout=30)')': /best-colleges/university-of-california-davis-1313
+2025-04-11 16:45:39,276 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10769bb10>, 'Connection to 217.66.215.86 timed out. (connect timeout=30)')': /best-colleges/university-of-california-davis-1313
+2025-04-11 16:45:50,992 - INFO - Successfully accessed US News data for University of California, Davis
+2025-04-11 16:45:51,056 - INFO - Found website for University of California, Davis: http://www.ucdavis.edu
+2025-04-11 16:45:51,056 - INFO - Updated website for University of California, Davis: http://www.ucdavis.edu
+2025-04-11 16:45:51,056 - INFO - Processing University of California--Irvine (waiting 7.57s)
+2025-04-11 16:45:58,627 - INFO - Using specialized US News handler for University of California--Irvine
+2025-04-11 16:45:58,627 - INFO - Accessing US News data for University of California--Irvine with protective measures
+2025-04-11 16:45:58,627 - INFO - Accessing US News with proxy http://170.106.181.112:13001 for University of California--Irvine (attempt 1)
+2025-04-11 16:46:00,433 - WARNING - Access forbidden (403) from US News for University of California--Irvine. Trying different proxy.
+2025-04-11 16:46:12,458 - INFO - Accessing US News with proxy http://204.236.176.61:3128 for University of California--Irvine (attempt 2)
+2025-04-11 16:46:12,852 - INFO - Successfully accessed US News data for University of California--Irvine
+2025-04-11 16:46:12,862 - WARNING - Could not find website link for University of California--Irvine
+2025-04-11 16:46:12,863 - WARNING - Could not find website link for University of California--Irvine
+2025-04-11 16:46:12,863 - INFO - Processed 35 universities
+2025-04-11 16:46:12,866 - INFO - Progress saved at index 35
+2025-04-11 16:46:12,866 - INFO - Processing University of Illinois Urbana-Champaign (waiting 8.10s)
+2025-04-11 16:46:20,975 - INFO - Using specialized US News handler for University of Illinois Urbana-Champaign
+2025-04-11 16:46:20,976 - INFO - Accessing US News data for University of Illinois Urbana-Champaign with protective measures
+2025-04-11 16:46:20,977 - INFO - Accessing US News with proxy http://171.5.189.84:8080 for University of Illinois Urbana-Champaign (attempt 1)
+2025-04-11 16:46:50,985 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107699590>, 'Connection to 171.5.189.84 timed out. (connect timeout=30)')': /best-colleges/university-of-illinois-urbanachampaign-1775
+2025-04-11 16:47:24,997 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107698190>, 'Connection to 171.5.189.84 timed out. (connect timeout=30)')': /best-colleges/university-of-illinois-urbanachampaign-1775
+2025-04-11 16:48:03,010 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107698050>, 'Connection to 171.5.189.84 timed out. (connect timeout=30)')': /best-colleges/university-of-illinois-urbanachampaign-1775
+2025-04-11 16:48:33,020 - WARNING - Error accessing US News with proxy http://171.5.189.84:8080 for University of Illinois Urbana-Champaign: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-illinois-urbanachampaign-1775 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107698690>, 'Connection to 171.5.189.84 timed out. (connect timeout=30)')))
+2025-04-11 16:48:42,228 - INFO - Accessing US News with proxy http://47.238.149.53:30008 for University of Illinois Urbana-Champaign (attempt 2)
+2025-04-11 16:48:43,015 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(54, 'Connection reset by peer')': /best-colleges/university-of-illinois-urbanachampaign-1775
+2025-04-11 16:49:07,136 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(54, 'Connection reset by peer')': /best-colleges/university-of-illinois-urbanachampaign-1775
+2025-04-11 16:49:50,420 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)")': /best-colleges/university-of-illinois-urbanachampaign-1775
+2025-04-11 16:50:22,679 - WARNING - Error accessing US News with proxy http://47.238.149.53:30008 for University of Illinois Urbana-Champaign: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-illinois-urbanachampaign-1775 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)"))
+2025-04-11 16:50:31,741 - INFO - Accessing US News with proxy http://149.86.159.4:8080 for University of Illinois Urbana-Champaign (attempt 3)
+2025-04-11 16:51:01,754 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1076987d0>, 'Connection to 149.86.159.4 timed out. (connect timeout=30)')': /best-colleges/university-of-illinois-urbanachampaign-1775
+2025-04-11 16:51:35,765 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107698a50>, 'Connection to 149.86.159.4 timed out. (connect timeout=30)')': /best-colleges/university-of-illinois-urbanachampaign-1775
+2025-04-11 16:52:13,777 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107698e10>, 'Connection to 149.86.159.4 timed out. (connect timeout=30)')': /best-colleges/university-of-illinois-urbanachampaign-1775
+2025-04-11 16:52:43,783 - WARNING - Error accessing US News with proxy http://149.86.159.4:8080 for University of Illinois Urbana-Champaign: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-illinois-urbanachampaign-1775 (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107699310>, 'Connection to 149.86.159.4 timed out. (connect timeout=30)')))
+2025-04-11 16:52:50,261 - INFO - Accessing US News with proxy http://170.106.197.21:13001 for University of Illinois Urbana-Champaign (attempt 4)
+2025-04-11 16:52:50,429 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/university-of-illinois-urbanachampaign-1775
+2025-04-11 16:52:54,594 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/university-of-illinois-urbanachampaign-1775
+2025-04-11 16:52:55,669 - WARNING - Access forbidden (403) from US News for University of Illinois Urbana-Champaign. Trying different proxy.
+2025-04-11 16:53:07,823 - INFO - Accessing US News with proxy http://43.130.35.202:13001 for University of Illinois Urbana-Champaign (attempt 5)
+2025-04-11 16:53:07,994 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/university-of-illinois-urbanachampaign-1775
+2025-04-11 16:53:12,169 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(54, 'Connection reset by peer')': /best-colleges/university-of-illinois-urbanachampaign-1775
+2025-04-11 16:53:20,339 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /best-colleges/university-of-illinois-urbanachampaign-1775
+2025-04-11 16:53:20,505 - WARNING - Error accessing US News with proxy http://43.130.35.202:13001 for University of Illinois Urbana-Champaign: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /best-colleges/university-of-illinois-urbanachampaign-1775 (Caused by ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+2025-04-11 16:53:29,803 - ERROR - Failed to access US News data for University of Illinois Urbana-Champaign after trying multiple proxies
+2025-04-11 16:53:29,804 - WARNING - Failed to get response for University of Illinois Urbana-Champaign, will try again later
+2025-04-11 16:53:29,804 - INFO - Processing Boston College (waiting 5.12s)
+2025-04-11 16:53:34,930 - INFO - Using specialized US News handler for Boston College
+2025-04-11 16:53:34,930 - INFO - Accessing US News data for Boston College with protective measures
+2025-04-11 16:53:34,931 - INFO - Accessing US News with proxy http://47.252.29.28:11222 for Boston College (attempt 1)
+2025-04-11 16:53:46,776 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(54, 'Connection reset by peer')': /best-colleges/boston-college-2128
+2025-04-11 16:54:43,813 - WARNING - Script interrupted by user. Saving progress...
+2025-04-11 16:54:43,821 - INFO - Progress saved at index 36
+2025-04-11 16:54:43,831 - INFO - Data saved. Exiting.
