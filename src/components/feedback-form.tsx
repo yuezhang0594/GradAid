@@ -4,21 +4,29 @@ import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { toast } from 'sonner';
-import { SendIcon } from 'lucide-react';
+import { SendIcon, AlertCircle } from 'lucide-react';
 import { StarRating } from '@/components/ui/star-rating';
 import { useFeedback } from '@/hooks/useFeedback';
 import { Alert, AlertDescription } from '@/components/ui/alert';
-import { AlertCircle } from 'lucide-react';
+import { feedbackSchema, type FeedbackInput, FEEDBACK_MAX_CHARS } from '../../convex/validators';
 
 interface FeedbackFormProps {
     className?: string;
 }
 
+type ValidationErrors = {
+    positive?: string;
+    negative?: string;
+    rating?: string;
+    general?: string;
+};
+
 /**
  * A comprehensive feedback form component that collects user ratings and comments.
  * 
  * This component provides a form with fields for positive feedback, improvement suggestions,
- * and a star rating. It handles form submission state, validation, and success/error notifications.
+ * and a star rating. It handles form submission state, validation, sanitization, and 
+ * success/error notifications.
  * 
  * @component
  * @param {object} props - Component props
@@ -35,32 +43,110 @@ interface FeedbackFormProps {
  * @returns A card containing the feedback form with rating, text inputs, and submit button
  */
 const FeedbackForm: React.FC<FeedbackFormProps> = ({ className }) => {
-    const [positives, setPositives] = useState('');
-    const [improvements, setImprovements] = useState('');
+    const [positive, setPositive] = useState('');
+    const [negative, setNegative] = useState('');
     const [rating, setRating] = useState(0);
-    
+    const [errors, setErrors] = useState<ValidationErrors>({});
+
     const { submitFeedback, isSubmitting, validationError } = useFeedback();
+
+    /**
+     * Sanitizes input strings to prevent XSS attacks
+     * Removes HTML tags, trims whitespace, and handles empty strings
+     */
+    const sanitizeInput = (input: string): string => {
+        if (!input) return '';
+        // Remove HTML tags and trim whitespace
+        return input.replace(/<[^>]*>/g, '').trim();
+    };
+
+    /**
+     * Validates the form inputs using Zod schema
+     * Returns true if valid, false if invalid
+     */
+    const validateForm = (): boolean => {
+        const newErrors: ValidationErrors = {};
+        let isValid = true;
+
+        // Client-side validation
+        if (rating === 0) {
+            newErrors.rating = "Please provide a rating from 1 to 5 stars.";
+            isValid = false;
+        }
+
+        // Validate using Zod schema
+        const result = feedbackSchema.safeParse({
+            positive: positive,
+            negative: negative,
+            rating: rating
+        });
+
+        if (!result.success) {
+            // Map Zod errors to our form fields
+            result.error.errors.forEach(error => {
+                const path = error.path[0] as string;
+
+                if (path === 'positive') {
+                    newErrors.positive = error.message;
+                } else if (path === 'negative') {
+                    newErrors.negative = error.message;
+                } else if (path === 'rating') {
+                    newErrors.rating = error.message;
+                } else if (path === 'general') {
+                    newErrors.general = error.message;
+                }
+
+                isValid = false;
+            });
+        }
+
+        setErrors(newErrors);
+        return isValid;
+    };
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        if (rating === 0) {
-            toast.error("Missing rating", {
-                description: "Please provide a rating from 1 to 5 stars.",
+        // Reset previous errors
+        setErrors({});
+
+        // Sanitize inputs
+        const sanitizedPositive = sanitizeInput(positive);
+        const sanitizedNegative = sanitizeInput(negative);
+
+        // Update state with sanitized values
+        if (sanitizedPositive !== positive) setPositive(sanitizedPositive);
+        if (sanitizedNegative !== negative) setNegative(sanitizedNegative);
+
+        // Validate form
+        if (!validateForm()) {
+            toast.error("Please correct the errors in the form", {
+                description: "Fix the highlighted issues and try again.",
             });
             return;
         }
 
         try {
-            await submitFeedback({ positives, improvements, rating });
+            // Prepare feedback data
+            const feedbackData: FeedbackInput = {
+                positive: sanitizedPositive || undefined,
+                negative: sanitizedNegative || undefined,
+                rating: rating
+            };
+
+            await submitFeedback({
+                positive: feedbackData.positive || '',
+                negative: feedbackData.negative || '',
+                rating: feedbackData.rating
+            });
 
             toast.success("Thank you for your feedback!", {
                 description: "Your input helps us improve GradAid.",
             });
 
             // Reset form after successful submission
-            setPositives('');
-            setImprovements('');
+            setPositive('');
+            setNegative('');
             setRating(0);
         } catch (error) {
             // Error handling is managed in the hook with validationError state
@@ -73,57 +159,86 @@ const FeedbackForm: React.FC<FeedbackFormProps> = ({ className }) => {
         }
     };
 
+    // Input character limit uses the exported constant
+    const charLimit = FEEDBACK_MAX_CHARS;
+    const positiveCharCount = positive.length;
+    const negativeCharCount = negative.length;
+
     return (
         <Card className={`p-6 ${className}`}>
             <form onSubmit={handleSubmit} className="space-y-6">
-                {validationError && (
+                {(validationError || errors.general) && (
                     <Alert variant="destructive" className="my-4">
                         <AlertCircle className="h-4 w-4 mr-2" />
-                        <AlertDescription>{validationError}</AlertDescription>
+                        <AlertDescription>{validationError || errors.general}</AlertDescription>
                     </Alert>
                 )}
 
                 <div className="space-y-3">
-                    <Label htmlFor="positives" className="text-sm font-medium">
-                        What worked well for you?
-                    </Label>
+                    <div className="flex justify-between items-center">
+                        <Label htmlFor="positive" className="text-sm font-medium">
+                            What worked well for you?
+                        </Label>
+                        <span className={`text-xs ${positiveCharCount > charLimit ? 'text-red-500 font-bold' : 'text-gray-500'}`}>
+                            {positiveCharCount}/{charLimit}
+                        </span>
+                    </div>
                     <Textarea
-                        id="positives"
+                        id="positive"
                         placeholder="Tell us which features or aspects you found helpful..."
-                        value={positives}
-                        onChange={(e) => setPositives(e.target.value)}
+                        value={positive}
+                        onChange={(e) => setPositive(e.target.value)}
                         rows={4}
-                        className="resize-none"
+                        className={`resize-none ${errors.positive ? 'border-red-500 focus-visible:ring-red-500' : ''}`}
+                        aria-invalid={!!errors.positive}
+                        maxLength={charLimit + 50} // Allow a little over the limit for better UX
                     />
+                    {errors.positive && (
+                        <p className="text-sm text-red-500">{errors.positive}</p>
+                    )}
                 </div>
 
                 <div className="space-y-3">
-                    <Label htmlFor="improvements" className="text-sm font-medium">
-                        What could be improved?
-                    </Label>
+                    <div className="flex justify-between items-center">
+                        <Label htmlFor="negative" className="text-sm font-medium">
+                            What could be improved?
+                        </Label>
+                        <span className={`text-xs ${negativeCharCount > charLimit ? 'text-red-500 font-bold' : 'text-gray-500'}`}>
+                            {negativeCharCount}/{charLimit}
+                        </span>
+                    </div>
                     <Textarea
-                        id="improvements"
+                        id="negative"
                         placeholder="Share any challenges or suggestions for improvement..."
-                        value={improvements}
-                        onChange={(e) => setImprovements(e.target.value)}
+                        value={negative}
+                        onChange={(e) => setNegative(e.target.value)}
                         rows={4}
-                        className="resize-none"
+                        className={`resize-none ${errors.negative ? 'border-red-500 focus-visible:ring-red-500' : ''}`}
+                        aria-invalid={!!errors.negative}
+                        maxLength={charLimit + 50} // Allow a little over the limit for better UX
                     />
+                    {errors.negative && (
+                        <p className="text-sm text-red-500">{errors.negative}</p>
+                    )}
                 </div>
 
                 <div className="space-y-3">
-                    <Label htmlFor="rating" className="text-sm font-medium">
+                    <Label htmlFor="rating" className="text-sm font-medium text-left">
                         How would you rate your experience?
                     </Label>
-                    <StarRating
-                        value={rating}
-                        onChange={setRating}
-                        size="lg"
-                        className="py-2"
-                    />
+                    <div className="flex flex-col sm:flex-row items-start gap-4">
+                        <StarRating
+                            value={rating}
+                            onChange={setRating}
+                            size="lg"
+                        />
+                        {errors.rating && (
+                            <p className="text-sm text-red-500">{errors.rating}</p>
+                        )}
+                    </div>
                 </div>
 
-                <div className="flex justify-start mt-6">
+                <div className="flex justify-between mt-6">
                     <Button
                         type="submit"
                         disabled={isSubmitting}

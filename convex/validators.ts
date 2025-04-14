@@ -2,6 +2,11 @@ import { v } from "convex/values";
 import { z } from "zod";
 
 /**
+ * Global constants for validation limits
+ */
+export const FEEDBACK_MAX_CHARS = 1000;
+
+/**
  * Validator for educational background information
  * Used to validate user education entries in profile updates
  */
@@ -88,12 +93,42 @@ export const profileUpdateValidator = v.object({
 /**
  * Zod schema for validating user feedback submissions
  * Includes positive feedback, negative feedback, and a numerical rating
- * Trims string inputs and transforms empty strings to undefined
+ * Applies sanitization and validation rules to prevent potential security issues
+ * Only rating is required; both text fields are optional
  */
 export const feedbackSchema = z.object({
-    positive: z.string().optional().transform(val => val?.trim() || undefined),
-    negative: z.string().optional().transform(val => val?.trim() || undefined),
-    rating: z.number().int().min(1).max(5)
+    positive: z.string()
+        .max(FEEDBACK_MAX_CHARS, { message: `Feedback is too long (maximum ${FEEDBACK_MAX_CHARS} characters)` })
+        .optional()
+        .transform(val => {
+            // Sanitize and trim input, transform empty strings to undefined
+            if (!val) return undefined;
+            // Remove potential HTML/script tags and trim whitespace
+            return val.replace(/<[^>]*>/g, '').trim() || undefined;
+        }),
+    negative: z.string()
+        .max(FEEDBACK_MAX_CHARS, { message: `Feedback is too long (maximum ${FEEDBACK_MAX_CHARS} characters)` })
+        .optional()
+        .transform(val => {
+            // Sanitize and trim input, transform empty strings to undefined
+            if (!val) return undefined;
+            // Remove potential HTML/script tags and trim whitespace
+            return val.replace(/<[^>]*>/g, '').trim() || undefined;
+        }),
+    rating: z.number()
+        .int({ message: "Rating is required." })
+        .min(1, { message: "Rating is required." })
+        .max(5, { message: "Rating is required." })
+});
+
+/**
+ * Convex validator for feedback submissions
+ * Used in Convex functions to validate incoming feedback data
+ */
+export const feedbackValidator = v.object({
+    positive: v.optional(v.string()),
+    negative: v.optional(v.string()),
+    rating: v.number()
 });
 
 /**

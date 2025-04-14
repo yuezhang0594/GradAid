@@ -3,6 +3,7 @@ import { api } from "../../convex/_generated/api";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { z } from "zod";
+import { FEEDBACK_MAX_CHARS } from "../../convex/validators";
 
 /**
  * Interface representing user feedback data
@@ -10,17 +11,17 @@ import { z } from "zod";
  */
 export interface FeedbackData {
   /** Positive aspects of the experience */
-  positives: string;
+  positive: string;
   /** Areas that could be improved */
-  improvements: string;
+  negative: string;
   /** Numerical rating from 1-5 */
   rating: number;
 }
 
 // Client-side validation schema
 const feedbackValidationSchema = z.object({
-  positives: z.string().optional(),
-  improvements: z.string().optional(),
+  positive: z.string().max(FEEDBACK_MAX_CHARS).optional(),
+  negative: z.string().max(FEEDBACK_MAX_CHARS).optional(),
   rating: z.number().int().min(1).max(5),
 });
 
@@ -81,8 +82,8 @@ export function useFeedback() {
       }
 
       const feedbackId = await submitFeedbackMutation({
-        positive: data.positives.trim() || undefined,
-        negative: data.improvements.trim() || undefined,
+        positive: data.positive.trim() || undefined,
+        negative: data.negative.trim() || undefined,
         rating: data.rating,
       });
       
