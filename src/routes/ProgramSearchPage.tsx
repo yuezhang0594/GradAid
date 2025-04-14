@@ -3,6 +3,8 @@ import { useProgramSearch } from '../hooks/useProgramSearch';
 import { useFavorites } from '../hooks/useFavorites';
 import ProgramSearch from '../components/search-programs/ProgramSearch';
 import UniversityCard from '../components/search-programs/UniversityCard';
+import AddProgramForm from '@/components/add-program-form';
+import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Separator } from '@/components/ui/separator';
@@ -49,6 +51,7 @@ const UniversitySearchPage: React.FC = () => {
   const filterTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [isLoadingPage, setIsLoadingPage] = useState(false);
+  const [showAddProgramModal, setShowAddProgramModal] = useState(false);
 
   // Use the universities hook for fetching and filtering data
   const {
@@ -192,6 +195,11 @@ const UniversitySearchPage: React.FC = () => {
     return pageNumbers;
   };
 
+  // Handle opening the add program modal
+  const handleOpenAddProgram = useCallback(() => {
+    setShowAddProgramModal(true);
+  }, []);
+
   return (
     <PageWrapper 
       title="Program Search" 
@@ -199,13 +207,19 @@ const UniversitySearchPage: React.FC = () => {
     >
       {/* Search component */}
       <div className="mb-8">
-        <ProgramSearch
+                <ProgramSearch
           onSearch={handleSearch}
           onFilterChange={handleFilterChange}
           initialFilters={filters}
           initialQuery={searchQuery}
         />
       </div>
+
+      {/* Modal Form */}
+      <AddProgramForm 
+        open={showAddProgramModal} 
+        onOpenChange={setShowAddProgramModal} 
+      />
 
       <Separator className="my-6" />
 
@@ -226,6 +240,14 @@ const UniversitySearchPage: React.FC = () => {
               <p className="text-muted-foreground">
                 Try adjusting your search criteria or filters to see more results.
               </p>
+              <div className="mt-6 flex justify-center">
+                <Button 
+                  onClick={handleOpenAddProgram}
+                  className="inline-flex items-center"
+                >
+                  Add Missing Program
+                </Button>
+              </div>
             </CardContent>
           </Card>
         ) : (

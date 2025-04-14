@@ -5,6 +5,9 @@ package-lock.json
 # Vite build files
 dist/
 
+# Convex build files
+convex/_generated/
+
 # Environment variables
 .env*
 .env
@@ -12,6 +15,9 @@ dist/
 .env.development
 .env.production
 .env.pub
+
+# Virtual environment files
+.venv/
 
 # Logs
 npm-debug.log*

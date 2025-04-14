@@ -26,12 +26,19 @@ export const DEFAULT_FILTERS: ProgramSearchFilters = {
     toefl: false
 };
 
+
 export function useProgramSearch(query?: string, initialFilters?: Partial<ProgramSearchFilters>) {
     const [filters, setFilters] = useState<ProgramSearchFilters>({ ...DEFAULT_FILTERS, ...initialFilters });
     const [status, setStatus] = useState<"LoadingFirstPage" | "CanLoadMore" | "LoadingMore" | "Exhausted">("LoadingFirstPage");
     const [cursor, setCursor] = useState<string | null>(null);
     const [programs, setPrograms] = useState<Id<'programs'>[]>([]);
     const [universities, setUniversities] = useState<University[]>([]);
+
+    // Get unique locations from the database for the location filter
+    const uniqueLocations = useQuery(api.programs.search.getUniqueLocations) || [];
+
+    // Get unique degree types from the database for the program type filter
+    const uniqueDegreeTypes = useQuery(api.programs.search.getUniqueDegreeTypes) || [];
 
     // Get programs with optional filters and search query
     const programIds = useQuery(api.programs.search.searchPrograms, {
@@ -89,6 +96,8 @@ export function useProgramSearch(query?: string, initialFilters?: Partial<Progra
 
     return {
         universities,
+        uniqueLocations,
+        uniqueDegreeTypes,
         programIds,
         filters,
         updateFilters,
