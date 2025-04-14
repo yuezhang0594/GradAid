@@ -1,6 +1,10 @@
 import { v } from "convex/values";
+import { z } from "zod";
 
-// Education validator
+/**
+ * Validator for educational background information
+ * Used to validate user education entries in profile updates
+ */
 export const educationValidator = v.object({
     id: v.optional(v.string()),
     degree: v.string(),
@@ -13,7 +17,10 @@ export const educationValidator = v.object({
     courses: v.optional(v.array(v.string()))
 });
 
-// Work experience validator
+/**
+ * Validator for work experience information
+ * Used to validate user work history entries in profile updates
+ */
 export const workExperienceValidator = v.object({
     id: v.optional(v.string()),
     title: v.string(),
@@ -26,7 +33,10 @@ export const workExperienceValidator = v.object({
     achievements: v.optional(v.array(v.string()))
 });
 
-// Publication validator
+/**
+ * Validator for academic publication information
+ * Used to validate publication entries within research experience
+ */
 export const publicationValidator = v.object({
     title: v.string(),
     authors: v.array(v.string()),
@@ -37,7 +47,10 @@ export const publicationValidator = v.object({
     url: v.optional(v.string())
 });
 
-// Research experience validator
+/**
+ * Validator for research experience information
+ * Used to validate user research history entries in profile updates
+ */
 export const researchExperienceValidator = v.object({
     id: v.optional(v.string()),
     title: v.string(),
@@ -50,7 +63,11 @@ export const researchExperienceValidator = v.object({
     publications: v.optional(v.array(publicationValidator))
 });
 
-// Profile update validator 
+/**
+ * Validator for profile update operations
+ * Used to validate the structure of user profile data during updates
+ * Contains both basic profile information and detailed background information
+ */
 export const profileUpdateValidator = v.object({
     // Basic profile information
     description: v.string(),
@@ -67,3 +84,20 @@ export const profileUpdateValidator = v.object({
     skills: v.optional(v.array(v.string())),
     careerGoals: v.optional(v.string()),
 });
+
+/**
+ * Zod schema for validating user feedback submissions
+ * Includes positive feedback, negative feedback, and a numerical rating
+ * Trims string inputs and transforms empty strings to undefined
+ */
+export const feedbackSchema = z.object({
+    positive: z.string().optional().transform(val => val?.trim() || undefined),
+    negative: z.string().optional().transform(val => val?.trim() || undefined),
+    rating: z.number().int().min(1).max(5)
+});
+
+/**
+ * TypeScript type definition for feedback input data
+ * Generated from the Zod schema for type safety across the application
+ */
+export type FeedbackInput = z.infer<typeof feedbackSchema>;

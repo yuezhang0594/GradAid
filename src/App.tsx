@@ -23,6 +23,7 @@ import ProfilePage from "./routes/profile/page";
 import SavedProgramsPage from "./routes/SavedProgramsPage";
 import ProgramApplyPage from "./routes/ProgramApplyPage";
 import { Toaster } from "sonner";
+import FeedbackPage from "./routes/FeedbackPage";
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
           <Route path="/timeline" element={<TimelinePage />} />
           <Route path="/credits" element={<CreditsPage />} />
           <Route path="/activity" element={<ActivityPage />} />
+          <Route path="/feedback" element={<FeedbackPage />} />
         </Route>
       </Routes>
     </>

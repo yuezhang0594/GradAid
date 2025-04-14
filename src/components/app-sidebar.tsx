@@ -1,7 +1,6 @@
 import * as React from "react"
 import { GradAidLogo } from "@/assets/GradAidLogo";
 import { useNavigate, useLocation } from "react-router-dom";
-
 import {
   UserPenIcon,
   FilePlus2Icon,
@@ -11,7 +10,7 @@ import {
   ClipboardListIcon,
   HeartIcon,
   SearchIcon,
-  Link
+  MessageSquareHeart
 } from 'lucide-react';
 import {
   Sidebar,
@@ -98,6 +97,11 @@ const data = {
           icon: InfoIcon,
         },
         {
+          title: "Feedback",
+          url: "/feedback",
+          icon: MessageSquareHeart,
+        },
+        {
           title: "Contact Us",
           url: "/privacy",
           icon: MessageCircleQuestionIcon,
@@ -107,6 +111,28 @@ const data = {
   ],
 }
 
+
+/**
+ * A responsive application sidebar component that displays navigation options
+ * grouped by categories such as "Getting Started", "Building Your Application", etc.
+ * 
+ * Features:
+ * - Responsive design that adapts to mobile and desktop views
+ * - Automatic highlighting of the current active route
+ * - Collapsible navigation groups
+ * - Brand header with logo
+ * 
+ * The component uses React Router for navigation and closes automatically on 
+ * mobile devices after navigation.
+ * 
+ * @component
+ * @param {React.ComponentProps<typeof Sidebar>} props - Props are extended from the base Sidebar component
+ * @returns {JSX.Element} A fully-styled application sidebar with navigation options
+ * 
+ * @example
+ * // Basic usage
+ * <AppSidebar className="h-screen" />
+ */
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const navigate = useNavigate();
   const location = useLocation();

@@ -228,7 +228,8 @@ const schema = defineSchema({
       v.literal("application_update"),
       v.literal("lor_request"),
       v.literal("lor_update"),
-      v.literal("ai_usage")
+      v.literal("ai_usage"),
+      v.literal("feedback_submission"),
     ),
     description: v.string(),
     timestamp: v.string(),
@@ -254,6 +255,16 @@ const schema = defineSchema({
   })
     .index("by_user", ["userId"])
     .index("by_program", ["programId"]),
+
+  feedback: defineTable({
+    userId: v.id("users"),
+    positive: v.optional(v.string()),
+    negative: v.optional(v.string()),
+    rating: v.optional(v.number()),
+  })
+    .index("by_user", ["userId"])
+    .index("by_rating", ["rating"]),
 });
+
 
 export default schema;
