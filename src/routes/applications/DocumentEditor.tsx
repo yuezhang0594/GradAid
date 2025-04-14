@@ -1,10 +1,11 @@
 import { useState, useCallback, useEffect } from "react";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "@/../convex/_generated/api";
-import { useNavigate } from "react-router-dom";
-import { useAtomValue } from "jotai";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import { useAtomValue, useSetAtom } from "jotai";
 import { documentEditorAtom } from "../cards/documents";
 import { toast } from "@/components/ui/toast";
+import { Id } from "@/../convex/_generated/dataModel";
 
 import {
   Card,
@@ -24,14 +25,16 @@ import {
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
-
-interface AIFeedback {
-  id: string;
-  type: "suggestion" | "correction" | "improvement";
-  content: string;
-  section: string;
-  status: "pending" | "accepted" | "rejected";
-}
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 interface DocumentVersion {
   id: string;
@@ -39,92 +42,125 @@ interface DocumentVersion {
   changes: string;
 }
 
+// Storage keys for persisting state
+const STORAGE_KEYS = {
+  content: 'documentEditor_content',
+  recommenderName: 'documentEditor_recommenderName',
+  recommenderEmail: 'documentEditor_recommenderEmail',
+  documentId: 'documentEditor_documentId'
+} as const;
+
 export default function DocumentEditor() {
   const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const setEditorState = useSetAtom(documentEditorAtom);
   const editorState = useAtomValue(documentEditorAtom);
   
-  const document = editorState.applicationDocumentId ? useQuery(api.applications.queries.getDocumentById, {
-    applicationDocumentId: editorState.applicationDocumentId,
-    demoMode: editorState.demoMode
-  }) : null;
-  console.log("Document:", document);
-  console.log("Editor State:", editorState);
-
-  if (!editorState.applicationDocumentId) {
-    return (
-      <div className="flex items-center justify-center h-[calc(100vh-4rem)]">
-        <div className="text-center space-y-4">
-          <h2 className="text-xl font-semibold">Please configure application documents first</h2>
-          <Button variant="outline" onClick={() => navigate(-1)}>Go Back</Button>
-        </div>
-      </div>
-    );
-  }
-
-  const formatDocumentType = (type: string) => {
-    if (!type) return "Document";
-    
-    const lowerType = type.toLowerCase();
-    if (lowerType === "sop") {
-      return "Statement of Purpose";
+  // Get document ID from URL or editor state and convert to Convex ID type
+  const documentId = (searchParams.get("documentId") || editorState.applicationDocumentId) as Id<"applicationDocuments"> | null;
+  
+  useEffect(() => {
+    // Update URL when document ID changes
+    if (editorState.applicationDocumentId) {
+      setSearchParams({ documentId: editorState.applicationDocumentId });
     }
-    if (lowerType === "cv") {
-      return "Curriculum Vitae";
-    }
-    if (lowerType === "lor") {
-      return "Letter of Recommendation";
-    }
-
-    // Replace underscores and hyphens with spaces
-    const words = type.replace(/[_-]/g, ' ').split(' ');
-    
-    // Capitalize first letter of each word
-    return words
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-      .join(' ');
-  };
-
-  const formatLastEdited = (dateString: string | undefined) => {
-    if (!dateString) return "Not edited";
-    
-    const date = new Date(dateString);
-    return new Intl.DateTimeFormat('en-US', {
-      year: 'numeric',
-      month: 'short',
-      day: 'numeric',
-      hour: 'numeric',
-      minute: 'numeric',
-      hour12: true
-    }).format(date);
-  };
-
-  const EXAMPLE_TEXT = `Dear Graduate Admissions Committee,
-
-I am writing to express my strong interest in the Master of Science program in Computer Science at Stanford University. With my background in software engineering and my passion for artificial intelligence research, I believe I would be an excellent fit for your program.
-
-During my undergraduate studies at UNAM, I developed a strong foundation in computer science fundamentals...`;
-
-  const [content, setContent] = useState(EXAMPLE_TEXT);
+  }, [editorState.applicationDocumentId, setSearchParams]);
 
   useEffect(() => {
-    if (document?.content) {
+    // Restore editor state from URL on page load/refresh
+    if (documentId && documentId !== editorState.applicationDocumentId) {
+      setEditorState({
+        applicationDocumentId: documentId,
+        demoMode: editorState.demoMode
+      });
+    }
+  }, [documentId, editorState.applicationDocumentId, editorState.demoMode, setEditorState]);
+
+  const [showRecommenderDialog, setShowRecommenderDialog] = useState(false);
+
+  // Initialize state from localStorage if available
+  const [recommenderName, setRecommenderName] = useState(() => {
+    const saved = localStorage.getItem(STORAGE_KEYS.recommenderName);
+    return saved || "";
+  });
+
+  const [recommenderEmail, setRecommenderEmail] = useState(() => {
+    const saved = localStorage.getItem(STORAGE_KEYS.recommenderEmail);
+    return saved || "";
+  });
+
+  const [content, setContent] = useState(() => {
+    const saved = localStorage.getItem(STORAGE_KEYS.content);
+    return saved || "";
+  });
+
+  const document = documentId ? useQuery(api.applications.queries.getDocumentById, {
+    applicationDocumentId: documentId,
+    demoMode: editorState.demoMode
+  }) : null;
+
+  // Save state to localStorage whenever it changes
+  useEffect(() => {
+    if (recommenderName) {
+      localStorage.setItem(STORAGE_KEYS.recommenderName, recommenderName);
+    } else {
+      localStorage.removeItem(STORAGE_KEYS.recommenderName);
+    }
+  }, [recommenderName]);
+
+  useEffect(() => {
+    if (recommenderEmail) {
+      localStorage.setItem(STORAGE_KEYS.recommenderEmail, recommenderEmail);
+    } else {
+      localStorage.removeItem(STORAGE_KEYS.recommenderEmail);
+    }
+  }, [recommenderEmail]);
+
+  useEffect(() => {
+    if (content) {
+      localStorage.setItem(STORAGE_KEYS.content, content);
+    } else {
+      localStorage.removeItem(STORAGE_KEYS.content);
+    }
+  }, [content]);
+
+  // Save document ID to track if user refreshes on a different document
+  useEffect(() => {
+    if (documentId) {
+      const previousDocId = localStorage.getItem(STORAGE_KEYS.documentId);
+      if (previousDocId !== documentId) {
+        // Clear stored content when switching documents
+        localStorage.removeItem(STORAGE_KEYS.content);
+        localStorage.removeItem(STORAGE_KEYS.recommenderName);
+        localStorage.removeItem(STORAGE_KEYS.recommenderEmail);
+        setContent("");
+        setRecommenderName("");
+        setRecommenderEmail("");
+      }
+      localStorage.setItem(STORAGE_KEYS.documentId, documentId);
+    }
+  }, [documentId]);
+
+  // Load initial document content
+  useEffect(() => {
+    if (document?.content && !content) {
       setContent(document.content);
     }
-  }, [document?.content]);
+  }, [document, content]);
 
   const [isSaving, setIsSaving] = useState(false);
 
   const saveDocument = useMutation(api.applications.mutations.saveDocumentDraft);
 
   const handleSave = useCallback(async () => {
-    if (!editorState.applicationDocumentId) {
+    if (!documentId) {
       console.error("Missing required state for saving:", editorState);
       return;
     }
     setIsSaving(true);
     try {
       await saveDocument({
-        applicationDocumentId: editorState.applicationDocumentId,
+        applicationDocumentId: documentId,
         content,
         demoMode: editorState.demoMode
       });
@@ -142,9 +178,101 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
     } finally {
       setIsSaving(false);
     }
-  }, [content, editorState, saveDocument]);
+  }, [content, editorState, saveDocument, documentId]);
 
-  // Mock AI feedback and versions until we implement those features
+  const updateRecommender = useMutation(api.applications.mutations.updateRecommender);
+
+  // Check if recommender info is needed when document loads
+  useEffect(() => {
+    if (document?.type === "lor" && (!document.recommenderName || !document.recommenderEmail)) {
+      setShowRecommenderDialog(true);
+    }
+  }, [document]);
+
+  // Pre-fill recommender info when editing
+  useEffect(() => {
+    if (document?.type === "lor" && document.recommenderName && document.recommenderEmail && !recommenderName && !recommenderEmail) {
+      setRecommenderName(document.recommenderName);
+      setRecommenderEmail(document.recommenderEmail);
+    }
+  }, [document, recommenderName, recommenderEmail]);
+
+  const formatDocumentType = (type: string) => {
+    if (!type) return "Document";
+
+    const lowerType = type.toLowerCase();
+    if (lowerType === "sop") {
+      return "Statement of Purpose";
+    }
+    if (lowerType === "cv") {
+      return "Curriculum Vitae";
+    }
+    if (lowerType === "lor") {
+      return "Letter of Recommendation";
+    }
+
+    // Replace underscores and hyphens with spaces
+    const words = type.replace(/[_-]/g, ' ').split(' ');
+
+    // Capitalize first letter of each word
+    return words
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      .join(' ');
+  };
+
+  const formatLastEdited = (dateString: string | undefined) => {
+    if (!dateString) return "Not edited";
+
+    const date = new Date(dateString);
+    return new Intl.DateTimeFormat('en-US', {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+      hour12: true
+    }).format(date);
+  };
+
+  const handleRecommenderSubmit = async () => {
+    if (!document || !documentId) return;
+
+    try {
+      await updateRecommender({
+        documentId: documentId,
+        recommenderName,
+        recommenderEmail,
+        demoMode: editorState.demoMode
+      });
+
+      toast({
+        title: "Success",
+        description: "Recommender information saved successfully!",
+        variant: "default",
+      });
+      setShowRecommenderDialog(false);
+    } catch (error) {
+      console.error("Error updating recommender:", error);
+      toast({
+        title: "Error",
+        description: "Failed to save recommender information. Please try again.",
+        variant: "destructive",
+      });
+    }
+  };
+
+  if (!documentId) {
+    return (
+      <div className="flex items-center justify-center h-[calc(100vh-4rem)]">
+        <div className="text-center space-y-4">
+          <h2 className="text-xl font-semibold">Please configure application documents first</h2>
+          <Button variant="outline" onClick={() => navigate(-1)}>Go Back</Button>
+        </div>
+      </div>
+    );
+  }
+
+  // Mock versions until we implement those features
   const mockData = {
     versions: [
       {
@@ -191,14 +319,17 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
                 <SaveIcon className="h-4 w-4 mr-2" />
                 {isSaving ? "Saving..." : "Save Draft"}
               </Button>
-              {/* <Button
-                variant="default"
-                size="sm"
-                className="h-8"
-                onClick={handleSubmit}
-              >
-                Submit for Review
-              </Button> */}
+              {document?.type === "lor" && (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="h-8"
+                  onClick={() => setShowRecommenderDialog(true)}
+                >
+                  <MessageSquareIcon className="h-4 w-4 mr-2" />
+                  {document.recommenderName ? "Edit Recommender" : "Add Recommender"}
+                </Button>
+              )}
             </div>
           </div>
         </>
@@ -218,7 +349,7 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
                     Last edited: {formatLastEdited(document?.lastEdited)}
                   </Badge>
                   <Badge variant={document?.status === "complete" ? "default" : "secondary"}>
-                  {(document?.status ?? "draft").replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase())}
+                    {(document?.status ?? "draft").replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase())}
                   </Badge>
                 </div>
               </div>
@@ -272,6 +403,56 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
           </Card>
         </div>
       </div>
+
+      {/* Recommender Dialog */}
+      <Dialog open={showRecommenderDialog} onOpenChange={setShowRecommenderDialog}>
+        <DialogContent className="sm:max-w-[425px]">
+          <DialogHeader className="space-y-3">
+            <DialogTitle>Recommender Information</DialogTitle>
+            <DialogDescription>
+              Please provide the recommender's information for your Letter of Recommendation.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="py-4 space-y-6">
+            <div className="space-y-2">
+              <Label htmlFor="name" className="text-sm font-medium">
+                Recommender Name
+              </Label>
+              <Input
+                id="name"
+                value={recommenderName}
+                onChange={(e) => setRecommenderName(e.target.value)}
+                placeholder="Dr. John Doe"
+                className="w-full"
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="email" className="text-sm font-medium">
+                Recommender Email
+              </Label>
+              <Input
+                id="email"
+                type="email"
+                value={recommenderEmail}
+                onChange={(e) => setRecommenderEmail(e.target.value)}
+                placeholder="john.doe@university.edu"
+                className="w-full"
+              />
+            </div>
+          </div>
+          <DialogFooter className="mt-6 gap-2">
+            <Button variant="outline" onClick={() => setShowRecommenderDialog(false)}>
+              Cancel
+            </Button>
+            <Button 
+              onClick={handleRecommenderSubmit}
+              disabled={!recommenderName || !recommenderEmail}
+            >
+              Save
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </PageWrapper>
   );
 }

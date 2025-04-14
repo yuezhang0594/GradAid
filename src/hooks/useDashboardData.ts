@@ -1,7 +1,7 @@
 import { useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
 // import { Activity, FileTextIcon, SparklesIcon, ClockIcon } from "lucide-react";
-import React from "react";
+// import React from "react";
 import { Id } from "../../convex/_generated/dataModel";
 
 export interface DashboardData {
@@ -21,10 +21,6 @@ export interface DashboardData {
       total: number;
       submitted: number;
       pending: number;
-    };
-    aiCredits: {
-      totalCredits: number;
-      usedCredits: number;
     };
     recentActivity: any[];
   };
@@ -95,7 +91,6 @@ export const useDashboardData = (demoMode?: boolean): DashboardData => {
     applications: { total: 0, submitted: 0, inProgress: 0, nextDeadline: null },
     documents: { totalDocuments: 0, averageProgress: 0, completedDocuments: 0 },
     lors: { total: 0, submitted: 0, pending: 0 },
-    aiCredits: { totalCredits: 0, usedCredits: 0 },
     recentActivity: []
   };
 
