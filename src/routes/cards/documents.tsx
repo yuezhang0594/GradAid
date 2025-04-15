@@ -1,9 +1,6 @@
-import { useState } from "react";
 import { useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 import { useNavigate } from "react-router-dom";
-import { Switch } from "@/components/ui/switch";
-import { Label } from "@/components/ui/label";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 import { CardWrapper } from "@/components/ui/card-wrapper";
 import { Id } from "../../../convex/_generated/dataModel";
@@ -11,10 +8,8 @@ import { atom, useSetAtom } from "jotai";
 
 export const documentEditorAtom = atom<{
   applicationDocumentId: Id<"applicationDocuments"> | null;
-  demoMode: boolean;
 }>({
   applicationDocumentId: null,
-  demoMode: false
 });
 
 interface Program {
@@ -61,8 +56,7 @@ function formatText(text: string) {
 
 export default function DocumentsPage() {
   const navigate = useNavigate();
-  const [demoMode, setDemoMode] = useState(false);
-  const documents = useQuery(api.applications.queries.getDocumentDetails, { demoMode }) ?? [];
+  const documents = useQuery(api.applications.queries.getDocumentDetails) ?? [];
   const setDocumentEditor = useSetAtom(documentEditorAtom);
 
   // Transform data to create separate cards for multiple programs
@@ -86,8 +80,7 @@ export default function DocumentsPage() {
   const handleDocumentClick = (documentId: Id<"applicationDocuments"> | null, universityName: string, documentType: string) => {
     console.log("Handling document click:", { documentId, universityName, documentType });
     const state = {
-      applicationDocumentId: documentId,
-      demoMode
+      applicationDocumentId: documentId
     };
     console.log("Setting editor state:", state);
     setDocumentEditor(state);
@@ -97,21 +90,7 @@ export default function DocumentsPage() {
   return (
     <PageWrapper
       title="Documents"
-      description={
-        <div className="space-y-4">
-          <div className="space-y-1">
-            <p className="text-muted-foreground">View and manage application documents for each university</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <Switch
-              id="demo-mode"
-              checked={demoMode}
-              onCheckedChange={setDemoMode}
-            />
-            <Label htmlFor="demo-mode">Demo Mode</Label>
-          </div>
-        </div>
-      }
+      description="View and manage application documents for each university"
     >
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         {cards.map((card: Card) => (

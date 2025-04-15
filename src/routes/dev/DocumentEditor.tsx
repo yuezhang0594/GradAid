@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 import { useAtomValue } from "jotai";
 import { documentEditorAtom } from "../cards/documents";
 import { toast } from "@/components/ui/toast";
-
 import {
   Card,
   CardContent,
@@ -16,22 +15,12 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 import {
-  SparklesIcon,
   SaveIcon,
   ArrowLeftIcon,
-  MessageSquareIcon,
   HistoryIcon,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
-
-interface AIFeedback {
-  id: string;
-  type: "suggestion" | "correction" | "improvement";
-  content: string;
-  section: string;
-  status: "pending" | "accepted" | "rejected";
-}
 
 interface DocumentVersion {
   id: string;
@@ -42,10 +31,9 @@ interface DocumentVersion {
 export default function DocumentEditor() {
   const navigate = useNavigate();
   const editorState = useAtomValue(documentEditorAtom);
-  
+
   const document = editorState.applicationDocumentId ? useQuery(api.applications.queries.getDocumentById, {
     applicationDocumentId: editorState.applicationDocumentId,
-    demoMode: editorState.demoMode
   }) : null;
   console.log("Document:", document);
   console.log("Editor State:", editorState);
@@ -63,7 +51,7 @@ export default function DocumentEditor() {
 
   const formatDocumentType = (type: string) => {
     if (!type) return "Document";
-    
+
     const lowerType = type.toLowerCase();
     if (lowerType === "sop") {
       return "Statement of Purpose";
@@ -77,7 +65,7 @@ export default function DocumentEditor() {
 
     // Replace underscores and hyphens with spaces
     const words = type.replace(/[_-]/g, ' ').split(' ');
-    
+
     // Capitalize first letter of each word
     return words
       .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
@@ -86,7 +74,7 @@ export default function DocumentEditor() {
 
   const formatLastEdited = (dateString: string | undefined) => {
     if (!dateString) return "Not edited";
-    
+
     const date = new Date(dateString);
     return new Intl.DateTimeFormat('en-US', {
       year: 'numeric',
@@ -126,7 +114,6 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
       await saveDocument({
         applicationDocumentId: editorState.applicationDocumentId,
         content,
-        demoMode: editorState.demoMode
       });
       toast({
         title: "Document saved successfully!",
@@ -218,7 +205,7 @@ During my undergraduate studies at UNAM, I developed a strong foundation in comp
                     Last edited: {formatLastEdited(document?.lastEdited)}
                   </Badge>
                   <Badge variant={document?.status === "complete" ? "default" : "secondary"}>
-                  {(document?.status ?? "draft").replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase())}
+                    {(document?.status ?? "draft").replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase())}
                   </Badge>
                 </div>
               </div>

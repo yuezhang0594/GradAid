@@ -1,6 +1,6 @@
 import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
-import { educationValidator, workExperienceValidator, publicationValidator, researchExperienceValidator } from './validators';
+import { educationValidator, workExperienceValidator, publicationValidator, researchExperienceValidator, documentStatusValidator, documentTypeValidator } from './validators';
 
 const schema = defineSchema({
   users: defineTable({
@@ -144,17 +144,6 @@ const schema = defineSchema({
     priority: v.union(v.literal("high"), v.literal("medium"), v.literal("low")),
     notes: v.optional(v.string()),
     lastUpdated: v.string(),
-    requirements: v.array(
-      v.object({
-        type: v.string(),
-        status: v.union(
-          v.literal("completed"),
-          v.literal("in_progress"),
-          v.literal("pending"),
-          v.literal("not_started")
-        ),
-      })
-    ),
   })
     .index("by_user", ["userId"])
     .index("by_university", ["universityId"])
@@ -165,16 +154,8 @@ const schema = defineSchema({
     applicationId: v.id("applications"),
     userId: v.id("users"),
     title: v.string(),
-    type: v.union(
-      v.literal("sop"),
-      v.literal("lor"),
-    ),
-    status: v.union(
-      v.literal("not_started"),
-      v.literal("draft"),
-      v.literal("in_review"),
-      v.literal("complete")
-    ),
+    type: documentTypeValidator,
+    status: documentStatusValidator,
     recommenderName: v.optional(v.string()),
     recommenderEmail: v.optional(v.string()),
     progress: v.number(),
@@ -185,25 +166,6 @@ const schema = defineSchema({
     .index("by_user", ["userId"])
     .index("by_application", ["applicationId"])
     .index("by_type", ["type"]),
-
-  letterOfRecommendations: defineTable({
-    applicationId: v.id("applications"),
-    userId: v.id("users"),
-    recommenderName: v.string(),
-    recommenderEmail: v.string(),
-    status: v.union(
-      v.literal("pending"),
-      v.literal("in_progress"),
-      v.literal("submitted")
-    ),
-    requestedDate: v.string(),
-    submittedDate: v.optional(v.string()),
-    remindersSent: v.number(),
-    lastReminderDate: v.optional(v.string()),
-  })
-    .index("by_user", ["userId"])
-    .index("by_application", ["applicationId"])
-    .index("by_email", ["recommenderEmail"]),
 
   aiCredits: defineTable({
     userId: v.id("users"),

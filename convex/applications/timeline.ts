@@ -1,24 +1,10 @@
 import { query } from "../_generated/server";
 import { getCurrentUserIdOrThrow, getDemoUserId } from "../users";
-import { v } from "convex/values";
 
 export const getTimeline = query({
-  args: {
-    demoMode: v.optional(v.boolean())
-  },
+  args: {},
   handler: async (ctx, args) => {
-    // Get user ID (either current user or demo user)
-    let userId;
-    try {
-      if (args.demoMode) {
-        userId = await getDemoUserId(ctx);
-      } else {
-        userId = await getCurrentUserIdOrThrow(ctx);
-      }
-    } catch {
-      userId = await getDemoUserId(ctx);
-    }
-
+    const userId = await getCurrentUserIdOrThrow(ctx);
     // Get all applications for the user
     const applications = await ctx.db
       .query("applications")
@@ -30,10 +16,15 @@ export const getTimeline = query({
       applications.map(async (application) => {
         const university = await ctx.db.get(application.universityId);
         const program = await ctx.db.get(application.programId);
+        const applicationDocuments = await ctx.db
+        .query("applicationDocuments")
+        .withIndex("by_application", (q) => q.eq("applicationId", application._id))
+        .collect();
         return {
           ...application,
           university: university?.name ?? "Unknown University",
           program: program?.name ?? "Unknown Program",
+          applicationDocuments,
         };
       })
     );

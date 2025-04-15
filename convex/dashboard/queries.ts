@@ -2,29 +2,20 @@ import { query } from "../_generated/server";
 import { v } from "convex/values";
 import { Doc, Id } from "../_generated/dataModel";
 import { getCurrentUserIdOrThrow, getDemoUserId } from "../users";
+import { get } from "http";
 
 // Get all applications for a user with their associated documents and LORs
 export const getApplications = query({
-  args: { demoMode: v.optional(v.boolean()) },
+  args: {},
   handler: async (ctx, args) => {
-    // Try to get current user, if not available or demo mode is on, use mock user
-    let userId: Id<"users">;
-    try {
-      if (args.demoMode) {
-        userId = await getDemoUserId(ctx);
-      } else {
-        userId = await getCurrentUserIdOrThrow(ctx);
-      }
-    } catch {
-      userId = "mock-user-id" as Id<"users">;
-    }
+    const userId = await getCurrentUserIdOrThrow(ctx);
 
     const applications = await ctx.db
       .query("applications")
       .filter((q) => q.eq(q.field("userId"), userId))
       .collect();
 
-    // Get documents and LORs for each application
+    // Get documents for each application
     const applicationsWithDetails = await Promise.all(
       applications.map(async (application) => {
         const documents = await ctx.db
@@ -32,15 +23,9 @@ export const getApplications = query({
           .filter((q) => q.eq(q.field("applicationId"), application._id))
           .collect();
 
-        const lors = await ctx.db
-          .query("letterOfRecommendations")
-          .filter((q) => q.eq(q.field("applicationId"), application._id))
-          .collect();
-
         return {
           ...application,
           documents,
-          lors,
         };
       })
     );
@@ -51,20 +36,9 @@ export const getApplications = query({
 
 // Get dashboard stats for a user
 export const getDashboardStats = query({
-  args: { demoMode: v.optional(v.boolean()) },
+  args: {},
   handler: async (ctx, args) => {
-    // Try to get current user, if not available or demo mode is on, use mock user
-    let userId: Id<"users">;
-    try {
-      if (args.demoMode) {
-        userId = await getDemoUserId(ctx);
-      } else {
-        userId = await getCurrentUserIdOrThrow(ctx);
-      }
-    } catch {
-      // Use mock user ID if authentication fails
-      userId = "mock-user-id" as Id<"users">;
-    }
+    const userId = await getCurrentUserIdOrThrow(ctx);
 
     // Get applications count and status
     const applications = await ctx.db
@@ -95,18 +69,6 @@ export const getDashboardStats = query({
       completedDocuments: documents.filter((d) => d.progress === 100).length,
     };
 
-    // Get LOR stats
-    const lors = await ctx.db
-      .query("letterOfRecommendations")
-      .filter((q) => q.eq(q.field("userId"), userId))
-      .collect();
-
-    const lorStats = {
-      total: lors.length,
-      submitted: lors.filter((l) => l.status === "submitted").length,
-      pending: lors.filter((l) => l.status === "in_progress").length,
-    };
-
     // Get AI credits
     const aiCredits = await ctx.db
       .query("aiCredits")
@@ -123,7 +85,6 @@ export const getDashboardStats = query({
     return {
       applications: applicationStats,
       documents: documentStats,
-      lors: lorStats,
       aiCredits: aiCredits ?? { totalCredits: 0, usedCredits: 0 },
       recentActivity,
     };
@@ -132,22 +93,11 @@ export const getDashboardStats = query({
 
 // Get recent activity for a user
 export const getRecentActivity = query({
-  args: { 
-    demoMode: v.optional(v.boolean()),
+  args: {
     limit: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
-    // Try to get current user, if not available or demo mode is on, use mock user
-    let userId: Id<"users">;
-    try {
-      if (args.demoMode) {
-        userId = await getDemoUserId(ctx);
-      } else {
-        userId = await getCurrentUserIdOrThrow(ctx);
-      }
-    } catch {
-      userId = "mock-user-id" as Id<"users">;
-    }
+    const userId = await getCurrentUserIdOrThrow(ctx);
 
     const limit = args.limit ?? 12;
     return await ctx.db
@@ -160,23 +110,15 @@ export const getRecentActivity = query({
 
 // Get AI credits for a user
 export const getAiCredits = query({
-  args: { demoMode: v.optional(v.boolean()) },
+  args: {},
   handler: async (ctx, args) => {
-    // Try to get current user, if not available or demo mode is on, use mock user
-    let userId: Id<"users">;
-    try {
-      if (args.demoMode) {
-        userId = await getDemoUserId(ctx);
-      } else {
-        userId = await getCurrentUserIdOrThrow(ctx);
-      }
-    } catch {
-      userId = "mock-user-id" as Id<"users">;
-    }
+    const userId = await getCurrentUserIdOrThrow(ctx);
 
-    return await ctx.db
+    const aiCredits = await ctx.db
       .query("aiCredits")
       .filter((q) => q.eq(q.field("userId"), userId))
       .first();
+
+    return aiCredits ?? { totalCredits: 0, usedCredits: 0 };
   },
 });

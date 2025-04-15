@@ -1,7 +1,6 @@
 import { useMutation, useQuery } from 'convex/react';
 import { api } from '../../convex/_generated/api';
 import { Id } from '../../convex/_generated/dataModel';
-import { getFavoriteProgramsWithUniversity } from 'convex/programs/favorites';
 
 export function useFavorites() {
   // Directly use Convex mutations and queries

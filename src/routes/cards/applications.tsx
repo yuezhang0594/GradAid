@@ -1,10 +1,7 @@
-import { useState } from "react";
 import { useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 import { Id } from "../../../convex/_generated/dataModel";
 import { useNavigate } from "react-router-dom";
-import { Switch } from "@/components/ui/switch";
-import { Label } from "@/components/ui/label";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 import { CardWrapper } from "@/components/ui/card-wrapper";
 
@@ -32,28 +29,12 @@ function formatStatus(status: string) {
 
 export default function ApplicationsPage() {
   const navigate = useNavigate();
-  const [demoMode, setDemoMode] = useState(false);
-  const applications = useQuery(api.applications.queries.getApplications, { demoMode }) ?? [];
+  const applications = useQuery(api.applications.queries.getApplications) ?? [];
 
   return (
     <PageWrapper
       title="Applications"
-      description={
-        <div className="space-y-4">
-          <div className="space-y-1">
-            {/* <p className="text-muted-foreground">Track and manage your graduate school applications.</p> */}
-            <p className="text-muted-foreground">View deadlines, requirements, and progress for each university.</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <Switch
-              id="demo-mode"
-              checked={demoMode}
-              onCheckedChange={setDemoMode}
-            />
-            <Label htmlFor="demo-mode">Demo Mode</Label>
-          </div>
-        </div>
-      }
+      description="View deadlines, requirements, and progress for each university."
     >
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         {applications.map((app: Application) => (
@@ -61,12 +42,10 @@ export default function ApplicationsPage() {
             key={app.id}
             title={app.university}
             description={`${app.degree} in ${app.program}`}
-            onClick={() => navigate(`/applications/${encodeURIComponent(app.university)}`, { 
-              state: { 
+            onClick={() => navigate(`/applications/${encodeURIComponent(app.university)}`, {
+              state: {
                 applicationId: app.id,
-                universityName: app.university,
-                demoMode 
-              } 
+              }
             })}
           >
             <div className="space-y-2 flex-1">

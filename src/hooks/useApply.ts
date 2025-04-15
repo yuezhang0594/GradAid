@@ -3,6 +3,7 @@ import { useQuery, useMutation } from "convex/react";
 import { api } from "../../convex/_generated/api";
 import { Doc, Id } from "../../convex/_generated/dataModel";
 import { toast } from "sonner";
+import { DocumentType, DocumentStatus, ApplicationPriority } from "convex/validators";
 
 export type Program = Doc<"programs">;
 export type University = Doc<"universities">;
@@ -38,16 +39,16 @@ export function useApply(programId?: Id<"programs"> | null) {
     deadline,
     priority,
     notes,
-    requirements
+    applicationDocuments
   }: {
     universityId: Id<"universities">;
     programId: Id<"programs">;
     deadline: string;
-    priority: "high" | "medium" | "low";
+    priority: ApplicationPriority;
     notes?: string;
-    requirements: Array<{
-      type: string;
-      status: "completed" | "in_progress" | "pending" | "not_started";
+    applicationDocuments: Array<{
+      type: DocumentType;
+      status: DocumentStatus;
     }>;
   }) => {
     setIsCreating(true);
@@ -59,7 +60,7 @@ export function useApply(programId?: Id<"programs"> | null) {
         deadline,
         priority,
         notes,
-        requirements
+        applicationDocuments
       });
       
       toast.success("Application Created", {

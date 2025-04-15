@@ -28,6 +28,7 @@ import { useApply } from "@/hooks/useApply";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import formatDate from "@/lib/formatDate";
+import { DocumentStatus, DocumentType, ApplicationPriority } from "convex/validators";
 
 interface CreateApplicationFormProps {
     programId: Id<"programs">;
@@ -64,8 +65,8 @@ const formSchema = z.object({
 type FormValues = z.infer<typeof formSchema>;
 
 const OTHER_DEADLINE_VALUE = "custom";
-const LOR_ID = "lor";
-const SOP_ID = "sop";
+const LOR_ID = "lor" as DocumentType;
+const SOP_ID = "sop" as DocumentType;
 
 const CreateApplicationForm = ({ programId }: CreateApplicationFormProps) => {
     const navigate = useNavigate();
@@ -121,15 +122,15 @@ const CreateApplicationForm = ({ programId }: CreateApplicationFormProps) => {
                 // Create multiple LOR documents based on lorCount
                 for (let i = 1; i <= data.lorCount; i++) {
                     formattedRequirements.push({
-                        type: `${docId}${i}`,
-                        status: "not_started" as const
+                        type: docId as DocumentType,
+                        status: "not_started" as DocumentStatus
                     });
                 }
             } else {
                 // Add a single document for other types (like SOP)
                 formattedRequirements.push({
-                    type: docId,
-                    status: "not_started" as const
+                    type: docId as DocumentType,
+                    status: "not_started" as DocumentStatus
                 });
             }
         }
@@ -157,9 +158,9 @@ const CreateApplicationForm = ({ programId }: CreateApplicationFormProps) => {
             universityId: program.universityId,
             programId: program._id,
             deadline: deadlineValue,
-            priority: data.priority as "high" | "medium" | "low",
+            priority: data.priority as ApplicationPriority,
             notes: data.notes,
-            requirements: formattedRequirements
+            applicationDocuments: formattedRequirements
         });
 
         if (applicationId) {
@@ -168,7 +169,6 @@ const CreateApplicationForm = ({ programId }: CreateApplicationFormProps) => {
                 state: {
                     applicationId,
                     universityName: university.name,
-                    demoMode: false
                 }
             });
         }

@@ -1,27 +1,16 @@
 import { v } from "convex/values";
 import { mutation, MutationCtx } from "../_generated/server";
 import { Id } from "../_generated/dataModel";
-import { DocumentType, DocumentStatus } from "../validators";
+import { DocumentType, DocumentStatus, documentStatusValidator, documentTypeValidator, applicationPriorityValidator } from "../validators";
 import { getCurrentUserIdOrThrow, getDemoUserId } from "../users";
 
 export const saveDocumentDraft = mutation({
   args: {
     applicationDocumentId: v.id("applicationDocuments"),
     content: v.string(),
-    demoMode: v.optional(v.boolean())
   },
   handler: async (ctx, args) => {
-    let userId: Id<"users">;
-
-    // Get user ID from auth or use mock
-    const identity = await ctx.auth.getUserIdentity();
-    if (args.demoMode) {
-      userId = await getDemoUserId(ctx);
-    } else if (identity?.subject) {
-      userId = await getCurrentUserIdOrThrow(ctx);
-    } else {
-      userId = "mock-user-id" as Id<"users">;
-    }
+    const userId = await getCurrentUserIdOrThrow(ctx);
 
     // Get the document
     const document = await ctx.db.get(args.applicationDocumentId);
@@ -57,18 +46,11 @@ export const updateApplicationStatus = mutation({
     ),
     notes: v.optional(v.string()),
     submissionDate: v.optional(v.string()),
-    demoMode: v.optional(v.boolean())
   },
   returns: v.id("applications"),
   handler: async (ctx, args) => {
-    let userId: Id<"users">;
-
-    // Get user ID from auth or use demo mode
-    if (args.demoMode) {
-      userId = await getDemoUserId(ctx);
-    } else {
-      userId = await getCurrentUserIdOrThrow(ctx);
-    }
+    // Get user ID from auth
+    const userId = await getCurrentUserIdOrThrow(ctx);
 
     // Get the application to verify ownership
     const application = await ctx.db.get(args.applicationId);
@@ -177,9 +159,9 @@ async function createApplicationDocuments(
       content: "",
       title: requirement.type === "sop" ?
         "Statement of Purpose" :
-        requirement.type === "lor" ? 
-        "Letter of Recommendation" : 
-        "An error has occurred",
+        requirement.type === "lor" ?
+          "Letter of Recommendation" :
+          "An error has occurred",
       lastEdited: new Date().toISOString()
     });
   }
@@ -209,23 +191,14 @@ export const createApplication = mutation({
     universityId: v.id("universities"),
     programId: v.id("programs"),
     deadline: v.string(),
-    priority: v.union(
-      v.literal("high"),
-      v.literal("medium"),
-      v.literal("low")
-    ),
+    priority: applicationPriorityValidator,
     notes: v.optional(v.string()),
-    requirements: v.array(
+    applicationDocuments: v.array(
       v.object({
-        type: v.string(),
-        status: v.union(
-          v.literal("completed"),
-          v.literal("in_progress"),
-          v.literal("pending"),
-          v.literal("not_started")
-        ),
-      }
-      ))
+        type: documentTypeValidator,
+        status: documentStatusValidator,
+      })
+    ),
   },
   handler: async (ctx, args) => {
     // Get user ID from auth
@@ -238,18 +211,18 @@ export const createApplication = mutation({
     await checkExistingApplication(ctx, userId, args.programId);
 
     // Set default requirements if not provided
-    const defaultRequirements = [
+    const defaultApplicationDocuments = [
       {
-        type: "sop",
-        status: "not_started" as const
+        type: "sop" as DocumentType,
+        status: "not_started" as DocumentStatus
       },
       {
-        type: "lor",
-        status: "not_started" as const
+        type: "lor" as DocumentType,
+        status: "not_started" as DocumentStatus
       },
       {
-        type: "lor",
-        status: "not_started" as const
+        type: "lor" as DocumentType,
+        status: "not_started" as DocumentStatus
       }
     ];
 
@@ -264,14 +237,13 @@ export const createApplication = mutation({
       status: "in_progress",
       submissionDate: undefined,
       lastUpdated: new Date().toISOString(),
-      requirements: args.requirements || defaultRequirements
     });
 
     // Log activity
     await logApplicationActivity(ctx, userId, applicationId, "Application created");
 
     // Create application documents
-    await createApplicationDocuments(ctx, applicationId, userId, args.requirements || defaultRequirements);
+    await createApplicationDocuments(ctx, applicationId, userId, args.applicationDocuments || defaultApplicationDocuments);
 
     return applicationId;
   }

@@ -5,17 +5,15 @@ import { PageWrapper } from "@/components/ui/page-wrapper";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { ClickableCard } from "@/components/dashboard/clickablecard";
-import { useState, useEffect } from "react";
-import { FileTextIcon, CheckSquare2Icon, GraduationCapIcon, CheckCircleIcon, ClockIcon } from "lucide-react";
+import { FileTextIcon, GraduationCapIcon, CheckCircleIcon, ClockIcon } from "lucide-react";
 import { useSetAtom } from "jotai";
 import { documentEditorAtom } from "../cards/documents";
 import { Id } from "../../../convex/_generated/dataModel";
 import { useNavigate } from "react-router-dom";
 
 interface LocationState {
-  applicationId: string;
+  applicationId: Id<"applications">;
   universityName: string;
-  demoMode: boolean;
 }
 
 // Helper function to format status text
@@ -29,15 +27,13 @@ function formatStatus(status: string): string {
 export default function ApplicationDetail() {
   const location = useLocation();
   const state = location.state as LocationState;
-  const [demoMode, setDemoMode] = useState(state?.demoMode ?? true);
   const setDocumentEditor = useSetAtom(documentEditorAtom);
   const navigate = useNavigate();
 
-  console.log("[ApplicationDetail] Rendering with state:", { state, demoMode });
+  console.log("[ApplicationDetail] Rendering with state:", { state });
   
-  const { application, applicationStats, documentStats, requirementStats, isLoading } = useApplicationDetail(
-    state?.applicationId ?? "", 
-    demoMode
+  const { application, applicationStats, documentStats, isLoading } = useApplicationDetail(
+    state?.applicationId ?? ""
   );
   const icons = {
     "Status": <FileTextIcon className="h-4 w-4 text-muted-foreground" />,
@@ -45,19 +41,12 @@ export default function ApplicationDetail() {
     "Deadline": <ClockIcon className="h-4 w-4 text-muted-foreground" />,
   };
 
-  useEffect(() => {
-    if (state?.demoMode !== undefined) {
-      setDemoMode(state.demoMode);
-    }
-  }, [state?.demoMode]);
-
   console.log("[ApplicationDetail] Hook returned:", { 
     hasApplication: !!application,
     isLoading,
     statsCount: {
       application: applicationStats.length,
       documents: documentStats.length,
-      requirements: requirementStats.length
     }
   });
 
@@ -97,16 +86,6 @@ export default function ApplicationDetail() {
               </div>
             ))}
           </div>
-
-          {/* Requirements */}
-          <div className="grid gap-4 md:grid-cols-4">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="p-4 rounded-lg border animate-pulse">
-                <div className="h-4 w-24 bg-muted rounded mb-2" />
-                <div className="h-4 w-32 bg-muted rounded" />
-              </div>
-            ))}
-          </div>
         </div>
       </PageWrapper>
     );
@@ -133,9 +112,7 @@ export default function ApplicationDetail() {
   const handleDocumentClick = (doc: any) => {
     if (application?._id) {
       const state = {
-        applicationId: application._id as Id<"applications">,
-        documentType: doc.type.toLowerCase(),
-        demoMode
+        applicationDocumentId: doc._id as Id<"applicationDocuments"> || null,
       };
       setDocumentEditor(state);
       navigate(`/applications/${application.university}/documents/${doc.type.toLowerCase()}`);
@@ -206,7 +183,7 @@ export default function ApplicationDetail() {
                 <div className="space-y-2">
                   <div className="flex justify-between text-sm">
                     <span className="flex items-center">
-                      <Badge variant={doc.status === "completed" ? "default" : "secondary"}>
+                      <Badge variant={doc.status === "complete" ? "default" : "secondary"}>
                         {formatStatus(doc.status)}
                       </Badge>
                     </span>

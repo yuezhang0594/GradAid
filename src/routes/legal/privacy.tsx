@@ -1,8 +1,4 @@
-import {
-    Button,
-    Card,
-    CardContent
-} from "@/components/ui";
+import { Button } from "@/components/ui";
 
 export default function PrivacyPolicy() {
     const handleGoBack = () => {

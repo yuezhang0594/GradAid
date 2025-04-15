@@ -3,8 +3,6 @@ import { api } from '../../convex/_generated/api';
 import { useQuery } from 'convex/react';
 import { Id, Doc } from '../../convex/_generated/dataModel';
 
-// Use Convex's generated type
-type Program = Doc<"programs">;
 type University = Doc<"universities">
 
 // Define the filter interface to match the API

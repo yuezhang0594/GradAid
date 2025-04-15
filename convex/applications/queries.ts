@@ -5,22 +5,9 @@ import { v } from "convex/values";
 
 // Query to get applications for a specific user
 export const getApplications = query({
-  args: {
-    demoMode: v.optional(v.boolean())
-  },
+  args: {},
   handler: async (ctx, args) => {
-    // Try to get current user, if not available or demo mode is on, use mock user
-    let userId: Id<"users">;
-    try {
-      if (args.demoMode) {
-        userId = await getDemoUserId(ctx);
-      } else {
-        userId = await getCurrentUserIdOrThrow(ctx);
-      }
-    } catch {
-      // Use mock user ID if authentication fails
-      userId = "mock-user-id" as Id<"users">;
-    }
+    const userId = await getCurrentUserIdOrThrow(ctx);
 
     // Get all applications for the user
     const applications = await ctx.db
@@ -33,7 +20,7 @@ export const getApplications = query({
       applications.map(async (application) => {
         const university = await ctx.db.get(application.universityId);
         const program = await ctx.db.get(application.programId);
-        
+
         // Get documents for this application
         const documents = await ctx.db
           .query("applicationDocuments")
@@ -66,21 +53,10 @@ export const getApplications = query({
 
 // Query to get document details with application info
 export const getDocumentDetails = query({
-  args: {
-    demoMode: v.optional(v.boolean())
-  },
+  args: {},
   handler: async (ctx, args) => {
     // Get user ID
-    let userId: Id<"users">;
-    try {
-      if (args.demoMode) {
-        userId = await getDemoUserId(ctx);
-      } else {
-        userId = await getCurrentUserIdOrThrow(ctx);
-      }
-    } catch {
-      userId = "mock-user-id" as Id<"users">;
-    }
+    const userId = await getCurrentUserIdOrThrow(ctx);
 
     // Get all applications for the user
     const applications = await ctx.db
@@ -142,20 +118,10 @@ export const getDocumentDetails = query({
 export const getApplicationDetails = query({
   args: {
     applicationId: v.string(),
-    demoMode: v.optional(v.boolean()),
   },
   handler: async (ctx, args) => {
     // Get user ID
-    let userId: Id<"users">;
-    try {
-      if (args.demoMode) {
-        userId = await getDemoUserId(ctx);
-      } else {
-        userId = await getCurrentUserIdOrThrow(ctx);
-      }
-    } catch {
-      userId = "mock-user-id" as Id<"users">;
-    }
+    const userId = await getCurrentUserIdOrThrow(ctx);
 
     // Get application details
     const application = await ctx.db
@@ -178,33 +144,12 @@ export const getApplicationDetails = query({
       .withIndex("by_application", (q) => q.eq("applicationId", application._id))
       .collect();
 
-    // Get LORs
-    const lors = await ctx.db
-      .query("letterOfRecommendations")
-      .withIndex("by_application", (q) => q.eq("applicationId", application._id))
-      .collect();
-
     return {
       ...application,
       university: university?.name ?? "Unknown University",
       program: program?.name ?? "Unknown Program",
       degree: program?.degree ?? "Unknown Degree",
-      documents: documents.map(doc => ({
-        id: doc._id,
-        type: doc.type,
-        title: doc.title,
-        status: doc.status,
-        progress: doc.progress,
-        lastEdited: doc.lastEdited,
-        aiSuggestions: doc.aiSuggestionsCount,
-      })),
-      lors: lors.map(lor => ({
-        id: lor._id,
-        status: lor.status,
-        requestedDate: lor.requestedDate,
-        submittedDate: lor.submittedDate,
-        remindersSent: lor.remindersSent,
-      })),
+      documents: documents,
     };
   },
 });
@@ -227,19 +172,9 @@ export const getUniversityByName = query({
 export const getDocumentById = query({
   args: {
     applicationDocumentId: v.id("applicationDocuments"),
-    demoMode: v.optional(v.boolean())
   },
   handler: async (ctx, args) => {
-    let userId: Id<"users">;
-    try {
-      if (args.demoMode) {
-        userId = await getDemoUserId(ctx);
-      } else {
-        userId = await getCurrentUserIdOrThrow(ctx);
-      }
-    } catch {
-      userId = "mock-user-id" as Id<"users">;
-    }
+    const userId = await getCurrentUserIdOrThrow(ctx);
     console.log("Getting document for:", { userId, ...args });
 
     // Get the document to verify ownership
@@ -258,5 +193,18 @@ export const getDocumentById = query({
     }
 
     return document;
+  }
+});
+
+export const getApplication = query({
+  args: {
+    applicationId: v.id("applications"),
+  },
+  handler: async (ctx, args) => {
+    const application = await ctx.db.get(args.applicationId);
+    if (!application) {
+      throw new Error("Application not found");
+    }
+    return application;
   }
 });

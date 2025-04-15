@@ -1,5 +1,5 @@
 import { v } from "convex/values";
-import { z } from "zod";
+import { TypeOf, z } from "zod";
 
 /**
  * Global constants for validation limits
@@ -141,5 +141,22 @@ export type FeedbackInput = z.infer<typeof feedbackSchema>;
  * TypeScript type definition for document types
  * Represents the types of documents that can be submitted
  */
-export type DocumentType = "sop"| "lor";
+
+export type DocumentType = typeof documentTypeValidator.type;
+export const documentTypeValidator = v.union(
+    v.literal("sop"),
+    v.literal("lor")
+);
 export type DocumentStatus = "not_started" | "draft" | "in_review" | "complete";
+export const documentStatusValidator = v.union(
+    v.literal("not_started"),
+    v.literal("draft"),
+    v.literal("in_review"),
+    v.literal("complete")
+);
+export type ApplicationPriority = typeof applicationPriorityValidator.type;
+export const applicationPriorityValidator = v.union(
+    v.literal("high"),
+    v.literal("medium"),
+    v.literal("low")
+);

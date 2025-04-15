@@ -94,49 +94,6 @@ export const updateDocumentProgress = mutation({
   },
 });
 
-// Update LOR status
-export const updateLorStatus = mutation({
-  args: {
-    lorId: v.id("letterOfRecommendations"),
-    status: v.union(
-      v.literal("pending"),
-      v.literal("in_progress"),
-      v.literal("submitted")
-    ),
-    submittedDate: v.optional(v.string()),
-  },
-  handler: async (ctx, args) => {
-    const { lorId, status, submittedDate } = args;
-
-    // Get the current LOR to preserve other fields
-    const lor = await ctx.db.get(lorId);
-    if (!lor) {
-      throw new Error("LOR not found");
-    }
-
-    // Update LOR status
-    await ctx.db.patch(lorId, {
-      status,
-      submittedDate: status === "submitted" ? submittedDate : undefined,
-    });
-
-    // Log activity
-    await ctx.db.insert("userActivity", {
-      userId: lor.userId,
-      type: "lor_update",
-      description: `LOR from ${lor.recommenderName} ${status === "submitted" ? "received" : "status updated"}`,
-      timestamp: new Date().toISOString(),
-      metadata: {
-        lorId,
-        oldStatus: lor.status,
-        newStatus: status,
-      },
-    });
-
-    return true;
-  },
-});
-
 // Use AI credits
 export const useAiCredits = mutation({
   args: {

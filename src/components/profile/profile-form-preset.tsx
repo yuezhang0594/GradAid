@@ -7,6 +7,7 @@ import { EducationStep } from "../onboarding/steps/education";
 import { TestScoresStep } from "../onboarding/steps/test-scores";
 import { CareerGoalsStep } from "../onboarding/steps/career-goals";
 import { Card } from "@/components/ui/card";
+import { useNavigate } from "react-router-dom";
 
 const STEPS = ["personal", "education", "tests", "career"] as const;
 type Step = (typeof STEPS)[number];
@@ -33,8 +34,6 @@ const mockEducation = {
   researchExperience: "Worked on ML projects",
   documents: {
     sop: { status: "complete" },
-    cv: { status: "complete" },
-    transcripts: { status: "pending" },
     lors: { 
       received: 3, 
       total: 3,
@@ -176,15 +175,17 @@ const mockCareerGoals = {
 export function ProfileForm({ userId }: ProfileFormProps) {
   const [activeTab, setActiveTab] = useState<Step>("personal");
   const { user } = useUser();
-  
+  const navigate = useNavigate();
+
   // If userId is provided (mock mode), use it, otherwise require a logged-in user
   if (!userId && !user) {
     return null;
   }
 
-  const handleStepComplete = () => {
+  const handleStepComplete = async (): Promise<void> => {
     // In profile form, we don't automatically advance to next step
     // Just stay on the current tab and show success message
+    return Promise.resolve();
   };
 
   // Always use mock data for now
@@ -218,6 +219,7 @@ export function ProfileForm({ userId }: ProfileFormProps) {
             <PersonalInfoStep
               onComplete={handleStepComplete}
               initialData={data.personalInfo}
+              onBack={() => navigate(-1)}
             />
           </TabsContent>
 
@@ -225,6 +227,7 @@ export function ProfileForm({ userId }: ProfileFormProps) {
             <EducationStep
               onComplete={handleStepComplete}
               initialData={data.education}
+              onBack={() => navigate(-1)}
             />
           </TabsContent>
 
@@ -232,6 +235,7 @@ export function ProfileForm({ userId }: ProfileFormProps) {
             <TestScoresStep
               onComplete={handleStepComplete}
               initialData={data.testScores}
+              onBack={() => navigate(-1)}
             />
           </TabsContent>
 
@@ -239,6 +243,7 @@ export function ProfileForm({ userId }: ProfileFormProps) {
             <CareerGoalsStep
               onComplete={handleStepComplete}
               initialData={data.careerGoals}
+              onBack={() => navigate(-1)}
             />
           </TabsContent>
         </div>

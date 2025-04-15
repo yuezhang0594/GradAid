@@ -1,6 +1,7 @@
 import React from "react";
 import { Activity, FileTextIcon, SparklesIcon, ClockIcon } from "lucide-react";
 import { type CardAction } from "./clickablecard";
+import { DocumentStatus, DocumentType } from "convex/validators";
 
 // Define interfaces for type safety
 interface ApplicationStat {
@@ -22,9 +23,9 @@ interface DocumentStat {
   action: CardAction;
 }
 
-interface Requirement {
-  type: string;
-  status: "completed" | "pending" | "in_progress";
+interface ApplicationDocument {
+  type: DocumentType;
+  status: DocumentStatus;
   lastEdit?: string;
   dueDate?: string;
   count?: string;
@@ -35,7 +36,7 @@ interface TimelineEvent {
   university: string;
   program: string;
   priority: "high" | "medium" | "low";
-  requirements: Requirement[];
+  requirements: ApplicationDocument[];
   notes?: string;
 }
 
@@ -151,10 +152,8 @@ export const applicationTimeline: TimelineEvent[] = [
     program: "MS Computer Science",
     priority: "high",
     requirements: [
-      { type: "SOP", status: "completed", lastEdit: "2025-03-08" },
-      { type: "Transcripts", status: "pending", dueDate: "2025-05-01" },
-      { type: "LORs", status: "completed", count: "3/3" },
-      { type: "CV", status: "completed", lastEdit: "2025-03-06" }
+      { type: "sop", status: "complete", lastEdit: "2025-03-08" },
+      { type: "lor", status: "complete", count: "3/3" },
     ],
     notes: "All LORs received from Prof. Johnson, Dr. Smith, and Dr. Wilson",
   },
@@ -164,9 +163,8 @@ export const applicationTimeline: TimelineEvent[] = [
     program: "MS Artificial Intelligence",
     priority: "medium",
     requirements: [
-      { type: "SOP", status: "in_progress", lastEdit: "2025-03-07" },
-      { type: "Research Statement", status: "pending", dueDate: "2025-05-15" },
-      { type: "LORs", status: "completed", count: "3/3" },
+      { type: "sop", status: "draft", lastEdit: "2025-03-07" },
+      { type: "lor", status: "complete", count: "3/3" },
     ],
     notes: "Research statement needs revision based on AI feedback",
   },
@@ -176,10 +174,8 @@ export const applicationTimeline: TimelineEvent[] = [
     program: "MS Computer Science",
     priority: "medium",
     requirements: [
-      { type: "SOP", status: "in_progress", lastEdit: "2025-03-10" },
-      { type: "Research Statement", status: "pending", dueDate: "2025-06-01" },
-      { type: "LORs", status: "pending", count: "0/3" },
-      { type: "CV", status: "in_progress", lastEdit: "2025-03-09" }
+      { type: "sop", status: "draft", lastEdit: "2025-03-10" },
+      { type: "lor", status: "in_review", count: "0/3" },
     ],
     notes: "Need to start LOR requests",
   },
@@ -189,10 +185,8 @@ export const applicationTimeline: TimelineEvent[] = [
     program: "MS Software Engineering",
     priority: "medium",
     requirements: [
-      { type: "SOP", status: "pending" },
-      { type: "Transcripts", status: "pending", dueDate: "2025-06-15" },
-      { type: "LORs", status: "pending", count: "0/3" },
-      { type: "CV", status: "in_progress", lastEdit: "2025-03-09" }
+      { type: "sop", status: "in_review" },
+      { type: "lor", status: "in_review", count: "0/3" },
     ],
     notes: "Application window opens on April 1st",
   },
@@ -202,10 +196,8 @@ export const applicationTimeline: TimelineEvent[] = [
     program: "MS Computer Science",
     priority: "low",
     requirements: [
-      { type: "SOP", status: "pending" },
-      { type: "Research Statement", status: "pending" },
-      { type: "LORs", status: "pending", count: "0/3" },
-      { type: "CV", status: "in_progress", lastEdit: "2025-03-09" }
+      { type: "sop", status: "in_review" },
+      { type: "lor", status: "in_review", count: "0/3" },
     ],
     notes: "Rolling admissions - apply early",
   },

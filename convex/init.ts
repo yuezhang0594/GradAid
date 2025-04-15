@@ -2,6 +2,7 @@ import { internalMutation } from "./_generated/server";
 import { Doc, Id } from "./_generated/dataModel";
 import { WithoutSystemFields } from "convex/server";
 import { v } from "convex/values";
+import { ApplicationPriority } from "./validators";
 
 // Define types based on our schema
 type University = Doc<"universities">
@@ -11,27 +12,10 @@ type Program = Doc<"programs">
 type ProgramInput = WithoutSystemFields<Program>
 
 type Application = Doc<"applications">
-type ApplicationInput = {
-  userId: Id<"users">;
-  universityId: Id<"universities">;
-  programId: Id<"programs">;
-  status: "draft" | "in_progress" | "submitted" | "accepted" | "rejected";
-  submissionDate?: string;
-  deadline: string;
-  priority: "high" | "medium" | "low";
-  notes?: string;
-  lastUpdated: string;
-  requirements: Array<{
-    type: string;
-    status: "completed" | "in_progress" | "pending" | "not_started";
-  }>;
-}
+type ApplicationInput = WithoutSystemFields<Application>
 
 type ApplicationDocument = Doc<"applicationDocuments">
 type ApplicationDocumentInput = WithoutSystemFields<ApplicationDocument>
-
-type LOR = Doc<"letterOfRecommendations">
-type LORInput = WithoutSystemFields<LOR>
 
 type UserActivity = Doc<"userActivity">
 type UserActivityInput = WithoutSystemFields<UserActivity>
@@ -103,7 +87,6 @@ export default internalMutation({
       "favorites",
       "applications",
       "applicationDocuments",
-      "letterOfRecommendations",
       ...(keepProfileData ? [] : profileTables)
     ] as const;
 
@@ -133,43 +116,42 @@ export default internalMutation({
 
     if (oldDemoUser) {
       console.log("Found existing demo user, deleting all associated data...");
-      
+
       // Delete data from all tables that reference the user ID
       const tablesWithUserData = [
         "profiles",
-        "userProfiles", 
-        "applications", 
-        "applicationDocuments", 
-        "letterOfRecommendations", 
+        "userProfiles",
+        "applications",
+        "applicationDocuments",
         "aiCredits",
-        "aiCreditUsage", 
+        "aiCreditUsage",
         "userActivity",
         "favorites"
       ] as const;
-      
+
       for (const table of tablesWithUserData) {
         const items = await ctx.db
           .query(table)
           .filter(q => q.eq(q.field("userId"), oldDemoUser._id))
           .collect();
-          
-        if  (items.length > 0) {
+
+        if (items.length > 0) {
           console.log(`Deleting ${items.length} items from ${table}`);
         }
         for (const item of items) {
           await ctx.db.delete(item._id);
         }
       }
-      
+
       // Special handling for applications: we need to get their IDs first to delete related documents
       const oldApplications = await ctx.db
         .query("applications")
         .filter(q => q.eq(q.field("userId"), oldDemoUser._id))
         .collect();
-        
+
       // Get application IDs
       const oldApplicationIds = oldApplications.map(app => app._id);
-      
+
       // Delete application documents and LORs that reference these applications
       for (const appId of oldApplicationIds) {
         // Delete application documents
@@ -177,64 +159,54 @@ export default internalMutation({
           .query("applicationDocuments")
           .filter(q => q.eq(q.field("applicationId"), appId))
           .collect();
-          
+
         for (const doc of appDocs) {
           await ctx.db.delete(doc._id);
         }
-        
-        // Delete letters of recommendation
-        const lors = await ctx.db
-          .query("letterOfRecommendations")
-          .filter(q => q.eq(q.field("applicationId"), appId))
-          .collect();
-          
-        for (const lor of lors) {
-          await ctx.db.delete(lor._id);
-        }
       }
-      
+
       // Finally delete the demo user itself
       await ctx.db.delete(oldDemoUser._id);
       console.log("Old demo user and all associated data deleted successfully");
     }
-    
+
     // Create mock user first - following Clerk schema
     const mockUserId = await ctx.db.insert("users", {
       name: "Demo User",
       email: "demo@example.com",
       clerkId: "user_demo",
     });
-      // Initialize user profile
-      await ctx.db.insert("userProfiles", {
-        userId: mockUserId,
-        countryOfOrigin: "United States",
-        dateOfBirth: "1995-01-01",
-        currentLocation: "Boston, MA",
-        nativeLanguage: "English",
-        educationLevel: "Bachelor's",
-        major: "Computer Science",
-        university: "Boston University",
-        gpa: 3.8,
-        gpaScale: 4.0,
-        graduationDate: "2024-05",
-        researchExperience: "2 years of research in machine learning and natural language processing",
-        greScores: {
-          verbal: 165,
-          quantitative: 168,
-          analyticalWriting: 5.0,
-          testDate: "2024-01-15"
-        },
-        targetDegree: "MS",
-        intendedField: "Computer Science",
-        researchInterests: ["Artificial Intelligence", "Machine Learning", "Natural Language Processing"],
-        careerObjectives: "Pursue research in AI/ML with focus on practical applications",
-        targetLocations: ["California", "Massachusetts", "New York"],
-        expectedStartDate: "2025-09",
-        budgetRange: "$30,000-$50,000",
-        createdAt: new Date().toISOString(),
-        updatedAt: new Date().toISOString(),
-        onboardingCompleted: true
-      });
+    // Initialize user profile
+    await ctx.db.insert("userProfiles", {
+      userId: mockUserId,
+      countryOfOrigin: "United States",
+      dateOfBirth: "1995-01-01",
+      currentLocation: "Boston, MA",
+      nativeLanguage: "English",
+      educationLevel: "Bachelor's",
+      major: "Computer Science",
+      university: "Boston University",
+      gpa: 3.8,
+      gpaScale: 4.0,
+      graduationDate: "2024-05",
+      researchExperience: "2 years of research in machine learning and natural language processing",
+      greScores: {
+        verbal: 165,
+        quantitative: 168,
+        analyticalWriting: 5.0,
+        testDate: "2024-01-15"
+      },
+      targetDegree: "MS",
+      intendedField: "Computer Science",
+      researchInterests: ["Artificial Intelligence", "Machine Learning", "Natural Language Processing"],
+      careerObjectives: "Pursue research in AI/ML with focus on practical applications",
+      targetLocations: ["California", "Massachusetts", "New York"],
+      expectedStartDate: "2025-09",
+      budgetRange: "$30,000-$50,000",
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+      onboardingCompleted: true
+    });
 
     // University data
     const universityData: UniversityInput[] = [
@@ -1067,12 +1039,12 @@ export default internalMutation({
     }
 
     // Initialize AI credits only if we're not keeping profile data
-      await ctx.db.insert("aiCredits", {
-        userId: mockUserId,
-        totalCredits: 500,
-        usedCredits: 250,
-        resetDate: "2025-04-01",
-      });
+    await ctx.db.insert("aiCredits", {
+      userId: mockUserId,
+      totalCredits: 500,
+      usedCredits: 250,
+      resetDate: "2025-04-01",
+    });
 
     // Initialize AI credit usage data
     const usageTypes = ["Document Review", "Essay Feedback", "Research Help", "Other"];
@@ -1099,11 +1071,7 @@ export default internalMutation({
         deadline: "2025-05-15",
         priority: "high",
         notes: "Top choice program, strong research alignment with AI lab",
-        lastUpdated: new Date().toISOString(),
-        requirements: [
-          { type: "SOP", status: "completed" },
-          { type: "LORs", status: "completed" }
-        ]
+        lastUpdated: new Date().toISOString()
       },
       {
         userId: mockUserId,
@@ -1115,10 +1083,6 @@ export default internalMutation({
         priority: "high",
         notes: "Top choice program, strong research alignment with AI lab",
         lastUpdated: new Date().toISOString(),
-        requirements: [
-          { type: "SOP", status: "completed" },
-          { type: "LORs", status: "completed" }
-        ]
       },
       {
         userId: mockUserId,
@@ -1130,10 +1094,6 @@ export default internalMutation({
         priority: "high",
         notes: "Excellent fit for AI research interests",
         lastUpdated: new Date().toISOString(),
-        requirements: [
-          { type: "SOP", status: "completed" },
-          { type: "LORs", status: "completed" }
-        ]
       },
       {
         userId: mockUserId,
@@ -1144,10 +1104,6 @@ export default internalMutation({
         priority: "high",
         notes: "Strong systems research group",
         lastUpdated: new Date().toISOString(),
-        requirements: [
-          { type: "SOP", status: "in_progress" },
-          { type: "LORs", status: "pending" }
-        ]
       },
       {
         userId: mockUserId,
@@ -1158,10 +1114,6 @@ export default internalMutation({
         priority: "medium",
         notes: "Interested in ML/Robotics lab",
         lastUpdated: new Date().toISOString(),
-        requirements: [
-          { type: "SOP", status: "in_progress" },
-          { type: "LORs", status: "in_progress" }
-        ]
       },
       {
         userId: mockUserId,
@@ -1172,10 +1124,6 @@ export default internalMutation({
         priority: "medium",
         notes: "Good funding opportunities",
         lastUpdated: new Date().toISOString(),
-        requirements: [
-          { type: "SOP", status: "not_started" },
-          { type: "LORs", status: "not_started" }
-        ]
       },
     ];
 
@@ -1230,46 +1178,6 @@ export default internalMutation({
       await ctx.db.insert("applicationDocuments", document);
     }
 
-    // Create LOR data (matches Stanford requirements)
-    const lorData: LORInput[] = [
-      {
-        userId: mockUserId,
-        applicationId: applicationIds["Stanford University-PhD-Computer Science"],
-        recommenderName: "Prof. Johnson",
-        recommenderEmail: "johnson@university.edu",
-        status: "submitted",
-        requestedDate: "2025-01-15",
-        submittedDate: "2025-02-28",
-        remindersSent: 1,
-        lastReminderDate: "2025-02-15",
-      },
-      {
-        userId: mockUserId,
-        applicationId: applicationIds["Stanford University-PhD-Computer Science"],
-        recommenderName: "Dr. Smith",
-        recommenderEmail: "smith@research.org",
-        status: "submitted",
-        requestedDate: "2025-01-15",
-        submittedDate: "2025-02-20",
-        remindersSent: 0,
-      },
-      {
-        userId: mockUserId,
-        applicationId: applicationIds["Stanford University-PhD-Computer Science"],
-        recommenderName: "Dr. Wilson",
-        recommenderEmail: "wilson@institute.edu",
-        status: "submitted",
-        requestedDate: "2025-01-15",
-        submittedDate: "2025-02-25",
-        remindersSent: 1,
-        lastReminderDate: "2025-02-10",
-      },
-    ];
-
-    for (const lor of lorData) {
-      await ctx.db.insert("letterOfRecommendations", lor);
-    }
-
     // Create activity log
     const activityData: UserActivityInput[] = [
       {
@@ -1298,22 +1206,20 @@ export default internalMutation({
       },
       {
         userId: mockUserId,
-        type: "lor_update",
-        description: "Received LOR from Prof. Johnson",
-        timestamp: "2025-02-28T09:15:00Z",
+        type: "application_update",
+        description: "Updated application status for Georgia Institute of Technology",
+        timestamp: "2025-03-02T10:00:00Z",
         metadata: {
-          lorId: (await ctx.db.query("letterOfRecommendations")
-            .filter(q => q.eq(q.field("recommenderName"), "Prof. Johnson"))
-            .first())?._id,
+          applicationId: applicationIds["Georgia Institute of Technology-MS-Computer Science"],
           oldStatus: "in_progress",
           newStatus: "submitted"
         },
       },
     ];
-    
-      for (const activity of activityData) {
-        await ctx.db.insert("userActivity", activity);
-      }
+
+    for (const activity of activityData) {
+      await ctx.db.insert("userActivity", activity);
+    }
     console.log("Database initialization complete!");
 
     return {
