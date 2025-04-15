@@ -89,13 +89,13 @@ export default function DocumentEditor() {
                 {document.recommenderName ? `Edit Recommender Info` : "Add Recommender Info"}
               </Button>
             )}
-            <Button
+            {/* <Button
               variant="outline"
               className="gap-2"
             >
               <HistoryIcon className="h-4 w-4" />
               Version History
-            </Button>
+            </Button> */}
             <Button
               variant="default"
               onClick={handleSave}
