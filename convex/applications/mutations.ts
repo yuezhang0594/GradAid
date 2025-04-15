@@ -1,7 +1,7 @@
 import { v } from "convex/values";
-import { mutation } from "../_generated/server";
+import { mutation, MutationCtx } from "../_generated/server";
 import { Id } from "../_generated/dataModel";
-import { DocumentType, DocumentStatus } from "./schema";
+import { DocumentType, DocumentStatus } from "../validators";
 import { getCurrentUserIdOrThrow, getDemoUserId } from "../users";
 
 export const saveDocumentDraft = mutation({
@@ -12,7 +12,7 @@ export const saveDocumentDraft = mutation({
   },
   handler: async (ctx, args) => {
     let userId: Id<"users">;
-    
+
     // Get user ID from auth or use mock
     const identity = await ctx.auth.getUserIdentity();
     if (args.demoMode) {
@@ -62,7 +62,7 @@ export const updateApplicationStatus = mutation({
   returns: v.id("applications"),
   handler: async (ctx, args) => {
     let userId: Id<"users">;
-    
+
     // Get user ID from auth or use demo mode
     if (args.demoMode) {
       userId = await getDemoUserId(ctx);
@@ -75,7 +75,7 @@ export const updateApplicationStatus = mutation({
     if (!application) {
       throw new Error("Application not found");
     }
-    
+
     if (application.userId !== userId) {
       throw new Error("Unauthorized: Cannot update application status");
     }
@@ -115,60 +115,127 @@ export const updateApplicationStatus = mutation({
   }
 });
 
+// Helper function to validate university and program
+async function validateProgramBelongsToUniversity(
+  ctx: MutationCtx,
+  universityId: Id<"universities">,
+  programId: Id<"programs">
+) {
+  // Verify the university and program exist
+  const university = await ctx.db.get(universityId);
+  if (!university) {
+    throw new Error("University not found");
+  }
+
+  const program = await ctx.db.get(programId);
+  if (!program) {
+    throw new Error("Program not found");
+  }
+
+  // Ensure the program belongs to the specified university
+  if (program.universityId !== universityId) {
+    throw new Error("Program does not belong to the specified university");
+  }
+
+  return { university, program };
+}
+
+// Helper function to check for existing application
+async function checkExistingApplication(
+  ctx: MutationCtx,
+  userId: Id<"users">,
+  programId: Id<"programs">
+) {
+  const existingApplication = await ctx.db
+    .query("applications")
+    .withIndex("by_user", (q) =>
+      q.eq("userId", userId)
+    )
+    .filter((q) => q.eq(q.field("programId"), programId))
+    .first();
+
+  if (existingApplication) {
+    throw new Error("You already have an application for this program");
+  }
+}
+
+// Helper function to create application documents
+async function createApplicationDocuments(
+  ctx: MutationCtx,
+  applicationId: Id<"applications">,
+  userId: Id<"users">,
+  requirements: Array<{ type: string, status: string }>
+) {
+  for (const requirement of requirements) {
+    const docType = requirement.type.startsWith("lor") ? "lor" : requirement.type;
+    await ctx.db.insert("applicationDocuments", {
+      applicationId,
+      userId,
+      type: docType as DocumentType,
+      status: "not_started", // Initialize as not started
+      progress: 0,
+      content: "",
+      title: requirement.type === "sop" ?
+        "Statement of Purpose" :
+        requirement.type === "lor" ? 
+        "Letter of Recommendation" : 
+        "An error has occurred",
+      lastEdited: new Date().toISOString()
+    });
+  }
+}
+
+// Helper function to log application creation activity
+async function logApplicationActivity(
+  ctx: MutationCtx,
+  userId: Id<"users">,
+  applicationId: Id<"applications">,
+  description: string
+) {
+  await ctx.db.insert("userActivity", {
+    userId,
+    type: "application_update",
+    description: description,
+    timestamp: new Date().toISOString(),
+    metadata: {
+      applicationId: applicationId,
+      newStatus: "in_progress"
+    }
+  });
+}
+
 export const createApplication = mutation({
   args: {
     universityId: v.id("universities"),
     programId: v.id("programs"),
     deadline: v.string(),
     priority: v.union(
-      v.literal("high"), 
-      v.literal("medium"), 
+      v.literal("high"),
+      v.literal("medium"),
       v.literal("low")
     ),
     notes: v.optional(v.string()),
     requirements: v.array(
       v.object({
-      type: v.string(),
-      status: v.union(
-        v.literal("completed"),
-        v.literal("in_progress"),
-        v.literal("pending"),
-        v.literal("not_started")
+        type: v.string(),
+        status: v.union(
+          v.literal("completed"),
+          v.literal("in_progress"),
+          v.literal("pending"),
+          v.literal("not_started")
         ),
       }
-    ))
+      ))
   },
   handler: async (ctx, args) => {
     // Get user ID from auth
     const userId = await getCurrentUserIdOrThrow(ctx);
-    
-    // Verify the university and program exist
-    const university = await ctx.db.get(args.universityId);
-    if (!university) {
-      throw new Error("University not found");
-    }
-    
-    const program = await ctx.db.get(args.programId);
-    if (!program) {
-      throw new Error("Program not found");
-    }
-    
-    // Ensure the program belongs to the specified university
-    if (program.universityId !== args.universityId) {
-      throw new Error("Program does not belong to the specified university");
-    }
 
-    // Check if the user already has an application for this program
-    const existingApplication = await ctx.db
-      .query("applications")
-      .withIndex("by_user", (q) => 
-        q.eq("userId", userId)
-      )
-      .filter((q) => q.eq(q.field("programId"), args.programId))
-      .first();
-    if (existingApplication) {
-      throw new Error("You already have an application for this program");
-    }
+    // Validate university and program
+    await validateProgramBelongsToUniversity(ctx, args.universityId, args.programId);
+
+    // Check for existing application
+    await checkExistingApplication(ctx, userId, args.programId);
 
     // Set default requirements if not provided
     const defaultRequirements = [
@@ -201,32 +268,10 @@ export const createApplication = mutation({
     });
 
     // Log activity
-    await ctx.db.insert("userActivity", {
-      userId,
-      type: "application_update",
-      description: "Application created",
-      timestamp: new Date().toISOString(),
-      metadata: {
-        applicationId: applicationId,
-        newStatus: "in_progress"
-      }
-    });
+    await logApplicationActivity(ctx, userId, applicationId, "Application created");
 
-    // Create application documents for each requirement
-    const requirements = args.requirements || defaultRequirements;
-    for (const requirement of requirements) {
-      const docType = requirement.type.startsWith("lor") ? "lor" : requirement.type;
-      await ctx.db.insert("applicationDocuments", {
-        applicationId,
-        userId,
-        type: docType as DocumentType,
-        status: "draft", // Initialize as draft
-        progress: 0,
-        content: "",
-        title: `${requirement.type.toUpperCase()} - Draft`, // Keep original type in title
-        lastEdited: new Date().toISOString()
-      });
-    }
+    // Create application documents
+    await createApplicationDocuments(ctx, applicationId, userId, args.requirements || defaultRequirements);
 
     return applicationId;
   }

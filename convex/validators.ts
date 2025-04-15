@@ -136,3 +136,10 @@ export const feedbackValidator = v.object({
  * Generated from the Zod schema for type safety across the application
  */
 export type FeedbackInput = z.infer<typeof feedbackSchema>;
+
+/**
+ * TypeScript type definition for document types
+ * Represents the types of documents that can be submitted
+ */
+export type DocumentType = "sop"| "lor";
+export type DocumentStatus = "not_started" | "draft" | "in_review" | "complete";
