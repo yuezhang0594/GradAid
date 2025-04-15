@@ -1,21 +1,12 @@
 import { useState } from "react";
 import { useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 import { CardWrapper } from "@/components/ui/card-wrapper";
 import { Id } from "../../../convex/_generated/dataModel";
-import { atom, useSetAtom } from "jotai";
-
-export const documentEditorAtom = atom<{
-  applicationDocumentId: Id<"applicationDocuments"> | null;
-  demoMode: boolean;
-}>({
-  applicationDocumentId: null,
-  demoMode: false
-});
 
 interface Program {
   name: string;
@@ -61,9 +52,9 @@ function formatText(text: string) {
 
 export default function DocumentsPage() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [demoMode, setDemoMode] = useState(false);
   const documents = useQuery(api.applications.queries.getDocumentDetails, { demoMode }) ?? [];
-  const setDocumentEditor = useSetAtom(documentEditorAtom);
 
   // Transform data to create separate cards for multiple programs
   const cards = documents.flatMap((uni: { name: string, programs: Program[], documents: Document[] }) => {
@@ -84,14 +75,16 @@ export default function DocumentsPage() {
   });
 
   const handleDocumentClick = (documentId: Id<"applicationDocuments"> | null, universityName: string, documentType: string) => {
-    console.log("Handling document click:", { documentId, universityName, documentType });
-    const state = {
-      applicationDocumentId: documentId,
-      demoMode
-    };
-    console.log("Setting editor state:", state);
-    setDocumentEditor(state);
-    navigate(`/applications/${encodeURIComponent(universityName)}/documents/${documentType.toLowerCase()}`);
+    if (documentId) {
+      navigate(`/documents/${encodeURIComponent(universityName)}/${documentType.toLowerCase()}?documentId=${documentId}`, {
+        state: {
+          applicationId: null,
+          universityName,
+          demoMode,
+          returnPath: location.pathname
+        }
+      });
+    }
   };
 
   return (
@@ -131,7 +124,7 @@ export default function DocumentsPage() {
                 : [{
                     text: "Start Generate Doc",
                     variant: "secondary",
-                    onClick: () => handleDocumentClick(null, card.name, "new")
+                    onClick: () => handleDocumentClick(null, card.name, '')
                   }]
             }
             progress={

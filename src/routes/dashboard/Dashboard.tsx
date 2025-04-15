@@ -6,25 +6,23 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-import { Calendar, ChevronRight, ExternalLink, BellIcon, TargetIcon, FileTextIcon, SparklesIcon, ClockIcon, Activity } from "lucide-react";
+import { Calendar, ChevronRight, ExternalLink, BellIcon, TargetIcon, FileTextIcon, ClockIcon, Activity } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { ClickableCard } from "@/components/dashboard/clickablecard";
 import { useDashboardData } from "@/hooks/useDashboardData";
 import { useState } from "react";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
-import { useSetAtom } from "jotai";
-import { documentEditorAtom } from "../cards/documents";
-import { Id } from "../../../convex/_generated/dataModel";
 import { useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
+import { Id } from "../../../convex/_generated/dataModel";
 
 export default function Dashboard() {
   const navigate = useNavigate();
-  const setDocumentEditor = useSetAtom(documentEditorAtom);
+  const location = useLocation();
   const [demoMode, setDemoMode] = useState(false);
   const { applicationStats, documentStats, applicationTimeline } = useDashboardData(demoMode);
   const applications = useQuery(api.applications.queries.getApplications, { demoMode }) ?? [];
@@ -36,12 +34,14 @@ export default function Dashboard() {
   };
 
   const handleDocumentClick = (doc: any) => {
-    const state = {
-      applicationDocumentId: doc.documentId as Id<"applicationDocuments">,
-      demoMode
-    };
-    setDocumentEditor(state);
-    navigate(`/applications/${doc.university}/documents/${doc.type.toLowerCase()}`);
+    navigate(`/documents/${encodeURIComponent(doc.university)}/${doc.type.toLowerCase()}?documentId=${doc.documentId}`, {
+      state: {
+        applicationId: doc.applicationId,
+        universityName: doc.university,
+        demoMode: demoMode,
+        returnPath: location.pathname
+      }
+    });
   };
 
   return (

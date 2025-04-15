@@ -25,6 +25,7 @@ import type * as profile from "../profile.js";
 import type * as programs_favorites from "../programs/favorites.js";
 import type * as programs_search from "../programs/search.js";
 import type * as resend from "../resend.js";
+import type * as services_llm from "../services/llm.js";
 import type * as userActivity_queries from "../userActivity/queries.js";
 import type * as userProfiles_mutations from "../userProfiles/mutations.js";
 import type * as userProfiles_queries from "../userProfiles/queries.js";
@@ -52,6 +53,7 @@ declare const fullApi: ApiFromModules<{
   "programs/favorites": typeof programs_favorites;
   "programs/search": typeof programs_search;
   resend: typeof resend;
+  "services/llm": typeof services_llm;
   "userActivity/queries": typeof userActivity_queries;
   "userProfiles/mutations": typeof userProfiles_mutations;
   "userProfiles/queries": typeof userProfiles_queries;

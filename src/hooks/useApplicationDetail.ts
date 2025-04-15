@@ -1,7 +1,6 @@
-// import { ReactNode } from "react";
-// import { FileTextIcon, ClockIcon, CheckCircleIcon } from "lucide-react";
 import { useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
+import { Id } from "../../convex/_generated/dataModel";
 import { formatDistanceToNow } from "date-fns";
 
 // This interface will be used when we integrate with Convex
@@ -24,7 +23,8 @@ interface ApplicationDetailData {
     university: string;
     lastEdited?: string;
     aiSuggestions?: number;
-    type: string; // Add type to the interface
+    type: string; 
+    documentId: Id<"applicationDocuments">; 
     action: {
       label: string;
       href: string;
@@ -44,22 +44,6 @@ interface ApplicationDetailData {
   }>;
 }
 
-// Types for Convex data
-interface Document {
-  id: string;
-  type: string;
-  title: string;
-  status: string;
-  progress: number;
-  lastEdited: string;
-  aiSuggestions?: number;
-}
-
-interface Requirement {
-  type: string;
-  status: "completed" | "in_progress" | "pending" | "not_started";
-}
-
 interface ApplicationData {
   _id: string;
   university: string;
@@ -68,8 +52,8 @@ interface ApplicationData {
   status: string;
   priority: string;
   deadline: string;
-  documents: Document[];
-  requirements: Requirement[];
+  documents: any[];
+  requirements: any[];
 }
 
 export function useApplicationDetail(applicationId: string, demoMode = true): ApplicationDetailData & { application: ApplicationData | null; isLoading: boolean } {
@@ -116,7 +100,7 @@ export function useApplicationDetail(applicationId: string, demoMode = true): Ap
       title: "Documents",
       // icon: <CheckCircleIcon className="h-4 w-4 text-muted-foreground" />,
       value: `${applicationData.documents.length} Required`,
-      description: `${applicationData.documents.filter((d: Document) => d.status === "complete").length} Completed`,
+      description: `${applicationData.documents.filter((d) => d.status === "complete").length} Completed`,
       action: {
         label: "View Documents",
         href: `/applications/${applicationData.university}/documents`,
@@ -136,7 +120,7 @@ export function useApplicationDetail(applicationId: string, demoMode = true): Ap
     },
   ];
 
-  const documentStats = applicationData.documents.map((doc: Document) => {
+  const documentStats = applicationData.documents.map((doc) => {
     console.log("[useApplicationDetail] Processing document:", doc);
     return {
       title: doc.title,
@@ -146,6 +130,7 @@ export function useApplicationDetail(applicationId: string, demoMode = true): Ap
       lastEdited: doc.lastEdited,
       aiSuggestions: doc.aiSuggestions,
       type: doc.type,
+      documentId: doc.id,  
       action: {
         label: "Edit Document",
         href: `/applications/${applicationData.university}/documents/${doc.type.toLowerCase()}`,
@@ -154,7 +139,7 @@ export function useApplicationDetail(applicationId: string, demoMode = true): Ap
     };
   });
 
-  const requirementStats = applicationData.requirements.map((req: Requirement) => {
+  const requirementStats = applicationData.requirements.map((req) => {
     console.log("[useApplicationDetail] Processing requirement:", req);
     return {
       title: req.type,

@@ -7,15 +7,29 @@ import { Progress } from "@/components/ui/progress";
 import { ClickableCard } from "@/components/dashboard/clickablecard";
 import { useState, useEffect } from "react";
 import { FileTextIcon, CheckSquare2Icon, GraduationCapIcon, CheckCircleIcon, ClockIcon } from "lucide-react";
-import { useSetAtom } from "jotai";
-import { documentEditorAtom } from "../cards/documents";
-import { Id } from "../../../convex/_generated/dataModel";
 import { useNavigate } from "react-router-dom";
+import { Id } from "../../../convex/_generated/dataModel";
 
 interface LocationState {
-  applicationId: string;
-  universityName: string;
-  demoMode: boolean;
+  applicationId?: string;
+  universityName?: string;
+  demoMode?: boolean;
+}
+
+interface DocumentStat {
+  title: string;
+  progress: number;
+  status: string;
+  university: string;
+  lastEdited?: string;
+  aiSuggestions?: number;
+  type: string;
+  documentId?: Id<"applicationDocuments">;
+  action: {
+    label: string;
+    href: string;
+    tooltip: string;
+  };
 }
 
 // Helper function to format status text
@@ -27,11 +41,10 @@ function formatStatus(status: string): string {
 }
 
 export default function ApplicationDetail() {
+  const navigate = useNavigate();
   const location = useLocation();
   const state = location.state as LocationState;
   const [demoMode, setDemoMode] = useState(state?.demoMode ?? true);
-  const setDocumentEditor = useSetAtom(documentEditorAtom);
-  const navigate = useNavigate();
 
   console.log("[ApplicationDetail] Rendering with state:", { state, demoMode });
   
@@ -39,6 +52,7 @@ export default function ApplicationDetail() {
     state?.applicationId ?? "", 
     demoMode
   );
+
   const icons = {
     "Status": <FileTextIcon className="h-4 w-4 text-muted-foreground" />,
     "Documents": <CheckCircleIcon className="h-4 w-4 text-muted-foreground" />,
@@ -130,17 +144,20 @@ export default function ApplicationDetail() {
     status: application.status
   });
 
-  const handleDocumentClick = (doc: any) => {
-    if (application?._id) {
-      const state = {
-        applicationId: application._id as Id<"applications">,
-        documentType: doc.type.toLowerCase(),
-        demoMode
-      };
-      setDocumentEditor(state);
-      navigate(`/applications/${application.university}/documents/${doc.type.toLowerCase()}`);
-    }
+  const handleDocumentClick = (documentId: Id<"applicationDocuments"> | null, universityName: string, documentType: string) => {
+    console.log("Handling document click:", { documentId, universityName, documentType });
+    
+    // Navigate with document ID in URL params
+    navigate(`/documents/${encodeURIComponent(universityName)}/${documentType.toLowerCase()}?documentId=${documentId}`, {
+      state: {
+        applicationId: application._id,
+        universityName: application.university,
+        demoMode: demoMode,
+        returnPath: location.pathname
+      }
+    });
   };
+
 
   return (
     <PageWrapper
@@ -185,7 +202,7 @@ export default function ApplicationDetail() {
               action={{
                 ...doc.action,
                 href: doc.action.href,
-                onClick: () => handleDocumentClick(doc)
+                onClick: () => handleDocumentClick(doc.documentId ?? null, application?.university ?? "", doc.type)
               }}
             >
               <CardHeader>

@@ -170,25 +170,34 @@ export const useDashboardData = (demoMode?: boolean): DashboardData => {
   };
 
   // Format document stats
-  const documentStats = recentDocuments.flatMap((uni: University) => 
-    uni.documents.map((doc: Document) => ({
-      title: formatDocumentType(doc.type) ?? "New Document",
-      progress: doc.progress,
-      status: doc.status,
-      university: uni.name,
-      program: doc.program,
-      type: doc.type,
-      documentId: doc.documentId,
-      applicationId: uni.programs[0]?.applicationId,
-      lastEdited: doc.lastEdited,
-      aiSuggestions: doc.aiSuggestions,
-      action: {
-        label: "Edit Document",
-        href: `/applications/${uni.name}/documents/${doc.type.toLowerCase()}`,
-        tooltip: "Continue editing document",
-      },
-    }))
-  );
+  const documentStats = recentDocuments
+    .flatMap((uni: University) => 
+      uni.documents.map((doc: Document) => ({
+        title: formatDocumentType(doc.type) ?? "New Document",
+        progress: doc.progress,
+        status: doc.status,
+        university: uni.name,
+        program: doc.program,
+        type: doc.type,
+        documentId: doc.documentId,
+        applicationId: uni.programs[0]?.applicationId,
+        lastEdited: doc.lastEdited,
+        aiSuggestions: doc.aiSuggestions,
+        action: {
+          label: "Edit Document",
+          href: `/documents/${encodeURIComponent(uni.name)}/${doc.type.toLowerCase()}?documentId=${doc.documentId}`,
+          tooltip: "Continue editing document",
+        },
+      }))
+    )
+    // Sort by last edited date, most recent first
+    .sort((a, b) => {
+      const dateA = a.lastEdited ? new Date(a.lastEdited).getTime() : 0;
+      const dateB = b.lastEdited ? new Date(b.lastEdited).getTime() : 0;
+      return dateB - dateA;
+    })
+    // Take only the 8 most recent documents
+    .slice(0, 8);
 
   // Format application timeline
   const applicationTimeline = applications
