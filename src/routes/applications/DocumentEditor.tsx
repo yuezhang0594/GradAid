@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { SaveIcon, ArrowLeftIcon, MessageSquareIcon, HistoryIcon } from "lucide-react";
+import { SaveIcon, ArrowLeftIcon, MessageSquareIcon, HistoryIcon, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { PageWrapper } from "@/components/ui/page-wrapper";
@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useDocumentEditor } from "@/hooks/useDocumentEditor";
 import { useDocumentFormatting } from "@/hooks/useDocumentFormatting";
+import { useGenerateStatementOfPurpose, useGenerateLetterOfRecommendation } from "@/hooks/useLLM";
 
 export default function DocumentEditor() {
   const {
@@ -21,6 +22,10 @@ export default function DocumentEditor() {
   } = useDocumentEditor();
 
   const { formatDocumentType, formatLastEdited } = useDocumentFormatting();
+
+  // LLM generation hooks
+  const generateSOP = useGenerateStatementOfPurpose(false, document?.applicationId);
+  const generateLOR = documentId ? useGenerateLetterOfRecommendation(false, documentId) : undefined;
 
   // Load initial document content
   useEffect(() => {
@@ -96,6 +101,28 @@ export default function DocumentEditor() {
               <HistoryIcon className="h-4 w-4" />
               Version History
             </Button> */}
+            <Button
+              variant="secondary"
+              className="gap-2"
+              disabled={state.isSaving || state.isGenerating}
+              onClick={async () => {
+                setState(prev => ({ ...prev, isGenerating: true }));
+                try {
+                  if (document?.type === "sop") {
+                    await generateSOP();
+                  } else if (document?.type === "lor" && generateLOR) {
+                    await generateLOR(document.applicationId);
+                  }
+                } finally {
+                  setState(prev => ({ ...prev, isGenerating: false }));
+                }
+              }}
+            >
+              {state.isGenerating && (
+                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+              )}
+              {state.isGenerating ? "Generating..." : "Generate Document"}
+            </Button>
             <Button
               variant="default"
               onClick={handleSave}
