@@ -16,6 +16,15 @@ const validateTestDate = (date: string) => {
   return testDate <= today;
 };
 
+// Validate that test date is not more than 10 years ago
+const validateTestDateNotTooOld = (date: string) => {
+  const testDate = new Date(date);
+  const tenYearsAgo = new Date();
+  tenYearsAgo.setFullYear(tenYearsAgo.getFullYear() - 10);
+  tenYearsAgo.setHours(0, 0, 0, 0); // Reset time part for accurate date comparison
+  return testDate >= tenYearsAgo;
+};
+
 // GRE scores schema
 const greScoresSchema = z.object({
   verbal: z.coerce.number().min(130, "GRE Verbal score must be at least 130").max(170, "GRE Verbal score must be at most 170"),
@@ -23,7 +32,8 @@ const greScoresSchema = z.object({
   analyticalWriting: z.coerce.number().min(0, "GRE Analytical Writing score must be at least 0").max(6, "GRE Analytical Writing score must be at most 6"),
   testDate: z.string()
     .min(1, "Test date is required")
-    .refine(validateTestDate, { message: "Test date cannot be in the future" }),
+    .refine(validateTestDate, { message: "Test date cannot be in the future" })
+    .refine(validateTestDateNotTooOld, { message: "Test date cannot be more than 10 years ago" }),
 }).optional();
 
 const testScoresSchema = z.object({
@@ -36,7 +46,10 @@ const testScoresSchema = z.object({
     type: z.enum(["TOEFL", "IELTS"]),
     overallScore: z.coerce.number(),
     sectionScores: z.record(z.coerce.number()),
-    testDate: z.string().min(1, "Test date is required"),
+    testDate: z.string()
+      .min(1, "Test date is required")
+      .refine(validateTestDate, { message: "Test date cannot be in the future" })
+      .refine(validateTestDateNotTooOld, { message: "Test date cannot be more than 10 years ago" }),
   }).refine(
     (data) => {
       // Validate based on test type

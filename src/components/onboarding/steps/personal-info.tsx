@@ -49,8 +49,8 @@ const personalInfoSchema = z.object({
       if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
         age--;
       }
-      return age >= 16;
-    }, "You must be at least 16 years old to use this service"),
+      return age >= 16 && age <= 100;
+    }, "You must be between 16 and 100 years old to use this service"),
   currentLocation: z.string().min(1, "Current location is required"),
   nativeLanguage: z.string().min(1, "Native language is required"),
 });
