@@ -77,15 +77,3 @@ export async function userByClerkId(ctx: QueryCtx, clerkId: string) {
     .withIndex("byClerkId", (q) => q.eq("clerkId", clerkId))
     .unique();
 }
-
-export async function getDemoUserId(ctx: QueryCtx) {
-  const demoUser = await ctx.db
-    .query("users")
-    .filter(q => q.eq(q.field("name"), "Demo User"))
-    .first();
-  
-  if (!demoUser) {
-    throw new Error("Demo user not found");
-  }
-  return demoUser._id;
-}

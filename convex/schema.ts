@@ -153,8 +153,6 @@ const schema = defineSchema({
     recommenderName: v.optional(v.string()),
     recommenderEmail: v.optional(v.string()),
     progress: v.number(),
-    recommenderName: v.optional(v.string()),
-    recommenderEmail: v.optional(v.string()),
     lastEdited: v.string(),
     aiSuggestionsCount: v.optional(v.number()),
     content: v.optional(v.string()),

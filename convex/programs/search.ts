@@ -383,16 +383,3 @@ export const getUniversities = query({
     return await getUniversitiesHelper(ctx, universityIds);
   },
 });
-
-export const getProgram = query({
-  args: {
-    programId: v.id("programs"),
-  },
-  handler: async (ctx, { programId }) => {
-    const program = await ctx.db.get(programId);
-    if (!program) {
-      throw new Error(`Program with ID ${programId} not found`);
-    }
-    return program;
-  }
-});
