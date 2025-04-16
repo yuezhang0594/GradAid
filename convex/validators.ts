@@ -5,6 +5,9 @@ import { TypeOf, z } from "zod";
  * Global constants for validation limits
  */
 export const FEEDBACK_MAX_CHARS = 1000;
+export const DEFAULT_AI_CREDITS = 500;
+export const LOADING_INDICATOR_DELAY = 500;
+export const RESET_DAYS_IN_MILLISECONDS = 30 * 24 * 60 * 60 * 1000; // 30 days in milliseconds
 
 /**
  * Validator for educational background information

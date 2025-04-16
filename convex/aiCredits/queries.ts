@@ -1,5 +1,6 @@
 import { query } from "./../_generated/server";
 import { getCurrentUserIdOrThrow } from "../users";
+import { DEFAULT_AI_CREDITS, RESET_DAYS_IN_MILLISECONDS } from "../validators";
 
 export const getAiCredits = query({
   handler: async (ctx) => {
@@ -13,9 +14,9 @@ export const getAiCredits = query({
 
     if (!aiCredits) {
       return {
-        totalCredits: 500, // Default values if no record exists
+        totalCredits: DEFAULT_AI_CREDITS,
         usedCredits: 0,
-        resetDate: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString(), // 30 days from now
+        resetDate: new Date(Date.now() + RESET_DAYS_IN_MILLISECONDS).toISOString(), // 30 days from now
       };
     }
 
@@ -96,7 +97,7 @@ export const getAiCreditsRemaining = query({
       .first();
 
     if (!aiCredits) {
-      return 500; // Default value if no record exists
+      return DEFAULT_AI_CREDITS;
     }
 
     // Calculate remaining credits
