@@ -3,8 +3,8 @@ import { useNavigate, useLocation, useSearchParams } from "react-router-dom";
 import { useAtomValue, useSetAtom } from "jotai";
 import { documentEditorAtom } from "../store/document";
 import { useMutation, useQuery } from "convex/react";
-import { api } from "../../convex/_generated/api";
-import { Id } from "../../convex/_generated/dataModel";
+import { api } from "#/_generated/api";
+import { Id } from "#/_generated/dataModel";
 import { toast } from "sonner";
 import { DocumentState } from "@/routes/applications/types";
 

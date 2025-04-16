@@ -16,7 +16,7 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 import { useQuery } from 'convex/react';
-import { api } from '../../convex/_generated/api';
+import { api } from '#/_generated/api';
 import { PageWrapper } from '@/components/ui/page-wrapper';
 
 const FILTER_DELAY = 500; // delay for filtering to smooth UX

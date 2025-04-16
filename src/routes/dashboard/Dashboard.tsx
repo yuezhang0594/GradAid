@@ -16,8 +16,8 @@ import { useDashboardData } from "@/hooks/useDashboardData";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { useQuery } from "convex/react";
-import { api } from "../../../convex/_generated/api";
-import { Id } from "../../../convex/_generated/dataModel";
+import { api } from "#/_generated/api";
+import { Id } from "#/_generated/dataModel";
 
 export default function Dashboard() {
   const navigate = useNavigate();

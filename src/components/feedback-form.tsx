@@ -8,7 +8,7 @@ import { SendIcon, AlertCircle } from 'lucide-react';
 import { StarRating } from '@/components/ui/star-rating';
 import { useFeedback } from '@/hooks/useFeedback';
 import { Alert, AlertDescription } from '@/components/ui/alert';
-import { feedbackSchema, type FeedbackInput, FEEDBACK_MAX_CHARS } from '../../convex/validators';
+import { feedbackSchema, type FeedbackInput, FEEDBACK_MAX_CHARS } from '#/validators';
 
 interface FeedbackFormProps {
     className?: string;

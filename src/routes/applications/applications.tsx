@@ -1,6 +1,6 @@
 import { useQuery } from "convex/react";
-import { api } from "../../../convex/_generated/api";
-import { Id } from "../../../convex/_generated/dataModel";
+import { api } from "#/_generated/api";
+import { Id } from "#/_generated/dataModel";
 import { useNavigate } from "react-router-dom";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 import { CardWrapper } from "@/components/ui/card-wrapper";

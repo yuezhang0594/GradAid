@@ -841,7 +841,7 @@ export const getCurrentUser = query({
 
 **Example Request:**
 ```typescript
-import { api } from "../convex/_generated/api";
+import { api } from "#/_generated/api";
 import { useQuery } from "convex/react";
 import { useAuth } from "@clerk/clerk-react";
 
@@ -904,7 +904,7 @@ export const generateSOP = mutation({
 
 **Example Request:**
 ```typescript
-import { api } from "../convex/_generated/api";
+import { api } from "#/_generated/api";
 import { useMutation } from "convex/react";
 
 const generateSOP = useMutation(api.documents.generate.generateSOP);
@@ -973,7 +973,7 @@ export const searchUniversities = query({
 
 **Example Request:**
 ```typescript
-import { api } from "../convex/_generated/api";
+import { api } from "#/_generated/api";
 import { useQuery } from "convex/react";
 
 const universities = useQuery(api.universities.search.searchUniversities, {
@@ -1052,7 +1052,7 @@ export const createApplication = mutation({
 
 **Example Request:**
 ```typescript
-import { api } from "../convex/_generated/api";
+import { api } from "#/_generated/api";
 import { useMutation } from "convex/react";
 
 const createApplication = useMutation(api.applications.create.createApplication);

@@ -16,7 +16,7 @@ import {
   Filter,
 } from "lucide-react";
 import { useQuery } from "convex/react";
-import { api } from "../../../convex/_generated/api";
+import { api } from "#/_generated/api";
 import { formatDistanceToNow } from "date-fns";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 

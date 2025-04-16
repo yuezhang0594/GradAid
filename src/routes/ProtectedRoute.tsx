@@ -4,7 +4,7 @@ import SignInPage from '@/routes/auth/SignIn';
 import { useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { LoaderIcon } from 'lucide-react'
-import { LOADING_INDICATOR_DELAY } from 'convex/validators';
+import { LOADING_INDICATOR_DELAY } from '#/validators';
 
 export default function ProtectedRoute({ children }: { children: React.ReactNode }) {
     const location = useLocation();

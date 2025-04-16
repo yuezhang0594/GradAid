@@ -1,9 +1,9 @@
 import { useMutation, useQuery } from "convex/react";
-import { api } from "../../../convex/_generated/api";
+import { api } from "#/_generated/api";
 import { useNavigate, useLocation } from "react-router-dom";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 import { CardWrapper } from "@/components/ui/card-wrapper";
-import { Id } from "../../../convex/_generated/dataModel";
+import { Id } from "#/_generated/dataModel";
 import { DocumentStatus, DocumentType } from "convex/validators";
 
 interface Program {

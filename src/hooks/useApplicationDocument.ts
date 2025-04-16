@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useQuery, useMutation } from "convex/react";
-import { api } from "@/../convex/_generated/api";
-import { Doc, Id } from "@/../convex/_generated/dataModel";
+import { api } from "#/_generated/api";
+import { Doc, Id } from "#/_generated/dataModel";
 import { DocumentStatus, DocumentType } from "convex/validators";
 import { toast } from "sonner";
 

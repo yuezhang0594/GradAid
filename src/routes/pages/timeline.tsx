@@ -8,7 +8,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { CalendarIcon, AlertCircle } from "lucide-react";
 import { useQuery } from "convex/react";
-import { api } from "../../../convex/_generated/api";
+import { api } from "#/_generated/api";
 import { format } from "date-fns";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 import { useNavigate } from "react-router-dom";

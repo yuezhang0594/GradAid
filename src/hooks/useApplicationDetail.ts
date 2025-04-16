@@ -1,11 +1,10 @@
 // import { ReactNode } from "react";
 // import { FileTextIcon, ClockIcon, CheckCircleIcon } from "lucide-react";
 import { useQuery } from "convex/react";
-import { api } from "../../convex/_generated/api";
+import { api } from "#/_generated/api";
 import { formatDistanceToNow } from "date-fns";
 import { DocumentType, DocumentStatus } from "convex/validators";
-import { Doc } from "convex/_generated/dataModel";
-import { Id } from "node_modules/convex/dist/esm-types/values/value";
+import { Id, Doc } from "convex/_generated/dataModel";
 
 // This interface will be used when we integrate with Convex
 interface ApplicationDetailData {

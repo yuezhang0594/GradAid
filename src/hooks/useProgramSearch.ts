@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect } from 'react';
-import { api } from '../../convex/_generated/api';
+import { api } from '#/_generated/api';
 import { useQuery } from 'convex/react';
-import { Id, Doc } from '../../convex/_generated/dataModel';
+import { Id, Doc } from '#/_generated/dataModel';
 
 type University = Doc<"universities">
 

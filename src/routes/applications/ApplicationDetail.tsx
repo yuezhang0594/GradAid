@@ -8,7 +8,7 @@ import { ClickableCard } from "@/components/dashboard/clickablecard";
 import { useState, useEffect } from "react";
 import { FileTextIcon, CheckSquare2Icon, GraduationCapIcon, CheckCircleIcon, ClockIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { Id } from "../../../convex/_generated/dataModel";
+import { Id } from "#/_generated/dataModel";
 
 interface LocationState {
   applicationId: Id<"applications">;

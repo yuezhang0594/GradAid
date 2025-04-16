@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useQuery, useMutation } from "convex/react";
-import { api } from "../../convex/_generated/api";
-import { Doc, Id } from "../../convex/_generated/dataModel";
+import { api } from "#/_generated/api";
+import { Doc, Id } from "#/_generated/dataModel";
 import { toast } from "sonner";
-import { DocumentType, DocumentStatus, ApplicationPriority } from "convex/validators";
+import { DocumentType, DocumentStatus, ApplicationPriority } from "#/validators";
 
 export type Program = Doc<"programs">;
 export type University = Doc<"universities">;

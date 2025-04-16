@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useQuery, useMutation, useAction, useConvex } from "convex/react";
-import { api } from "../../convex/_generated/api";
-import { Id } from "../../convex/_generated/dataModel";
+import { api } from "#/_generated/api";
+import { Id } from "#/_generated/dataModel";
 import { toast } from "sonner";
 
 interface Program {
