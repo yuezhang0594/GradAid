@@ -151,6 +151,16 @@ export function TestScoresStep({ onComplete, initialData, onBack }: TestScoresSt
                                 form.clearErrors();
                               }
                               
+                              // Handle GRE test selection/deselection
+                              if (test === "GRE (optional)") {
+                                if (!checked) {
+                                  // Reset GRE scores when unchecked
+                                  form.setValue("greScores", undefined);
+                                  // Clear any GRE-related errors
+                                  form.clearErrors("greScores");
+                                }
+                              }
+                              
                               field.onChange(newValue);
                               setSelectedTests(newValue);
                             }}
