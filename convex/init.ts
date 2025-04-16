@@ -47,28 +47,31 @@ const universityAbbreviations: Record<string, string> = {
   "Brandeis University": "brandeis"
 };
 
-// Default export that safely seeds the database
+/**
+ * Database initialization module that resets and seeds the database with initial data.
+ * 
+ * This mutation performs two main operations:
+ * 1. Clears existing data from specified tables (optionally preserving user profile data)
+ * 2. Seeds the database with predefined university and program information
+ *
+ * @remarks
+ * This is an internal mutation intended to be used for development, testing,
+ * or initial deployment scenarios. It will delete real data if run in production.
+ * 
+ * The seeded data includes:
+ * - 25 universities with their details (name, location, ranking, website, etc.)
+ * - 30+ academic programs linked to these universities with complete information
+ *   about degree requirements, deadlines, and department details
+ *
+ * @param args.keepProfileData - When true (default), preserves user profile data during deletion.
+ *                              When false, deletes all data including user profiles.
+ * 
+ * @returns Promise that resolves when the initialization is complete
+ */
 export default internalMutation({
   args: {
     keepProfileData: v.optional(v.boolean())
   },
-  /**
-   * Initializes the database with mock data for testing purposes.
-   * 
-   * This function deletes existing data in specified tables and inserts
-   * predefined mock data, including user profiles, universities, programs,
-   * applications, application documents, letters of recommendation, AI credits,
-   * and user activity logs. It handles the removal of an old demo user and its
-   * associated data if present.
-   * 
-   * @param ctx - The context containing the database instance.
-   * @param args - The arguments to the handler function.
-   * @param args.keepProfileData - A boolean that indicates whether to retain
-   * user profile data during the data deletion process.
-   * 
-   * @returns An object containing the success status, list of cleared tables,
-   * and list of kept tables.
-   */
   handler: async (ctx, args) => {
     console.log("Deleting existing data from the database...");
     const keepProfileData = args.keepProfileData ?? true;
