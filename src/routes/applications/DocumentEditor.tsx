@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent } from "@/components/ui/card";
 import { useDocumentEditor } from "@/hooks/useDocumentEditor";
-import { useDocumentFormatting } from "@/hooks/useDocumentFormatting";
+import { formatDocumentType, formatLastEdited } from "@/lib/formatDocument";
 import { useGenerateStatementOfPurpose, useGenerateLetterOfRecommendation } from "@/hooks/useLLM";
 
 export default function DocumentEditor() {
@@ -21,8 +21,6 @@ export default function DocumentEditor() {
     handleBack,
     handleRecommenderSubmit
   } = useDocumentEditor();
-
-  const { formatDocumentType, formatLastEdited } = useDocumentFormatting();
 
   // LLM generation hooks
   const generateSOP = useGenerateStatementOfPurpose(document?.applicationId);

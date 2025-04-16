@@ -14,7 +14,7 @@ export function useDocumentEditor() {
   const [searchParams] = useSearchParams();
   const setEditorState = useSetAtom(documentEditorAtom);
   const editorState = useAtomValue(documentEditorAtom);
-  
+
   // Document state
   const [state, setState] = useState<DocumentState>({
     content: "",
@@ -27,7 +27,6 @@ export function useDocumentEditor() {
 
   // Get document ID from URL
   const documentId = searchParams.get("documentId") as Id<"applicationDocuments"> | null;
-  const demoMode = location.state?.demoMode ?? false;
 
   // Get document data
   const document = documentId ? useQuery(api.documents.queries.getDocumentById, {
@@ -63,25 +62,23 @@ export function useDocumentEditor() {
     } finally {
       setState(prev => ({ ...prev, isSaving: false }));
     }
-  }, [documentId, state.content, demoMode, saveDocument]);
+  }, [documentId, state.content, saveDocument]);
 
   const handleBack = useCallback(() => {
     // Clear document editor state
     setEditorState({
       applicationDocumentId: null,
-      demoMode: editorState.demoMode
     });
-    
+
     // Navigate back to the return path if available, otherwise to applications
     const returnPath = location.state?.returnPath || '/applications';
     navigate(returnPath, {
       state: {
         applicationId: location.state?.applicationId,
         universityName: location.state?.universityName,
-        demoMode: location.state?.demoMode
       }
     });
-  }, [navigate, setEditorState, editorState.demoMode, location.state]);
+  }, [navigate, setEditorState, location.state]);
 
   const handleRecommenderSubmit = useCallback(async () => {
     if (!documentId) return;
@@ -110,14 +107,13 @@ export function useDocumentEditor() {
     } finally {
       setState(prev => ({ ...prev, isSaving: false }));
     }
-  }, [documentId, state.recommenderName, state.recommenderEmail, demoMode, updateRecommender]);
+  }, [documentId, state.recommenderName, state.recommenderEmail, updateRecommender]);
 
   return {
     state,
     setState,
     document,
     documentId,
-    demoMode,
     handleSave,
     handleBack,
     handleRecommenderSubmit
