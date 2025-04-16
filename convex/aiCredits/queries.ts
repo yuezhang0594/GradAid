@@ -83,3 +83,19 @@ export const getAiCreditUsage = query({
     return usageArray;
   },
 });
+
+export const getAiCreditsRemaining = query({
+  handler: async (ctx) => {
+    const aiCredits = await getAiCredits(ctx, {});
+
+    if (!aiCredits) {
+      return 500; // Default value if no record exists
+    }
+
+    // Calculate remaining credits
+    const remainingCredits = aiCredits.totalCredits - aiCredits.usedCredits;
+    
+    // Ensure remaining credits are not negative
+    return remainingCredits > 0 ? remainingCredits : 0;
+  },
+});

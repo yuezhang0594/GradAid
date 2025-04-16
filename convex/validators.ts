@@ -160,3 +160,12 @@ export const applicationPriorityValidator = v.union(
     v.literal("medium"),
     v.literal("low")
 );
+export type ApplicationStatus = typeof applicationStatusValidator.type;
+export const applicationStatusValidator = v.union(
+    v.literal("draft"),
+    v.literal("in_progress"),
+    v.literal("submitted"),
+    v.literal("accepted"),
+    v.literal("rejected"),
+    v.literal("deleted")
+);

@@ -1,6 +1,6 @@
 import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
-import { educationValidator, workExperienceValidator, publicationValidator, researchExperienceValidator, documentStatusValidator, documentTypeValidator } from './validators';
+import { educationValidator, workExperienceValidator, publicationValidator, researchExperienceValidator, documentStatusValidator, documentTypeValidator, applicationStatusValidator, applicationPriorityValidator } from './validators';
 
 const schema = defineSchema({
   users: defineTable({
@@ -132,16 +132,10 @@ const schema = defineSchema({
     userId: v.id("users"),
     universityId: v.id("universities"),
     programId: v.id("programs"),
-    status: v.union(
-      v.literal("draft"),
-      v.literal("in_progress"),
-      v.literal("submitted"),
-      v.literal("accepted"),
-      v.literal("rejected")
-    ),
+    status: applicationStatusValidator,
     submissionDate: v.optional(v.string()),
     deadline: v.string(),
-    priority: v.union(v.literal("high"), v.literal("medium"), v.literal("low")),
+    priority: applicationPriorityValidator,
     notes: v.optional(v.string()),
     lastUpdated: v.string(),
   })

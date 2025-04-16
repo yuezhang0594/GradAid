@@ -1,8 +1,8 @@
 import { v } from "convex/values";
-import { mutation, MutationCtx } from "../_generated/server";
-import { Id } from "../_generated/dataModel";
-import { DocumentType, DocumentStatus, documentStatusValidator, documentTypeValidator, applicationPriorityValidator } from "../validators";
-import { getCurrentUserIdOrThrow, getDemoUserId } from "../users";
+import { mutation } from "../_generated/server";
+import { DocumentType, DocumentStatus, documentStatusValidator, documentTypeValidator, applicationPriorityValidator, applicationStatusValidator } from "../validators";
+import { getCurrentUserIdOrThrow } from "../users";
+import { checkExistingApplication, createApplicationDocument, createApplicationDocuments, logApplicationActivity, validateProgramBelongsToUniversity, verifyApplicationOwnership } from "./helpers";
 
 export const saveDocumentDraft = mutation({
   args: {
@@ -10,19 +10,14 @@ export const saveDocumentDraft = mutation({
     content: v.string(),
   },
   handler: async (ctx, args) => {
-    const userId = await getCurrentUserIdOrThrow(ctx);
-
     // Get the document
     const document = await ctx.db.get(args.applicationDocumentId);
     if (!document) {
       throw new Error("Document not found");
     }
 
-    // Get the application to verify ownership
-    const application = await ctx.db.get(document.applicationId);
-    if (!application || application.userId !== userId) {
-      throw new Error("Unauthorized: Cannot save document");
-    }
+    // Verify application ownership
+    await verifyApplicationOwnership(ctx, document.applicationId);
 
     // Update the document
     await ctx.db.patch(args.applicationDocumentId, {
@@ -37,30 +32,14 @@ export const saveDocumentDraft = mutation({
 export const updateApplicationStatus = mutation({
   args: {
     applicationId: v.id("applications"),
-    status: v.union(
-      v.literal("draft"),
-      v.literal("in_progress"),
-      v.literal("submitted"),
-      v.literal("accepted"),
-      v.literal("rejected")
-    ),
+    status: applicationStatusValidator,
     notes: v.optional(v.string()),
     submissionDate: v.optional(v.string()),
   },
   returns: v.id("applications"),
   handler: async (ctx, args) => {
-    // Get user ID from auth
-    const userId = await getCurrentUserIdOrThrow(ctx);
-
-    // Get the application to verify ownership
-    const application = await ctx.db.get(args.applicationId);
-    if (!application) {
-      throw new Error("Application not found");
-    }
-
-    if (application.userId !== userId) {
-      throw new Error("Unauthorized: Cannot update application status");
-    }
+    // Verify application ownership
+    const { userId, application } = await verifyApplicationOwnership(ctx, args.applicationId);
 
     // Create update object
     const updateData: Record<string, any> = {
@@ -97,95 +76,6 @@ export const updateApplicationStatus = mutation({
   }
 });
 
-// Helper function to validate university and program
-async function validateProgramBelongsToUniversity(
-  ctx: MutationCtx,
-  universityId: Id<"universities">,
-  programId: Id<"programs">
-) {
-  // Verify the university and program exist
-  const university = await ctx.db.get(universityId);
-  if (!university) {
-    throw new Error("University not found");
-  }
-
-  const program = await ctx.db.get(programId);
-  if (!program) {
-    throw new Error("Program not found");
-  }
-
-  // Ensure the program belongs to the specified university
-  if (program.universityId !== universityId) {
-    throw new Error("Program does not belong to the specified university");
-  }
-
-  return { university, program };
-}
-
-// Helper function to check for existing application
-async function checkExistingApplication(
-  ctx: MutationCtx,
-  userId: Id<"users">,
-  programId: Id<"programs">
-) {
-  const existingApplication = await ctx.db
-    .query("applications")
-    .withIndex("by_user", (q) =>
-      q.eq("userId", userId)
-    )
-    .filter((q) => q.eq(q.field("programId"), programId))
-    .first();
-
-  if (existingApplication) {
-    throw new Error("You already have an application for this program");
-  }
-}
-
-// Helper function to create application documents
-async function createApplicationDocuments(
-  ctx: MutationCtx,
-  applicationId: Id<"applications">,
-  userId: Id<"users">,
-  requirements: Array<{ type: string, status: string }>
-) {
-  for (const requirement of requirements) {
-    const docType = requirement.type.startsWith("lor") ? "lor" : requirement.type;
-    await ctx.db.insert("applicationDocuments", {
-      applicationId,
-      userId,
-      type: docType as DocumentType,
-      status: "not_started", // Initialize as not started
-      progress: 0,
-      content: "",
-      title: requirement.type === "sop" ?
-        "Statement of Purpose" :
-        requirement.type === "lor" ?
-          "Letter of Recommendation" :
-          "An error has occurred",
-      lastEdited: new Date().toISOString()
-    });
-  }
-}
-
-// Helper function to log application creation activity
-async function logApplicationActivity(
-  ctx: MutationCtx,
-  userId: Id<"users">,
-  applicationId: Id<"applications">,
-  description: string
-) {
-  await ctx.db.insert("userActivity", {
-    userId,
-    type: "application_update",
-    description: description,
-    timestamp: new Date().toISOString(),
-    metadata: {
-      applicationId: applicationId,
-      newStatus: "in_progress"
-    }
-  });
-}
-
 export const createApplication = mutation({
   args: {
     universityId: v.id("universities"),
@@ -201,16 +91,9 @@ export const createApplication = mutation({
     ),
   },
   handler: async (ctx, args) => {
-    // Get user ID from auth
     const userId = await getCurrentUserIdOrThrow(ctx);
-
-    // Validate university and program
     await validateProgramBelongsToUniversity(ctx, args.universityId, args.programId);
-
-    // Check for existing application
     await checkExistingApplication(ctx, userId, args.programId);
-
-    // Set default requirements if not provided
     const defaultApplicationDocuments = [
       {
         type: "sop" as DocumentType,
@@ -226,7 +109,6 @@ export const createApplication = mutation({
       }
     ];
 
-    // Create application record
     const applicationId = await ctx.db.insert("applications", {
       userId,
       universityId: args.universityId,
@@ -238,13 +120,43 @@ export const createApplication = mutation({
       submissionDate: undefined,
       lastUpdated: new Date().toISOString(),
     });
-
-    // Log activity
-    await logApplicationActivity(ctx, userId, applicationId, "Application created");
-
-    // Create application documents
-    await createApplicationDocuments(ctx, applicationId, userId, args.applicationDocuments || defaultApplicationDocuments);
-
+    await createApplicationDocuments(ctx, applicationId, args.applicationDocuments || defaultApplicationDocuments);
+    await logApplicationActivity(ctx, userId, applicationId, "Application created", "draft");
     return applicationId;
+  }
+});
+
+export const deleteApplication = mutation({
+  args: {
+    applicationId: v.id("applications"),
+  },
+  handler: async (ctx, args) => {
+    const { userId } = await verifyApplicationOwnership(ctx, args.applicationId);
+
+    // Delete the application and its documents
+    await ctx.db.delete(args.applicationId);
+    const applicationDocuments = await ctx.db
+      .query("applicationDocuments")
+      .filter((q) => q.eq(q.field("applicationId"), args.applicationId))
+      .collect();
+    for (const doc of applicationDocuments) {
+      await ctx.db.delete(doc._id);
+    }
+
+    await logApplicationActivity(ctx, userId, args.applicationId, "Application deleted", "deleted");
+
+    return { success: true };
+  }
+});
+
+export const createDocument = mutation({
+  args: {
+    applicationId: v.id("applications"),
+    type: documentTypeValidator,
+  },
+  handler: async (ctx, args) => {
+    await verifyApplicationOwnership(ctx, args.applicationId);
+    const documentId = await createApplicationDocument(ctx, args.applicationId, args.type);
+    return documentId;
   }
 });

@@ -14,6 +14,7 @@ import type {
   FunctionReference,
 } from "convex/server";
 import type * as aiCredits_queries from "../aiCredits/queries.js";
+import type * as applications_helpers from "../applications/helpers.js";
 import type * as applications_mutations from "../applications/mutations.js";
 import type * as applications_queries from "../applications/queries.js";
 import type * as applications_timeline from "../applications/timeline.js";
@@ -42,6 +43,7 @@ import type * as validators from "../validators.js";
  */
 declare const fullApi: ApiFromModules<{
   "aiCredits/queries": typeof aiCredits_queries;
+  "applications/helpers": typeof applications_helpers;
   "applications/mutations": typeof applications_mutations;
   "applications/queries": typeof applications_queries;
   "applications/timeline": typeof applications_timeline;
