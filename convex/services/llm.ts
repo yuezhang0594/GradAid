@@ -139,8 +139,7 @@ export const generateLOR = action({
   args: {
     profile: v.any(),
     university: v.object({
-      name: v.string(),
-      department: v.string()
+      name: v.string()
     }),
     program: v.object({
       name: v.string(),

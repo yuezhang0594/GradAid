@@ -25,6 +25,32 @@ interface Application {
   program: Program;
 }
 
+// Helper function to transform userProfile data to match LLM service expectations
+function transformUserProfileForLLM(userProfile: any) {
+  if (!userProfile) return {};
+  
+  return {
+    current_location: userProfile.currentLocation || "",
+    country_of_origin: userProfile.countryOfOrigin || "",
+    native_language: userProfile.nativeLanguage || "",
+    education_level: userProfile.educationLevel || "",
+    major: userProfile.major || "",
+    current_university: userProfile.university || "",
+    gpa: userProfile.gpa?.toString() || "",
+    gpa_scale: userProfile.gpaScale?.toString() || "",
+    gre_verbal: userProfile.greScores?.verbal?.toString() || "",
+    gre_quant: userProfile.greScores?.quantitative?.toString() || "",
+    gre_aw: userProfile.greScores?.analyticalWriting?.toString() || "",
+    english_test_type: userProfile.englishTest?.type || "",
+    english_overall: userProfile.englishTest?.overallScore?.toString() || "",
+    research_experience: userProfile.researchExperience || "",
+    research_interests_str: userProfile.researchInterests?.join(", ") || "",
+    target_degree: userProfile.targetDegree || "",
+    intended_field: userProfile.intendedField || "",
+    career_objectives: userProfile.careerObjectives || ""
+  };
+}
+
 export function useGenerateStatementOfPurpose(applicationId?: Id<"applications">) {
   console.log("[useGenerateStatementOfPurpose] called with", { applicationId });
   const applicationDetails = useQuery(
@@ -64,7 +90,7 @@ export function useGenerateStatementOfPurpose(applicationId?: Id<"applications">
           return null;
         }
         const data = {
-          profile: userProfile,
+          profile: transformUserProfileForLLM(userProfile),
           program: {
             university,
             name: details.program,
@@ -110,21 +136,35 @@ export function useGenerateStatementOfPurpose(applicationId?: Id<"applications">
 }
 
 export function useGenerateLetterOfRecommendation(documentId: Id<"applicationDocuments">) {
-  const applications = useQuery(api.dashboard.queries.getApplications, {  });
-  const userProfile = useQuery(api.users.current);
+  const documentInfo = useQuery(api.documents.queries.getDocumentById, { applicationDocumentId: documentId });
+  const userProfile = useQuery(api.userProfiles.queries.getProfile, {});
   const generateLOR = useAction(api.services.llm.generateLOR);
   const convex = useConvex();
 
   return useCallback(
     async (applicationId: Id<"applications">) => {
       try {
-        if (!applications || !userProfile) {
-          throw new Error("Could not fetch required data");
+        if (!documentInfo || !userProfile) {
+          toast({
+            title: "Missing Data",
+            description: "Could not fetch required document data. Please try again.",
+            variant: "destructive"
+          });
+          return null;
         }
 
-        const applicationData = applications.find(app => app._id === applicationId) as Application | undefined;
-        if (!applicationData) {
-          throw new Error("Application not found");
+        // Fetch application details directly from the API
+        const applicationDetails = await convex.query(api.applications.queries.getApplicationDetails, { 
+          applicationId 
+        });
+        
+        if (!applicationDetails) {
+          toast({
+            title: "Application Not Found",
+            description: "Could not find the application details needed for LOR generation.",
+            variant: "destructive"
+          });
+          return null;
         }
 
         // Fetch recommender info only when needed
@@ -139,23 +179,32 @@ export function useGenerateLetterOfRecommendation(documentId: Id<"applicationDoc
         }
 
         const data = {
-          profile: userProfile,
+          profile: transformUserProfileForLLM(userProfile),
           university: {
-            name: applicationData.university.name,
-            department: applicationData.university.department
+            name: applicationDetails.university
           },
           program: {
-            name: applicationData.program.name,
-            degree: applicationData.program.degree,
-            department: applicationData.program.department
+            name: applicationDetails.program,
+            degree: applicationDetails.degree,
+            department: applicationDetails.department
           },
           recommender
         };
-
+        
+        console.log("[useGenerateLetterOfRecommendation] data to generateLOR:", data);
+        
         // Generate LOR using Convex action
         const lor = await generateLOR(data);
 
         if (lor) {
+          // Save the generated LOR to the document
+          if (documentInfo._id) {
+            await convex.mutation(api.documents.mutations.saveDocumentDraft, {
+              applicationDocumentId: documentInfo._id,
+              content: lor,
+            });
+          }
+          
           toast({
             title: "Success",
             description: "Letter of Recommendation generated successfully!",
@@ -174,6 +223,6 @@ export function useGenerateLetterOfRecommendation(documentId: Id<"applicationDoc
         return null;
       }
     },
-    [applications, userProfile, generateLOR, convex, documentId]
+    [userProfile, generateLOR, convex, documentId, documentInfo]
   );
 }
