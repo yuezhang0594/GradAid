@@ -147,7 +147,7 @@ export const documentTypeValidator = v.union(
     v.literal("sop"),
     v.literal("lor")
 );
-export type DocumentStatus = "not_started" | "draft" | "in_review" | "complete";
+export type DocumentStatus = typeof documentStatusValidator.type;
 export const documentStatusValidator = v.union(
     v.literal("not_started"),
     v.literal("draft"),
