@@ -6,6 +6,7 @@ import { PageWrapper } from "@/components/ui/page-wrapper";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Card, CardContent } from "@/components/ui/card";
 import { useDocumentEditor } from "@/hooks/useDocumentEditor";
 import { useDocumentFormatting } from "@/hooks/useDocumentFormatting";
 import { useGenerateStatementOfPurpose, useGenerateLetterOfRecommendation } from "@/hooks/useLLM";
@@ -71,7 +72,7 @@ export default function DocumentEditor() {
         </div>
       }
     >
-      <div className="space-y-4">
+      <div className="space-y-6 mx-auto max-w-5xl">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Button
@@ -102,8 +103,8 @@ export default function DocumentEditor() {
               Version History
             </Button> */}
             <Button
-              variant="secondary"
-              className="gap-2"
+              variant="outline"
+              className="gap-2 transition-all duration-200 hover:bg-muted"
               disabled={state.isSaving || state.isGenerating}
               onClick={async () => {
                 setState(prev => ({ ...prev, isGenerating: true }));
@@ -135,12 +136,16 @@ export default function DocumentEditor() {
           </div>
         </div>
 
-        <Textarea
-          value={state.content}
-          onChange={(e) => setState(prev => ({ ...prev, content: e.target.value }))}
-          placeholder="Start writing..."
-          className="min-h-[500px] font-mono"
-        />
+        <Card className="w-full">
+          <CardContent className="p-0">
+            <Textarea
+              value={state.content}
+              onChange={(e) => setState(prev => ({ ...prev, content: e.target.value }))}
+              placeholder="Start writing..."
+              className="min-h-[550px] font-mono border-0 rounded-none focus-visible:ring-0 focus-visible:ring-offset-0 resize-none"
+            />
+          </CardContent>
+        </Card>
 
         <Dialog
           open={state.showRecommenderDialog}
