@@ -3,19 +3,18 @@ import { Routes, Route } from "react-router-dom";
 import { UserProfile } from "@clerk/clerk-react";
 import { LandingPage } from "./components/landing-page";
 import { DashboardLayout } from "@/components/layout/DashboardLayout";
-import Dashboard from "./routes/dev/Dashboard_statCard";
+import Dashboard from "./routes/dashboard/Dashboard";
 import TOSPage from "./routes/legal/tos";
 import PrivacyPolicy from "./routes/legal/privacy";
 import ProtectedRoute from "./routes/ProtectedRoute";
 import SignInPage from "./routes/auth/SignIn";
 import SignUpPage from "./routes/auth/SignUp";
 import SignOutPage from "./routes/auth/SignOut";
-import ApplicationsPage from "./routes/cards/applications";
+import ApplicationsPage from "./routes/applications/applications";
 import DocumentsPage from "./routes/cards/documents";
-import ApplicationDetail from "./routes/dev/ApplicationDetail";
-import DocumentEditor from "./routes/dev/DocumentEditor";
+import ApplicationDetail from "./routes/applications/ApplicationDetail";
+import DocumentEditor from "./routes/applications/DocumentEditor";
 import TimelinePage from "./routes/cards/timeline";
-import CreditsPage from "./routes/cards/credits";
 import ActivityPage from "./routes/cards/activity";
 import ProgramSearchPage from "./routes/ProgramSearchPage";
 import OnboardingPage from "./routes/onboarding/page";
@@ -56,7 +55,6 @@ function App() {
             element={<DocumentEditor />}
           />
           <Route path="/timeline" element={<TimelinePage />} />
-          <Route path="/credits" element={<CreditsPage />} />
           <Route path="/activity" element={<ActivityPage />} />
           <Route path="/feedback" element={<FeedbackPage />} />
         </Route>
