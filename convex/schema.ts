@@ -1,6 +1,6 @@
 import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
-import { educationValidator, workExperienceValidator, publicationValidator, researchExperienceValidator, documentStatusValidator, documentTypeValidator, applicationStatusValidator, applicationPriorityValidator } from './validators';
+import { educationValidator, workExperienceValidator, publicationValidator, researchExperienceValidator, documentStatusValidator, documentTypeValidator, applicationStatusValidator, applicationPriorityValidator, userActivityTypeValidator } from './validators';
 
 const schema = defineSchema({
   users: defineTable({
@@ -178,20 +178,12 @@ const schema = defineSchema({
 
   userActivity: defineTable({
     userId: v.id("users"),
-    type: v.union(
-      v.literal("document_edit"),
-      v.literal("application_update"),
-      v.literal("lor_request"),
-      v.literal("lor_update"),
-      v.literal("ai_usage"),
-      v.literal("feedback_submission"),
-    ),
+    type: userActivityTypeValidator,
     description: v.string(),
     timestamp: v.string(),
     metadata: v.object({
       documentId: v.optional(v.id("applicationDocuments")),
       applicationId: v.optional(v.id("applications")),
-      lorId: v.optional(v.id("letterOfRecommendations")),
       creditsUsed: v.optional(v.number()),
       oldStatus: v.optional(v.string()),
       newStatus: v.optional(v.string()),

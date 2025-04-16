@@ -169,3 +169,12 @@ export const applicationStatusValidator = v.union(
     v.literal("rejected"),
     v.literal("deleted")
 );
+export type UserActivityType = typeof userActivityTypeValidator.type;
+export const userActivityTypeValidator = v.union(
+    v.literal("document_edit"),
+    v.literal("application_update"),
+    v.literal("lor_request"),
+    v.literal("lor_update"),
+    v.literal("ai_usage"),
+    v.literal("feedback_submission"),
+);
