@@ -86,7 +86,14 @@ export const getAiCreditUsage = query({
 
 export const getAiCreditsRemaining = query({
   handler: async (ctx) => {
-    const aiCredits = await getAiCredits(ctx, {});
+    // Get the user ID
+    const userId = await getCurrentUserIdOrThrow(ctx);
+    
+    // Fetch AI credits directly from the database
+    const aiCredits = await ctx.db
+      .query("aiCredits")
+      .filter((q) => q.eq(q.field("userId"), userId))
+      .first();
 
     if (!aiCredits) {
       return 500; // Default value if no record exists
