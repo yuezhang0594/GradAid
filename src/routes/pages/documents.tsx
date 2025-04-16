@@ -4,7 +4,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 import { CardWrapper } from "@/components/ui/card-wrapper";
 import { Id } from "../../../convex/_generated/dataModel";
-import { DocumentStatus } from "convex/validators";
+import { DocumentStatus, DocumentType } from "convex/validators";
 
 interface Program {
   name: string;
@@ -52,7 +52,7 @@ export default function DocumentsPage() {
   const navigate = useNavigate();
   const location = useLocation();
   const documents = useQuery(api.applications.queries.getDocumentDetails) ?? [];
-  const createDocument = useMutation(api.applications.mutations.createDocument);
+  const createDocument = useMutation(api.documents.mutations.createDocument);
 
   // Transform data to create separate cards for multiple programs
   const cards = documents.flatMap((uni: { name: string, programs: Program[], documents: Document[] }) => {

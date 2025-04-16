@@ -2,6 +2,7 @@ import { query } from "../_generated/server";
 import { getCurrentUserIdOrThrow } from "../users";
 import { Id } from "../_generated/dataModel";
 import { v } from "convex/values";
+import { verifyApplicationOwnership } from "./model";
 
 // Query to get applications for a specific user
 export const getApplications = query({
@@ -169,43 +170,12 @@ export const getUniversityByName = query({
   },
 });
 
-// Query to get document by ID
-export const getDocumentById = query({
-  args: {
-    applicationDocumentId: v.id("applicationDocuments"),
-  },
-  handler: async (ctx, args) => {
-    const userId = await getCurrentUserIdOrThrow(ctx);
-    console.log("Getting document for:", { userId, ...args });
-
-    // Get the document to verify ownership
-    const document = await ctx.db.get(args.applicationDocumentId);
-    console.log("Found document:", document);
-    if (!document) {
-      console.log("Document not found");
-      return null;
-    }
-
-    // Get the application to verify ownership
-    const application = await ctx.db.get(document.applicationId);
-    if (!application || application.userId !== userId) {
-      console.log("Application not found or unauthorized");
-      return null;
-    }
-
-    return document;
-  }
-});
-
 export const getApplication = query({
   args: {
     applicationId: v.id("applications"),
   },
   handler: async (ctx, args) => {
-    const application = await ctx.db.get(args.applicationId);
-    if (!application) {
-      throw new Error("Application not found");
-    }
+    const { application } = await verifyApplicationOwnership(ctx, args.applicationId);
     return application;
   }
 });

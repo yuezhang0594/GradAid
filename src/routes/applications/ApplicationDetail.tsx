@@ -29,7 +29,7 @@ export default function ApplicationDetail() {
   const state = location.state as LocationState;
 
   console.log("[ApplicationDetail] Rendering with state:", { state });
-  
+
   const { application, applicationStats, documentStats, isLoading } = useApplicationDetail(
     state?.applicationId ?? ""
   );
@@ -39,7 +39,7 @@ export default function ApplicationDetail() {
     "Deadline": <ClockIcon className="h-4 w-4 text-muted-foreground" />,
   };
 
-  console.log("[ApplicationDetail] Hook returned:", { 
+  console.log("[ApplicationDetail] Hook returned:", {
     hasApplication: !!application,
     isLoading,
     statsCount: {
@@ -120,12 +120,7 @@ export default function ApplicationDetail() {
   return (
     <PageWrapper
       title={application.university}
-      description={
-        <div className="flex flex-col items-center text-center">
-          <p className="text-lg">{`${application.degree} in ${application.program}`}</p>
-          
-        </div>
-      }
+      description={`${application.degree} in ${application.program}`}
     >
       <div className="mt-8">
         <h2 className="text-lg font-semibold mb-4 flex items-center">

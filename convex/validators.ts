@@ -172,6 +172,7 @@ export const applicationStatusValidator = v.union(
 export type UserActivityType = typeof userActivityTypeValidator.type;
 export const userActivityTypeValidator = v.union(
     v.literal("document_edit"),
+    v.literal("document_status_update"),
     v.literal("application_update"),
     v.literal("lor_request"),
     v.literal("lor_update"),

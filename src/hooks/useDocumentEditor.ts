@@ -30,13 +30,13 @@ export function useDocumentEditor() {
   const demoMode = location.state?.demoMode ?? false;
 
   // Get document data
-  const document = documentId ? useQuery(api.applications.queries.getDocumentById, {
+  const document = documentId ? useQuery(api.documents.queries.getDocumentById, {
     applicationDocumentId: documentId,
   }) : null;
 
   // Mutations
-  const saveDocument = useMutation(api.applications.mutations.saveDocumentDraft);
-  const updateRecommender = useMutation(api.applications.mutations.updateRecommender);
+  const saveDocument = useMutation(api.documents.mutations.saveDocumentDraft);
+  const updateRecommender = useMutation(api.documents.mutations.updateRecommender);
 
   const handleSave = useCallback(async () => {
     if (!documentId) {
@@ -91,8 +91,7 @@ export function useDocumentEditor() {
       await updateRecommender({
         documentId,
         recommenderName: state.recommenderName,
-        recommenderEmail: state.recommenderEmail,
-        demoMode
+        recommenderEmail: state.recommenderEmail
       });
 
       toast({

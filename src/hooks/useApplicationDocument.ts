@@ -23,7 +23,7 @@ export function useApplicationDocument({ documentId }: ApplicationDocumentHookPr
 
     // Fetch document data
     const document = useQuery(
-        api.applications.queries.getDocumentById,
+        api.documents.queries.getDocumentById,
         documentId ? { applicationDocumentId: documentId } : "skip"
     );
 
@@ -31,11 +31,10 @@ export function useApplicationDocument({ documentId }: ApplicationDocumentHookPr
     const aiCreditsRemaining = useQuery(api.aiCredits.queries.getAiCreditsRemaining);
     const aiCreditsRequired = document?.type === "sop" ? AI_CREDITS_REQUIRED_FOR_SOP : AI_CREDITS_REQUIRED_FOR_LOR;
     // Mutations
-    const saveDocumentDraft = useMutation(api.applications.mutations.saveDocumentDraft);
-    const updateDocumentStatus = useMutation(api.applications.mutations.updateDocumentStatus);
+    const updateDocumentStatus = useMutation(api.documents.mutations.updateDocumentStatus);
 
     // TODO: Implement generateDocumentContent in Convex
-    const generateDocumentContent = useMutation(api.applications.mutations.generateDocumentContent);
+    const generateDocumentContent = useMutation(api.documents.mutations.generateDocumentContent);
 
     // Update content when document loads or changes
     useEffect(() => {

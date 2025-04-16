@@ -3,7 +3,7 @@ import { action } from "../_generated/server";
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY // This will be set in Convex environment
+  apiKey: process.env.OPENAI_API_KEY
 });
 
 export const generateSOP = action({

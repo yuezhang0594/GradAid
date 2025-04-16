@@ -14,12 +14,15 @@ import type {
   FunctionReference,
 } from "convex/server";
 import type * as aiCredits_queries from "../aiCredits/queries.js";
-import type * as applications_helpers from "../applications/helpers.js";
+import type * as applications_model from "../applications/model.js";
 import type * as applications_mutations from "../applications/mutations.js";
 import type * as applications_queries from "../applications/queries.js";
 import type * as applications_timeline from "../applications/timeline.js";
 import type * as dashboard_mutations from "../dashboard/mutations.js";
 import type * as dashboard_queries from "../dashboard/queries.js";
+import type * as documents_model from "../documents/model.js";
+import type * as documents_mutations from "../documents/mutations.js";
+import type * as documents_queries from "../documents/queries.js";
 import type * as feedback from "../feedback.js";
 import type * as http from "../http.js";
 import type * as init from "../init.js";
@@ -44,12 +47,15 @@ import type * as validators from "../validators.js";
  */
 declare const fullApi: ApiFromModules<{
   "aiCredits/queries": typeof aiCredits_queries;
-  "applications/helpers": typeof applications_helpers;
+  "applications/model": typeof applications_model;
   "applications/mutations": typeof applications_mutations;
   "applications/queries": typeof applications_queries;
   "applications/timeline": typeof applications_timeline;
   "dashboard/mutations": typeof dashboard_mutations;
   "dashboard/queries": typeof dashboard_queries;
+  "documents/model": typeof documents_model;
+  "documents/mutations": typeof documents_mutations;
+  "documents/queries": typeof documents_queries;
   feedback: typeof feedback;
   http: typeof http;
   init: typeof init;

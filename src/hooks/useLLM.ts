@@ -33,7 +33,7 @@ export function useGenerateStatementOfPurpose(applicationId?: Id<"applications">
   );
   const userProfile = useQuery(api.userProfiles.queries.getProfile, {});
   const generateSOP = useAction(api.services.llm.generateSOP);
-  const saveDocumentDraft = useMutation(api.applications.mutations.saveDocumentDraft);
+  const saveDocumentDraft = useMutation(api.documents.mutations.saveDocumentDraft);
 
   return useCallback(
     async () => {

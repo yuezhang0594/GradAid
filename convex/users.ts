@@ -1,4 +1,4 @@
-import { internalMutation, query, QueryCtx } from "./_generated/server";
+import { ActionCtx, internalMutation, MutationCtx, query, QueryCtx } from "./_generated/server";
 import { UserJSON } from "@clerk/backend";
 import { v, Validator } from "convex/values";
 
@@ -46,24 +46,24 @@ export const deleteFromClerk = internalMutation({
   },
 });
 
-export async function getCurrentUserIdOrThrow(ctx: QueryCtx) {
+export async function getCurrentUserIdOrThrow(ctx: QueryCtx | MutationCtx) {
   const userRecord = await getCurrentUser(ctx);
   if (!userRecord) throw new Error("Can't get current user ID");
   return userRecord._id;
 }
 
-export async function getCurrentUserId(ctx: QueryCtx) {
+export async function getCurrentUserId(ctx: QueryCtx | MutationCtx) {
   const userRecord = await getCurrentUser(ctx);
   return userRecord ? userRecord._id : null;
 }
 
-export async function getCurrentUserOrThrow(ctx: QueryCtx) {
+export async function getCurrentUserOrThrow(ctx: QueryCtx | MutationCtx) {
   const userRecord = await getCurrentUser(ctx);
   if (!userRecord) throw new Error("Can't get current user");
   return userRecord;
 }
 
-export async function getCurrentUser(ctx: QueryCtx) {
+export async function getCurrentUser(ctx: QueryCtx | MutationCtx) {
   const identity = await ctx.auth.getUserIdentity();
   if (identity === null) {
     return null;
@@ -71,7 +71,7 @@ export async function getCurrentUser(ctx: QueryCtx) {
   return await userByClerkId(ctx, identity.subject);
 }
 
-export async function userByClerkId(ctx: QueryCtx, clerkId: string) {
+export async function userByClerkId(ctx: QueryCtx | MutationCtx, clerkId: string) {
   return await ctx.db
     .query("users")
     .withIndex("byClerkId", (q) => q.eq("clerkId", clerkId))
