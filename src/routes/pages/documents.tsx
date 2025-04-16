@@ -87,7 +87,7 @@ export default function DocumentsPage() {
     };
     console.log("Setting editor state:", state);
     setDocumentEditor(state);
-    navigate(`/applications/${encodeURIComponent(universityName)}/documents/${documentType.toLowerCase()}`);
+    navigate(`/documents/${encodeURIComponent(universityName)}/${documentType.toLowerCase()}`);
   };
 
   const handleNewDocumentClick = async (applicationId: Id<"applications">, universityName: string, documentType: DocumentType) => {

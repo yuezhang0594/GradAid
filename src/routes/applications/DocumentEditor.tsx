@@ -3,7 +3,7 @@ import { useQuery, useMutation } from "convex/react";
 import { api } from "@/../convex/_generated/api";
 import { useNavigate } from "react-router-dom";
 import { useAtomValue } from "jotai";
-import { documentEditorAtom } from "../cards/documents";
+import { documentEditorAtom } from "../pages/documents";
 import { toast } from "@/components/ui/toast";
 import {
   Card,

@@ -7,7 +7,7 @@ import { Progress } from "@/components/ui/progress";
 import { ClickableCard } from "@/components/dashboard/clickablecard";
 import { FileTextIcon, GraduationCapIcon, CheckCircleIcon, ClockIcon } from "lucide-react";
 import { useSetAtom } from "jotai";
-import { documentEditorAtom } from "../cards/documents";
+import { documentEditorAtom } from "../pages/documents";
 import { Id } from "../../../convex/_generated/dataModel";
 import { useNavigate } from "react-router-dom";
 
@@ -115,7 +115,7 @@ export default function ApplicationDetail() {
         applicationDocumentId: doc._id as Id<"applicationDocuments"> || null,
       };
       setDocumentEditor(state);
-      navigate(`/applications/${application.university}/documents/${doc.type.toLowerCase()}`);
+      navigate(`/documents/${application.university}/${doc.type.toLowerCase()}`);
     }
   };
 

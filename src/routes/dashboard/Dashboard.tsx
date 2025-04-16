@@ -16,7 +16,7 @@ import { useDashboardData } from "@/hooks/useDashboardData";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { useSetAtom } from "jotai";
-import { documentEditorAtom } from "../cards/documents";
+import { documentEditorAtom } from "../pages/documents";
 import { Id } from "../../../convex/_generated/dataModel";
 import { useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
@@ -38,7 +38,7 @@ export default function Dashboard() {
       applicationDocumentId: doc.documentId as Id<"applicationDocuments">
     };
     setDocumentEditor(state);
-    navigate(`/applications/${doc.university}/documents/${doc.type.toLowerCase()}`);
+    navigate(`/documents/${doc.university}/${doc.type.toLowerCase()}`);
   };
 
   return (
