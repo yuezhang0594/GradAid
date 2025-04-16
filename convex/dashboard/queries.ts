@@ -1,8 +1,6 @@
 import { query } from "../_generated/server";
 import { v } from "convex/values";
-import { Doc, Id } from "../_generated/dataModel";
-import { getCurrentUserIdOrThrow, getDemoUserId } from "../users";
-import { get } from "http";
+import { getCurrentUserIdOrThrow } from "../users";
 
 // Get all applications for a user with their associated documents and LORs
 export const getApplications = query({

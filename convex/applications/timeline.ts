@@ -1,5 +1,5 @@
 import { query } from "../_generated/server";
-import { getCurrentUserIdOrThrow, getDemoUserId } from "../users";
+import { getCurrentUserIdOrThrow } from "../users";
 
 export const getTimeline = query({
   args: {},
