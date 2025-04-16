@@ -3,6 +3,7 @@ import { mutation } from "../_generated/server";
 import { DocumentType, DocumentStatus, documentStatusValidator, documentTypeValidator, applicationPriorityValidator, applicationStatusValidator } from "../validators";
 import { getCurrentUserIdOrThrow } from "../users";
 import { checkExistingApplication, createApplicationDocument, createApplicationDocuments, logApplicationActivity, validateProgramBelongsToUniversity, verifyApplicationOwnership } from "./helpers";
+import { Id } from "../_generated/dataModel";
 
 export const saveDocumentDraft = mutation({
   args: {
@@ -158,5 +159,51 @@ export const createDocument = mutation({
     await verifyApplicationOwnership(ctx, args.applicationId);
     const documentId = await createApplicationDocument(ctx, args.applicationId, args.type);
     return documentId;
+  }
+});
+
+export const updateRecommender = mutation({
+  args: {
+    documentId: v.id("applicationDocuments"),
+    recommenderName: v.string(),
+    recommenderEmail: v.string(),
+    demoMode: v.optional(v.boolean())
+  },
+  handler: async (ctx, args) => {
+    let userId: Id<"users">;
+    
+    // Get user ID from auth or use mock
+    const identity = await ctx.auth.getUserIdentity();
+  if (identity?.subject) {
+      userId = await getCurrentUserIdOrThrow(ctx);
+    } else {
+      userId = "mock-user-id" as Id<"users">;
+    }
+
+    // Get the document
+    const document = await ctx.db.get(args.documentId);
+    if (!document) {
+      throw new Error("Document not found");
+    }
+
+    // Get the application to verify ownership
+    const application = await ctx.db.get(document.applicationId);
+    if (!application || application.userId !== userId) {
+      throw new Error("Unauthorized: Cannot update recommender information");
+    }
+
+    // Check if document is a LOR
+    if (document.type !== "lor") {
+      throw new Error("Cannot update recommender information for non-LOR documents");
+    }
+
+    // Update the document with recommender information
+    await ctx.db.patch(args.documentId, {
+      recommenderName: args.recommenderName,
+      recommenderEmail: args.recommenderEmail,
+      lastEdited: new Date().toISOString()
+    });
+
+    return { success: true };
   }
 });

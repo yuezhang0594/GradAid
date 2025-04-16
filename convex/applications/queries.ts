@@ -147,6 +147,7 @@ export const getApplicationDetails = query({
     return {
       ...application,
       university: university?.name ?? "Unknown University",
+      department: program?.department ?? "Unknown Department",
       program: program?.name ?? "Unknown Program",
       degree: program?.degree ?? "Unknown Degree",
       documents: documents,

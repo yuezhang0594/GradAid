@@ -10,20 +10,18 @@ import { Calendar, ChevronRight, ExternalLink, BellIcon, TargetIcon, FileTextIco
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { ClickableCard } from "@/components/dashboard/clickablecard";
 import { useDashboardData } from "@/hooks/useDashboardData";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
-import { useSetAtom } from "jotai";
-import { documentEditorAtom } from "../pages/documents";
-import { Id } from "../../../convex/_generated/dataModel";
 import { useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
+import { Id } from "../../../convex/_generated/dataModel";
 
 export default function Dashboard() {
   const navigate = useNavigate();
-  const setDocumentEditor = useSetAtom(documentEditorAtom);
+  const location = useLocation();
   const { applicationStats, documentStats, applicationTimeline } = useDashboardData();
   const applications = useQuery(api.applications.queries.getApplications) ?? [];
 
@@ -34,11 +32,13 @@ export default function Dashboard() {
   };
 
   const handleDocumentClick = (doc: any) => {
-    const state = {
-      applicationDocumentId: doc.documentId as Id<"applicationDocuments">
-    };
-    setDocumentEditor(state);
-    navigate(`/documents/${doc.university}/${doc.type.toLowerCase()}`);
+    navigate(`/documents/${encodeURIComponent(doc.university)}/${doc.type.toLowerCase()}?documentId=${doc.documentId}`, {
+      state: {
+        applicationId: doc.applicationId,
+        universityName: doc.university,
+        returnPath: location.pathname
+      }
+    });
   };
 
   return (

@@ -1,17 +1,10 @@
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 import { CardWrapper } from "@/components/ui/card-wrapper";
 import { Id } from "../../../convex/_generated/dataModel";
-import { atom, useSetAtom } from "jotai";
-import { DocumentStatus, DocumentType } from "convex/validators";
-
-export const documentEditorAtom = atom<{
-  applicationDocumentId: Id<"applicationDocuments"> | null;
-}>({
-  applicationDocumentId: null,
-});
+import { DocumentStatus } from "convex/validators";
 
 interface Program {
   name: string;
@@ -57,8 +50,8 @@ function formatText(text: string) {
 
 export default function DocumentsPage() {
   const navigate = useNavigate();
+  const location = useLocation();
   const documents = useQuery(api.applications.queries.getDocumentDetails) ?? [];
-  const setDocumentEditor = useSetAtom(documentEditorAtom);
   const createDocument = useMutation(api.applications.mutations.createDocument);
 
   // Transform data to create separate cards for multiple programs
@@ -79,15 +72,16 @@ export default function DocumentsPage() {
     }));
   });
 
-  const handleDocumentClick = async (documentId: Id<"applicationDocuments">, universityName: string, documentType: DocumentType) => {
-    console.log("Handling document click:", { documentId, universityName, documentType });
-
-    const state = {
-      applicationDocumentId: documentId
-    };
-    console.log("Setting editor state:", state);
-    setDocumentEditor(state);
-    navigate(`/documents/${encodeURIComponent(universityName)}/${documentType.toLowerCase()}`);
+  const handleDocumentClick = (documentId: Id<"applicationDocuments"> | null, universityName: string, documentType: string) => {
+    if (documentId) {
+      navigate(`/documents/${encodeURIComponent(universityName)}/${documentType.toLowerCase()}?documentId=${documentId}`, {
+        state: {
+          applicationId: null,
+          universityName,
+          returnPath: location.pathname
+        }
+      });
+    }
   };
 
   const handleNewDocumentClick = async (applicationId: Id<"applications">, universityName: string, documentType: DocumentType) => {
@@ -96,15 +90,15 @@ export default function DocumentsPage() {
       type: documentType,
     });
     
-    const state = {
-      applicationDocumentId: documentId
-    };
-    console.log("Setting editor state:", state);
-    setDocumentEditor(state);
-
-    navigate(`/applications/${encodeURIComponent(universityName)}/documents/${documentType.toLowerCase()}`);
+    // Navigate to the document editor with the document ID as a query parameter
+    navigate(`/documents/${encodeURIComponent(universityName)}/${documentType.toLowerCase()}?documentId=${documentId}`, {
+      state: {
+        applicationId,
+        universityName,
+        returnPath: location.pathname
+      }
+    });
   };
-
     
   return (
     <PageWrapper
@@ -123,7 +117,7 @@ export default function DocumentsPage() {
                 count: doc.count,
                 variant: doc.status === "complete" ? "default" as const :
                   doc.status === "in_review" ? "secondary" as const : "outline" as const,
-                onClick: () => handleDocumentClick(doc.documentId, card.name, doc.type)
+                onClick: () => handleDocumentClick(doc.documentId, card.name, doc.type.toString())
               })),
               ...(card.documents.some(doc => doc.type.toLowerCase() === "sop") ? [] : [{
                 text: "+ SOP",
@@ -144,23 +138,22 @@ export default function DocumentsPage() {
                 return [];
               })()),
             ]}
-        progress={
-          card.documents.length > 0
-            ? {
-              value: Math.round((card.documents.filter(doc => doc.status.toLowerCase() === "complete").length / card.documents.length) * 100),
-              label: `${card.documents.filter(doc => doc.status.toLowerCase() === "complete").length}/${card.documents.length} Documents Complete`,
-              hidePercentage: true
-            }
-            : {
-              value: 0,
-              label: "No Documents",
-              hidePercentage: true
-            }
-        }
+          progress={
+            card.documents.length > 0
+              ? {
+                value: Math.round((card.documents.filter(doc => doc.status.toLowerCase() === "complete").length / card.documents.length) * 100),
+                label: `${card.documents.filter(doc => doc.status.toLowerCase() === "complete").length}/${card.documents.length} Documents Complete`,
+                hidePercentage: true
+              }
+              : {
+                value: 0,
+                label: "No Documents",
+                hidePercentage: true
+              }
+          }
           />
         ))}
       </div>
     </PageWrapper>
   );
 }
-

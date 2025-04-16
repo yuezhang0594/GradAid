@@ -5,11 +5,10 @@ import { PageWrapper } from "@/components/ui/page-wrapper";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { ClickableCard } from "@/components/dashboard/clickablecard";
-import { FileTextIcon, GraduationCapIcon, CheckCircleIcon, ClockIcon } from "lucide-react";
-import { useSetAtom } from "jotai";
-import { documentEditorAtom } from "../pages/documents";
-import { Id } from "../../../convex/_generated/dataModel";
+import { useState, useEffect } from "react";
+import { FileTextIcon, CheckSquare2Icon, GraduationCapIcon, CheckCircleIcon, ClockIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { Id } from "../../../convex/_generated/dataModel";
 
 interface LocationState {
   applicationId: Id<"applications">;
@@ -25,10 +24,9 @@ function formatStatus(status: string): string {
 }
 
 export default function ApplicationDetail() {
+  const navigate = useNavigate();
   const location = useLocation();
   const state = location.state as LocationState;
-  const setDocumentEditor = useSetAtom(documentEditorAtom);
-  const navigate = useNavigate();
 
   console.log("[ApplicationDetail] Rendering with state:", { state });
   
@@ -109,14 +107,14 @@ export default function ApplicationDetail() {
     status: application.status
   });
 
-  const handleDocumentClick = (doc: any) => {
-    if (application?._id) {
-      const state = {
-        applicationDocumentId: doc._id as Id<"applicationDocuments"> || null,
-      };
-      setDocumentEditor(state);
-      navigate(`/documents/${application.university}/${doc.type.toLowerCase()}`);
-    }
+  const handleDocumentClick = (documentId: Id<"applicationDocuments">, documentType: string) => {
+    navigate(`/documents/${encodeURIComponent(state.universityName)}/${documentType.toLowerCase()}?documentId=${documentId}`, {
+      state: {
+        applicationId: state.applicationId,
+        universityName: state.universityName,
+        returnPath: location.pathname
+      }
+    });
   };
 
   return (
@@ -162,7 +160,7 @@ export default function ApplicationDetail() {
               action={{
                 ...doc.action,
                 href: doc.action.href,
-                onClick: () => handleDocumentClick(doc)
+                onClick: () => handleDocumentClick(doc.documentId, doc.type)
               }}
             >
               <CardHeader>

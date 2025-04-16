@@ -21,6 +21,7 @@ interface ApplicationDetailData {
     };
   }>;
   documentStats: Array<{
+    documentId: Id<"applicationDocuments">; 
     title: string;
     progress: number;
     status: DocumentStatus;
@@ -110,6 +111,7 @@ export function useApplicationDetail(applicationId: Id<"applications">) {
   const documentStats = applicationData.documents.map((doc: Document) => {
     console.log("[useApplicationDetail] Processing document:", doc);
     return {
+      documentId: doc._id,
       title: doc.title,
       progress: doc.progress,
       status: doc.status,
