@@ -5,7 +5,7 @@ import { documentEditorAtom } from "../store/document";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
 import { Id } from "../../convex/_generated/dataModel";
-import { toast } from "@/components/ui/toast";
+import { toast } from "sonner";
 import { DocumentState } from "@/routes/applications/types";
 
 export function useDocumentEditor() {
@@ -48,16 +48,11 @@ export function useDocumentEditor() {
         applicationDocumentId: documentId,
         content: state.content,
       });
-      toast({
-        title: "Document saved successfully!",
-        variant: "default",
-      });
+      toast.success("Document saved successfully!");
     } catch (error) {
       console.error("Error saving document:", error);
-      toast({
-        title: "Error saving document",
-        description: "Please try again",
-        variant: "destructive",
+      toast.error("Error saving document", {
+        description: "Please try again"
       });
     } finally {
       setState(prev => ({ ...prev, isSaving: false }));
@@ -91,18 +86,14 @@ export function useDocumentEditor() {
         recommenderEmail: state.recommenderEmail
       });
 
-      toast({
-        title: "Recommender info saved!",
-        description: "An email will be sent to the recommender.",
-        variant: "default",
+      toast.success("Recommender info saved!", {
+        description: "An email will be sent to the recommender."
       });
       setState(prev => ({ ...prev, showRecommenderDialog: false }));
     } catch (error) {
       console.error("Error updating recommender:", error);
-      toast({
-        title: "Error saving recommender info",
-        description: "Please try again",
-        variant: "destructive",
+      toast.error("Error saving recommender info", {
+        description: "Please try again"
       });
     } finally {
       setState(prev => ({ ...prev, isSaving: false }));

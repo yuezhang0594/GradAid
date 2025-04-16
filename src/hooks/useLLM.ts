@@ -2,7 +2,7 @@ import { useCallback } from "react";
 import { useQuery, useMutation, useAction, useConvex } from "convex/react";
 import { api } from "../../convex/_generated/api";
 import { Id } from "../../convex/_generated/dataModel";
-import { toast } from "../components/ui/toast";
+import { toast } from "sonner";
 
 interface Program {
   _id: Id<"programs">;
@@ -68,10 +68,8 @@ export function useGenerateStatementOfPurpose(applicationId?: Id<"applications">
         console.log("[useGenerateStatementOfPurpose] applicationDetails:", details);
         console.log("[useGenerateStatementOfPurpose] userProfile:", userProfile);
         if (!details || !userProfile) {
-          toast({
-            title: "Application not found",
-            description: "Could not find the application for SOP generation.",
-            variant: "destructive"
+          toast.error("Application not found", {
+            description: "Could not find the application for SOP generation."
           });
           return null;
         }
@@ -82,10 +80,8 @@ export function useGenerateStatementOfPurpose(applicationId?: Id<"applications">
         console.log("[useGenerateStatementOfPurpose] university:", university);
         console.log("[useGenerateStatementOfPurpose] program:", program);
         if (!university || !program) {
-          toast({
-            title: "Missing Data",
-            description: "University or program information is missing for this application.",
-            variant: "destructive"
+          toast.error("Missing Data", {
+            description: "University or program information is missing for this application."
           });
           return null;
         }
@@ -114,19 +110,15 @@ export function useGenerateStatementOfPurpose(applicationId?: Id<"applications">
           } else {
             console.warn("[useGenerateStatementOfPurpose] No SOP document found to store SOP content.");
           }
-          toast({
-            title: "Success",
-            description: "Statement of Purpose generated successfully!",
-            variant: "default"
+          toast.success("Success", {
+            description: "Statement of Purpose generated successfully!"
           });
         }
         return sop;
       } catch (error) {
         console.error('[useGenerateStatementOfPurpose] Error generating SOP:', error);
-        toast({
-          title: "Error",
-          description: "Failed to generate Statement of Purpose. Please try again.",
-          variant: "destructive"
+        toast.error("Error", {
+          description: "Failed to generate Statement of Purpose. Please try again."
         });
         return null;
       }
@@ -145,10 +137,8 @@ export function useGenerateLetterOfRecommendation(documentId: Id<"applicationDoc
     async (applicationId: Id<"applications">) => {
       try {
         if (!documentInfo || !userProfile) {
-          toast({
-            title: "Missing Data",
-            description: "Could not fetch required document data. Please try again.",
-            variant: "destructive"
+          toast.error("Missing Data", {
+            description: "Could not fetch required document data. Please try again."
           });
           return null;
         }
@@ -159,10 +149,8 @@ export function useGenerateLetterOfRecommendation(documentId: Id<"applicationDoc
         });
         
         if (!applicationDetails) {
-          toast({
-            title: "Application Not Found",
-            description: "Could not find the application details needed for LOR generation.",
-            variant: "destructive"
+          toast.error("Application Not Found", {
+            description: "Could not find the application details needed for LOR generation."
           });
           return null;
         }
@@ -170,10 +158,8 @@ export function useGenerateLetterOfRecommendation(documentId: Id<"applicationDoc
         // Fetch recommender info only when needed
         const recommender = await convex.query(api.programs.search.getRecommender, { documentId });
         if (!recommender) {
-          toast({
-            title: "Missing Recommender",
-            description: "Please assign a recommender before generating a Letter of Recommendation.",
-            variant: "destructive"
+          toast.error("Missing Recommender", {
+            description: "Please assign a recommender before generating a Letter of Recommendation."
           });
           return null;
         }
@@ -205,20 +191,16 @@ export function useGenerateLetterOfRecommendation(documentId: Id<"applicationDoc
             });
           }
           
-          toast({
-            title: "Success",
-            description: "Letter of Recommendation generated successfully!",
-            variant: "default"
+          toast.success("Success", {
+            description: "Letter of Recommendation generated successfully!"
           });
         }
 
         return lor;
       } catch (error) {
         console.error('Error generating LOR:', error);
-        toast({
-          title: "Error",
-          description: "Failed to generate Letter of Recommendation. Please try again.",
-          variant: "destructive"
+        toast.error("Error", {
+          description: "Failed to generate Letter of Recommendation. Please try again."
         });
         return null;
       }
