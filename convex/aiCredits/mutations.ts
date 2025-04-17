@@ -3,6 +3,7 @@ import { v } from "convex/values";
 import { AiCreditUsageType, aiCreditUsageTypeValidator, DEFAULT_AI_CREDITS, RESET_DAYS_IN_MILLISECONDS } from "../validators";
 import { getCurrentUserIdOrThrow } from "../users";
 import * as AiCreditsModel from "./model";
+import { logUserActivity } from "../userActivity/model";
 
 /**
  * Use AI credits for a specific action
@@ -49,17 +50,17 @@ export const useCredits = mutation({
       args.description
     );
     
-    // TODO: Move this to userActivity model
-    await ctx.db.insert("userActivity", {
+    // Log the AI credit usage to the user activity
+    await logUserActivity(
+      ctx,
       userId,
-      type: "ai_usage",
-      description: `Used ${args.credits} credits for ${args.type}${args.description ? `: ${args.description}` : ''}`,
-      timestamp: new Date().toISOString(),
-      metadata: {
+      "ai_usage",
+      `Used ${args.credits} credits for ${args.type}${args.description ? `: ${args.description}` : ''}`,
+      {
         creditsUsed: args.credits,
         remainingCredits: updatedSummary.totalCredits - updatedSummary.usedCredits
       }
-    });
+    );
     
     return {
       ...updatedSummary,
