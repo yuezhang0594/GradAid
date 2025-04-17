@@ -26,10 +26,11 @@ interface Application {
 }
 
 // Helper function to transform userProfile data to match LLM service expectations
-function transformUserProfileForLLM(userProfile: any) {
+function transformUserProfileForLLM(userProfile: any, userName: string) {
   if (!userProfile) return {};
   
   return {
+    name: userName || "",
     current_location: userProfile.currentLocation || "",
     country_of_origin: userProfile.countryOfOrigin || "",
     native_language: userProfile.nativeLanguage || "",
@@ -60,6 +61,7 @@ export function useGenerateStatementOfPurpose(applicationId?: Id<"applications">
   const userProfile = useQuery(api.userProfiles.queries.getProfile, {});
   const generateSOP = useAction(api.services.llm.generateSOP);
   const saveDocumentDraft = useMutation(api.documents.mutations.saveDocumentDraft);
+  const userName = useQuery(api.userProfiles.queries.getUserName, {});
 
   return useCallback(
     async () => {
@@ -67,6 +69,7 @@ export function useGenerateStatementOfPurpose(applicationId?: Id<"applications">
         const details = applicationDetails;
         console.log("[useGenerateStatementOfPurpose] applicationDetails:", details);
         console.log("[useGenerateStatementOfPurpose] userProfile:", userProfile);
+        
         if (!details || !userProfile) {
           toast.error("Application not found", {
             description: "Could not find the application for SOP generation."
@@ -86,7 +89,7 @@ export function useGenerateStatementOfPurpose(applicationId?: Id<"applications">
           return null;
         }
         const data = {
-          profile: transformUserProfileForLLM(userProfile),
+          profile: transformUserProfileForLLM(userProfile, userName || ""),
           program: {
             university,
             name: details.program,
@@ -123,7 +126,7 @@ export function useGenerateStatementOfPurpose(applicationId?: Id<"applications">
         return null;
       }
     },
-    [applicationDetails, userProfile, generateSOP, saveDocumentDraft]
+    [applicationDetails, userProfile, generateSOP, saveDocumentDraft, userName]
   );
 }
 
@@ -131,6 +134,7 @@ export function useGenerateLetterOfRecommendation(documentId: Id<"applicationDoc
   const documentInfo = useQuery(api.documents.queries.getDocumentById, { applicationDocumentId: documentId });
   const userProfile = useQuery(api.userProfiles.queries.getProfile, {});
   const generateLOR = useAction(api.services.llm.generateLOR);
+  const userName = useQuery(api.userProfiles.queries.getUserName, {});
   const convex = useConvex();
 
   return useCallback(
@@ -165,7 +169,7 @@ export function useGenerateLetterOfRecommendation(documentId: Id<"applicationDoc
         }
 
         const data = {
-          profile: transformUserProfileForLLM(userProfile),
+          profile: transformUserProfileForLLM(userProfile, userName || ""),
           university: {
             name: applicationDetails.university
           },

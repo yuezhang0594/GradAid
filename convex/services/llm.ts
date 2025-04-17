@@ -21,6 +21,7 @@ export const generateSOP = action({
       const { profile, program } = args;
       // Destructure profile fields with fallbacks for missing data
       const {
+        name = "",
         current_location = "",
         country_of_origin = "",
         native_language = "",
@@ -48,6 +49,7 @@ export const generateSOP = action({
       const prompt = `Create a compelling Statement of Purpose (SOP) between 1000-1500 words for a graduate school application using the following information. The SOP should tell a coherent and engaging story that highlights the applicant's academic achievements, research experience, and career objectives, tailored specifically to the target program.
 
 APPLICANT INFORMATION:
+- Name: ${name}
 - Current Location: ${current_location}
 - Country of Origin: ${country_of_origin}
 - Native Language: ${native_language}
@@ -156,6 +158,7 @@ export const generateLOR = action({
       const { profile, university, program, recommender } = args;
       // Destructure profile fields with fallbacks for missing data
       const {
+        name = "",
         current_location = "",
         country_of_origin = "",
         native_language = "",
@@ -183,6 +186,7 @@ RECOMMENDER INFORMATION:
 - Email: ${recommender_email}
 
 STUDENT INFORMATION:
+- Name: ${name}
 - Current Location: ${current_location}
 - Country of Origin: ${country_of_origin}
 - Native Language: ${native_language}
