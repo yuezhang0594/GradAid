@@ -81,3 +81,13 @@ export async function logDocumentActivity(
     }
   });
 }
+
+export async function getDocumentsForUser(
+  ctx: QueryCtx,
+  userId: Id<"users">,
+) {
+  return await ctx.db
+    .query("applicationDocuments")
+    .withIndex("by_user", (q) => q.eq("userId", userId))
+    .collect();
+}

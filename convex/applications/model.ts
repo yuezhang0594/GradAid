@@ -408,8 +408,6 @@ export async function deleteApplicationWithDocuments(
     ctx: MutationCtx,
     applicationId: Id<"applications">
 ) {
-    const { userId } = await verifyApplicationOwnership(ctx, applicationId);
-
     // Delete the application and its documents
     await ctx.db.delete(applicationId);
     const applicationDocuments = await ctx.db
@@ -443,8 +441,6 @@ export async function updateApplicationStatusWithMetadata(
     notes?: string,
     submissionDate?: string
 ) {
-    const { userId, application } = await verifyApplicationOwnership(ctx, applicationId);
-
     // Create update object
     const updateData: Record<string, any> = {
         status,
@@ -467,4 +463,23 @@ export async function updateApplicationStatusWithMetadata(
     await logApplicationActivity(ctx, applicationId, `Application status updated to ${status}`, status);
     
     return applicationId;
+}
+
+/**
+ * Retrieves all applications associated with a specific user.
+ * 
+ * @param ctx - The query context for database operations
+ * @param userId - The ID of the user whose applications are being retrieved
+ * @returns A promise that resolves to an array of application documents
+ */
+export async function getApplicationsForUser(
+    ctx: QueryCtx,
+    userId: Id<"users">
+) {
+    const applications = await ctx.db
+        .query("applications")
+        .withIndex("by_user", (q) => q.eq("userId", userId))
+        .collect();
+
+    return applications;
 }

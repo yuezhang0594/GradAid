@@ -1,6 +1,5 @@
 import { query } from "../_generated/server";
 import { getCurrentUserIdOrThrow } from "../users";
-import { Id } from "../_generated/dataModel";
 import { v } from "convex/values";
 import { getApplicationDocumentsByUniversity, getApplicationWithDetails, getApplicationsWithProgress, verifyApplicationOwnership } from "./model";
 
@@ -33,6 +32,7 @@ export const getApplicationDetails = query({
   },
 });
 
+// TODO: move to university queries
 // Query to get university by name
 export const getUniversityByName = query({
   args: {

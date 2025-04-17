@@ -2,8 +2,10 @@ import { v } from "convex/values";
 import { mutation } from "../_generated/server";
 import { DocumentType, DocumentStatus, documentStatusValidator, documentTypeValidator, applicationPriorityValidator, applicationStatusValidator } from "../validators";
 import { getCurrentUserIdOrThrow } from "../users";
-import { createNewApplication, deleteApplicationWithDocuments, updateApplicationStatusWithMetadata } from "./model";
+import { createNewApplication, deleteApplicationWithDocuments, updateApplicationStatusWithMetadata, verifyApplicationOwnership } from "./model";
 import { Id } from "../_generated/dataModel";
+import { verify } from "crypto";
+import { verifyDocumentOwnership } from "../documents/model";
 
 export const createApplication = mutation({
   args: {
@@ -41,6 +43,7 @@ export const deleteApplication = mutation({
   },
   returns: v.object({ success: v.boolean() }),
   handler: async (ctx, args) => {
+    await verifyApplicationOwnership(ctx, args.applicationId);
     return await deleteApplicationWithDocuments(ctx, args.applicationId);
   }
 });
@@ -54,6 +57,7 @@ export const updateApplicationStatus = mutation({
   },
   returns: v.id("applications"),
   handler: async (ctx, args) => {
+    await verifyApplicationOwnership(ctx, args.applicationId);
     return await updateApplicationStatusWithMetadata(
       ctx,
       args.applicationId,

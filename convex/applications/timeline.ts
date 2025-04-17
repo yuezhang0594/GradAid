@@ -1,6 +1,5 @@
 import { query } from "../_generated/server";
 import { getCurrentUserIdOrThrow } from "../users";
-import { v } from "convex/values";
 import { getApplicationsWithDetails } from "./model";
 
 export const getTimeline = query({
