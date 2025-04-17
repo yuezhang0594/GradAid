@@ -1,6 +1,6 @@
 import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
-import { educationValidator, workExperienceValidator, publicationValidator, researchExperienceValidator, documentStatusValidator, documentTypeValidator, applicationStatusValidator, applicationPriorityValidator, userActivityTypeValidator } from './validators';
+import { educationValidator, workExperienceValidator, publicationValidator, researchExperienceValidator, documentStatusValidator, documentTypeValidator, applicationStatusValidator, applicationPriorityValidator, userActivityTypeValidator, aiCreditUsageTypeValidator } from './validators';
 
 const schema = defineSchema({
   users: defineTable({
@@ -170,7 +170,7 @@ const schema = defineSchema({
 
   aiCreditUsage: defineTable({
     userId: v.id("users"),
-    type: v.string(),
+    type: aiCreditUsageTypeValidator,
     credits: v.number(),
     timestamp: v.string(),
     description: v.optional(v.string()),

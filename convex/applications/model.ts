@@ -2,7 +2,8 @@ import { verify } from "crypto";
 import { Doc, Id } from "../_generated/dataModel";
 import { ActionCtx, MutationCtx, QueryCtx } from "../_generated/server";
 import { getCurrentUserIdOrThrow } from "../users";
-import { DocumentStatus, DocumentType, ApplicationStatus } from "../validators";
+import { DocumentStatus, DocumentType, ApplicationStatus, ApplicationPriority } from "../validators";
+import { createApplicationDocuments } from "../documents/model";
 
 /**
  * Verifies that the current authenticated user is the owner of a specified application.
@@ -137,4 +138,333 @@ export async function logApplicationActivity(
             newStatus: status
         }
     });
+}
+
+/**
+ * Fetches applications with their related university, program, and document details
+ * 
+ * @param ctx - The query context for database operations
+ * @param userId - The ID of the user whose applications to fetch
+ * @returns A promise resolving to an array of applications with related details
+ */
+export async function getApplicationsWithDetails(
+    ctx: QueryCtx, 
+    userId: Id<"users">
+) {
+    // Get all applications for the user
+    const applications = await ctx.db
+        .query("applications")
+        .withIndex("by_user", (q) => q.eq("userId", userId))
+        .collect();
+
+    // Get university and program details for each application
+    return await Promise.all(
+        applications.map(async (application) => {
+            const university = await ctx.db.get(application.universityId);
+            const program = await ctx.db.get(application.programId);
+            const applicationDocuments = await ctx.db
+                .query("applicationDocuments")
+                .withIndex("by_application", (q) => q.eq("applicationId", application._id))
+                .collect();
+            return {
+                ...application,
+                university: university?.name ?? "Unknown University",
+                program: program?.name ?? "Unknown Program",
+                applicationDocuments,
+            };
+        })
+    );
+}
+
+/**
+ * Fetches applications with document progress calculations
+ * 
+ * @param ctx - The query context for database operations
+ * @param userId - The ID of the user whose applications to fetch
+ * @returns A promise resolving to an array of applications with progress information
+ */
+export async function getApplicationsWithProgress(
+    ctx: QueryCtx,
+    userId: Id<"users">
+) {
+    // Get all applications for the user
+    const applications = await ctx.db
+        .query("applications")
+        .withIndex("by_user", (q) => q.eq("userId", userId))
+        .collect();
+
+    // Get university and program details for each application
+    return await Promise.all(
+        applications.map(async (application) => {
+            const university = await ctx.db.get(application.universityId);
+            const program = await ctx.db.get(application.programId);
+
+            // Get documents for this application
+            const documents = await ctx.db
+                .query("applicationDocuments")
+                .withIndex("by_application", (q) => q.eq("applicationId", application._id))
+                .collect();
+
+            // Calculate document completion
+            const totalDocuments = documents.length;
+            const completeDocuments = documents.filter(doc => doc.status === "complete").length;
+            const progress = totalDocuments > 0 ? Math.round((completeDocuments / totalDocuments) * 100) : 0;
+
+            return {
+                id: application._id,
+                university: university?.name ?? "Unknown University",
+                program: program?.name ?? "Unknown Program",
+                degree: program?.degree ?? "Unknown Degree",
+                status: application.status,
+                priority: application.priority,
+                deadline: application.deadline,
+                documentsComplete: completeDocuments,
+                totalDocuments,
+                progress,
+            };
+        })
+    );
+}
+
+/**
+ * Groups application documents by university
+ * 
+ * @param ctx - The query context for database operations
+ * @param userId - The ID of the user whose documents to fetch
+ * @returns A promise resolving to an array of universities with their documents
+ */
+export async function getApplicationDocumentsByUniversity(
+    ctx: QueryCtx,
+    userId: Id<"users">
+) {
+    // Get all applications for the user
+    const applications = await ctx.db
+        .query("applications")
+        .withIndex("by_user", (q) => q.eq("userId", userId))
+        .collect();
+
+    // Get documents for each application and group by university
+    const universitiesMap = new Map();
+
+    for (const application of applications) {
+        const university = await ctx.db.get(application.universityId);
+        const program = await ctx.db.get(application.programId);
+
+        if (!university || !program) continue;
+
+        // Get documents for this application
+        const documents = await ctx.db
+            .query("applicationDocuments")
+            .withIndex("by_application", (q) => q.eq("applicationId", application._id))
+            .collect();
+
+        const universityData = universitiesMap.get(university.name) || {
+            name: university.name,
+            documents: [],
+            programs: []
+        };
+
+        // Add program if not already present
+        if (!universityData.programs.some((p: { applicationId: Id<"applications"> }) => 
+            p.applicationId === application._id)) {
+            universityData.programs.push({
+                applicationId: application._id,
+                name: `${program.degree} in ${program.name}`
+            });
+        }
+
+        // Add documents with their IDs
+        for (const doc of documents) {
+            universityData.documents.push({
+                documentId: doc._id,
+                type: doc.type,
+                status: doc.status,
+                progress: doc.progress ?? 0,
+                count: 1,
+                program: `${program.degree} in ${program.name}`
+            });
+        }
+
+        universitiesMap.set(university.name, universityData);
+    }
+
+    return Array.from(universitiesMap.values());
+}
+
+/**
+ * Fetches detailed information about a specific application
+ * 
+ * @param ctx - The query context for database operations
+ * @param userId - The ID of the user who owns the application
+ * @param applicationId - The ID of the application to fetch
+ * @returns A promise resolving to the application details or null if not found
+ */
+export async function getApplicationWithDetails(
+    ctx: QueryCtx,
+    userId: Id<"users">,
+    applicationId: string
+) {
+    // Get application details
+    const application = await ctx.db
+        .query("applications")
+        .withIndex("by_user", (q) => q.eq("userId", userId))
+        .filter((q) => q.eq(q.field("_id"), applicationId))
+        .first();
+
+    if (!application) {
+        return null;
+    }
+
+    // Get university and program details
+    const university = await ctx.db.get(application.universityId);
+    const program = await ctx.db.get(application.programId);
+
+    // Get documents
+    const documents = await ctx.db
+        .query("applicationDocuments")
+        .withIndex("by_application", (q) => q.eq("applicationId", application._id))
+        .collect();
+
+    return {
+        ...application,
+        university: university?.name ?? "Unknown University",
+        department: program?.department ?? "Unknown Department",
+        program: program?.name ?? "Unknown Program",
+        degree: program?.degree ?? "Unknown Degree",
+        documents: documents,
+    };
+}
+
+/**
+ * Creates a new application with associated documents
+ * 
+ * @param ctx - The mutation context for database operations
+ * @param userId - The ID of the user creating the application
+ * @param universityId - The ID of the university for the application
+ * @param programId - The ID of the program for the application
+ * @param deadline - The application deadline
+ * @param priority - The application priority
+ * @param notes - Optional notes for the application
+ * @param applicationDocuments - Optional documents for the application
+ * @returns A promise resolving to the ID of the created application
+ */
+export async function createNewApplication(
+    ctx: MutationCtx,
+    userId: Id<"users">,
+    universityId: Id<"universities">,
+    programId: Id<"programs">,
+    deadline: string,
+    priority: ApplicationPriority,
+    notes?: string,
+    applicationDocuments?: Array<{
+        type: DocumentType,
+        status: DocumentStatus
+    }>
+) {
+    await validateProgramBelongsToUniversity(ctx, universityId, programId);
+    await checkExistingApplication(ctx, userId, programId);
+    
+    const defaultApplicationDocuments = [
+        {
+            type: "sop" as DocumentType,
+            status: "not_started" as DocumentStatus
+        },
+        {
+            type: "lor" as DocumentType,
+            status: "not_started" as DocumentStatus
+        },
+        {
+            type: "lor" as DocumentType,
+            status: "not_started" as DocumentStatus
+        }
+    ];
+
+    const applicationId = await ctx.db.insert("applications", {
+        userId,
+        universityId,
+        programId,
+        deadline,
+        priority,
+        notes: notes ?? "",
+        status: "draft",
+        submissionDate: undefined,
+        lastUpdated: new Date().toISOString(),
+    });
+    
+    await createApplicationDocuments(ctx, applicationId, applicationDocuments || defaultApplicationDocuments);
+    await logApplicationActivity(ctx, applicationId, "Application created", "draft");
+    
+    return applicationId;
+}
+
+/**
+ * Deletes an application and its associated documents
+ * 
+ * @param ctx - The mutation context for database operations
+ * @param applicationId - The ID of the application to delete
+ * @returns A promise resolving to an object with a success flag
+ */
+export async function deleteApplicationWithDocuments(
+    ctx: MutationCtx,
+    applicationId: Id<"applications">
+) {
+    const { userId } = await verifyApplicationOwnership(ctx, applicationId);
+
+    // Delete the application and its documents
+    await ctx.db.delete(applicationId);
+    const applicationDocuments = await ctx.db
+        .query("applicationDocuments")
+        .withIndex("by_application", (q) => q.eq("applicationId", applicationId))
+        .collect();
+    
+    for (const doc of applicationDocuments) {
+        await ctx.db.delete(doc._id);
+    }
+
+    await logApplicationActivity(ctx, applicationId, "Application deleted", "deleted");
+    
+    return { success: true };
+}
+
+/**
+ * Updates the status of an application with optional metadata
+ * 
+ * @param ctx - The mutation context for database operations
+ * @param applicationId - The ID of the application to update
+ * @param status - The new status for the application
+ * @param notes - Optional notes for the application
+ * @param submissionDate - Optional submission date for the application
+ * @returns A promise resolving to the ID of the updated application
+ */
+export async function updateApplicationStatusWithMetadata(
+    ctx: MutationCtx,
+    applicationId: Id<"applications">,
+    status: ApplicationStatus,
+    notes?: string,
+    submissionDate?: string
+) {
+    const { userId, application } = await verifyApplicationOwnership(ctx, applicationId);
+
+    // Create update object
+    const updateData: Record<string, any> = {
+        status,
+        lastUpdated: new Date().toISOString()
+    };
+
+    // Add optional fields if provided
+    if (notes !== undefined) {
+        updateData.notes = notes;
+    }
+
+    if (status === "submitted" && submissionDate) {
+        updateData.submissionDate = submissionDate;
+    }
+
+    // Update application status
+    await ctx.db.patch(applicationId, updateData);
+
+    // Log activity
+    await logApplicationActivity(ctx, applicationId, `Application status updated to ${status}`, status);
+    
+    return applicationId;
 }

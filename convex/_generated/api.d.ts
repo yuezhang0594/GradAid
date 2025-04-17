@@ -13,6 +13,8 @@ import type {
   FilterApi,
   FunctionReference,
 } from "convex/server";
+import type * as aiCredits_model from "../aiCredits/model.js";
+import type * as aiCredits_mutations from "../aiCredits/mutations.js";
 import type * as aiCredits_queries from "../aiCredits/queries.js";
 import type * as applications_model from "../applications/model.js";
 import type * as applications_mutations from "../applications/mutations.js";
@@ -46,6 +48,8 @@ import type * as validators from "../validators.js";
  * ```
  */
 declare const fullApi: ApiFromModules<{
+  "aiCredits/model": typeof aiCredits_model;
+  "aiCredits/mutations": typeof aiCredits_mutations;
   "aiCredits/queries": typeof aiCredits_queries;
   "applications/model": typeof applications_model;
   "applications/mutations": typeof applications_mutations;

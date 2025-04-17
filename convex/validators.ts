@@ -182,3 +182,12 @@ export const userActivityTypeValidator = v.union(
     v.literal("ai_usage"),
     v.literal("feedback_submission"),
 );
+export type AiCreditUsageType = typeof aiCreditUsageTypeValidator.type;
+export const aiCreditUsageTypeValidator = v.union(
+    v.literal("lor_request"),
+    v.literal("lor_update"),
+    v.literal("sop_request"),
+    v.literal("sop_update"),
+    v.literal("ai_usage"),
+    v.literal("ai_credits_reset")
+);

@@ -1,109 +1,41 @@
-import { query } from "./../_generated/server";
+import { query } from "../_generated/server";
+import { v } from "convex/values";
 import { getCurrentUserIdOrThrow } from "../users";
-import { DEFAULT_AI_CREDITS, RESET_DAYS_IN_MILLISECONDS } from "../validators";
+import * as AiCreditsModel from "./model";
 
 export const getAiCredits = query({
+  args: {},
+  returns: v.object({
+    totalCredits: v.number(),
+    usedCredits: v.number(),
+    resetDate: v.string(),
+  }),
   handler: async (ctx) => {
     const userId = await getCurrentUserIdOrThrow(ctx);
-
-    // Get AI credits for the user
-    const aiCredits = await ctx.db
-      .query("aiCredits")
-      .filter((q) => q.eq(q.field("userId"), userId))
-      .first();
-
-    if (!aiCredits) {
-      return {
-        totalCredits: DEFAULT_AI_CREDITS,
-        usedCredits: 0,
-        resetDate: new Date(Date.now() + RESET_DAYS_IN_MILLISECONDS).toISOString(), // 30 days from now
-      };
-    }
-
-    return {
-      totalCredits: aiCredits.totalCredits,
-      usedCredits: aiCredits.usedCredits,
-      resetDate: aiCredits.resetDate,
-    };
+    return await AiCreditsModel.getUserAiCredits(ctx, userId);
   },
 });
 
 export const getAiCreditUsage = query({
+  args: {},
+  returns: v.array(
+    v.object({
+      type: v.string(),
+      used: v.number(),
+      percentage: v.number(),
+    })
+  ),
   handler: async (ctx) => {
     const userId = await getCurrentUserIdOrThrow(ctx);
-
-    // Get all AI credit usage records for the user
-    const usageStats = await ctx.db
-      .query("aiCreditUsage")
-      .filter((q) => q.eq(q.field("userId"), userId))
-      .collect();
-
-    // Group usage by type
-    const usageByType = new Map<string, number>();
-    let totalUsed = 0;
-
-    usageStats.forEach((usage) => {
-      const currentAmount = usageByType.get(usage.type) || 0;
-      usageByType.set(usage.type, currentAmount + usage.credits);
-      totalUsed += usage.credits;
-    });
-
-    // Convert to array and calculate percentages
-    const usageArray = Array.from(usageByType.entries()).map(([type, used]) => ({
-      type,
-      used,
-      percentage: totalUsed > 0 ? Math.round((used / totalUsed) * 100) : 0,
-    }));
-
-    // If no usage records exist, return default values
-    if (usageArray.length === 0) {
-      return [
-        {
-          type: "Document Review",
-          used: 100,
-          percentage: 40,
-        },
-        {
-          type: "Essay Feedback",
-          used: 75,
-          percentage: 30,
-        },
-        {
-          type: "Research Help",
-          used: 50,
-          percentage: 20,
-        },
-        {
-          type: "Other",
-          used: 25,
-          percentage: 10,
-        },
-      ];
-    }
-
-    return usageArray;
+    return await AiCreditsModel.getUserAiCreditUsage(ctx, userId);
   },
 });
 
 export const getAiCreditsRemaining = query({
+  args: {},
+  returns: v.number(),
   handler: async (ctx) => {
-    // Get the user ID
     const userId = await getCurrentUserIdOrThrow(ctx);
-    
-    // Fetch AI credits directly from the database
-    const aiCredits = await ctx.db
-      .query("aiCredits")
-      .filter((q) => q.eq(q.field("userId"), userId))
-      .first();
-
-    if (!aiCredits) {
-      return DEFAULT_AI_CREDITS;
-    }
-
-    // Calculate remaining credits
-    const remainingCredits = aiCredits.totalCredits - aiCredits.usedCredits;
-    
-    // Ensure remaining credits are not negative
-    return remainingCredits > 0 ? remainingCredits : 0;
+    return await AiCreditsModel.getUserRemainingAiCredits(ctx, userId);
   },
 });
