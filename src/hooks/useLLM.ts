@@ -189,6 +189,12 @@ export function useGenerateLetterOfRecommendation(documentId: Id<"applicationDoc
               applicationDocumentId: documentInfo._id,
               content: lor,
             });
+            
+            // Update document status to draft
+            await convex.mutation(api.documents.mutations.updateDocumentStatus, {
+              documentId: documentInfo._id,
+              status: "draft",
+            });
           }
           
           toast.success("Success", {

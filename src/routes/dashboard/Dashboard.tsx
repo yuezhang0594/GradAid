@@ -19,6 +19,14 @@ import { useQuery } from "convex/react";
 import { api } from "#/_generated/api";
 import { Id } from "#/_generated/dataModel";
 
+// Helper function to format status text
+function formatStatus(status: string): string {
+  return status
+    .split('_')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+
 export default function Dashboard() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -104,7 +112,7 @@ export default function Dashboard() {
                           document.status === "Complete" ? "default" : "secondary"
                         }
                       >
-                        {document.status}
+                        {formatStatus(document.status)}
                       </Badge>
                     </span>
                     <span>{document.progress}%</span>

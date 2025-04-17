@@ -36,6 +36,7 @@ export function useDocumentEditor() {
   // Mutations
   const saveDocument = useMutation(api.documents.mutations.saveDocumentDraft);
   const updateRecommender = useMutation(api.documents.mutations.updateRecommender);
+  const updateDocStatus = useMutation(api.documents.mutations.updateDocumentStatus);
 
   const handleSave = useCallback(async () => {
     if (!documentId) {
@@ -48,6 +49,13 @@ export function useDocumentEditor() {
         applicationDocumentId: documentId,
         content: state.content,
       });
+      
+      // Update document status to draft
+      await updateDocStatus({
+        documentId: documentId,
+        status: "draft",
+      });
+      
       toast.success("Document saved successfully!");
     } catch (error) {
       console.error("Error saving document:", error);
@@ -57,7 +65,7 @@ export function useDocumentEditor() {
     } finally {
       setState(prev => ({ ...prev, isSaving: false }));
     }
-  }, [documentId, state.content, saveDocument]);
+  }, [documentId, state.content, saveDocument, updateDocStatus]);
 
   const handleBack = useCallback(() => {
     // Clear document editor state
