@@ -81,3 +81,70 @@ export async function logDocumentActivity(
     }
   });
 }
+
+/**
+ * Updates the application status based on the status of all its documents
+ * - If all documents are "not_started", application status is set to "draft"
+ * - If any document is "draft", application status is set to "in_progress"
+ * - Does not modify application if status is already "submitted", "accepted", "rejected", or "deleted"
+ */
+export async function updateApplicationStatusBasedOnDocuments(
+  ctx: MutationCtx,
+  applicationId: Id<"applications">
+) {
+  // Get the application
+  const application = await ctx.db.get(applicationId);
+  if (!application) {
+    throw new Error(`Application with ID ${applicationId} not found`);
+  }
+
+  // Don't modify application status if it's already in a terminal state
+  if (
+    application.status === "submitted" ||
+    application.status === "accepted" ||
+    application.status === "rejected" ||
+    application.status === "deleted"
+  ) {
+    return { success: true, status: application.status };
+  }
+
+  // Get all documents for this application
+  const documents = await ctx.db
+    .query("applicationDocuments")
+    .filter((q) => q.eq(q.field("applicationId"), applicationId))
+    .collect();
+
+  if (documents.length === 0) {
+    // No documents, keep as draft
+    if (application.status !== "draft") {
+      await ctx.db.patch(applicationId, { status: "draft" });
+      await logApplicationActivity(ctx, applicationId, "Application status automatically updated to draft", "draft");
+    }
+    return { success: true, status: "draft" };
+  }
+
+  // Check document statuses
+  const allNotStarted = documents.every((doc) => doc.status === "not_started");
+  const anyDraft = documents.some((doc) => doc.status === "draft" || doc.status === "in_review");
+
+  let newStatus = application.status;
+
+  if (allNotStarted) {
+    newStatus = "draft";
+  } else if (anyDraft) {
+    newStatus = "in_progress";
+  }
+
+  // Update application status if it changed
+  if (newStatus !== application.status) {
+    await ctx.db.patch(applicationId, { status: newStatus });
+    await logApplicationActivity(
+      ctx,
+      applicationId,
+      `Application status automatically updated to ${newStatus}`,
+      newStatus
+    );
+  }
+
+  return { success: true, status: newStatus };
+}

@@ -3,7 +3,7 @@ import { mutation, MutationCtx } from "../_generated/server";
 import { Id } from "../_generated/dataModel";
 import { verifyApplicationOwnership } from "../applications/model";
 import { documentTypeValidator, documentStatusValidator } from "../validators";
-import { createApplicationDocument, logDocumentActivity, verifyDocumentOwnership } from "./model";
+import { createApplicationDocument, logDocumentActivity, verifyDocumentOwnership, updateApplicationStatusBasedOnDocuments } from "./model";
 
 
 export const saveDocumentDraft = mutation({
@@ -92,6 +92,9 @@ export const updateDocumentStatus = mutation({
     if (document.progress !== progress) {
       await logDocumentProgressActivity(ctx, args.documentId, document.progress || 0, progress);
     }
+    
+    // Automatically update application status based on document statuses
+    await updateApplicationStatusBasedOnDocuments(ctx, document.applicationId);
     
     return { success: true, progress };
   }

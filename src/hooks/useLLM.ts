@@ -4,26 +4,26 @@ import { api } from "#/_generated/api";
 import { Id } from "#/_generated/dataModel";
 import { toast } from "sonner";
 
-interface Program {
-  _id: Id<"programs">;
-  name: string;
-  degree: string;
-  department: string;
-}
+// interface Program {
+//   _id: Id<"programs">;
+//   name: string;
+//   degree: string;
+//   department: string;
+// }
 
-interface University {
-  _id: Id<"universities">;
-  name: string;
-  department: string;
-}
+// interface University {
+//   _id: Id<"universities">;
+//   name: string;
+//   department: string;
+// }
 
-interface Application {
-  _id: Id<"applications">;
-  universityId: Id<"universities">;
-  programId: Id<"programs">;
-  university: University;
-  program: Program;
-}
+// interface Application {
+//   _id: Id<"applications">;
+//   universityId: Id<"universities">;
+//   programId: Id<"programs">;
+//   university: University;
+//   program: Program;
+// }
 
 // Helper function to transform userProfile data to match LLM service expectations
 function transformUserProfileForLLM(userProfile: any, userName: string) {
