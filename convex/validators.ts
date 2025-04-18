@@ -115,9 +115,9 @@ export const searchFilterValidator = v.object({
         state: v.string(),
     })),
     ranking: v.optional(v.union(v.literal("all"), v.string())),
-        gre: v.optional(v.boolean()),
-            toefl: v.optional(v.boolean()),
-                minimumGPA: v.optional(v.number()),
+    gre: v.optional(v.boolean()),
+    toefl: v.optional(v.boolean()),
+    minimumGPA: v.optional(v.number()),
 });
 export const DEFAULT_FILTERS: SearchFilters = {
     programType: 'all',
@@ -141,3 +141,12 @@ export const degreeLabels: Record<string, string> = {
     'MFin': 'Master in Finance (MFin)',
     // Add other degree types as needed
 };
+export const TABLES_WITH_USER_DATA = [
+    "userProfiles",
+    "applications",
+    "applicationDocuments",
+    "aiCredits",
+    "aiCreditUsage",
+    "userActivity",
+    "favorites",
+] as const;

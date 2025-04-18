@@ -134,18 +134,11 @@ export async function updateUserAiCredits(
     .withIndex("by_user", (q) => q.eq("userId", userId))
     .first();
 
-  let updatedCredits;
   
   if (!aiCredits) {
     // Create new credits record if one doesn't exist
     const resetDate = new Date(Date.now() + RESET_DAYS_IN_MILLISECONDS).toISOString();
-    
-    updatedCredits = await ctx.db.insert("aiCredits", {
-      userId,
-      totalCredits: DEFAULT_AI_CREDITS,
-      usedCredits: creditsToUse,
-      resetDate
-    });
+    await createAiCredits(ctx, userId, DEFAULT_AI_CREDITS, creditsToUse, resetDate);
     
     // Return the newly created credits
     return {
@@ -207,4 +200,19 @@ export async function useAiCredits(
   
   // Then update the user's credit balance
   return await updateUserAiCredits(ctx, userId, creditsToUse);
+}
+
+export async function createAiCredits(
+  ctx: MutationCtx,
+  userId: Id<"users">,
+  totalCredits: number = DEFAULT_AI_CREDITS,
+  usedCredits: number = 0,
+  resetDate: string = new Date(Date.now() + RESET_DAYS_IN_MILLISECONDS).toISOString()
+): Promise<Id<"aiCredits">> {
+  return await ctx.db.insert("aiCredits", {
+    userId,
+    totalCredits,
+    usedCredits,
+    resetDate
+  });
 }
