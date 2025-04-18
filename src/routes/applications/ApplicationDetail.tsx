@@ -5,10 +5,10 @@ import { PageWrapper } from "@/components/ui/page-wrapper";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { ClickableCard } from "@/components/dashboard/clickablecard";
-import { useState, useEffect } from "react";
-import { FileTextIcon, CheckSquare2Icon, GraduationCapIcon, CheckCircleIcon, ClockIcon } from "lucide-react";
+import { FileTextIcon, GraduationCapIcon, CheckCircleIcon, ClockIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Id } from "#/_generated/dataModel";
+import { Button } from "@/components/ui";
 
 interface LocationState {
   applicationId: Id<"applications">;
@@ -56,6 +56,7 @@ export default function ApplicationDetail() {
           <h1 className="text-2xl font-bold mb-4">Missing Application ID</h1>
           <p>No application ID was provided in the navigation state.</p>
         </div>
+        <Button onClick={() => navigate(-1)}>Go Back</Button>
       </PageWrapper>
     );
   }
@@ -97,6 +98,7 @@ export default function ApplicationDetail() {
           <h1 className="text-2xl font-bold mb-4">Application not found</h1>
           <p>No application found for {state?.universityName ?? "unknown university"}.</p>
         </div>
+        <Button onClick={() => navigate(-1)}>Go Back</Button>
       </PageWrapper>
     );
   }
@@ -127,14 +129,14 @@ export default function ApplicationDetail() {
           <GraduationCapIcon className="h-5 w-5 mr-2" />
           Application Status
         </h2>
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-4 md:grid-cols-3 lg:grid-cols-4">
           {applicationStats.map((stat, index) => (
             <Card key={index} className="group flex flex-col">
-              <CardHeader className="flex flex-row items-center justify-between pb-2">
+              <CardHeader className="flex flex-row items-center justify-between">
                 <CardTitle className="text-sm group-hover:text-primary transition-colors text-left font-bold">{stat.title}</CardTitle>
                 {icons[stat.title as keyof typeof icons]}
               </CardHeader>
-              <CardContent className="pt-4 flex flex-col justify-center h-full">
+              <CardContent className="flex flex-col justify-center h-full">
                 <div className="text-xl font-bold mb-2">{formatStatus(stat.value)}</div>
                 <p className="text-xs text-muted-foreground">{stat.description}</p>
               </CardContent>
@@ -143,7 +145,7 @@ export default function ApplicationDetail() {
         </div>
       </div>
 
-      <div className="mt-8">
+      <div className="mt-8 text-start">
         <h2 className="text-lg font-semibold mb-4 flex items-center">
           <FileTextIcon className="h-5 w-5 mr-2" />
           Application Documents

@@ -8,6 +8,8 @@ export const FEEDBACK_MAX_CHARS = 1000;
 export const DEFAULT_AI_CREDITS = 500;
 export const LOADING_INDICATOR_DELAY = 500;
 export const RESET_DAYS_IN_MILLISECONDS = 30 * 24 * 60 * 60 * 1000; // 30 days in milliseconds
+export const AI_CREDITS_FOR_SOP = 5;
+export const AI_CREDITS_FOR_LOR = 3;
 
 /**
  * Zod schema for validating user feedback submissions

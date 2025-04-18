@@ -1,6 +1,8 @@
 import { v } from "convex/values";
 import { action } from "../_generated/server";
+import { api } from "../_generated/api";
 import OpenAI from "openai";
+import { AI_CREDITS_FOR_LOR, AI_CREDITS_FOR_SOP } from "../validators";
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
@@ -123,7 +125,7 @@ Follow this STRUCTURE and emphasize **coherence, insight, and relevance** throug
 - Showcase personal growth, intellectual curiosity, and readiness for research-intensive graduate training
 `;
 
-console.log("[generateSOP] Prompt:", prompt);
+      console.log("[generateSOP] Prompt:", prompt);
 
       const response = await openai.chat.completions.create({
         model: "gpt-4",
@@ -140,7 +142,11 @@ console.log("[generateSOP] Prompt:", prompt);
         temperature: 0.7,
         max_tokens: 2000
       });
-
+      await ctx.runMutation(api.aiCredits.mutations.useCredits, {
+        type: "sop_request",
+        credits: AI_CREDITS_FOR_SOP,
+        description: `Generated SOP applying to ${program_name} at ${university_name}`
+      });
       return response.choices[0]?.message?.content || null;
     } catch (error) {
       console.error("Error generating SOP:", error);
@@ -279,7 +285,11 @@ export const generateLOR = action({
         temperature: 0.7,
         max_tokens: 1500
       });
-
+      await ctx.runMutation(api.aiCredits.mutations.useCredits, {
+        type: "lor_request",
+        credits: AI_CREDITS_FOR_LOR,
+        description: `Generated LOR for ${recommender_name} applying to ${program_name} at ${university_name}`
+      });
       return response.choices[0]?.message?.content || null;
     } catch (error) {
       console.error("Error generating LOR:", error);
