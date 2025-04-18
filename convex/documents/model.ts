@@ -1,4 +1,4 @@
-import { Id } from "../_generated/dataModel";
+import { Doc, Id } from "../_generated/dataModel";
 import { ActionCtx, MutationCtx, QueryCtx } from "../_generated/server";
 import { logApplicationActivity, verifyApplicationOwnership } from "../applications/model";
 import { DocumentType, DocumentStatus } from "../validators";
@@ -23,8 +23,7 @@ export async function createApplicationDocument(
     title: title,
     lastEdited: new Date().toISOString()
   });
-  logApplicationActivity(ctx, applicationId, `Document created: ${title}`, "draft");
-  return documentID;
+  logDocumentActivity(ctx, documentID, `Document created: ${title}`, "draft");
 }
 
 export async function createApplicationDocuments(
@@ -56,10 +55,22 @@ export async function updateDocumentStatus(
   documentId: Id<"applicationDocuments">,
   status: DocumentStatus
 ) {
-  const { userId, document } = await verifyDocumentOwnership(ctx, documentId);
-  await ctx.db.patch(documentId, { status, lastEdited: new Date().toISOString() });
+  const { document } = await verifyDocumentOwnership(ctx, documentId);
+
+  const progress = determineProgressByStatus(status);
+
+  // Update both status and progress
+  await ctx.db.patch(documentId, {
+    status: status,
+    progress: progress,
+    lastEdited: new Date().toISOString()
+  });
   logDocumentActivity(ctx, documentId, `Document status updated to ${status}`, status);
-  return { success: true };
+
+  // Log progress update activity if progress changed
+  if (document.progress !== progress) {
+    await logDocumentProgressActivity(ctx, documentId, document.progress || 0, progress);
+  }
 }
 
 export async function logDocumentActivity(
@@ -82,6 +93,42 @@ export async function logDocumentActivity(
   });
 }
 
+// Helper function to log document progress changes
+async function logDocumentProgressActivity(
+  ctx: MutationCtx,
+  documentId: Id<"applicationDocuments">,
+  oldProgress: number,
+  newProgress: number
+) {
+  const { userId } = await verifyDocumentOwnership(ctx, documentId);
+  await ctx.db.insert("userActivity", {
+    userId,
+    type: "document_edit",
+    description: `Document progress updated from ${oldProgress}% to ${newProgress}%`,
+    timestamp: new Date().toISOString(),
+    metadata: {
+      documentId: documentId,
+      oldProgress: oldProgress,
+      newProgress: newProgress
+    }
+  });
+}
+
+function determineProgressByStatus(status: DocumentStatus): number {
+  switch (status) {
+    case "not_started":
+      return 0;
+    case "draft":
+      return 33;
+    case "in_review":
+      return 66;
+    case "complete":
+      return 100;
+    default:
+      return 0; // Default to 0 if status is unknown
+  }
+}
+
 export async function getDocumentsForUser(
   ctx: QueryCtx,
   userId: Id<"users">,
@@ -90,4 +137,38 @@ export async function getDocumentsForUser(
     .query("applicationDocuments")
     .withIndex("by_user", (q) => q.eq("userId", userId))
     .collect();
+}
+
+export async function updateDocumentContent(
+  ctx: MutationCtx,
+  documentId: Id<"applicationDocuments">,
+  content: string,
+) {
+  const { document } = await verifyDocumentOwnership(ctx, documentId);
+  await ctx.db.patch(document._id, { content: content, lastEdited: new Date().toISOString() });
+  logDocumentActivity(ctx, document._id, `Document content updated`, document.status);
+}
+
+export async function updateRecommender(
+  ctx: MutationCtx,
+  documentId: Id<"applicationDocuments">,
+  recommenderName: string,
+  recommenderEmail: string,
+) {
+  // Verify document ownership
+  const { document } = await verifyDocumentOwnership(ctx, documentId);
+
+  // Check if document is a LOR
+  if (document.type !== "lor") {
+    throw new Error("Cannot update recommender information for non-LOR documents");
+  }
+
+  // Update the document with recommender information
+  await ctx.db.patch(document._id, {
+    recommenderName: recommenderName,
+    recommenderEmail: recommenderEmail,
+    lastEdited: new Date().toISOString()
+  });
+
+  logDocumentActivity(ctx, document._id, `Recommender updated`, document.status);
 }
