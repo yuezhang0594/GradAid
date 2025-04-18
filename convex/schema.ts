@@ -1,6 +1,6 @@
 import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
-import { educationValidator, workExperienceValidator, publicationValidator, researchExperienceValidator, documentStatusValidator, documentTypeValidator, applicationStatusValidator, applicationPriorityValidator, userActivityTypeValidator, aiCreditUsageTypeValidator } from './validators';
+import * as Validate from './validators';
 
 const schema = defineSchema({
   users: defineTable({
@@ -8,33 +8,6 @@ const schema = defineSchema({
     email: v.string(),
     clerkId: v.string(),
   }).index("byClerkId", ["clerkId"]),
-
-  profiles: defineTable({
-    userId: v.id("users"),
-    // User profile fields for document generation
-    description: v.optional(v.string()),
-    websiteUrl: v.optional(v.string()),
-    githubUrl: v.optional(v.string()),
-    linkedInUrl: v.optional(v.string()),
-    profileComplete: v.boolean(),
-
-    // Education details
-    education: v.optional(v.array(educationValidator)),
-
-    // Work experience details
-    workExperience: v.optional(v.array(workExperienceValidator)),
-
-    // Academic achievements
-    achievements: v.optional(v.array(v.string())),
-
-    // Research experience
-    researchExperience: v.optional(v.array(researchExperienceValidator)),
-
-    // Skills and career goals
-    skills: v.optional(v.array(v.string())),
-    careerGoals: v.optional(v.string()),
-  })
-    .index("by_user", ["userId"]),
 
   userProfiles: defineTable({
     userId: v.id("users"),
@@ -132,10 +105,10 @@ const schema = defineSchema({
     userId: v.id("users"),
     universityId: v.id("universities"),
     programId: v.id("programs"),
-    status: applicationStatusValidator,
+    status: Validate.applicationStatusValidator,
     submissionDate: v.optional(v.string()),
     deadline: v.string(),
-    priority: applicationPriorityValidator,
+    priority: Validate.applicationPriorityValidator,
     notes: v.optional(v.string()),
     lastUpdated: v.string(),
   })
@@ -148,8 +121,8 @@ const schema = defineSchema({
     applicationId: v.id("applications"),
     userId: v.id("users"),
     title: v.string(),
-    type: documentTypeValidator,
-    status: documentStatusValidator,
+    type: Validate.documentTypeValidator,
+    status: Validate.documentStatusValidator,
     recommenderName: v.optional(v.string()),
     recommenderEmail: v.optional(v.string()),
     progress: v.number(),
@@ -170,7 +143,7 @@ const schema = defineSchema({
 
   aiCreditUsage: defineTable({
     userId: v.id("users"),
-    type: aiCreditUsageTypeValidator,
+    type: Validate.aiCreditUsageTypeValidator,
     credits: v.number(),
     timestamp: v.string(),
     description: v.optional(v.string()),
@@ -178,7 +151,7 @@ const schema = defineSchema({
 
   userActivity: defineTable({
     userId: v.id("users"),
-    type: userActivityTypeValidator,
+    type: Validate.userActivityTypeValidator,
     description: v.string(),
     timestamp: v.string(),
     metadata: v.object({

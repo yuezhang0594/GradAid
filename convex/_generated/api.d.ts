@@ -28,7 +28,6 @@ import type * as documents_queries from "../documents/queries.js";
 import type * as feedback from "../feedback.js";
 import type * as http from "../http.js";
 import type * as init from "../init.js";
-import type * as profile from "../profile.js";
 import type * as programs_favorites from "../programs/favorites.js";
 import type * as programs_model from "../programs/model.js";
 import type * as programs_queries from "../programs/queries.js";
@@ -69,7 +68,6 @@ declare const fullApi: ApiFromModules<{
   feedback: typeof feedback;
   http: typeof http;
   init: typeof init;
-  profile: typeof profile;
   "programs/favorites": typeof programs_favorites;
   "programs/model": typeof programs_model;
   "programs/queries": typeof programs_queries;
