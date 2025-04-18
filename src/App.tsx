@@ -48,7 +48,6 @@ function App() {
           <Route path="/apply" element={<ProgramApplyPage />} />
           <Route path="/applications" element={<ApplicationsPage />} />
           <Route path="/documents" element={<DocumentsPage />} />
-          <Route path="/documents" element={<DocumentsPage />} />
           <Route path="/applications/:universityName" element={<ApplicationDetail />} />
           <Route path="/documents/:universityName" element={<DocumentsPage />} />
           <Route

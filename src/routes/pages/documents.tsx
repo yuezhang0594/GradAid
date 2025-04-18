@@ -5,6 +5,8 @@ import { PageWrapper } from "@/components/ui/page-wrapper";
 import { CardWrapper } from "@/components/ui/card-wrapper";
 import { Id } from "#/_generated/dataModel";
 import { DocumentStatus, DocumentType } from "convex/validators";
+import { BookXIcon } from "lucide-react";
+import { EmptyState } from "@/components/ui/empty-state";
 
 interface Program {
   name: string;
@@ -89,7 +91,7 @@ export default function DocumentsPage() {
       applicationId,
       type: documentType,
     });
-    
+
     // Navigate to the document editor with the document ID as a query parameter
     navigate(`/documents/${encodeURIComponent(universityName)}/${documentType.toLowerCase()}?documentId=${documentId}`, {
       state: {
@@ -99,61 +101,71 @@ export default function DocumentsPage() {
       }
     });
   };
-    
+
   return (
     <PageWrapper
       title="Documents"
       description="View and manage application documents for each university"
     >
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        {cards.map((card: Card) => (
-          <CardWrapper
-            key={`${card.name}-${card.applicationId}`}
-            title={card.name}
-            description={card.program}
-            badges={[
-              ...card.documents.map((doc) => ({
-                text: formatText(doc.type),
-                count: doc.count,
-                variant: doc.status === "complete" ? "default" as const :
-                  doc.status === "in_review" ? "secondary" as const : "outline" as const,
-                onClick: () => handleDocumentClick(doc.documentId, card.name, doc.type.toString())
-              })),
-              ...(card.documents.some(doc => doc.type.toLowerCase() === "sop") ? [] : [{
-                text: "+ SOP",
-                variant: "default" as const,
-                onClick: () => handleNewDocumentClick(card.applicationId, card.name, "sop")
-              }]),
-              ...((() => {
-                const MAX_LOR = 5;
-                const lorCount = card.documents.filter(doc => doc.type.toLowerCase() === "lor").length;
-                console.log(lorCount)
-                if (lorCount < MAX_LOR) {
-                  return [{
-                    text: "+ LOR",
-                    variant: "default" as const,
-                    onClick: () => {handleNewDocumentClick(card.applicationId, card.name, "lor") }
-                  }];
-                }
-                return [];
-              })()),
-            ]}
-          progress={
-            card.documents.length > 0
-              ? {
-                value: Math.round((card.documents.filter(doc => doc.status.toLowerCase() === "complete").length / card.documents.length) * 100),
-                label: `${card.documents.filter(doc => doc.status.toLowerCase() === "complete").length}/${card.documents.length} Documents Complete`,
-                hidePercentage: true
+      {documents.length === 0 ? (
+        <EmptyState
+          icon={BookXIcon}
+          title="No Documents Found"
+          description="You haven't started any applications yet. You can start a new application on the 'Apply' or 'Saved Programs' pages."
+          actionLabel="Start New Application"
+          actionHref="/apply"
+        />
+      ) : (
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          {cards.map((card: Card) => (
+            <CardWrapper
+              key={`${card.name}-${card.applicationId}`}
+              title={card.name}
+              description={card.program}
+              badges={[
+                ...card.documents.map((doc) => ({
+                  text: formatText(doc.type),
+                  count: doc.count,
+                  variant: doc.status === "complete" ? "default" as const :
+                    doc.status === "in_review" ? "secondary" as const : "outline" as const,
+                  onClick: () => handleDocumentClick(doc.documentId, card.name, doc.type.toString())
+                })),
+                ...(card.documents.some(doc => doc.type.toLowerCase() === "sop") ? [] : [{
+                  text: "+ SOP",
+                  variant: "default" as const,
+                  onClick: () => handleNewDocumentClick(card.applicationId, card.name, "sop")
+                }]),
+                ...((() => {
+                  const MAX_LOR = 5;
+                  const lorCount = card.documents.filter(doc => doc.type.toLowerCase() === "lor").length;
+                  console.log(lorCount)
+                  if (lorCount < MAX_LOR) {
+                    return [{
+                      text: "+ LOR",
+                      variant: "default" as const,
+                      onClick: () => { handleNewDocumentClick(card.applicationId, card.name, "lor") }
+                    }];
+                  }
+                  return [];
+                })()),
+              ]}
+              progress={
+                card.documents.length > 0
+                  ? {
+                    value: Math.round((card.documents.filter(doc => doc.status.toLowerCase() === "complete").length / card.documents.length) * 100),
+                    label: `${card.documents.filter(doc => doc.status.toLowerCase() === "complete").length}/${card.documents.length} Documents Complete`,
+                    hidePercentage: true
+                  }
+                  : {
+                    value: 0,
+                    label: "No Documents",
+                    hidePercentage: true
+                  }
               }
-              : {
-                value: 0,
-                label: "No Documents",
-                hidePercentage: true
-              }
-          }
-          />
-        ))}
-      </div>
+            />
+          ))}
+        </div>
+      )}
     </PageWrapper>
   );
 }
