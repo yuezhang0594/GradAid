@@ -46,72 +46,84 @@ export const generateSOP = action({
       const program_degree = program?.degree || "";
       const program_department = program?.department || "";
 
-      const prompt = `Create a compelling Statement of Purpose (SOP) between 1000-1500 words for a graduate school application using the following information. The SOP should tell a coherent and engaging story that highlights the applicant's academic achievements, research experience, and career objectives, tailored specifically to the target program.
+      const prompt = `You are tasked with generating a compelling, polished Statement of Purpose (SOP) for a graduate school application, tailored specifically to the applicant’s background and target program. The SOP should be between **1000–1500 words** and written in the **first person**, maintaining a **professional yet engaging tone**. It should tell a **cohesive and insightful story** that showcases the applicant’s intellectual development, academic accomplishments, research experience, and career aspirations.
 
-APPLICANT INFORMATION:
+Please use the following APPLICANT PROFILE to inform the SOP:
+
+**APPLICANT INFORMATION**
 - Name: ${name}
 - Current Location: ${current_location}
 - Country of Origin: ${country_of_origin}
 - Native Language: ${native_language}
 
-EDUCATION:
+**EDUCATION**
 - Education Level: ${education_level}
 - Major/Field of Study: ${major}
 - Current University: ${current_university}
-- GPA: ${gpa} out of ${gpa_scale}
+- GPA: ${gpa} / ${gpa_scale}
 
-TEST SCORES:
-- GRE Scores: Verbal: ${gre_verbal}, Quantitative: ${gre_quant}, Analytical Writing: ${gre_aw}
-- English Proficiency Test: ${english_test_type} Score: ${english_overall}
+**STANDARDIZED TESTS**
+- GRE: Verbal ${gre_verbal}, Quantitative ${gre_quant}, Analytical Writing ${gre_aw}
+- English Proficiency: ${english_test_type}, Score: ${english_overall}
 
-RESEARCH AND CAREER:
+**RESEARCH AND CAREER**
 - Research Experience: ${research_experience}
 - Research Interests: ${research_interests_str}
 - Target Degree: ${target_degree}
 - Intended Field of Study: ${intended_field}
 - Career Objectives: ${career_objectives}
 
-TARGET PROGRAM:
-- University Name: ${university_name}
-- Program Name: ${program_name}
+**TARGET PROGRAM**
+- University: ${university_name}
+- Program: ${program_name}
 - Degree Type: ${program_degree}
 - Department: ${program_department}
 
-GUIDELINES FOR SOP STRUCTURE:
+---
 
-1. Introduction (1-2 paragraphs):
-   - Begin with a compelling hook related to your academic or research journey
-   - Clearly state your purpose for applying to this specific program
-   - Briefly mention your background and how it has prepared you for graduate studies
+Follow this STRUCTURE and emphasize **coherence, insight, and relevance** throughout:
 
-2. Academic Background (2-3 paragraphs):
-   - Describe your educational journey, highlighting relevant coursework and achievements
-   - Explain how your academic background has prepared you for graduate studies
-   - Connect your academic experiences to your research interests
+**1. Introduction (1–2 paragraphs)**  
+- Begin with an engaging anecdote, observation, or realization that sparked your interest in the field  
+- Clearly state your purpose for applying to this particular program  
+- Briefly introduce your academic background and motivations for graduate study  
 
-3. Research Experience (2-3 paragraphs):
-   - Detail significant research projects, methodologies used, and outcomes
-   - Highlight specific skills developed through research
-   - Explain how your research experience aligns with the target program
+**2. Academic Background (2–3 paragraphs)**  
+- Describe your academic journey and key achievements  
+- Highlight relevant coursework, independent projects, or academic awards  
+- Explain how your studies have shaped your research interests and prepared you for graduate-level work  
 
-4. Career Goals (1-2 paragraphs):
-   - Articulate short-term and long-term career objectives
-   - Explain how the target degree and program are essential steps toward these goals
-   - Demonstrate a clear understanding of the field and your place within it
+**3. Research Experience (2–3 paragraphs)**  
+- Detail research projects you’ve participated in: your role, methods used, challenges faced, and outcomes  
+- Emphasize skills gained: experimental design, data analysis, technical tools, etc.  
+- Show how these experiences shaped your research identity and relate to your intended field of study  
 
-5. Program Fit (2-3 paragraphs):
-   - Explain why you've chosen this specific university and program
-   - Mention specific faculty members, research groups, or resources that attract you
-   - Demonstrate how your background and goals align with the program's strengths
+**4. Career Objectives (1–2 paragraphs)**  
+- Articulate your short- and long-term career goals  
+- Connect these goals to your academic background and research interests  
+- Demonstrate how this program will be a critical step in achieving those goals  
 
-6. Conclusion (1 paragraph):
-   - Summarize your key qualifications and fit for the program
-   - Express enthusiasm for contributing to the program and field
-   - End with a confident statement about your readiness for graduate studies
+**5. Program Fit (2–3 paragraphs)**  
+- Discuss why this university and program are ideal for your goals  
+- Mention specific faculty, labs, research initiatives, or institutional values that attract you  
+- Highlight how your background and aspirations align with the program’s strengths and mission  
 
-The SOP should be written in the first person, maintain a professional tone while showing personality, and be free of grammatical errors. Focus on creating a narrative that shows intellectual growth, research potential, and a clear vision for your academic and professional future.`;
+**6. Conclusion (1 paragraph)**  
+- Reinforce your qualifications and commitment to the field  
+- Express your enthusiasm for contributing to the academic community  
+- Conclude with a confident statement of your readiness for graduate-level work  
 
-      console.log("[generateSOP] Prompt:", prompt);
+---
+
+**Tone & Style Guidance**:  
+- Write in the first person  
+- Be confident but not arrogant  
+- Avoid clichés—focus on authenticity and depth  
+- Use clear, grammatically correct, and well-organized language  
+- Showcase personal growth, intellectual curiosity, and readiness for research-intensive graduate training
+`;
+
+console.log("[generateSOP] Prompt:", prompt);
 
       const response = await openai.chat.completions.create({
         model: "gpt-4",
@@ -179,68 +191,76 @@ export const generateLOR = action({
       const recommender_name = recommender?.name || "";
       const recommender_email = recommender?.email || "";
 
-      const prompt = `Create a compelling Letter of Recommendation (LOR) between 500-550 words for a graduate school application. The letter should be written from the perspective of ${recommender_name} (${recommender_email}) recommending a student for admission to a graduate program.
+      const prompt = `Generate a **Letter of Recommendation (LOR)** for a graduate school application, written from the perspective of **${recommender_name} (${recommender_email})** recommending a student for admission to a graduate program. The letter should be **between 500–550 words**, professional in tone, and rich with specific examples and authentic insights.
 
-RECOMMENDER INFORMATION:
-- Name: ${recommender_name}
-- Email: ${recommender_email}
+---  
+**RECOMMENDER INFORMATION**  
+- Name: ${recommender_name}  
+- Email: ${recommender_email}  
 
-STUDENT INFORMATION:
-- Name: ${name}
-- Current Location: ${current_location}
-- Country of Origin: ${country_of_origin}
-- Native Language: ${native_language}
-- Major/Field of Study: ${major}
-- Current University: ${current_university}
-- GPA: ${gpa} out of ${gpa_scale}
-- Research Experience: ${research_experience}
-- Research Interests: ${research_interests_str}
+**STUDENT INFORMATION**  
+- Name: ${name}  
+- Current Location: ${current_location}  
+- Country of Origin: ${country_of_origin}  
+- Native Language: ${native_language}  
+- Major/Field of Study: ${major}  
+- Current University: ${current_university}  
+- GPA: ${gpa} / ${gpa_scale}  
+- Research Experience: ${research_experience}  
+- Research Interests: ${research_interests_str}  
 
-TARGET PROGRAM:
-- University Name: ${university_name}
-- Program Name: ${program_name}
-- Degree Type: ${program_degree} (${target_degree})
-- Department: ${program_department}
-- Intended Field of Study: ${intended_field}
-- Career Objectives: ${career_objectives}
+**TARGET PROGRAM**  
+- University: ${university_name}  
+- Program: ${program_name}  
+- Degree Type: ${program_degree} (${target_degree})  
+- Department: ${program_department}  
+- Intended Field of Study: ${intended_field}  
+- Career Objectives: ${career_objectives}  
 
-GUIDELINES FOR LOR STRUCTURE:
-1. Introduction (1 paragraph):
-   - Establish your relationship with the student
-   - State how long you've known them and in what capacity
-   - Provide a strong statement of recommendation
-   - Mention the specific program and university they're applying to
+---  
+**LOR STRUCTURE & CONTENT GUIDELINES**  
 
-2. Academic Abilities (1-2 paragraphs):
-   - Discuss the student's academic performance in relevant courses
-   - Highlight their intellectual capabilities, critical thinking, and problem-solving skills
-   - Compare them to other students you've taught (e.g., "top 5% of students")
-   - Mention specific examples of exceptional academic work
+1. **Introduction (1 paragraph)**  
+   - Introduce yourself and your professional relationship with the student  
+   - State how long you’ve known the student and in what capacity (e.g., instructor, PI, advisor)  
+   - Include a strong, clear statement of recommendation  
+   - Mention the specific program and university the student is applying to  
 
-3. Research Experience and Skills (1-2 paragraphs):
-   - Describe research projects the student has worked on, especially under your supervision
-   - Highlight specific technical skills, methodologies, and tools they've mastered
-   - Discuss their ability to work independently and as part of a team
-   - Mention any publications, presentations, or significant contributions
+2. **Academic Abilities (1–2 paragraphs)**  
+   - Highlight the student’s academic strengths and intellectual curiosity  
+   - Mention standout coursework, class participation, or project work  
+   - If possible, compare them with peers (e.g., “among the top 5% of students I’ve taught”)  
+   - Provide concrete examples of problem-solving, critical thinking, or creativity  
 
-4. Personal Qualities (1 paragraph):
-   - Discuss character traits relevant to graduate study (e.g., perseverance, curiosity, integrity)
-   - Provide specific examples that demonstrate these qualities
-   - Mention how they interact with peers, faculty, and in collaborative environments
-   - Address their communication skills and professionalism
+3. **Research Experience and Skills (1–2 paragraphs)**  
+   - Describe any research work the student has done, especially under your supervision  
+   - Emphasize techniques, tools, or methodologies they've learned and applied  
+   - Comment on their independence, initiative, and teamwork in research contexts  
+   - Mention tangible outputs if applicable (e.g., poster, publication, conference talk)  
 
-5. Suitability for Program (1 paragraph):
-   - Explain why the student is an excellent fit for this specific program
-   - Connect their research interests and career goals to the program's strengths
-   - Discuss how their background prepares them for success in this program
-   - Mention their potential contributions to the department and field
+4. **Personal Qualities (1 paragraph)**  
+   - Discuss traits such as perseverance, integrity, curiosity, leadership, or collaboration  
+   - Provide anecdotes that reflect the student’s character in action  
+   - Highlight their interpersonal and communication skills, especially in academic/professional settings  
 
-6. Conclusion (1 paragraph):
-   - Provide a strong, unequivocal endorsement of the student
-   - Summarize key strengths and potential for success in graduate studies
-   - Offer to provide additional information if needed (include your contact information)
+5. **Fit for the Program (1 paragraph)**  
+   - Articulate why this student is an ideal candidate for the specific program  
+   - Connect their academic preparation and research goals to what the program offers  
+   - Comment on their readiness for graduate-level rigor and their potential contributions  
 
-The LOR should be written in a professional tone that conveys genuine enthusiasm for the student's abilities and potential. Use specific examples rather than general praise, and avoid exaggeration while still being strongly positive. The letter should sound authentic and personal, as if written by someone who knows the student well.`;
+6. **Conclusion (1 paragraph)**  
+   - Offer a strong and unequivocal final endorsement  
+   - Summarize the student’s major strengths and promise for graduate study  
+   - Invite the admissions committee to reach out for more details, and include your contact  
+
+---  
+**STYLE & TONE GUIDANCE**  
+- Write in a **natural, confident, and professional** voice  
+- Prioritize **specific observations** and **genuine praise**, rather than generic statements  
+- Avoid exaggeration, but express **enthusiasm and conviction** in your recommendation  
+- The letter should read as though it comes from someone who truly knows the student  
+
+`;
 
       console.log("[generateLOR] Prompt:", prompt);
 
