@@ -1,6 +1,9 @@
-import { ActionCtx, internalMutation, MutationCtx, query, QueryCtx } from "./_generated/server";
+import { internalMutation, MutationCtx, query, QueryCtx } from "./_generated/server";
 import { UserJSON } from "@clerk/backend";
 import { v, Validator } from "convex/values";
+import { createAiCredits } from "./aiCredits/model";
+import { Id } from "./_generated/dataModel";
+import { TABLES_WITH_USER_DATA } from "./validators";
 
 export const current = query({
   args: {},
@@ -24,7 +27,8 @@ export const upsertFromClerk = internalMutation({
 
     const user = await userByClerkId(ctx, data.id);
     if (user === null) {
-      await ctx.db.insert("users", userAttributes);
+      const userId = await ctx.db.insert("users", userAttributes);
+      await createAiCredits(ctx, userId);
     } else {
       await ctx.db.patch(user._id, userAttributes);
     }
@@ -37,6 +41,7 @@ export const deleteFromClerk = internalMutation({
     const user = await userByClerkId(ctx, clerkUserId);
 
     if (user !== null) {
+      await deleteUserData(ctx, user._id);
       await ctx.db.delete(user._id);
     } else {
       console.warn(
@@ -76,4 +81,18 @@ export async function userByClerkId(ctx: QueryCtx | MutationCtx, clerkId: string
     .query("users")
     .withIndex("byClerkId", (q) => q.eq("clerkId", clerkId))
     .unique();
+}
+
+export async function deleteUserData(ctx: MutationCtx, userId: Id<"users">) {
+  for (const table of TABLES_WITH_USER_DATA) {
+    const documents = await ctx.db
+      .query(table)
+      .withIndex("by_user", (q) => q.eq("userId", userId))
+      .collect();
+    if (documents.length > 0) {
+      for (const document of documents) {
+        await ctx.db.delete(document._id);
+      }
+    }
+  }
 }
