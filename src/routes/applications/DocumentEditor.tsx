@@ -107,10 +107,25 @@ export default function DocumentEditor() {
               onClick={async () => {
                 setState(prev => ({ ...prev, isGenerating: true }));
                 try {
+                  let success = false;
                   if (document?.type === "sop") {
-                    await generateSOP();
+                    success = await generateSOP() !== null;
                   } else if (document?.type === "lor" && generateLOR) {
-                    await generateLOR(document.applicationId);
+                    success = await generateLOR(document.applicationId) !== null;
+                  }
+                  
+                  // If document generation was successful, also save it
+                  if (success && state.content) {
+                    // Set saving state
+                    setState(prev => ({ ...prev, isSaving: true }));
+                    try {
+                      await handleSave();
+                      // toast.success("Document saved successfully!");
+                    } catch (error) {
+                      console.error("Error saving generated document:", error);
+                    } finally {
+                      setState(prev => ({ ...prev, isSaving: false }));
+                    }
                   }
                 } finally {
                   setState(prev => ({ ...prev, isGenerating: false }));
@@ -165,7 +180,7 @@ export default function DocumentEditor() {
                   id="recommenderName"
                   value={state.recommenderName}
                   onChange={(e) => setState(prev => ({ ...prev, recommenderName: e.target.value }))}
-                  placeholder="e.g., Dr. Jane Smith"
+                  placeholder="e.g., Dr. James Bond"
                   className="w-full"
                 />
                 <p className="text-xs text-muted-foreground">Full name of your recommender</p>
@@ -177,7 +192,7 @@ export default function DocumentEditor() {
                   type="email"
                   value={state.recommenderEmail}
                   onChange={(e) => setState(prev => ({ ...prev, recommenderEmail: e.target.value }))}
-                  placeholder="e.g., jane.smith@university.edu"
+                  placeholder="e.g., james.bond@bu.edu"
                   className="w-full"
                 />
                 <p className="text-xs text-muted-foreground">Professional email address</p>
