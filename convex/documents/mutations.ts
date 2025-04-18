@@ -2,6 +2,7 @@ import { v } from "convex/values";
 import { mutation, MutationCtx } from "../_generated/server";
 import { documentTypeValidator, documentStatusValidator } from "../validators";
 import * as DocumentsModel from "./model";
+import { getDocumentById } from "./queries";
 
 
 export const saveDocumentDraft = mutation({
@@ -41,9 +42,9 @@ export const updateDocumentStatus = mutation({
     status: documentStatusValidator,
   },
   handler: async (ctx: MutationCtx, args) => {
+    const { document } = await DocumentsModel.verifyDocumentOwnership(ctx, args.documentId);
     await DocumentsModel.updateDocumentStatus(ctx, args.documentId, args.status);
     await DocumentsModel.updateApplicationStatusBasedOnDocuments(ctx, document.applicationId);
-    return { success: true, progress };
   }
 });
 

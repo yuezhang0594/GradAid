@@ -160,10 +160,18 @@ export function useGenerateLetterOfRecommendation(documentId: Id<"applicationDoc
         }
 
         // Fetch recommender info only when needed
-        const recommender = await convex.query(api.programs.search.getRecommender, { documentId });
+        const recommender = await convex.query(api.documents.queries.getRecommender, { documentId });
         if (!recommender) {
           toast.error("Missing Recommender", {
             description: "Please assign a recommender before generating a Letter of Recommendation."
+          });
+          return null;
+        }
+
+        // Validate that recommender has required properties
+        if (!recommender.name || !recommender.email) {
+          toast.error("Incomplete Recommender Info", {
+            description: "Recommender must have both name and email. Please update the recommender information."
           });
           return null;
         }
@@ -178,7 +186,10 @@ export function useGenerateLetterOfRecommendation(documentId: Id<"applicationDoc
             degree: applicationDetails.degree,
             department: applicationDetails.department
           },
-          recommender
+          recommender: {
+            name: recommender.name,
+            email: recommender.email
+          }
         };
         
         console.log("[useGenerateLetterOfRecommendation] data to generateLOR:", data);
