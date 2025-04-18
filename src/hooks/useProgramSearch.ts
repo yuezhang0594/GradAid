@@ -1,97 +1,48 @@
 import { useState, useCallback, useEffect } from 'react';
 import { api } from '#/_generated/api';
 import { useQuery } from 'convex/react';
-import { Id, Doc } from '#/_generated/dataModel';
+import { Doc, Id } from '#/_generated/dataModel';
+import { SearchFilters, DEFAULT_FILTERS } from '#/validators';
+import { set } from 'date-fns';
 
+type Program = Doc<"programs">;
 type University = Doc<"universities">
 
-// Define the filter interface to match the API
-export interface ProgramSearchFilters {
-    programType: string;
-    location: string;
-    ranking: string;
-    gre?: boolean;
-    toefl?: boolean;
-    minimumGPA?: number;
-}
+export function useProgramSearch(query?: string) {
+    const [filters, setFilters] = useState<SearchFilters>(DEFAULT_FILTERS);
 
-// Default filter values
-export const DEFAULT_FILTERS: ProgramSearchFilters = {
-    programType: 'all',
-    location: 'all',
-    ranking: 'all',
-    gre: false,
-    toefl: false
-};
-
-export function useProgramSearch(query?: string, initialFilters?: Partial<ProgramSearchFilters>) {
-    const [filters, setFilters] = useState<ProgramSearchFilters>({ ...DEFAULT_FILTERS, ...initialFilters });
-    const [status, setStatus] = useState<"LoadingFirstPage" | "CanLoadMore" | "LoadingMore" | "Exhausted">("LoadingFirstPage");
-    const [cursor, setCursor] = useState<string | null>(null);
-    const [programs, setPrograms] = useState<Id<'programs'>[]>([]);
-    const [universities, setUniversities] = useState<University[]>([]);
-
-    // Get programs with optional filters and search query
-    const programIds = useQuery(api.programs.search.searchPrograms, {
-        query,
+    // The filter state change will automatically trigger this query to re-run
+    const programIds = useQuery(api.search.search.searchPrograms, {
+        search: query || "",
         filters,
     });
-    const paginationResult = useQuery(api.programs.search.getUniversitiesForPrograms, {
-        programIds: programIds || [],
-        paginationOpts: { numItems: 10, cursor }
+
+    const universities = useQuery(api.search.search.getUniversitiesForPrograms, {
+        programIds: programIds ?? [],
     });
 
+    const programs = useQuery(api.programs.queries.getProgramsByIds, {
+        programIds: programIds ?? [],
+    });
+
+    const uniqueLocations = useQuery(api.search.search.getUniqueLocations) || [];
+
+    const uniqueDegreeTypes = useQuery(api.search.search.getUniqueDegreeTypes) || [];
+
+    const isLoading = programIds === undefined || universities === undefined || programs === undefined || uniqueLocations === undefined || uniqueDegreeTypes === undefined;
+
     // Update filters
-    const updateFilters = useCallback((newFilters: Partial<ProgramSearchFilters>) => {
+    const updateFilters = useCallback((newFilters: Partial<SearchFilters>) => {
         setFilters(prev => ({ ...prev, ...newFilters }));
-        // Reset pagination when filters change
-        setCursor(null);
-        setStatus("LoadingFirstPage");
-        setPrograms([]);
     }, []);
-
-    // Load more universities
-    const loadMore = useCallback(() => {
-        if (status === "CanLoadMore") {
-            setStatus("LoadingMore");
-            // The next page will be loaded automatically when the query reruns with the new cursor
-        }
-    }, [status]);
-
-    // Update universities and pagination status when results change
-    useEffect(() => {
-        if (paginationResult === null) {
-            // Explicitly handle the "no results" case
-            setUniversities([]);
-            setStatus("Exhausted");
-            return;
-        }
-
-        if (!paginationResult) return;
-
-        if (status === "LoadingFirstPage") {
-            setUniversities(paginationResult.page);
-        } else if (status === "LoadingMore") {
-            setUniversities(prev => [...prev, ...paginationResult.page]);
-        }
-
-        // Update pagination status
-        if (!paginationResult.isDone) {
-            setCursor(paginationResult.continueCursor || null);
-            setStatus("CanLoadMore");
-        } else {
-            setStatus("Exhausted");
-        }
-    }, [paginationResult, status]);
-
 
     return {
         universities,
-        programIds,
+        programs,
         filters,
         updateFilters,
-        loadMore,
-        status,
-        hasMore: status === "CanLoadMore"
+        uniqueLocations,
+        uniqueDegreeTypes,
+        isLoading,
     };
 }

@@ -1,5 +1,5 @@
-import { v } from "convex/values";
-import { TypeOf, z } from "zod";
+import { Infer, v } from "convex/values";
+import { z } from "zod";
 
 /**
  * Global constants for validation limits
@@ -145,25 +145,25 @@ export type FeedbackInput = z.infer<typeof feedbackSchema>;
  * Represents the types of documents that can be submitted
  */
 
-export type DocumentType = typeof documentTypeValidator.type;
+export type DocumentType = Infer<typeof documentTypeValidator>;
 export const documentTypeValidator = v.union(
     v.literal("sop"),
     v.literal("lor")
 );
-export type DocumentStatus = typeof documentStatusValidator.type;
+export type DocumentStatus = Infer<typeof documentStatusValidator>;
 export const documentStatusValidator = v.union(
     v.literal("not_started"),
     v.literal("draft"),
     v.literal("in_review"),
     v.literal("complete")
 );
-export type ApplicationPriority = typeof applicationPriorityValidator.type;
+export type ApplicationPriority = Infer<typeof applicationPriorityValidator>;
 export const applicationPriorityValidator = v.union(
     v.literal("high"),
     v.literal("medium"),
     v.literal("low")
 );
-export type ApplicationStatus = typeof applicationStatusValidator.type;
+export type ApplicationStatus = Infer<typeof applicationStatusValidator>;
 export const applicationStatusValidator = v.union(
     v.literal("draft"),
     v.literal("in_progress"),
@@ -172,7 +172,7 @@ export const applicationStatusValidator = v.union(
     v.literal("rejected"),
     v.literal("deleted")
 );
-export type UserActivityType = typeof userActivityTypeValidator.type;
+export type UserActivityType = Infer<typeof userActivityTypeValidator>;
 export const userActivityTypeValidator = v.union(
     v.literal("document_edit"),
     v.literal("document_status_update"),
@@ -182,7 +182,7 @@ export const userActivityTypeValidator = v.union(
     v.literal("ai_usage"),
     v.literal("feedback_submission"),
 );
-export type AiCreditUsageType = typeof aiCreditUsageTypeValidator.type;
+export type AiCreditUsageType = Infer<typeof aiCreditUsageTypeValidator>;
 export const aiCreditUsageTypeValidator = v.union(
     v.literal("lor_request"),
     v.literal("lor_update"),
@@ -191,3 +191,37 @@ export const aiCreditUsageTypeValidator = v.union(
     v.literal("ai_usage"),
     v.literal("ai_credits_reset")
 );
+export type SearchFilters = Infer<typeof searchFilterValidator>;
+export const searchFilterValidator = v.object({
+    programType: v.optional(v.union(v.literal("all"), v.string())),
+    location: v.optional(v.object({
+        city: v.string(),
+        state: v.string(),
+    })),
+    ranking: v.optional(v.union(v.literal("all"), v.string())),
+        gre: v.optional(v.boolean()),
+            toefl: v.optional(v.boolean()),
+                minimumGPA: v.optional(v.number()),
+});
+export const DEFAULT_FILTERS: SearchFilters = {
+    programType: 'all',
+    location: { state: 'all', city: 'all' },
+    ranking: 'all',
+    gre: false,
+    toefl: false,
+    minimumGPA: undefined,
+};
+
+// Map degree codes to readable labels
+export const degreeLabels: Record<string, string> = {
+    'MS': 'Master of Science (MS)',
+    'MA': 'Master of Arts (MA)',
+    'PhD': 'Doctor of Philosophy (PhD)',
+    'MBA': 'Master of Business Admin (MBA)',
+    'MFA': 'Master of Fine Arts (MFA)',
+    'MEng': 'Master of Engineering (MEng)',
+    'MCS': 'Master of Computer Science (MCS)',
+    'MSE': 'Master of Science in Engineering (MSE)',
+    'MFin': 'Master in Finance (MFin)',
+    // Add other degree types as needed
+};

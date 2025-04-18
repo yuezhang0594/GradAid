@@ -138,9 +138,6 @@ export default function ActivityPage() {
                     {activity.metadata.documentId && (
                       <Badge variant="outline">Document Update</Badge>
                     )}
-                    {activity.metadata.lorId && (
-                      <Badge variant="outline">LOR Update</Badge>
-                    )}
                     {activity.metadata.creditsUsed && (
                       <Badge variant="outline">
                         {activity.metadata.creditsUsed} credits used

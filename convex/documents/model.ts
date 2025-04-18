@@ -149,6 +149,20 @@ export async function updateDocumentContent(
   logDocumentActivity(ctx, document._id, `Document content updated`, document.status);
 }
 
+export async function getRecommender(
+  ctx: QueryCtx,
+  documentId: Id<"applicationDocuments">,
+) {
+  const { document } = await verifyDocumentOwnership(ctx, documentId);
+  if (document.type !== "lor") {
+    throw new Error("Cannot get recommender information for non-LOR documents");
+  }
+  return {
+    name: document.recommenderName,
+    email: document.recommenderEmail
+  };
+}
+
 export async function updateRecommender(
   ctx: MutationCtx,
   documentId: Id<"applicationDocuments">,

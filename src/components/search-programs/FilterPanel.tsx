@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { ProgramSearchFilters } from '../../hooks/useProgramSearch';
-import { formatLocation } from "../../lib/formatLocation";
+import { DEFAULT_FILTERS, SearchFilters } from '#/validators';
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Slider } from "@/components/ui/slider";
@@ -14,9 +13,9 @@ import {
 import { RefreshCw, ChevronRight, ChevronDown } from "lucide-react";
 
 interface FilterPanelProps {
-  filters: ProgramSearchFilters;
-  onChange: (filters: ProgramSearchFilters, filterType?: string) => void;
-  locations?: string[];
+  filters: SearchFilters;
+  onChange: (filters: SearchFilters, filterType?: string) => void;
+  locations?: Array<{ city: string; state: string }>;
   degreeTypes?: Array<{ value: string; label: string }>;
 }
 
@@ -28,32 +27,26 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
 }) => {
   const [isOpen, setIsOpen] = useState(true);
 
-  const handleFilterChange = (key: keyof ProgramSearchFilters, value: any, filterType: string = 'default') => {
+  const handleFilterChange = (key: keyof SearchFilters, value: any, filterType: string = 'default') => {
     onChange({ ...filters, [key]: value }, filterType);
   };
 
-  // Default filter values to reset to
-  const defaultFilters: ProgramSearchFilters = {
-    programType: 'all',
-    location: 'all',
-    ranking: 'all',
-    gre: undefined,
-    toefl: undefined,
-    minimumGPA: undefined
-  };
-
   // Check if any filter is non-default
-  const hasActiveFilters =
-    filters.programType !== 'all' ||
-    filters.location !== 'all' ||
-    filters.ranking !== 'all' ||
-    filters.gre !== undefined ||
-    filters.toefl !== undefined ||
-    filters.minimumGPA !== undefined;
-
+  const hasActiveFilters = Object.keys(filters).some(key => {
+    const filterKey = key as keyof SearchFilters;
+    
+    // Handle object type filters (like location)
+    if (typeof filters[filterKey] === 'object' && filters[filterKey] !== null) {
+      return JSON.stringify(filters[filterKey]) !== JSON.stringify(DEFAULT_FILTERS[filterKey]);
+    }
+    
+    // Handle primitive type filters
+    return filters[filterKey] !== DEFAULT_FILTERS[filterKey];
+  });
+  
   // Reset all filters to default
   const handleResetAllFilters = () => {
-    onChange(defaultFilters, 'reset');
+    onChange(DEFAULT_FILTERS, 'reset');
   };
 
   return (
@@ -119,23 +112,80 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
           <div className="space-y-2">
             <Label htmlFor="location">Location</Label>
             <Select
-              value={filters.location}
-              onValueChange={(value) => handleFilterChange('location', value, 'select')}
+              value={filters.location?.state}
+              onValueChange={(value) => {
+                if (value === 'all') {
+                  handleFilterChange('location', {
+                    state: 'all',
+                    city: 'all'
+                  }, 'select');
+                } else {
+                  handleFilterChange('location', {
+                    state: value,
+                    city: 'all'
+                  }, 'select');
+                }
+              }}
             >
               <SelectTrigger id="location" className="w-full truncate">
-                <SelectValue placeholder="All Locations" className="truncate" />
+                <SelectValue placeholder="All States" className="truncate" />
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
-                  <SelectItem value="all">All Locations</SelectItem>
-                  {locations.map((location) => (
-                    <SelectItem key={location} value={location}>
-                      {formatLocation(location)}
+                  <SelectItem value="all">All States</SelectItem>
+                  {/* Use Set to filter unique states */}
+                  {[...new Set(locations.map(loc => loc.state))].map((state) => (
+                    <SelectItem key={state} value={state}>
+                      {state}
                     </SelectItem>
                   ))}
                 </SelectGroup>
               </SelectContent>
             </Select>
+            
+            {/* City Filter - Only show when a state is selected */}
+            {filters.location && filters.location.state !== 'all' && (
+              <div className="mt-2">
+                <Select
+                  value={filters.location.city}
+                  onValueChange={(city) => {
+                    if (!filters.location) {
+                      return; // Safety check
+                    }
+                    if (city === 'all') {
+                      // If "All Cities" is selected, set city to "all"
+                      handleFilterChange('location', {
+                        state: filters.location.state,
+                        city: 'all'
+                      }, 'select');
+                      return;
+                    }
+                    // Update the location object with the selected city
+                    handleFilterChange('location', {
+                      state: filters.location.state,
+                      city: city
+                    }, 'select');
+                  }}
+                >
+                  <SelectTrigger id="city" className="w-full truncate mt-1">
+                    <SelectValue placeholder="All Cities" className="truncate" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectGroup>
+                      <SelectItem value="all">All Cities</SelectItem>
+                      {locations
+                        .filter(loc => filters.location?.state !== 'all' && 
+                                loc.state === filters.location?.state)
+                        .map((location) => (
+                          <SelectItem key={`${location.state}-${location.city}`} value={location.city}>
+                            {location.city}
+                          </SelectItem>
+                        ))}
+                    </SelectGroup>
+                  </SelectContent>
+                </Select>
+              </div>
+            )}
           </div>
 
           {/* Ranking Filter */}

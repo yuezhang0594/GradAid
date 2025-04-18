@@ -16,14 +16,14 @@ export function useApply(programId?: Id<"programs"> | null) {
   
   // Get program data
   const programsQuery = useQuery(
-    api.programs.search.getProgramsByIds, 
+    api.programs.queries.getProgramsByIds, 
     programId ? { programIds: [programId] } : "skip"
   );
   const program: Program | null = programsQuery?.length ? programsQuery[0] : null;
   
   // Get university data for the program
   const universityQuery = useQuery(
-    api.programs.search.getUniversity,
+    api.universities.queries.getUniversity,
     program ? { universityId: program.universityId } : "skip"
   );
   const university: University | null = universityQuery ?? null;
