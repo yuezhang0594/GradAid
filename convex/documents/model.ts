@@ -13,7 +13,7 @@ export async function createApplicationDocument(
   const title = (docType === "sop") ? "Statement of Purpose" :
     (docType === "lor") ? "Letter of Recommendation" : "Error";
 
-  const documentID = await ctx.db.insert("applicationDocuments", {
+  const documentId = await ctx.db.insert("applicationDocuments", {
     applicationId,
     userId,
     type: docType as DocumentType,
@@ -23,7 +23,8 @@ export async function createApplicationDocument(
     title: title,
     lastEdited: new Date().toISOString()
   });
-  logDocumentActivity(ctx, documentID, `Document created: ${title}`, "draft");
+  logDocumentActivity(ctx, documentId, `Document created: ${title}`, "draft");
+  return documentId;
 }
 
 export async function createApplicationDocuments(
@@ -220,12 +221,18 @@ export async function updateApplicationStatusBasedOnDocuments(
     .collect();
 
   if (documents.length === 0) {
-    // No documents, keep as draft
-    if (application.status !== "draft") {
-      await ctx.db.patch(applicationId, { status: "draft" });
-      await logApplicationActivity(ctx, applicationId, "Application status automatically updated to draft", "draft");
+    // No documents, keep as not_started
+    if (application.status !== "not_started") {
+      await ctx.db.patch(applicationId, { status: "not_started" });
+      await logApplicationActivity(
+        ctx,
+        applicationId,
+        "Application status automatically updated to not_started",
+        application.status,
+        "not_started"
+      );
     }
-    return { success: true, status: "draft" };
+    return { success: true, status: "not_started" };
   }
 
   // Check document statuses
@@ -247,6 +254,7 @@ export async function updateApplicationStatusBasedOnDocuments(
       ctx,
       applicationId,
       `Application status automatically updated to ${newStatus}`,
+      application.status,
       newStatus
     );
   }

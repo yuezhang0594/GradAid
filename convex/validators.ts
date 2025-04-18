@@ -10,7 +10,7 @@ export const LOADING_INDICATOR_DELAY = 500;
 export const RESET_DAYS_IN_MILLISECONDS = 30 * 24 * 60 * 60 * 1000; // 30 days in milliseconds
 export const AI_CREDITS_FOR_SOP = 5;
 export const AI_CREDITS_FOR_LOR = 3;
-
+export const MAX_LOR = 5;
 /**
  * Zod schema for validating user feedback submissions
  * Includes positive feedback, negative feedback, and a numerical rating
@@ -83,6 +83,7 @@ export const applicationPriorityValidator = v.union(
 );
 export type ApplicationStatus = Infer<typeof applicationStatusValidator>;
 export const applicationStatusValidator = v.union(
+    v.literal("not_started"),
     v.literal("draft"),
     v.literal("in_progress"),
     v.literal("submitted"),

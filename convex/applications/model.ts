@@ -1,6 +1,5 @@
-import { verify } from "crypto";
 import { Doc, Id } from "../_generated/dataModel";
-import { ActionCtx, MutationCtx, QueryCtx } from "../_generated/server";
+import { MutationCtx, QueryCtx } from "../_generated/server";
 import { getCurrentUserIdOrThrow } from "../users";
 import { DocumentStatus, DocumentType, ApplicationStatus, ApplicationPriority } from "../validators";
 import { createApplicationDocuments } from "../documents/model";
@@ -124,9 +123,10 @@ export async function logApplicationActivity(
     ctx: MutationCtx,
     applicationId: Id<"applications">,
     description: string,
-    status: ApplicationStatus
+    oldStatus: ApplicationStatus,
+    newStatus: ApplicationStatus
 ) {
-    const { userId, application } = await verifyApplicationOwnership(ctx, applicationId);
+    const userId = await getCurrentUserIdOrThrow(ctx);
     await ctx.db.insert("userActivity", {
         userId,
         type: "application_update",
@@ -134,8 +134,8 @@ export async function logApplicationActivity(
         timestamp: new Date().toISOString(),
         metadata: {
             applicationId: applicationId,
-            oldStatus: application.status,
-            newStatus: status
+            oldStatus,
+            newStatus,
         }
     });
 }
@@ -148,7 +148,7 @@ export async function logApplicationActivity(
  * @returns A promise resolving to an array of applications with related details
  */
 export async function getApplicationsWithDetails(
-    ctx: QueryCtx, 
+    ctx: QueryCtx,
     userId: Id<"users">
 ) {
     // Get all applications for the user
@@ -265,7 +265,7 @@ export async function getApplicationDocumentsByUniversity(
         };
 
         // Add program if not already present
-        if (!universityData.programs.some((p: { applicationId: Id<"applications"> }) => 
+        if (!universityData.programs.some((p: { applicationId: Id<"applications"> }) =>
             p.applicationId === application._id)) {
             universityData.programs.push({
                 applicationId: application._id,
@@ -363,7 +363,7 @@ export async function createNewApplication(
 ) {
     await validateProgramBelongsToUniversity(ctx, universityId, programId);
     await checkExistingApplication(ctx, userId, programId);
-    
+
     const defaultApplicationDocuments = [
         {
             type: "sop" as DocumentType,
@@ -390,10 +390,10 @@ export async function createNewApplication(
         submissionDate: undefined,
         lastUpdated: new Date().toISOString(),
     });
-    
+
     await createApplicationDocuments(ctx, applicationId, applicationDocuments || defaultApplicationDocuments);
-    await logApplicationActivity(ctx, applicationId, "Application created", "draft");
-    
+    await logApplicationActivity(ctx, applicationId, "Application created", "not_started", "draft");
+
     return applicationId;
 }
 
@@ -408,19 +408,20 @@ export async function deleteApplicationWithDocuments(
     ctx: MutationCtx,
     applicationId: Id<"applications">
 ) {
+    const { application } = await verifyApplicationOwnership(ctx, applicationId);
     // Delete the application and its documents
     await ctx.db.delete(applicationId);
     const applicationDocuments = await ctx.db
         .query("applicationDocuments")
         .withIndex("by_application", (q) => q.eq("applicationId", applicationId))
         .collect();
-    
+
     for (const doc of applicationDocuments) {
         await ctx.db.delete(doc._id);
     }
 
-    await logApplicationActivity(ctx, applicationId, "Application deleted", "deleted");
-    
+    await logApplicationActivity(ctx, applicationId, "Application deleted", application.status, "deleted");
+
     return { success: true };
 }
 
@@ -441,6 +442,7 @@ export async function updateApplicationStatusWithMetadata(
     notes?: string,
     submissionDate?: string
 ) {
+    const { application } = await verifyApplicationOwnership(ctx, applicationId);
     // Create update object
     const updateData: Record<string, any> = {
         status,
@@ -460,8 +462,14 @@ export async function updateApplicationStatusWithMetadata(
     await ctx.db.patch(applicationId, updateData);
 
     // Log activity
-    await logApplicationActivity(ctx, applicationId, `Application status updated to ${status}`, status);
-    
+    await logApplicationActivity(
+        ctx,
+        applicationId,
+        `Application status updated to ${status}`,
+        application.status,
+        status
+    );
+
     return applicationId;
 }
 

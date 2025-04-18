@@ -43,7 +43,6 @@ export const deleteApplication = mutation({
   },
   returns: v.object({ success: v.boolean() }),
   handler: async (ctx, args) => {
-    await verifyApplicationOwnership(ctx, args.applicationId);
     return await deleteApplicationWithDocuments(ctx, args.applicationId);
   }
 });

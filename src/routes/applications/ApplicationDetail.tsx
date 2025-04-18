@@ -5,10 +5,25 @@ import { PageWrapper } from "@/components/ui/page-wrapper";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { ClickableCard } from "@/components/dashboard/clickablecard";
-import { FileTextIcon, GraduationCapIcon, CheckCircleIcon, ClockIcon } from "lucide-react";
+import { FileTextIcon, GraduationCapIcon, CheckCircleIcon, ClockIcon, FilePlus2Icon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Id } from "#/_generated/dataModel";
 import { Button } from "@/components/ui";
+import { api } from "#/_generated/api";
+import { DocumentType, MAX_LOR } from "#/validators";
+import { useMutation } from "convex/react";
+import { toast } from "sonner";
+import { useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { set } from "date-fns";
 
 interface LocationState {
   applicationId: Id<"applications">;
@@ -27,8 +42,10 @@ export default function ApplicationDetail() {
   const navigate = useNavigate();
   const location = useLocation();
   const state = location.state as LocationState;
-
-  console.log("[ApplicationDetail] Rendering with state:", { state });
+  const createDocument = useMutation(api.documents.mutations.createDocument);
+  const deleteApplication = useMutation(api.applications.mutations.deleteApplication);
+  const [isDeleteDialogOpen, setIsDeleteDialogOpen] = useState(false);
+  const [deleteConfirmation, setDeleteConfirmation] = useState("");
 
   const { application, applicationStats, documentStats, isLoading } = useApplicationDetail(
     state?.applicationId ?? ""
@@ -39,17 +56,7 @@ export default function ApplicationDetail() {
     "Deadline": <ClockIcon className="h-4 w-4 text-muted-foreground" />,
   };
 
-  console.log("[ApplicationDetail] Hook returned:", {
-    hasApplication: !!application,
-    isLoading,
-    statsCount: {
-      application: applicationStats.length,
-      documents: documentStats.length,
-    }
-  });
-
   if (!state?.applicationId) {
-    console.log("[ApplicationDetail] No application ID in state");
     return (
       <PageWrapper title="Error">
         <div className="container mx-auto p-4">
@@ -62,7 +69,6 @@ export default function ApplicationDetail() {
   }
 
   if (isLoading) {
-    console.log("[ApplicationDetail] Showing loading state");
     return (
       <PageWrapper title="Loading Application Details...">
         <div className="space-y-4">
@@ -91,7 +97,6 @@ export default function ApplicationDetail() {
   }
 
   if (!application) {
-    console.log("[ApplicationDetail] No application found");
     return (
       <PageWrapper title="Application not found">
         <div className="container mx-auto p-4">
@@ -103,12 +108,6 @@ export default function ApplicationDetail() {
     );
   }
 
-  console.log("[ApplicationDetail] Rendering application:", {
-    university: application.university,
-    program: application.program,
-    status: application.status
-  });
-
   const handleDocumentClick = (documentId: Id<"applicationDocuments">, documentType: string) => {
     navigate(`/documents/${encodeURIComponent(state.universityName)}/${documentType.toLowerCase()}?documentId=${documentId}`, {
       state: {
@@ -118,6 +117,45 @@ export default function ApplicationDetail() {
       }
     });
   };
+
+  const handleNewDocumentClick = async (applicationId: Id<"applications">, universityName: string, documentType: DocumentType) => {
+    const documentId = await createDocument({
+      applicationId,
+      type: documentType,
+    });
+
+    // Navigate to the document editor with the document ID as a query parameter
+    navigate(`/documents/${encodeURIComponent(universityName)}/${documentType.toLowerCase()}?documentId=${documentId}`, {
+      state: {
+        applicationId,
+        universityName,
+        returnPath: location.pathname
+      }
+    });
+  };
+
+  function confirmDelete(applicationId: Id<"applications">): void {    
+    try {
+      // Call the mutation to delete the application
+      deleteApplication({ applicationId })
+        .then(() => {
+          // Navigate back to applications list on success
+          navigate("/applications", { 
+            state: { message: `Application for ${state.universityName} has been deleted.` } 
+          });
+          toast.success("Application deleted successfully");
+        })
+        .catch(error => {
+          toast.error("Failed to delete application. Please try again.");
+        });
+    } catch (error) {
+      toast.error("An error occurred while attempting to delete the application.");
+    } finally {
+      // Reset the dialog state
+      setIsDeleteDialogOpen(false);
+      setDeleteConfirmation("");
+    }
+  }
 
   return (
     <PageWrapper
@@ -151,6 +189,39 @@ export default function ApplicationDetail() {
           Application Documents
         </h2>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          {!documentStats.some(doc => doc.type.toLowerCase() === 'sop') && (
+            <ClickableCard
+              action={{
+                label: "Create Statement of Purpose",
+                href: "#",
+                tooltip: "Create a new Statement of Purpose document",
+                onClick: () => handleNewDocumentClick(
+                  state.applicationId,
+                  state.universityName,
+                  "sop" as DocumentType
+                )
+              }}
+            >
+              <CardHeader>
+                <div className="flex justify-between items-center">
+                  <CardTitle className="text-sm group-hover:text-primary transition-colors text-left">
+                    Statement of Purpose
+                  </CardTitle>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  No SOP found for this application.
+                </p>
+              </CardHeader>
+              <CardContent className="pt-8">
+                <div className="flex items-center justify-center h-full">
+                  <FilePlus2Icon className="h-6 w-6 mr-2" />
+                  <p className="text-sm text-muted-foreground">
+                    Create New Document
+                  </p>
+                </div>
+              </CardContent>
+            </ClickableCard>
+          )}
           {documentStats.map((doc, index) => (
             <ClickableCard
               key={index}
@@ -189,37 +260,84 @@ export default function ApplicationDetail() {
               </CardContent>
             </ClickableCard>
           ))}
-        </div>
-      </div>
-
-      {/* <div className="mt-8">
-        <h2 className="text-lg font-semibold mb-4 flex items-center">
-          <CheckSquare2Icon className="h-5 w-5 mr-2" />
-          Requirements
-        </h2>
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          {requirementStats.map((req, index) => (
-            <Card key={index} className="group flex flex-col">
+          {documentStats.filter(doc => doc.type.toLowerCase() === "lor").length < MAX_LOR && (
+            <ClickableCard
+              action={{
+                label: "Create Letter of Recommendation",
+                href: "#",
+                tooltip: "Create a new Letter of Recommendation document",
+                onClick: () => handleNewDocumentClick(
+                  state.applicationId,
+                  state.universityName,
+                  "lor" as DocumentType
+                )
+              }}
+            >
               <CardHeader>
-                <CardTitle className="text-sm">{req.title}</CardTitle>
-                <p className="text-sm text-muted-foreground">Due {new Date(req.dueDate).toLocaleDateString()}</p>
+                <div className="flex justify-between items-center">
+                  <CardTitle className="text-sm group-hover:text-primary transition-colors text-left">
+                    Letter of Recommendation
+                  </CardTitle>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Create up to {MAX_LOR} LORs for each application.
+                </p>
               </CardHeader>
-              <CardContent className="pt-4">
-                <div className="space-y-2">
-                  <div className="flex justify-between items-center">
-                    <Badge variant={req.status === "completed" ? "default" : "secondary"}>
-                      {formatStatus(req.status)}
-                    </Badge>
-                  </div>
-                  {req.notes && (
-                    <p className="text-xs text-muted-foreground">{req.notes}</p>
-                  )}
+              <CardContent className="pt-8">
+                <div className="flex items-center justify-center h-full">
+                  <FilePlus2Icon className="h-6 w-6 mr-2" />
+                  <p className="text-sm text-muted-foreground">
+                    Create New Document
+                  </p>
                 </div>
               </CardContent>
-            </Card>
-          ))}
+            </ClickableCard>
+          )}
         </div>
-      </div> */}
+        <Button
+          variant="destructive"
+          className="mt-4"
+          onClick={() => setIsDeleteDialogOpen(true)}>
+          Delete Application
+        </Button>
+      </div>
+      
+      {/* Delete confirmation dialog */}
+      <Dialog open={isDeleteDialogOpen} onOpenChange={setIsDeleteDialogOpen}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Are you sure you want to delete this application?</DialogTitle>
+            <DialogDescription>
+              This will permanently delete this application for {state?.universityName} and all associated documents. 
+            </DialogDescription>
+            <DialogDescription className="text-red-500">
+              This action is permanent and irreversible.
+            </DialogDescription>
+          </DialogHeader>
+          
+          <div className="py-4">
+            <p className="text-sm text-muted-foreground mb-2">
+              Type <span className="font-semibold">Delete application</span> to confirm:
+            </p>
+            <Input
+              value={deleteConfirmation}
+              onChange={(e) => setDeleteConfirmation(e.target.value)}
+              placeholder="Delete application"
+              className="mt-2"
+            />
+          </div>
+          
+          <DialogFooter>
+            <Button
+              variant="destructive"
+              disabled={deleteConfirmation !== "Delete application"}
+              onClick={() => confirmDelete(state.applicationId)}
+            >
+              Delete
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </PageWrapper>
   );
 }

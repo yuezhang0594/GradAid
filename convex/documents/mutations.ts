@@ -21,7 +21,8 @@ export const createDocument = mutation({
     type: documentTypeValidator,
   },
   handler: async (ctx: MutationCtx, args) => {
-    await DocumentsModel.createApplicationDocument(ctx, args.applicationId, args.type);
+    const documentId = await DocumentsModel.createApplicationDocument(ctx, args.applicationId, args.type);
+    return documentId;
   }
 });
 

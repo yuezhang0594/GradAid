@@ -20,7 +20,7 @@ interface ApplicationDetailData {
     };
   }>;
   documentStats: Array<{
-    documentId: Id<"applicationDocuments">; 
+    documentId: Id<"applicationDocuments">;
     title: string;
     progress: number;
     status: DocumentStatus;
@@ -48,11 +48,7 @@ interface ApplicationDocument {
 export function useApplicationDetail(applicationId: Id<"applications">) {
   const applicationData = useQuery(api.applications.queries.getApplicationDetails, { applicationId });
 
-  console.log("[useApplicationDetail] Query params:", { applicationId });
-  console.log("[useApplicationDetail] Raw application data:", applicationData);
-
   if (applicationData === undefined) {
-    console.log("[useApplicationDetail] Loading application data");
     return {
       application: null,
       applicationStats: [],
@@ -62,7 +58,6 @@ export function useApplicationDetail(applicationId: Id<"applications">) {
   }
 
   if (applicationData === null) {
-    console.log("[useApplicationDetail] No application data found");
     return {
       application: null,
       applicationStats: [],
@@ -108,7 +103,6 @@ export function useApplicationDetail(applicationId: Id<"applications">) {
   ];
 
   const documentStats = applicationData.documents.map((doc: Document) => {
-    console.log("[useApplicationDetail] Processing document:", doc);
     return {
       documentId: doc._id,
       title: doc.title,
@@ -125,14 +119,11 @@ export function useApplicationDetail(applicationId: Id<"applications">) {
       },
     };
   });
-
   const result = {
     application: applicationData,
     applicationStats,
     documentStats,
     isLoading: false,
   };
-
-  console.log("[useApplicationDetail] Returning processed data:", result);
   return result;
 }

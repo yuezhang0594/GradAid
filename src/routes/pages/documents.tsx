@@ -4,7 +4,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 import { CardWrapper } from "@/components/ui/card-wrapper";
 import { Id } from "#/_generated/dataModel";
-import { DocumentStatus, DocumentType } from "convex/validators";
+import { DocumentStatus, DocumentType, MAX_LOR } from "#/validators";
 import { BookXIcon } from "lucide-react";
 import { EmptyState } from "@/components/ui/empty-state";
 
@@ -136,9 +136,7 @@ export default function DocumentsPage() {
                   onClick: () => handleNewDocumentClick(card.applicationId, card.name, "sop")
                 }]),
                 ...((() => {
-                  const MAX_LOR = 5;
                   const lorCount = card.documents.filter(doc => doc.type.toLowerCase() === "lor").length;
-                  console.log(lorCount)
                   if (lorCount < MAX_LOR) {
                     return [{
                       text: "+ LOR",
