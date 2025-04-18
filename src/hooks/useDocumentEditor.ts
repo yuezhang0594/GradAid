@@ -1,6 +1,6 @@
 import { useCallback, useState } from "react";
 import { useNavigate, useLocation, useSearchParams } from "react-router-dom";
-import { useAtomValue, useSetAtom } from "jotai";
+import { useSetAtom } from "jotai";
 import { documentEditorAtom } from "../store/document";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "#/_generated/api";
@@ -13,7 +13,7 @@ export function useDocumentEditor() {
   const location = useLocation();
   const [searchParams] = useSearchParams();
   const setEditorState = useSetAtom(documentEditorAtom);
-  const editorState = useAtomValue(documentEditorAtom);
+  // const editorState = useAtomValue(documentEditorAtom);
 
   // Document state
   const [state, setState] = useState<DocumentState>({

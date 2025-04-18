@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-import { Calendar, ChevronRight, ExternalLink, BellIcon, TargetIcon, FileTextIcon, ClockIcon, Activity } from "lucide-react";
+import { Calendar, ChevronRight, ExternalLink, BellIcon, TargetIcon, FileTextIcon, ClockIcon, Activity, ChevronUpIcon, ChevronDownIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
@@ -16,6 +16,7 @@ import { useDashboardData } from "@/hooks/useDashboardData";
 import { useQuery } from "convex/react";
 import { api } from "#/_generated/api";
 import { Id } from "#/_generated/dataModel";
+import { useState } from "react";
 
 // Helper function to format status text
 function formatStatus(status: string): string {
@@ -46,6 +47,14 @@ export default function Dashboard() {
       }
     });
   };
+
+  const [showAllDocuments, setShowAllDocuments] = useState(false);
+  const [showAllTimelines, setShowAllTimelines] = useState(false);
+  
+  // Number of document cards to show initially
+  const initialDocumentsToShow = 4;
+  // Number of timeline items to show initially
+  const initialTimelinesToShow = 5;
 
   return (
     <main className="flex-1 flex-col overflow-auto p-4 sm:p-6 lg:p-8">
@@ -83,7 +92,9 @@ export default function Dashboard() {
           </Button>
         </h2>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          {documentStats.map((document, index) => (
+          {documentStats
+            .slice(0, showAllDocuments ? documentStats.length : initialDocumentsToShow)
+            .map((document, index) => (
             <ClickableCard
               key={index}
               action={{
@@ -121,6 +132,29 @@ export default function Dashboard() {
             </ClickableCard>
           ))}
         </div>
+        
+        {/* Show More Button */}
+        {documentStats.length > initialDocumentsToShow && (
+          <div className="mt-4 flex justify-center">
+            <Button 
+              variant="outline" 
+              onClick={() => setShowAllDocuments(!showAllDocuments)}
+              className="text-sm"
+            >
+              {showAllDocuments ? (
+                <>
+                  <ChevronUpIcon className="h-4 w-4 mr-2" />
+                  Show Less
+                </>
+              ) : (
+                <>
+                  <ChevronDownIcon className="h-4 w-4 mr-2" />
+                  Show More ({documentStats.length - initialDocumentsToShow} more)
+                </>
+              )}
+            </Button>
+          </div>
+        )}
       </div>
 
       {/* Application Timeline */}
@@ -148,7 +182,9 @@ export default function Dashboard() {
           </CardHeader>
           <CardContent className="pt-4">
             <div className="space-y-4">
-              {applicationTimeline.map((event, index) => (
+              {applicationTimeline
+                .slice(0, showAllTimelines ? applicationTimeline.length : initialTimelinesToShow)
+                .map((event, index) => (
                 <div
                   key={index}
                   className="flex items-start gap-4 p-2 rounded-lg hover:bg-muted/50 cursor-pointer transition-colors"
@@ -213,6 +249,29 @@ export default function Dashboard() {
                 </div>
               ))}
             </div>
+            
+            {/* Show More Button for Timeline */}
+            {applicationTimeline.length > initialTimelinesToShow && (
+              <div className="mt-6 flex justify-center">
+                <Button 
+                  variant="outline" 
+                  onClick={() => setShowAllTimelines(!showAllTimelines)}
+                  className="text-sm"
+                >
+                  {showAllTimelines ? (
+                    <>
+                      <ChevronUpIcon className="h-4 w-4 mr-2" />
+                      Show Less
+                    </>
+                  ) : (
+                    <>
+                      <ChevronDownIcon className="h-4 w-4 mr-2" />
+                      Show More ({applicationTimeline.length - initialTimelinesToShow} more)
+                    </>
+                  )}
+                </Button>
+              </div>
+            )}
           </CardContent>
         </Card>
       </div>

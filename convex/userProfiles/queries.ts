@@ -191,3 +191,16 @@ export const getAiCredits = query({
       .first();
   },
 });
+
+export const getUserName = query({
+  args: {},
+  handler: async (ctx, args) => {
+    const userId = await getCurrentUserIdOrThrow(ctx);
+    const user = await ctx.db
+      .query("users")
+      .filter((q) => q.eq(q.field("_id"), userId))
+      .first();
+    return user?.name || "";
+  },
+});
+

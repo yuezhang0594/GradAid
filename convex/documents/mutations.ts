@@ -42,6 +42,8 @@ export const updateDocumentStatus = mutation({
   },
   handler: async (ctx: MutationCtx, args) => {
     await DocumentsModel.updateDocumentStatus(ctx, args.documentId, args.status);
+    await DocumentsModel.updateApplicationStatusBasedOnDocuments(ctx, document.applicationId);
+    return { success: true, progress };
   }
 });
 
