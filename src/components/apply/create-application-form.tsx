@@ -29,6 +29,7 @@ import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import formatDate from "@/lib/formatDate";
 import { DocumentStatus, DocumentType, ApplicationPriority } from "convex/validators";
+import { toast } from 'sonner';
 
 interface CreateApplicationFormProps {
     programId: Id<"programs">;
@@ -149,8 +150,9 @@ const CreateApplicationForm = ({ programId }: CreateApplicationFormProps) => {
                 const date = new Date(formatDate(selectedDate))
                 deadlineValue = date.toISOString().split('T')[0];
             } else {
-                // Fallback in case the deadline isn't found
-                deadlineValue = new Date().toISOString().split('T')[0];
+                // No valid deadline selected, show error and exit
+                toast.error("Please select an application deadline.");
+                return;
             }
         }
 
