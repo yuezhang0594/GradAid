@@ -44,8 +44,10 @@ export default function ApplicationDetail() {
   const state = location.state as LocationState;
   const createDocument = useMutation(api.documents.mutations.createDocument);
   const deleteApplication = useMutation(api.applications.mutations.deleteApplication);
+  const updateApplicationStatus = useMutation(api.applications.mutations.updateApplicationStatus);
   const [isDeleteDialogOpen, setIsDeleteDialogOpen] = useState(false);
   const [deleteConfirmation, setDeleteConfirmation] = useState("");
+  const [isSubmitDialogOpen, setIsSubmitDialogOpen] = useState(false);
 
   const { application, applicationStats, documentStats, isLoading } = useApplicationDetail(
     state?.applicationId ?? ""
@@ -156,6 +158,50 @@ export default function ApplicationDetail() {
       setDeleteConfirmation("");
     }
   }
+
+  // Helper: Check if all required documents are complete
+  function isReadyForSubmission(docStats: any[]) {
+    // Must have at least one SOP and one LOR, and all docs not in "not_started"
+    const hasSOP = docStats.some(doc => doc.type === "sop");
+    const hasLOR = docStats.some(doc => doc.type === "lor");
+    const allDocsStarted = docStats.every(doc => doc.status !== "not_started");
+    return hasSOP && hasLOR && allDocsStarted;
+  }
+
+  const handleSubmitApplication = async () => {
+    if (!isReadyForSubmission(documentStats)) {
+      let reason = "You must have at least one SOP and one LOR, and all documents must be started before submitting.";
+      const hasSOP = documentStats.some(doc => doc.type === "sop");
+      const hasLOR = documentStats.some(doc => doc.type === "lor");
+      if (!hasSOP && !hasLOR) {
+        reason = "You must create at least one Statement of Purpose and one Letter of Recommendation before submitting.";
+      } else if (!hasSOP) {
+        reason = "You must create at least one Statement of Purpose before submitting.";
+      } else if (!hasLOR) {
+        reason = "You must create at least one Letter of Recommendation before submitting.";
+      } else if (documentStats.some(doc => doc.status === "not_started")) {
+        reason = "All documents must be started (not in 'not started' status) before submitting.";
+      }
+      toast.error(reason);
+      return;
+    }
+    setIsSubmitDialogOpen(true);
+  };
+
+  const confirmSubmitApplication = async () => {
+    try {
+      await updateApplicationStatus({
+        applicationId: application._id,
+        status: "submitted",
+        submissionDate: new Date().toISOString(),
+      });
+      toast.success("Application submitted successfully!");
+      setIsSubmitDialogOpen(false);
+      // Optionally, you can refresh or refetch application data here
+    } catch (error) {
+      toast.error("Failed to submit application. Please try again.");
+    }
+  };
 
   return (
     <PageWrapper
@@ -295,6 +341,14 @@ export default function ApplicationDetail() {
           )}
         </div>
         <Button
+          variant={application.status === "submitted" ? "secondary" : "default"}
+          className="mt-4 mr-4"
+          onClick={handleSubmitApplication}
+          disabled={application.status === "submitted"}
+        >
+          {application.status === "submitted" ? "Submitted" : "Submit Application"}
+        </Button>
+        <Button
           variant="destructive"
           className="mt-4"
           onClick={() => setIsDeleteDialogOpen(true)}>
@@ -334,6 +388,27 @@ export default function ApplicationDetail() {
               onClick={() => confirmDelete(state.applicationId)}
             >
               Delete
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* Submit confirmation dialog */}
+      <Dialog open={isSubmitDialogOpen} onOpenChange={setIsSubmitDialogOpen}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Submit Application?</DialogTitle>
+            <DialogDescription>
+              Are you sure you want to update your application status to "Submitted" for {application.university}?<br />
+              <span className="text-red-600">After submission, some documents may no longer be editable.</span>
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter>
+            <Button variant="secondary" onClick={() => setIsSubmitDialogOpen(false)}>
+              Cancel
+            </Button>
+            <Button variant="default" onClick={confirmSubmitApplication}>
+              Confirm Submit
             </Button>
           </DialogFooter>
         </DialogContent>
