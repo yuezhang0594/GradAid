@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { UserProfile } from "@clerk/clerk-react";
 import { LandingPage } from "./components/landing-page";
 import { DashboardLayout } from "@/components/layout/DashboardLayout";
+import { Toaster } from "sonner";
 import Dashboard from "./routes/dashboard/Dashboard";
 import TOSPage from "./routes/legal/tos";
 import PrivacyPolicy from "./routes/legal/privacy";
@@ -21,8 +22,10 @@ import OnboardingPage from "./routes/onboarding/page";
 import ProfilePage from "./routes/profile/page";
 import SavedProgramsPage from "./routes/SavedProgramsPage";
 import ProgramApplyPage from "./routes/ProgramApplyPage";
-import { Toaster } from "sonner";
 import FeedbackPage from "./routes/FeedbackPage";
+import FAQPage from "./routes/support/FAQPage";
+import ContactPage from "./routes/support/ContactPage";
+import ResendDashboard from "./routes/support/ResendDashboard";
 
 function App() {
   return (
@@ -35,6 +38,7 @@ function App() {
         <Route path="/signup" element={<SignUpPage redirectUrl={"/onboarding"} />} />
         <Route path="/signout" element={<SignOutPage />} />
         <Route path="/clerk" element={<UserProfile />} />
+        <Route path="/resend" element={<ResendDashboard />} />
         <Route path="/tos" element={<TOSPage />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
 
@@ -57,6 +61,8 @@ function App() {
           <Route path="/timeline" element={<TimelinePage />} />
           <Route path="/activity" element={<ActivityPage />} />
           <Route path="/feedback" element={<FeedbackPage />} />
+          <Route path="/faq" element={<FAQPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Route>
       </Routes>
     </>

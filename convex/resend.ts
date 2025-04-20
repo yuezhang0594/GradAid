@@ -26,7 +26,7 @@ async function callResendApi<T>(
     }
 
     // Create Resend client
-    const apiKey = process.env.AUTH_RESEND_KEY;
+    const apiKey = process.env.RESEND_API_KEY;
     if (!apiKey) {
       throw new Error("Resend API key is not configured");
     }
@@ -69,7 +69,7 @@ async function callResendApi<T>(
 export const checkApiStatus = action({
   handler: async (ctx) => {
     try {
-      const apiKey = process.env.AUTH_RESEND_KEY;
+      const apiKey = process.env.RESEND_API_KEY;
       
       if (!apiKey) {
         console.error("Resend API key not found in environment variables");
@@ -124,5 +124,70 @@ export const listApiKeys = action({
     }
     
     return callResendApi('apiKeys', resend => resend.apiKeys.list());
+  }
+});
+
+export const sendContactEmail = action({
+  args: {
+    name: v.string(),
+    email: v.string(),
+    subject: v.string(),
+    message: v.string()
+  },
+  handler: async (ctx, args) => {
+    try {
+      const apiKey = process.env.RESEND_API_KEY;
+      if (!apiKey) {
+        throw new Error("Resend API key is not configured");
+      }
+      
+      const resend = new Resend(apiKey);
+      
+      // Send confirmation email to the user
+      const userConfirmation = await resend.emails.send({
+        from: "support@gradaid.online",
+        to: args.email,
+        subject: "We've received your message - GradAid Support",
+        html: `
+          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+            <h2>Thank you for contacting GradAid!</h2>
+            <p>Hello ${args.name},</p>
+            <p>We've received your message about "${args.subject}" and will get back to you as soon as possible.</p>
+            <p>For your records, here's a copy of your message:</p>
+            <div style="background-color: #f7f7f9; padding: 15px; border-left: 4px solid #4361ee; margin: 20px 0;">
+              ${args.message.replace(/\n/g, '<br>')}
+            </div>
+            <p>Best regards,<br>The GradAid Support Team</p>
+          </div>
+        `
+      });
+      
+      // Send notification to admin
+      const adminNotification = await resend.emails.send({
+        from: "support@gradaid.online",
+        to: "jrissman@gmail.com",
+        subject: `New Contact Form Submission: ${args.subject}`,
+        html: `
+          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+            <h2>New Contact Form Submission</h2>
+            <p><strong>From:</strong> ${args.name} (${args.email})</p>
+            <p><strong>Subject:</strong> ${args.subject}</p>
+            <p><strong>Message:</strong></p>
+            <div style="background-color: #f7f7f9; padding: 15px; border-left: 4px solid #4361ee; margin: 20px 0;">
+              ${args.message.replace(/\n/g, '<br>')}
+            </div>
+          </div>
+        `
+      });
+      
+      return { 
+        success: true,
+        userEmailId: userConfirmation.data?.id,
+        adminEmailId: adminNotification.data?.id
+      };
+    } catch (error) {
+      console.error("Failed to send contact form emails:", error);
+      throw new Error(error instanceof Error ? error.message : String(error));
+    }
   }
 });

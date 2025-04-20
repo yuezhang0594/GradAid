@@ -346,14 +346,14 @@ const CreateApplicationForm = ({ programId }: CreateApplicationFormProps) => {
                             render={({ field }) => (
                                 <FormItem>
                                     <FormLabel>Notes</FormLabel>
-                                    <FormDescription>
                                         <div className="flex justify-between items-center">
-                                            <span>Include any specific details or reminders for this application</span>
+                                    <FormDescription>
+                                            Include any specific details or reminders for this application
+                                    </FormDescription>
                                             <span className={`text-xs ${(field.value?.length || 0) > APPLICATION_NOTES_MAX_CHARS ? 'text-red-500 font-bold' : 'text-gray-500'}`}>
                                                 {field.value?.length || 0}/{APPLICATION_NOTES_MAX_CHARS}
                                             </span>
                                         </div>
-                                    </FormDescription>
                                     <FormControl>
                                         <Textarea
                                             placeholder="Add any personal notes about this application..."
