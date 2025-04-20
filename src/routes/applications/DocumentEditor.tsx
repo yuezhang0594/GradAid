@@ -1,15 +1,35 @@
 import { useEffect } from "react";
-import { SaveIcon, ArrowLeftIcon, MessageSquareIcon, Loader2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
-import { PageWrapper } from "@/components/ui/page-wrapper";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Card, CardContent } from "@/components/ui/card";
+import {
+  SaveIcon,
+  ArrowLeftIcon,
+  MessageSquareIcon,
+  Loader2,
+} from "lucide-react";
+import {
+  Button,
+  Textarea,
+  AlertDialog,
+  AlertDialogContent,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogDescription,
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  Input,
+  Label,
+  Card,
+  CardContent,
+  PageWrapper,
+} from "@/components/ui";
 import { useDocumentEditor } from "@/hooks/useDocumentEditor";
 import { formatDocumentType, formatLastEdited } from "@/lib/formatDocument";
-import { useGenerateStatementOfPurpose, useGenerateLetterOfRecommendation } from "@/hooks/useLLM";
+import {
+  useGenerateStatementOfPurpose,
+  useGenerateLetterOfRecommendation,
+} from "@/hooks/useLLM";
+import { AI_CREDITS_FOR_LOR, AI_CREDITS_FOR_SOP } from "#/validators";
 
 export default function DocumentEditor() {
   const {
@@ -19,37 +39,99 @@ export default function DocumentEditor() {
     documentId,
     handleSave,
     handleBack,
-    handleRecommenderSubmit
+    handleRecommenderSubmit,
   } = useDocumentEditor();
 
   // LLM generation hooks
   const generateSOP = useGenerateStatementOfPurpose(document?.applicationId);
-  const generateLOR = documentId ? useGenerateLetterOfRecommendation(documentId) : undefined;
+  const generateLOR = documentId
+    ? useGenerateLetterOfRecommendation(documentId)
+    : undefined;
 
   // Load initial document content
   useEffect(() => {
     if (document?.content) {
-      setState(prev => ({ ...prev, content: document.content || "" }));
+      setState((prev) => ({ ...prev, content: document.content || "" }));
     }
   }, [document, setState]);
 
   // Load recommender info if it exists
   useEffect(() => {
     if (document?.type === "lor") {
-      setState(prev => ({
+      setState((prev) => ({
         ...prev,
         recommenderName: document.recommenderName || "",
-        recommenderEmail: document.recommenderEmail || ""
+        recommenderEmail: document.recommenderEmail || "",
       }));
     }
   }, [document, setState]);
 
   // Show recommender dialog if needed
   useEffect(() => {
-    if (document?.type === "lor" && (!document.recommenderName || !document.recommenderEmail)) {
-      setState(prev => ({ ...prev, showRecommenderDialog: true }));
+    if (
+      document?.type === "lor" &&
+      (!document.recommenderName || !document.recommenderEmail)
+    ) {
+      setState((prev) => ({ ...prev, showRecommenderDialog: true }));
     }
   }, [document, setState]);
+
+  // Handler for document generation
+  const handleGenerateDocument = async () => {
+    if (!document) return;
+
+    // Ensure recommender info is present for LOR
+    if (
+      document.type === "lor" &&
+      (!state.recommenderName || !state.recommenderEmail)
+    ) {
+      setState((prev) => ({ ...prev, showRecommenderDialog: true }));
+      return;
+    }
+
+    // Show dialog to confirm generation
+    setState((prev) => ({ ...prev, showConfirmationDialog: true }));
+  };
+
+  // Handle actual document generation after confirmation
+  const performDocumentGeneration = async () => {
+    // Prevent duplicate actions
+    if (state.isGenerating) return;
+
+    setState((prev) => ({
+      ...prev,
+      isGenerating: true,
+    }));
+
+    try {
+      let success = false;
+      if (document?.type === "sop") {
+        success = (await generateSOP()) !== null;
+      } else if (document?.type === "lor" && generateLOR) {
+        success = (await generateLOR(document.applicationId)) !== null;
+      }
+
+      // If document generation was successful, also save it
+      if (success && state.content) {
+        // Set saving state
+        setState((prev) => ({
+          ...prev,
+          isSaving: true,
+          showConfirmationDialog: false,
+        }));
+        try {
+          await handleSave();
+          // toast.success("Document saved successfully!");
+        } catch (error) {
+          console.error("Error saving generated document:", error);
+        } finally {
+          setState((prev) => ({ ...prev, isSaving: false }));
+        }
+      }
+    } finally {
+      setState((prev) => ({ ...prev, isGenerating: false }));
+    }
+  };
 
   if (!documentId) {
     return (
@@ -73,11 +155,7 @@ export default function DocumentEditor() {
       <div className="space-y-6 mx-auto max-w-5xl">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <Button
-              variant="outline"
-              onClick={handleBack}
-              className="gap-2"
-            >
+            <Button variant="outline" onClick={handleBack} className="gap-2">
               <ArrowLeftIcon className="h-4 w-4" />
               Back
             </Button>
@@ -86,51 +164,22 @@ export default function DocumentEditor() {
             {document?.type === "lor" && (
               <Button
                 variant="outline"
-                onClick={() => setState(prev => ({ ...prev, showRecommenderDialog: true }))}
+                onClick={() =>
+                  setState((prev) => ({ ...prev, showRecommenderDialog: true }))
+                }
                 className="gap-2"
               >
                 <MessageSquareIcon className="h-4 w-4" />
-                {document.recommenderName ? `Edit Recommender Info` : "Add Recommender Info"}
+                {document.recommenderName
+                  ? `Edit Recommender Info`
+                  : "Add Recommender Info"}
               </Button>
             )}
-            {/* <Button
-              variant="outline"
-              className="gap-2"
-            >
-              <HistoryIcon className="h-4 w-4" />
-              Version History
-            </Button> */}
             <Button
               variant="outline"
               className="gap-2 transition-all duration-200 hover:bg-muted"
               disabled={state.isSaving || state.isGenerating}
-              onClick={async () => {
-                setState(prev => ({ ...prev, isGenerating: true }));
-                try {
-                  let success = false;
-                  if (document?.type === "sop") {
-                    success = await generateSOP() !== null;
-                  } else if (document?.type === "lor" && generateLOR) {
-                    success = await generateLOR(document.applicationId) !== null;
-                  }
-                  
-                  // If document generation was successful, also save it
-                  if (success && state.content) {
-                    // Set saving state
-                    setState(prev => ({ ...prev, isSaving: true }));
-                    try {
-                      await handleSave();
-                      // toast.success("Document saved successfully!");
-                    } catch (error) {
-                      console.error("Error saving generated document:", error);
-                    } finally {
-                      setState(prev => ({ ...prev, isSaving: false }));
-                    }
-                  }
-                } finally {
-                  setState(prev => ({ ...prev, isGenerating: false }));
-                }
-              }}
+              onClick={handleGenerateDocument}
             >
               {state.isGenerating && (
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -153,7 +202,9 @@ export default function DocumentEditor() {
           <CardContent className="p-0">
             <Textarea
               value={state.content}
-              onChange={(e) => setState(prev => ({ ...prev, content: e.target.value }))}
+              onChange={(e) =>
+                setState((prev) => ({ ...prev, content: e.target.value }))
+              }
               placeholder="Start writing..."
               className="min-h-[550px] font-mono border-0 rounded-none focus-visible:ring-0 focus-visible:ring-offset-0 resize-none"
             />
@@ -162,52 +213,89 @@ export default function DocumentEditor() {
 
         <Dialog
           open={state.showRecommenderDialog}
-          onOpenChange={(open) => setState(prev => ({ ...prev, showRecommenderDialog: open }))}
+          onOpenChange={(open) =>
+            setState((prev) => ({ ...prev, showRecommenderDialog: open }))
+          }
         >
           <DialogContent className="sm:max-w-[425px]">
             <DialogHeader>
               <DialogTitle className="text-xl font-semibold">
-                {document?.recommenderName ? 'Edit Recommender' : 'Add Recommender'}
+                {document?.recommenderName
+                  ? "Edit Recommender"
+                  : "Add Recommender"}
               </DialogTitle>
               <p className="text-sm text-muted-foreground mt-2">
-                Please provide the recommender's information. They will receive an email with instructions.
+                Please provide the recommender's information.
               </p>
             </DialogHeader>
             <div className="space-y-6 py-4">
               <div className="space-y-2">
-                <Label htmlFor="recommenderName" className="text-sm font-medium">Name</Label>
+                <Label
+                  htmlFor="recommenderName"
+                  className="text-sm font-medium"
+                >
+                  Name
+                </Label>
                 <Input
                   id="recommenderName"
                   value={state.recommenderName}
-                  onChange={(e) => setState(prev => ({ ...prev, recommenderName: e.target.value }))}
+                  onChange={(e) =>
+                    setState((prev) => ({
+                      ...prev,
+                      recommenderName: e.target.value,
+                    }))
+                  }
                   placeholder="e.g., Dr. James Bond"
                   className="w-full"
                 />
-                <p className="text-xs text-muted-foreground">Full name of your recommender</p>
+                <p className="text-xs text-muted-foreground">
+                  Full name of your recommender
+                </p>
               </div>
               <div className="space-y-2">
-                <Label htmlFor="recommenderEmail" className="text-sm font-medium">Email</Label>
+                <Label
+                  htmlFor="recommenderEmail"
+                  className="text-sm font-medium"
+                >
+                  Email
+                </Label>
                 <Input
                   id="recommenderEmail"
                   type="email"
                   value={state.recommenderEmail}
-                  onChange={(e) => setState(prev => ({ ...prev, recommenderEmail: e.target.value }))}
+                  onChange={(e) =>
+                    setState((prev) => ({
+                      ...prev,
+                      recommenderEmail: e.target.value,
+                    }))
+                  }
                   placeholder="e.g., james.bond@bu.edu"
                   className="w-full"
                 />
-                <p className="text-xs text-muted-foreground">Professional email address</p>
+                <p className="text-xs text-muted-foreground">
+                  Professional email address
+                </p>
               </div>
               <div className="flex gap-3 pt-4">
                 <Button
                   variant="outline"
-                  onClick={() => setState(prev => ({ ...prev, showRecommenderDialog: false }))}
+                  onClick={() =>
+                    setState((prev) => ({
+                      ...prev,
+                      showRecommenderDialog: false,
+                    }))
+                  }
                   className="flex-1"
                 >
                   Cancel
                 </Button>
                 <Button
                   onClick={handleRecommenderSubmit}
-                  disabled={state.isSaving || !state.recommenderName || !state.recommenderEmail}
+                  disabled={
+                    state.isSaving ||
+                    !state.recommenderName ||
+                    !state.recommenderEmail
+                  }
                   className="flex-1"
                 >
                   {state.isSaving ? "Saving..." : "Save"}
@@ -216,6 +304,64 @@ export default function DocumentEditor() {
             </div>
           </DialogContent>
         </Dialog>
+
+        {/* Generate confirmation dialog */}
+        <AlertDialog
+          open={state.showConfirmationDialog}
+          onOpenChange={(open) =>
+            setState((prev) => ({ ...prev, showConfirmationDialog: open }))
+          }
+        >
+          <AlertDialogContent className="sm:max-w-[425px]">
+            <AlertDialogHeader>
+              <AlertDialogTitle className="text-xl font-semibold">
+                Generate {formatDocumentType(document?.type ?? "Document")}
+              </AlertDialogTitle>
+            </AlertDialogHeader>
+            <AlertDialogDescription className="space-y-2">
+              <p>
+                This will use{" "}
+                <strong>
+                  {document?.type === "sop"
+                    ? AI_CREDITS_FOR_SOP
+                    : AI_CREDITS_FOR_LOR}
+                </strong>{" "}
+                AI credits to generate a{" "}
+                {document?.type === "sop"
+                  ? "Statement of Purpose"
+                  : "Letter of Recommendation"}{" "}
+                based on your profile and application details.
+              </p>
+              <p className="text-red-500">
+                Any existing content will be overwritten.
+              </p>
+            </AlertDialogDescription>
+            <p className="text-sm font-medium">
+              Do you want to proceed with generation?
+            </p>
+            <div className="flex gap-3">
+              <Button
+                variant="outline"
+                onClick={() =>
+                  setState((prev) => ({
+                    ...prev,
+                    showConfirmationDialog: false,
+                  }))
+                }
+                className="flex-1"
+              >
+                Cancel
+              </Button>
+              <Button
+                onClick={performDocumentGeneration}
+                disabled={state.isGenerating}
+                className="flex-1"
+              >
+                {state.isGenerating ? "Generating..." : "Generate"}
+              </Button>
+            </div>
+          </AlertDialogContent>
+        </AlertDialog>
       </div>
     </PageWrapper>
   );

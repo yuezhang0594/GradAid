@@ -21,8 +21,9 @@ export function useDocumentEditor() {
     recommenderName: "",
     recommenderEmail: "",
     showRecommenderDialog: false,
+    showConfirmationDialog: false,
     isSaving: false,
-    isGenerating: false
+    isGenerating: false,
   });
 
   // Get document ID from URL
