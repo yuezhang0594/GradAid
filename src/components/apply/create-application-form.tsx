@@ -28,8 +28,9 @@ import { useApply } from "@/hooks/useApply";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import formatDate from "@/lib/formatDate";
-import { DocumentStatus, DocumentType, ApplicationPriority } from "convex/validators";
+import { DocumentStatus, DocumentType, ApplicationPriority, APPLICATION_NOTES_MAX_CHARS } from "#/validators";
 import { toast } from 'sonner';
+import { sanitizeInput } from "@/lib/inputValidation";
 
 interface CreateApplicationFormProps {
     programId: Id<"programs">;
@@ -39,29 +40,50 @@ interface CreateApplicationFormProps {
 const formSchema = z.object({
     deadline: z.string({
         required_error: "Please select an application deadline",
-    }),
-    customDeadline: z.string().refine(
-        (date) => {
-            if (!date) return true; // Skip validation if empty (will be caught by required check)
-            const selectedDate = new Date(date);
-            const tomorrow = new Date();
-            tomorrow.setDate(tomorrow.getDate() + 1);
-            tomorrow.setHours(0, 0, 0, 0);
-            return selectedDate >= tomorrow;
-        },
-        {
-            message: "Deadline must be at least one day in the future",
-        }
-    ),
+    }).min(1, "Please select an application deadline"),
+    customDeadline: z.string().optional(),
     priority: z.string({
         required_error: "Please select a priority level",
     }),
-    notes: z.string().optional(),
+    notes: z.string()
+        .max(APPLICATION_NOTES_MAX_CHARS, { message: `Notes are too long (maximum ${APPLICATION_NOTES_MAX_CHARS} characters)` })
+        .optional()
+        .transform(val => {
+            // Sanitize and trim input, transform empty strings to undefined
+            if (!val) return undefined;
+            // Remove potential HTML/script tags and trim whitespace
+            return sanitizeInput(val) || undefined;
+        }),
     documents: z.array(z.string()).nonempty({
         message: "You must select at least one document to generate",
     }),
     lorCount: z.number().min(1, "You need at least 1 letter of recommendation").max(5, "Maximum 5 letters allowed").optional(),
-});
+}).refine(
+    (data) => {
+        // If deadline is set to custom, customDeadline must be filled
+        return data.deadline !== OTHER_DEADLINE_VALUE || (data.customDeadline && data.customDeadline.length > 0);
+    },
+    {
+        message: "Custom deadline date is required",
+        path: ["customDeadline"],
+    }
+).refine(
+    (data) => {
+        // If customDeadline is provided, ensure it's a future date
+        if (data.deadline === OTHER_DEADLINE_VALUE && data.customDeadline) {
+            const selectedDate = new Date(data.customDeadline);
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            tomorrow.setHours(0, 0, 0, 0);
+            return selectedDate >= tomorrow;
+        }
+        return true;
+    },
+    {
+        message: "Deadline must be at least one day in the future",
+        path: ["customDeadline"],
+    }
+);
 
 type FormValues = z.infer<typeof formSchema>;
 
@@ -112,67 +134,77 @@ const CreateApplicationForm = ({ programId }: CreateApplicationFormProps) => {
     };
 
     const onSubmit = async (data: FormValues) => {
-        if (!program || !university) return;
+        try {
+            if (!program || !university) return;
 
-        // Convert documents to the format expected by the API
-        const formattedRequirements = [];
+            // Convert documents to the format expected by the API
+            const formattedRequirements = [];
 
-        // Process each document type selected by the user
-        for (const docId of data.documents) {
-            if (docId === LOR_ID && needsLorCount && data.lorCount) {
-                // Create multiple LOR documents based on lorCount
-                for (let i = 1; i <= data.lorCount; i++) {
+            // Process each document type selected by the user
+            for (const docId of data.documents) {
+                if (docId === LOR_ID && needsLorCount && data.lorCount) {
+                    // Create multiple LOR documents based on lorCount
+                    for (let i = 1; i <= data.lorCount; i++) {
+                        formattedRequirements.push({
+                            type: docId as DocumentType,
+                            status: "not_started" as DocumentStatus
+                        });
+                    }
+                } else {
+                    // Add a single document for other types (like SOP)
                     formattedRequirements.push({
                         type: docId as DocumentType,
                         status: "not_started" as DocumentStatus
                     });
                 }
+            }
+
+            // Get the correct date value in YYYY-MM-DD format
+            let deadlineValue: string;
+
+            if (data.deadline === OTHER_DEADLINE_VALUE) {
+                // Custom deadline is already in YYYY-MM-DD format from the date input
+                deadlineValue = data.customDeadline!;
             } else {
-                // Add a single document for other types (like SOP)
-                formattedRequirements.push({
-                    type: docId as DocumentType,
-                    status: "not_started" as DocumentStatus
+                // Get the actual date from the program's deadlines object for the selected term
+                const selectedDate = program.deadlines?.[data.deadline as keyof typeof program.deadlines];
+
+                if (selectedDate) {
+                    const date = new Date(formatDate(selectedDate))
+                    deadlineValue = date.toISOString().split('T')[0];
+                } else {
+                    deadlineValue = "";
+                }
+            }
+
+            // Sanitize notes input
+            if (data.notes) {
+                data.notes = sanitizeInput(data.notes);
+            }
+
+
+            const applicationId = await createApplication({
+                universityId: program.universityId,
+                programId: program._id,
+                deadline: deadlineValue,
+                priority: data.priority as ApplicationPriority,
+                notes: data.notes,
+                applicationDocuments: formattedRequirements
+            });
+
+            if (applicationId) {
+                toast.success("Application created successfully!");
+                // Navigate to the application detail page after successful creation
+                navigate(`/applications/${university.name}`, {
+                    state: {
+                        applicationId,
+                        universityName: university.name,
+                    }
                 });
             }
-        }
-
-        // Get the correct date value in YYYY-MM-DD format
-        let deadlineValue: string;
-
-        if (data.deadline === OTHER_DEADLINE_VALUE) {
-            // Custom deadline is already in YYYY-MM-DD format from the date input
-            deadlineValue = data.customDeadline!;
-        } else {
-            // Get the actual date from the program's deadlines object for the selected term
-            const selectedDate = program.deadlines?.[data.deadline as keyof typeof program.deadlines];
-
-            if (selectedDate) {
-                const date = new Date(formatDate(selectedDate))
-                deadlineValue = date.toISOString().split('T')[0];
-            } else {
-                // No valid deadline selected, show error and exit
-                toast.error("Please select an application deadline.");
-                return;
-            }
-        }
-
-        const applicationId = await createApplication({
-            universityId: program.universityId,
-            programId: program._id,
-            deadline: deadlineValue,
-            priority: data.priority as ApplicationPriority,
-            notes: data.notes,
-            applicationDocuments: formattedRequirements
-        });
-
-        if (applicationId) {
-            // Navigate to the application detail page after successful creation
-            navigate(`/applications/${university.name}`, {
-                state: {
-                    applicationId,
-                    universityName: university.name,
-                }
-            });
+        } catch (error) {
+            toast.error("Failed to create application. Please check your form inputs.");
+            console.error("Application creation error:", error);
         }
     };
 
@@ -260,7 +292,7 @@ const CreateApplicationForm = ({ programId }: CreateApplicationFormProps) => {
                                         name="customDeadline"
                                         render={({ field }) => (
                                             <FormItem>
-                                                <FormLabel>Custom Deadline Date</FormLabel>
+                                                <FormLabel>Custom Deadline Date <span className="text-red-500">*</span></FormLabel>
                                                 <FormControl>
                                                     <Input
                                                         type="date"
@@ -315,12 +347,18 @@ const CreateApplicationForm = ({ programId }: CreateApplicationFormProps) => {
                                 <FormItem>
                                     <FormLabel>Notes</FormLabel>
                                     <FormDescription>
-                                        Include any specific details or reminders for this application
+                                        <div className="flex justify-between items-center">
+                                            <span>Include any specific details or reminders for this application</span>
+                                            <span className={`text-xs ${(field.value?.length || 0) > APPLICATION_NOTES_MAX_CHARS ? 'text-red-500 font-bold' : 'text-gray-500'}`}>
+                                                {field.value?.length || 0}/{APPLICATION_NOTES_MAX_CHARS}
+                                            </span>
+                                        </div>
                                     </FormDescription>
                                     <FormControl>
                                         <Textarea
                                             placeholder="Add any personal notes about this application..."
                                             className="resize-none min-h-[120px]"
+                                            maxLength={APPLICATION_NOTES_MAX_CHARS + 50} // Allow a little over the limit for better UX
                                             {...field}
                                         />
                                     </FormControl>

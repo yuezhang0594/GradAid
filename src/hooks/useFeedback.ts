@@ -16,6 +16,8 @@ export interface FeedbackData {
   negative: string;
   /** Numerical rating from 1-5 */
   rating: number;
+  /** Device type from which feedback is submitted */
+  device: "desktop" | "mobile" | "tablet";
 }
 
 // Client-side validation schema
@@ -85,6 +87,7 @@ export function useFeedback() {
         positive: data.positive.trim() || undefined,
         negative: data.negative.trim() || undefined,
         rating: data.rating,
+        device: data.device,
       });
       
       return feedbackId;

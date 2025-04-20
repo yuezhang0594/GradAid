@@ -181,6 +181,7 @@ const schema = defineSchema({
     positive: v.optional(v.string()),
     negative: v.optional(v.string()),
     rating: v.optional(v.number()),
+    device: Validate.deviceTypeValidator
   })
     .index("by_user", ["userId"])
     .index("by_rating", ["rating"]),

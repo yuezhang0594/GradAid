@@ -1,6 +1,7 @@
 import { mutation } from "./_generated/server";
 import { v } from "convex/values";
 import { getCurrentUserIdOrThrow } from "./users";
+import { deviceTypeValidator, FEEDBACK_MAX_CHARS } from "./validators";
 
 /**
  * Submits user feedback to the database
@@ -17,7 +18,8 @@ export const submitFeedback = mutation({
   args: {
     positive: v.optional(v.string()),
     negative: v.optional(v.string()),
-    rating: v.number()
+    rating: v.number(),
+    device: deviceTypeValidator
   },
   handler: async (ctx, args) => {
     const userId = await getCurrentUserIdOrThrow(ctx);
@@ -39,12 +41,11 @@ export const submitFeedback = mutation({
     const negative = sanitizeString(args.negative);
     
     // Check character limits if text is provided
-    const charLimit = 1000;
-    if (positive && positive.length > charLimit) {
-      throw new Error(`Positive feedback exceeds maximum length of ${charLimit} characters`);
+    if (positive && positive.length > FEEDBACK_MAX_CHARS) {
+      throw new Error(`Positive feedback exceeds maximum length of ${FEEDBACK_MAX_CHARS} characters`);
     }
-    if (negative && negative.length > charLimit) {
-      throw new Error(`Negative feedback exceeds maximum length of ${charLimit} characters`);
+    if (negative && negative.length > FEEDBACK_MAX_CHARS) {
+      throw new Error(`Negative feedback exceeds maximum length of ${FEEDBACK_MAX_CHARS} characters`);
     }
     
     // Create the feedback entry
@@ -53,7 +54,8 @@ export const submitFeedback = mutation({
       positive,
       negative,
       rating: args.rating,
-      });
+      device: args.device,
+    });
 
     // Log the activity
     await ctx.db.insert("userActivity", {

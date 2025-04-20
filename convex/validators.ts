@@ -1,56 +1,19 @@
 import { Infer, v } from "convex/values";
 import { z } from "zod";
+import { sanitizeInput } from "../src/lib/inputValidation";
 
 /**
  * Global constants for validation limits
  */
 export const FEEDBACK_MAX_CHARS = 1000;
+export const APPLICATION_NOTES_MAX_CHARS = 5000;
 export const DEFAULT_AI_CREDITS = 500;
 export const LOADING_INDICATOR_DELAY = 500;
 export const RESET_DAYS_IN_MILLISECONDS = 30 * 24 * 60 * 60 * 1000; // 30 days in milliseconds
 export const AI_CREDITS_FOR_SOP = 5;
 export const AI_CREDITS_FOR_LOR = 3;
 export const MAX_LOR = 5;
-/**
- * Zod schema for validating user feedback submissions
- * Includes positive feedback, negative feedback, and a numerical rating
- * Applies sanitization and validation rules to prevent potential security issues
- * Only rating is required; both text fields are optional
- */
-export const feedbackSchema = z.object({
-    positive: z.string()
-        .max(FEEDBACK_MAX_CHARS, { message: `Feedback is too long (maximum ${FEEDBACK_MAX_CHARS} characters)` })
-        .optional()
-        .transform(val => {
-            // Sanitize and trim input, transform empty strings to undefined
-            if (!val) return undefined;
-            // Remove potential HTML/script tags and trim whitespace
-            return val.replace(/<[^>]*>/g, '').trim() || undefined;
-        }),
-    negative: z.string()
-        .max(FEEDBACK_MAX_CHARS, { message: `Feedback is too long (maximum ${FEEDBACK_MAX_CHARS} characters)` })
-        .optional()
-        .transform(val => {
-            // Sanitize and trim input, transform empty strings to undefined
-            if (!val) return undefined;
-            // Remove potential HTML/script tags and trim whitespace
-            return val.replace(/<[^>]*>/g, '').trim() || undefined;
-        }),
-    rating: z.number()
-        .int({ message: "Rating is required." })
-        .min(1, { message: "Rating is required." })
-        .max(5, { message: "Rating is required." })
-});
 
-/**
- * Convex validator for feedback submissions
- * Used in Convex functions to validate incoming feedback data
- */
-export const feedbackValidator = v.object({
-    positive: v.optional(v.string()),
-    negative: v.optional(v.string()),
-    rating: v.number()
-});
 
 /**
  * TypeScript type definition for feedback input data
@@ -110,6 +73,12 @@ export const aiCreditUsageTypeValidator = v.union(
     v.literal("ai_usage"),
     v.literal("ai_credits_reset")
 );
+export type DeviceType = Infer<typeof deviceTypeValidator>;
+export const deviceTypeValidator = v.union(
+    v.literal("desktop"),
+    v.literal("mobile"),
+    v.literal("tablet")
+);
 export type SearchFilters = Infer<typeof searchFilterValidator>;
 export const searchFilterValidator = v.object({
     programType: v.optional(v.union(v.literal("all"), v.string())),
@@ -153,3 +122,48 @@ export const TABLES_WITH_USER_DATA = [
     "userActivity",
     "favorites",
 ] as const;
+
+/**
+ * Zod schema for validating user feedback submissions
+ * Includes positive feedback, negative feedback, and a numerical rating
+ * Applies sanitization and validation rules to prevent potential security issues
+ * Only rating is required; both text fields are optional
+ */
+export const feedbackSchema = z.object({
+    positive: z.string()
+        .max(FEEDBACK_MAX_CHARS, { message: `Feedback is too long (maximum ${FEEDBACK_MAX_CHARS} characters)` })
+        .optional()
+        .transform(val => {
+            // Sanitize and trim input, transform empty strings to undefined
+            if (!val) return undefined;
+            // Remove potential HTML/script tags and trim whitespace
+            return sanitizeInput(val) || undefined;
+        }),
+    negative: z.string()
+        .max(FEEDBACK_MAX_CHARS, { message: `Feedback is too long (maximum ${FEEDBACK_MAX_CHARS} characters)` })
+        .optional()
+        .transform(val => {
+            // Sanitize and trim input, transform empty strings to undefined
+            if (!val) return undefined;
+            // Remove potential HTML/script tags and trim whitespace
+            return sanitizeInput(val) || undefined;
+        }),
+    rating: z.number()
+        .int({ message: "Rating is required." })
+        .min(1, { message: "Rating is required." })
+        .max(5, { message: "Rating is required." }),
+    device: z.enum(["desktop", "mobile", "tablet"], {
+        errorMap: () => ({ message: "Device type is required." }),
+    })
+});
+
+/**
+ * Convex validator for feedback submissions
+ * Used in Convex functions to validate incoming feedback data
+ */
+export const feedbackValidator = v.object({
+    positive: v.optional(v.string()),
+    negative: v.optional(v.string()),
+    rating: v.number(),
+    device: deviceTypeValidator
+});
