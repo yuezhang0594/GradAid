@@ -1,35 +1,36 @@
-import React, { useState, useCallback, useMemo } from 'react';
-import { useProgramSearch } from '../hooks/useProgramSearch';
-import { useFavorites } from '../hooks/useFavorites';
-import ProgramSearch from '../components/search-programs/ProgramSearch';
-import UniversityCard from '../components/search-programs/UniversityCard';
-import { Card, CardContent } from '@/components/ui/card';
-import { Skeleton } from '@/components/ui/skeleton';
-import { Separator } from '@/components/ui/separator';
-import { PageWrapper } from '@/components/ui/page-wrapper';
+import React, { useState, useCallback, useMemo } from "react";
+import { useProgramSearch } from "../hooks/useProgramSearch";
+import { useFavorites } from "../hooks/useFavorites";
+import ProgramSearch from "../components/search-programs/ProgramSearch";
+import UniversityCard from "../components/search-programs/UniversityCard";
+import { Card, CardContent } from "@/components/ui/card";
+import { Skeleton } from "@/components/ui/skeleton";
+import { Separator } from "@/components/ui/separator";
+import { PageWrapper } from "@/components/ui/page-wrapper";
+import { SEARCH_UNIVERSITY_LIMIT } from "#/validators";
 
 /**
  * UniversitySearchPage Component
- * 
+ *
  * Renders a searchable and filterable page for graduate programs across universities.
- * 
+ *
  * Features:
  * - Advanced search functionality with filters
  * - Favorite/save program functionality for authenticated users
  * - Responsive layout with loading states
- * 
+ *
  * The component uses custom hooks:
  * - useUniversities: Manages university data, filtering, and pagination
  * - useFavorites: Handles saving/favoriting functionality
- * 
+ *
  * State management:
  * - Manages search query and filters
  * - Handles loading states
- * 
+ *
  * @returns React component displaying the university search interface with results
  */
 const UniversitySearchPage: React.FC = () => {
-  const [searchQuery, setSearchQuery] = useState<string>('');
+  const [searchQuery, setSearchQuery] = useState<string>("");
 
   // Use the universities hook for fetching and filtering data
   const {
@@ -43,34 +44,47 @@ const UniversitySearchPage: React.FC = () => {
   } = useProgramSearch(searchQuery);
 
   // Use the favorites hook to manage favorite programs
-  const {
-    toggleFavorite,
-    isFavorite,
-    favoritesLoading,
-  } = useFavorites();
+  const { toggleFavorite, isFavorite, favoritesLoading } = useFavorites();
 
   // Map programs to their corresponding universities
-  const universitiesWithFilteredPrograms = useMemo(() => { 
-    const programsByUniversityId = (programs || []).reduce((acc, program) => {
-      if (!program.universityId) return acc;
+  const universitiesWithFilteredPrograms = useMemo(() => {
+    const programsByUniversityId = (programs || []).reduce(
+      (acc, program) => {
+        if (!program.universityId) return acc;
 
-      if (!acc[program.universityId]) {
-        acc[program.universityId] = [];
-      }
-      acc[program.universityId].push(program);
-      return acc;
-    }, {} as Record<string, any[]>);
+        if (!acc[program.universityId]) {
+          acc[program.universityId] = [];
+        }
+        acc[program.universityId].push(program);
+        return acc;
+      },
+      {} as Record<string, any[]>
+    );
 
     // Filter universities to only those with programs from our search
     const filteredUniversities = (universities || [])
-      .filter(university => programsByUniversityId[university._id])
-      .map(university => ({
+      .filter((university) => programsByUniversityId[university._id])
+      .map((university) => ({
         ...university,
-        filteredPrograms: programsByUniversityId[university._id] || []
+        filteredPrograms: programsByUniversityId[university._id] || [],
       }));
 
     return filteredUniversities;
   }, [universities, programs]);
+
+  const universitiesToDisplay = useMemo(() => {
+    // Order the universities by ranking
+    return (
+      universitiesWithFilteredPrograms
+        .sort((a, b) => {
+          // Use nullish coalescing operator to handle undefined rankings
+          // Universities without rankings will be placed at the end
+          return (a.ranking ?? Infinity) - (b.ranking ?? Infinity);
+        })
+        // Limit the number of universities displayed
+        .slice(0, SEARCH_UNIVERSITY_LIMIT)
+    );
+  }, [universitiesWithFilteredPrograms]);
 
   // Handle search query changes
   const handleSearch = useCallback((query: string) => {
@@ -78,13 +92,16 @@ const UniversitySearchPage: React.FC = () => {
   }, []);
 
   // Simplified filter handler without delay
-  const handleFilterChange = useCallback((newFilters: any) => {
-    updateFilters(newFilters);
-  }, [updateFilters]);
+  const handleFilterChange = useCallback(
+    (newFilters: any) => {
+      updateFilters(newFilters);
+    },
+    [updateFilters]
+  );
 
   return (
-    <PageWrapper 
-      title="Program Search" 
+    <PageWrapper
+      title="Program Search"
       description="Find the perfect graduate program for your academic journey"
     >
       {/* Search component */}
@@ -114,9 +131,12 @@ const UniversitySearchPage: React.FC = () => {
         ) : universitiesWithFilteredPrograms.length === 0 ? (
           <Card className="text-center py-16">
             <CardContent className="pt-10">
-              <h3 className="text-xl font-medium text-gray-700 mb-2">No programs found</h3>
+              <h3 className="text-xl font-medium text-gray-700 mb-2">
+                No programs found
+              </h3>
               <p className="text-muted-foreground">
-                Try adjusting your search criteria or filters to see more results.
+                Try adjusting your search criteria or filters to see more
+                results.
               </p>
             </CardContent>
           </Card>
@@ -124,12 +144,13 @@ const UniversitySearchPage: React.FC = () => {
           <>
             <div className="mb-4">
               <p className="text-muted-foreground">
-                {programs?.length ?? 0} programs found across {universitiesWithFilteredPrograms.length} universities
+                {programs?.length ?? 0} programs found across{" "}
+                {universitiesWithFilteredPrograms.length} universities
               </p>
             </div>
 
             <div className="grid grid-cols-1 gap-6">
-              {universitiesWithFilteredPrograms.map(university => (
+              {universitiesToDisplay.map((university) => (
                 <UniversityCard
                   key={university._id}
                   university={university}
@@ -142,6 +163,12 @@ const UniversitySearchPage: React.FC = () => {
           </>
         )}
       </section>
+      {universitiesWithFilteredPrograms.length > SEARCH_UNIVERSITY_LIMIT && (
+        <p className="text-muted-foreground text-sm mt-4">
+          Results limited to {SEARCH_UNIVERSITY_LIMIT} universities. Please
+          apply more filters to narrow down your search.
+        </p>
+      )}
     </PageWrapper>
   );
 };

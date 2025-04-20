@@ -14,6 +14,7 @@ export const RESET_DAYS_IN_MILLISECONDS = RESET_TIME_IN_DAYS * 24 * 60 * 60 * 10
 export const AI_CREDITS_FOR_SOP = 5;
 export const AI_CREDITS_FOR_LOR = 3;
 export const MAX_LOR = 5;
+export const SEARCH_UNIVERSITY_LIMIT = 10;
 
 
 /**
