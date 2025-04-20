@@ -91,6 +91,18 @@ export default function Dashboard() {
             <ExternalLink className="ml-2 h-4 w-4" />
           </Button>
         </h2>
+        {documentStats.length === 0 && (
+          <Card className="text-center py-16">
+            <CardContent className="pt-10">
+              <h3 className="text-xl font-medium text-gray-700 mb-2">
+                No documents found
+              </h3>
+              <p className="text-muted-foreground">
+                You have no documents to review. Please check back later.
+              </p>
+            </CardContent>
+          </Card>
+        )}
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {documentStats
             .slice(0, showAllDocuments ? documentStats.length : initialDocumentsToShow)

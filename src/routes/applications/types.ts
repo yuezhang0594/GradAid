@@ -12,6 +12,7 @@ export interface DocumentState {
   recommenderEmail: string;
   showRecommenderDialog: boolean;
   showConfirmationDialog: boolean;
+  showConfirmationNext: boolean;
   isSaving: boolean;
   isGenerating: boolean;
 }

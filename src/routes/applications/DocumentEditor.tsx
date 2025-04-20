@@ -25,10 +25,6 @@ import {
 } from "@/components/ui";
 import { useDocumentEditor } from "@/hooks/useDocumentEditor";
 import { formatDocumentType, formatLastEdited } from "@/lib/formatDocument";
-import {
-  useGenerateStatementOfPurpose,
-  useGenerateLetterOfRecommendation,
-} from "@/hooks/useLLM";
 import { AI_CREDITS_FOR_LOR, AI_CREDITS_FOR_SOP } from "#/validators";
 
 export default function DocumentEditor() {
@@ -40,13 +36,9 @@ export default function DocumentEditor() {
     handleSave,
     handleBack,
     handleRecommenderSubmit,
+    handleGenerateDocument,
+    performDocumentGeneration,
   } = useDocumentEditor();
-
-  // LLM generation hooks
-  const generateSOP = useGenerateStatementOfPurpose(document?.applicationId);
-  const generateLOR = documentId
-    ? useGenerateLetterOfRecommendation(documentId)
-    : undefined;
 
   // Load initial document content
   useEffect(() => {
@@ -72,66 +64,13 @@ export default function DocumentEditor() {
       document?.type === "lor" &&
       (!document.recommenderName || !document.recommenderEmail)
     ) {
-      setState((prev) => ({ ...prev, showRecommenderDialog: true }));
+      setState((prev) => ({
+        ...prev,
+        showRecommenderDialog: true,
+        showConfirmationNext: true,
+      }));
     }
   }, [document, setState]);
-
-  // Handler for document generation
-  const handleGenerateDocument = async () => {
-    if (!document) return;
-
-    // Ensure recommender info is present for LOR
-    if (
-      document.type === "lor" &&
-      (!state.recommenderName || !state.recommenderEmail)
-    ) {
-      setState((prev) => ({ ...prev, showRecommenderDialog: true }));
-      return;
-    }
-
-    // Show dialog to confirm generation
-    setState((prev) => ({ ...prev, showConfirmationDialog: true }));
-  };
-
-  // Handle actual document generation after confirmation
-  const performDocumentGeneration = async () => {
-    // Prevent duplicate actions
-    if (state.isGenerating) return;
-
-    setState((prev) => ({
-      ...prev,
-      isGenerating: true,
-    }));
-
-    try {
-      let success = false;
-      if (document?.type === "sop") {
-        success = (await generateSOP()) !== null;
-      } else if (document?.type === "lor" && generateLOR) {
-        success = (await generateLOR(document.applicationId)) !== null;
-      }
-
-      // If document generation was successful, also save it
-      if (success && state.content) {
-        // Set saving state
-        setState((prev) => ({
-          ...prev,
-          isSaving: true,
-          showConfirmationDialog: false,
-        }));
-        try {
-          await handleSave();
-          // toast.success("Document saved successfully!");
-        } catch (error) {
-          console.error("Error saving generated document:", error);
-        } finally {
-          setState((prev) => ({ ...prev, isSaving: false }));
-        }
-      }
-    } finally {
-      setState((prev) => ({ ...prev, isGenerating: false }));
-    }
-  };
 
   if (!documentId) {
     return (
@@ -153,14 +92,14 @@ export default function DocumentEditor() {
       }
     >
       <div className="space-y-6 mx-auto max-w-5xl">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between sm:flex-row flex-col gap-4">
           <div className="flex items-center gap-4">
             <Button variant="outline" onClick={handleBack} className="gap-2">
               <ArrowLeftIcon className="h-4 w-4" />
               Back
             </Button>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 sm:flex-row flex-col">
             {document?.type === "lor" && (
               <Button
                 variant="outline"

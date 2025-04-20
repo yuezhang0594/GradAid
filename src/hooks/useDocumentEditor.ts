@@ -7,6 +7,7 @@ import { api } from "#/_generated/api";
 import { Id } from "#/_generated/dataModel";
 import { toast } from "sonner";
 import { DocumentState } from "@/routes/applications/types";
+import { useGenerateStatementOfPurpose, useGenerateLetterOfRecommendation } from "./useLLM";
 
 export function useDocumentEditor() {
   const navigate = useNavigate();
@@ -22,6 +23,7 @@ export function useDocumentEditor() {
     recommenderEmail: "",
     showRecommenderDialog: false,
     showConfirmationDialog: false,
+    showConfirmationNext: false,
     isSaving: false,
     isGenerating: false,
   });
@@ -38,6 +40,12 @@ export function useDocumentEditor() {
   const saveDocument = useMutation(api.documents.mutations.saveDocumentDraft);
   const updateRecommender = useMutation(api.documents.mutations.updateRecommender);
   const updateDocStatus = useMutation(api.documents.mutations.updateDocumentStatus);
+
+  // LLM generation hooks
+  const generateSOP = useGenerateStatementOfPurpose(document?.applicationId);
+  const generateLOR = documentId
+    ? useGenerateLetterOfRecommendation(documentId)
+    : undefined;
 
   const handleSave = useCallback(async () => {
     if (!documentId) {
@@ -98,16 +106,74 @@ export function useDocumentEditor() {
       toast.success("Recommender info saved!", {
         description: "An email will be sent to the recommender."
       });
-      setState(prev => ({ ...prev, showRecommenderDialog: false }));
+      setState(prev => ({ ...prev, showRecommenderDialog: false, showConfirmationDialog: state.showConfirmationNext }));
     } catch (error) {
       console.error("Error updating recommender:", error);
       toast.error("Error saving recommender info", {
         description: "Please try again"
       });
     } finally {
-      setState(prev => ({ ...prev, isSaving: false }));
+      setState(prev => ({ ...prev, isSaving: false, showConfirmationNext: false }));
     }
   }, [documentId, state.recommenderName, state.recommenderEmail, updateRecommender]);
+
+  // Handler for document generation
+  const handleGenerateDocument = useCallback(async () => {
+    if (!document) return;
+
+    // Ensure recommender info is present for LOR
+    if (
+      document.type === "lor" &&
+      (!state.recommenderName || !state.recommenderEmail)
+    ) {
+      setState((prev) => ({ ...prev, showRecommenderDialog: true, showConfirmationNext: true }));
+      return;
+    }
+
+    // Show dialog to confirm generation
+    setState((prev) => ({ ...prev, showConfirmationDialog: true }));
+  }, [document, state.recommenderName, state.recommenderEmail]);
+
+  // Handle actual document generation after confirmation
+  const performDocumentGeneration = useCallback(async () => {
+    // Prevent duplicate actions
+    if (state.isGenerating) return;
+
+    setState((prev) => ({
+      ...prev,
+      isGenerating: true,
+      showConfirmationDialog: false,
+    }));
+
+    try {
+      let success = false;
+      if (document?.type === "sop") {
+        success = (await generateSOP()) !== null;
+      } else if (document?.type === "lor" && generateLOR) {
+        success = (await generateLOR(document.applicationId)) !== null;
+      }
+
+      // If document generation was successful, also save it
+      if (success && state.content) {
+        // Set saving state
+        setState((prev) => ({
+          ...prev,
+          isSaving: true,
+        }));
+        try {
+          await handleSave();
+          // toast.success("Document saved successfully!");
+        } catch (error) {
+          console.error("Error saving generated document:", error);
+        } finally {
+          setState((prev) => ({ ...prev, isSaving: false }));
+        }
+      }
+    } finally {
+      setState((prev) => ({ ...prev, isGenerating: false }));
+    }
+  }, [document, state.content, state.isGenerating, handleSave]);
+
 
   return {
     state,
@@ -116,6 +182,10 @@ export function useDocumentEditor() {
     documentId,
     handleSave,
     handleBack,
-    handleRecommenderSubmit
+    handleRecommenderSubmit,
+    handleGenerateDocument,
+    performDocumentGeneration,
+    generateSOP,
+    generateLOR,
   };
 }
