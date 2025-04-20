@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { useQuery, useMutation } from "convex/react";
-import { api } from "../../convex/_generated/api";
-import { Doc, Id } from "../../convex/_generated/dataModel";
+import { api } from "#/_generated/api";
+import { Doc, Id } from "#/_generated/dataModel";
 import { toast } from "sonner";
+import { DocumentType, DocumentStatus, ApplicationPriority } from "#/validators";
 
 export type Program = Doc<"programs">;
 export type University = Doc<"universities">;
@@ -15,14 +16,14 @@ export function useApply(programId?: Id<"programs"> | null) {
   
   // Get program data
   const programsQuery = useQuery(
-    api.programs.search.getProgramsByIds, 
+    api.programs.queries.getProgramsByIds, 
     programId ? { programIds: [programId] } : "skip"
   );
   const program: Program | null = programsQuery?.length ? programsQuery[0] : null;
   
   // Get university data for the program
   const universityQuery = useQuery(
-    api.programs.search.getUniversity,
+    api.universities.queries.getUniversity,
     program ? { universityId: program.universityId } : "skip"
   );
   const university: University | null = universityQuery ?? null;
@@ -38,16 +39,16 @@ export function useApply(programId?: Id<"programs"> | null) {
     deadline,
     priority,
     notes,
-    requirements
+    applicationDocuments
   }: {
     universityId: Id<"universities">;
     programId: Id<"programs">;
     deadline: string;
-    priority: "high" | "medium" | "low";
+    priority: ApplicationPriority;
     notes?: string;
-    requirements: Array<{
-      type: string;
-      status: "completed" | "in_progress" | "pending" | "not_started";
+    applicationDocuments: Array<{
+      type: DocumentType;
+      status: DocumentStatus;
     }>;
   }) => {
     setIsCreating(true);
@@ -59,7 +60,7 @@ export function useApply(programId?: Id<"programs"> | null) {
         deadline,
         priority,
         notes,
-        requirements
+        applicationDocuments
       });
       
       toast.success("Application Created", {

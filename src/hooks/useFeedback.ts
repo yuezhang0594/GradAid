@@ -1,9 +1,9 @@
 import { useMutation } from "convex/react";
-import { api } from "../../convex/_generated/api";
+import { api } from "#/_generated/api";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { z } from "zod";
-import { FEEDBACK_MAX_CHARS } from "../../convex/validators";
+import { FEEDBACK_MAX_CHARS } from "#/validators";
 
 /**
  * Interface representing user feedback data
@@ -16,6 +16,8 @@ export interface FeedbackData {
   negative: string;
   /** Numerical rating from 1-5 */
   rating: number;
+  /** Device type from which feedback is submitted */
+  device: "desktop" | "mobile" | "tablet";
 }
 
 // Client-side validation schema
@@ -85,6 +87,7 @@ export function useFeedback() {
         positive: data.positive.trim() || undefined,
         negative: data.negative.trim() || undefined,
         rating: data.rating,
+        device: data.device,
       });
       
       return feedbackId;

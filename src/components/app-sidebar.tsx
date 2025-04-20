@@ -3,14 +3,16 @@ import { GradAidLogo } from "@/assets/GradAidLogo";
 import { useNavigate, useLocation } from "react-router-dom";
 import {
   UserPenIcon,
-  FilePlus2Icon,
   MessageCircleQuestionIcon,
   InfoIcon,
   FileTextIcon,
   ClipboardListIcon,
   HeartIcon,
   SearchIcon,
-  MessageSquareHeart
+  MessageSquareHeart,
+  FileUserIcon,
+  FilePenIcon,
+  ClipboardPlusIcon
 } from 'lucide-react';
 import {
   Sidebar,
@@ -62,7 +64,7 @@ const data = {
         {
           title: "Apply",
           url: "/apply",
-          icon: FilePlus2Icon,
+          icon: ClipboardPlusIcon,
         },
       ],
     },
@@ -86,25 +88,36 @@ const data = {
       title: "Support",
       url: "#",
       items: [
-        // {
-        //   title: "Settings",
-        //   url: "/settings",
-        //   icon: SettingsIcon,
-        // },
         {
           title: "FAQ",
-          url: "/tos",
+          url: "/faq",
           icon: InfoIcon,
+        },
+        {
+          title: "Contact Us",
+          url: "/contact",
+          icon: MessageCircleQuestionIcon,
         },
         {
           title: "Feedback",
           url: "/feedback",
           icon: MessageSquareHeart,
         },
+      ],
+    },
+    {
+      title: "Legal",
+      url: "#",
+      items: [
         {
-          title: "Contact Us",
+          title: "Terms of Service",
+          url: "/tos",
+          icon: FilePenIcon,
+        },
+        {
+          title: "Privacy Policy",
           url: "/privacy",
-          icon: MessageCircleQuestionIcon,
+          icon: FileUserIcon,
         },
       ],
     },

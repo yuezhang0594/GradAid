@@ -1,140 +1,23 @@
 import { query } from "../_generated/server";
-import { getCurrentUserIdOrThrow, getDemoUserId } from "../users";
-import { Id } from "../_generated/dataModel";
+import { getCurrentUserIdOrThrow } from "../users";
 import { v } from "convex/values";
+import { getApplicationDocumentsByUniversity, getApplicationWithDetails, getApplicationsWithProgress, verifyApplicationOwnership } from "./model";
 
 // Query to get applications for a specific user
 export const getApplications = query({
-  args: {
-    demoMode: v.optional(v.boolean())
-  },
+  args: {},
   handler: async (ctx, args) => {
-    // Try to get current user, if not available or demo mode is on, use mock user
-    let userId: Id<"users">;
-    try {
-      if (args.demoMode) {
-        userId = await getDemoUserId(ctx);
-      } else {
-        userId = await getCurrentUserIdOrThrow(ctx);
-      }
-    } catch {
-      // Use mock user ID if authentication fails
-      userId = "mock-user-id" as Id<"users">;
-    }
-
-    // Get all applications for the user
-    const applications = await ctx.db
-      .query("applications")
-      .withIndex("by_user", (q) => q.eq("userId", userId))
-      .collect();
-
-    // Get university and program details for each application
-    const applicationsWithDetails = await Promise.all(
-      applications.map(async (application) => {
-        const university = await ctx.db.get(application.universityId);
-        const program = await ctx.db.get(application.programId);
-        
-        // Get documents for this application
-        const documents = await ctx.db
-          .query("applicationDocuments")
-          .withIndex("by_application", (q) => q.eq("applicationId", application._id))
-          .collect();
-
-        // Calculate document completion
-        const totalDocuments = documents.length;
-        const completeDocuments = documents.filter(doc => doc.status === "complete").length;
-        const progress = totalDocuments > 0 ? Math.round((completeDocuments / totalDocuments) * 100) : 0;
-
-        return {
-          id: application._id,
-          university: university?.name ?? "Unknown University",
-          program: program?.name ?? "Unknown Program",
-          degree: program?.degree ?? "Unknown Degree",
-          status: application.status,
-          priority: application.priority,
-          deadline: application.deadline,
-          documentsComplete: completeDocuments,
-          totalDocuments,
-          progress,
-        };
-      })
-    );
-
-    return applicationsWithDetails;
+    const userId = await getCurrentUserIdOrThrow(ctx);
+    return await getApplicationsWithProgress(ctx, userId);
   },
 });
 
 // Query to get document details with application info
 export const getDocumentDetails = query({
-  args: {
-    demoMode: v.optional(v.boolean())
-  },
+  args: {},
   handler: async (ctx, args) => {
-    // Get user ID
-    let userId: Id<"users">;
-    try {
-      if (args.demoMode) {
-        userId = await getDemoUserId(ctx);
-      } else {
-        userId = await getCurrentUserIdOrThrow(ctx);
-      }
-    } catch {
-      userId = "mock-user-id" as Id<"users">;
-    }
-
-    // Get all applications for the user
-    const applications = await ctx.db
-      .query("applications")
-      .withIndex("by_user", (q) => q.eq("userId", userId))
-      .collect();
-
-    // Get documents for each application and group by university
-    const universitiesMap = new Map();
-
-    for (const application of applications) {
-      const university = await ctx.db.get(application.universityId);
-      const program = await ctx.db.get(application.programId);
-
-      if (!university || !program) continue;
-
-      // Get documents for this application
-      const documents = await ctx.db
-        .query("applicationDocuments")
-        .withIndex("by_application", (q) => q.eq("applicationId", application._id))
-        .collect();
-
-      const universityData = universitiesMap.get(university.name) || {
-        name: university.name,
-        documents: [],
-        programs: []
-      };
-
-      // Add program if not already present
-      if (!universityData.programs.some((p: { applicationId: Id<"applications"> }) => p.applicationId === application._id)) {
-        universityData.programs.push({
-          applicationId: application._id,
-          name: `${program.degree} in ${program.name}`
-        });
-      }
-
-      // Add documents with their IDs
-      for (const doc of documents) {
-        universityData.documents.push({
-          documentId: doc._id, // Include the applicationDocuments ID
-          type: doc.type,
-          status: doc.status,
-          progress: doc.progress ?? 0,
-          count: 1,
-          program: `${program.degree} in ${program.name}`
-        });
-      }
-
-      universitiesMap.set(university.name, universityData);
-    }
-
-    const result = Array.from(universitiesMap.values());
-    console.log("Document details query output:", result);
-    return result;
+    const userId = await getCurrentUserIdOrThrow(ctx);
+    return await getApplicationDocumentsByUniversity(ctx, userId);
   },
 });
 
@@ -142,73 +25,14 @@ export const getDocumentDetails = query({
 export const getApplicationDetails = query({
   args: {
     applicationId: v.string(),
-    demoMode: v.optional(v.boolean()),
   },
   handler: async (ctx, args) => {
-    // Get user ID
-    let userId: Id<"users">;
-    try {
-      if (args.demoMode) {
-        userId = await getDemoUserId(ctx);
-      } else {
-        userId = await getCurrentUserIdOrThrow(ctx);
-      }
-    } catch {
-      userId = "mock-user-id" as Id<"users">;
-    }
-
-    // Get application details
-    const application = await ctx.db
-      .query("applications")
-      .withIndex("by_user", (q) => q.eq("userId", userId))
-      .filter((q) => q.eq(q.field("_id"), args.applicationId))
-      .first();
-
-    if (!application) {
-      return null;
-    }
-
-    // Get university and program details
-    const university = await ctx.db.get(application.universityId);
-    const program = await ctx.db.get(application.programId);
-
-    // Get documents
-    const documents = await ctx.db
-      .query("applicationDocuments")
-      .withIndex("by_application", (q) => q.eq("applicationId", application._id))
-      .collect();
-
-    // Get LORs
-    const lors = await ctx.db
-      .query("letterOfRecommendations")
-      .withIndex("by_application", (q) => q.eq("applicationId", application._id))
-      .collect();
-
-    return {
-      ...application,
-      university: university?.name ?? "Unknown University",
-      program: program?.name ?? "Unknown Program",
-      degree: program?.degree ?? "Unknown Degree",
-      documents: documents.map(doc => ({
-        id: doc._id,
-        type: doc.type,
-        title: doc.title,
-        status: doc.status,
-        progress: doc.progress,
-        lastEdited: doc.lastEdited,
-        aiSuggestions: doc.aiSuggestionsCount,
-      })),
-      lors: lors.map(lor => ({
-        id: lor._id,
-        status: lor.status,
-        requestedDate: lor.requestedDate,
-        submittedDate: lor.submittedDate,
-        remindersSent: lor.remindersSent,
-      })),
-    };
+    const userId = await getCurrentUserIdOrThrow(ctx);
+    return await getApplicationWithDetails(ctx, userId, args.applicationId);
   },
 });
 
+// TODO: move to university queries
 // Query to get university by name
 export const getUniversityByName = query({
   args: {
@@ -223,40 +47,12 @@ export const getUniversityByName = query({
   },
 });
 
-// Query to get document by ID
-export const getDocumentById = query({
+export const getApplication = query({
   args: {
-    applicationDocumentId: v.id("applicationDocuments"),
-    demoMode: v.optional(v.boolean())
+    applicationId: v.id("applications"),
   },
   handler: async (ctx, args) => {
-    let userId: Id<"users">;
-    try {
-      if (args.demoMode) {
-        userId = await getDemoUserId(ctx);
-      } else {
-        userId = await getCurrentUserIdOrThrow(ctx);
-      }
-    } catch {
-      userId = "mock-user-id" as Id<"users">;
-    }
-    console.log("Getting document for:", { userId, ...args });
-
-    // Get the document to verify ownership
-    const document = await ctx.db.get(args.applicationDocumentId);
-    console.log("Found document:", document);
-    if (!document) {
-      console.log("Document not found");
-      return null;
-    }
-
-    // Get the application to verify ownership
-    const application = await ctx.db.get(document.applicationId);
-    if (!application || application.userId !== userId) {
-      console.log("Application not found or unauthorized");
-      return null;
-    }
-
-    return document;
+    const { application } = await verifyApplicationOwnership(ctx, args.applicationId);
+    return application;
   }
 });

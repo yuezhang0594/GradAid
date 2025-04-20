@@ -4,11 +4,18 @@ import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { toast } from 'sonner';
-import { SendIcon, AlertCircle } from 'lucide-react';
+import { SendIcon, AlertCircle, Monitor, Smartphone, Tablet } from 'lucide-react';
 import { StarRating } from '@/components/ui/star-rating';
 import { useFeedback } from '@/hooks/useFeedback';
 import { Alert, AlertDescription } from '@/components/ui/alert';
-import { feedbackSchema, type FeedbackInput, FEEDBACK_MAX_CHARS } from '../../convex/validators';
+import { feedbackSchema, type FeedbackInput, FEEDBACK_MAX_CHARS, DeviceType } from '#/validators';
+import { 
+    Select, 
+    SelectContent, 
+    SelectItem, 
+    SelectTrigger, 
+    SelectValue 
+} from '@/components/ui/select';
 
 interface FeedbackFormProps {
     className?: string;
@@ -18,6 +25,7 @@ type ValidationErrors = {
     positive?: string;
     negative?: string;
     rating?: string;
+    device?: string;
     general?: string;
 };
 
@@ -46,19 +54,10 @@ const FeedbackForm: React.FC<FeedbackFormProps> = ({ className }) => {
     const [positive, setPositive] = useState('');
     const [negative, setNegative] = useState('');
     const [rating, setRating] = useState(0);
+    const [device, setDevice] = useState<DeviceType>('desktop');
     const [errors, setErrors] = useState<ValidationErrors>({});
 
     const { submitFeedback, isSubmitting, validationError } = useFeedback();
-
-    /**
-     * Sanitizes input strings to prevent XSS attacks
-     * Removes HTML tags, trims whitespace, and handles empty strings
-     */
-    const sanitizeInput = (input: string): string => {
-        if (!input) return '';
-        // Remove HTML tags and trim whitespace
-        return input.replace(/<[^>]*>/g, '').trim();
-    };
 
     /**
      * Validates the form inputs using Zod schema
@@ -73,12 +72,18 @@ const FeedbackForm: React.FC<FeedbackFormProps> = ({ className }) => {
             newErrors.rating = "Please provide a rating from 1 to 5 stars.";
             isValid = false;
         }
+        
+        if (!device) {
+            newErrors.device = "Please select the device you used.";
+            isValid = false;
+        }
 
         // Validate using Zod schema
         const result = feedbackSchema.safeParse({
             positive: positive,
             negative: negative,
-            rating: rating
+            rating: rating,
+            device: device
         });
 
         if (!result.success) {
@@ -110,14 +115,6 @@ const FeedbackForm: React.FC<FeedbackFormProps> = ({ className }) => {
         // Reset previous errors
         setErrors({});
 
-        // Sanitize inputs
-        const sanitizedPositive = sanitizeInput(positive);
-        const sanitizedNegative = sanitizeInput(negative);
-
-        // Update state with sanitized values
-        if (sanitizedPositive !== positive) setPositive(sanitizedPositive);
-        if (sanitizedNegative !== negative) setNegative(sanitizedNegative);
-
         // Validate form
         if (!validateForm()) {
             toast.error("Please correct the errors in the form", {
@@ -129,15 +126,17 @@ const FeedbackForm: React.FC<FeedbackFormProps> = ({ className }) => {
         try {
             // Prepare feedback data
             const feedbackData: FeedbackInput = {
-                positive: sanitizedPositive || undefined,
-                negative: sanitizedNegative || undefined,
-                rating: rating
+                positive: positive || undefined,
+                negative: negative || undefined,
+                rating: rating,
+                device: device
             };
 
             await submitFeedback({
                 positive: feedbackData.positive || '',
                 negative: feedbackData.negative || '',
-                rating: feedbackData.rating
+                rating: feedbackData.rating,
+                device: feedbackData.device
             });
 
             toast.success("Thank you for your feedback!", {
@@ -148,6 +147,7 @@ const FeedbackForm: React.FC<FeedbackFormProps> = ({ className }) => {
             setPositive('');
             setNegative('');
             setRating(0);
+            setDevice('desktop');
         } catch (error) {
             // Error handling is managed in the hook with validationError state
             if (!validationError) {
@@ -236,6 +236,43 @@ const FeedbackForm: React.FC<FeedbackFormProps> = ({ className }) => {
                             <p className="text-sm text-red-500">{errors.rating}</p>
                         )}
                     </div>
+                </div>
+
+                <div className="space-y-3">
+                    <Label htmlFor="device" className="text-sm font-medium">
+                        Which device did you use to access our website?
+                    </Label>
+                    <Select 
+                        value={device} 
+                        onValueChange={(value: 'desktop' | 'mobile' | 'tablet') => setDevice(value)}
+                    >
+                        <SelectTrigger id="device" className={errors.device ? 'border-red-500' : ''}>
+                            <SelectValue placeholder="Select your device" />
+                        </SelectTrigger>
+                        <SelectContent>
+                            <SelectItem value="desktop">
+                                <div className="flex items-center">
+                                    <Monitor className="h-4 w-4 mr-2" />
+                                    <span>Desktop</span>
+                                </div>
+                            </SelectItem>
+                            <SelectItem value="mobile">
+                                <div className="flex items-center">
+                                    <Smartphone className="h-4 w-4 mr-2" />
+                                    <span>Mobile</span>
+                                </div>
+                            </SelectItem>
+                            <SelectItem value="tablet">
+                                <div className="flex items-center">
+                                    <Tablet className="h-4 w-4 mr-2" />
+                                    <span>Tablet</span>
+                                </div>
+                            </SelectItem>
+                        </SelectContent>
+                    </Select>
+                    {errors.device && (
+                        <p className="text-sm text-red-500">{errors.device}</p>
+                    )}
                 </div>
 
                 <div className="flex justify-between mt-6">

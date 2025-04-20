@@ -841,7 +841,7 @@ export const getCurrentUser = query({
 
 **Example Request:**
 ```typescript
-import { api } from "../convex/_generated/api";
+import { api } from "#/_generated/api";
 import { useQuery } from "convex/react";
 import { useAuth } from "@clerk/clerk-react";
 
@@ -904,7 +904,7 @@ export const generateSOP = mutation({
 
 **Example Request:**
 ```typescript
-import { api } from "../convex/_generated/api";
+import { api } from "#/_generated/api";
 import { useMutation } from "convex/react";
 
 const generateSOP = useMutation(api.documents.generate.generateSOP);
@@ -973,7 +973,7 @@ export const searchUniversities = query({
 
 **Example Request:**
 ```typescript
-import { api } from "../convex/_generated/api";
+import { api } from "#/_generated/api";
 import { useQuery } from "convex/react";
 
 const universities = useQuery(api.universities.search.searchUniversities, {
@@ -1052,7 +1052,7 @@ export const createApplication = mutation({
 
 **Example Request:**
 ```typescript
-import { api } from "../convex/_generated/api";
+import { api } from "#/_generated/api";
 import { useMutation } from "convex/react";
 
 const createApplication = useMutation(api.applications.create.createApplication);
@@ -1062,10 +1062,8 @@ createApplication({
   programId: "prog_9z8y7x6w5v",
   deadline: "2025-12-01",
   documents: [
-    { type: "SOP", status: "NOT_STARTED" },
-    { type: "LOR", status: "NOT_STARTED" },
-    { type: "Transcripts", status: "NOT_STARTED" },
-    { type: "Resume", status: "IN_PROGRESS" }
+    { type: "sop", status: "not_started" },
+    { type: "lor", status: "not_started" },
   ]
 });
 ```
@@ -1076,7 +1074,7 @@ createApplication({
   "applicationId": "app_1q2w3e4r5t",
   "universityName": "Stanford University",
   "programName": "Computer Science",
-  "status": "NOT_STARTED",
+  "status": "not_started",
   "deadline": "2025-12-01T00:00:00.000Z",
   "createdAt": "2025-03-03T22:18:30.000Z"
 }

@@ -90,7 +90,7 @@ export const getApplications = query({
       .filter((q) => q.eq(q.field("userId"), userId))
       .collect();
 
-    // Get documents and LORs for each application
+    // Get documents for each application
     const result = await Promise.all(
       applications.map(async (application) => {
         const documents = await ctx.db
@@ -98,15 +98,9 @@ export const getApplications = query({
           .filter((q) => q.eq(q.field("applicationId"), application._id))
           .collect();
 
-        const lors = await ctx.db
-          .query("letterOfRecommendations")
-          .filter((q) => q.eq(q.field("applicationId"), application._id))
-          .collect();
-
         return {
           ...application,
           documents,
-          lors,
         };
       })
     );
@@ -148,19 +142,6 @@ export const getDashboardStats = query({
       draft: documents.filter((d) => d.status === "draft").length,
     };
 
-    // Get LORs count and status
-    const lors = await ctx.db
-      .query("letterOfRecommendations")
-      .filter((q) => q.eq(q.field("userId"), userId))
-      .collect();
-
-    const lorStats = {
-      total: lors.length,
-      submitted: lors.filter((l) => l.status === "submitted").length,
-      pending: lors.filter((l) => l.status === "pending").length,
-      inProgress: lors.filter((l) => l.status === "in_progress").length,
-    };
-
     // Get AI credits
     const aiCredits = await ctx.db
       .query("aiCredits")
@@ -177,7 +158,6 @@ export const getDashboardStats = query({
     return {
       applications: applicationStats,
       documents: documentStats,
-      lors: lorStats,
       aiCredits: aiCredits ?? { totalCredits: 0, usedCredits: 0 },
       recentActivity,
     };
@@ -211,3 +191,16 @@ export const getAiCredits = query({
       .first();
   },
 });
+
+export const getUserName = query({
+  args: {},
+  handler: async (ctx, args) => {
+    const userId = await getCurrentUserIdOrThrow(ctx);
+    const user = await ctx.db
+      .query("users")
+      .filter((q) => q.eq(q.field("_id"), userId))
+      .first();
+    return user?.name || "";
+  },
+});
+

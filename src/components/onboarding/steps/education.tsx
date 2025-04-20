@@ -21,9 +21,14 @@ const educationSchema = z.object({
       const inputDate = new Date(date);
       const maxDate = new Date();
       maxDate.setFullYear(maxDate.getFullYear() + 1);
-      return inputDate <= maxDate;
+      
+      // Check if date is not too far in the past (not more than 100 years ago)
+      const minDate = new Date();
+      minDate.setFullYear(minDate.getFullYear() - 100);
+      
+      return inputDate <= maxDate && inputDate >= minDate;
     },
-    { message: "Graduation date cannot be more than 1 year in the future" }
+    { message: "Graduation date must be within the last 100 years and not more than 1 year in the future" }
   ),
   researchExperience: z.string().optional(),
 }).refine((data) => data.gpa <= data.gpaScale, {

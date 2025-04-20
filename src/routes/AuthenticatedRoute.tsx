@@ -19,10 +19,7 @@ export default function AuthenticatedRoute({
     const { isComplete } = useProfile()
     const location = useLocation()
     const navigate = useNavigate()
-    
-    console.log(isComplete)
     const isOnboardingRoute = location.pathname.startsWith('/onboarding')
-    console.log(isOnboardingRoute)
 
     useEffect(() => {
         // Handle redirects when profile data is loaded

@@ -8,17 +8,13 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { CalendarIcon, AlertCircle } from "lucide-react";
 import { useQuery } from "convex/react";
-import { api } from "../../../convex/_generated/api";
-import { useState } from "react";
-import { Switch } from "@/components/ui/switch";
-import { Label } from "@/components/ui/label";
+import { api } from "#/_generated/api";
 import { format } from "date-fns";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 import { useNavigate } from "react-router-dom";
 
 export default function TimelinePage() {
-  const [demoMode, setDemoMode] = useState(false);
-  const timeline = useQuery(api.applications.timeline.getTimeline, { demoMode });
+  const timeline = useQuery(api.applications.timeline.getTimeline);
   const navigate = useNavigate();
 
   if (!timeline) {
@@ -28,35 +24,15 @@ export default function TimelinePage() {
   return (
     <PageWrapper
       title="Application Timeline"
-      description={
-        <div className="space-y-4">
-          <div className="space-y-1">
-            <p className="text-muted-foreground">Track your application deadlines and requirements</p>
-          </div>
-          <div className="flex items-center justify-end">
-            <div className="flex items-center space-x-2">
-              <Switch
-                id="demo-mode"
-                checked={demoMode}
-                onCheckedChange={setDemoMode}
-              />
-              <Label htmlFor="demo-mode">Demo Mode</Label>
-            </div>
-          </div>
-        </div>
-      }
+      description="Track your application deadlines and requirements"
     >
       <div className="space-y-4">
         {timeline.map((item, index) => (
-          <Card 
-            key={index} 
+          <Card
+            key={index}
             className="group hover:shadow-md transition-all cursor-pointer hover:border-primary/50 relative"
             onClick={() => navigate(`/applications/${encodeURIComponent(item.university)}`, {
-              state: {
-                applicationId: item._id,
-                universityName: item.university,
-                demoMode
-              }
+              state: { applicationId: item._id }
             })}
           >
             <CardHeader className="flex flex-row items-start justify-between">
@@ -81,13 +57,13 @@ export default function TimelinePage() {
             <CardContent>
               <div className="space-y-4">
                 <div className="flex flex-wrap gap-2">
-                  {item.requirements.map((req, idx) => (
+                  {item.applicationDocuments.map((req, idx) => (
                     <Badge
                       key={idx}
                       variant={
-                        req.status === "completed"
+                        req.status === "complete"
                           ? "default"
-                          : req.status === "in_progress"
+                          : req.status === "draft"
                             ? "secondary"
                             : "outline"
                       }
@@ -102,10 +78,9 @@ export default function TimelinePage() {
                   </span>
                   <span>
                     {
-                      item.requirements.filter((r) => r.status === "completed")
-                        .length
+                      item.applicationDocuments.filter((doc) => doc.status === "complete").length
                     }
-                    /{item.requirements.length} requirements complete
+                    /{item.applicationDocuments.length} requirements complete
                   </span>
                 </div>
               </div>

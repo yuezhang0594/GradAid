@@ -11,13 +11,23 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { X } from "lucide-react";
 
+// Helper function to validate that a date is in the future
+const validateFutureDate = (date: string) => {
+  const selectedDate = new Date(date);
+  const today = new Date();
+  today.setHours(0, 0, 0, 0); // Reset time part for accurate date comparison
+  return selectedDate > today;
+};
+
 const careerGoalsSchema = z.object({
   targetDegree: z.string().min(1, "Please select your target degree"),
   intendedField: z.string().min(1, "Please enter your intended field of study"),
   researchInterests: z.string().min(1, "Please describe your research interests"),
   careerObjectives: z.string().min(1, "Please describe your career objectives"),
   targetLocations: z.array(z.string()).min(1, "Please select at least one target location"),
-  expectedStartDate: z.string().min(1, "Please select your expected start date"),
+  expectedStartDate: z.string()
+    .min(1, "Please select your expected start date")
+    .refine(validateFutureDate, { message: "Start date must be in the future" }),
   budgetRange: z.string().optional(),
 });
 

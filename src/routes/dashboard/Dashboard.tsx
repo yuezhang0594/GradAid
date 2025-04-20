@@ -5,256 +5,288 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  BarChart,
-  LineChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  Line,
-  ResponsiveContainer,
-} from "recharts";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+
+import { Calendar, ChevronRight, ExternalLink, BellIcon, TargetIcon, FileTextIcon, ClockIcon, Activity, ChevronUpIcon, ChevronDownIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  BookOpenIcon,
-  GraduationCapIcon,
-  TrendingUpIcon,
-  ClockIcon,
-} from "lucide-react";
-import { Header } from "@/components/layout";
-import { AppSidebar } from "@/components/app-sidebar"
-import {
-  SidebarInset,
-  SidebarProvider,
-} from "@/components/ui/sidebar"
+import { Badge } from "@/components/ui/badge";
+import { Progress } from "@/components/ui/progress";
+import { useNavigate, useLocation } from "react-router-dom";
+import { ClickableCard } from "@/components/dashboard/clickablecard";
+import { useDashboardData } from "@/hooks/useDashboardData";
+import { useQuery } from "convex/react";
+import { api } from "#/_generated/api";
+import { Id } from "#/_generated/dataModel";
+import { useState } from "react";
 
-// Mock data for charts
-const performanceData = [
-  { name: "Jan", score: 65 },
-  { name: "Feb", score: 59 },
-  { name: "Mar", score: 80 },
-  { name: "Apr", score: 81 },
-  { name: "May", score: 76 },
-  { name: "Jun", score: 85 },
-];
-
-const courseData = [
-  { name: "Mathematics", completed: 80 },
-  { name: "Science", completed: 65 },
-  { name: "Literature", completed: 90 },
-  { name: "History", completed: 73 },
-];
+// Helper function to format status text
+function formatStatus(status: string): string {
+  return status
+    .split('_')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
 
 export default function Dashboard() {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { applicationStats, documentStats, applicationTimeline } = useDashboardData();
+  const applications = useQuery(api.applications.queries.getApplications) ?? [];
+
+  const icons = {
+    "Active Applications": <FileTextIcon className="h-4 w-4 text-muted-foreground" />,
+    "Next Deadline": <ClockIcon className="h-4 w-4 text-muted-foreground" />,
+    "Recent Activity": <Activity className="h-4 w-4 text-muted-foreground" />,
+  };
+
+  const handleDocumentClick = (doc: any) => {
+    navigate(`/documents/${encodeURIComponent(doc.university)}/${doc.type.toLowerCase()}?documentId=${doc.documentId}`, {
+      state: {
+        applicationId: doc.applicationId,
+        universityName: doc.university,
+        returnPath: location.pathname
+      }
+    });
+  };
+
+  const [showAllDocuments, setShowAllDocuments] = useState(false);
+  const [showAllTimelines, setShowAllTimelines] = useState(false);
+  
+  // Number of document cards to show initially
+  const initialDocumentsToShow = 4;
+  // Number of timeline items to show initially
+  const initialTimelinesToShow = 5;
+
   return (
+    <main className="flex-1 flex-col overflow-auto p-4 sm:p-6 lg:p-8">
+      {/* Application Progress Stats */}
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {applicationStats.map((stat, index) => (
+          <ClickableCard key={index} action={stat.action}>
+            <CardHeader className="flex flex-row items-center justify-between pb-2">
+              <CardTitle className="text-sm font-medium">{stat.title}</CardTitle>
+              {icons[stat.title as keyof typeof icons]}
+            </CardHeader>
+            <CardContent className="pt-4">
+              <div className="text-xl font-bold mb-2">{stat.value}</div>
+              <p className="text-xs text-muted-foreground">{stat.description}</p>
+            </CardContent>
+          </ClickableCard>
+        ))}
+      </div>
 
-    <SidebarProvider>
-          {/* Sidebar */}
-          <AppSidebar />
-          <SidebarInset>
-            {/* Header */}
-            <Header />
-            {/* Main content */}
-            <main className="flex-1 flex-col overflow-auto p-4 sm:p-6 lg:p-8">
-              {/* Stats cards */}
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-                <Card>
-                  <CardHeader className="flex flex-row items-center justify-between pb-2">
-                  <CardTitle className="text-sm font-medium">Completed Courses</CardTitle>
-                  <BookOpenIcon className="h-4 w-4 text-muted-foreground" />
-                  </CardHeader>
-                  <CardContent>
-                  <div className="text-2xl font-bold">6</div>
-                  <p className="text-xs text-muted-foreground">+2 from last semester</p>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader className="flex flex-row items-center justify-between pb-2">
-                  <CardTitle className="text-sm font-medium">Current GPA</CardTitle>
-                  <TrendingUpIcon className="h-4 w-4 text-muted-foreground" />
-                  </CardHeader>
-                  <CardContent>
-                  <div className="text-2xl font-bold">3.8</div>
-                  <p className="text-xs text-muted-foreground">+0.2 from last semester</p>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader className="flex flex-row items-center justify-between pb-2">
-                  <CardTitle className="text-sm font-medium">Credits Earned</CardTitle>
-                  <GraduationCapIcon className="h-4 w-4 text-muted-foreground" />
-                  </CardHeader>
-                  <CardContent>
-                  <div className="text-2xl font-bold">72</div>
-                  <p className="text-xs text-muted-foreground">48 more needed to graduate</p>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader className="flex flex-row items-center justify-between pb-2">
-                  <CardTitle className="text-sm font-medium">Upcoming Deadlines</CardTitle>
-                  <ClockIcon className="h-4 w-4 text-muted-foreground" />
-                  </CardHeader>
-                  <CardContent>
-                  <div className="text-2xl font-bold">4</div>
-                  <p className="text-xs text-muted-foreground">2 due this week</p>
-                  </CardContent>
-                </Card>
+      {/* Document Progress Section */}
+      <div className="mt-6">
+        <h2 className="text-lg font-semibold mb-4 flex items-center justify-between">
+          <div className="flex items-center">
+            <FileTextIcon className="h-5 w-5 mr-2" />
+            Application Documents
+          </div>
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => navigate("/documents")}
+            className="hover:bg-primary/10"
+          >
+            <span>View all</span>
+            <ExternalLink className="ml-2 h-4 w-4" />
+          </Button>
+        </h2>
+        {documentStats.length === 0 && (
+          <Card className="text-center py-16">
+            <CardContent className="pt-10">
+              <h3 className="text-xl font-medium text-gray-700 mb-2">
+                No documents found
+              </h3>
+              <p className="text-muted-foreground">
+                You have no documents to review. Please check back later.
+              </p>
+            </CardContent>
+          </Card>
+        )}
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          {documentStats
+            .slice(0, showAllDocuments ? documentStats.length : initialDocumentsToShow)
+            .map((document, index) => (
+            <ClickableCard
+              key={index}
+              action={{
+                ...document.action,
+                href: document.action.href,
+                onClick: () => handleDocumentClick(document)
+              }}
+            >
+              <CardHeader>
+                <div className="flex justify-between items-center">
+                  <CardTitle className="text-sm">{document.title}</CardTitle>
                 </div>
+                <CardDescription className="flex flex-col space-y-1 text-left">
+                  <span className="truncate max-w-[200px] text-xs text-muted-foreground text-left">{document.university}</span>
+                  <span className="truncate max-w-[200px] text-xs text-muted-foreground text-left">{document.program}</span>
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="pt-8">
+                <div className="space-y-2">
+                  <div className="flex justify-between text-sm">
+                    <span className="flex items-center">
+                      <Badge
+                        variant={
+                          document.status === "Complete" ? "default" : "secondary"
+                        }
+                      >
+                        {formatStatus(document.status)}
+                      </Badge>
+                    </span>
+                    <span>{document.progress}%</span>
+                  </div>
+                  <Progress value={document.progress} className="h-2" />
+                </div>
+              </CardContent>
+            </ClickableCard>
+          ))}
+        </div>
+        
+        {/* Show More Button */}
+        {documentStats.length > initialDocumentsToShow && (
+          <div className="mt-4 flex justify-center">
+            <Button 
+              variant="outline" 
+              onClick={() => setShowAllDocuments(!showAllDocuments)}
+              className="text-sm"
+            >
+              {showAllDocuments ? (
+                <>
+                  <ChevronUpIcon className="h-4 w-4 mr-2" />
+                  Show Less
+                </>
+              ) : (
+                <>
+                  <ChevronDownIcon className="h-4 w-4 mr-2" />
+                  Show More ({documentStats.length - initialDocumentsToShow} more)
+                </>
+              )}
+            </Button>
+          </div>
+        )}
+      </div>
 
-              {/* Charts and tables */}
-              <div className="grid gap-4 md:grid-cols-2 mt-6">
-                <Card className="col-span-1">
-                  <CardHeader>
-                    <CardTitle>Academic Performance</CardTitle>
-                    <CardDescription>Your performance over the past 6 months</CardDescription>
-                  </CardHeader>
-                  <CardContent className="pl-2">
-                    <ResponsiveContainer width="100%" height={300}>
-                      <LineChart data={performanceData}>
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="name" />
-                        <YAxis />
-                        <Tooltip />
-                        <Legend />
-                        <Line
-                          type="monotone"
-                          dataKey="score"
-                          stroke="#8884d8"
-                          strokeWidth={2}
-                        />
-                      </LineChart>
-                    </ResponsiveContainer>
-                  </CardContent>
-                </Card>
-                <Card className="col-span-1">
-                  <CardHeader>
-                    <CardTitle>Course Completion</CardTitle>
-                    <CardDescription>Current progress by subject</CardDescription>
-                  </CardHeader>
-                  <CardContent className="pl-2">
-                    <ResponsiveContainer width="100%" height={300}>
-                      <BarChart data={courseData}>
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="name" />
-                        <YAxis />
-                        <Tooltip />
-                        <Legend />
-                        <Bar dataKey="completed" fill="#8884d8" />
-                      </BarChart>
-                    </ResponsiveContainer>
-                  </CardContent>
-                </Card>
-              </div>
-
-              {/* Recent activity and upcoming events */}
-              <div className="grid gap-4 md:grid-cols-2 mt-6">
-                <Card className="col-span-1">
-                  <CardHeader>
-                    <div className="flex items-center justify-between">
-                      <CardTitle>Recent Activity</CardTitle>
-                      <Button variant="ghost" size="sm">
-                        View all
-                      </Button>
+      {/* Application Timeline */}
+      <div className="mt-6">
+        <h2 className="text-lg font-semibold mb-4 flex items-center justify-between">
+          <div className="flex items-center">
+            <Calendar className="h-5 w-5 mr-2" />
+            Application Timeline
+          </div>
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => navigate("/timeline")}
+            className="hover:bg-primary/10"
+          >
+            <span>View all</span>
+            <ExternalLink className="ml-2 h-4 w-4" />
+          </Button>
+        </h2>
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between">
+              <CardDescription>
+                Track your application deadlines and requirements
+              </CardDescription>
+          </CardHeader>
+          <CardContent className="pt-4">
+            <div className="space-y-4">
+              {applicationTimeline
+                .slice(0, showAllTimelines ? applicationTimeline.length : initialTimelinesToShow)
+                .map((event, index) => (
+                <div
+                  key={index}
+                  className="flex items-start gap-4 p-2 rounded-lg hover:bg-muted/50 cursor-pointer transition-colors"
+                  onClick={() => {
+                    // Find the application that matches this event
+                    const matchingApp = applications.find(
+                      (app: { university: string; program: string; id: Id<"applications"> }) => 
+                        app.university === event.university && app.program === event.program.split(" in ")[1]
+                    );
+                    
+                    navigate(
+                      `/applications/${event.university.replace(/\s+/g, " ")}`,
+                      {
+                        state: {
+                          applicationId: matchingApp?.id || "",
+                          universityName: event.university
+                        }
+                      }
+                    );
+                  }}
+                >
+                  <div className="min-w-[100px] text-sm">
+                    <div className="font-medium">
+                      {new Date(event.date).toLocaleDateString()}
                     </div>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-4">
-                      {[
-                        {
-                          title: "Assignment submitted",
-                          description: "You submitted 'Research Paper' for Biology 101",
-                          time: "2 hours ago",
-                        },
-                        {
-                          title: "Grade received",
-                          description: "You received an A on 'Midterm Exam' for Mathematics 202",
-                          time: "Yesterday",
-                        },
-                        {
-                          title: "Course enrolled",
-                          description: "You enrolled in 'Computer Science 301'",
-                          time: "2 days ago",
-                        },
-                      ].map((item, i) => (
-                        <div key={i} className="flex items-start gap-4">
-                          <Avatar className="h-9 w-9">
-                            <AvatarFallback className="bg-primary/10 text-primary">
-                              {item.title[0]}
-                            </AvatarFallback>
-                          </Avatar>
-                          <div className="space-y-1">
-                            <p className="text-sm font-medium leading-none">{item.title}</p>
-                            <p className="text-sm text-muted-foreground">{item.description}</p>
-                            <p className="text-xs text-muted-foreground">{item.time}</p>
-                          </div>
-                        </div>
+                    <Badge
+                      variant={event.priority === "high" ? "destructive" : "secondary"}
+                      className="mt-1"
+                    >
+                      {event.priority}
+                    </Badge>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-sm font-medium flex items-center justify-center">
+                      {event.university}
+                      <TargetIcon className="h-4 w-4 ml-2 text-muted-foreground" />
+                    </h4>
+                    <p className="text-sm text-muted-foreground hidden md:block">{event.program}</p>
+                    <div className="mt-2 flex gap-2 flex-wrap hidden md:flex">
+                      {event.requirements.map((requirement, idx) => (
+                        <Badge
+                          key={idx}
+                          variant={
+                            requirement.status === "completed"
+                              ? "default"
+                              : "secondary"
+                          }
+                          className="flex items-center"
+                        >
+                          {requirement.type}
+                        </Badge>
                       ))}
                     </div>
-                  </CardContent>
-                </Card>
-                <Card className="col-span-1">
-                  <CardHeader>
-                    <div className="flex items-center justify-between">
-                      <CardTitle>Upcoming Deadlines</CardTitle>
-                      <Button variant="ghost" size="sm">
-                        View all
-                      </Button>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-4">
-                      {[
-                        {
-                          title: "Final Project",
-                          course: "Computer Science 101",
-                          deadline: "May 15, 2023",
-                          progress: 65,
-                        },
-                        {
-                          title: "Research Paper",
-                          course: "History 202",
-                          deadline: "May 18, 2023",
-                          progress: 25,
-                        },
-                        {
-                          title: "Group Presentation",
-                          course: "Business 301",
-                          deadline: "May 20, 2023",
-                          progress: 10,
-                        },
-                      ].map((item, i) => (
-                        <div key={i} className="flex flex-col gap-2">
-                          <div className="flex items-center justify-between">
-                            <div>
-                              <p className="text-sm font-medium">{item.title}</p>
-                              <p className="text-xs text-muted-foreground">{item.course}</p>
-                            </div>
-                            <Button variant="outline" size="sm">
-                              View
-                            </Button>
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <div className="h-2 flex-1 rounded-full bg-secondary">
-                              <div
-                                className="h-full rounded-full bg-primary"
-                                style={{ width: `${item.progress}%` }}
-                              />
-                            </div>
-                            <span className="text-xs text-muted-foreground">
-                              Due {item.deadline}
-                            </span>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
+                    {event.notes && (
+                      <p className="mt-2 text-xs text-muted-foreground flex items-center">
+                        <BellIcon className="h-3 w-3 mr-1" />
+                        {event.notes}
+                      </p>
+                    )}
+                  </div>
+                  <ChevronRight className="h-4 w-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
+                </div>
+              ))}
+            </div>
+            
+            {/* Show More Button for Timeline */}
+            {applicationTimeline.length > initialTimelinesToShow && (
+              <div className="mt-6 flex justify-center">
+                <Button 
+                  variant="outline" 
+                  onClick={() => setShowAllTimelines(!showAllTimelines)}
+                  className="text-sm"
+                >
+                  {showAllTimelines ? (
+                    <>
+                      <ChevronUpIcon className="h-4 w-4 mr-2" />
+                      Show Less
+                    </>
+                  ) : (
+                    <>
+                      <ChevronDownIcon className="h-4 w-4 mr-2" />
+                      Show More ({applicationTimeline.length - initialTimelinesToShow} more)
+                    </>
+                  )}
+                </Button>
               </div>
-            </main>
-          </SidebarInset>
-    </SidebarProvider>
+            )}
+          </CardContent>
+        </Card>
+      </div>
+    </main>
   );
 }
