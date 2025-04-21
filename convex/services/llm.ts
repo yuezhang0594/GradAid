@@ -52,30 +52,30 @@ export const generateSOP = action({
 
 Please use the following APPLICANT PROFILE to inform the SOP:
 
-**APPLICANT INFORMATION**
+APPLICANT INFORMATION
 - Name: ${name}
 - Current Location: ${current_location}
 - Country of Origin: ${country_of_origin}
 - Native Language: ${native_language}
 
-**EDUCATION**
+EDUCATION
 - Education Level: ${education_level}
 - Major/Field of Study: ${major}
 - Current University: ${current_university}
 - GPA: ${gpa} / ${gpa_scale}
 
-**STANDARDIZED TESTS**
+STANDARDIZED TESTS
 - GRE: Verbal ${gre_verbal}, Quantitative ${gre_quant}, Analytical Writing ${gre_aw}
 - English Proficiency: ${english_test_type}, Score: ${english_overall}
 
-**RESEARCH AND CAREER**
+RESEARCH AND CAREER
 - Research Experience: ${research_experience}
 - Research Interests: ${research_interests_str}
 - Target Degree: ${target_degree}
 - Intended Field of Study: ${intended_field}
 - Career Objectives: ${career_objectives}
 
-**TARGET PROGRAM**
+TARGET PROGRAM
 - University: ${university_name}
 - Program: ${program_name}
 - Degree Type: ${program_degree}
@@ -85,39 +85,39 @@ Please use the following APPLICANT PROFILE to inform the SOP:
 
 Follow this STRUCTURE and emphasize **coherence, insight, and relevance** throughout:
 
-**1. Introduction (1–2 paragraphs)**  
+1. Introduction (1–2 paragraphs)  
 - Begin with an engaging anecdote, observation, or realization that sparked your interest in the field  
 - Clearly state your purpose for applying to this particular program  
 - Briefly introduce your academic background and motivations for graduate study  
 
-**2. Academic Background (2–3 paragraphs)**  
+2. Academic Background (2–3 paragraphs)  
 - Describe your academic journey and key achievements  
 - Highlight relevant coursework, independent projects, or academic awards  
 - Explain how your studies have shaped your research interests and prepared you for graduate-level work  
 
-**3. Research Experience (2–3 paragraphs)**  
+3. Research Experience (2–3 paragraphs)  
 - Detail research projects you’ve participated in: your role, methods used, challenges faced, and outcomes  
 - Emphasize skills gained: experimental design, data analysis, technical tools, etc.  
 - Show how these experiences shaped your research identity and relate to your intended field of study  
 
-**4. Career Objectives (1–2 paragraphs)**  
+4. Career Objectives (1–2 paragraphs)  
 - Articulate your short- and long-term career goals  
 - Connect these goals to your academic background and research interests  
 - Demonstrate how this program will be a critical step in achieving those goals  
 
-**5. Program Fit (2–3 paragraphs)**  
+5. Program Fit (2–3 paragraphs)  
 - Discuss why this university and program are ideal for your goals  
 - Mention specific faculty, labs, research initiatives, or institutional values that attract you  
 - Highlight how your background and aspirations align with the program’s strengths and mission  
 
-**6. Conclusion (1 paragraph)**  
+6. Conclusion (1 paragraph)  
 - Reinforce your qualifications and commitment to the field  
 - Express your enthusiasm for contributing to the academic community  
 - Conclude with a confident statement of your readiness for graduate-level work  
 
 ---
 
-**Tone & Style Guidance**:  
+Tone & Style Guidance:  
 - Write in the first person  
 - Be confident but not arrogant  
 - Avoid clichés—focus on authenticity and depth  

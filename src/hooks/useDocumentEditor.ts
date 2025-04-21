@@ -42,7 +42,7 @@ export function useDocumentEditor() {
   const updateDocStatus = useMutation(api.documents.mutations.updateDocumentStatus);
 
   // LLM generation hooks
-  const generateSOP = useGenerateStatementOfPurpose(document?.applicationId);
+  const generateSOP = useGenerateStatementOfPurpose();
   const generateLOR = documentId
     ? useGenerateLetterOfRecommendation(documentId)
     : undefined;
@@ -148,7 +148,7 @@ export function useDocumentEditor() {
     try {
       let success = false;
       if (document?.type === "sop") {
-        success = (await generateSOP()) !== null;
+        success = (await generateSOP(document.applicationId)) !== null;
       } else if (document?.type === "lor" && generateLOR) {
         success = (await generateLOR(document.applicationId)) !== null;
       }

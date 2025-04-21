@@ -37,89 +37,100 @@ function transformUserProfileForLLM(userProfile: userProfile, userName: string) 
   };
 }
 
-export function useGenerateStatementOfPurpose(applicationId?: Id<"applications">) {
-  console.log("[useGenerateStatementOfPurpose] called with", { applicationId });
+export function useGenerateStatementOfPurpose() {
   const aiCreditsRemaining = useQuery(api.aiCredits.queries.getAiCreditsRemaining, {});
-    const applicationDetails = useQuery(
-      api.applications.queries.getApplicationDetails,
-      applicationId ? { applicationId } : "skip"
-    );
-    const userProfile = useQuery(api.userProfiles.queries.getProfile, {});
-    const generateSOP = useAction(api.services.llm.generateSOP);
-    const saveDocumentDraft = useMutation(api.documents.mutations.saveDocumentDraft);
-    const userName = useQuery(api.userProfiles.queries.getUserName, {});
+  const userProfile = useQuery(api.userProfiles.queries.getProfile, {});
+  const generateSOP = useAction(api.services.llm.generateSOP);
+  const saveDocumentDraft = useMutation(api.documents.mutations.saveDocumentDraft);
+  const userName = useQuery(api.userProfiles.queries.getUserName, {});
+  const updateDocStatus = useMutation(api.documents.mutations.updateDocumentStatus);
+  const convex = useConvex();
 
-    return useCallback(
-      async () => {
-        try {
-          const details = applicationDetails;
-          console.log("[useGenerateStatementOfPurpose] applicationDetails:", details);
-          console.log("[useGenerateStatementOfPurpose] userProfile:", userProfile);
+  return useCallback(
+    async (applicationId: Id<"applications">) => {
+      if (!applicationId) {
+        toast.error("No application selected.");
+        return null;
+      }
+      try {
+        // Fetch application details directly from the API
+        const applicationDetails = await convex.query(api.applications.queries.getApplicationDetails, {
+          applicationId
+        });
+        console.log("[useGenerateStatementOfPurpose] applicationDetails:", applicationDetails);
+        console.log("[useGenerateStatementOfPurpose] userProfile:", userProfile);
 
-          if (!details || !userProfile) {
-            toast.error("Application not found", {
-              description: "Could not find the application for SOP generation."
-            });
-            return null;
-          }
-          // Use university and program directly from applicationDetails
-          const university = details.university;
-          const department = details.department;
-          const program = details.program;
-          console.log("[useGenerateStatementOfPurpose] university:", university);
-          console.log("[useGenerateStatementOfPurpose] program:", program);
-          if (!university || !program) {
-            toast.error("Missing Data", {
-              description: "University or program information is missing for this application."
-            });
-            return null;
-          }
-          const data = {
-            profile: transformUserProfileForLLM(userProfile, userName || ""),
-            program: {
-              university,
-              name: details.program,
-              degree: details.degree,
-              department
-            }
-          };
-          console.log("[useGenerateStatementOfPurpose] data to generateSOP:", data);
-          if (!aiCreditsRemaining || aiCreditsRemaining < AI_CREDITS_FOR_SOP) {
-            toast.error("Insufficient AI Credits", {
-              description: `You have ${aiCreditsRemaining} AI credits left. It takes ${AI_CREDITS_FOR_SOP} credits to generate a Statement of Purpose.`
-            });
-            return null;
-          }
-          const sop = await generateSOP(data);
-          console.log("[useGenerateStatementOfPurpose] SOP output:", sop);
-          if (sop) {
-            // Find the SOP document in details.documents
-            const sopDoc = Array.isArray(details.documents)
-              ? details.documents.find((doc) => doc.type === "sop")
-              : undefined;
-            if (sopDoc && sopDoc._id) {
-              await saveDocumentDraft({
-                applicationDocumentId: sopDoc._id,
-                content: sop,
-              });
-            } else {
-              console.warn("[useGenerateStatementOfPurpose] No SOP document found to store SOP content.");
-            }
-            toast.success("Success", {
-              description: "Statement of Purpose generated successfully!"
-            });
-          }
-          return sop;
-        } catch (error) {
-          console.error('[useGenerateStatementOfPurpose] Error generating SOP:', error);
-          toast.error("Error", {
-            description: "Failed to generate Statement of Purpose. Please try again."
+        if (!applicationDetails || !userProfile) {
+          toast.error("Application not found", {
+            description: "Could not find the application for SOP generation."
           });
           return null;
         }
-      },
-      [applicationDetails, userProfile, generateSOP, saveDocumentDraft, userName, aiCreditsRemaining]
-    );
+        // Use university and program directly from applicationDetails
+        const university = applicationDetails.university;
+        const department = applicationDetails.department;
+        const program = applicationDetails.program;
+        console.log("[useGenerateStatementOfPurpose] university:", university);
+        console.log("[useGenerateStatementOfPurpose] program:", program);
+        if (!university || !program) {
+          toast.error("Missing Data", {
+            description: "University or program information is missing for this application."
+          });
+          return null;
+        }
+        const data = {
+          profile: transformUserProfileForLLM(userProfile, userName || ""),
+          program: {
+            university,
+            name: applicationDetails.program,
+            degree: applicationDetails.degree,
+            department
+          }
+        };
+        console.log("[useGenerateStatementOfPurpose] data to generateSOP:", data);
+        if (!aiCreditsRemaining || aiCreditsRemaining < AI_CREDITS_FOR_SOP) {
+          toast.error("Insufficient AI Credits", {
+            description: `You have ${aiCreditsRemaining} AI credits left. It takes ${AI_CREDITS_FOR_SOP} credits to generate a Statement of Purpose.`
+          });
+          return null;
+        }
+        const sop = await generateSOP(data);
+        console.log("[useGenerateStatementOfPurpose] SOP output:", sop);
+        if (sop) {
+          // Find the SOP document in applicationDetails.documents
+          const sopDoc = Array.isArray(applicationDetails.documents)
+            ? applicationDetails.documents.find((doc) => doc.type === "sop")
+            : undefined;
+          if (sopDoc && sopDoc._id) {
+            // Save the generated SOP to the document
+            await saveDocumentDraft({
+              applicationDocumentId: sopDoc._id,
+              content: sop,
+            });
+
+            // Update document status to draft
+            await updateDocStatus({
+              documentId: sopDoc._id,
+              status: "draft",
+            });
+          } else {
+            console.warn("[useGenerateStatementOfPurpose] No SOP document found to store SOP content.");
+          }
+          toast.success("Success", {
+            description: "Statement of Purpose generated successfully!"
+          });
+        }
+        return sop;
+      } catch (error) {
+        console.error('[useGenerateStatementOfPurpose] Error generating SOP:', error);
+        toast.error("Error", {
+          description: "Failed to generate Statement of Purpose. Please try again."
+        });
+        return null;
+      }
+    },
+    [userProfile, generateSOP, saveDocumentDraft, userName, aiCreditsRemaining, updateDocStatus, convex]
+  );
 }
 
 export function useGenerateLetterOfRecommendation(documentId: Id<"applicationDocuments">) {
