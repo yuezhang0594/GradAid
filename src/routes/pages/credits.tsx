@@ -123,6 +123,8 @@ export default function CreditsPage() {
           description="You haven't used any AI credits yet.
             Get started by opening a document and generating personalized content."
           className="mt-8 max-w-auto"
+          actionHref="/documents"
+          actionLabel="Open Documents"
         />
       ) : (
         <div className="grid gap-4 mt-8">
