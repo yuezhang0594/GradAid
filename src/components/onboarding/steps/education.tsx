@@ -3,6 +3,8 @@ import { useForm, ControllerRenderProps } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { Education } from "../../profile/validators";
+import { sanitizeInput } from "@/lib/inputValidation";
+import { PROFILE_NOTES_MAX_CHARS } from "../../../../convex/validators";
 import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
@@ -21,16 +23,17 @@ const educationSchema = z.object({
       const inputDate = new Date(date);
       const maxDate = new Date();
       maxDate.setFullYear(maxDate.getFullYear() + 1);
-      
       // Check if date is not too far in the past (not more than 100 years ago)
       const minDate = new Date();
       minDate.setFullYear(minDate.getFullYear() - 100);
-      
       return inputDate <= maxDate && inputDate >= minDate;
     },
     { message: "Graduation date must be within the last 100 years and not more than 1 year in the future" }
   ),
-  researchExperience: z.string().optional(),
+  researchExperience: z.string()
+    .max(PROFILE_NOTES_MAX_CHARS, `Maximum ${PROFILE_NOTES_MAX_CHARS} characters allowed`)
+    .transform((val) => sanitizeInput(val))
+    .optional(),
 }).refine((data) => data.gpa <= data.gpaScale, {
   message: "GPA cannot be greater than the selected scale",
   path: ["gpa"]
@@ -202,7 +205,12 @@ export function EducationStep({ onComplete, initialData, onBack }: EducationStep
               name="researchExperience"
               render={({ field }: { field: ControllerRenderProps<EducationForm, "researchExperience"> }) => (
                 <FormItem className="w-full lg:w-1/2">
-                  <FormLabel>Research Experience (Optional)</FormLabel>
+                  <div className="flex justify-between items-center">
+                    <FormLabel>Research Experience (Optional)</FormLabel>
+                    <span className={`text-xs ${(field.value?.length || 0) > PROFILE_NOTES_MAX_CHARS ? 'text-red-500 font-bold' : 'text-gray-500'}`}>
+                      {field.value?.length || 0}/{PROFILE_NOTES_MAX_CHARS}
+                    </span>
+                  </div>
                   <FormControl>
                     <Textarea
                       placeholder="Describe your research experience"

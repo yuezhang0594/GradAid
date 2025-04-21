@@ -10,24 +10,34 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { X } from "lucide-react";
+import { sanitizeInput } from "@/lib/inputValidation";
+import { PROFILE_NOTES_MAX_CHARS } from "#/validators";
 
-// Helper function to validate that a date is in the future
-const validateFutureDate = (date: string) => {
+// Helper function to validate that a date is in the future and within two years
+const validateFutureDateWithinTwoYears = (date: string) => {
   const selectedDate = new Date(date);
   const today = new Date();
-  today.setHours(0, 0, 0, 0); // Reset time part for accurate date comparison
-  return selectedDate > today;
+  today.setHours(0, 0, 0, 0);
+  const twoYearsLater = new Date(today);
+  twoYearsLater.setFullYear(today.getFullYear() + 2);
+  return selectedDate > today && selectedDate <= twoYearsLater;
 };
 
 const careerGoalsSchema = z.object({
   targetDegree: z.string().min(1, "Please select your target degree"),
   intendedField: z.string().min(1, "Please enter your intended field of study"),
-  researchInterests: z.string().min(1, "Please describe your research interests"),
-  careerObjectives: z.string().min(1, "Please describe your career objectives"),
+  researchInterests: z.string()
+    .min(1, "Please describe your research interests")
+    .max(PROFILE_NOTES_MAX_CHARS, `Maximum ${PROFILE_NOTES_MAX_CHARS} characters allowed`)
+    .transform((val) => sanitizeInput(val)),
+  careerObjectives: z.string()
+    .min(1, "Please describe your career objectives")
+    .max(PROFILE_NOTES_MAX_CHARS, `Maximum ${PROFILE_NOTES_MAX_CHARS} characters allowed`)
+    .transform((val) => sanitizeInput(val)),
   targetLocations: z.array(z.string()).min(1, "Please select at least one target location"),
   expectedStartDate: z.string()
     .min(1, "Please select your expected start date")
-    .refine(validateFutureDate, { message: "Start date must be in the future" }),
+    .refine(validateFutureDateWithinTwoYears, { message: "Start date must be in the future and within the next two years" }),
   budgetRange: z.string().optional(),
 });
 
@@ -125,7 +135,12 @@ export function CareerGoalsStep({ onComplete, initialData, onBack }: CareerGoals
               name="researchInterests"
               render={({ field }) => (
                 <FormItem className="w-full sm:max-w-[500px]">
-                  <FormLabel>Research Interests</FormLabel>
+                  <div className="flex justify-between items-center">
+                    <FormLabel>Research Interests</FormLabel>
+                    <span className={`text-xs ${(field.value?.length || 0) > PROFILE_NOTES_MAX_CHARS ? 'text-red-500 font-bold' : 'text-gray-500'}`}>
+                      {field.value?.length || 0}/{PROFILE_NOTES_MAX_CHARS}
+                    </span>
+                  </div>
                   <FormControl>
                     <Textarea
                       {...field}
@@ -143,7 +158,12 @@ export function CareerGoalsStep({ onComplete, initialData, onBack }: CareerGoals
               name="careerObjectives"
               render={({ field }) => (
                 <FormItem className="w-full sm:max-w-[500px]">
-                  <FormLabel>Career Objectives</FormLabel>
+                  <div className="flex justify-between items-center">
+                    <FormLabel>Career Objectives</FormLabel>
+                    <span className={`text-xs ${(field.value?.length || 0) > PROFILE_NOTES_MAX_CHARS ? 'text-red-500 font-bold' : 'text-gray-500'}`}>
+                      {field.value?.length || 0}/{PROFILE_NOTES_MAX_CHARS}
+                    </span>
+                  </div>
                   <FormControl>
                     <Textarea
                       {...field}

@@ -6,6 +6,7 @@ import { sanitizeInput } from "../src/lib/inputValidation";
  * Global constants for validation limits
  */
 export const FEEDBACK_MAX_CHARS = 1000;
+export const PROFILE_NOTES_MAX_CHARS = 1000;
 export const APPLICATION_NOTES_MAX_CHARS = 5000;
 export const DEFAULT_AI_CREDITS = 500;
 export const LOADING_INDICATOR_DELAY = 500;
