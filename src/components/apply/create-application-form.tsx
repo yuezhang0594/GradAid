@@ -224,7 +224,7 @@ const CreateApplicationForm = ({ programId }: CreateApplicationFormProps) => {
     }
 
     return (
-        <Card className="w-full text-left">
+        <Card className="max-w-3xl mx-auto text-left">
             <CardHeader className="border-b pb-4">
                 <CardTitle className="text-l font-bold">
                     {university?.name} - {program.degree} in {program.name}

@@ -24,3 +24,17 @@ export const getUniversities = query({
         return await getUniversitiesByIds(ctx, universityIds);
     },
 });
+
+export const list = query({
+  args: {},
+  handler: async (ctx) => {
+    // Fetch all universities and sort them by name
+    const universities = await ctx.db
+    .query("universities")
+    .withIndex("by_name")
+    .order("asc")
+    .collect();
+    
+    return universities;
+  },
+});
