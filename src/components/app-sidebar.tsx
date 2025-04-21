@@ -1,24 +1,18 @@
 import * as React from "react"
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { GradAidLogo } from "@/assets/GradAidLogo";
 import { useNavigate, useLocation } from "react-router-dom";
-import { SearchForm } from "@/components/search-form"
-
 import {
   UserPenIcon,
-  FilePlus2Icon,
   MessageCircleQuestionIcon,
   InfoIcon,
-  SettingsIcon,
   FileTextIcon,
   ClipboardListIcon,
   HeartIcon,
   SearchIcon,
-  FileUpIcon,
-  Link
+  MessageSquareHeart,
+  FileUserIcon,
+  FilePenIcon,
+  ClipboardPlusIcon
 } from 'lucide-react';
 import {
   Sidebar,
@@ -31,6 +25,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarRail,
+  useSidebar
 } from "@/components/ui/sidebar"
 
 const data = {
@@ -69,7 +64,7 @@ const data = {
         {
           title: "Apply",
           url: "/apply",
-          icon: FilePlus2Icon,
+          icon: ClipboardPlusIcon,
         },
       ],
     },
@@ -93,38 +88,83 @@ const data = {
       title: "Support",
       url: "#",
       items: [
-        // {
-        //   title: "Settings",
-        //   url: "/settings",
-        //   icon: SettingsIcon,
-        // },
         {
           title: "FAQ",
-          url: "/tos",
+          url: "/faq",
           icon: InfoIcon,
         },
         {
           title: "Contact Us",
-          url: "/privacy",
+          url: "/contact",
           icon: MessageCircleQuestionIcon,
+        },
+        {
+          title: "Feedback",
+          url: "/feedback",
+          icon: MessageSquareHeart,
+        },
+      ],
+    },
+    {
+      title: "Legal",
+      url: "#",
+      items: [
+        {
+          title: "Terms of Service",
+          url: "/tos",
+          icon: FilePenIcon,
+        },
+        {
+          title: "Privacy Policy",
+          url: "/privacy",
+          icon: FileUserIcon,
         },
       ],
     },
   ],
 }
 
+
+/**
+ * A responsive application sidebar component that displays navigation options
+ * grouped by categories such as "Getting Started", "Building Your Application", etc.
+ * 
+ * Features:
+ * - Responsive design that adapts to mobile and desktop views
+ * - Automatic highlighting of the current active route
+ * - Collapsible navigation groups
+ * - Brand header with logo
+ * 
+ * The component uses React Router for navigation and closes automatically on 
+ * mobile devices after navigation.
+ * 
+ * @component
+ * @param {React.ComponentProps<typeof Sidebar>} props - Props are extended from the base Sidebar component
+ * @returns {JSX.Element} A fully-styled application sidebar with navigation options
+ * 
+ * @example
+ * // Basic usage
+ * <AppSidebar className="h-screen" />
+ */
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const navigate = useNavigate();
   const location = useLocation();
   const currentPath = location.pathname;
-  
+  const { toggleSidebar, isMobile } = useSidebar()
+
+  const handleNavigation = (url: string) => {
+    navigate(url)
+    if (isMobile) {
+      toggleSidebar()
+    }
+  }
   return (
     <Sidebar {...props}>
       <SidebarHeader>
         {/* Logo */}
-        <div 
-          className="flex flex-col items-center justify-center cursor-pointer pt-2" 
-          onClick={() => navigate("/dashboard")}
+        <div
+          className="flex flex-col items-center justify-center cursor-pointer pt-2"
+          onClick={() => handleNavigation("/dashboard")}
         >
           <div className="flex items-center">
             <GradAidLogo className="h-8 w-auto" />
@@ -149,9 +189,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               <SidebarMenu>
                 {item.items.map((item) => (
                   <SidebarMenuItem key={item.title}>
-                    <SidebarMenuButton 
+                    <SidebarMenuButton
                       isActive={currentPath === item.url}
-                      onClick={() => navigate(item.url)}
+                      onClick={() => handleNavigation(item.url)}
                     >
                       <item.icon size={20} />
                       {item.title}

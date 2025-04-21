@@ -15,8 +15,13 @@ export default function Header() {
 
     // Build up breadcrumb paths
     pathSegments.forEach((segment, index) => {
-      const path = `/${pathSegments.slice(0, index + 1).join('/')}`;
+      // Skip university names when they're not the final segment
+      if (index === 1 && pathSegments[0] === 'applications' && index < pathSegments.length - 1) {
+        return;
+      }
+
       let label = segment.charAt(0).toUpperCase() + segment.slice(1);
+      const path = `/${pathSegments.slice(0, index + 1).join('/')}`;
 
       // Skip dashboard in the loop since we'll add it separately
       if (segment === 'dashboard') return;
@@ -24,8 +29,8 @@ export default function Header() {
       // Special cases for formatting
       switch (segment) {
         case 'applications':
-          label = 'Applications';
-          break;
+          breadcrumbs.push({ label: 'Applications', path: '/applications' });
+          return;
         case 'documents':
           label = 'Documents';
           break;
@@ -36,16 +41,26 @@ export default function Header() {
           label = 'Letters of Recommendation';
           break;
         case 'cv':
-          label = 'CV';
+          label = 'Curriculum Vitae';
           break;
-      }
-
-      // Format university names (they contain hyphens)
-      if (index === 2 && path.includes('/applications/')) {
-        label = segment
-          .split('-')
-          .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-          .join(' ');
+        case 'research_statement':
+          label = 'Research Statement';
+          break;
+        case 'transcript':
+          label = 'Transcript';
+          break;
+        default:
+          // Format university name if it's after applications and is the final segment
+          if (index === 1 && pathSegments[0] === 'applications' && index === pathSegments.length - 1) {
+            label = decodeURIComponent(segment)
+              .split('-')
+              .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+              .join(' ');
+          }
+          // Skip if it's not one of our known segments and not a final university name
+          else if (!['applications', 'documents', 'sop', 'lor', 'cv', 'research_statement', 'transcript'].includes(segment)) {
+            return;
+          }
       }
 
       breadcrumbs.push({ label, path });

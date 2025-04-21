@@ -7,9 +7,6 @@ import { Card } from "@/components/ui/card";
 import { useProfile } from "@/hooks/useProfile";
 import type * as ProfileType from "./validators";
 
-const STEPS = ["personal-info", "education", "test-scores", "career-goals"] as const;
-type Step = (typeof STEPS)[number];
-
 interface StepData {
   "personal-info": ProfileType.PersonalInfo;
   "education": ProfileType.Education;
@@ -19,93 +16,77 @@ interface StepData {
 
 export function ProfileForm() {
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState<Step>("personal-info");
+  type TabValue = "personal-info" | "education" | "test-scores" | "career-goals";
+  const [activeTab, setActiveTab] = useState<TabValue>("personal-info");
   const [progress, setProgress] = useState(0);
   
   // Use the profile hook instead of direct Convex queries
   const { 
     profile, 
-    savePersonalInfo, 
-    saveEducation, 
-    saveTestScores, 
-    saveCareerGoals, 
-    currentStep 
+    savePersonalInfo,
+    saveEducation,
+    saveTestScores,
+    saveCareerGoals
   } = useProfile();
+
+  useEffect(() => {
+    if (profile) {
+      const total = Object.keys(profile).length;
+      const completed = Object.values(profile).filter(Boolean).length;
+      setProgress((completed / total) * 100);
+    }
+  }, [profile]);
 
   // Handler for tab changes that ensures type safety
   const handleTabChange = (value: string) => {
-    if (STEPS.includes(value as Step)) {
-      setActiveTab(value as Step);
-    }
+    setActiveTab(value as TabValue);
   };
 
-  // Update active tab when profile changes
-  useEffect(() => {
-    if (profile && currentStep) {
-      // Only update if currentStep is a valid step
-      if (STEPS.includes(currentStep as Step)) {
-        setActiveTab(currentStep as Step);
-      }
-       
-      // Update progress based on current step
-      switch (currentStep) {
-        case "personal-info":
-          setProgress(0);
-          break;
-        case "education":
-          setProgress(25);
-          break;
-        case "test-scores":
-          setProgress(50);
-          break;
-        case "career-goals":
-          setProgress(75);
-          break;
-        case "complete":
-          setProgress(100);
-          break;
-      }
-    }
-  }, [profile, currentStep]);
-
-  const moveToNextStep = (currentStep: Step) => {
-    const currentIndex = STEPS.indexOf(currentStep);
-    if (currentIndex < STEPS.length - 1) {
-      const nextStep = STEPS[currentIndex + 1];
-      setActiveTab(nextStep);
-      setProgress((currentIndex + 1) * 25);
+  const handleBack = () => {
+    const steps: TabValue[] = ["personal-info", "education", "test-scores", "career-goals"];
+    const currentIndex = steps.indexOf(activeTab);
+    if (currentIndex > 0) {
+      setActiveTab(steps[currentIndex - 1]);
     }
   };
 
   const handleStepComplete = async <T extends keyof StepData>(step: T, data: StepData[T]): Promise<void> => {
     try {
-      let result;
+      let response: { currentStep: string };
+      
+      // Save data based on step
       switch (step) {
         case "personal-info":
-          result = await savePersonalInfo(data as ProfileType.PersonalInfo);
-          moveToNextStep(step);
+          response = await savePersonalInfo(data as ProfileType.PersonalInfo);
+          setActiveTab(response.currentStep as TabValue);
           break;
         case "education":
-          result = await saveEducation(data as ProfileType.Education);
-          moveToNextStep(step);
+          response = await saveEducation(data as ProfileType.Education);
+          setActiveTab(response.currentStep as TabValue);
           break;
         case "test-scores":
-          result = await saveTestScores(data as ProfileType.TestScores);
-          moveToNextStep(step);
+          response = await saveTestScores(data as ProfileType.TestScores);
+          setActiveTab(response.currentStep as TabValue);
           break;
         case "career-goals":
-          result = await saveCareerGoals(data as ProfileType.CareerGoals);
-          navigate("/dashboard");
+          response = await saveCareerGoals(data as ProfileType.CareerGoals);
+          if (response.currentStep === "complete") {
+            navigate("/dashboard");
+          } else {
+            setActiveTab(response.currentStep as TabValue);
+          }
           break;
+        default:
+          return;
       }
-      console.log("Profile section updated successfully");
     } catch (error) {
       console.error("Error saving step data:", error);
+      // You might want to show an error toast here
     }
   };
 
   // Show loading state while profile is being fetched
-  if (profile === undefined) {
+  if (!profile) {
     return (
       <Card className="w-full">
         <div className="p-6 text-center">Loading profile...</div>
@@ -119,38 +100,51 @@ export function ProfileForm() {
         <Progress value={progress} className="w-full" />
       )}
       <Tabs value={activeTab} onValueChange={handleTabChange} className="w-full">
-        <TabsList className="grid w-full grid-cols-4">
-          <TabsTrigger value="personal-info">Personal Info</TabsTrigger>
+        <TabsList className="grid w-full grid-cols-4 text-xs sm:text-sm">
+          <TabsTrigger value="personal-info">
+            <span className="hidden sm:inline">Personal Info</span>
+            <span className="sm:hidden">Personal</span>
+          </TabsTrigger>
           <TabsTrigger value="education">Education</TabsTrigger>
-          <TabsTrigger value="test-scores">Test Scores</TabsTrigger>
-          <TabsTrigger value="career-goals">Career Goals</TabsTrigger>
+          <TabsTrigger value="test-scores">
+            <span className="hidden sm:inline">Test Scores</span>
+            <span className="sm:hidden">Tests</span>
+          </TabsTrigger>
+          <TabsTrigger value="career-goals">
+            <span className="hidden sm:inline">Career Goals</span>
+            <span className="sm:hidden">Career</span>
+          </TabsTrigger>
         </TabsList>
 
         <TabsContent value="personal-info">
           <Steps.PersonalInfoStep
-            onComplete={(data) => handleStepComplete("personal-info", data)}
-            initialData={profile.personalInfo}
+            onComplete={(data: ProfileType.PersonalInfo) => handleStepComplete("personal-info", data)}
+            initialData={profile?.personalInfo}
+            onBack={handleBack}
           />
         </TabsContent>
-
+        
         <TabsContent value="education">
           <Steps.EducationStep
-            onComplete={(data) => handleStepComplete("education", data)}
-            initialData={profile.education}
+            onComplete={(data: ProfileType.Education) => handleStepComplete("education", data)}
+            initialData={profile?.education}
+            onBack={handleBack}
           />
         </TabsContent>
-
+        
         <TabsContent value="test-scores">
           <Steps.TestScoresStep
-            onComplete={(data) => handleStepComplete("test-scores", data)}
-            initialData={profile.testScores}
+            onComplete={(data: ProfileType.TestScores) => handleStepComplete("test-scores", data)}
+            initialData={profile?.testScores}
+            onBack={handleBack}
           />
         </TabsContent>
-
+        
         <TabsContent value="career-goals">
           <Steps.CareerGoalsStep
-            onComplete={(data) => handleStepComplete("career-goals", data)}
-            initialData={profile.careerGoals}
+            onComplete={(data: ProfileType.CareerGoals) => handleStepComplete("career-goals", data)}
+            initialData={profile?.careerGoals}
+            onBack={handleBack}
           />
         </TabsContent>
       </Tabs>

@@ -1,8 +1,6 @@
 import { useQuery } from "convex/react";
-import { api } from "../../convex/_generated/api";
-// import { Activity, FileTextIcon, SparklesIcon, ClockIcon } from "lucide-react";
-import React from "react";
-import { Id } from "../../convex/_generated/dataModel";
+import { api } from "#/_generated/api";
+import { Id } from "#/_generated/dataModel";
 
 export interface DashboardData {
   stats: {
@@ -16,11 +14,6 @@ export interface DashboardData {
       totalDocuments: number;
       averageProgress: number;
       completedDocuments: number;
-    };
-    lors: {
-      total: number;
-      submitted: number;
-      pending: number;
     };
     aiCredits: {
       totalCredits: number;
@@ -44,7 +37,9 @@ export interface DashboardData {
     progress: number;
     status: string;
     university: string;
+    program: string;
     type: string;
+    documentId: string;
     applicationId: string | undefined;
     lastEdited?: string;
     aiSuggestions?: number;
@@ -74,6 +69,8 @@ interface Document {
   progress: number;
   lastEdited?: string;
   aiSuggestions?: number;
+  documentId: string;
+  program: string;
 }
 
 interface University {
@@ -85,9 +82,9 @@ interface University {
   }>;
 }
 
-export const useDashboardData = (demoMode?: boolean): DashboardData => {
+export const useDashboardData = (): DashboardData => {
   // Fetch data from Convex
-  const stats = useQuery(api.dashboard.queries.getDashboardStats, { demoMode }) ?? {
+  const stats = useQuery(api.dashboard.queries.getDashboardStats) ?? {
     applications: { total: 0, submitted: 0, inProgress: 0, nextDeadline: null },
     documents: { totalDocuments: 0, averageProgress: 0, completedDocuments: 0 },
     lors: { total: 0, submitted: 0, pending: 0 },
@@ -95,13 +92,8 @@ export const useDashboardData = (demoMode?: boolean): DashboardData => {
     recentActivity: []
   };
 
-  const applications = useQuery(api.applications.queries.getApplications, { demoMode }) ?? [];
-  const recentDocuments = useQuery(api.applications.queries.getDocumentsByUniversity, { demoMode }) ?? [];
-  
-  // Get next deadline application
-  const nextDeadlineApp = applications.length > 0 
-    ? applications.sort((a, b) => new Date(a.deadline).getTime() - new Date(b.deadline).getTime())[0]
-    : null;
+  const applications = useQuery(api.applications.queries.getApplications) ?? [];
+  const recentDocuments = useQuery(api.applications.queries.getDocumentDetails) ?? [];
 
   // Format application stats
   const applicationStats = [
@@ -177,7 +169,9 @@ export const useDashboardData = (demoMode?: boolean): DashboardData => {
       progress: doc.progress,
       status: doc.status,
       university: uni.name,
+      program: doc.program,
       type: doc.type,
+      documentId: doc.documentId,
       applicationId: uni.programs[0]?.applicationId,
       lastEdited: doc.lastEdited,
       aiSuggestions: doc.aiSuggestions,

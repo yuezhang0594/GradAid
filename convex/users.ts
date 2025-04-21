@@ -1,6 +1,9 @@
-import { internalMutation, query, QueryCtx } from "./_generated/server";
+import { internalMutation, MutationCtx, query, QueryCtx } from "./_generated/server";
 import { UserJSON } from "@clerk/backend";
 import { v, Validator } from "convex/values";
+import { createAiCredits } from "./aiCredits/model";
+import { Id } from "./_generated/dataModel";
+import { TABLES_WITH_USER_DATA } from "./validators";
 
 export const current = query({
   args: {},
@@ -24,7 +27,8 @@ export const upsertFromClerk = internalMutation({
 
     const user = await userByClerkId(ctx, data.id);
     if (user === null) {
-      await ctx.db.insert("users", userAttributes);
+      const userId = await ctx.db.insert("users", userAttributes);
+      await createAiCredits(ctx, userId);
     } else {
       await ctx.db.patch(user._id, userAttributes);
     }
@@ -37,6 +41,7 @@ export const deleteFromClerk = internalMutation({
     const user = await userByClerkId(ctx, clerkUserId);
 
     if (user !== null) {
+      await deleteUserData(ctx, user._id);
       await ctx.db.delete(user._id);
     } else {
       console.warn(
@@ -46,24 +51,24 @@ export const deleteFromClerk = internalMutation({
   },
 });
 
-export async function getCurrentUserIdOrThrow(ctx: QueryCtx) {
+export async function getCurrentUserIdOrThrow(ctx: QueryCtx | MutationCtx) {
   const userRecord = await getCurrentUser(ctx);
   if (!userRecord) throw new Error("Can't get current user ID");
   return userRecord._id;
 }
 
-export async function getCurrentUserId(ctx: QueryCtx) {
+export async function getCurrentUserId(ctx: QueryCtx | MutationCtx) {
   const userRecord = await getCurrentUser(ctx);
   return userRecord ? userRecord._id : null;
 }
 
-export async function getCurrentUserOrThrow(ctx: QueryCtx) {
+export async function getCurrentUserOrThrow(ctx: QueryCtx | MutationCtx) {
   const userRecord = await getCurrentUser(ctx);
   if (!userRecord) throw new Error("Can't get current user");
   return userRecord;
 }
 
-export async function getCurrentUser(ctx: QueryCtx) {
+export async function getCurrentUser(ctx: QueryCtx | MutationCtx) {
   const identity = await ctx.auth.getUserIdentity();
   if (identity === null) {
     return null;
@@ -71,21 +76,23 @@ export async function getCurrentUser(ctx: QueryCtx) {
   return await userByClerkId(ctx, identity.subject);
 }
 
-export async function userByClerkId(ctx: QueryCtx, clerkId: string) {
+export async function userByClerkId(ctx: QueryCtx | MutationCtx, clerkId: string) {
   return await ctx.db
     .query("users")
     .withIndex("byClerkId", (q) => q.eq("clerkId", clerkId))
     .unique();
 }
 
-export async function getDemoUserId(ctx: QueryCtx) {
-  const demoUser = await ctx.db
-    .query("users")
-    .filter(q => q.eq(q.field("name"), "Demo User"))
-    .first();
-  
-  if (!demoUser) {
-    throw new Error("Demo user not found");
+export async function deleteUserData(ctx: MutationCtx, userId: Id<"users">) {
+  for (const table of TABLES_WITH_USER_DATA) {
+    const documents = await ctx.db
+      .query(table)
+      .withIndex("by_user", (q) => q.eq("userId", userId))
+      .collect();
+    if (documents.length > 0) {
+      for (const document of documents) {
+        await ctx.db.delete(document._id);
+      }
+    }
   }
-  return demoUser._id;
 }

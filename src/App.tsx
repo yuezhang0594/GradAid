@@ -3,26 +3,29 @@ import { Routes, Route } from "react-router-dom";
 import { UserProfile } from "@clerk/clerk-react";
 import { LandingPage } from "./components/landing-page";
 import { DashboardLayout } from "@/components/layout/DashboardLayout";
-import Dashboard from "./routes/dev/Dashboard_statCard";
+import { Toaster } from "sonner";
+import Dashboard from "./routes/dashboard/Dashboard";
 import TOSPage from "./routes/legal/tos";
 import PrivacyPolicy from "./routes/legal/privacy";
 import ProtectedRoute from "./routes/ProtectedRoute";
 import SignInPage from "./routes/auth/SignIn";
 import SignUpPage from "./routes/auth/SignUp";
 import SignOutPage from "./routes/auth/SignOut";
-import ApplicationsPage from "./routes/cards/applications";
-import DocumentsPage from "./routes/cards/documents";
-import ApplicationDetail from "./routes/dev/ApplicationDetail";
-import DocumentEditor from "./routes/dev/DocumentEditor";
-import TimelinePage from "./routes/cards/timeline";
-import CreditsPage from "./routes/cards/credits";
-import ActivityPage from "./routes/cards/activity";
+import ApplicationsPage from "./routes/applications/applications";
+import DocumentsPage from "./routes/pages/documents";
+import ApplicationDetail from "./routes/applications/ApplicationDetail";
+import DocumentEditor from "./routes/applications/DocumentEditor";
+import TimelinePage from "./routes/pages/timeline";
+import ActivityPage from "./routes/pages/activity";
 import ProgramSearchPage from "./routes/ProgramSearchPage";
 import OnboardingPage from "./routes/onboarding/page";
 import ProfilePage from "./routes/profile/page";
 import SavedProgramsPage from "./routes/SavedProgramsPage";
 import ProgramApplyPage from "./routes/ProgramApplyPage";
-import { Toaster } from "sonner";
+import FeedbackPage from "./routes/FeedbackPage";
+import FAQPage from "./routes/support/FAQPage";
+import ContactPage from "./routes/support/ContactPage";
+import ResendDashboard from "./routes/support/ResendDashboard";
 
 function App() {
   return (
@@ -35,6 +38,7 @@ function App() {
         <Route path="/signup" element={<SignUpPage redirectUrl={"/onboarding"} />} />
         <Route path="/signout" element={<SignOutPage />} />
         <Route path="/clerk" element={<UserProfile />} />
+        <Route path="/resend" element={<ResendDashboard />} />
         <Route path="/tos" element={<TOSPage />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
 
@@ -49,14 +53,16 @@ function App() {
           <Route path="/applications" element={<ApplicationsPage />} />
           <Route path="/documents" element={<DocumentsPage />} />
           <Route path="/applications/:universityName" element={<ApplicationDetail />} />
-          <Route path="/applications/:universityName/documents" element={<DocumentsPage />} />
+          <Route path="/documents/:universityName" element={<DocumentsPage />} />
           <Route
-            path="/applications/:universityName/documents/:documentType"
+            path="/documents/:universityName/:documentType"
             element={<DocumentEditor />}
           />
           <Route path="/timeline" element={<TimelinePage />} />
-          <Route path="/credits" element={<CreditsPage />} />
           <Route path="/activity" element={<ActivityPage />} />
+          <Route path="/feedback" element={<FeedbackPage />} />
+          <Route path="/faq" element={<FAQPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Route>
       </Routes>
     </>

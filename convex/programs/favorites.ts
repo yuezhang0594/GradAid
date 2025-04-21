@@ -2,7 +2,7 @@ import { v } from "convex/values";
 import { Doc, Id } from "../_generated/dataModel";
 import { mutation, query, MutationCtx, QueryCtx } from "../_generated/server";
 import { getCurrentUserIdOrThrow } from "../users";
-import { getUniversitiesHelper } from "./search";
+import * as UniversityModel from "../universities/model";
 
 // Define types for better type safety
 type Program = Doc<"programs">;
@@ -137,7 +137,7 @@ export const getFavoriteProgramsWithUniversity = query({
     const programs = await getFavoriteProgramsHelper(ctx);
     // Get universities associated with these programs
     const universityIds = programs.map(favorite => favorite.universityId);
-    const universities = await getUniversitiesHelper(ctx, universityIds);
+    const universities = await UniversityModel.getUniversitiesByIds(ctx, universityIds);
 
     // Attach university details to each program and filter out programs without matching university
     const programsWithUniversity = programs

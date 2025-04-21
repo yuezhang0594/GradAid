@@ -4,6 +4,7 @@ import SignInPage from '@/routes/auth/SignIn';
 import { useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { LoaderIcon } from 'lucide-react'
+import { LOADING_INDICATOR_DELAY } from '#/validators';
 
 export default function ProtectedRoute({ children }: { children: React.ReactNode }) {
     const location = useLocation();
@@ -12,7 +13,7 @@ export default function ProtectedRoute({ children }: { children: React.ReactNode
 
     // Only show loading after a brief delay to avoid flash
     useEffect(() => {
-        const timer = setTimeout(() => setShowLoading(true), 500);
+        const timer = setTimeout(() => setShowLoading(true), LOADING_INDICATOR_DELAY);
         return () => clearTimeout(timer);
     }, []);
 

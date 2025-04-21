@@ -1,6 +1,6 @@
 import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
-import { educationValidator, workExperienceValidator, publicationValidator, researchExperienceValidator } from './validators';
+import * as Validate from './validators';
 
 const schema = defineSchema({
   users: defineTable({
@@ -8,33 +8,6 @@ const schema = defineSchema({
     email: v.string(),
     clerkId: v.string(),
   }).index("byClerkId", ["clerkId"]),
-
-  profiles: defineTable({
-    userId: v.id("users"),
-    // User profile fields for document generation
-    description: v.optional(v.string()),
-    websiteUrl: v.optional(v.string()),
-    githubUrl: v.optional(v.string()),
-    linkedInUrl: v.optional(v.string()),
-    profileComplete: v.boolean(),
-
-    // Education details
-    education: v.optional(v.array(educationValidator)),
-
-    // Work experience details
-    workExperience: v.optional(v.array(workExperienceValidator)),
-
-    // Academic achievements
-    achievements: v.optional(v.array(v.string())),
-
-    // Research experience
-    researchExperience: v.optional(v.array(researchExperienceValidator)),
-
-    // Skills and career goals
-    skills: v.optional(v.array(v.string())),
-    careerGoals: v.optional(v.string()),
-  })
-    .index("by_user", ["userId"]),
 
   userProfiles: defineTable({
     userId: v.id("users"),
@@ -132,29 +105,12 @@ const schema = defineSchema({
     userId: v.id("users"),
     universityId: v.id("universities"),
     programId: v.id("programs"),
-    status: v.union(
-      v.literal("draft"),
-      v.literal("in_progress"),
-      v.literal("submitted"),
-      v.literal("accepted"),
-      v.literal("rejected")
-    ),
+    status: Validate.applicationStatusValidator,
     submissionDate: v.optional(v.string()),
     deadline: v.string(),
-    priority: v.union(v.literal("high"), v.literal("medium"), v.literal("low")),
+    priority: Validate.applicationPriorityValidator,
     notes: v.optional(v.string()),
     lastUpdated: v.string(),
-    requirements: v.array(
-      v.object({
-        type: v.string(),
-        status: v.union(
-          v.literal("completed"),
-          v.literal("in_progress"),
-          v.literal("pending"),
-          v.literal("not_started")
-        ),
-      })
-    ),
   })
     .index("by_user", ["userId"])
     .index("by_university", ["universityId"])
@@ -165,19 +121,10 @@ const schema = defineSchema({
     applicationId: v.id("applications"),
     userId: v.id("users"),
     title: v.string(),
-    type: v.union(
-      v.literal("sop"),
-      v.literal("research_statement"),
-      v.literal("lor"),
-      v.literal("transcript"),
-      v.literal("cv"),
-      v.literal("other")
-    ),
-    status: v.union(
-      v.literal("draft"),
-      v.literal("in_review"),
-      v.literal("complete")
-    ),
+    type: Validate.documentTypeValidator,
+    status: Validate.documentStatusValidator,
+    recommenderName: v.optional(v.string()),
+    recommenderEmail: v.optional(v.string()),
     progress: v.number(),
     lastEdited: v.string(),
     aiSuggestionsCount: v.optional(v.number()),
@@ -186,25 +133,6 @@ const schema = defineSchema({
     .index("by_user", ["userId"])
     .index("by_application", ["applicationId"])
     .index("by_type", ["type"]),
-
-  letterOfRecommendations: defineTable({
-    applicationId: v.id("applications"),
-    userId: v.id("users"),
-    recommenderName: v.string(),
-    recommenderEmail: v.string(),
-    status: v.union(
-      v.literal("pending"),
-      v.literal("in_progress"),
-      v.literal("submitted")
-    ),
-    requestedDate: v.string(),
-    submittedDate: v.optional(v.string()),
-    remindersSent: v.number(),
-    lastReminderDate: v.optional(v.string()),
-  })
-    .index("by_user", ["userId"])
-    .index("by_application", ["applicationId"])
-    .index("by_email", ["recommenderEmail"]),
 
   aiCredits: defineTable({
     userId: v.id("users"),
@@ -215,7 +143,7 @@ const schema = defineSchema({
 
   aiCreditUsage: defineTable({
     userId: v.id("users"),
-    type: v.string(),
+    type: Validate.aiCreditUsageTypeValidator,
     credits: v.number(),
     timestamp: v.string(),
     description: v.optional(v.string()),
@@ -223,19 +151,12 @@ const schema = defineSchema({
 
   userActivity: defineTable({
     userId: v.id("users"),
-    type: v.union(
-      v.literal("document_edit"),
-      v.literal("application_update"),
-      v.literal("lor_request"),
-      v.literal("lor_update"),
-      v.literal("ai_usage")
-    ),
+    type: Validate.userActivityTypeValidator,
     description: v.string(),
     timestamp: v.string(),
     metadata: v.object({
       documentId: v.optional(v.id("applicationDocuments")),
       applicationId: v.optional(v.id("applications")),
-      lorId: v.optional(v.id("letterOfRecommendations")),
       creditsUsed: v.optional(v.number()),
       oldStatus: v.optional(v.string()),
       newStatus: v.optional(v.string()),
@@ -254,6 +175,17 @@ const schema = defineSchema({
   })
     .index("by_user", ["userId"])
     .index("by_program", ["programId"]),
+
+  feedback: defineTable({
+    userId: v.id("users"),
+    positive: v.optional(v.string()),
+    negative: v.optional(v.string()),
+    rating: v.optional(v.number()),
+    device: Validate.deviceTypeValidator
+  })
+    .index("by_user", ["userId"])
+    .index("by_rating", ["rating"]),
 });
+
 
 export default schema;

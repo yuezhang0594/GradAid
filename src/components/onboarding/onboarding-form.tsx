@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { PersonalInfoStep } from "./steps/personal-info";
 import { EducationStep } from "./steps/education";
@@ -45,6 +44,13 @@ export function OnboardingForm() {
 
   const [activeStep, setActiveStep] = useState<Step>(currentStep as Step);
 
+  const handleBack = () => {
+    const currentIndex = STEPS.indexOf(activeStep);
+    if (currentIndex > 0) {
+      setActiveStep(STEPS[currentIndex - 1]);
+    }
+  };
+
   const handleStepComplete = async <T extends keyof StepData>(step: T, data: StepData[T]): Promise<void> => {
     try {
       let response: { currentStep: string };
@@ -85,21 +91,25 @@ export function OnboardingForm() {
       <Progress value={progress} className="w-full" />
       
       <Tabs value={activeStep} className="w-full">
-        <TabsList className="grid w-full grid-cols-5">
+        <TabsList className="grid w-full grid-cols-5 text-xs sm:text-sm">
           <TabsTrigger value="personal-info" disabled={activeStep !== "personal-info"}>
-            Personal Info
+            <span className="hidden sm:inline">Personal Info</span>
+            <span className="sm:hidden">Personal</span>
           </TabsTrigger>
           <TabsTrigger value="education" disabled={activeStep !== "education"}>
             Education
           </TabsTrigger>
           <TabsTrigger value="test-scores" disabled={activeStep !== "test-scores"}>
-            Test Scores
+            <span className="hidden sm:inline">Test Scores</span>
+            <span className="sm:hidden">Tests</span>
           </TabsTrigger>
           <TabsTrigger value="career-goals" disabled={activeStep !== "career-goals"}>
-            Career Goals
+            <span className="hidden sm:inline">Career Goals</span>
+            <span className="sm:hidden">Career</span>
           </TabsTrigger>
           <TabsTrigger value="complete" disabled={activeStep !== "complete"}>
-            Complete
+            <span className="hidden sm:inline">Complete</span>
+            <span className="sm:hidden">Done</span>
           </TabsTrigger>
         </TabsList>
 
@@ -107,6 +117,7 @@ export function OnboardingForm() {
           <PersonalInfoStep
             onComplete={(data: ProfileType.PersonalInfo) => handleStepComplete("personal-info", data)}
             initialData={profile?.personalInfo}
+            onBack={handleBack}
           />
         </TabsContent>
 
@@ -114,6 +125,7 @@ export function OnboardingForm() {
           <EducationStep
             onComplete={(data: ProfileType.Education) => handleStepComplete("education", data)}
             initialData={profile?.education}
+            onBack={handleBack}
           />
         </TabsContent>
 
@@ -121,6 +133,7 @@ export function OnboardingForm() {
           <TestScoresStep
             onComplete={(data: ProfileType.TestScores) => handleStepComplete("test-scores", data)}
             initialData={profile?.testScores}
+            onBack={handleBack}
           />
         </TabsContent>
 
@@ -128,6 +141,7 @@ export function OnboardingForm() {
           <CareerGoalsStep
             onComplete={(data: ProfileType.CareerGoals) => handleStepComplete("career-goals", data)}
             initialData={profile?.careerGoals}
+            onBack={handleBack}
           />
         </TabsContent>
 

@@ -49,8 +49,8 @@ const personalInfoSchema = z.object({
       if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
         age--;
       }
-      return age >= 16;
-    }, "You must be at least 16 years old to use this service"),
+      return age >= 16 && age <= 100;
+    }, "You must be between 16 and 100 years old to use this service"),
   currentLocation: z.string().min(1, "Current location is required"),
   nativeLanguage: z.string().min(1, "Native language is required"),
 });
@@ -58,11 +58,12 @@ const personalInfoSchema = z.object({
 type PersonalInfoForm = z.infer<typeof personalInfoSchema>;
 
 interface PersonalInfoStepProps {
-  onComplete: (data: PersonalInfo) => void;
+  onComplete: (data: PersonalInfo) => Promise<void>;
   initialData?: PersonalInfo;
+  onBack: () => void;
 }
 
-export function PersonalInfoStep({ onComplete, initialData }: PersonalInfoStepProps) {
+export function PersonalInfoStep({ onComplete, initialData, onBack }: PersonalInfoStepProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Parse initial location data
@@ -97,7 +98,7 @@ export function PersonalInfoStep({ onComplete, initialData }: PersonalInfoStepPr
   const onSubmit = async (data: PersonalInfoForm) => {
     setIsSubmitting(true);
     try {
-      onComplete(data);
+      await onComplete(data);
     } catch (error) {
       console.error("Error saving personal info:", error);
     } finally {
@@ -114,7 +115,7 @@ export function PersonalInfoStep({ onComplete, initialData }: PersonalInfoStepPr
               control={form.control}
               name="countryOfOrigin"
               render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "countryOfOrigin"> }) => (
-                <FormItem>
+                <FormItem className="w-full sm:max-w-[250px]">
                   <FormLabel>Country of Origin</FormLabel>
                   <FormControl>
                     <Select 
@@ -153,7 +154,7 @@ export function PersonalInfoStep({ onComplete, initialData }: PersonalInfoStepPr
               control={form.control}
               name="dateOfBirth"
               render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "dateOfBirth"> }) => (
-                <FormItem>
+                <FormItem className="w-full sm:max-w-[150px]">
                   <FormLabel>Date of Birth</FormLabel>
                   <FormControl>
                     <Input 
@@ -170,7 +171,7 @@ export function PersonalInfoStep({ onComplete, initialData }: PersonalInfoStepPr
               control={form.control}
               name="currentLocation"
               render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "currentLocation"> }) => (
-                <FormItem>
+                <FormItem className="w-full sm:max-w-[300px]">
                   <FormLabel>Current Location</FormLabel>
                   <FormControl>
                     <div className="flex flex-col space-y-2">
@@ -263,7 +264,7 @@ export function PersonalInfoStep({ onComplete, initialData }: PersonalInfoStepPr
               control={form.control}
               name="nativeLanguage"
               render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "nativeLanguage"> }) => (
-                <FormItem>
+                <FormItem className="w-full sm:max-w-[200px]">
                   <FormLabel>Native Language</FormLabel>
                   <FormControl>
                     <Select 
@@ -288,11 +289,8 @@ export function PersonalInfoStep({ onComplete, initialData }: PersonalInfoStepPr
             />
 
             <div className="flex justify-end space-x-2">
-              <Button variant="outline" type="button" onClick={() => window.history.back()}>
-                Back
-              </Button>
               <Button type="submit" disabled={isSubmitting}>
-                {isSubmitting ? "Saving..." : "Next"}
+                {isSubmitting ? "Saving..." : "Continue"}
               </Button>
             </div>
           </form>

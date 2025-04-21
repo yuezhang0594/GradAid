@@ -1,6 +1,6 @@
 import { useQuery, useMutation } from 'convex/react';
-import { api } from '../../convex/_generated/api';
-import { Doc, Id } from '../../convex/_generated/dataModel';
+import { api } from '#/_generated/api';
+import { Doc } from '#/_generated/dataModel';
 import type * as ProfileType from '../components/profile/validators';
 
 // Define onboarding status type
