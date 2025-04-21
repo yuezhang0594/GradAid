@@ -3,12 +3,10 @@ import { useProgramSearch } from "../hooks/useProgramSearch";
 import { useFavorites } from "../hooks/useFavorites";
 import ProgramSearch from "../components/search-programs/ProgramSearch";
 import UniversityCard from "../components/search-programs/UniversityCard";
-import { Card, CardContent } from "@/components/ui/card";
-import { Skeleton } from "@/components/ui/skeleton";
-import { Separator } from "@/components/ui/separator";
-import { PageWrapper } from "@/components/ui/page-wrapper";
+import { Skeleton, Separator, PageWrapper, EmptyState } from "@/components/ui";
 import { SEARCH_UNIVERSITY_LIMIT } from "#/validators";
-import AddProgramForm from '@/components/add-program-form';
+import AddProgramForm from "@/components/add-program-form";
+import { SearchXIcon } from "lucide-react";
 
 /**
  * UniversitySearchPage Component
@@ -111,9 +109,10 @@ const UniversitySearchPage: React.FC = () => {
       title="Program Search"
       description="Find the perfect graduate program for your academic journey"
     >
+      <div className="max-w-3xl mx-auto">
       {/* Search component */}
       <div className="mb-8">
-                <ProgramSearch
+        <ProgramSearch
           onSearch={handleSearch}
           onFilterChange={handleFilterChange}
           initialFilters={filters}
@@ -124,9 +123,9 @@ const UniversitySearchPage: React.FC = () => {
       </div>
 
       {/* Modal Form */}
-      <AddProgramForm 
-        open={showAddProgramModal} 
-        onOpenChange={setShowAddProgramModal} 
+      <AddProgramForm
+        open={showAddProgramModal}
+        onOpenChange={setShowAddProgramModal}
       />
 
       <Separator className="my-6" />
@@ -142,25 +141,13 @@ const UniversitySearchPage: React.FC = () => {
             </div>
           </div>
         ) : universitiesWithFilteredPrograms.length === 0 ? (
-          <Card className="text-center py-16">
-            <CardContent className="pt-10">
-              <h3 className="text-xl font-medium text-gray-700 mb-2">
-                No programs found
-              </h3>
-              <p className="text-muted-foreground">
-                Try adjusting your search criteria or filters to see more
-                results.
-              </p>
-              <div className="mt-6 flex justify-center">
-                <Button 
-                  onClick={handleOpenAddProgram}
-                  className="inline-flex items-center"
-                >
-                  Add Missing Program
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+          <EmptyState
+            icon={SearchXIcon}
+            title="No programs found"
+            description="Try adjusting your search criteria or filters to see more results."
+            actionLabel="Add Missing Program"
+            onAction={handleOpenAddProgram}
+          />
         ) : (
           <>
             <div className="mb-4">
@@ -190,6 +177,7 @@ const UniversitySearchPage: React.FC = () => {
           apply more filters to narrow down your search.
         </p>
       )}
+      </div>
     </PageWrapper>
   );
 };

@@ -26,15 +26,15 @@ export const getUniversities = query({
 });
 
 export const list = query({
-});
-  },
-    return universities;
-    
-      .collect();
-      .withIndex("by_name")
-      .order("asc")
-      .query("universities")
-    const universities = await ctx.db
-    // Fetch all universities and sort them by name
-  handler: async (ctx) => {
   args: {},
+  handler: async (ctx) => {
+    // Fetch all universities and sort them by name
+    const universities = await ctx.db
+    .query("universities")
+    .withIndex("by_name")
+    .order("asc")
+    .collect();
+    
+    return universities;
+  },
+});

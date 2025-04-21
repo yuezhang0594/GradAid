@@ -38,16 +38,16 @@ interface Card {
 // Helper function to format text
 function formatText(text: string) {
   // Special cases for acronyms
-  const upperCaseTypes = ['sop', 'cv', 'lor'];
+  const upperCaseTypes = ["sop", "cv", "lor"];
   if (upperCaseTypes.includes(text.toLowerCase())) {
     return text.toUpperCase();
   }
 
   // Normal case: capitalize each word
   return text
-    .split('_')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ');
+    .split("_")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
 }
 
 export default function DocumentsPage() {
@@ -57,49 +57,68 @@ export default function DocumentsPage() {
   const createDocument = useMutation(api.documents.mutations.createDocument);
 
   // Transform data to create separate cards for multiple programs
-  const cards = documents.flatMap((uni: { name: string, programs: Program[], documents: Document[] }) => {
-    return uni.programs.map((program: Program) => ({
-      name: uni.name,
-      program: program.name,
-      applicationId: program.applicationId,
-      documents: uni.documents
-        .filter((doc: Document) => doc.program === program.name)
-        .map((doc: Document) => ({
-          type: doc.type,
-          status: doc.status,
-          progress: doc.status.toLowerCase() === "complete" ? 100 : doc.progress ?? 0,
-          count: doc.count,
-          documentId: doc.documentId
-        }))
-    }));
-  });
+  const cards = documents.flatMap(
+    (uni: { name: string; programs: Program[]; documents: Document[] }) => {
+      return uni.programs.map((program: Program) => ({
+        name: uni.name,
+        program: program.name,
+        applicationId: program.applicationId,
+        documents: uni.documents
+          .filter((doc: Document) => doc.program === program.name)
+          .map((doc: Document) => ({
+            type: doc.type,
+            status: doc.status,
+            progress:
+              doc.status.toLowerCase() === "complete"
+                ? 100
+                : (doc.progress ?? 0),
+            count: doc.count,
+            documentId: doc.documentId,
+          })),
+      }));
+    }
+  );
 
-  const handleDocumentClick = (documentId: Id<"applicationDocuments"> | null, universityName: string, documentType: string) => {
+  const handleDocumentClick = (
+    documentId: Id<"applicationDocuments"> | null,
+    universityName: string,
+    documentType: string
+  ) => {
     if (documentId) {
-      navigate(`/documents/${encodeURIComponent(universityName)}/${documentType.toLowerCase()}?documentId=${documentId}`, {
-        state: {
-          applicationId: null,
-          universityName,
-          returnPath: location.pathname
+      navigate(
+        `/documents/${encodeURIComponent(universityName)}/${documentType.toLowerCase()}?documentId=${documentId}`,
+        {
+          state: {
+            applicationId: null,
+            universityName,
+            returnPath: location.pathname,
+          },
         }
-      });
+      );
     }
   };
 
-  const handleNewDocumentClick = async (applicationId: Id<"applications">, universityName: string, documentType: DocumentType) => {
+  const handleNewDocumentClick = async (
+    applicationId: Id<"applications">,
+    universityName: string,
+    documentType: DocumentType
+  ) => {
     const documentId = await createDocument({
       applicationId,
       type: documentType,
     });
 
     // Navigate to the document editor with the document ID as a query parameter
-    navigate(`/documents/${encodeURIComponent(universityName)}/${documentType.toLowerCase()}?documentId=${documentId}`, {
-      state: {
-        applicationId,
-        universityName,
-        returnPath: location.pathname
+    navigate(
+      `/documents/${encodeURIComponent(universityName)}/${documentType.toLowerCase()}?documentId=${documentId}`,
+      {
+        state: {
+          applicationId,
+          universityName,
+          returnPath: location.pathname,
+        },
       }
-    });
+    );
   };
 
   return (
@@ -111,7 +130,8 @@ export default function DocumentsPage() {
         <EmptyState
           icon={BookXIcon}
           title="No Documents Found"
-          description="You haven't started any applications yet. You can start a new application on the 'Apply' or 'Saved Programs' pages."
+          description="You haven't started any applications yet.
+          You can start a new application on the 'Apply' or 'Saved Programs' pages."
           actionLabel="Start New Application"
           actionHref="/apply"
         />
@@ -126,39 +146,75 @@ export default function DocumentsPage() {
                 ...card.documents.map((doc) => ({
                   text: formatText(doc.type),
                   count: doc.count,
-                  variant: doc.status === "complete" ? "default" as const :
-                    doc.status === "in_review" ? "secondary" as const : "outline" as const,
-                  onClick: () => handleDocumentClick(doc.documentId, card.name, doc.type.toString())
+                  variant:
+                    doc.status === "complete"
+                      ? ("default" as const)
+                      : doc.status === "in_review"
+                        ? ("secondary" as const)
+                        : ("outline" as const),
+                  onClick: () =>
+                    handleDocumentClick(
+                      doc.documentId,
+                      card.name,
+                      doc.type.toString()
+                    ),
                 })),
-                ...(card.documents.some(doc => doc.type.toLowerCase() === "sop") ? [] : [{
-                  text: "+ SOP",
-                  variant: "default" as const,
-                  onClick: () => handleNewDocumentClick(card.applicationId, card.name, "sop")
-                }]),
-                ...((() => {
-                  const lorCount = card.documents.filter(doc => doc.type.toLowerCase() === "lor").length;
+                ...(card.documents.some(
+                  (doc) => doc.type.toLowerCase() === "sop"
+                )
+                  ? []
+                  : [
+                      {
+                        text: "+ SOP",
+                        variant: "default" as const,
+                        onClick: () =>
+                          handleNewDocumentClick(
+                            card.applicationId,
+                            card.name,
+                            "sop"
+                          ),
+                      },
+                    ]),
+                ...(() => {
+                  const lorCount = card.documents.filter(
+                    (doc) => doc.type.toLowerCase() === "lor"
+                  ).length;
                   if (lorCount < MAX_LOR) {
-                    return [{
-                      text: "+ LOR",
-                      variant: "default" as const,
-                      onClick: () => { handleNewDocumentClick(card.applicationId, card.name, "lor") }
-                    }];
+                    return [
+                      {
+                        text: "+ LOR",
+                        variant: "default" as const,
+                        onClick: () => {
+                          handleNewDocumentClick(
+                            card.applicationId,
+                            card.name,
+                            "lor"
+                          );
+                        },
+                      },
+                    ];
                   }
                   return [];
-                })()),
+                })(),
               ]}
               progress={
                 card.documents.length > 0
                   ? {
-                    value: Math.round((card.documents.filter(doc => doc.status.toLowerCase() === "complete").length / card.documents.length) * 100),
-                    label: `${card.documents.filter(doc => doc.status.toLowerCase() === "complete").length}/${card.documents.length} Documents Complete`,
-                    hidePercentage: true
-                  }
+                      value: Math.round(
+                        (card.documents.filter(
+                          (doc) => doc.status.toLowerCase() === "complete"
+                        ).length /
+                          card.documents.length) *
+                          100
+                      ),
+                      label: `${card.documents.filter((doc) => doc.status.toLowerCase() === "complete").length}/${card.documents.length} Documents Complete`,
+                      hidePercentage: true,
+                    }
                   : {
-                    value: 0,
-                    label: "No Documents",
-                    hidePercentage: true
-                  }
+                      value: 0,
+                      label: "No Documents",
+                      hidePercentage: true,
+                    }
               }
             />
           ))}
