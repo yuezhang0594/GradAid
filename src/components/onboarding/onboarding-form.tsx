@@ -91,7 +91,7 @@ export function OnboardingForm() {
       <Progress value={progress} className="w-full" />
       
       <Tabs value={activeStep} className="w-full">
-        <TabsList className="grid w-full grid-cols-5 text-xs sm:text-sm">
+        <TabsList className="grid w-full grid-cols-4 text-xs sm:text-sm">
           <TabsTrigger value="personal-info" disabled={activeStep !== "personal-info"}>
             <span className="hidden sm:inline">Personal Info</span>
             <span className="sm:hidden">Personal</span>
@@ -107,10 +107,10 @@ export function OnboardingForm() {
             <span className="hidden sm:inline">Career Goals</span>
             <span className="sm:hidden">Career</span>
           </TabsTrigger>
-          <TabsTrigger value="complete" disabled={activeStep !== "complete"}>
+          {/* <TabsTrigger value="complete" disabled={activeStep !== "complete"}>
             <span className="hidden sm:inline">Complete</span>
             <span className="sm:hidden">Done</span>
-          </TabsTrigger>
+          </TabsTrigger> */}
         </TabsList>
 
         <TabsContent value="personal-info">

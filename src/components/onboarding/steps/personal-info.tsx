@@ -110,12 +110,12 @@ export function PersonalInfoStep({ onComplete, initialData, onBack }: PersonalIn
     <Card>
       <CardContent className="pt-6">
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+          <form onSubmit={form.handleSubmit(onSubmit)} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <FormField
               control={form.control}
               name="currentLocation"
               render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "currentLocation"> }) => (
-                <FormItem className="col-span-1 min-w-0 w-full max-w-[300px]">
+                <FormItem className="col-span-1 w-full">
                   <FormLabel>Current Location</FormLabel>
                   <FormControl>
                     <div className="flex flex-col space-y-2">
@@ -206,7 +206,7 @@ export function PersonalInfoStep({ onComplete, initialData, onBack }: PersonalIn
               control={form.control}
               name="countryOfOrigin"
               render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "countryOfOrigin"> }) => (
-                <FormItem className="col-span-1 min-w-0 w-full max-w-[250px]">
+                <FormItem className="col-span-1 w-full">
                   <FormLabel>Country of Origin</FormLabel>
                   <FormControl>
                     <Select 
@@ -244,7 +244,7 @@ export function PersonalInfoStep({ onComplete, initialData, onBack }: PersonalIn
               control={form.control}
               name="nativeLanguage"
               render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "nativeLanguage"> }) => (
-                <FormItem className="col-span-1 min-w-0 w-full max-w-[220px]">
+                <FormItem className="col-span-1 w-full">
                   <FormLabel>Native Language</FormLabel>
                   <FormControl>
                     <Select 
@@ -272,7 +272,7 @@ export function PersonalInfoStep({ onComplete, initialData, onBack }: PersonalIn
               control={form.control}
               name="dateOfBirth"
               render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "dateOfBirth"> }) => (
-                <FormItem className="col-span-1 min-w-0 w-full max-w-[180px]">
+                <FormItem className="col-span-1 w-full max-w-[180px]">
                   <FormLabel>Date of Birth</FormLabel>
                   <FormControl>
                     <Input 
@@ -286,7 +286,7 @@ export function PersonalInfoStep({ onComplete, initialData, onBack }: PersonalIn
             />
 
 
-            <div className="col-span-1 sm:col-span-2 md:col-span-4 flex justify-end">
+            <div className="col-span-1 sm:col-span-2 flex justify-end mt-4">
               <Button type="submit" disabled={isSubmitting}>
                 {isSubmitting ? "Saving..." : "Continue"}
               </Button>
