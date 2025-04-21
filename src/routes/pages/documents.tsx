@@ -80,6 +80,7 @@ export default function DocumentsPage() {
   );
 
   const handleDocumentClick = (
+    applicationId: Id<"applications"> | null,
     documentId: Id<"applicationDocuments"> | null,
     universityName: string,
     documentType: string
@@ -89,7 +90,7 @@ export default function DocumentsPage() {
         `/documents/${encodeURIComponent(universityName)}/${documentType.toLowerCase()}?documentId=${documentId}`,
         {
           state: {
-            applicationId: null,
+            applicationId,
             universityName,
             returnPath: location.pathname,
           },
@@ -154,6 +155,7 @@ export default function DocumentsPage() {
                         : ("outline" as const),
                   onClick: () =>
                     handleDocumentClick(
+                      card.applicationId,
                       doc.documentId,
                       card.name,
                       doc.type.toString()

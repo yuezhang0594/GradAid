@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-import { Calendar, ChevronRight, SparklesIcon,ExternalLink, BellIcon, TargetIcon, FileTextIcon, ClockIcon, Activity, ChevronUpIcon, ChevronDownIcon } from "lucide-react";
+import { Calendar, ChevronRight, SparklesIcon,ExternalLink, TargetIcon, FileTextIcon, ClockIcon, Activity, ChevronUpIcon, ChevronDownIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
@@ -55,7 +55,7 @@ export default function Dashboard() {
   // Number of document cards to show initially
   const initialDocumentsToShow = 4;
   // Number of timeline items to show initially
-  const initialTimelinesToShow = 5;
+  const initialTimelinesToShow = 4;
 
   return (
     <main className="flex-1 flex-col overflow-auto p-4 sm:p-6 lg:p-8">
@@ -94,13 +94,18 @@ export default function Dashboard() {
         </h2>
         {documentStats.length === 0 && (
           <Card className="text-center py-16">
-            <CardContent className="pt-10">
-              <h3 className="text-xl font-medium text-gray-700 mb-2">
-                No documents found
-              </h3>
-              <p className="text-muted-foreground">
-                You have no documents to review. Please check back later.
-              </p>
+            <CardTitle>
+              You haven't started any applications yet.
+            </CardTitle>
+            <CardDescription>
+              You can start a new application on the 'Apply' or 'Saved Programs' pages.
+            </CardDescription>
+            <CardContent>
+              <Button
+                onClick={() => navigate("/saved")}
+              >
+                Start New Application
+              </Button>
             </CardContent>
           </Card>
         )}
@@ -187,20 +192,21 @@ export default function Dashboard() {
             <ExternalLink className="ml-2 h-4 w-4" />
           </Button>
         </h2>
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between">
-              <CardDescription>
-                Track your application deadlines and requirements
-              </CardDescription>
-          </CardHeader>
-          <CardContent className="pt-4">
-            <div className="space-y-4">
+        {applicationTimeline.length === 0 ? (
+          <Card className="text-center py-16">
+            <CardTitle>
+              No timeline events found.
+            </CardTitle>
+          </Card>
+        ) : (
+          <>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {applicationTimeline
                 .slice(0, showAllTimelines ? applicationTimeline.length : initialTimelinesToShow)
                 .map((event, index) => (
-                <div
+                <Card 
                   key={index}
-                  className="flex items-start gap-4 p-2 rounded-lg hover:bg-muted/50 cursor-pointer transition-colors"
+                  className="cursor-pointer hover:shadow-md transition-all"
                   onClick={() => {
                     // Find the application that matches this event
                     const matchingApp = applications.find(
@@ -219,47 +225,66 @@ export default function Dashboard() {
                     );
                   }}
                 >
-                  <div className="min-w-[100px] text-sm">
-                    <div className="font-medium">
-                      {new Date(event.date).toLocaleDateString()}
-                    </div>
-                    <Badge
-                      variant={event.priority === "high" ? "destructive" : "secondary"}
-                      className="mt-1"
-                    >
-                      {event.priority}
-                    </Badge>
-                  </div>
-                  <div className="flex-1">
-                    <h4 className="text-sm font-medium flex items-center justify-center">
-                      {event.university}
-                      <TargetIcon className="h-4 w-4 ml-2 text-muted-foreground" />
-                    </h4>
-                    <p className="text-sm text-muted-foreground hidden md:block">{event.program}</p>
-                    <div className="mt-2 flex gap-2 flex-wrap hidden md:flex">
-                      {event.requirements.map((requirement, idx) => (
+                  <CardHeader className="pb-2 pt-4 px-4">
+                    <CardTitle className="text-md font-medium flex items-center justify-center">
+                      {event.university} <TargetIcon className="h-4 w-4 ml-2 text-muted-foreground"/>
+                    </CardTitle>
+                    <CardDescription className="text-xs text-center">
+                      {event.program}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="px-4 pb-4 pt-0">
+                    <div className="flex items-start gap-4">
+                      {/* Left column - Date and Priority */}
+                      <div className="min-w-[100px] text-sm text-center">
+                        <div className="font-medium space-y-0.5">
+                          <p className="text-xs text-muted-foreground">Deadline</p>
+                          <p className="text-xs">{new Date(event.date).toLocaleDateString()}</p>
+                        </div>
                         <Badge
-                          key={idx}
-                          variant={
-                            requirement.status === "completed"
-                              ? "default"
-                              : "secondary"
-                          }
-                          className="flex items-center"
+                          variant={event.priority === "high" ? "destructive" : "secondary"}
+                          className="mt-2"
                         >
-                          {requirement.type}
+                          {event.priority}
                         </Badge>
-                      ))}
+                      </div>
+                      
+                      {/* Right column - Requirements */}
+                      <div className="flex-1">
+                        {/* Requirements badges */}
+                        <div className="flex gap-2 flex-wrap justify-center">
+                          {event.requirements.map((requirement, idx) => (
+                            <Badge
+                              key={idx}
+                              variant={
+                                requirement.status === "completed"
+                                  ? "default"
+                                  : "secondary"
+                              }
+                              className="flex items-center"
+                            >
+                              {requirement.type}
+                            </Badge>
+                          ))}
+                        </div>
+                        
+                        {/* Notes and deadline info */}
+                        <div className="mt-3 space-y-1 text-center">
+                          {event.notes && (
+                            <p className="text-xs text-muted-foreground">
+                              {event.notes}
+                            </p>
+                          )}
+                          <p className="text-xs text-muted-foreground">
+                            {new Date(event.date) > new Date() 
+                              ? `Due in ${Math.ceil((new Date(event.date).getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))} days`
+                              : `Deadline passed`}
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                    {event.notes && (
-                      <p className="mt-2 text-xs text-muted-foreground flex items-center">
-                        <BellIcon className="h-3 w-3 mr-1" />
-                        {event.notes}
-                      </p>
-                    )}
-                  </div>
-                  <ChevronRight className="h-4 w-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
-                </div>
+                  </CardContent>
+                </Card>
               ))}
             </div>
             
@@ -285,8 +310,8 @@ export default function Dashboard() {
                 </Button>
               </div>
             )}
-          </CardContent>
-        </Card>
+          </>
+        )}
       </div>
     </main>
   );

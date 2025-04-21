@@ -111,10 +111,10 @@ export default function ApplicationDetail() {
   }
 
   const handleDocumentClick = (documentId: Id<"applicationDocuments">, documentType: string) => {
-    navigate(`/documents/${encodeURIComponent(state.universityName)}/${documentType.toLowerCase()}?documentId=${documentId}`, {
+    navigate(`/documents/${encodeURIComponent(application.university)}/${documentType.toLowerCase()}?documentId=${documentId}`, {
       state: {
         applicationId: state.applicationId,
-        universityName: state.universityName,
+        universityName: application.university,
         returnPath: location.pathname
       }
     });

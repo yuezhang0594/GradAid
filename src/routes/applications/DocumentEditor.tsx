@@ -33,6 +33,9 @@ export default function DocumentEditor() {
     setState,
     document,
     documentId,
+    universityName,
+    programDegree,
+    programName,
     handleSave,
     handleBack,
     handleRecommenderSubmit,
@@ -86,53 +89,61 @@ export default function DocumentEditor() {
       description={
         <div className="flex flex-col items-center text-center">
           <p className="text-sm text-muted-foreground">
-            Last edited: {formatLastEdited(document?.lastEdited)}
+            {universityName && (programName || programDegree) ? 
+              `${universityName} - ${programDegree} in ${programName}` : 
+              "Application Document"}
           </p>
         </div>
       }
     >
-      <div className="space-y-6 mx-auto max-w-5xl">
-        <div className="flex items-center justify-between sm:flex-row flex-col gap-4">
-          <div className="flex items-center gap-4">
-            <Button variant="outline" onClick={handleBack} className="gap-2">
+      <div className="space-y-4 sm:space-y-6 mx-auto max-w-4xl px-2 sm:px-0">
+        <div className="flex items-center justify-between sm:flex-row flex-col gap-3">
+          <div className="flex items-center gap-2 w-full sm:w-auto">
+            <Button variant="outline" onClick={handleBack} className="gap-2 w-full sm:w-auto">
               <ArrowLeftIcon className="h-4 w-4" />
               Back
             </Button>
           </div>
-          <div className="flex items-center gap-2 sm:flex-row flex-col">
+          <div className="flex items-center gap-2 sm:flex-row flex-col w-full sm:w-auto">
             {document?.type === "lor" && (
               <Button
                 variant="outline"
                 onClick={() =>
                   setState((prev) => ({ ...prev, showRecommenderDialog: true }))
                 }
-                className="gap-2"
+                className="gap-2 w-full sm:w-auto"
               >
                 <MessageSquareIcon className="h-4 w-4" />
-                {document.recommenderName
-                  ? `Edit Recommender Info`
-                  : "Add Recommender Info"}
+                <span className="truncate">
+                  {document.recommenderName
+                    ? `Edit Recommender Info`
+                    : "Add Recommender Info"}
+                </span>
               </Button>
             )}
             <Button
               variant="outline"
-              className="gap-2 transition-all duration-200 hover:bg-muted"
+              className="gap-2 transition-all duration-200 hover:bg-muted w-full sm:w-auto"
               disabled={state.isSaving || state.isGenerating}
               onClick={handleGenerateDocument}
             >
               {state.isGenerating && (
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
               )}
-              {state.isGenerating ? "Generating..." : "Generate Document"}
+              <span className="truncate">
+                {state.isGenerating ? "Generating..." : "Generate Document"}
+              </span>
             </Button>
             <Button
               variant="default"
               onClick={handleSave}
               disabled={state.isSaving || !state.content}
-              className="gap-2"
+              className="gap-2 w-full sm:w-auto"
             >
               <SaveIcon className="h-4 w-4" />
-              {state.isSaving ? "Saving..." : "Save"}
+              <span className="truncate">
+                {state.isSaving ? "Saving..." : "Save"}
+              </span>
             </Button>
           </div>
         </div>
@@ -145,10 +156,15 @@ export default function DocumentEditor() {
                 setState((prev) => ({ ...prev, content: e.target.value }))
               }
               placeholder="Start writing..."
-              className="min-h-[550px] font-mono border-0 rounded-none focus-visible:ring-0 focus-visible:ring-offset-0 resize-none"
+              className="min-h-[350px] sm:min-h-[350px] md:min-h-[400px] lg:min-h-[450px] font-mono border-0 rounded-none focus-visible:ring-0 focus-visible:ring-offset-0 resize-vertical"
             />
           </CardContent>
         </Card>
+
+        {/* Last edited information */}
+        <div className="flex justify-end text-xs sm:text-sm text-muted-foreground mt-1 sm:mt-2">
+          <p>Last edited: {formatLastEdited(document?.lastEdited)}</p>
+        </div>
 
         <Dialog
           open={state.showRecommenderDialog}
@@ -156,7 +172,7 @@ export default function DocumentEditor() {
             setState((prev) => ({ ...prev, showRecommenderDialog: open }))
           }
         >
-          <DialogContent className="sm:max-w-[425px]">
+          <DialogContent className="sm:max-w-[425px] max-w-[90vw]">
             <DialogHeader>
               <DialogTitle className="text-xl font-semibold">
                 {document?.recommenderName
@@ -251,7 +267,7 @@ export default function DocumentEditor() {
             setState((prev) => ({ ...prev, showConfirmationDialog: open }))
           }
         >
-          <AlertDialogContent className="sm:max-w-[425px]">
+          <AlertDialogContent className="sm:max-w-[425px] max-w-[90vw]">
             <AlertDialogHeader>
               <AlertDialogTitle className="text-xl font-semibold">
                 Generate {formatDocumentType(document?.type ?? "Document")}
