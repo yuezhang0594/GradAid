@@ -9,7 +9,7 @@ export interface AiCreditSummary {
 }
 
 export interface AiCreditUsageStat {
-  type: string;
+  type: AiCreditUsageType;
   used: number;
   percentage: number;
 }
@@ -67,32 +67,6 @@ export async function getUserAiCreditUsage(
     used,
     percentage: totalUsed > 0 ? Math.round((used / totalUsed) * 100) : 0,
   }));
-
-  // If no usage records exist, return default values
-  if (usageArray.length === 0) {
-    return [
-      {
-        type: "Document Review",
-        used: 100,
-        percentage: 40,
-      },
-      {
-        type: "Essay Feedback",
-        used: 75,
-        percentage: 30,
-      },
-      {
-        type: "Research Help",
-        used: 50,
-        percentage: 20,
-      },
-      {
-        type: "Other",
-        used: 25,
-        percentage: 10,
-      },
-    ];
-  }
 
   return usageArray;
 }

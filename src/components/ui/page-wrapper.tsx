@@ -14,7 +14,7 @@ export function PageWrapper({
   children,
 }: PageHeaderProps) {
   return (
-    <div className="container mx-auto py-4 px-4 md:px-6 lg:px-8 max-w-7xl">
+    <div className="container mx-auto py-4 px-4 md:px-6 lg:px-8 max-w-20xl">
       <header className={`mb-8 ${className}`}>
         <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl mb-2">
           {title}
