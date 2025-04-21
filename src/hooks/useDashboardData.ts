@@ -88,12 +88,19 @@ export const useDashboardData = (): DashboardData => {
     applications: { total: 0, submitted: 0, inProgress: 0, nextDeadline: null },
     documents: { totalDocuments: 0, averageProgress: 0, completedDocuments: 0 },
     lors: { total: 0, submitted: 0, pending: 0 },
-    aiCredits: { totalCredits: 0, usedCredits: 0 },
+    aiCredits: { totalCredits: 0, usedCredits: 0, resetDate: "" },
     recentActivity: []
   };
 
   const applications = useQuery(api.applications.queries.getApplications) ?? [];
   const recentDocuments = useQuery(api.applications.queries.getDocumentDetails) ?? [];
+
+  // Format resetDate as mm/dd/yyyy
+  const resetDateFormatted = stats.aiCredits.resetDate
+    ? new Date(stats.aiCredits.resetDate).toLocaleDateString(undefined, {
+        year: 'numeric', month: '2-digit', day: '2-digit'
+      })
+    : '';
 
   // Format application stats
   const applicationStats = [
@@ -108,17 +115,18 @@ export const useDashboardData = (): DashboardData => {
         tooltip: "View summary of all your applications",
       },
     },
-    // {
-    //   title: "AI Credits Used",
-    //   icon: <SparklesIcon className="h-4 w-4 text-muted-foreground" />,
-    //   value: `${stats.aiCredits.usedCredits}/${stats.aiCredits.totalCredits}`,
-    //   description: "Reset on Apr 1, 2025",
-    //   action: {
-    //     label: "View usage",
-    //     href: "/credits",
-    //     tooltip: "Monitor your AI credit usage",
-    //   },
-    // },
+    {
+      title: "AI Credits Used",
+      // icon: <SparklesIcon className="h-4 w-4 text-muted-foreground" />,
+      value: `${stats.aiCredits.usedCredits}/${stats.aiCredits.totalCredits}`,
+      description: `Reset on ${resetDateFormatted}`,
+      // description: `${aiDocTypeUsed} times AI Doc used`,
+      action: {
+        label: "View usage",
+        href: "/credits",
+        tooltip: "Monitor your AI credit usage",
+      },
+    },
     {
       title: "Next Deadline",
       // icon: <ClockIcon className="h-4 w-4 text-muted-foreground" />,

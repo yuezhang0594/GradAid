@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-import { Calendar, ChevronRight, ExternalLink, BellIcon, TargetIcon, FileTextIcon, ClockIcon, Activity, ChevronUpIcon, ChevronDownIcon } from "lucide-react";
+import { Calendar, ChevronRight, SparklesIcon,ExternalLink, BellIcon, TargetIcon, FileTextIcon, ClockIcon, Activity, ChevronUpIcon, ChevronDownIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
@@ -36,6 +36,7 @@ export default function Dashboard() {
     "Active Applications": <FileTextIcon className="h-4 w-4 text-muted-foreground" />,
     "Next Deadline": <ClockIcon className="h-4 w-4 text-muted-foreground" />,
     "Recent Activity": <Activity className="h-4 w-4 text-muted-foreground" />,
+    "AI Credits Used": <SparklesIcon className="h-4 w-4 text-muted-foreground" />,
   };
 
   const handleDocumentClick = (doc: any) => {
@@ -59,7 +60,7 @@ export default function Dashboard() {
   return (
     <main className="flex-1 flex-col overflow-auto p-4 sm:p-6 lg:p-8">
       {/* Application Progress Stats */}
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         {applicationStats.map((stat, index) => (
           <ClickableCard key={index} action={stat.action}>
             <CardHeader className="flex flex-row items-center justify-between pb-2">

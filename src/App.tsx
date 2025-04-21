@@ -26,6 +26,7 @@ import FeedbackPage from "./routes/FeedbackPage";
 import FAQPage from "./routes/support/FAQPage";
 import ContactPage from "./routes/support/ContactPage";
 import ResendDashboard from "./routes/support/ResendDashboard";
+import CreditsPage from "./routes/pages/credits";
 
 function App() {
   return (
@@ -60,6 +61,7 @@ function App() {
           />
           <Route path="/timeline" element={<TimelinePage />} />
           <Route path="/activity" element={<ActivityPage />} />
+          <Route path="/credits" element={<CreditsPage />} />
           <Route path="/feedback" element={<FeedbackPage />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/contact" element={<ContactPage />} />
