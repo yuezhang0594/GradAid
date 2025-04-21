@@ -14,6 +14,7 @@ import {
   Clock,
   Filter,
   ChevronsUpDown,
+  ClipboardXIcon,
 } from "lucide-react";
 import { useQuery } from "convex/react";
 import { api } from "#/_generated/api";
@@ -28,6 +29,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { EmptyState } from "@/components/ui/empty-state";
 
 // Helper function to get icon based on activity type
 function getActivityIcon(type: string) {
@@ -88,12 +90,20 @@ export default function ActivityPage() {
   return (
     <PageWrapper
       title="Recent Activity"
-      description={
-        <div className="space-y-4">
-          <div className="space-y-1">
-            <p className="text-muted-foreground">Track your recent actions and progress</p>
-          </div>
-          <div className="flex items-center justify-end gap-2">
+      description="Track your recent actions and progress"
+    >
+      {recentActivities.length === 0 ? (
+        <EmptyState
+          icon={ClipboardXIcon}
+          title="No Applications Found"
+          description="You haven't started any applications yet.
+            You can start a new application on the 'Apply' or 'Saved Programs' pages."
+          actionLabel="Start New Application"
+          actionHref="/apply"
+        />
+      ) : (
+        <>
+          <div className="flex items-center justify-end gap-2 mb-4">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" className="flex items-center gap-1">
@@ -129,117 +139,117 @@ export default function ActivityPage() {
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
-        </div>
-      }
-    >
-      <div className="grid gap-4 md:grid-cols-3">
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-sm font-medium">Today</CardTitle>
-            <Activity className="h-4 w-4 text-muted-foreground" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">
-              {activityStats.today}
-            </div>
-            <p className="text-xs text-muted-foreground">activities</p>
-          </CardContent>
-        </Card>
 
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-sm font-medium">This Week</CardTitle>
-            <Activity className="h-4 w-4 text-muted-foreground" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">
-              {activityStats.thisWeek}
-            </div>
-            <p className="text-xs text-muted-foreground">activities</p>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-sm font-medium">This Month</CardTitle>
-            <Activity className="h-4 w-4 text-muted-foreground" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">
-              {activityStats.thisMonth}
-            </div>
-            <p className="text-xs text-muted-foreground">activities</p>
-          </CardContent>
-        </Card>
-      </div>
-
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle>Activity Feed</CardTitle>
-          <CardDescription>
-            {selectedFilters.length > 0
-              ? `Showing ${filteredActivities.length} filtered activities`
-              : "Your recent actions and updates"}
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          {filteredActivities.length === 0 ? (
-            <div className="text-center py-8 text-muted-foreground">
-              No activities match your filter criteria
-            </div>
-          ) : (
-            <div className="space-y-8">
-              {filteredActivities.map((activity) => (
-                <div
-                  key={activity._id}
-                  className="flex items-start space-x-4 border-b pb-8 last:border-0 last:pb-0"
-                >
-                  <div className="rounded-full bg-secondary p-2">
-                    {getActivityIcon(activity.type)}
-                  </div>
-                  <div className="space-y-1 flex-1">
-                    <div className="flex items-center justify-between">
-                      <p className="text-sm font-medium leading-none">
-                        {activity.type.replace(/_/g, " ").replace(/\b\w/g, (l) => l.toUpperCase())}
-                      </p>
-                      <Badge variant="secondary">
-                        {formatDistanceToNow(new Date(activity.timestamp), { addSuffix: true })}
-                      </Badge>
-                    </div>
-                    <p className="text-sm text-muted-foreground">
-                      {activity.description}
-                    </p>
-                    <div className="flex gap-2 mt-2">
-                      {activity.metadata.applicationId && (
-                        <Badge variant="outline">Application Update</Badge>
-                      )}
-                      {activity.metadata.documentId && (
-                        <Badge variant="outline">Document Update</Badge>
-                      )}
-                      {activity.metadata.creditsUsed && (
-                        <Badge variant="outline">
-                          {activity.metadata.creditsUsed} credits used
-                        </Badge>
-                      )}
-                      {activity.metadata.oldStatus && activity.metadata.newStatus && (
-                        <Badge variant="outline">
-                          Status: {activity.metadata.oldStatus} → {activity.metadata.newStatus}
-                        </Badge>
-                      )}
-                      {activity.metadata.oldProgress !== undefined &&
-                        activity.metadata.newProgress !== undefined && (
-                          <Badge variant="outline">
-                            Progress: {activity.metadata.oldProgress}% → {activity.metadata.newProgress}%
-                          </Badge>
-                        )}
-                    </div>
-                  </div>
+          <div className="grid gap-4 md:grid-cols-3">
+            <Card>
+              <CardHeader className="flex flex-row items-center justify-between pb-2">
+                <CardTitle className="text-sm font-medium">Today</CardTitle>
+                <Activity className="h-4 w-4 text-muted-foreground" />
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold">
+                  {activityStats.today}
                 </div>
-              ))}
-            </div>
-          )}
-        </CardContent>
-      </Card>
+                <p className="text-xs text-muted-foreground">activities</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader className="flex flex-row items-center justify-between pb-2">
+                <CardTitle className="text-sm font-medium">This Week</CardTitle>
+                <Activity className="h-4 w-4 text-muted-foreground" />
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold">
+                  {activityStats.thisWeek}
+                </div>
+                <p className="text-xs text-muted-foreground">activities</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader className="flex flex-row items-center justify-between pb-2">
+                <CardTitle className="text-sm font-medium">This Month</CardTitle>
+                <Activity className="h-4 w-4 text-muted-foreground" />
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold">
+                  {activityStats.thisMonth}
+                </div>
+                <p className="text-xs text-muted-foreground">activities</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <Card className="mt-8">
+            <CardHeader>
+              <CardTitle>Activity Feed</CardTitle>
+              <CardDescription>
+                {selectedFilters.length > 0
+                  ? `Showing ${filteredActivities.length} filtered activities`
+                  : "Your recent actions and updates"}
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              {filteredActivities.length === 0 ? (
+                <div className="text-center py-8 text-muted-foreground">
+                  No activities match your filter criteria
+                </div>
+              ) : (
+                <div className="space-y-8">
+                  {filteredActivities.map((activity) => (
+                    <div
+                      key={activity._id}
+                      className="flex items-start space-x-4 border-b pb-8 last:border-0 last:pb-0"
+                    >
+                      <div className="rounded-full bg-secondary p-2">
+                        {getActivityIcon(activity.type)}
+                      </div>
+                      <div className="space-y-1 flex-1">
+                        <div className="flex items-center justify-between">
+                          <p className="text-sm font-medium leading-none">
+                            {activity.type.replace(/_/g, " ").replace(/\b\w/g, (l) => l.toUpperCase())}
+                          </p>
+                          <Badge variant="secondary">
+                            {formatDistanceToNow(new Date(activity.timestamp), { addSuffix: true })}
+                          </Badge>
+                        </div>
+                        <p className="text-sm text-muted-foreground">
+                          {activity.description}
+                        </p>
+                        <div className="flex gap-2 mt-2">
+                          {activity.metadata.applicationId && (
+                            <Badge variant="outline">Application Update</Badge>
+                          )}
+                          {activity.metadata.documentId && (
+                            <Badge variant="outline">Document Update</Badge>
+                          )}
+                          {activity.metadata.creditsUsed && (
+                            <Badge variant="outline">
+                              {activity.metadata.creditsUsed} credits used
+                            </Badge>
+                          )}
+                          {activity.metadata.oldStatus && activity.metadata.newStatus && (
+                            <Badge variant="outline">
+                              Status: {activity.metadata.oldStatus} → {activity.metadata.newStatus}
+                            </Badge>
+                          )}
+                          {activity.metadata.oldProgress !== undefined &&
+                            activity.metadata.newProgress !== undefined && (
+                              <Badge variant="outline">
+                                Progress: {activity.metadata.oldProgress}% → {activity.metadata.newProgress}%
+                              </Badge>
+                            )}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </CardContent>
+          </Card>
+        </>
+      )}
     </PageWrapper>
   );
 }

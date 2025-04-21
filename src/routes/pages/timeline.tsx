@@ -6,12 +6,13 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CalendarIcon, AlertCircle } from "lucide-react";
+import { CalendarIcon, AlertCircle, ClipboardXIcon } from "lucide-react";
 import { useQuery } from "convex/react";
 import { api } from "#/_generated/api";
 import { format } from "date-fns";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 import { useNavigate } from "react-router-dom";
+import { EmptyState } from "@/components/ui/empty-state";
 
 export default function TimelinePage() {
   const timeline = useQuery(api.applications.timeline.getTimeline);
@@ -26,11 +27,21 @@ export default function TimelinePage() {
       title="Application Timeline"
       description="Track your application deadlines and requirements"
     >
-      <div className="space-y-4">
-        {timeline.map((item, index) => (
-          <Card
-            key={index}
-            className="group hover:shadow-md transition-all cursor-pointer hover:border-primary/50 relative"
+      {timeline.length === 0 ? (
+      <EmptyState
+          icon={ClipboardXIcon}
+          title="No Applications Found"
+          description="You haven't started any applications yet.
+            You can start a new application on the 'Apply' or 'Saved Programs' pages."
+          actionLabel="Start New Application"
+          actionHref="/apply"
+        />
+      ) : (
+        <div className="space-y-4">
+          {timeline.map((item, index) => (
+            <Card
+              key={index}
+              className="group hover:shadow-md transition-all cursor-pointer hover:border-primary/50 relative"
             onClick={() => navigate(`/applications/${encodeURIComponent(item.university)}`, {
               state: { applicationId: item._id }
             })}
@@ -88,6 +99,7 @@ export default function TimelinePage() {
           </Card>
         ))}
       </div>
+    )}
     </PageWrapper>
   );
 }
