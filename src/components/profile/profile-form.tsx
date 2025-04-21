@@ -95,7 +95,7 @@ export function ProfileForm() {
   }
 
   return (
-    <div className="space-y-2">
+    <div className="max-w-4xl mx-auto space-y-2">
       {progress < 100 && (
         <Progress value={progress} className="w-full" />
       )}

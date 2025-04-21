@@ -110,68 +110,12 @@ export function PersonalInfoStep({ onComplete, initialData, onBack }: PersonalIn
     <Card>
       <CardContent className="pt-6">
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-            <FormField
-              control={form.control}
-              name="countryOfOrigin"
-              render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "countryOfOrigin"> }) => (
-                <FormItem className="w-full sm:max-w-[250px]">
-                  <FormLabel>Country of Origin</FormLabel>
-                  <FormControl>
-                    <Select 
-                      onValueChange={field.onChange}
-                      value={field.value}
-                    >
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select your country of origin" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {/* Popular Countries */}
-                        {popularCountryObjects.map((country) => (
-                          <SelectItem key={country?.isoCode} value={country?.name || ""}>
-                            {country?.flag} {country?.name}
-                          </SelectItem>
-                        ))}
-                        
-                        {/* Divider */}
-                        <SelectSeparator className="my-2" />
-                        
-                        {/* All Other Countries */}
-                        {otherCountries.map((country) => (
-                          <SelectItem key={country.isoCode} value={country.name}>
-                            {country.flag} {country.name}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              control={form.control}
-              name="dateOfBirth"
-              render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "dateOfBirth"> }) => (
-                <FormItem className="w-full sm:max-w-[150px]">
-                  <FormLabel>Date of Birth</FormLabel>
-                  <FormControl>
-                    <Input 
-                      type="date" 
-                      {...field} 
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
+          <form onSubmit={form.handleSubmit(onSubmit)} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             <FormField
               control={form.control}
               name="currentLocation"
               render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "currentLocation"> }) => (
-                <FormItem className="w-full sm:max-w-[300px]">
+                <FormItem className="col-span-1 min-w-0 w-full max-w-[300px]">
                   <FormLabel>Current Location</FormLabel>
                   <FormControl>
                     <div className="flex flex-col space-y-2">
@@ -196,10 +140,8 @@ export function PersonalInfoStep({ onComplete, initialData, onBack }: PersonalIn
                               {country?.flag} {country?.name}
                             </SelectItem>
                           ))}
-                          
                           {/* Divider */}
                           <SelectSeparator className="my-2" />
-                          
                           {/* All Other Countries */}
                           {otherCountries.map((country) => (
                             <SelectItem key={country.isoCode} value={country.name}>
@@ -259,12 +201,50 @@ export function PersonalInfoStep({ onComplete, initialData, onBack }: PersonalIn
                 </FormItem>
               )}
             />
+            
+            <FormField
+              control={form.control}
+              name="countryOfOrigin"
+              render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "countryOfOrigin"> }) => (
+                <FormItem className="col-span-1 min-w-0 w-full max-w-[250px]">
+                  <FormLabel>Country of Origin</FormLabel>
+                  <FormControl>
+                    <Select 
+                      onValueChange={field.onChange}
+                      value={field.value}
+                    >
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select your country of origin" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {/* Popular Countries */}
+                        {popularCountryObjects.map((country) => (
+                          <SelectItem key={country?.isoCode} value={country?.name || ""}>
+                            {country?.flag} {country?.name}
+                          </SelectItem>
+                        ))}
+                        {/* Divider */}
+                        <SelectSeparator className="my-2" />
+                        {/* All Other Countries */}
+                        {otherCountries.map((country) => (
+                          <SelectItem key={country.isoCode} value={country.name}>
+                            {country.flag} {country.name}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
 
             <FormField
               control={form.control}
               name="nativeLanguage"
               render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "nativeLanguage"> }) => (
-                <FormItem className="w-full sm:max-w-[200px]">
+                <FormItem className="col-span-1 min-w-0 w-full max-w-[220px]">
                   <FormLabel>Native Language</FormLabel>
                   <FormControl>
                     <Select 
@@ -288,7 +268,25 @@ export function PersonalInfoStep({ onComplete, initialData, onBack }: PersonalIn
               )}
             />
 
-            <div className="flex justify-end space-x-2">
+            <FormField
+              control={form.control}
+              name="dateOfBirth"
+              render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "dateOfBirth"> }) => (
+                <FormItem className="col-span-1 min-w-0 w-full max-w-[180px]">
+                  <FormLabel>Date of Birth</FormLabel>
+                  <FormControl>
+                    <Input 
+                      type="date" 
+                      {...field} 
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+
+            <div className="col-span-1 sm:col-span-2 md:col-span-4 flex justify-end">
               <Button type="submit" disabled={isSubmitting}>
                 {isSubmitting ? "Saving..." : "Continue"}
               </Button>

@@ -102,49 +102,16 @@ export function EducationStep({ onComplete, initialData, onBack }: EducationStep
               )}
             />
 
-            <FormField
-              control={form.control}
-              name="major"
-              render={({ field }: { field: ControllerRenderProps<EducationForm, "major"> }) => (
-                <FormItem className="w-full lg:w-1/2">
-                  <FormLabel>Major</FormLabel>
-                  <FormControl>
-                    <Input placeholder="Enter your major" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              control={form.control}
-              name="university"
-              render={({ field }: { field: ControllerRenderProps<EducationForm, "university"> }) => (
-                <FormItem className="w-full lg:w-1/2">
-                  <FormLabel>University</FormLabel>
-                  <FormControl>
-                    <Input placeholder="Enter your university" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
-            <div className="flex flex-col sm:flex-row gap-4">
+            {/* Split these fields into two columns for desktop, one for mobile */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
               <FormField
                 control={form.control}
-                name="gpa"
-                render={({ field }: { field: ControllerRenderProps<EducationForm, "gpa"> }) => (
-                  <FormItem className="w-full sm:max-w-[150px]">
-                    <FormLabel>GPA</FormLabel>
+                name="major"
+                render={({ field }: { field: ControllerRenderProps<EducationForm, "major"> }) => (
+                  <FormItem className="w-full">
+                    <FormLabel>Major</FormLabel>
                     <FormControl>
-                      <Input
-                        type="number"
-                        step="0.01"
-                        placeholder="Enter your GPA"
-                        {...field}
-                        onChange={(e) => field.onChange(parseFloat(e.target.value))}
-                      />
+                      <Input placeholder="Enter your major" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -153,58 +120,94 @@ export function EducationStep({ onComplete, initialData, onBack }: EducationStep
 
               <FormField
                 control={form.control}
-                name="gpaScale"
-                render={({ field }: { field: ControllerRenderProps<EducationForm, "gpaScale"> }) => (
-                  <FormItem className="w-full sm:max-w-[150px]">
-                    <FormLabel>GPA Scale</FormLabel>
-                    <Select onValueChange={(value) => field.onChange(parseFloat(value))} defaultValue={field.value.toString()}>
+                name="university"
+                render={({ field }: { field: ControllerRenderProps<EducationForm, "university"> }) => (
+                  <FormItem className="w-full">
+                    <FormLabel>University</FormLabel>
+                    <FormControl>
+                      <Input placeholder="Enter your university" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              <div className="flex flex-col sm:flex-row gap-4 md:col-span-3">
+                <FormField
+                  control={form.control}
+                  name="graduationDate"
+                  render={({ field }: { field: ControllerRenderProps<EducationForm, "graduationDate"> }) => {
+                  // Calculate max date (1 year from now)
+                  const today = new Date();
+                  const maxDate = new Date(today.getFullYear() + 1, today.getMonth());
+                  const maxDateString = maxDate.toISOString().slice(0, 7); // Format as YYYY-MM
+
+                  return (
+                    <FormItem className="w-full sm:max-w-[150px]">
+                      <FormLabel>Graduation Date</FormLabel>
                       <FormControl>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select GPA scale" />
-                        </SelectTrigger>
+                        <Input 
+                          type="month" 
+                          max={maxDateString}
+                          {...field} 
+                        />
                       </FormControl>
-                      <SelectContent>
-                        <SelectItem value="4">4.0</SelectItem>
-                        <SelectItem value="5">5.0</SelectItem>
-                        <SelectItem value="10">10.0</SelectItem>
-                      </SelectContent>
-                    </Select>
-                    <FormMessage />
-                  </FormItem>
-                )}
+                      <FormMessage />
+                    </FormItem>
+                  );
+                }}
               />
+
+              <FormField
+                  control={form.control}
+                  name="gpa"
+                  render={({ field }: { field: ControllerRenderProps<EducationForm, "gpa"> }) => (
+                    <FormItem className="w-full sm:max-w-[150px]">
+                      <FormLabel>GPA</FormLabel>
+                      <FormControl>
+                        <Input
+                          type="number"
+                          step="0.01"
+                          placeholder="Enter your GPA"
+                          {...field}
+                          onChange={(e) => field.onChange(parseFloat(e.target.value))}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+
+                <FormField
+                  control={form.control}
+                  name="gpaScale"
+                  render={({ field }: { field: ControllerRenderProps<EducationForm, "gpaScale"> }) => (
+                    <FormItem className="w-full sm:max-w-[150px]">
+                      <FormLabel>GPA Scale</FormLabel>
+                      <Select onValueChange={(value) => field.onChange(parseFloat(value))} defaultValue={field.value.toString()}>
+                        <FormControl>
+                          <SelectTrigger>
+                            <SelectValue placeholder="Select GPA scale" />
+                          </SelectTrigger>
+                        </FormControl>
+                        <SelectContent>
+                          <SelectItem value="4">4.0</SelectItem>
+                          <SelectItem value="5">5.0</SelectItem>
+                          <SelectItem value="10">10.0</SelectItem>
+                        </SelectContent>
+                      </Select>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </div>
             </div>
-
-            <FormField
-              control={form.control}
-              name="graduationDate"
-              render={({ field }: { field: ControllerRenderProps<EducationForm, "graduationDate"> }) => {
-                // Calculate max date (1 year from now)
-                const today = new Date();
-                const maxDate = new Date(today.getFullYear() + 1, today.getMonth());
-                const maxDateString = maxDate.toISOString().slice(0, 7); // Format as YYYY-MM
-
-                return (
-                  <FormItem className="w-full sm:max-w-[150px]">
-                    <FormLabel>Graduation Date</FormLabel>
-                    <FormControl>
-                      <Input 
-                        type="month" 
-                        max={maxDateString}
-                        {...field} 
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                );
-              }}
-            />
 
             <FormField
               control={form.control}
               name="researchExperience"
               render={({ field }: { field: ControllerRenderProps<EducationForm, "researchExperience"> }) => (
-                <FormItem className="w-full lg:w-1/2">
+                <FormItem className="w-full">
                   <div className="flex justify-between items-center">
                     <FormLabel>Research Experience (Optional)</FormLabel>
                     <span className={`text-xs ${(field.value?.length || 0) > PROFILE_NOTES_MAX_CHARS ? 'text-red-500 font-bold' : 'text-gray-500'}`}>

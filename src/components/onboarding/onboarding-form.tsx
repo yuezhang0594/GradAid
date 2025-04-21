@@ -87,7 +87,7 @@ export function OnboardingForm() {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="max-w-4xl mx-auto space-y-6">
       <Progress value={progress} className="w-full" />
       
       <Tabs value={activeStep} className="w-full">
