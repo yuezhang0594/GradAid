@@ -27,6 +27,7 @@ import FAQPage from "./routes/support/FAQPage";
 import ContactPage from "./routes/support/ContactPage";
 import ResendDashboard from "./routes/support/ResendDashboard";
 import CreditsPage from "./routes/pages/credits";
+import { ErrorBoundaryExample } from "./components/ui/error-boundary-example";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         <Route path="/resend" element={<ResendDashboard />} />
         <Route path="/tos" element={<TOSPage />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/error" element={<ErrorBoundaryExample />} />
 
         {/* Protected Routes */}
         <Route path="/onboarding" element={<ProtectedRoute> <OnboardingPage /> </ProtectedRoute>} />

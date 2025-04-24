@@ -1,10 +1,12 @@
 import { ReactNode } from "react";
+import { ErrorBoundary } from "../error-boundary";
 
 interface PageHeaderProps {
   title: string;
   description?: string | ReactNode;
   className?: string;
   children: ReactNode;
+  errorFallback?: ReactNode;
 }
 
 export function PageWrapper({
@@ -12,6 +14,7 @@ export function PageWrapper({
   description,
   className = "",
   children,
+  errorFallback,
 }: PageHeaderProps) {
   return (
     <div className="container mx-auto py-4 px-4 md:px-6 lg:px-8 max-w-20xl">
@@ -21,7 +24,9 @@ export function PageWrapper({
         </h1>
         {description && <p className="text-muted-foreground">{description}</p>}
       </header>
-      {children}
+      <ErrorBoundary fallback={errorFallback}>
+        {children}
+      </ErrorBoundary>
     </div>
   );
 }

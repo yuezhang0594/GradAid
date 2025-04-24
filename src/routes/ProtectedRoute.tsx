@@ -4,6 +4,7 @@ import SignInPage from '@/routes/auth/SignIn';
 import { useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { LoaderIcon } from 'lucide-react'
+import { ErrorBoundary } from '@/components/error-boundary';
 import { LOADING_INDICATOR_DELAY } from '#/validators';
 
 export default function ProtectedRoute({ children }: { children: React.ReactNode }) {
@@ -18,7 +19,7 @@ export default function ProtectedRoute({ children }: { children: React.ReactNode
     }, []);
 
     return (
-        <>
+        <ErrorBoundary>
             <AuthLoading>
                 {showLoading && (
                     <div className="fixed inset-0 flex flex-col items-center justify-center">
@@ -35,6 +36,6 @@ export default function ProtectedRoute({ children }: { children: React.ReactNode
                     {children}
                 </AuthenticatedRoute>
             </Authenticated>
-        </>
+        </ErrorBoundary>
     )
 }
