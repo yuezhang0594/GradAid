@@ -13,6 +13,7 @@ export interface DocumentState {
   showRecommenderDialog: boolean;
   showConfirmationDialog: boolean;
   showConfirmationNext: boolean;
+  showGeneratingDialog: boolean;
   isSaving: boolean;
   isGenerating: boolean;
 }

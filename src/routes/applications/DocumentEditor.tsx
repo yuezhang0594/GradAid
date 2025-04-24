@@ -89,9 +89,9 @@ export default function DocumentEditor() {
       description={
         <div className="flex flex-col items-center text-center">
           <p className="text-sm text-muted-foreground">
-            {universityName && (programName || programDegree) ? 
-              `${universityName} - ${programDegree} in ${programName}` : 
-              "Application Document"}
+            {universityName && (programName || programDegree)
+              ? `${universityName} - ${programDegree} in ${programName}`
+              : "Application Document"}
           </p>
         </div>
       }
@@ -99,7 +99,11 @@ export default function DocumentEditor() {
       <div className="space-y-4 sm:space-y-6 mx-auto max-w-4xl px-2 sm:px-0">
         <div className="flex items-center justify-between sm:flex-row flex-col gap-3">
           <div className="flex items-center gap-2 w-full sm:w-auto">
-            <Button variant="outline" onClick={handleBack} className="gap-2 w-full sm:w-auto">
+            <Button
+              variant="outline"
+              onClick={handleBack}
+              className="gap-2 w-full sm:w-auto"
+            >
               <ArrowLeftIcon className="h-4 w-4" />
               Back
             </Button>
@@ -313,6 +317,44 @@ export default function DocumentEditor() {
                 className="flex-1"
               >
                 {state.isGenerating ? "Generating..." : "Generate"}
+              </Button>
+            </div>
+          </AlertDialogContent>
+        </AlertDialog>
+
+        {/* Generating Message */}
+        <AlertDialog
+          open={state.showGeneratingDialog}
+          onOpenChange={(open) =>
+            setState((prev) => ({ ...prev, showGeneratingDialog: open }))
+          }
+        >
+          <AlertDialogContent className="sm:max-w-[425px] max-w-[90vw]">
+            <AlertDialogHeader>
+              <AlertDialogTitle className="text-xl font-semibold">
+                Generating {formatDocumentType(document?.type ?? "Document")}
+              </AlertDialogTitle>
+            </AlertDialogHeader>
+            <AlertDialogDescription>
+              The AI is hard at work crafting a custom{" "}
+              {formatDocumentType(document?.type ?? "Document")} for you. It may
+              take up to a minute to finish.
+            </AlertDialogDescription>
+            <p className="text-sm text-medium">
+              You may continue to work on other tasks while you wait, but please
+              do not close the GradAid webpage until the task is complete.
+            </p>
+            <div className="flex justify-end">
+              <Button
+              variant="outline"
+              onClick={() =>
+                setState((prev) => ({
+                ...prev,
+                showGeneratingDialog: false,
+                }))
+              }
+              >
+              Confirm
               </Button>
             </div>
           </AlertDialogContent>

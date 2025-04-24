@@ -7,7 +7,10 @@ import { api } from "#/_generated/api";
 import { Id } from "#/_generated/dataModel";
 import { toast } from "sonner";
 import { DocumentState } from "@/routes/applications/types";
-import { useGenerateStatementOfPurpose, useGenerateLetterOfRecommendation } from "./useLLM";
+import {
+  useGenerateStatementOfPurpose,
+  useGenerateLetterOfRecommendation,
+} from "./useLLM";
 
 export function useDocumentEditor() {
   const navigate = useNavigate();
@@ -24,49 +27,61 @@ export function useDocumentEditor() {
     showRecommenderDialog: false,
     showConfirmationDialog: false,
     showConfirmationNext: false,
+    showGeneratingDialog: false,
     isSaving: false,
     isGenerating: false,
   });
 
   // Get document ID from URL
-  const documentId = searchParams.get("documentId") as Id<"applicationDocuments"> | null;
+  const documentId = searchParams.get(
+    "documentId"
+  ) as Id<"applicationDocuments"> | null;
 
   // Get document data
-  const document = documentId ? useQuery(api.documents.queries.getDocumentById, {
-    applicationDocumentId: documentId,
-  }) : null;
+  const document = documentId
+    ? useQuery(api.documents.queries.getDocumentById, {
+        applicationDocumentId: documentId,
+      })
+    : null;
 
   // Debug location state
   console.log("Location state:", location.state);
-  
+
   // Get application ID from navigation state
-  const applicationId = (location.state?.applicationId as Id<"applications"> | null) || null;
+  const applicationId =
+    (location.state?.applicationId as Id<"applications"> | null) || null;
   console.log("Final application ID:", applicationId);
 
   // Get university name from location state
-  const universityName = location.state?.universityName || '';
+  const universityName = location.state?.universityName || "";
   console.log("University name from location state:", universityName);
 
   // Get application details if we have an applicationId
-  const applicationDetails = applicationId ? useQuery(api.applications.queries.getApplicationDetails, {
-    applicationId: applicationId,
-  }) : null;
+  const applicationDetails = applicationId
+    ? useQuery(api.applications.queries.getApplicationDetails, {
+        applicationId: applicationId,
+      })
+    : null;
   console.log("Application details:", applicationDetails);
-  
+
   // Extract program information
-  const programDegree = applicationDetails?.degree || '';
-  const programName = applicationDetails?.program || '';
+  const programDegree = applicationDetails?.degree || "";
+  const programName = applicationDetails?.program || "";
 
   console.log("applicationId:", applicationId);
   console.log("applicationDetails:", applicationDetails);
   console.log("universityName:", universityName);
   console.log("programDegree:", programDegree);
-  console.log("programName:", programName); 
+  console.log("programName:", programName);
 
   // Mutations
   const saveDocument = useMutation(api.documents.mutations.saveDocumentDraft);
-  const updateRecommender = useMutation(api.documents.mutations.updateRecommender);
-  const updateDocStatus = useMutation(api.documents.mutations.updateDocumentStatus);
+  const updateRecommender = useMutation(
+    api.documents.mutations.updateRecommender
+  );
+  const updateDocStatus = useMutation(
+    api.documents.mutations.updateDocumentStatus
+  );
 
   // LLM generation hooks
   const generateSOP = useGenerateStatementOfPurpose();
@@ -79,27 +94,27 @@ export function useDocumentEditor() {
       console.error("Missing required state for saving");
       return;
     }
-    setState(prev => ({ ...prev, isSaving: true }));
+    setState((prev) => ({ ...prev, isSaving: true }));
     try {
       await saveDocument({
         applicationDocumentId: documentId,
         content: state.content,
       });
-      
+
       // Update document status to draft
       await updateDocStatus({
         documentId: documentId,
         status: "draft",
       });
-      
+
       toast.success("Document saved successfully!");
     } catch (error) {
       console.error("Error saving document:", error);
       toast.error("Error saving document", {
-        description: "Please try again"
+        description: "Please try again",
       });
     } finally {
-      setState(prev => ({ ...prev, isSaving: false }));
+      setState((prev) => ({ ...prev, isSaving: false }));
     }
   }, [documentId, state.content, saveDocument, updateDocStatus]);
 
@@ -110,39 +125,52 @@ export function useDocumentEditor() {
     });
 
     // Navigate back to the return path if available, otherwise to applications
-    const returnPath = location.state?.returnPath || '/applications';
+    const returnPath = location.state?.returnPath || "/applications";
     navigate(returnPath, {
       state: {
         applicationId: location.state?.applicationId,
         universityName: location.state?.universityName,
-      }
+      },
     });
   }, [navigate, setEditorState, location.state]);
 
   const handleRecommenderSubmit = useCallback(async () => {
     if (!documentId) return;
 
-    setState(prev => ({ ...prev, isSaving: true }));
+    setState((prev) => ({ ...prev, isSaving: true }));
     try {
       await updateRecommender({
         documentId,
         recommenderName: state.recommenderName,
-        recommenderEmail: state.recommenderEmail
+        recommenderEmail: state.recommenderEmail,
       });
 
       toast.success("Recommender info saved!", {
-        description: "An email will be sent to the recommender."
+        description: "An email will be sent to the recommender.",
       });
-      setState(prev => ({ ...prev, showRecommenderDialog: false, showConfirmationDialog: state.showConfirmationNext }));
+      setState((prev) => ({
+        ...prev,
+        showRecommenderDialog: false,
+        showConfirmationDialog: state.showConfirmationNext,
+      }));
     } catch (error) {
       console.error("Error updating recommender:", error);
       toast.error("Error saving recommender info", {
-        description: "Please try again"
+        description: "Please try again",
       });
     } finally {
-      setState(prev => ({ ...prev, isSaving: false, showConfirmationNext: false }));
+      setState((prev) => ({
+        ...prev,
+        isSaving: false,
+        showConfirmationNext: false,
+      }));
     }
-  }, [documentId, state.recommenderName, state.recommenderEmail, updateRecommender]);
+  }, [
+    documentId,
+    state.recommenderName,
+    state.recommenderEmail,
+    updateRecommender,
+  ]);
 
   // Handler for document generation
   const handleGenerateDocument = useCallback(async () => {
@@ -153,7 +181,11 @@ export function useDocumentEditor() {
       document.type === "lor" &&
       (!state.recommenderName || !state.recommenderEmail)
     ) {
-      setState((prev) => ({ ...prev, showRecommenderDialog: true, showConfirmationNext: true }));
+      setState((prev) => ({
+        ...prev,
+        showRecommenderDialog: true,
+        showConfirmationNext: true,
+      }));
       return;
     }
 
@@ -170,6 +202,7 @@ export function useDocumentEditor() {
       ...prev,
       isGenerating: true,
       showConfirmationDialog: false,
+      showGeneratingDialog: true,
     }));
 
     try {
@@ -197,10 +230,13 @@ export function useDocumentEditor() {
         }
       }
     } finally {
-      setState((prev) => ({ ...prev, isGenerating: false }));
+      setState((prev) => ({
+        ...prev,
+        isGenerating: false,
+        showGeneratingDialog: false,
+      }));
     }
   }, [document, state.content, state.isGenerating, handleSave]);
-
 
   return {
     state,
