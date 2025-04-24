@@ -5,13 +5,27 @@ import * as z from "zod";
 import { CareerGoals } from "../../profile/validators";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { X } from "lucide-react";
 import { sanitizeInput } from "@/lib/inputValidation";
 import { PROFILE_NOTES_MAX_CHARS } from "#/validators";
+import { useProgramSearch } from "@/hooks/useProgramSearch";
 
 // Helper function to validate that a date is in the future and within two years
 const validateFutureDateWithinTwoYears = (date: string) => {
@@ -26,18 +40,31 @@ const validateFutureDateWithinTwoYears = (date: string) => {
 const careerGoalsSchema = z.object({
   targetDegree: z.string().min(1, "Please select your target degree"),
   intendedField: z.string().min(1, "Please enter your intended field of study"),
-  researchInterests: z.string()
+  researchInterests: z
+    .string()
     .min(1, "Please describe your research interests")
-    .max(PROFILE_NOTES_MAX_CHARS, `Maximum ${PROFILE_NOTES_MAX_CHARS} characters allowed`)
+    .max(
+      PROFILE_NOTES_MAX_CHARS,
+      `Maximum ${PROFILE_NOTES_MAX_CHARS} characters allowed`
+    )
     .transform((val) => sanitizeInput(val)),
-  careerObjectives: z.string()
+  careerObjectives: z
+    .string()
     .min(1, "Please describe your career objectives")
-    .max(PROFILE_NOTES_MAX_CHARS, `Maximum ${PROFILE_NOTES_MAX_CHARS} characters allowed`)
+    .max(
+      PROFILE_NOTES_MAX_CHARS,
+      `Maximum ${PROFILE_NOTES_MAX_CHARS} characters allowed`
+    )
     .transform((val) => sanitizeInput(val)),
-  targetLocations: z.array(z.string()).min(1, "Please select at least one target location"),
-  expectedStartDate: z.string()
+  targetLocations: z
+    .array(z.string())
+    .min(1, "Please select at least one target location"),
+  expectedStartDate: z
+    .string()
     .min(1, "Please select your expected start date")
-    .refine(validateFutureDateWithinTwoYears, { message: "Start date must be in the future and within the next two years" }),
+    .refine(validateFutureDateWithinTwoYears, {
+      message: "Start date must be in the future and within the next two years",
+    }),
   budgetRange: z.string().optional(),
 });
 
@@ -49,12 +76,16 @@ interface CareerGoalsStepProps {
   onBack: () => void;
 }
 
-export function CareerGoalsStep({ onComplete, initialData, onBack }: CareerGoalsStepProps) {
+export function CareerGoalsStep({
+  onComplete,
+  initialData,
+  onBack,
+}: CareerGoalsStepProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [targetLocations, setTargetLocations] = useState<string[]>(
     initialData?.targetLocations || []
   );
-
+  const { uniqueDegreeTypes } = useProgramSearch();
   const form = useForm<CareerGoalsFormValues>({
     resolver: zodResolver(careerGoalsSchema),
     defaultValues: {
@@ -74,7 +105,10 @@ export function CareerGoalsStep({ onComplete, initialData, onBack }: CareerGoals
       const careerGoals: CareerGoals = {
         targetDegree: data.targetDegree,
         intendedField: data.intendedField,
-        researchInterests: data.researchInterests.split(",").map(s => s.trim()).filter(Boolean),
+        researchInterests: data.researchInterests
+          .split(",")
+          .map((s) => s.trim())
+          .filter(Boolean),
         careerObjectives: data.careerObjectives,
         targetLocations: data.targetLocations,
         expectedStartDate: data.expectedStartDate,
@@ -101,18 +135,86 @@ export function CareerGoalsStep({ onComplete, initialData, onBack }: CareerGoals
                 render={({ field }) => (
                   <FormItem className="w-full sm:max-w-[250px]">
                     <FormLabel>Target Degree</FormLabel>
-                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                    <Select
+                      onValueChange={field.onChange}
+                      defaultValue={field.value}
+                    >
                       <FormControl>
                         <SelectTrigger>
                           <SelectValue placeholder="Select target degree" />
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
-                        <SelectItem value="ms">Master of Science (MS)</SelectItem>
-                        <SelectItem value="phd">Doctor of Philosophy (PhD)</SelectItem>
-                        <SelectItem value="meng">Master of Engineering (MEng)</SelectItem>
+                        {uniqueDegreeTypes.map((degree) => (
+                          <SelectItem key={degree.value} value={degree.value}>
+                            {degree.label}
+                          </SelectItem>
+                        ))}
                       </SelectContent>
                     </Select>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+
+              <FormField
+                control={form.control}
+                name="expectedStartDate"
+                render={({ field }) => (
+                  <FormItem className="w-full sm:max-w-[200px]">
+                    <FormLabel>Expected Start Date</FormLabel>
+                    <FormControl>
+                      <Input type="month" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              <FormField
+                control={form.control}
+                name="budgetRange"
+                render={({ field }) => (
+                  <FormItem className="w-full sm:max-w-[200px]">
+                    <FormLabel>Budget Range (USD)</FormLabel>
+                    <Select
+                      onValueChange={field.onChange}
+                      defaultValue={field.value}
+                    >
+                      <FormControl>
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select budget range" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        <SelectItem value="0-30k">$0 - $30,000</SelectItem>
+                        <SelectItem value="30k-50k">
+                          $30,000 - $50,000
+                        </SelectItem>
+                        <SelectItem value="50k-70k">
+                          $50,000 - $70,000
+                        </SelectItem>
+                        <SelectItem value="70k-100k">
+                          $70,000 - $100,000
+                        </SelectItem>
+                        <SelectItem value="100k+">$100,000+</SelectItem>
+                      </SelectContent>
+                    </Select>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              <FormField
+                control={form.control}
+                name="intendedField"
+                render={({ field }) => (
+                  <FormItem className="w-full sm:max-w-[300px]">
+                    <FormLabel>Intended Field of Study</FormLabel>
+                    <FormControl>
+                      <Input {...field} placeholder="e.g., Computer Science" />
+                    </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
@@ -140,12 +242,12 @@ export function CareerGoalsStep({ onComplete, initialData, onBack }: CareerGoals
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
-                        <SelectItem value="northeast">Northeast US</SelectItem>
-                        <SelectItem value="midwest">Midwest US</SelectItem>
-                        <SelectItem value="south">Southern US</SelectItem>
-                        <SelectItem value="west">Western US</SelectItem>
-                        <SelectItem value="california">California</SelectItem>
-                        <SelectItem value="anywhere">Anywhere in US</SelectItem>
+                        <SelectItem value="Northeast">Northeast US</SelectItem>
+                        <SelectItem value="Midwest">Midwest US</SelectItem>
+                        <SelectItem value="South">Southern US</SelectItem>
+                        <SelectItem value="West">Western US</SelectItem>
+                        <SelectItem value="California">California</SelectItem>
+                        <SelectItem value="Anywhere">Anywhere in US</SelectItem>
                       </SelectContent>
                     </Select>
                     {targetLocations.length > 0 && (
@@ -159,7 +261,9 @@ export function CareerGoalsStep({ onComplete, initialData, onBack }: CareerGoals
                             <X
                               className="h-4 w-4 cursor-pointer hover:text-destructive"
                               onClick={() => {
-                                const newLocations = targetLocations.filter((l) => l !== location);
+                                const newLocations = targetLocations.filter(
+                                  (l) => l !== location
+                                );
                                 setTargetLocations(newLocations);
                                 field.onChange(newLocations);
                               }}
@@ -172,61 +276,8 @@ export function CareerGoalsStep({ onComplete, initialData, onBack }: CareerGoals
                   </FormItem>
                 )}
               />
-
-              <FormField
-                control={form.control}
-                name="expectedStartDate"
-                render={({ field }) => (
-                  <FormItem className="w-full sm:max-w-[200px]">
-                    <FormLabel>Expected Start Date</FormLabel>
-                    <FormControl>
-                      <Input type="month" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              <FormField
-                control={form.control}
-                name="budgetRange"
-                render={({ field }) => (
-                  <FormItem className="w-full sm:max-w-[200px]">
-                    <FormLabel>Budget Range (USD)</FormLabel>
-                    <Select onValueChange={field.onChange} defaultValue={field.value}>
-                      <FormControl>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select budget range" />
-                        </SelectTrigger>
-                      </FormControl>
-                      <SelectContent>
-                        <SelectItem value="0-30k">$0 - $30,000</SelectItem>
-                        <SelectItem value="30k-50k">$30,000 - $50,000</SelectItem>
-                        <SelectItem value="50k-70k">$50,000 - $70,000</SelectItem>
-                        <SelectItem value="70k-100k">$70,000 - $100,000</SelectItem>
-                        <SelectItem value="100k+">$100,000+</SelectItem>
-                      </SelectContent>
-                    </Select>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
             </div>
-
-            <FormField
-              control={form.control}
-              name="intendedField"
-              render={({ field }) => (
-                <FormItem className="w-full sm:max-w-[300px]">
-                    <FormLabel>Intended Field of Study</FormLabel>
-                    <FormControl>
-                      <Input {...field} placeholder="e.g., Computer Science" />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
+            
             <FormField
               control={form.control}
               name="researchInterests"
@@ -234,7 +285,9 @@ export function CareerGoalsStep({ onComplete, initialData, onBack }: CareerGoals
                 <FormItem className="w-full">
                   <div className="flex justify-between items-center">
                     <FormLabel>Research Interests</FormLabel>
-                    <span className={`text-xs ${(field.value?.length || 0) > PROFILE_NOTES_MAX_CHARS ? 'text-red-500 font-bold' : 'text-gray-500'}`}>
+                    <span
+                      className={`text-xs ${(field.value?.length || 0) > PROFILE_NOTES_MAX_CHARS ? "text-red-500 font-bold" : "text-gray-500"}`}
+                    >
                       {field.value?.length || 0}/{PROFILE_NOTES_MAX_CHARS}
                     </span>
                   </div>
@@ -257,7 +310,9 @@ export function CareerGoalsStep({ onComplete, initialData, onBack }: CareerGoals
                 <FormItem className="w-full">
                   <div className="flex justify-between items-center">
                     <FormLabel>Career Objectives</FormLabel>
-                    <span className={`text-xs ${(field.value?.length || 0) > PROFILE_NOTES_MAX_CHARS ? 'text-red-500 font-bold' : 'text-gray-500'}`}>
+                    <span
+                      className={`text-xs ${(field.value?.length || 0) > PROFILE_NOTES_MAX_CHARS ? "text-red-500 font-bold" : "text-gray-500"}`}
+                    >
                       {field.value?.length || 0}/{PROFILE_NOTES_MAX_CHARS}
                     </span>
                   </div>
