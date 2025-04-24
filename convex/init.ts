@@ -403,7 +403,7 @@ export default internalMutation({
       {
         universityId: universityIds["Stanford University"],
         name: "Computer Science",
-        degree: "MS",
+        degree: "M.S.",
         department: "School of Engineering",
         requirements: {
           minimumGPA: 3.5,
@@ -420,7 +420,7 @@ export default internalMutation({
       {
         universityId: universityIds["Stanford University"],
         name: "Computer Science",
-        degree: "PhD",
+        degree: "Ph.D.",
         department: "School of Engineering",
         requirements: {
           minimumGPA: 3.7,
@@ -437,7 +437,7 @@ export default internalMutation({
       {
         universityId: universityIds["Massachusetts Institute of Technology"],
         name: "Electrical Engineering and Computer Science",
-        degree: "PhD",
+        degree: "Ph.D.",
         department: "School of Engineering",
         requirements: {
           minimumGPA: 3.7,
@@ -454,7 +454,7 @@ export default internalMutation({
       {
         universityId: universityIds["University of California Berkeley"],
         name: "Computer Science",
-        degree: "MS",
+        degree: "M.S.",
         department: "College of Engineering",
         requirements: {
           minimumGPA: 3.0,
@@ -471,7 +471,7 @@ export default internalMutation({
       {
         universityId: universityIds["Carnegie Mellon University"],
         name: "Computer Science",
-        degree: "MS",
+        degree: "M.S.",
         department: "School of Computer Science",
         requirements: {
           minimumGPA: 3.6,
@@ -488,7 +488,7 @@ export default internalMutation({
       {
         universityId: universityIds["Georgia Institute of Technology"],
         name: "Computer Science",
-        degree: "MS",
+        degree: "M.S.",
         department: "College of Computing",
         requirements: {
           minimumGPA: 3.0,
@@ -505,7 +505,7 @@ export default internalMutation({
       {
         universityId: universityIds["Georgia Institute of Technology"],
         name: "Cybersecurity",
-        degree: "MS",
+        degree: "M.S.",
         department: "College of Computing",
         requirements: {
           minimumGPA: 3.0,
@@ -522,7 +522,7 @@ export default internalMutation({
       {
         universityId: universityIds["Harvard University"],
         name: "Computer Science",
-        degree: "MS",
+        degree: "M.S.",
         department: "School of Engineering and Applied Sciences",
         requirements: {
           minimumGPA: 3.7,
@@ -539,7 +539,7 @@ export default internalMutation({
       {
         universityId: universityIds["Harvard University"],
         name: "Data Science",
-        degree: "MS",
+        degree: "M.S.",
         department: "School of Engineering and Applied Sciences",
         requirements: {
           minimumGPA: 3.7,
@@ -556,7 +556,7 @@ export default internalMutation({
       {
         universityId: universityIds["Princeton University"],
         name: "Computer Science",
-        degree: "PhD",
+        degree: "Ph.D.",
         department: "School of Engineering and Applied Science",
         requirements: {
           minimumGPA: 3.8,
@@ -573,7 +573,7 @@ export default internalMutation({
       {
         universityId: universityIds["California Institute of Technology"],
         name: "Computing and Mathematical Sciences",
-        degree: "PhD",
+        degree: "Ph.D.",
         department: "Division of Engineering and Applied Science",
         requirements: {
           minimumGPA: 3.8,
@@ -590,7 +590,7 @@ export default internalMutation({
       {
         universityId: universityIds["University of Chicago"],
         name: "Computer Science",
-        degree: "MS",
+        degree: "M.S.",
         department: "Department of Computer Science",
         requirements: {
           minimumGPA: 3.5,
@@ -607,7 +607,7 @@ export default internalMutation({
       {
         universityId: universityIds["University of Pennsylvania"],
         name: "Computer and Information Science",
-        degree: "MS",
+        degree: "M.S.",
         department: "School of Engineering and Applied Science",
         requirements: {
           minimumGPA: 3.5,
@@ -624,7 +624,7 @@ export default internalMutation({
       {
         universityId: universityIds["Yale University"],
         name: "Computer Science",
-        degree: "MS",
+        degree: "M.S.",
         department: "School of Engineering & Applied Science",
         requirements: {
           minimumGPA: 3.6,
@@ -641,7 +641,7 @@ export default internalMutation({
       {
         universityId: universityIds["Columbia University"],
         name: "Computer Science",
-        degree: "MS",
+        degree: "M.S.",
         department: "Fu Foundation School of Engineering and Applied Science",
         requirements: {
           minimumGPA: 3.5,
@@ -658,7 +658,7 @@ export default internalMutation({
       {
         universityId: universityIds["Cornell University"],
         name: "Computer Science",
-        degree: "MS",
+        degree: "M.S.",
         department: "Computing and Information Science",
         requirements: {
           minimumGPA: 3.5,
@@ -675,7 +675,7 @@ export default internalMutation({
       {
         universityId: universityIds["University of Michigan"],
         name: "Computer Science and Engineering",
-        degree: "MS",
+        degree: "M.S.",
         department: "College of Engineering",
         requirements: {
           minimumGPA: 3.5,
@@ -692,7 +692,7 @@ export default internalMutation({
       {
         universityId: universityIds["Northwestern University"],
         name: "Computer Science",
-        degree: "MS",
+        degree: "M.S.",
         department: "McCormick School of Engineering",
         requirements: {
           minimumGPA: 3.5,
@@ -709,7 +709,7 @@ export default internalMutation({
       {
         universityId: universityIds["University of California, Los Angeles"],
         name: "Computer Science",
-        degree: "MS",
+        degree: "M.S.",
         department: "Henry Samueli School of Engineering and Applied Science",
         requirements: {
           minimumGPA: 3.5,
@@ -726,7 +726,7 @@ export default internalMutation({
       {
         universityId: universityIds["University of Washington"],
         name: "Computer Science & Engineering",
-        degree: "MS",
+        degree: "M.S.",
         department: "Paul G. Allen School of Computer Science & Engineering",
         requirements: {
           minimumGPA: 3.5,
@@ -743,7 +743,7 @@ export default internalMutation({
       {
         universityId: universityIds["University of Illinois at Urbana-Champaign"],
         name: "Computer Science",
-        degree: "MS",
+        degree: "M.S.",
         department: "Grainger College of Engineering",
         requirements: {
           minimumGPA: 3.2,
@@ -760,7 +760,7 @@ export default internalMutation({
       {
         universityId: universityIds["University of Wisconsin-Madison"],
         name: "Computer Sciences",
-        degree: "MS",
+        degree: "M.S.",
         department: "College of Letters & Science",
         requirements: {
           minimumGPA: 3.0,
@@ -777,7 +777,7 @@ export default internalMutation({
       {
         universityId: universityIds["University of Texas at Austin"],
         name: "Computer Science",
-        degree: "MS",
+        degree: "M.S.",
         department: "College of Natural Sciences",
         requirements: {
           minimumGPA: 3.0,
@@ -794,7 +794,7 @@ export default internalMutation({
       {
         universityId: universityIds["New York University"],
         name: "Computer Science",
-        degree: "MS",
+        degree: "M.S.",
         department: "Courant Institute of Mathematical Sciences",
         requirements: {
           minimumGPA: 3.5,
@@ -811,7 +811,7 @@ export default internalMutation({
       {
         universityId: universityIds["Boston University"],
         name: "Computer Science",
-        degree: "MS",
+        degree: "M.S.",
         department: "College of Arts & Sciences",
         requirements: {
           minimumGPA: 3.0,
@@ -828,7 +828,7 @@ export default internalMutation({
       {
         universityId: universityIds["Northeastern University"],
         name: "Computer Science",
-        degree: "MS",
+        degree: "M.S.",
         department: "Khoury College of Computer Sciences",
         requirements: {
           minimumGPA: 3.0,
@@ -845,7 +845,7 @@ export default internalMutation({
       {
         universityId: universityIds["University of Southern California"],
         name: "Computer Science",
-        degree: "MS",
+        degree: "M.S.",
         department: "Viterbi School of Engineering",
         requirements: {
           minimumGPA: 3.0,
@@ -862,7 +862,7 @@ export default internalMutation({
       {
         universityId: universityIds["Purdue University"],
         name: "Computer Science",
-        degree: "MS",
+        degree: "M.S.",
         department: "College of Science",
         requirements: {
           minimumGPA: 3.0,
@@ -880,7 +880,7 @@ export default internalMutation({
       {
         universityId: universityIds["Massachusetts Institute of Technology"],
         name: "Artificial Intelligence",
-        degree: "MS",
+        degree: "M.S.",
         department: "School of Engineering",
         requirements: {
           minimumGPA: 3.7,
@@ -897,7 +897,7 @@ export default internalMutation({
       {
         universityId: universityIds["Stanford University"],
         name: "Artificial Intelligence",
-        degree: "MS",
+        degree: "M.S.",
         department: "School of Engineering",
         requirements: {
           minimumGPA: 3.5,
@@ -914,7 +914,7 @@ export default internalMutation({
       {
         universityId: universityIds["Carnegie Mellon University"],
         name: "Machine Learning",
-        degree: "MS",
+        degree: "M.S.",
         department: "School of Computer Science",
         requirements: {
           minimumGPA: 3.7,

@@ -79,7 +79,7 @@ const schema = defineSchema({
   programs: defineTable({
     universityId: v.id("universities"),
     name: v.string(),
-    degree: v.string(), // e.g. "MS", "PhD", "MEng"
+    degree: v.string(), // e.g. "M.S.", "Ph.D.", "M.Eng."
     department: v.string(),
     requirements: v.object({
       minimumGPA: v.optional(v.number()),
