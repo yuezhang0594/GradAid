@@ -75,7 +75,7 @@ export function PersonalInfoStep({ onComplete, initialData, onBack }: PersonalIn
 
   // Find country and state codes from names
   const initialCountryObj = Country.getAllCountries().find(c => c.name === initialCountry);
-  const initialStateObj = initialCountryObj 
+  const initialStateObj = initialCountryObj
     ? State.getStatesOfCountry(initialCountryObj.isoCode).find(s => s.name === initialState)
     : undefined;
 
@@ -111,27 +111,110 @@ export function PersonalInfoStep({ onComplete, initialData, onBack }: PersonalIn
       <CardContent className="pt-6">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <FormField
-              control={form.control}
-              name="currentLocation"
-              render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "currentLocation"> }) => (
-                <FormItem className="col-span-1 w-full">
-                  <FormLabel>Current Location</FormLabel>
-                  <FormControl>
-                    <div className="flex flex-col space-y-2">
-                      <Select 
-                        onValueChange={(value) => {
-                          const country = Country.getAllCountries().find(c => c.name === value);
-                          setSelectedCountry(value);
-                          setSelectedCountryCode(country?.isoCode || "");
-                          setSelectedCity("");
-                          setSelectedState("");
-                          field.onChange(`${value}`);
-                        }}
-                        value={selectedCountry}
+            <div>
+              <FormField
+                control={form.control}
+                name="currentLocation"
+                render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "currentLocation"> }) => (
+                  <FormItem className="col-span-1 w-full">
+                    <FormLabel>Current Location</FormLabel>
+                    <FormControl>
+                      <div className="flex flex-col space-y-2">
+                        <Select
+                          onValueChange={(value) => {
+                            const country = Country.getAllCountries().find(c => c.name === value);
+                            setSelectedCountry(value);
+                            setSelectedCountryCode(country?.isoCode || "");
+                            setSelectedCity("");
+                            setSelectedState("");
+                            field.onChange(`${value}`);
+                          }}
+                          value={selectedCountry}
+                        >
+                          <SelectTrigger>
+                            <SelectValue placeholder="Select your country" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            {/* Popular Countries */}
+                            {popularCountryObjects.map((country) => (
+                              <SelectItem key={country?.isoCode} value={country?.name || ""}>
+                                {country?.flag} {country?.name}
+                              </SelectItem>
+                            ))}
+                            {/* Divider */}
+                            <SelectSeparator className="my-2" />
+                            {/* All Other Countries */}
+                            {otherCountries.map((country) => (
+                              <SelectItem key={country.isoCode} value={country.name}>
+                                {country.flag} {country.name}
+                              </SelectItem>
+                            ))}
+                          </SelectContent>
+                        </Select>
+
+                        {selectedCountryCode && State.getStatesOfCountry(selectedCountryCode).length > 0 && (
+                          <Select
+                            onValueChange={(value) => {
+                              const state = State.getStatesOfCountry(selectedCountryCode).find(s => s.name === value);
+                              setSelectedState(value);
+                              setSelectedStateCode(state?.isoCode || "");
+                              field.onChange(`${selectedCity}${selectedCity ? ", " : ""}${value}, ${selectedCountry}`);
+                            }}
+                            value={selectedState}
+                          >
+                            <SelectTrigger>
+                              <SelectValue placeholder="Select state/province" />
+                            </SelectTrigger>
+                            <SelectContent>
+                              {State.getStatesOfCountry(selectedCountryCode).map((state) => (
+                                <SelectItem key={state.isoCode} value={state.name}>
+                                  {state.name}
+                                </SelectItem>
+                              ))}
+                            </SelectContent>
+                          </Select>
+                        )}
+
+                        {selectedCountryCode && (
+                          <Select
+                            onValueChange={(value) => {
+                              setSelectedCity(value);
+                              field.onChange(`${value}, ${selectedState ? selectedState + ", " : ""}${selectedCountry}`);
+                            }}
+                            value={selectedCity}
+                          >
+                            <SelectTrigger>
+                              <SelectValue placeholder="Select city" />
+                            </SelectTrigger>
+                            <SelectContent>
+                              {City.getCitiesOfState(selectedCountryCode, selectedStateCode)
+                                .map((city) => (
+                                  <SelectItem key={city.name} value={city.name}>
+                                    {city.name}
+                                  </SelectItem>
+                                ))}
+                            </SelectContent>
+                          </Select>
+                        )}
+                      </div>
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="countryOfOrigin"
+                render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "countryOfOrigin"> }) => (
+                  <FormItem className="col-span-1 w-full">
+                    <FormLabel>Country of Origin</FormLabel>
+                    <FormControl>
+                      <Select
+                        onValueChange={field.onChange}
+                        value={field.value}
                       >
                         <SelectTrigger>
-                          <SelectValue placeholder="Select your country" />
+                          <SelectValue placeholder="Select your country of origin" />
                         </SelectTrigger>
                         <SelectContent>
                           {/* Popular Countries */}
@@ -150,141 +233,59 @@ export function PersonalInfoStep({ onComplete, initialData, onBack }: PersonalIn
                           ))}
                         </SelectContent>
                       </Select>
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
+            <div>
 
-                      {selectedCountryCode && State.getStatesOfCountry(selectedCountryCode).length > 0 && (
-                        <Select
-                          onValueChange={(value) => {
-                            const state = State.getStatesOfCountry(selectedCountryCode).find(s => s.name === value);
-                            setSelectedState(value);
-                            setSelectedStateCode(state?.isoCode || "");
-                            field.onChange(`${selectedCity}${selectedCity ? ", " : ""}${value}, ${selectedCountry}`);
-                          }}
-                          value={selectedState}
-                        >
-                          <SelectTrigger>
-                            <SelectValue placeholder="Select state/province" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            {State.getStatesOfCountry(selectedCountryCode).map((state) => (
-                              <SelectItem key={state.isoCode} value={state.name}>
-                                {state.name}
-                              </SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
-                      )}
+              <FormField
+                control={form.control}
+                name="nativeLanguage"
+                render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "nativeLanguage"> }) => (
+                  <FormItem className="col-span-1 w-full">
+                    <FormLabel>Native Language</FormLabel>
+                    <FormControl>
+                      <Select
+                        onValueChange={field.onChange}
+                        defaultValue={field.value}
+                      >
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select your native language" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {languageList.map((language) => (
+                            <SelectItem key={language.code} value={language.name}>
+                              {language.name}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
 
-                      {selectedCountryCode && (
-                        <Select
-                          onValueChange={(value) => {
-                            setSelectedCity(value);
-                            field.onChange(`${value}, ${selectedState ? selectedState + ", " : ""}${selectedCountry}`);
-                          }}
-                          value={selectedCity}
-                        >
-                          <SelectTrigger>
-                            <SelectValue placeholder="Select city" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            {City.getCitiesOfState(selectedCountryCode, selectedStateCode)
-                              .map((city) => (
-                                <SelectItem key={city.name} value={city.name}>
-                                  {city.name}
-                                </SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
-                      )}
-                    </div>
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            
-            <FormField
-              control={form.control}
-              name="countryOfOrigin"
-              render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "countryOfOrigin"> }) => (
-                <FormItem className="col-span-1 w-full">
-                  <FormLabel>Country of Origin</FormLabel>
-                  <FormControl>
-                    <Select 
-                      onValueChange={field.onChange}
-                      value={field.value}
-                    >
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select your country of origin" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {/* Popular Countries */}
-                        {popularCountryObjects.map((country) => (
-                          <SelectItem key={country?.isoCode} value={country?.name || ""}>
-                            {country?.flag} {country?.name}
-                          </SelectItem>
-                        ))}
-                        {/* Divider */}
-                        <SelectSeparator className="my-2" />
-                        {/* All Other Countries */}
-                        {otherCountries.map((country) => (
-                          <SelectItem key={country.isoCode} value={country.name}>
-                            {country.flag} {country.name}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
-
-            <FormField
-              control={form.control}
-              name="nativeLanguage"
-              render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "nativeLanguage"> }) => (
-                <FormItem className="col-span-1 w-full">
-                  <FormLabel>Native Language</FormLabel>
-                  <FormControl>
-                    <Select 
-                      onValueChange={field.onChange} 
-                      defaultValue={field.value}
-                    >
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select your native language" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {languageList.map((language) => (
-                          <SelectItem key={language.code} value={language.name}>
-                            {language.name}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              control={form.control}
-              name="dateOfBirth"
-              render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "dateOfBirth"> }) => (
-                <FormItem className="col-span-1 w-full max-w-[180px]">
-                  <FormLabel>Date of Birth</FormLabel>
-                  <FormControl>
-                    <Input 
-                      type="date" 
-                      {...field} 
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
+              <FormField
+                control={form.control}
+                name="dateOfBirth"
+                render={({ field }: { field: ControllerRenderProps<PersonalInfoForm, "dateOfBirth"> }) => (
+                  <FormItem className="col-span-1 w-full max-w-[180px]">
+                    <FormLabel>Date of Birth</FormLabel>
+                    <FormControl>
+                      <Input
+                        type="date"
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
 
             <div className="col-span-1 sm:col-span-2 flex justify-end mt-4">
               <Button type="submit" disabled={isSubmitting}>

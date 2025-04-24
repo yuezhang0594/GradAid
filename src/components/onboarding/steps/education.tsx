@@ -49,7 +49,7 @@ interface EducationStepProps {
 
 export function EducationStep({ onComplete, initialData, onBack }: EducationStepProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  
+
   const form = useForm<EducationForm>({
     resolver: zodResolver(educationSchema),
     defaultValues: {
@@ -79,31 +79,33 @@ export function EducationStep({ onComplete, initialData, onBack }: EducationStep
       <CardContent className="pt-6">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-            <FormField
-              control={form.control}
-              name="educationLevel"
-              render={({ field }: { field: ControllerRenderProps<EducationForm, "educationLevel"> }) => (
-                <FormItem>
-                  <FormLabel>Education Level</FormLabel>
-                  <Select onValueChange={field.onChange} defaultValue={field.value}>
-                    <FormControl>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select your education level" />
-                      </SelectTrigger>
-                    </FormControl>
-                    <SelectContent>
-                      <SelectItem value="bachelor">Bachelor's</SelectItem>
-                      <SelectItem value="master">Master's</SelectItem>
-                      <SelectItem value="phd">PhD</SelectItem>
-                    </SelectContent>
-                  </Select>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+            {/* Split these fields into three columns for desktop, one for mobile */}
+            <div className="flex flex-col sm:flex-row gap-4 md:col-span-3">
 
-            {/* Split these fields into two columns for desktop, one for mobile */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+              <FormField
+                control={form.control}
+                name="educationLevel"
+                render={({ field }: { field: ControllerRenderProps<EducationForm, "educationLevel"> }) => (
+                  <FormItem>
+                    <FormLabel>Education Level</FormLabel>
+                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <FormControl>
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select your education level" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        <SelectItem value="bachelor">Bachelor's</SelectItem>
+                        <SelectItem value="master">Master's</SelectItem>
+                        <SelectItem value="phd">Doctorate</SelectItem>
+                      </SelectContent>
+                    </Select>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+
               <FormField
                 control={form.control}
                 name="major"
@@ -131,12 +133,13 @@ export function EducationStep({ onComplete, initialData, onBack }: EducationStep
                   </FormItem>
                 )}
               />
+            </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 md:col-span-3">
-                <FormField
-                  control={form.control}
-                  name="graduationDate"
-                  render={({ field }: { field: ControllerRenderProps<EducationForm, "graduationDate"> }) => {
+            <div className="flex flex-col sm:flex-row gap-4 md:col-span-3">
+              <FormField
+                control={form.control}
+                name="graduationDate"
+                render={({ field }: { field: ControllerRenderProps<EducationForm, "graduationDate"> }) => {
                   // Calculate max date (1 year from now)
                   const today = new Date();
                   const maxDate = new Date(today.getFullYear() + 1, today.getMonth());
@@ -146,10 +149,10 @@ export function EducationStep({ onComplete, initialData, onBack }: EducationStep
                     <FormItem className="w-full sm:max-w-[150px]">
                       <FormLabel>Graduation Date</FormLabel>
                       <FormControl>
-                        <Input 
-                          type="month" 
+                        <Input
+                          type="month"
                           max={maxDateString}
-                          {...field} 
+                          {...field}
                         />
                       </FormControl>
                       <FormMessage />
@@ -159,48 +162,47 @@ export function EducationStep({ onComplete, initialData, onBack }: EducationStep
               />
 
               <FormField
-                  control={form.control}
-                  name="gpa"
-                  render={({ field }: { field: ControllerRenderProps<EducationForm, "gpa"> }) => (
-                    <FormItem className="w-full sm:max-w-[150px]">
-                      <FormLabel>GPA</FormLabel>
-                      <FormControl>
-                        <Input
-                          type="number"
-                          step="0.01"
-                          placeholder="Enter your GPA"
-                          {...field}
-                          onChange={(e) => field.onChange(parseFloat(e.target.value))}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
+                control={form.control}
+                name="gpa"
+                render={({ field }: { field: ControllerRenderProps<EducationForm, "gpa"> }) => (
+                  <FormItem className="w-full sm:max-w-[150px]">
+                    <FormLabel>GPA</FormLabel>
+                    <FormControl>
+                      <Input
+                        type="number"
+                        step="0.01"
+                        placeholder="Enter your GPA"
+                        {...field}
+                        onChange={(e) => field.onChange(parseFloat(e.target.value))}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
 
-                <FormField
-                  control={form.control}
-                  name="gpaScale"
-                  render={({ field }: { field: ControllerRenderProps<EducationForm, "gpaScale"> }) => (
-                    <FormItem className="w-full sm:max-w-[150px]">
-                      <FormLabel>GPA Scale</FormLabel>
-                      <Select onValueChange={(value) => field.onChange(parseFloat(value))} defaultValue={field.value.toString()}>
-                        <FormControl>
-                          <SelectTrigger>
-                            <SelectValue placeholder="Select GPA scale" />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          <SelectItem value="4">4.0</SelectItem>
-                          <SelectItem value="5">5.0</SelectItem>
-                          <SelectItem value="10">10.0</SelectItem>
-                        </SelectContent>
-                      </Select>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-              </div>
+              <FormField
+                control={form.control}
+                name="gpaScale"
+                render={({ field }: { field: ControllerRenderProps<EducationForm, "gpaScale"> }) => (
+                  <FormItem className="w-full sm:max-w-[150px]">
+                    <FormLabel>GPA Scale</FormLabel>
+                    <Select onValueChange={(value) => field.onChange(parseFloat(value))} defaultValue={field.value.toString()}>
+                      <FormControl>
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select GPA scale" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        <SelectItem value="4">4.0</SelectItem>
+                        <SelectItem value="5">5.0</SelectItem>
+                        <SelectItem value="10">10.0</SelectItem>
+                      </SelectContent>
+                    </Select>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
             </div>
 
             <FormField

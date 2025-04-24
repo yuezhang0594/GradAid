@@ -11,12 +11,13 @@ export async function getProgramsByIds(
     return [];
   }
 
-  // Query all programs with the given IDs
-  const programs = await Promise.all(
-    programIds.map(id => ctx.db.get(id))
-  );
+  // Fetch all programs using a single query instead of individual gets
+  const programs = await ctx.db
+    .query("programs")
+    .filter(q => q.or(...programIds.map(id => q.eq(q.field("_id"), id))))
+    .collect();
 
-  // Filter out any null values
+  // Filter out any null values (though filter should prevent this)
   return programs.filter(program => program !== null) as Program[];
 }
 
