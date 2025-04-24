@@ -208,28 +208,36 @@ export async function getUniqueLocations(
 
 
 /**
- * Get unique degree types with formatted labels
- * Extracts degree types from programs and maps them to readable labels
+ * Get unique degree types with formatted labels, sorted by frequency
+ * Extracts degree types from programs, counts their occurrences,
+ * maps them to readable labels, and sorts by frequency (highest first).
  */
 export async function getUniqueDegreeTypes(
     ctx: QueryCtx
   ): Promise<Array<{ value: string; label: string }>> {
     const programs = await ctx.db.query("programs").collect();
   
-    // Extract all unique degree types
-    const degreeTypes = new Set<string>();
+    // Count the frequency of each degree type
+    const degreeCounts = new Map<string, number>();
     programs.forEach(program => {
       if (program.degree) {
-        degreeTypes.add(program.degree);
+        degreeCounts.set(program.degree, (degreeCounts.get(program.degree) || 0) + 1);
       }
     });
 
-    // Convert to array of objects with value and label
-    return Array.from(degreeTypes)
-      .map(degreeType => ({
+    // Convert map to array of objects with value and count
+    const degreeFrequency = Array.from(degreeCounts.entries())
+      .map(([degreeType, count]) => ({
         value: degreeType,
-        label: degreeLabels[degreeType] || degreeType
-      }))
-      .sort((a, b) => a.label.localeCompare(b.label));
+        count: count
+      }));
+
+    // Sort by frequency in descending order
+    degreeFrequency.sort((a, b) => b.count - a.count);
+
+    // Map to the final format with labels
+    return degreeFrequency.map(item => ({
+      value: item.value,
+      label: degreeLabels[item.value] || item.value
+    }));
   }
-  
