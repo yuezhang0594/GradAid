@@ -1,0 +1,546 @@
+[
+  {
+    "universityId": "Wake Forest University",
+    "name": "Biochemistry and Molecular Biology",
+    "degree": "Ph.D.",
+    "department": "Biochemistry and Molecular Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Biomedical Sciences and Molecular Medicine",
+    "degree": "Ph.D.",
+    "department": "Biomedical Sciences and Molecular Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Genetics and Genomics",
+    "degree": "Ph.D.",
+    "department": "Genetics and Genomics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Microbiology and Immunology",
+    "degree": "Ph.D.",
+    "department": "Microbiology and Immunology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "Ph.D.",
+    "department": "Neuroscience and Neurobiology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Oncology and Cancer Biology",
+    "degree": "Ph.D.",
+    "department": "Oncology and Cancer Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Physiology and Pathology",
+    "degree": "Ph.D.",
+    "department": "Physiology and Pathology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Chemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "Bioengineering and Biomedical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Advanced Legal Research",
+    "degree": "Ph.D.",
+    "department": "Advanced Legal Research",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Law",
+    "degree": "Ph.D.",
+    "department": "Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Medicine",
+    "degree": "Ph.D.",
+    "department": "Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Nursing Science",
+    "degree": "Ph.D.",
+    "department": "Nursing Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Education",
+    "degree": "Ph.D.",
+    "department": "Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Education",
+    "degree": "M.A.Ed.",
+    "department": "Department of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/academic-programs-reynolda-campus/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "Department of Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/academic-programs-reynolda-campus/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Bioethics",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/academic-programs-reynolda-campus/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Biology",
+    "degree": "M.S.",
+    "department": "Department of Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/academic-programs-reynolda-campus/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/academic-programs-reynolda-campus/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Communication",
+    "degree": "M.A.",
+    "department": "Department of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/academic-programs-reynolda-campus/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/academic-programs-reynolda-campus/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Counseling",
+    "degree": "M.A.",
+    "department": "Department of Counseling",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/academic-programs-reynolda-campus/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Documentary Film",
+    "degree": "M.F.A.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/academic-programs-reynolda-campus/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Sports Storytelling",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/academic-programs-reynolda-campus/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "English",
+    "degree": "M.A.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/academic-programs-reynolda-campus/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Health and Exercise Science",
+    "degree": "M.S.",
+    "department": "Department of Health and Exercise Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/academic-programs-reynolda-campus/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Interpreting and Translation Studies",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/academic-programs-reynolda-campus/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Liberal Arts Studies",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/academic-programs-reynolda-campus/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Mathematics",
+    "degree": "M.S.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/academic-programs-reynolda-campus/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Psychology",
+    "degree": "M.S.",
+    "department": "Department of Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/academic-programs-reynolda-campus/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/academic-programs-reynolda-campus/"
+  },
+  {
+    "universityId": "Wake Forest University",
+    "name": "Sustainability",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.wfu.edu/academic-programs-reynolda-campus/"
+  }
+]

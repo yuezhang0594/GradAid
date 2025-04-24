@@ -1,0 +1,658 @@
+[
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Africana Studies",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.sas.upenn.edu/graduate-division/program/africana-studies"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.sas.upenn.edu/graduate-division/program/anthropology"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Archaeology",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.sas.upenn.edu/graduate-division/program/art-and-archaeology-mediterranean-world"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Architecture",
+    "degree": "Ph.D.",
+    "department": "Stuart Weitzman School of Design",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.design.upenn.edu/graduate-admissions/phd-architecture"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Biochemistry and Molecular Biology",
+    "degree": "Ph.D.",
+    "department": "Perelman School of Medicine",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.med.upenn.edu/bgsa/prospective_overview.shtml"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Bioengineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Science",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://be.seas.upenn.edu/graduate/phd/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.bio.upenn.edu/graduate/program"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Biostatistics",
+    "degree": "Ph.D.",
+    "department": "Perelman School of Medicine",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.med.upenn.edu/bgs/biostatistics-landing.html"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Cell Biology",
+    "degree": "Ph.D.",
+    "department": "Perelman School of Medicine",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.med.upenn.edu/camb/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Epidemiology",
+    "degree": "Ph.D.",
+    "department": "Perelman School of Medicine",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.med.upenn.edu/epidemiology/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Microbiology and Immunology",
+    "degree": "Ph.D.",
+    "department": "Perelman School of Medicine",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.med.upenn.edu/camb/mvp.shtml"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Neuroscience",
+    "degree": "Ph.D.",
+    "department": "Perelman School of Medicine",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.med.upenn.edu/ngg/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Pharmacology",
+    "degree": "Ph.D.",
+    "department": "Perelman School of Medicine",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.med.upenn.edu/pharmacology/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Business Administration",
+    "degree": "Ph.D.",
+    "department": "The Wharton School",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://doctoral.wharton.upenn.edu/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Business Analytics",
+    "degree": "M.B.A.",
+    "department": "The Wharton School",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://mba.wharton.upenn.edu/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Marketing",
+    "degree": "Ph.D.",
+    "department": "The Wharton School",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://doctoral.wharton.upenn.edu/programs-of-study/marketing/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Operations Management",
+    "degree": "Ph.D.",
+    "department": "The Wharton School",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://doctoral.wharton.upenn.edu/programs-of-study/operations-information-and-decisions/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.chem.upenn.edu/graduate"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Communication",
+    "degree": "Ph.D.",
+    "department": "Annenberg School for Communication",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.asc.upenn.edu/graduate-program"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Computer and Information Science",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Science",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.cis.upenn.edu/graduate/program-offerings/doctoral-program/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Criminology",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://crim.sas.upenn.edu/graduate"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Dental Medicine",
+    "degree": "D.M.D.",
+    "department": "School of Dental Medicine",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.dental.upenn.edu/academic_programs_admissions/dmd_program/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Applied Economics",
+    "degree": "Ph.D.",
+    "department": "The Wharton School",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://doctoral.wharton.upenn.edu/programs-of-study/applied-economics/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://economics.sas.upenn.edu/graduate"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Econometrics",
+    "degree": "Ph.D.",
+    "department": "The Wharton School",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://doctoral.wharton.upenn.edu/programs-of-study/statistics/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Education Policy",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Education",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.gse.upenn.edu/academics/doctoral-programs"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Educational Linguistics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Education",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.gse.upenn.edu/academics/doctoral-programs"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Higher Education",
+    "degree": "Ed.D.",
+    "department": "Graduate School of Education",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.gse.upenn.edu/academics/doctoral-programs"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Teaching, Learning and Leadership",
+    "degree": "Ed.D.",
+    "department": "Graduate School of Education",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.gse.upenn.edu/academics/doctoral-programs"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Chemical and Biomolecular Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Science",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://cbe.seas.upenn.edu/graduate/doctoral-program/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Electrical and Systems Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Science",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.ese.upenn.edu/doctoral-program/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Materials Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Science",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://mse.seas.upenn.edu/graduate/phd-program/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Science",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.me.upenn.edu/graduate/doctoral.html"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.english.upenn.edu/graduate"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Law",
+    "degree": "J.D.",
+    "department": "Penn Carey Law School",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.law.upenn.edu/admissions/jd/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.history.upenn.edu/graduate"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://philosophy.sas.upenn.edu/graduate"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.physics.upenn.edu/graduate"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://psychology.sas.upenn.edu/graduate"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Nursing",
+    "degree": "Ph.D.",
+    "department": "School of Nursing",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.nursing.upenn.edu/admissions/phd-program/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Social Policy",
+    "degree": "Ph.D.",
+    "department": "School of Social Policy & Practice",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.sp2.upenn.edu/degree-programs/phd-in-social-welfare/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Social Work",
+    "degree": "M.S.W.",
+    "department": "School of Social Policy & Practice",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.sp2.upenn.edu/degree-programs/master-of-social-work/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "City Planning",
+    "degree": "Ph.D.",
+    "department": "Stuart Weitzman School of Design",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.design.upenn.edu/city-regional-planning/phd/about"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.math.upenn.edu/graduate"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Applied Mathematics and Computational Science",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.amcs.upenn.edu/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Genomics and Computational Biology",
+    "degree": "Ph.D.",
+    "department": "Perelman School of Medicine",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.med.upenn.edu/gcb/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Medicine",
+    "degree": "M.D.",
+    "department": "Perelman School of Medicine",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.med.upenn.edu/admissions/"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Veterinary Medicine",
+    "degree": "V.M.D.",
+    "department": "School of Veterinary Medicine",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://www.vet.upenn.edu/education/vmd-admissions"
+  },
+  {
+    "universityId": "University of Pennsylvania",
+    "name": "Data Science",
+    "degree": "M.S.E.",
+    "department": "School of Engineering and Applied Science",
+    "requirements": {
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-16"
+    },
+    "website": "https://dats.seas.upenn.edu/"
+  }
+]

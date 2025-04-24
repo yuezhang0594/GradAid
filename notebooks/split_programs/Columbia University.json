@@ -1,0 +1,1586 @@
+[
+  {
+    "universityId": "Columbia University",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/anthropology-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/sociology-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Architecture",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Architecture, Planning and Preservation",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/architecture-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Biochemistry and Molecular Biophysics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/biochemistry-and-molecular-biophysics-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Biomedical Informatics",
+    "degree": "Ph.D.",
+    "department": "Vagelos College of Physicians and Surgeons",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/biomedical-informatics-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Biological Sciences",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/biological-sciences-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Biostatistics",
+    "degree": "Ph.D.",
+    "department": "Mailman School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/biostatistics-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Cell Biology",
+    "degree": "Ph.D.",
+    "department": "Vagelos College of Physicians and Surgeons",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/cell-biology-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Ecology, Evolution, and Environmental Biology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/ecology-evolution-and-environmental-biology-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Epidemiology",
+    "degree": "Ph.D.",
+    "department": "Mailman School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/epidemiology-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Genetics and Development",
+    "degree": "Ph.D.",
+    "department": "Vagelos College of Physicians and Surgeons",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/genetics-and-development-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Microbiology and Immunology",
+    "degree": "Ph.D.",
+    "department": "Vagelos College of Physicians and Surgeons",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/microbiology-and-immunology-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Neurobiology and Behavior",
+    "degree": "Ph.D.",
+    "department": "Vagelos College of Physicians and Surgeons",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/neurobiology-and-behavior-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Pathobiology and Molecular Medicine",
+    "degree": "Ph.D.",
+    "department": "Vagelos College of Physicians and Surgeons",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/pathobiology-and-molecular-medicine-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Pharmacology and Molecular Signaling",
+    "degree": "Ph.D.",
+    "department": "Vagelos College of Physicians and Surgeons",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/pharmacology-and-molecular-signaling-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Business",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Business",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/business-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/chemistry-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Communications",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Journalism",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/communications-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "The Fu Foundation School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/computer-science-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/economics-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "The Fu Foundation School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/biomedical-engineering-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "The Fu Foundation School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/chemical-engineering-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Civil Engineering and Engineering Mechanics",
+    "degree": "Ph.D.",
+    "department": "The Fu Foundation School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/civil-engineering-and-engineering-mechanics-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "The Fu Foundation School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/electrical-engineering-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Applied Physics",
+    "degree": "Ph.D.",
+    "department": "The Fu Foundation School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/applied-physics-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Earth and Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "The Fu Foundation School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/earth-and-environmental-engineering-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Industrial Engineering",
+    "degree": "Ph.D.",
+    "department": "The Fu Foundation School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/industrial-engineering-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "The Fu Foundation School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/mechanical-engineering-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Operations Research",
+    "degree": "Ph.D.",
+    "department": "The Fu Foundation School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/operations-research-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "English and Comparative Literature",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/english-and-comparative-literature-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Earth and Environmental Sciences",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/earth-and-environmental-sciences-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Sustainable Development",
+    "degree": "Ph.D.",
+    "department": "Climate School",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/sustainable-development-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "East Asian Languages and Cultures",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/east-asian-languages-and-cultures-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "French",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/french-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Germanic Languages",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/germanic-languages-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Italian",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/italian-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Slavic Languages",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/slavic-languages-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Latin American and Iberian Cultures",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/latin-american-and-iberian-cultures-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Art History and Archaeology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/art-history-and-archaeology-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Historic Preservation",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Architecture, Planning and Preservation",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/historic-preservation-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/history-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Classics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/classics-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Music",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/music-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Applied Mathematics",
+    "degree": "Ph.D.",
+    "department": "The Fu Foundation School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/applied-mathematics-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/statistics-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Nursing",
+    "degree": "Ph.D.",
+    "department": "School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/nursing-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Nutritional and Metabolic Biology",
+    "degree": "Ph.D.",
+    "department": "Vagelos College of Physicians and Surgeons",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/nutritional-and-metabolic-biology-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Theatre and Performance",
+    "degree": "Ph.D.",
+    "department": "School of the Arts",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/theatre-and-performance-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/philosophy-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Astronomy",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/astronomy-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/physics-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/political-science-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/psychology-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Urban Planning",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Architecture, Planning and Preservation",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/urban-planning-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Environmental Health Sciences",
+    "degree": "Ph.D.",
+    "department": "Mailman School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/environmental-health-sciences-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Religion",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/religion-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Social Work",
+    "degree": "Ph.D.",
+    "department": "School of Social Work",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/social-work-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "African American Studies",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/african-american-studies"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Anthropology",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/anthropology-ma"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Sociology",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/sociology-ma"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Biotechnology",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/biotechnology"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Ecology, Evolution, and Conservation Biology",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/ecology-evolution-and-conservation-biology-ma"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Economics",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/economics-ma"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "English and Comparative Literature",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/english-and-comparative-literature-ma"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "East Asian Languages and Cultures",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/east-asian-languages-and-cultures-ma"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "French",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/french-ma"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Germanic Languages",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/germanic-languages-ma"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Italian",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/italian-ma"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Slavic Languages",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/slavic-languages-ma"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "East Asia: Regional Studies",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/east-asia-regional-studies"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "European History, Politics, and Society",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/european-history-politics-and-society"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Latin America and the Caribbean: Regional Studies",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/latin-america-and-caribbean-regional-studies"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "American Studies",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/american-studies"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Art History and Archaeology",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/art-history-and-archaeology-ma"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/history-ma"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Classics",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/classics-ma"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Statistics",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/statistics-ma"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Philosophy",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/philosophy-ma"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Political Science",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/political-science-ma"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Religion",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/religion-ma"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Quantitative Methods in the Social Sciences",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/quantitative-methods-social-sciences"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Classical Studies",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/classical-studies-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Middle Eastern, South Asian, and African Studies",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/middle-eastern-south-asian-and-african-studies-phd"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Classical Studies",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/classical-studies-ma"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Global Thought",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/global-thought"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "History and Literature",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/history-and-literature"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Human Rights Studies",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/human-rights-studies"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Islamic Studies",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/islamic-studies"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Jewish Studies",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/jewish-studies"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Mathematics with specialization in the Mathematics of Finance",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/mathematics-specialization-mathematics-finance"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Medieval and Renaissance Studies",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/medieval-and-renaissance-studies"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Middle Eastern, South Asian, and African Studies",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/middle-eastern-south-asian-and-african-studies-ma"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Modern and Contemporary Art: Critical and Curatorial Studies (MODA)",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/modern-and-contemporary-art-critical-and-curatorial-studies-moda"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Museum Anthropology",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/museum-anthropology"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Oral History",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/oral-history"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Russia, Eurasia, and East Europe: Regional Studies",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/russia-eurasia-and-east-europe-regional-studies"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Slavic Cultures",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/slavic-cultures"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "South Asian Studies",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/south-asian-studies"
+  },
+  {
+    "universityId": "Columbia University",
+    "name": "Climate and Society",
+    "degree": "M.A.",
+    "department": "Climate School",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://www.gsas.columbia.edu/content/climate-and-society"
+  }
+]

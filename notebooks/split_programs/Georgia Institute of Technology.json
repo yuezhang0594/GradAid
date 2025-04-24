@@ -1,0 +1,1007 @@
+[
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Architecture",
+    "degree": "Ph.D.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Building Construction",
+    "degree": "Ph.D.",
+    "department": "School of Building Construction",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Bioinformatics",
+    "degree": "Ph.D.",
+    "department": "College of Computing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "School of Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Quantitative Biosciences",
+    "degree": "Ph.D.",
+    "department": "College of Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Business Administration",
+    "degree": "Ph.D.",
+    "department": "Scheller College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Chemistry and Biochemistry",
+    "degree": "Ph.D.",
+    "department": "School of Chemistry & Biochemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "School of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Aerospace Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Aerospace Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "Wallace H. Coulter Department of Biomedical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Chemical and Biomolecular Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Chemical & Biomolecular Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Civil Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Electrical and Computer Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Engineering Science and Mechanics",
+    "degree": "Ph.D.",
+    "department": "School of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Industrial Engineering",
+    "degree": "Ph.D.",
+    "department": "H. Milton Stewart School of Industrial and Systems Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Materials Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Materials Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Nuclear and Radiological Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Operations Research",
+    "degree": "Ph.D.",
+    "department": "H. Milton Stewart School of Industrial and Systems Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Robotics",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Earth and Atmospheric Sciences",
+    "degree": "Ph.D.",
+    "department": "School of Earth and Atmospheric Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Ocean Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "History and Sociology of Technology and Science",
+    "degree": "Ph.D.",
+    "department": "School of History and Sociology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "School of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "School of Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "School of Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Public Policy",
+    "degree": "Ph.D.",
+    "department": "School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "City and Regional Planning",
+    "degree": "Ph.D.",
+    "department": "School of City & Regional Planning",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Building Construction and Facility Management",
+    "degree": "M.S.",
+    "department": "School of Building Construction",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Bioinformatics",
+    "degree": "M.S.",
+    "department": "College of Computing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Biology",
+    "degree": "M.S.",
+    "department": "School of Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Analytics",
+    "degree": "M.S.",
+    "department": "College of Computing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Real Estate Development",
+    "degree": "MRED",
+    "department": "School of Building Construction",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Chemistry and Biochemistry",
+    "degree": "M.S.",
+    "department": "School of Chemistry & Biochemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "School of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Cybersecurity",
+    "degree": "M.S.",
+    "department": "School of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Human-Computer Interaction",
+    "degree": "M.S.",
+    "department": "College of Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Industrial Design",
+    "degree": "M.S.",
+    "department": "School of Industrial Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Aerospace Engineering",
+    "degree": "M.S.",
+    "department": "School of Aerospace Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Biomedical Engineering",
+    "degree": "M.S.",
+    "department": "Wallace H. Coulter Department of Biomedical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Chemical and Biomolecular Engineering",
+    "degree": "M.S.",
+    "department": "School of Chemical & Biomolecular Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Civil Engineering",
+    "degree": "M.S.",
+    "department": "School of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Electrical and Computer Engineering",
+    "degree": "M.S.",
+    "department": "School of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Engineering Science and Mechanics",
+    "degree": "M.S.",
+    "department": "School of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Environmental Engineering",
+    "degree": "M.S.",
+    "department": "School of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Health Systems",
+    "degree": "M.S.",
+    "department": "H. Milton Stewart School of Industrial and Systems Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Industrial Engineering",
+    "degree": "M.S.",
+    "department": "H. Milton Stewart School of Industrial and Systems Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Materials Science and Engineering",
+    "degree": "M.S.",
+    "department": "School of Materials Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "School of Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Medical Physics",
+    "degree": "M.S.",
+    "department": "School of Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Nuclear and Radiological Engineering",
+    "degree": "M.S.",
+    "department": "School of Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Operations Research",
+    "degree": "M.S.",
+    "department": "H. Milton Stewart School of Industrial and Systems Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Robotics",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Applied Systems Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Earth and Atmospheric Sciences",
+    "degree": "M.S.",
+    "department": "School of Earth and Atmospheric Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Geographic Information Science and Technology",
+    "degree": "M.S.",
+    "department": "School of City & Regional Planning",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Occupational Safety and Health",
+    "degree": "M.S.",
+    "department": "School of Building Construction",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Music Technology",
+    "degree": "M.S.",
+    "department": "School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Computational Science and Engineering",
+    "degree": "M.S.",
+    "department": "College of Computing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Mathematics",
+    "degree": "M.S.",
+    "department": "School of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "School of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "School of Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Urban Analytics",
+    "degree": "M.S.",
+    "department": "School of City & Regional Planning",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Quantitative and Computational Finance",
+    "degree": "M.S.",
+    "department": "College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "Urban Design",
+    "degree": "M.S.",
+    "department": "School of City & Regional Planning",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  },
+  {
+    "universityId": "Georgia Institute of Technology",
+    "name": "City and Regional Planning",
+    "degree": "MCRP",
+    "department": "School of City & Regional Planning",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://grad.gatech.edu/"
+  }
+]

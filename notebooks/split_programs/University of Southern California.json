@@ -1,0 +1,3794 @@
+[
+  {
+    "universityId": "University of Southern California",
+    "name": "Biochemistry and Molecular Biology",
+    "degree": "Ph.D.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Biomedical Sciences and Molecular Medicine",
+    "degree": "Ph.D.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Biostatistics",
+    "degree": "Ph.D.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Cellular Biology",
+    "degree": "Ph.D.",
+    "department": "Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Computational Biology",
+    "degree": "Ph.D.",
+    "department": "Quantitative and Computational Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Ecology and Evolutionary Biology",
+    "degree": "Ph.D.",
+    "department": "Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Epidemiology",
+    "degree": "Ph.D.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Genetics and Genomics",
+    "degree": "Ph.D.",
+    "department": "Quantitative and Computational Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Marine Biology and Oceanography",
+    "degree": "Ph.D.",
+    "department": "Ocean Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Microbiology and Immunology",
+    "degree": "Ph.D.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "Ph.D.",
+    "department": "Neuroscience – Graduate Program",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Oncology and Cancer Biology",
+    "degree": "Ph.D.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Pharmacology and Toxicology",
+    "degree": "Ph.D.",
+    "department": "Alfred E. Mann School of Pharmacy and Pharmaceutical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Business",
+    "degree": "Ph.D.",
+    "department": "Marshall School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Chemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Materials Science",
+    "degree": "Ph.D.",
+    "department": "Materials Science – Mork Family Department of Chemical Engineering and Materials Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Communications",
+    "degree": "Ph.D.",
+    "department": "School of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Thomas Lord Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Advanced Dentistry and Oral Sciences",
+    "degree": "Ph.D.",
+    "department": "Herman Ostrow School of Dentistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Dentistry",
+    "degree": "Ph.D.",
+    "department": "Herman Ostrow School of Dentistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Economics and Econometrics",
+    "degree": "Ph.D.",
+    "department": "Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Educational Administration",
+    "degree": "Ph.D.",
+    "department": "Rossier School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Teaching",
+    "degree": "Ph.D.",
+    "department": "Rossier School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Aerospace Engineering",
+    "degree": "Ph.D.",
+    "department": "Aerospace and Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "Alfred E. Mann Department of Biomedical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "Chemical Engineering – Mork Family Department of Chemical Engineering and Materials Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Civil Engineering",
+    "degree": "Ph.D.",
+    "department": "Civil Engineering – Sonny Astani Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Computer Hardware Engineering",
+    "degree": "Ph.D.",
+    "department": "Electrical and Computer Engineering – Ming Hsieh Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "Electrical and Computer Engineering – Ming Hsieh Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "Environmental Engineering - Sonny Astani Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Industrial Engineering",
+    "degree": "Ph.D.",
+    "department": "Industrial and Systems Engineering – Daniel J. Epstein Department of Industrial and Systems Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "Aerospace and Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Mining and Petroleum Engineering",
+    "degree": "Ph.D.",
+    "department": "Petroleum Engineering – Mork Family Department of Chemical Engineering and Materials Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Comparative Literature",
+    "degree": "Ph.D.",
+    "department": "Comparative Literature",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "English Language Studies",
+    "degree": "Ph.D.",
+    "department": "English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Geology and Earth Science",
+    "degree": "Ph.D.",
+    "department": "Earth Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Marine Science",
+    "degree": "Ph.D.",
+    "department": "Ocean Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Film and Video Studies",
+    "degree": "Ph.D.",
+    "department": "School of Cinematic Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "East Asian Languages and Literatures",
+    "degree": "Ph.D.",
+    "department": "East Asian Languages and Cultures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "French Language and Literature",
+    "degree": "Ph.D.",
+    "department": "Comparative Studies in Literature and Culture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Linguistics",
+    "degree": "Ph.D.",
+    "department": "Linguistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Interpretation and Translation",
+    "degree": "Ph.D.",
+    "department": "Linguistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Russian and European Languages and Literatures",
+    "degree": "Ph.D.",
+    "department": "Slavic Languages and Literatures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Geography",
+    "degree": "Ph.D.",
+    "department": "Spatial Sciences Institute",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "North American Studies",
+    "degree": "Ph.D.",
+    "department": "American Studies and Ethnicity",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Healthcare Management",
+    "degree": "Ph.D.",
+    "department": "Price School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Health Professions and Related Clinical Sciences",
+    "degree": "Ph.D.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Art History",
+    "degree": "Ph.D.",
+    "department": "Art History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Latin and Ancient Greek Studies",
+    "degree": "Ph.D.",
+    "department": "Classics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "International Affairs",
+    "degree": "Ph.D.",
+    "department": "Political Science and International Relations",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Occupational Therapy",
+    "degree": "Ph.D.",
+    "department": "Chan Division of Occupational Science and Occupational Therapy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Physical Therapy",
+    "degree": "Ph.D.",
+    "department": "Biokinesiology and Physical Therapy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Law",
+    "degree": "J.D.",
+    "department": "Gould School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Computational and Applied Mathematics",
+    "degree": "Ph.D.",
+    "department": "Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Mathematics and Statistics",
+    "degree": "Ph.D.",
+    "department": "Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Medicine",
+    "degree": "Ph.D.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Music",
+    "degree": "Ph.D.",
+    "department": "Thornton School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Musical Instruments",
+    "degree": "Ph.D.",
+    "department": "Thornton School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Music Performance",
+    "degree": "Ph.D.",
+    "department": "Thornton School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Music Theory and Composition",
+    "degree": "Ph.D.",
+    "department": "Thornton School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Voice and Opera",
+    "degree": "Ph.D.",
+    "department": "Thornton School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Pharmaceutical Chemistry and Drug Design",
+    "degree": "Ph.D.",
+    "department": "Alfred E. Mann School of Pharmacy and Pharmaceutical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Pharmaceutical Economics",
+    "degree": "Ph.D.",
+    "department": "Alfred E. Mann School of Pharmacy and Pharmaceutical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Pharmacy Studies",
+    "degree": "Ph.D.",
+    "department": "Alfred E. Mann School of Pharmacy and Pharmaceutical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Philosophy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Physics and Astronomy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Political Science and Government",
+    "degree": "Ph.D.",
+    "department": "Political Science and International Relations",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Behavioral Sciences",
+    "degree": "Ph.D.",
+    "department": "Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Experimental Psychology",
+    "degree": "Ph.D.",
+    "department": "Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Public Policy Analysis",
+    "degree": "Ph.D.",
+    "department": "Price School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Urban",
+    "degree": "Ph.D.",
+    "department": "Price School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Community and Regional Planning",
+    "degree": "Ph.D.",
+    "department": "Price School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Urban Studies and Affairs",
+    "degree": "Ph.D.",
+    "department": "Price School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Public Health",
+    "degree": "Ph.D.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Religious Studies",
+    "degree": "Ph.D.",
+    "department": "Religion",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Religious Vocations",
+    "degree": "Ph.D.",
+    "department": "Religion",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Social Work",
+    "degree": "Ph.D.",
+    "department": "Suzanne Dworak-Peck School of Social Work",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Adult Development",
+    "degree": "M.S.",
+    "department": "Leonard Davis School of Gerontology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Gerontology and Aging",
+    "degree": "M.S.",
+    "department": "Leonard Davis School of Gerontology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Anthropology",
+    "degree": "M.A.",
+    "department": "Anthropology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Sociology",
+    "degree": "M.A.",
+    "department": "Sociology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Architecture",
+    "degree": "M.Arch.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Building Science and Technology",
+    "degree": "M.S.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Arts",
+    "degree": "M.F.A.",
+    "department": "Roski School of Art and Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Entertainment and Media Management",
+    "degree": "M.F.A.",
+    "department": "School of Cinematic Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Biochemistry and Molecular Biology",
+    "degree": "M.S.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Bioinformatics",
+    "degree": "M.S.",
+    "department": "Quantitative and Computational Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Biology",
+    "degree": "M.S.",
+    "department": "Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Biomedical Sciences and Molecular Medicine",
+    "degree": "M.S.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Biostatistics",
+    "degree": "M.S.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Biotechnology",
+    "degree": "M.S.",
+    "department": "Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Cellular Biology",
+    "degree": "M.S.",
+    "department": "Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Computational Biology",
+    "degree": "M.S.",
+    "department": "Quantitative and Computational Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Genetics and Genomics",
+    "degree": "M.S.",
+    "department": "Quantitative and Computational Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Marine Biology and Oceanography",
+    "degree": "M.S.",
+    "department": "Ocean Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Microbiology and Immunology",
+    "degree": "M.S.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "M.S.",
+    "department": "Neuroscience – Graduate Program",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Pathology",
+    "degree": "M.S.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Pharmacology and Toxicology",
+    "degree": "M.S.",
+    "department": "Alfred E. Mann School of Pharmacy and Pharmaceutical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Physiology and Pathology",
+    "degree": "M.S.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Business",
+    "degree": "M.B.A.",
+    "department": "Marshall School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Business Analytics",
+    "degree": "M.S.",
+    "department": "Marshall School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Business Support Services",
+    "degree": "M.B.A.",
+    "department": "Marshall School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Construction Management",
+    "degree": "M.S.",
+    "department": "Viterbi School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Hotel and Hospitality Management",
+    "degree": "M.B.A.",
+    "department": "Marshall School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Human Resources",
+    "degree": "M.B.A.",
+    "department": "Marshall School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "International Business",
+    "degree": "M.B.A.",
+    "department": "Marshall School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Logistics and Supply Chain Management",
+    "degree": "M.B.A.",
+    "department": "Marshall School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Marketing",
+    "degree": "M.B.A.",
+    "department": "Marshall School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Project Management",
+    "degree": "M.S.",
+    "department": "Viterbi School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Real Estate",
+    "degree": "M.S.",
+    "department": "Price School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Small Business Management",
+    "degree": "M.B.A.",
+    "department": "Marshall School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "Chemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Materials Science",
+    "degree": "M.S.",
+    "department": "Materials Science – Mork Family Department of Chemical Engineering and Materials Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Communications",
+    "degree": "M.A.",
+    "department": "School of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Digital Communication and Media/Multimedia",
+    "degree": "M.A.",
+    "department": "School of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Journalism",
+    "degree": "M.S.J.",
+    "department": "School of Journalism",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Public Relations",
+    "degree": "M.A.",
+    "department": "School of Journalism",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Artificial Intelligence",
+    "degree": "M.S.",
+    "department": "Thomas Lord Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Computer and Information Sciences",
+    "degree": "M.S.",
+    "department": "Thomas Lord Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Computer Graphics",
+    "degree": "M.S.",
+    "department": "Thomas Lord Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Thomas Lord Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Marriage and Family Therapy and Counseling",
+    "degree": "M.A.",
+    "department": "Rossier School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Criminal Justice and Safety Studies",
+    "degree": "M.S.",
+    "department": "Price School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Advanced Dentistry and Oral Sciences",
+    "degree": "M.S.",
+    "department": "Herman Ostrow School of Dentistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Dental Hygiene",
+    "degree": "M.S.",
+    "department": "Herman Ostrow School of Dentistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Design and Visual Communications",
+    "degree": "M.F.A.",
+    "department": "Roski School of Art and Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Game Design and Interactive Media",
+    "degree": "M.F.A.",
+    "department": "School of Cinematic Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Graphic Design",
+    "degree": "M.F.A.",
+    "department": "Roski School of Art and Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Economic Development",
+    "degree": "M.S.",
+    "department": "Price School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Economics",
+    "degree": "M.A.",
+    "department": "Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Educational Administration",
+    "degree": "M.Ed.",
+    "department": "Rossier School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Education Research and Evaluation",
+    "degree": "M.Ed.",
+    "department": "Rossier School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Higher Education Administration",
+    "degree": "M.Ed.",
+    "department": "Rossier School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Library Science",
+    "degree": "M.L.S.",
+    "department": "Marshall School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Music Teacher Education",
+    "degree": "M.M.Ed.",
+    "department": "Thornton School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "School Counseling and Guidance Services",
+    "degree": "M.Ed.",
+    "department": "Rossier School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Specialized Teaching and Education",
+    "degree": "M.Ed.",
+    "department": "Rossier School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Student Affairs and College Counseling",
+    "degree": "M.Ed.",
+    "department": "Rossier School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Teaching",
+    "degree": "M.A.T.",
+    "department": "Rossier School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Teaching English as a Second Language",
+    "degree": "M.A.",
+    "department": "Rossier School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Aerospace Engineering",
+    "degree": "M.S.",
+    "department": "Aerospace and Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "M.S.",
+    "department": "Alfred E. Mann Department of Biomedical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Chemical Engineering",
+    "degree": "M.S.",
+    "department": "Chemical Engineering – Mork Family Department of Chemical Engineering and Materials Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Civil Engineering",
+    "degree": "M.S.",
+    "department": "Civil Engineering – Sonny Astani Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Computer Hardware Engineering",
+    "degree": "M.S.",
+    "department": "Electrical and Computer Engineering – Ming Hsieh Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Electrical and Computer Engineering",
+    "degree": "M.S.",
+    "department": "Electrical and Computer Engineering – Ming Hsieh Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Electrical Engineering",
+    "degree": "M.S.",
+    "department": "Electrical and Computer Engineering – Ming Hsieh Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Engineering",
+    "degree": "M.S.",
+    "department": "Viterbi School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Engineering Technician",
+    "degree": "M.S.",
+    "department": "Viterbi School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Environmental Engineering",
+    "degree": "M.S.",
+    "department": "Environmental Engineering - Sonny Astani Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Industrial Engineering",
+    "degree": "M.S.",
+    "department": "Industrial and Systems Engineering – Daniel J. Epstein Department of Industrial and Systems Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Manufacturing Engineering",
+    "degree": "M.S.",
+    "department": "Viterbi School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Materials Engineering",
+    "degree": "M.S.",
+    "department": "Materials Science – Mork Family Department of Chemical Engineering and Materials Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "Aerospace and Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Mining and Petroleum Engineering",
+    "degree": "M.S.",
+    "department": "Petroleum Engineering – Mork Family Department of Chemical Engineering and Materials Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Operations Research",
+    "degree": "M.S.",
+    "department": "Viterbi School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Systems Engineering",
+    "degree": "M.S.",
+    "department": "Viterbi School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Telecommunications Engineering",
+    "degree": "M.S.",
+    "department": "Viterbi School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Comparative Literature",
+    "degree": "M.A.",
+    "department": "Comparative Literature",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Creative Writing",
+    "degree": "M.F.A.",
+    "department": "English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "English Language Studies",
+    "degree": "M.A.",
+    "department": "English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Playwriting and Screenwriting",
+    "degree": "M.F.A.",
+    "department": "School of Cinematic Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Rhetoric and Composition",
+    "degree": "M.A.",
+    "department": "English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Environmental Science",
+    "degree": "M.S.",
+    "department": "Environmental Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Geology and Earth Science",
+    "degree": "M.S.",
+    "department": "Earth Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Cinematography and Video Production",
+    "degree": "M.F.A.",
+    "department": "School of Cinematic Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Film and Video Studies",
+    "degree": "M.F.A.",
+    "department": "School of Cinematic Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Accounting",
+    "degree": "M.S.",
+    "department": "Leventhal School of Accounting",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Taxation",
+    "degree": "M.S.",
+    "department": "Leventhal School of Accounting",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Fine Arts",
+    "degree": "M.F.A.",
+    "department": "Roski School of Art and Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Studio Arts",
+    "degree": "M.F.A.",
+    "department": "Roski School of Art and Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "East Asian Languages and Literatures",
+    "degree": "M.A.",
+    "department": "East Asian Languages and Cultures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Linguistics",
+    "degree": "M.A.",
+    "department": "Linguistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Interpretation and Translation",
+    "degree": "M.A.",
+    "department": "Linguistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Russian and European Languages and Literatures",
+    "degree": "M.A.",
+    "department": "Slavic Languages and Literatures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Asian Studies",
+    "degree": "M.A.",
+    "department": "East Asian Languages and Cultures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Geography",
+    "degree": "M.S.",
+    "department": "Spatial Sciences Institute",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "North American Studies",
+    "degree": "M.A.",
+    "department": "American Studies and Ethnicity",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Healthcare Management",
+    "degree": "M.H.A.",
+    "department": "Price School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Health Professions and Related Clinical Sciences",
+    "degree": "M.S.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Medical Scientist",
+    "degree": "M.S.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Art History",
+    "degree": "M.A.",
+    "department": "Art History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Historic Preservation and Conservation",
+    "degree": "M.H.P.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Latin and Ancient Greek Studies",
+    "degree": "M.A.",
+    "department": "Classics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Music History and Literature",
+    "degree": "M.A.",
+    "department": "Thornton School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Computer and Information Systems Security",
+    "degree": "M.S.",
+    "department": "Thomas Lord Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Computer Systems Networking and Telecommunications",
+    "degree": "M.S.",
+    "department": "Electrical and Computer Engineering – Ming Hsieh Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Network",
+    "degree": "M.S.",
+    "department": "Electrical and Computer Engineering – Ming Hsieh Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Database and System Administration",
+    "degree": "M.S.",
+    "department": "Electrical and Computer Engineering – Ming Hsieh Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "International Affairs",
+    "degree": "M.A.",
+    "department": "Political Science and International Relations",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "International Studies",
+    "degree": "M.A.",
+    "department": "Political Science and International Relations",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Peace Studies and Conflict Resolution",
+    "degree": "M.A.",
+    "department": "Political Science and International Relations",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Kinesiology and Exercise Science",
+    "degree": "M.S.",
+    "department": "Biokinesiology and Physical Therapy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Occupational Therapy",
+    "degree": "M.S.",
+    "department": "Chan Division of Occupational Science and Occupational Therapy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Advanced Legal Research",
+    "degree": "LL.M.",
+    "department": "Gould School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "International Law",
+    "degree": "LL.M.",
+    "department": "Gould School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Legal Studies",
+    "degree": "M.S.L.",
+    "department": "Gould School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Programs for Foreign Lawyers",
+    "degree": "LL.M.",
+    "department": "Gould School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Liberal Arts and Humanities",
+    "degree": "M.A.",
+    "department": "Dornsife College of Letters, Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Computational and Applied Mathematics",
+    "degree": "M.S.",
+    "department": "Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Financial Mathematics",
+    "degree": "M.S.",
+    "department": "Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Mathematics and Statistics",
+    "degree": "M.S.",
+    "department": "Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Medical Assistant",
+    "degree": "M.S.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Music",
+    "degree": "M.M.",
+    "department": "Thornton School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Musical Instruments",
+    "degree": "M.M.",
+    "department": "Thornton School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Music Management",
+    "degree": "M.A.",
+    "department": "Thornton School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Music Performance",
+    "degree": "M.M.",
+    "department": "Thornton School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Music Theory and Composition",
+    "degree": "M.M.",
+    "department": "Thornton School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Voice and Opera",
+    "degree": "M.M.",
+    "department": "Thornton School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Nurse Anesthetist",
+    "degree": "M.S.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Pediatric Nursing",
+    "degree": "M.S.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Acting",
+    "degree": "M.F.A.",
+    "department": "School of Dramatic Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Drama and Theatre Production",
+    "degree": "M.F.A.",
+    "department": "School of Dramatic Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Theatre Design",
+    "degree": "M.F.A.",
+    "department": "School of Dramatic Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Pharmaceutical Chemistry and Drug Design",
+    "degree": "M.S.",
+    "department": "Alfred E. Mann School of Pharmacy and Pharmaceutical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Pharmaceutical Economics",
+    "degree": "M.S.",
+    "department": "Alfred E. Mann School of Pharmacy and Pharmaceutical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Pharmacy Studies",
+    "degree": "M.S.",
+    "department": "Alfred E. Mann School of Pharmacy and Pharmaceutical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Bioethics",
+    "degree": "M.A.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Philosophy",
+    "degree": "M.A.",
+    "department": "Philosophy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Physician Assistant",
+    "degree": "M.S.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "Physics and Astronomy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Applied Behavior Analysis",
+    "degree": "M.S.",
+    "department": "Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Psychology",
+    "degree": "M.A.",
+    "department": "Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Non-Profit and Public Management",
+    "degree": "M.P.A.",
+    "department": "Price School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Public Administration",
+    "degree": "M.P.A.",
+    "department": "Price School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Public Policy Analysis",
+    "degree": "M.P.P.",
+    "department": "Price School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Urban",
+    "degree": "M.U.P.",
+    "department": "Price School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Community and Regional Planning",
+    "degree": "M.P.L.",
+    "department": "Price School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Urban Studies and Affairs",
+    "degree": "M.A.",
+    "department": "Price School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Public Health",
+    "degree": "M.P.H.",
+    "department": "Keck School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Religious Vocations",
+    "degree": "M.Div.",
+    "department": "Religion",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  },
+  {
+    "universityId": "University of Southern California",
+    "name": "Social Work",
+    "degree": "M.S.W.",
+    "department": "Suzanne Dworak-Peck School of Social Work",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.usc.edu/graduate-professional/"
+  }
+]

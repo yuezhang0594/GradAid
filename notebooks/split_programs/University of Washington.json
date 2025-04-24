@@ -1,0 +1,1337 @@
+[
+  {
+    "universityId": "University of Washington",
+    "name": "Aerospace Engineering",
+    "degree": "M.S.",
+    "department": "William E. Boeing Department of Aeronautics & Astronautics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.aa.washington.edu/admissions/graduate"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Aerospace Engineering",
+    "degree": "Ph.D.",
+    "department": "William E. Boeing Department of Aeronautics & Astronautics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.aa.washington.edu/admissions/graduate"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Anthropology",
+    "degree": "M.A.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://anthropology.washington.edu/graduate-application-information"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://anthropology.washington.edu/graduate-application-information"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Applied Mathematics",
+    "degree": "M.S.",
+    "department": "Department of Applied Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://amath.washington.edu/graduate-programs"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Applied Mathematics",
+    "degree": "Ph.D.",
+    "department": "Department of Applied Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://amath.washington.edu/graduate-programs"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Architecture",
+    "degree": "M.Arch.",
+    "department": "Department of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://arch.be.uw.edu/programs/graduate-programs/"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Art History",
+    "degree": "M.A.",
+    "department": "School of Art + Art History + Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://art.washington.edu/graduate-admissions"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Art History",
+    "degree": "Ph.D.",
+    "department": "School of Art + Art History + Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://art.washington.edu/graduate-admissions"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Astronomy",
+    "degree": "M.S.",
+    "department": "Department of Astronomy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.astro.washington.edu/graduate"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Astronomy",
+    "degree": "Ph.D.",
+    "department": "Department of Astronomy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.astro.washington.edu/graduate"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Biochemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Biochemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://biochemistry.uw.edu/education/phd-program/"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Bioengineering",
+    "degree": "M.S.",
+    "department": "Department of Bioengineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://bioe.uw.edu/academic-programs/graduate-programs/"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Bioengineering",
+    "degree": "Ph.D.",
+    "department": "Department of Bioengineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://bioe.uw.edu/academic-programs/graduate-programs/"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Biology",
+    "degree": "M.S.",
+    "department": "Department of Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.biology.washington.edu/programs/graduate"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.biology.washington.edu/programs/graduate"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Biostatistics",
+    "degree": "M.S.",
+    "department": "Department of Biostatistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.biostat.washington.edu/academics"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Biostatistics",
+    "degree": "Ph.D.",
+    "department": "Department of Biostatistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.biostat.washington.edu/academics"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Business Administration",
+    "degree": "M.B.A.",
+    "department": "Foster School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://foster.uw.edu/academics/degree-programs/full-time-mba/"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Business Administration",
+    "degree": "Ph.D.",
+    "department": "Foster School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://foster.uw.edu/academics/degree-programs/phd-program/"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Chemical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Chemical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cheme.washington.edu/graduate-program"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Chemical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cheme.washington.edu/graduate-program"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://chem.washington.edu/graduate-program"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://chem.washington.edu/graduate-program"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Civil Engineering",
+    "degree": "M.S.",
+    "department": "Department of Civil & Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.ce.washington.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Civil Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Civil & Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.ce.washington.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Communication",
+    "degree": "M.A.",
+    "department": "Department of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://com.uw.edu/graduate-studies/"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Communication",
+    "degree": "Ph.D.",
+    "department": "Department of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://com.uw.edu/graduate-studies/"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Paul G. Allen School of Computer Science & Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cs.washington.edu/academics/grad"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Paul G. Allen School of Computer Science & Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cs.washington.edu/academics/grad"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Dentistry",
+    "degree": "M.S.D.",
+    "department": "School of Dentistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://dental.washington.edu/departments/gradpro/"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Design",
+    "degree": "M.Des.",
+    "department": "School of Art + Art History + Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://art.washington.edu/design/master-design"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Drama",
+    "degree": "M.F.A.",
+    "department": "School of Drama",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://drama.washington.edu/MFA-programs"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Economics",
+    "degree": "M.A.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://econ.washington.edu/graduate-programs"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://econ.washington.edu/graduate-programs"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Education",
+    "degree": "M.Ed.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://education.uw.edu/programs/graduate"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Education",
+    "degree": "Ed.D.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://education.uw.edu/programs/graduate"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Education",
+    "degree": "Ph.D.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://education.uw.edu/programs/graduate"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Electrical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Electrical & Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.ece.uw.edu/academics/graduate/"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Electrical & Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.ece.uw.edu/academics/graduate/"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "English",
+    "degree": "M.A.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://english.washington.edu/graduate-studies"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://english.washington.edu/graduate-studies"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Environmental Engineering",
+    "degree": "M.S.",
+    "department": "Department of Civil & Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.ce.washington.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Civil & Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.ce.washington.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Epidemiology",
+    "degree": "M.P.H.",
+    "department": "Department of Epidemiology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://epi.washington.edu/graduate-program"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Epidemiology",
+    "degree": "Ph.D.",
+    "department": "Department of Epidemiology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://epi.washington.edu/graduate-program"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Geography",
+    "degree": "M.A.",
+    "department": "Department of Geography",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://geography.washington.edu/graduate-programs"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Geography",
+    "degree": "Ph.D.",
+    "department": "Department of Geography",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://geography.washington.edu/graduate-programs"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://history.washington.edu/graduate-studies"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://history.washington.edu/graduate-studies"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Information Science",
+    "degree": "M.S.",
+    "department": "Information School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://ischool.uw.edu/programs/msim"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Information Science",
+    "degree": "Ph.D.",
+    "department": "Information School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://ischool.uw.edu/programs/phd"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Law",
+    "degree": "J.D.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.law.uw.edu/admissions/jd"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Law",
+    "degree": "LL.M.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.law.uw.edu/admissions/llm"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Library and Information Science",
+    "degree": "M.L.I.S.",
+    "department": "Information School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://ischool.uw.edu/programs/mlis"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Materials Science and Engineering",
+    "degree": "M.S.",
+    "department": "Department of Materials Science & Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.mse.washington.edu/prospective/graduate"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Materials Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Materials Science & Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.mse.washington.edu/prospective/graduate"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Mathematics",
+    "degree": "M.S.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://math.washington.edu/graduate-program"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://math.washington.edu/graduate-program"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.me.washington.edu/prospective/grad"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.me.washington.edu/prospective/grad"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Medicine",
+    "degree": "M.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.uwmedicine.org/education"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Music",
+    "degree": "M.A.",
+    "department": "School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://music.washington.edu/graduate-programs"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Music",
+    "degree": "M.M.",
+    "department": "School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://music.washington.edu/graduate-programs"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Music",
+    "degree": "D.M.A.",
+    "department": "School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://music.washington.edu/graduate-programs"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Nursing",
+    "degree": "M.S.N.",
+    "department": "School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://nursing.uw.edu/programs/"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Nursing",
+    "degree": "D.N.P.",
+    "department": "School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://nursing.uw.edu/programs/"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Nursing",
+    "degree": "Ph.D.",
+    "department": "School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://nursing.uw.edu/programs/"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Oceanography",
+    "degree": "M.S.",
+    "department": "School of Oceanography",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.ocean.washington.edu/story/Graduate_Program"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Oceanography",
+    "degree": "Ph.D.",
+    "department": "School of Oceanography",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.ocean.washington.edu/story/Graduate_Program"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Pharmacy",
+    "degree": "Pharm.D.",
+    "department": "School of Pharmacy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://sop.washington.edu/pharmd/"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Pharmaceutical Sciences",
+    "degree": "Ph.D.",
+    "department": "School of Pharmacy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://sop.washington.edu/pharmsci/"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Philosophy",
+    "degree": "M.A.",
+    "department": "Department of Philosophy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://phil.washington.edu/graduate-program"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Department of Philosophy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://phil.washington.edu/graduate-program"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "Department of Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://phys.washington.edu/graduate-program"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Department of Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://phys.washington.edu/graduate-program"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Political Science",
+    "degree": "M.A.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.polisci.washington.edu/apply-graduate-program"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.polisci.washington.edu/apply-graduate-program"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Psychology",
+    "degree": "M.S.",
+    "department": "Department of Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://psych.uw.edu/graduate"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Department of Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://psych.uw.edu/graduate"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Public Administration",
+    "degree": "M.P.A.",
+    "department": "Evans School of Public Policy & Governance",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://evans.uw.edu/academic-programs/"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Public Health",
+    "degree": "M.P.H.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://sph.washington.edu/programs/"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Public Policy",
+    "degree": "Ph.D.",
+    "department": "Evans School of Public Policy & Governance",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://evans.uw.edu/academic-programs/phd-public-policy-and-management/"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Social Work",
+    "degree": "M.S.W.",
+    "department": "School of Social Work",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://socialwork.uw.edu/programs/msw"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Social Work",
+    "degree": "Ph.D.",
+    "department": "School of Social Work",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://socialwork.uw.edu/programs/phd"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Sociology",
+    "degree": "M.A.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://soc.washington.edu/graduate-program"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://soc.washington.edu/graduate-program"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://stat.uw.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "University of Washington",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://stat.uw.edu/academics/graduate-programs"
+  }
+]

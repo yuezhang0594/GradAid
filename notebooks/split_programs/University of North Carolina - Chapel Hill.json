@@ -1,0 +1,1410 @@
+[
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "African American Studies",
+    "degree": "Ph.D.",
+    "department": "Department of African American Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/africana-studies/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Africana Studies",
+    "degree": "Ph.D.",
+    "department": "Department of African American Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/africana-studies/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "American Studies",
+    "degree": "Ph.D.",
+    "department": "Department of American Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/american-studies/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/anthropology/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Art History",
+    "degree": "M.A.",
+    "department": "Department of Art and Art History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/art-history/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Asian and Middle Eastern Studies",
+    "degree": "M.A.",
+    "department": "Department of Asian and Middle Eastern Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/asian-and-middle-eastern-studies/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Biochemistry and Biophysics",
+    "degree": "M.S.",
+    "department": "Department of Biochemistry and Biophysics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/biochemistry-and-biophysics-direct-admit-ms/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/biology/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Biological and Biomedical Sciences",
+    "degree": "Ph.D.",
+    "department": "Biological and Biomedical Sciences Program",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/biological-and-biomedical-sciences/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Biomedical and Health Informatics",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/biomedical-and-health-informatics/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Biomedical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/biomedical-engineering/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Biostatistics",
+    "degree": "Ph.D.",
+    "department": "Department of Biostatistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/biostatistics/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Business Administration",
+    "degree": "Ph.D.",
+    "department": "Kenan-Flagler Business School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/business-administration/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Cell Biology and Physiology",
+    "degree": "Ph.D.",
+    "department": "Department of Cell Biology and Physiology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/cbph-direct-admit-ms/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/chemistry/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "City and Regional Planning",
+    "degree": "Ph.D.",
+    "department": "Department of City and Regional Planning",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/city-and-regional-planning/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Classics",
+    "degree": "M.A.",
+    "department": "Department of Classics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/classics/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Clinical Mental Health Counseling",
+    "degree": "M.S.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/clinical-mental-health-counseling/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Clinical Rehabilitation Counseling",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/clinical-rehabilitation-counseling/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Clinical Research",
+    "degree": "M.S.",
+    "department": "Department of Epidemiology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/clinical-research/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Communication Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/communication-studies/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/computer-science/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Data Science",
+    "degree": "M.S.",
+    "department": "School of Data Science and Society",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/master-of-applied-data-science"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Dental Hygiene Education",
+    "degree": "M.S.",
+    "department": "Adams School of Dentistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/dental-hygiene-education/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Digital Communication",
+    "degree": "M.A.",
+    "department": "Hussman School of Journalism and Media",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/digital-communication/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Digital Curation and Management",
+    "degree": "M.S.",
+    "department": "School of Information and Library Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/digital-curation/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Dramatic Art",
+    "degree": "M.F.A.",
+    "department": "Department of Dramatic Art",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/dramatic-art/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Earth and Marine Sciences",
+    "degree": "M.S.",
+    "department": "Department of Earth, Marine, and Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/earth-and-marine-sciences/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Ecology",
+    "degree": "Ph.D.",
+    "department": "Department of Environment and Ecology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/ecology/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/economics/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Education",
+    "degree": "Ph.D.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/education/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Educational Innovation, Technology and Entrepreneurship",
+    "degree": "M.A.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/innovation-technology-and-entrepreneurship/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Educational Leadership",
+    "degree": "Ed.D.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/educational-leadership/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Endodontics",
+    "degree": "M.S.",
+    "department": "Adams School of Dentistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/endodontics/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "English and Comparative Literature",
+    "degree": "Ph.D.",
+    "department": "Department of English and Comparative Literature",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/english/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Environmental Sciences and Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Environmental Sciences and Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/environmental-sciences-and-engineering/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Epidemiology",
+    "degree": "Ph.D.",
+    "department": "Department of Epidemiology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/epidemiology/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Exercise and Sport Science",
+    "degree": "M.A.",
+    "department": "Department of Exercise and Sport Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/exercise-and-sports-science/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Folklore",
+    "degree": "M.A.",
+    "department": "Department of American Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/folklore/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Geography and Environment",
+    "degree": "M.A.",
+    "department": "Department of Geography and Environment",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/geography/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "German Studies",
+    "degree": "M.A.",
+    "department": "Department of German and Slavic Languages and Literatures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/german-studies/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Global Studies",
+    "degree": "M.A.",
+    "department": "Department of Global Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/global-studies/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Health Behavior",
+    "degree": "Ph.D.",
+    "department": "Department of Health Behavior",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/health-behavior-and-health-education/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Health Policy and Management",
+    "degree": "Ph.D.",
+    "department": "Department of Health Policy and Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/health-policy-and-management/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/history/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Human Movement Science",
+    "degree": "Ph.D.",
+    "department": "Department of Allied Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/human-movement-science/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Information and Library Science",
+    "degree": "M.S.",
+    "department": "School of Information and Library Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/information-and-library-science/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Linguistics",
+    "degree": "M.A.",
+    "department": "Department of Linguistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/linguistics/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Materials Science",
+    "degree": "Ph.D.",
+    "department": "Department of Applied Physical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/materials-science/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Master of Applied Professional Studies",
+    "degree": "M.A.P.S.",
+    "department": "The Graduate School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/master-applied-professional-studies/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Master of Arts in Teaching",
+    "degree": "M.A.T.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/master-of-arts-in-teaching/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Master of Public Health",
+    "degree": "M.P.H.",
+    "department": "Gillings School of Global Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/master-of-public-health/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Maternal and Child Health",
+    "degree": "M.S.P.H.",
+    "department": "Department of Maternal and Child Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/maternal-and-child-health/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/mathematics/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Media and Communication",
+    "degree": "Ph.D.",
+    "department": "Hussman School of Journalism and Media",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/media-and-communication/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Microbiology and Immunology",
+    "degree": "M.S.",
+    "department": "Department of Microbiology and Immunology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/microbiology-and-immunology-direct-admit-ms/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Musicology",
+    "degree": "Ph.D.",
+    "department": "Department of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/musicology/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Nursing",
+    "degree": "Ph.D.",
+    "department": "School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/nursing/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Nutrition",
+    "degree": "Ph.D.",
+    "department": "Department of Nutrition",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/nutrition/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Occupational Science",
+    "degree": "Ph.D.",
+    "department": "Department of Allied Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/occupational-sciences/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Occupational Therapy",
+    "degree": "M.S.",
+    "department": "Department of Allied Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/occupational-therapy/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Operative Dentistry",
+    "degree": "M.S.",
+    "department": "Adams School of Dentistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/operative-dentistry/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Oral and Craniofacial Biomedicine",
+    "degree": "Ph.D.",
+    "department": "Adams School of Dentistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/oral-craniofacial-biomedicine/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Oral and Maxillofacial Pathology",
+    "degree": "M.S.",
+    "department": "Adams School of Dentistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/oral-and-maxillofacial-pathology/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Oral and Maxillofacial Radiology",
+    "degree": "M.S.",
+    "department": "Adams School of Dentistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/oral-and-maxillofacial-radiology/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Orthodontics",
+    "degree": "M.S.",
+    "department": "Adams School of Dentistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/orthodontics/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Pediatric Dentistry",
+    "degree": "M.S.",
+    "department": "Adams School of Dentistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/pediatric-dentistry/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Periodontology",
+    "degree": "M.S.",
+    "department": "Adams School of Dentistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/periodontology/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Pharmaceutical Sciences",
+    "degree": "Ph.D.",
+    "department": "Eshelman School of Pharmacy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/pharmaceutical-sciences/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Department of Philosophy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/philosophy/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Physics and Astronomy",
+    "degree": "Ph.D.",
+    "department": "Department of Physics and Astronomy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/physics-and-astronomy/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/political-science/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Prosthodontics",
+    "degree": "M.S.",
+    "department": "Adams School of Dentistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/prosthodontics/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Department of Psychology and Neuroscience",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/psychology/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Public Administration",
+    "degree": "M.P.A.",
+    "department": "School of Government",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/public-administration/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Public Health Executive Leadership",
+    "degree": "Ph.D.",
+    "department": "Gillings School of Global Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/public-health-executive-leadership/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Public Policy",
+    "degree": "Ph.D.",
+    "department": "Department of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/public-policy/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Regulatory Science",
+    "degree": "M.S.",
+    "department": "Eshelman School of Pharmacy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/regulatory-science/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Religious Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Religious Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/religious-studies/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Romance Languages and Literatures",
+    "degree": "Ph.D.",
+    "department": "Department of Romance Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/romance-languages-and-literatures/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "School Counseling",
+    "degree": "M.Ed.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/school-counseling/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "School Psychology",
+    "degree": "Ph.D.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/school-psychology/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Social Work",
+    "degree": "M.S.W.",
+    "department": "School of Social Work",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/social-work/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/sociology/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Speech and Hearing Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Allied Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/speech-and-hearing-sciences/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Statistics and Operations Research",
+    "degree": "Ph.D.",
+    "department": "Department of Statistics and Operations Research",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/statistics-and-operations-research/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Studio Art",
+    "degree": "M.F.A.",
+    "department": "Department of Art and Art History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/studio-art/"
+  },
+  {
+    "universityId": "University of North Carolina - Chapel Hill",
+    "name": "Trans Atlantic Masters",
+    "degree": "M.A.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 8"
+    },
+    "website": "https://gradschool.sites.unc.edu/trans-atlantic-masters-program/"
+  }
+]

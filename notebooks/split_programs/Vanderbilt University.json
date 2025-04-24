@@ -1,0 +1,1052 @@
+[
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://as.vanderbilt.edu/anthropology/graduate-admissions/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Astrophysics",
+    "degree": "Ph.D.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 7"
+    },
+    "website": "https://as.vanderbilt.edu/physics-astronomy/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Biochemistry",
+    "degree": "Ph.D.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://medschool.vanderbilt.edu/biochemistry/ph-d-program/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Biological Sciences",
+    "degree": "Ph.D.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://as.vanderbilt.edu/biological-sciences/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Biomedical Engineering",
+    "degree": "M.S.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "March 15"
+    },
+    "website": "https://engineering.vanderbilt.edu/departments/biomedical-engineering/graduate-programs/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://engineering.vanderbilt.edu/departments/biomedical-engineering/graduate-programs/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Biomedical Informatics",
+    "degree": "M.S.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://medschool.vanderbilt.edu/biomedical-informatics/research-ms-and-phd-program/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Biomedical Informatics",
+    "degree": "Ph.D.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://medschool.vanderbilt.edu/biomedical-informatics/research-ms-and-phd-program/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Biomedical Sciences",
+    "degree": "M.S.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "Rolling"
+    },
+    "website": "https://as.vanderbilt.edu/biomedical-sciences/admissions/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Biostatistics",
+    "degree": "M.S.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://www.vanderbilt.edu/biostatistics-graduate/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Biostatistics",
+    "degree": "Ph.D.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://www.vanderbilt.edu/biostatistics-graduate/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Cancer Biology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://medschool.vanderbilt.edu/cancer-biology/graduate-program/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Cell and Developmental Biology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://medschool.vanderbilt.edu/cdb/graduate-program/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Chemical and Physical Biology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://medschool.vanderbilt.edu/cpb/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Chemical and Biomolecular Engineering",
+    "degree": "M.S.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "March 15"
+    },
+    "website": "https://engineering.vanderbilt.edu/departments/chemical-biomolecular-engineering/graduate-programs/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://engineering.vanderbilt.edu/departments/chemical-biomolecular-engineering/graduate-programs/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://as.vanderbilt.edu/chemistry/phd-admissions/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Civil Engineering",
+    "degree": "M.S.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "March 15"
+    },
+    "website": "https://engineering.vanderbilt.edu/departments/civil-environmental-engineering/graduate-programs/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Civil Engineering",
+    "degree": "Ph.D.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://engineering.vanderbilt.edu/departments/civil-environmental-engineering/graduate-programs/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Cognitive Psychology In Context",
+    "degree": "M.S.",
+    "department": "Peabody College",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://peabody.vanderbilt.edu/academics/undergraduate-majors/psychology-specializations/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Community Research and Action",
+    "degree": "Ph.D.",
+    "department": "Peabody College",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://peabody.vanderbilt.edu/academics/phd-programs/community-research-action-phd/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://engineering.vanderbilt.edu/departments/computer-science/graduate/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Computer Science (Online)",
+    "degree": "M.S.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "June 30"
+    },
+    "website": "https://engineering.vanderbilt.edu/departments/computer-science/graduate/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://engineering.vanderbilt.edu/departments/computer-science/graduate/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Creative Writing",
+    "degree": "M.F.A.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://as.vanderbilt.edu/english/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Data Science",
+    "degree": "M.S.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 15"
+    },
+    "website": "https://www.vanderbilt.edu/datascience/msprogram/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Earth and Environmental Sciences",
+    "degree": "M.S.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://as.vanderbilt.edu/earth-environmental-sciences/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Earth and Environmental Sciences",
+    "degree": "Ph.D.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://as.vanderbilt.edu/earth-environmental-sciences/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Economics (Economic Development)",
+    "degree": "M.A.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 15"
+    },
+    "website": "https://as.vanderbilt.edu/economics/ma-admissions/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://as.vanderbilt.edu/economics/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Electrical & Computer Engineering",
+    "degree": "M.S.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "March 15"
+    },
+    "website": "https://engineering.vanderbilt.edu/departments/electrical-computer-engineering/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Electrical & Computer Engineering",
+    "degree": "Ph.D.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://engineering.vanderbilt.edu/departments/electrical-computer-engineering/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://as.vanderbilt.edu/english/phd-degree-requirements/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Environmental Engineering",
+    "degree": "M.S.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "March 15"
+    },
+    "website": "https://engineering.vanderbilt.edu/departments/civil-environmental-engineering/graduate-programs/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://engineering.vanderbilt.edu/departments/civil-environmental-engineering/graduate-programs/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Epidemiology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://medschool.vanderbilt.edu/epi-phd/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Graduate Department of Religion",
+    "degree": "M.A.",
+    "department": "Divinity",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.vanderbilt.edu/gdr/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Graduate Department of Religion",
+    "degree": "Ph.D.",
+    "department": "Divinity",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.vanderbilt.edu/gdr/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Health Policy",
+    "degree": "Ph.D.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.vumc.org/health-policy/phd-program"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Hearing and Speech Sciences",
+    "degree": "Ph.D.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://medschool.vanderbilt.edu/hearing-speech/phd/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://as.vanderbilt.edu/history/graduate-history-association/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Human Genetics",
+    "degree": "Ph.D.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://medschool.vanderbilt.edu/igp/human-genetics/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Interdisciplinary Graduate Program in Biomedical and Biological Sciences",
+    "degree": "Ph.D.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://medschool.vanderbilt.edu/igp/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Interdisciplinary Materials Science",
+    "degree": "M.S.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://engineering.vanderbilt.edu/materials-science/graduate-program/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Interdisciplinary Materials Science",
+    "degree": "Ph.D.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://engineering.vanderbilt.edu/materials-science/graduate-program/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Latin American Studies",
+    "degree": "M.A.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://as.vanderbilt.edu/clacx/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Law and Economics",
+    "degree": "J.D./Ph.D.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://law.vanderbilt.edu/phd-law-economics/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Leadership and Policy Studies",
+    "degree": "Ph.D.",
+    "department": "Peabody College",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://peabody.vanderbilt.edu/academics/phd-programs/leadership-policy-studies-phd/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Learning, Teaching and Diversity",
+    "degree": "Ph.D.",
+    "department": "Peabody College",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://peabody.vanderbilt.edu/academics/phd-programs/learning-teaching-diversity/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Liberal Arts and Science",
+    "degree": "M.L.A.S.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "Rolling"
+    },
+    "website": "https://as.vanderbilt.edu/mlas/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Mathematics",
+    "degree": "M.A.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://as.vanderbilt.edu/math/graduate/about/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://as.vanderbilt.edu/math/graduate/about/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "March 15"
+    },
+    "website": "https://engineering.vanderbilt.edu/departments/mechanical-engineering/graduate-programs/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://engineering.vanderbilt.edu/departments/mechanical-engineering/graduate-programs/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Medical Scientist Training Program",
+    "degree": "M.D./Ph.D.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://medschool.vanderbilt.edu/mstp/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Medicine, Health and Society",
+    "degree": "M.A.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1"
+    },
+    "website": "https://as.vanderbilt.edu/medicine-health-society/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Microbe-Host Interactions",
+    "degree": "Ph.D.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.vumc.org/pmi-education/mhi"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Molecular Pathology and Immunology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.vumc.org/pmi-education/mpi"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Molecular Physiology and Biophysics",
+    "degree": "Ph.D.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://medschool.vanderbilt.edu/mpb/the-mpb-graduate-program/prospective-students/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Neuroscience",
+    "degree": "Ph.D.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://medschool.vanderbilt.edu/brain-institute/neuroscience-ph-d-program/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Nursing Science",
+    "degree": "Ph.D.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://nursing.vanderbilt.edu/phd/index.php"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Pharmacology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://medschool.vanderbilt.edu/pharmacology/ph-d-training-program/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 3"
+    },
+    "website": "https://as.vanderbilt.edu/philosophy/graduateprogram/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://as.vanderbilt.edu/physics-astronomy/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://as.vanderbilt.edu/political-science/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Psychological Sciences",
+    "degree": "Ph.D.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.vanderbilt.edu/psychological_sciences/graduate/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Psychological Sciences",
+    "degree": "Ph.D.",
+    "department": "Peabody College",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.vanderbilt.edu/psychological_sciences/graduate/doctoral.php"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Quantitative and Chemical Biology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine Non-M.D.",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://medschool.vanderbilt.edu/qcb/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://as.vanderbilt.edu/sociology/graduate/how-to-apply/"
+  },
+  {
+    "universityId": "Vanderbilt University",
+    "name": "Special Education",
+    "degree": "Ph.D.",
+    "department": "Peabody College",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://peabody.vanderbilt.edu/academics/phd-programs/special-education-phd/"
+  }
+]

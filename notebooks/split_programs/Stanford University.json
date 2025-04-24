@@ -1,0 +1,1352 @@
+[
+  {
+    "universityId": "Stanford University",
+    "name": "Aeronautics and Astronautics",
+    "degree": "M.S.",
+    "department": "Department of Aeronautics and Astronautics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://aa.stanford.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Aeronautics and Astronautics",
+    "degree": "Ph.D.",
+    "department": "Department of Aeronautics and Astronautics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://aa.stanford.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "African and African American Studies",
+    "degree": "M.A.",
+    "department": "School of Humanities and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://africana.stanford.edu/academics/graduate-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "November 28, 2023"
+    },
+    "website": "https://anthropology.stanford.edu/academics/graduate-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Applied and Engineering Physics",
+    "degree": "M.S.",
+    "department": "Department of Applied Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://appliedphysics.stanford.edu/academics/graduate-student-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Applied and Engineering Physics",
+    "degree": "Ph.D.",
+    "department": "Department of Applied Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://appliedphysics.stanford.edu/academics/graduate-student-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Art History",
+    "degree": "Ph.D.",
+    "department": "Department of Art and Art History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://arthistory.stanford.edu/academics/graduate-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Art Practice",
+    "degree": "M.F.A.",
+    "department": "Department of Art and Art History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 9, 2024"
+    },
+    "website": "https://art.stanford.edu/academics/graduate-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Biochemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Biochemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1, 2023"
+    },
+    "website": "https://biochemistry.stanford.edu/academic-programs/phd-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Bioengineering",
+    "degree": "M.S.",
+    "department": "Department of Bioengineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://bioengineering.stanford.edu/academics/prospective-graduate-students"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Bioengineering",
+    "degree": "Ph.D.",
+    "department": "Department of Bioengineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://bioengineering.stanford.edu/academics/prospective-graduate-students"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1, 2023"
+    },
+    "website": "https://biology.stanford.edu/academics/phd-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Biomedical Informatics",
+    "degree": "M.S.",
+    "department": "Department of Biomedical Data Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1, 2023"
+    },
+    "website": "https://med.stanford.edu/bmi/prospective-students.html"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Biomedical Informatics",
+    "degree": "Ph.D.",
+    "department": "Department of Biomedical Data Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1, 2023"
+    },
+    "website": "https://med.stanford.edu/bmi/prospective-students.html"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Business",
+    "degree": "M.B.A.",
+    "department": "Graduate School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 4, 2024"
+    },
+    "website": "https://www.gsb.stanford.edu/programs/mba"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Business",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1, 2023"
+    },
+    "website": "https://www.gsb.stanford.edu/programs/phd"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Chemical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Chemical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://cheme.stanford.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Chemical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://cheme.stanford.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1, 2023"
+    },
+    "website": "https://chemistry.stanford.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Civil and Environmental Engineering",
+    "degree": "M.S.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://cee.stanford.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Civil and Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://cee.stanford.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Classics",
+    "degree": "Ph.D.",
+    "department": "Department of Classics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://classics.stanford.edu/academics/graduate-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Communication",
+    "degree": "M.A.",
+    "department": "Department of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 9, 2024"
+    },
+    "website": "https://communication.stanford.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Communication",
+    "degree": "Ph.D.",
+    "department": "Department of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://communication.stanford.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Comparative Literature",
+    "degree": "Ph.D.",
+    "department": "Division of Literatures, Cultures, and Languages",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://dlcl.stanford.edu/departments/comparative-literature/graduate"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Computational and Mathematical Engineering",
+    "degree": "M.S.",
+    "department": "Institute for Computational and Mathematical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://icme.stanford.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Computational and Mathematical Engineering",
+    "degree": "Ph.D.",
+    "department": "Institute for Computational and Mathematical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://icme.stanford.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://cs.stanford.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://cs.stanford.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Data Science",
+    "degree": "M.S.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 16, 2024"
+    },
+    "website": "https://mds.stanford.edu/"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Design Impact",
+    "degree": "M.S.",
+    "department": "Hasso Plattner Institute of Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 23, 2024"
+    },
+    "website": "https://designimpact.stanford.edu/"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Developmental Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Developmental Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1, 2023"
+    },
+    "website": "https://devbio.stanford.edu/education/phd-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Documentary Film and Video",
+    "degree": "M.F.A.",
+    "department": "Department of Art and Art History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://art.stanford.edu/academics/graduate-programs/mfa-documentary-film-and-video"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "East Asian Studies",
+    "degree": "M.A.",
+    "department": "School of Humanities and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 9, 2024"
+    },
+    "website": "https://easc.stanford.edu/academics/masters-degree"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "East Asian Studies",
+    "degree": "Ph.D.",
+    "department": "School of Humanities and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://easc.stanford.edu/academics/phd-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1, 2023"
+    },
+    "website": "https://economics.stanford.edu/graduate/admissions"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Education",
+    "degree": "M.A.",
+    "department": "Graduate School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 9, 2024"
+    },
+    "website": "https://ed.stanford.edu/academics/masters-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Education",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1, 2023"
+    },
+    "website": "https://ed.stanford.edu/academics/doctoral-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Electrical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Electrical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://ee.stanford.edu/academics/graduate-degree-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Electrical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://ee.stanford.edu/academics/graduate-degree-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Energy Resources Engineering",
+    "degree": "M.S.",
+    "department": "Department of Energy Resources Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://earth.stanford.edu/ere/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Energy Resources Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Energy Resources Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://earth.stanford.edu/ere/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://english.stanford.edu/academics/graduate-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Epidemiology and Clinical Research",
+    "degree": "M.S.",
+    "department": "Department of Epidemiology and Population Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1, 2023"
+    },
+    "website": "https://med.stanford.edu/epidemiology-dept/education/msepi.html"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Epidemiology and Clinical Research",
+    "degree": "Ph.D.",
+    "department": "Department of Epidemiology and Population Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1, 2023"
+    },
+    "website": "https://med.stanford.edu/epidemiology-dept/education/phdepi.html"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "French",
+    "degree": "Ph.D.",
+    "department": "Division of Literatures, Cultures, and Languages",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://dlcl.stanford.edu/departments/french-and-italian/french/graduate"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Genetics",
+    "degree": "Ph.D.",
+    "department": "Department of Genetics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1, 2023"
+    },
+    "website": "https://med.stanford.edu/genetics/education/graduate-program.html"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Geological Sciences",
+    "degree": "M.S.",
+    "department": "Department of Geological Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://earth.stanford.edu/gs/graduate-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Geological Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Geological Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://earth.stanford.edu/gs/graduate-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Geophysics",
+    "degree": "M.S.",
+    "department": "Department of Geophysics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://earth.stanford.edu/geophysics/graduate-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Geophysics",
+    "degree": "Ph.D.",
+    "department": "Department of Geophysics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://earth.stanford.edu/geophysics/graduate-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "German Studies",
+    "degree": "Ph.D.",
+    "department": "Division of Literatures, Cultures, and Languages",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://dlcl.stanford.edu/departments/german-studies/graduate"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Health Policy",
+    "degree": "Ph.D.",
+    "department": "Department of Health Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1, 2023"
+    },
+    "website": "https://med.stanford.edu/hsr/graduate_programs/phd.html"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://history.stanford.edu/academics/graduate-degree-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Iberian and Latin American Cultures",
+    "degree": "Ph.D.",
+    "department": "Division of Literatures, Cultures, and Languages",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://dlcl.stanford.edu/departments/iberian-and-latin-american-cultures/graduate"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Immunology",
+    "degree": "Ph.D.",
+    "department": "Department of Immunology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1, 2023"
+    },
+    "website": "https://immunology.stanford.edu/education/program.html"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "International Policy",
+    "degree": "M.A.",
+    "department": "Freeman Spogli Institute for International Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 9, 2024"
+    },
+    "website": "https://fsi.stanford.edu/masters-degree"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Italian",
+    "degree": "Ph.D.",
+    "department": "Division of Literatures, Cultures, and Languages",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://dlcl.stanford.edu/departments/french-and-italian/italian/graduate"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Law",
+    "degree": "J.D.",
+    "department": "Stanford Law School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1, 2024"
+    },
+    "website": "https://law.stanford.edu/education/degrees/jd-program/"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Law",
+    "degree": "LL.M.",
+    "department": "Stanford Law School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1, 2023"
+    },
+    "website": "https://law.stanford.edu/education/degrees/llm-program/"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Linguistics",
+    "degree": "Ph.D.",
+    "department": "Department of Linguistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://linguistics.stanford.edu/academics/graduate-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Management Science and Engineering",
+    "degree": "M.S.",
+    "department": "Department of Management Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://msande.stanford.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Management Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Management Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://msande.stanford.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Materials Science and Engineering",
+    "degree": "M.S.",
+    "department": "Department of Materials Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://matsci.stanford.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Materials Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Materials Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://matsci.stanford.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Mathematics",
+    "degree": "M.S.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://mathematics.stanford.edu/academics/graduate-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://mathematics.stanford.edu/academics/graduate-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://me.stanford.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://me.stanford.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Medicine",
+    "degree": "M.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "October 1, 2023"
+    },
+    "website": "https://med.stanford.edu/md-admissions.html"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Microbiology and Immunology",
+    "degree": "Ph.D.",
+    "department": "Department of Microbiology and Immunology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1, 2023"
+    },
+    "website": "https://microimmuno.stanford.edu/education/graduate-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Modern Thought and Literature",
+    "degree": "Ph.D.",
+    "department": "School of Humanities and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://mtl.stanford.edu/academics/graduate-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Molecular and Cellular Physiology",
+    "degree": "Ph.D.",
+    "department": "Department of Molecular and Cellular Physiology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1, 2023"
+    },
+    "website": "https://med.stanford.edu/mcp/education/phd-program.html"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Music",
+    "degree": "M.A.",
+    "department": "Department of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://music.stanford.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Music",
+    "degree": "Ph.D.",
+    "department": "Department of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://music.stanford.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Neurosciences",
+    "degree": "Ph.D.",
+    "department": "Department of Neurobiology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1, 2023"
+    },
+    "website": "https://neuroscience.stanford.edu/education/phd-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Department of Philosophy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://philosophy.stanford.edu/academics/graduate-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "Department of Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://physics.stanford.edu/academics/graduate-students"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Department of Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://physics.stanford.edu/academics/graduate-students"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://politicalscience.stanford.edu/academics/graduate-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Department of Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1, 2023"
+    },
+    "website": "https://psychology.stanford.edu/academics/phd-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Public Policy",
+    "degree": "M.P.P.",
+    "department": "School of Humanities and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 10, 2024"
+    },
+    "website": "https://publicpolicy.stanford.edu/graduate-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Religious Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Religious Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://religiousstudies.stanford.edu/academics/graduate-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Slavic Languages and Literatures",
+    "degree": "Ph.D.",
+    "department": "Division of Literatures, Cultures, and Languages",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://dlcl.stanford.edu/departments/slavic-languages-and-literatures/graduate"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://sociology.stanford.edu/academics/graduate-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://statistics.stanford.edu/academics/ms-statistics"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 6, 2023"
+    },
+    "website": "https://statistics.stanford.edu/academics/phd-statistics"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Structural Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Structural Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1, 2023"
+    },
+    "website": "https://med.stanford.edu/structuralbio/education.html"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Sustainability Science and Practice",
+    "degree": "M.S.",
+    "department": "School of Earth, Energy and Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 9, 2024"
+    },
+    "website": "https://earth.stanford.edu/sustainable-development/academics/coterminal-masters-program"
+  },
+  {
+    "universityId": "Stanford University",
+    "name": "Theater and Performance Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Theater and Performance Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5, 2023"
+    },
+    "website": "https://taps.stanford.edu/phd"
+  }
+]

@@ -1,0 +1,1058 @@
+[
+  {
+    "universityId": "North Carolina State University",
+    "name": "Crop Science",
+    "degree": "Ph.D.",
+    "department": "Department of Crop and Soil Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Animal Science",
+    "degree": "Ph.D.",
+    "department": "Department of Animal Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Parks, Recreation and Tourism Management",
+    "degree": "M.S.",
+    "department": "Department of Parks, Recreation and Tourism Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Aerospace Engineering",
+    "degree": "M.S.",
+    "department": "Department of Mechanical and Aerospace Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Aerospace Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Mechanical and Aerospace Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Electrical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Computer Engineering",
+    "degree": "M.S.",
+    "department": "Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Computer Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Economics",
+    "degree": "M.S.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Creative Writing",
+    "degree": "M.F.A.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Adult and Community College Education",
+    "degree": "M.Ed.",
+    "department": "Department of Educational Leadership, Policy, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Adult and Community College Education",
+    "degree": "M.S.",
+    "department": "Department of Educational Leadership, Policy, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Adult and Community College Education",
+    "degree": "Ed.D.",
+    "department": "Department of Educational Leadership, Policy, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Applied Mathematics",
+    "degree": "M.S.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Applied Mathematics",
+    "degree": "Ph.D.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Architecture",
+    "degree": "M.R.",
+    "department": "College of Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Art and Design",
+    "degree": "M.R.",
+    "department": "College of Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Biochemistry",
+    "degree": "M.R.",
+    "department": "Department of Molecular and Structural Biochemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Biochemistry",
+    "degree": "M.S.",
+    "department": "Department of Molecular and Structural Biochemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Biochemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Molecular and Structural Biochemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Bioinformatics",
+    "degree": "M.R.",
+    "department": "Graduate Program in Bioinformatics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Bioinformatics",
+    "degree": "Ph.D.",
+    "department": "Graduate Program in Bioinformatics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Biological and Agricultural Engineering",
+    "degree": "M.R.",
+    "department": "Department of Biological and Agricultural Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Biological and Agricultural Engineering",
+    "degree": "M.S.",
+    "department": "Department of Biological and Agricultural Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Biological and Agricultural Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Biological and Agricultural Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Comparative Biomedical Sciences",
+    "degree": "M.S.",
+    "department": "College of Veterinary Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Comparative Biomedical Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Veterinary Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Computer Networking",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Curriculum and Instruction",
+    "degree": "M.Ed.",
+    "department": "Department of Teacher Education and Learning Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Curriculum and Instruction",
+    "degree": "M.S.",
+    "department": "Department of Teacher Education and Learning Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Design",
+    "degree": "D.Des.",
+    "department": "College of Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Design",
+    "degree": "Ph.D.",
+    "department": "College of Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Graphic & Experience Design",
+    "degree": "M.R.",
+    "department": "College of Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Higher Education Administration",
+    "degree": "M.Ed.",
+    "department": "Department of Educational Leadership, Policy, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Nuclear Engineering",
+    "degree": "M.R.",
+    "department": "Department of Nuclear Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Nuclear Engineering",
+    "degree": "M.S.",
+    "department": "Department of Nuclear Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Nuclear Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Nuclear Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Nutrition",
+    "degree": "M.R.",
+    "department": "Department of Food, Bioprocessing and Nutrition Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Nutrition",
+    "degree": "M.S.",
+    "department": "Department of Food, Bioprocessing and Nutrition Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Nutrition",
+    "degree": "Ph.D.",
+    "department": "Department of Food, Bioprocessing and Nutrition Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Operations Research",
+    "degree": "M.R.",
+    "department": "Graduate Program in Operations Research",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Operations Research",
+    "degree": "M.S.",
+    "department": "Graduate Program in Operations Research",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Operations Research",
+    "degree": "Ph.D.",
+    "department": "Graduate Program in Operations Research",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "School Administration",
+    "degree": "M.R.",
+    "department": "Department of Educational Leadership, Policy, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "School Counseling",
+    "degree": "M.Ed.",
+    "department": "Department of Educational Leadership, Policy, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Science Education",
+    "degree": "M.S.",
+    "department": "Department of STEM Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Sociology",
+    "degree": "M.R.",
+    "department": "Department of Sociology and Anthropology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Sociology",
+    "degree": "M.S.",
+    "department": "Department of Sociology and Anthropology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology and Anthropology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Soil Science",
+    "degree": "M.R.",
+    "department": "Department of Crop and Soil Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Soil Science",
+    "degree": "M.S.",
+    "department": "Department of Crop and Soil Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Soil Science",
+    "degree": "Ph.D.",
+    "department": "Department of Crop and Soil Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Special Education",
+    "degree": "M.Ed.",
+    "department": "Department of Teacher Education and Learning Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Special Education",
+    "degree": "M.S.",
+    "department": "Department of Teacher Education and Learning Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Teaching",
+    "degree": "M.A.",
+    "department": "Department of Teacher Education and Learning Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Technical Communication",
+    "degree": "M.S.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Technology Education",
+    "degree": "Ed.D.",
+    "department": "Department of STEM Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Technology Education",
+    "degree": "M.S.",
+    "department": "Department of STEM Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Textile Chemistry",
+    "degree": "M.S.",
+    "department": "Wilson College of Textiles",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  },
+  {
+    "universityId": "North Carolina State University",
+    "name": "Textile Engineering",
+    "degree": "M.S.",
+    "department": "Wilson College of Textiles",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-15"
+    },
+    "website": "https://grad.ncsu.edu/"
+  }
+]

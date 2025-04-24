@@ -1,0 +1,632 @@
+[
+  {
+    "universityId": "University of California, Merced",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences, Humanities & Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Cellular Biology",
+    "degree": "Ph.D.",
+    "department": "School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Computer Software Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Computer Hardware Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Materials Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Environmental Science",
+    "degree": "Ph.D.",
+    "department": "School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences, Humanities & Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Liberal Arts and Humanities",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences, Humanities & Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Computational and Applied Mathematics",
+    "degree": "Ph.D.",
+    "department": "School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Physical Sciences",
+    "degree": "Ph.D.",
+    "department": "School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Political Science and Government",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences, Humanities & Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Behavioral Sciences",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences, Humanities & Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Cognitive Science",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences, Humanities & Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Experimental Psychology",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences, Humanities & Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences, Humanities & Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Public Health",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences, Humanities & Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Sociology",
+    "degree": "M.A.",
+    "department": "School of Social Sciences, Humanities & Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Cellular Biology",
+    "degree": "M.S.",
+    "department": "School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Business Analytics",
+    "degree": "M.B.A.",
+    "department": "Ernest & Julio Gallo Management Program",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Computer Software Engineering",
+    "degree": "M.S.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Economics",
+    "degree": "M.A.",
+    "department": "School of Social Sciences, Humanities & Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "M.S.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Computer Hardware Engineering",
+    "degree": "M.S.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Materials Engineering",
+    "degree": "M.S.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Environmental Science",
+    "degree": "M.S.",
+    "department": "School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "School of Social Sciences, Humanities & Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Liberal Arts and Humanities",
+    "degree": "M.A.",
+    "department": "School of Social Sciences, Humanities & Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Computational and Applied Mathematics",
+    "degree": "M.S.",
+    "department": "School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Physical Sciences",
+    "degree": "M.S.",
+    "department": "School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Political Science and Government",
+    "degree": "M.A.",
+    "department": "School of Social Sciences, Humanities & Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Behavioral Sciences",
+    "degree": "M.A.",
+    "department": "School of Social Sciences, Humanities & Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Cognitive Science",
+    "degree": "M.A.",
+    "department": "School of Social Sciences, Humanities & Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Experimental Psychology",
+    "degree": "M.A.",
+    "department": "School of Social Sciences, Humanities & Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Psychology",
+    "degree": "M.A.",
+    "department": "School of Social Sciences, Humanities & Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  },
+  {
+    "universityId": "University of California, Merced",
+    "name": "Public Health",
+    "degree": "M.S.",
+    "department": "School of Social Sciences, Humanities & Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-15"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/"
+  }
+]

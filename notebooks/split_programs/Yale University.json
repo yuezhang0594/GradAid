@@ -1,0 +1,1426 @@
+[
+  {
+    "universityId": "Yale University",
+    "name": "African American Studies",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "African Studies",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "American Studies",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Applied Physics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Architecture",
+    "degree": "M.Arch.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "January 2"
+    },
+    "website": "https://www.architecture.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Astronomy",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Business Administration",
+    "degree": "M.B.A.",
+    "department": "School of Management",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "January 7"
+    },
+    "website": "https://som.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Cell Biology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Classics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Comparative Literature",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Divinity",
+    "degree": "M.Div.",
+    "department": "Divinity School",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://divinity.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Drama",
+    "degree": "M.F.A.",
+    "department": "David Geffen School of Drama",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "January 2"
+    },
+    "website": "https://www.drama.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Earth and Planetary Sciences",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "East Asian Languages and Literatures",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Ecology and Evolutionary Biology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering & Applied Science",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://seas.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Engineering & Applied Science",
+    "degree": "Ph.D.",
+    "department": "School of Engineering & Applied Science",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://seas.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering & Applied Science",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://seas.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Environmental Management",
+    "degree": "M.E.M.",
+    "department": "School of the Environment",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://environment.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Epidemiology and Public Health",
+    "degree": "Ph.D.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://ysph.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Experimental Pathology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Film and Media Studies",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Fine Art",
+    "degree": "M.F.A.",
+    "department": "School of Art",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "January 7"
+    },
+    "website": "https://www.art.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Forestry & Environmental Studies",
+    "degree": "Ph.D.",
+    "department": "School of the Environment",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://environment.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "French",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Genetics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Geology and Geophysics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "German",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Global Affairs",
+    "degree": "M.A.",
+    "department": "Jackson School of Global Affairs",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "January 2"
+    },
+    "website": "https://jackson.yale.edu"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "History of Art",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "History of Science and Medicine",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Immunobiology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Italian",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Law",
+    "degree": "J.D.",
+    "department": "Law School",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "February 28"
+    },
+    "website": "https://law.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Linguistics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Management",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "MD-PhD Program",
+    "degree": "M.D.-Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "October 15"
+    },
+    "website": "https://medicine.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering & Applied Science",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://seas.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Medicine",
+    "degree": "M.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "October 15"
+    },
+    "website": "https://medicine.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Medieval Studies",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Microbiology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Molecular Biophysics and Biochemistry",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Music",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Music Performance",
+    "degree": "M.M.",
+    "department": "School of Music",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://music.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Near Eastern Languages and Civilizations",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Neuroscience",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Nursing",
+    "degree": "Ph.D.",
+    "department": "School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "November 1"
+    },
+    "website": "https://nursing.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Pharmacology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Public Health",
+    "degree": "M.P.H.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://ysph.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Religious Studies",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Renaissance Studies",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Slavic Languages and Literatures",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Spanish and Portuguese",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Statistics and Data Science",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Theater and Performance Studies",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Theology",
+    "degree": "M.A.R.",
+    "department": "Divinity School",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://divinity.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Advanced Practice Nursing",
+    "degree": "M.S.N.",
+    "department": "School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "November 1"
+    },
+    "website": "https://nursing.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Art History",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Biostatistics",
+    "degree": "Ph.D.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://ysph.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "East Asian Studies",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Environmental Science",
+    "degree": "Ph.D.",
+    "department": "School of the Environment",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://environment.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "European and Russian Studies",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Health Policy and Management",
+    "degree": "M.S.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://ysph.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "International and Development Economics",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Investigative Medicine",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://medicine.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Law and Religion",
+    "degree": "J.S.D.",
+    "department": "Law School",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "February 28"
+    },
+    "website": "https://law.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Master of Advanced Study",
+    "degree": "M.A.S.",
+    "department": "School of Engineering & Applied Science",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://seas.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Master of Laws",
+    "degree": "LL.M.",
+    "department": "Law School",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "February 28"
+    },
+    "website": "https://law.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Master of Science in Law",
+    "degree": "M.S.L.",
+    "department": "Law School",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "February 28"
+    },
+    "website": "https://law.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Molecular, Cellular and Developmental Biology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Nurse-Midwifery",
+    "degree": "M.S.N.",
+    "department": "School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "November 1"
+    },
+    "website": "https://nursing.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Physician Associate",
+    "degree": "M.M.Sc.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "October 15"
+    },
+    "website": "https://medicine.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Sacred Music",
+    "degree": "M.A.R.",
+    "department": "Divinity School",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://divinity.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Technical Art History",
+    "degree": "M.S.",
+    "department": "School of Art",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "January 7"
+    },
+    "website": "https://www.art.yale.edu/"
+  },
+  {
+    "universityId": "Yale University",
+    "name": "Urban Education Studies",
+    "degree": "Ed.M.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true,
+      "recommendationLetters": 3
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://gsas.yale.edu/programs-of-study"
+  }
+]

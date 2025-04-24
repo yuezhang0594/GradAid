@@ -1,0 +1,272 @@
+[
+  {
+    "universityId": "William & Mary",
+    "name": "American Studies",
+    "degree": "M.A.",
+    "department": "Department of American Studies",
+    "requirements": {
+      "minimumGPA": 3.4,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://www.wm.edu/as/graduate/degreeprograms/"
+  },
+  {
+    "universityId": "William & Mary",
+    "name": "American Studies",
+    "degree": "Ph.D.",
+    "department": "Department of American Studies",
+    "requirements": {
+      "minimumGPA": 3.4,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://www.wm.edu/as/graduate/degreeprograms/"
+  },
+  {
+    "universityId": "William & Mary",
+    "name": "Anthropology",
+    "degree": "M.A.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.4,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://www.wm.edu/as/graduate/degreeprograms/"
+  },
+  {
+    "universityId": "William & Mary",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.4,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://www.wm.edu/as/graduate/degreeprograms/"
+  },
+  {
+    "universityId": "William & Mary",
+    "name": "Applied Science",
+    "degree": "M.S.",
+    "department": "Department of Applied Science",
+    "requirements": {
+      "minimumGPA": 3.4,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://www.wm.edu/as/graduate/degreeprograms/"
+  },
+  {
+    "universityId": "William & Mary",
+    "name": "Applied Science",
+    "degree": "Ph.D.",
+    "department": "Department of Applied Science",
+    "requirements": {
+      "minimumGPA": 3.4,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://www.wm.edu/as/graduate/degreeprograms/"
+  },
+  {
+    "universityId": "William & Mary",
+    "name": "Biology",
+    "degree": "M.S.",
+    "department": "Department of Biology",
+    "requirements": {
+      "minimumGPA": 3.4,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://www.wm.edu/as/graduate/degreeprograms/"
+  },
+  {
+    "universityId": "William & Mary",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.4,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://www.wm.edu/as/graduate/degreeprograms/"
+  },
+  {
+    "universityId": "William & Mary",
+    "name": "Chemistry Environmental",
+    "degree": "M.S.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.4,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://www.wm.edu/as/graduate/degreeprograms/"
+  },
+  {
+    "universityId": "William & Mary",
+    "name": "Computational Operations Research",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.4,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://www.wm.edu/as/graduate/degreeprograms/"
+  },
+  {
+    "universityId": "William & Mary",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.4,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://www.wm.edu/as/graduate/degreeprograms/"
+  },
+  {
+    "universityId": "William & Mary",
+    "name": "Computer Science Computational Science",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.4,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://www.wm.edu/as/graduate/degreeprograms/"
+  },
+  {
+    "universityId": "William & Mary",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.4,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://www.wm.edu/as/graduate/degreeprograms/"
+  },
+  {
+    "universityId": "William & Mary",
+    "name": "Computer Science Computational Science",
+    "degree": "Ph.D.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.4,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://www.wm.edu/as/graduate/degreeprograms/"
+  },
+  {
+    "universityId": "William & Mary",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.4,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://www.wm.edu/as/graduate/degreeprograms/"
+  },
+  {
+    "universityId": "William & Mary",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Department of Physics",
+    "requirements": {
+      "minimumGPA": 3.4,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://www.wm.edu/as/graduate/degreeprograms/"
+  },
+  {
+    "universityId": "William & Mary",
+    "name": "Psychological Sciences",
+    "degree": "M.S.",
+    "department": "Department of Psychological Sciences",
+    "requirements": {
+      "minimumGPA": 3.4,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://www.wm.edu/as/graduate/degreeprograms/"
+  },
+  {
+    "universityId": "William & Mary",
+    "name": "Public Policy",
+    "degree": "M.P.P.",
+    "department": "Public Policy Program",
+    "requirements": {
+      "minimumGPA": 3.4,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://www.wm.edu/as/graduate/degreeprograms/"
+  }
+]

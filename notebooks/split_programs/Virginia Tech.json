@@ -1,0 +1,1362 @@
+[
+  {
+    "universityId": "Virginia Tech",
+    "name": "Animal and Poultry Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Animal and Poultry Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/animal-poultry-sciences.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Crop and Soil Environmental Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Crop and Soil Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/crop-soil-environmental-sciences.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Horticulture",
+    "degree": "Ph.D.",
+    "department": "Department of Horticulture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/horticulture.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Human Development",
+    "degree": "Ph.D.",
+    "department": "Department of Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/human-development.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/sociology.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Architecture",
+    "degree": "Ph.D.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/architecture.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Architecture and Design Research",
+    "degree": "Ph.D.",
+    "department": "College of Architecture and Urban Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/architecture-design-research-phd.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Biological Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/biological-sciences.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Biomedical and Veterinary Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Veterinary Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/biomedical-veterinary-sciences.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Biochemistry - Life Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Biochemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/biochemistry.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Entomology",
+    "degree": "Ph.D.",
+    "department": "Department of Entomology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/entomology.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Business",
+    "degree": "Ph.D.",
+    "department": "Pamplin College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/business.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Business Administration",
+    "degree": "M.B.A.",
+    "department": "Pamplin College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/business-administration.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/chemistry.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Computer Science and Applications",
+    "degree": "Ph.D.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/computer-science-applications.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/economics.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Education, Counselor Education",
+    "degree": "Ph.D.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/education-counselor-education.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Education, Curriculum and Instruction",
+    "degree": "Ed.D.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/education-curriculum-instruction.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Educational Leadership and Policy Studies",
+    "degree": "Ph.D.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/educational-leadership-policy-studies.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Higher Education",
+    "degree": "Ph.D.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/higher-education.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Aerospace Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Aerospace and Ocean Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/aerospace-engineering.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Biological Systems Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Biological Systems Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/biological-systems-engineering.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Biomedical Engineering and Mechanics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/biomedical-engineering.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Chemical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/chemical-engineering.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Civil Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/civil-engineering.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Computer Engineering",
+    "degree": "Ph.D.",
+    "department": "Bradley Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/computer-engineering.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "Bradley Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/electrical-engineering.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Engineering Education",
+    "degree": "Ph.D.",
+    "department": "Department of Engineering Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/engineering-education-phd.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Engineering Mechanics",
+    "degree": "Ph.D.",
+    "department": "Department of Biomedical Engineering and Mechanics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/engineering-mechanics.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Industrial and Systems Engineering",
+    "degree": "Ph.D.",
+    "department": "Grado Department of Industrial and Systems Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/industrial-systems-engineering.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Materials Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Materials Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/materials-science-engineering.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/mechanical-engineering.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Mining Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Mining and Minerals Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/mining-engineering.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Nuclear Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/nuclear-engineering.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Agricultural and Applied Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Agricultural and Applied Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/agricultural-applied-economics.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Agricultural and Life Sciences",
+    "degree": "M.S.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/agricultural-life-sciences-ms.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Agriculture and Extension Education",
+    "degree": "Ph.D.",
+    "department": "Department of Agricultural, Leadership, and Community Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/agriculture-extension-education-life-sci.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Building/Construction Science & Management",
+    "degree": "M.S.",
+    "department": "Department of Building Construction",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/building-construction-science-management-ms.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Communication",
+    "degree": "M.A.",
+    "department": "Department of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/communication-ma.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Creative Technologies",
+    "degree": "M.F.A.",
+    "department": "School of Visual Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/creative-technologies-mfa.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Creative Writing",
+    "degree": "M.F.A.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/creative-writing-mfa.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Dairy Science, Life Sciences",
+    "degree": "M.S.",
+    "department": "Department of Dairy Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/dairy-science-mslfs.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Data Analysis and Applied Statistics",
+    "degree": "M.A.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/data-analysis-applied-statistics-ma.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Education, Career and Technical Education",
+    "degree": "Ph.D.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/education-career-technical-education.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "English",
+    "degree": "M.A.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/english-ma.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Environmental Design and Planning",
+    "degree": "Ph.D.",
+    "department": "College of Architecture and Urban Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/environmental-design-planning-phd.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Environmental Engineering",
+    "degree": "M.S.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/environmental-engineering-ms.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Environmental Science and Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/environmental-science-engineering-ms.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Fisheries and Wildlife Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Fish and Wildlife Conservation",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/fisheries-wildlife-sciences.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Food Science and Technology",
+    "degree": "Ph.D.",
+    "department": "Department of Food Science and Technology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/food-science-technology.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Foreign Languages, Cultures, and Literatures",
+    "degree": "M.A.",
+    "department": "Department of Modern and Classical Languages and Literatures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/foreign-languages-cultures-literatures-ma.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Forestry and Forest Products",
+    "degree": "Ph.D.",
+    "department": "Department of Forest Resources and Environmental Conservation",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/forestry-forest-products.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Genetics, Bioinformatics, and Computational Biology",
+    "degree": "Ph.D.",
+    "department": "Graduate School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/genetics-bioinformatics-computational-biology-phd.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Geography",
+    "degree": "M.S.",
+    "department": "Department of Geography",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/geography-ms.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Geosciences",
+    "degree": "Ph.D.",
+    "department": "Department of Geosciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/geosciences.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Geospatial and Environmental Analysis",
+    "degree": "Ph.D.",
+    "department": "College of Natural Resources and Environment",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/geospatial-environmental-analysis-phd.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/history-ma.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Human Nutrition, Foods, and Exercise",
+    "degree": "Ph.D.",
+    "department": "Department of Human Nutrition, Foods, and Exercise",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/human-nutrition-foods-exercise.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Individual Interdisciplinary",
+    "degree": "Ph.D.",
+    "department": "Graduate School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/individual-interdisciplinary-phd.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Information Technology",
+    "degree": "M.I.T.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/information-technology-mit.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Landscape Architecture",
+    "degree": "M.L.A.",
+    "department": "School of Architecture + Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/landscape-architecture-mla.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Macromolecular Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/macromolecular-science-engineering.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Material Culture and Public Humanities",
+    "degree": "M.A.",
+    "department": "College of Liberal Arts and Human Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/material-culture-public-humanities-ma.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/mathematics.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Natural Resources",
+    "degree": "M.N.R.",
+    "department": "College of Natural Resources and Environment",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/natural-resources-mnr.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Neuroscience",
+    "degree": "Ph.D.",
+    "department": "School of Neuroscience",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/neuroscience-phd.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Nutrition and Dietetics",
+    "degree": "M.S.",
+    "department": "Department of Human Nutrition, Foods, and Exercise",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/nutrition-dietetics-ms.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Ocean Engineering",
+    "degree": "M.S.",
+    "department": "Department of Aerospace and Ocean Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/ocean-engineering-ms.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Philosophy",
+    "degree": "M.A.",
+    "department": "Department of Philosophy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/philosophy-ma.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Department of Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/physics.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Planning, Governance, and Globalization",
+    "degree": "Ph.D.",
+    "department": "School of Public and International Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/planning-governance-globalization-phd.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Plant Pathology, Physiology, and Weed Science",
+    "degree": "Ph.D.",
+    "department": "School of Plant and Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/plant-pathology-physiology-weed-science.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Political Science",
+    "degree": "M.A.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/political-science-ma.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Department of Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/psychology.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Public Administration and Public Affairs",
+    "degree": "Ph.D.",
+    "department": "School of Public and International Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/public-administration-public-affairs.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Public and International Affairs",
+    "degree": "M.P.I.A.",
+    "department": "School of Public and International Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/public-international-affairs-mpia.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Public Health",
+    "degree": "M.P.H.",
+    "department": "Department of Population Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/public-health-mph.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Rhetoric and Writing",
+    "degree": "Ph.D.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/rhetoric-writing-phd.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Science and Technology Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Science, Technology, and Society",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/science-technology-studies.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Social, Political, Ethical, and Cultural Thought",
+    "degree": "Ph.D.",
+    "department": "College of Liberal Arts and Human Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/social-political-ethical-cultural-thought-phd.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/statistics.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Systems Engineering",
+    "degree": "M.S.",
+    "department": "Grado Department of Industrial and Systems Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/systems-engineering.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Theatre Arts",
+    "degree": "M.F.A.",
+    "department": "School of Performing Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/theatre-arts-mfa.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Translational Biology, Medicine, and Health",
+    "degree": "Ph.D.",
+    "department": "Graduate School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/translational-biology-medicine-health.html"
+  },
+  {
+    "universityId": "Virginia Tech",
+    "name": "Urban and Regional Planning",
+    "degree": "M.U.R.P.L.",
+    "department": "School of Public and International Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-09-01"
+    },
+    "website": "https://graduateschool.vt.edu/graduate/degree-programs/urban-regional-planning-murpl.html"
+  }
+]

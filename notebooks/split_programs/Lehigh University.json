@@ -1,0 +1,706 @@
+[
+  {
+    "universityId": "Lehigh University",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Business & Economics",
+    "degree": "Ph.D.",
+    "department": "College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "P.C. Rossin College of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Counseling Psychology",
+    "degree": "Ph.D.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Earth & Environmental Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "P.C. Rossin College of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "P.C. Rossin College of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Industrial and Systems Engineering",
+    "degree": "Ph.D.",
+    "department": "P.C. Rossin College of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Materials Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "P.C. Rossin College of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "P.C. Rossin College of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Special Education",
+    "degree": "Ph.D.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Structural Engineering",
+    "degree": "Ph.D.",
+    "department": "P.C. Rossin College of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Teaching, Learning and Technology",
+    "degree": "Ph.D.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Applied Economics",
+    "degree": "M.S.",
+    "department": "College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Applied Mathematics",
+    "degree": "M.S.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Business Analytics",
+    "degree": "M.S.",
+    "department": "College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Catastrophe Modeling and Resilience",
+    "degree": "M.S.",
+    "department": "P.C. Rossin College of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Data Science",
+    "degree": "M.S.",
+    "department": "P.C. Rossin College of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Earth & Environmental Sciences",
+    "degree": "M.S.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Educational Leadership",
+    "degree": "M.Ed.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Educational Leadership-Urban Principals Academy",
+    "degree": "M.Ed.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Electrical Engineering",
+    "degree": "M.S.",
+    "department": "P.C. Rossin College of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Electrical Engineering",
+    "degree": "M.Eng.",
+    "department": "P.C. Rossin College of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Elementary Education",
+    "degree": "M.Ed.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "English",
+    "degree": "M.A.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Environmental Engineering",
+    "degree": "M.S.",
+    "department": "P.C. Rossin College of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Environmental Policy",
+    "degree": "M.A.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Financial Engineering",
+    "degree": "M.S.",
+    "department": "College of Business, P.C. Rossin College of Engineering and Applied Science, College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Health Systems Engineering",
+    "degree": "M.S.",
+    "department": "P.C. Rossin College of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Materials Science and Engineering",
+    "degree": "M.S.",
+    "department": "P.C. Rossin College of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Mathematics",
+    "degree": "M.A.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "MBA",
+    "degree": "M.B.A.",
+    "department": "College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "P.C. Rossin College of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Mental Health Counseling",
+    "degree": "M.Ed.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Molecular Biology",
+    "degree": "M.S.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Special Education",
+    "degree": "M.Ed.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Special Education with PA Teacher Certification",
+    "degree": "M.Ed.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Statistics and Data Science",
+    "degree": "M.S.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  },
+  {
+    "universityId": "Lehigh University",
+    "name": "Teaching & Learning",
+    "degree": "M.Ed.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies/degree-programs"
+  }
+]

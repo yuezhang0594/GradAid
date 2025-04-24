@@ -1,0 +1,1618 @@
+[
+  {
+    "universityId": "Purdue University",
+    "name": "Agricultural Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Agricultural Economics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://ag.purdue.edu/department/agecon/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Agriculture",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://ag.purdue.edu/academics/graduate-programs.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Animal Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Animal Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://ag.purdue.edu/department/ansc/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Crop Science",
+    "degree": "Ph.D.",
+    "department": "Department of Agronomy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://ag.purdue.edu/department/agry/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Soil Science",
+    "degree": "Ph.D.",
+    "department": "Department of Agronomy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://ag.purdue.edu/department/agry/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Horticulture",
+    "degree": "Ph.D.",
+    "department": "Department of Horticulture and Landscape Architecture",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://ag.purdue.edu/department/hla/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Human Development and Family Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Human Development and Family Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/hhs/hdfs/graduate/phd/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://cla.purdue.edu/academic/anthropology/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://cla.purdue.edu/academic/sociology/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Biochemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Biochemistry",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://ag.purdue.edu/department/biochem/graduate-program/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Biological Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.bio.purdue.edu/academic/grad/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Business Administration",
+    "degree": "M.B.A.",
+    "department": "Krannert School of Management",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://krannert.purdue.edu/masters/mba/admissions/"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.chem.purdue.edu/academic_programs/graduate/index.php"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.cs.purdue.edu/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Aerospace Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Aeronautics and Astronautics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://engineering.purdue.edu/AAE/academics/graduate"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "Weldon School of Biomedical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://engineering.purdue.edu/BME/Academics/Graduate"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "Davidson School of Chemical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://engineering.purdue.edu/ChE/academics/graduate"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Agricultural Economics",
+    "degree": "M.S.",
+    "department": "Department of Agricultural Economics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://ag.purdue.edu/department/agecon/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Agriculture",
+    "degree": "M.S.",
+    "department": "College of Agriculture",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://ag.purdue.edu/academics/graduate-programs.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Animal Sciences",
+    "degree": "M.S.",
+    "department": "Department of Animal Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://ag.purdue.edu/department/ansc/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Crop Science",
+    "degree": "M.S.",
+    "department": "Department of Agronomy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://ag.purdue.edu/department/agry/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Soil Science",
+    "degree": "M.S.",
+    "department": "Department of Agronomy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://ag.purdue.edu/department/agry/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Horticulture",
+    "degree": "M.S.",
+    "department": "Department of Horticulture and Landscape Architecture",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://ag.purdue.edu/department/hla/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Sustainable Agriculture",
+    "degree": "M.S.",
+    "department": "College of Agriculture",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://ag.purdue.edu/academics/graduate-programs.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Anthropology",
+    "degree": "M.S.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://cla.purdue.edu/academic/anthropology/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Human Development",
+    "degree": "M.S.",
+    "department": "Department of Human Development and Family Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/hhs/hdfs/graduate/phd/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Sociology",
+    "degree": "M.S.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://cla.purdue.edu/academic/sociology/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Architecture",
+    "degree": "M.S.",
+    "department": "College of Architecture",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/gradschool/prospective/gradrequirements/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Biochemistry",
+    "degree": "M.S.",
+    "department": "Department of Biochemistry",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://ag.purdue.edu/department/biochem/graduate-program/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Biological Sciences",
+    "degree": "M.S.",
+    "department": "Department of Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.bio.purdue.edu/academic/grad/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Biomedical Sciences",
+    "degree": "M.S.",
+    "department": "Department of Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/gradschool/prospective/gradrequirements/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Botany and Plant Pathology",
+    "degree": "M.S.",
+    "department": "Department of Botany and Plant Pathology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://ag.purdue.edu/department/botany/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Pharmacology and Toxicology",
+    "degree": "M.S.",
+    "department": "Department of Pharmacology and Toxicology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/gradschool/prospective/gradrequirements/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Zoology and Entomology",
+    "degree": "M.S.",
+    "department": "Department of Zoology and Entomology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/gradschool/prospective/gradrequirements/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Business",
+    "degree": "M.S.",
+    "department": "Krannert School of Management",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://krannert.purdue.edu/masters/mba/admissions/"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Business Analytics",
+    "degree": "M.S.",
+    "department": "Krannert School of Management",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://krannert.purdue.edu/masters/business-analytics-and-information-management/admissions/"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Hotel and Hospitality Management",
+    "degree": "M.S.",
+    "department": "Department of Hospitality and Tourism Management",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/hhs/htm/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Human Resources",
+    "degree": "M.S.",
+    "department": "Krannert School of Management",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://krannert.purdue.edu/masters/human-resource-management/admissions/"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.chem.purdue.edu/academic_programs/graduate/index.php"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Communications",
+    "degree": "M.S.",
+    "department": "Brian Lamb School of Communication",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.cla.purdue.edu/communication/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Corporate Communications",
+    "degree": "M.S.",
+    "department": "Brian Lamb School of Communication",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.cla.purdue.edu/communication/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Computer Graphics",
+    "degree": "M.S.",
+    "department": "Department of Computer Graphics Technology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://polytechnic.purdue.edu/degrees/computer-graphics-technology-ms"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.cs.purdue.edu/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Apparel and Textile Science",
+    "degree": "M.S.",
+    "department": "Department of Consumer Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/hhs/csr/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Design and Visual Communications",
+    "degree": "M.S.",
+    "department": "Department of Art and Design",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.cla.purdue.edu/academic/rueffschool/ad/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Economics",
+    "degree": "M.S.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://krannert.purdue.edu/masters/economics/admissions/"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Physical Education Teaching and Coaching",
+    "degree": "M.S.",
+    "department": "Department of Health and Kinesiology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/hhs/hk/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Teaching",
+    "degree": "M.S.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.education.purdue.edu/graduate-students/graduate-programs/"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Aerospace Engineering",
+    "degree": "M.S.",
+    "department": "School of Aeronautics and Astronautics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://engineering.purdue.edu/AAE/academics/graduate"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Agricultural Engineering",
+    "degree": "M.S.",
+    "department": "Department of Agricultural and Biological Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://engineering.purdue.edu/ABE/academics/graduate"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Bioengineering",
+    "degree": "M.S.",
+    "department": "Weldon School of Biomedical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://engineering.purdue.edu/BME/Academics/Graduate"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Chemical Engineering",
+    "degree": "M.S.",
+    "department": "Davidson School of Chemical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://engineering.purdue.edu/ChE/academics/graduate"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Civil Engineering",
+    "degree": "M.S.",
+    "department": "Lyles School of Civil Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://engineering.purdue.edu/CE/academics/graduate"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Electrical Engineering",
+    "degree": "M.S.",
+    "department": "Elmore Family School of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://engineering.purdue.edu/ECE/Academics/Graduate"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://engineering.purdue.edu/Engr/Academics/Graduate"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Engineering Technician",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://engineering.purdue.edu/Engr/Academics/Graduate"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Environmental Engineering",
+    "degree": "M.S.",
+    "department": "Lyles School of Civil Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://engineering.purdue.edu/CE/academics/graduate"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Industrial Engineering",
+    "degree": "M.S.",
+    "department": "School of Industrial Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://engineering.purdue.edu/IE/academics/graduate"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Industrial Management",
+    "degree": "M.S.",
+    "department": "Krannert School of Management",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://krannert.purdue.edu/masters/industrial-management/admissions/"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Materials Engineering",
+    "degree": "M.S.",
+    "department": "School of Materials Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://engineering.purdue.edu/MSE/academics/graduate"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "School of Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://engineering.purdue.edu/ME/academics/graduate"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Nuclear Engineering",
+    "degree": "M.S.",
+    "department": "School of Nuclear Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://engineering.purdue.edu/NE/academics/graduate"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Comparative Literature",
+    "degree": "M.S.",
+    "department": "School of Languages and Cultures",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.cla.purdue.edu/academic/slc/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "English Language Studies",
+    "degree": "M.S.",
+    "department": "School of Languages and Cultures",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.cla.purdue.edu/academic/slc/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Environmental Science",
+    "degree": "M.S.",
+    "department": "Department of Earth, Atmospheric, and Planetary Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.eaps.purdue.edu/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Forestry",
+    "degree": "M.S.",
+    "department": "Department of Forestry and Natural Resources",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://ag.purdue.edu/department/fnr/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Geology and Earth Science",
+    "degree": "M.S.",
+    "department": "Department of Earth, Atmospheric, and Planetary Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.eaps.purdue.edu/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Studio Arts",
+    "degree": "M.S.",
+    "department": "Department of Art and Design",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.cla.purdue.edu/academic/rueffschool/ad/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Foreign Languages and Literatures",
+    "degree": "M.S.",
+    "department": "School of Languages and Cultures",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.cla.purdue.edu/academic/slc/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Linguistics",
+    "degree": "M.S.",
+    "department": "School of Languages and Cultures",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.cla.purdue.edu/academic/slc/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Interpretation",
+    "degree": "M.S.",
+    "department": "School of Languages and Cultures",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.cla.purdue.edu/academic/slc/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Translation",
+    "degree": "M.S.",
+    "department": "School of Languages and Cultures",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.cla.purdue.edu/academic/slc/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Geography",
+    "degree": "M.S.",
+    "department": "Department of Earth, Atmospheric, and Planetary Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.eaps.purdue.edu/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "North American Studies",
+    "degree": "M.S.",
+    "department": "School of Interdisciplinary Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.cla.purdue.edu/academic/sis/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Healthcare Management",
+    "degree": "M.S.",
+    "department": "Department of Public Health",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/hhs/public-health/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Audiology and Speech-Language Pathology",
+    "degree": "M.S.",
+    "department": "Department of Speech, Language, and Hearing Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/hhs/slhs/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Health Physics",
+    "degree": "M.S.",
+    "department": "School of Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/hhs/hsci/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Health Professions and Related Clinical Sciences",
+    "degree": "M.S.",
+    "department": "School of Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/hhs/hsci/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Art History",
+    "degree": "M.S.",
+    "department": "Department of Art and Design",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.cla.purdue.edu/academic/rueffschool/ad/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "History",
+    "degree": "M.S.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.cla.purdue.edu/academic/history/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Information Technology",
+    "degree": "M.S.",
+    "department": "Department of Computer and Information Technology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://polytechnic.purdue.edu/degrees/computer-and-information-technology-ms"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Athletic Training",
+    "degree": "M.S.",
+    "department": "Department of Health and Kinesiology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/hhs/hk/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Exercise Physiology",
+    "degree": "M.S.",
+    "department": "Department of Health and Kinesiology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/hhs/hk/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Liberal Arts and Humanities",
+    "degree": "M.S.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.cla.purdue.edu/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Mathematics and Statistics",
+    "degree": "M.S.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.math.purdue.edu/academic/grad/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.stat.purdue.edu/academic_programs/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Nursing",
+    "degree": "M.S.",
+    "department": "School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/hhs/nur/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Dietetics and Clinical Nutrition",
+    "degree": "M.S.",
+    "department": "Department of Nutrition Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/hhs/nutr/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Food Science",
+    "degree": "M.S.",
+    "department": "Department of Food Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://ag.purdue.edu/department/foodsci/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Nutrition Studies",
+    "degree": "M.S.",
+    "department": "Department of Nutrition Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/hhs/nutr/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Drama and Theatre Production",
+    "degree": "M.S.",
+    "department": "Department of Theatre",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.cla.purdue.edu/academic/theatre/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Pharmaceutical Chemistry and Drug Design",
+    "degree": "M.S.",
+    "department": "Department of Medicinal Chemistry and Molecular Pharmacology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/gradschool/prospective/gradrequirements/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Pharmaceutical Economics",
+    "degree": "M.S.",
+    "department": "Department of Pharmacy Practice",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/gradschool/prospective/gradrequirements/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Philosophy",
+    "degree": "M.S.",
+    "department": "Department of Philosophy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.cla.purdue.edu/academic/philosophy/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "Department of Physics and Astronomy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.physics.purdue.edu/academic_programs/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Political Science and Government",
+    "degree": "M.S.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.cla.purdue.edu/academic/polsci/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Military Science",
+    "degree": "M.S.",
+    "department": "Department of Military Science and Leadership",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/gradschool/prospective/gradrequirements/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Experimental Psychology",
+    "degree": "M.S.",
+    "department": "Department of Psychological Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/hhs/psy/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Environmental Health",
+    "degree": "M.S.",
+    "department": "School of Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/hhs/hsci/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Public Health",
+    "degree": "M.S.",
+    "department": "Department of Public Health",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://www.purdue.edu/hhs/public-health/graduate/index.html"
+  },
+  {
+    "universityId": "Purdue University",
+    "name": "Veterinary Medicine",
+    "degree": "M.S.",
+    "department": "College of Veterinary Medicine",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01",
+      "spring": "2025-09-01"
+    },
+    "website": "https://vet.purdue.edu/graduate/index.php"
+  }
+]

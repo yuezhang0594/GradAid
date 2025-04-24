@@ -1,0 +1,1506 @@
+[
+  {
+    "universityId": "Northeastern University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology and Anthropology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Sport and Fitness Management",
+    "degree": "M.S.",
+    "department": "College of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Applied Analytics",
+    "degree": "M.S.",
+    "department": "College of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Architecture",
+    "degree": "M.Arch.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Artificial Intelligence",
+    "degree": "M.S.",
+    "department": "Khoury College of Computer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Behavioral Neuroscience",
+    "degree": "M.S.",
+    "department": "Department of Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Bioinformatics",
+    "degree": "M.S.",
+    "department": "College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Bioengineering",
+    "degree": "M.S.",
+    "department": "Department of Bioengineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Biotechnology",
+    "degree": "M.S.",
+    "department": "Department of Chemistry and Chemical Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Business Analytics",
+    "degree": "M.S.",
+    "department": "D'Amore-McKim School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Business Administration",
+    "degree": "M.B.A.",
+    "department": "D'Amore-McKim School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Chemical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Chemical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Civil Engineering",
+    "degree": "M.S.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Computer Engineering",
+    "degree": "M.S.",
+    "department": "Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Khoury College of Computer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Counseling Psychology",
+    "degree": "M.S.",
+    "department": "Department of Applied Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Criminology and Criminal Justice",
+    "degree": "M.S.",
+    "department": "School of Criminology and Criminal Justice",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Cybersecurity",
+    "degree": "M.S.",
+    "department": "Khoury College of Computer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Data Analytics Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Data Science",
+    "degree": "M.S.",
+    "department": "Khoury College of Computer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Economics",
+    "degree": "M.A.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Electrical and Computer Engineering",
+    "degree": "M.S.",
+    "department": "Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Energy Systems",
+    "degree": "M.S.",
+    "department": "Department of Mechanical and Industrial Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Engineering Management",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "English",
+    "degree": "M.A.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Environmental Engineering",
+    "degree": "M.S.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Finance",
+    "degree": "M.S.",
+    "department": "D'Amore-McKim School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Game Science and Design",
+    "degree": "M.S.",
+    "department": "College of Arts, Media and Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Health Data Analytics",
+    "degree": "M.S.",
+    "department": "Bouvé College of Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Health Informatics",
+    "degree": "M.S.",
+    "department": "Bouvé College of Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Human Resources Management",
+    "degree": "M.S.",
+    "department": "D'Amore-McKim School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Industrial Engineering",
+    "degree": "M.S.",
+    "department": "Department of Mechanical and Industrial Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Information Systems",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "International Affairs",
+    "degree": "M.A.",
+    "department": "College of Social Sciences and Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Law",
+    "degree": "J.D.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Marine Biology",
+    "degree": "M.S.",
+    "department": "Department of Marine and Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Mathematics",
+    "degree": "M.S.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Mechanical and Industrial Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Pharmaceutical Sciences",
+    "degree": "M.S.",
+    "department": "Department of Pharmaceutical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "Department of Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Political Science",
+    "degree": "M.A.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Psychology",
+    "degree": "M.S.",
+    "department": "Department of Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Public Administration",
+    "degree": "M.P.A.",
+    "department": "School of Public Policy and Urban Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Public Health",
+    "degree": "M.P.H.",
+    "department": "Bouvé College of Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Public Policy",
+    "degree": "M.P.P.",
+    "department": "School of Public Policy and Urban Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Regulatory Affairs",
+    "degree": "M.S.",
+    "department": "College of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Robotics",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "School Psychology",
+    "degree": "M.S.",
+    "department": "Department of Applied Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Security and Resilience Studies",
+    "degree": "M.S.",
+    "department": "College of Social Sciences and Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Software Engineering Systems",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Speech-Language Pathology",
+    "degree": "M.S.",
+    "department": "Department of Communication Sciences and Disorders",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Sustainable Building Systems",
+    "degree": "M.S.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Telecommunications Systems Management",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Urban Informatics",
+    "degree": "M.S.",
+    "department": "School of Public Policy and Urban Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Urban Planning and Policy",
+    "degree": "M.U.P.P.",
+    "department": "School of Public Policy and Urban Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Accounting",
+    "degree": "M.S.",
+    "department": "D'Amore-McKim School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Advanced Manufacturing",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Analytics",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Applied Machine Learning",
+    "degree": "M.S.",
+    "department": "Khoury College of Computer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Applied Quantitative Finance",
+    "degree": "M.S.",
+    "department": "D'Amore-McKim School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Biochemistry",
+    "degree": "M.S.",
+    "department": "Department of Chemistry and Chemical Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Communication Studies",
+    "degree": "M.A.",
+    "department": "Department of Communication Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Computer Systems Engineering",
+    "degree": "M.S.",
+    "department": "Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Data Architecture and Management",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Digital Media",
+    "degree": "M.F.A.",
+    "department": "College of Arts, Media and Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Education",
+    "degree": "M.Ed.",
+    "department": "College of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Electrical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Experience Design",
+    "degree": "M.F.A.",
+    "department": "College of Arts, Media and Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Global Studies and International Relations",
+    "degree": "M.S.",
+    "department": "College of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Healthcare Administration",
+    "degree": "M.H.A.",
+    "department": "Bouvé College of Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Human-Centered Computing",
+    "degree": "M.S.",
+    "department": "Khoury College of Computer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Information Assurance and Cybersecurity",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Information Design and Visualization",
+    "degree": "M.F.A.",
+    "department": "College of Arts, Media and Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Interdisciplinary Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "International Business",
+    "degree": "M.S.",
+    "department": "D'Amore-McKim School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "International Management",
+    "degree": "M.S.",
+    "department": "D'Amore-McKim School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Leadership",
+    "degree": "M.S.",
+    "department": "College of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Linguistics",
+    "degree": "M.A.",
+    "department": "Department of Linguistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Management",
+    "degree": "M.S.",
+    "department": "D'Amore-McKim School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Marine Science",
+    "degree": "M.S.",
+    "department": "Department of Marine and Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Marketing",
+    "degree": "M.S.",
+    "department": "D'Amore-McKim School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Medical Physics",
+    "degree": "M.S.",
+    "department": "Department of Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Network Science",
+    "degree": "M.S.",
+    "department": "College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Operations Research",
+    "degree": "M.S.",
+    "department": "Department of Mechanical and Industrial Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Personal Health Informatics",
+    "degree": "M.S.",
+    "department": "Khoury College of Computer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Pharmacology",
+    "degree": "M.S.",
+    "department": "Department of Pharmaceutical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Project Management",
+    "degree": "M.S.",
+    "department": "College of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Regulatory Science",
+    "degree": "M.S.",
+    "department": "Department of Pharmaceutical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Sustainable Urban Environments",
+    "degree": "M.S.",
+    "department": "School of Public Policy and Urban Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Systems Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Technical Communication",
+    "degree": "M.S.",
+    "department": "College of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  },
+  {
+    "universityId": "Northeastern University",
+    "name": "Telecommunication Networks",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://graduate.northeastern.edu/programs/"
+  }
+]

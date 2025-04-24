@@ -1,0 +1,1266 @@
+[
+  {
+    "universityId": "Rice University",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://anthropology.rice.edu/graduate/doctoral-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://sociology.rice.edu/graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Biochemistry and Molecular Biology",
+    "degree": "Ph.D.",
+    "department": "Wiess School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://biosciences.rice.edu/graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Ecology and Evolutionary Biology",
+    "degree": "Ph.D.",
+    "department": "Wiess School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://biosciences.rice.edu/graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Natural Sciences",
+    "degree": "Ph.D.",
+    "department": "Wiess School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://naturalsciences.rice.edu/"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Business",
+    "degree": "Ph.D.",
+    "department": "Jones Graduate School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://business.rice.edu/academics/phd-business"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Wiess School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://chemistry.rice.edu/graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://cs.rice.edu/academics/graduate-programs/doctoral-program/"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://economics.rice.edu/graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Bioengineering",
+    "degree": "Ph.D.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://bioengineering.rice.edu/academics/graduate-programs/phd-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://chbe.rice.edu/academics/graduate-program/doctor-philosophy-phd"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Civil Engineering",
+    "degree": "Ph.D.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://ceve.rice.edu/academics/graduate-programs/phd-civil-and-environmental-engineering"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Electrical and Computer Engineering",
+    "degree": "Ph.D.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://eceweb.rice.edu/academics/graduate-programs/doctoral-degree"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Materials Science and NanoEngineering",
+    "degree": "Ph.D.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://msne.rice.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://ceve.rice.edu/academics/graduate-programs/phd-civil-and-environmental-engineering"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://mech.rice.edu/academics/graduate-program/doctor-philosophy-degree"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://english.rice.edu/graduate"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Earth Science",
+    "degree": "Ph.D.",
+    "department": "Wiess School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://earthscience.rice.edu/academics/graduate-program/"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Art History",
+    "degree": "Ph.D.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://arthistory.rice.edu/graduate"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://history.rice.edu/graduate"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Computational and Applied Mathematics",
+    "degree": "Ph.D.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://cmor.rice.edu/academics/caam-graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Wiess School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://mathematics.rice.edu/graduate"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://statistics.rice.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Music",
+    "degree": "D.M.A.",
+    "department": "Shepherd School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://music.rice.edu/graduate"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Music Composition",
+    "degree": "Ph.D.",
+    "department": "Shepherd School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://music.rice.edu/graduate/doctoral-degree-programs"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Voice Performance",
+    "degree": "D.M.A.",
+    "department": "Shepherd School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://music.rice.edu/graduate/doctoral-degree-programs"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://philosophy.rice.edu/graduate"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Wiess School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://physics.rice.edu/graduate"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://politicalscience.rice.edu/graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://psychology.rice.edu/graduate/doctoral-program-psychology"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Religious Studies",
+    "degree": "Ph.D.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://reli.rice.edu/graduate"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Anthropology",
+    "degree": "M.S.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://anthropology.rice.edu/graduate/masters-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Sociology",
+    "degree": "M.S.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://sociology.rice.edu/graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Architecture",
+    "degree": "M.Arch.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://arch.rice.edu/academics/graduate-programs/master-architecture"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Building Science and Technology",
+    "degree": "M.S.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://arch.rice.edu/academics/graduate-programs/master-science"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Biochemistry and Molecular Biology",
+    "degree": "M.S.",
+    "department": "Wiess School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://biosciences.rice.edu/graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Ecology and Evolutionary Biology",
+    "degree": "M.S.",
+    "department": "Wiess School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://biosciences.rice.edu/graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Business",
+    "degree": "M.S.",
+    "department": "Jones Graduate School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://business.rice.edu/academics/specialized-masters"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Business Analytics",
+    "degree": "M.S.",
+    "department": "Jones Graduate School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://business.rice.edu/academics/specialized-masters/master-business-analytics"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "Wiess School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://chemistry.rice.edu/graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Computer Science",
+    "degree": "M.C.S.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://cs.rice.edu/academics/graduate-programs/professional-masters-program/"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Economics",
+    "degree": "M.S.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://economics.rice.edu/graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Economics and Econometrics",
+    "degree": "M.S.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://economics.rice.edu/graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "High School Education",
+    "degree": "M.A.T.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://education.rice.edu/graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Science Teacher Education",
+    "degree": "M.S.T.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://education.rice.edu/graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Aerospace Engineering",
+    "degree": "M.S.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://mech.rice.edu/academics/graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Bioengineering",
+    "degree": "M.S.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://bioengineering.rice.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Chemical Engineering",
+    "degree": "M.S.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://chbe.rice.edu/academics/graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Civil Engineering",
+    "degree": "M.S.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://ceve.rice.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Electrical and Computer Engineering",
+    "degree": "M.S.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://eceweb.rice.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Electrical Engineering",
+    "degree": "M.S.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://eceweb.rice.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Engineering Physics",
+    "degree": "M.S.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://physics.rice.edu/graduate"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Environmental Engineering",
+    "degree": "M.S.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://ceve.rice.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Industrial Management",
+    "degree": "M.S.",
+    "department": "Jones Graduate School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://business.rice.edu/academics/specialized-masters"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://mech.rice.edu/academics/graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Nanotechnology",
+    "degree": "M.S.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://msne.rice.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Operations Research",
+    "degree": "M.S.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://cmor.rice.edu/academics/caam-graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Systems Science and Theory",
+    "degree": "M.S.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://cmor.rice.edu/academics/caam-graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "English",
+    "degree": "M.A.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://english.rice.edu/graduate"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Environmental Science",
+    "degree": "M.S.",
+    "department": "Wiess School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://biosciences.rice.edu/graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Earth Science",
+    "degree": "M.S.",
+    "department": "Wiess School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://earthscience.rice.edu/academics/graduate-program/"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Art History",
+    "degree": "M.A.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://arthistory.rice.edu/graduate"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://history.rice.edu/graduate"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "International Affairs",
+    "degree": "M.A.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://politicalscience.rice.edu/graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Liberal Arts and Humanities",
+    "degree": "M.A.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://humanities.rice.edu/graduate"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Computational and Applied Mathematics",
+    "degree": "M.S.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://cmor.rice.edu/academics/caam-graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Data Science",
+    "degree": "M.S.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://d2k.rice.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Mathematics",
+    "degree": "M.S.",
+    "department": "Wiess School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://mathematics.rice.edu/graduate"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "George R. Brown School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://statistics.rice.edu/academics/graduate-programs"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Conducting",
+    "degree": "M.S.",
+    "department": "Shepherd School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://music.rice.edu/graduate"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Musical Instruments",
+    "degree": "D.M.A.",
+    "department": "Shepherd School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://music.rice.edu/graduate"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Music Theory and Composition",
+    "degree": "M.M.",
+    "department": "Shepherd School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://music.rice.edu/graduate"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Voice and Opera",
+    "degree": "M.M.",
+    "department": "Shepherd School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://music.rice.edu/graduate"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Philosophy",
+    "degree": "M.A.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://philosophy.rice.edu/graduate"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "Wiess School of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://physics.rice.edu/graduate"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Political Science",
+    "degree": "M.S.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://politicalscience.rice.edu/graduate-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Industrial and Organizational Psychology",
+    "degree": "M.S.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://psychology.rice.edu/graduate/masters-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Psychology",
+    "degree": "M.S.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://psychology.rice.edu/graduate/masters-program"
+  },
+  {
+    "universityId": "Rice University",
+    "name": "Religious Studies",
+    "degree": "M.A.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-01",
+      "spring": "2025-10-03"
+    },
+    "website": "https://reli.rice.edu/graduate"
+  }
+]

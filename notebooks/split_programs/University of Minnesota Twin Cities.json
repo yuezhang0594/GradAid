@@ -1,0 +1,692 @@
+[
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Aerospace Engineering and Mechanics",
+    "degree": "M.S.",
+    "department": "College of Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Aerospace Engineering and Mechanics",
+    "degree": "Ph.D.",
+    "department": "College of Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Agricultural Education & Communication",
+    "degree": "M.S.",
+    "department": "College of Food, Agricultural and Natural Resource Sciences",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Astrophysics",
+    "degree": "M.S.",
+    "department": "College of Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Astrophysics",
+    "degree": "Ph.D.",
+    "department": "College of Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Audiology",
+    "degree": "Au.D.",
+    "department": "Medical School",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Biochemistry, Molecular Biology and Biophysics",
+    "degree": "M.S.",
+    "department": "College of Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Biochemistry, Molecular Biology and Biophysics",
+    "degree": "Ph.D.",
+    "department": "College of Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Bioethics",
+    "degree": "M.A.",
+    "department": "Graduate School",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Bioinformatics and Computational Biology",
+    "degree": "M.S.",
+    "department": "College of Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Bioinformatics and Computational Biology",
+    "degree": "Ph.D.",
+    "department": "College of Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Biological Sciences",
+    "degree": "M.B.S.",
+    "department": "College of Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Civil Engineering",
+    "degree": "M.S.",
+    "department": "College of Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Civil Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Classical and Near Eastern Religions and Cultures",
+    "degree": "M.A.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Classical and Near Eastern Religions and Cultures",
+    "degree": "Ph.D.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Clinical Research",
+    "degree": "M.S.",
+    "department": "Medical School",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Computer Science",
+    "degree": "M.C.S.",
+    "department": "College of Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "College of Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "College of Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Conservation Sciences",
+    "degree": "M.S.",
+    "department": "College of Food, Agricultural and Natural Resource Sciences",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Conservation Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Food, Agricultural and Natural Resource Sciences",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Creative Writing",
+    "degree": "M.F.A.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Data Science for Chemical Engineering and Materials Science",
+    "degree": "M.S.",
+    "department": "College of Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Data Science in Operations Research",
+    "degree": "M.S.",
+    "department": "College of Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Doctor of Business Administration",
+    "degree": "D.B.A.",
+    "department": "Curtis L Carlson School of Management",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Doctor of Nursing Practice",
+    "degree": "D.N.P.",
+    "department": "School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Earth Sciences",
+    "degree": "M.S.",
+    "department": "College of Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Earth Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Ecology, Evolution and Behavior",
+    "degree": "M.S.",
+    "department": "College of Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Ecology, Evolution and Behavior",
+    "degree": "Ph.D.",
+    "department": "College of Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Economics",
+    "degree": "M.A.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Education, Curriculum and Instruction",
+    "degree": "M.A.",
+    "department": "College of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Education, Curriculum and Instruction",
+    "degree": "Ph.D.",
+    "department": "College of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Educational Psychology",
+    "degree": "M.A.",
+    "department": "College of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Educational Psychology",
+    "degree": "Ph.D.",
+    "department": "College of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Electrical and Computer Engineering",
+    "degree": "M.S.",
+    "department": "College of Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "English",
+    "degree": "M.A.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Entomology",
+    "degree": "M.S.",
+    "department": "College of Food, Agricultural and Natural Resource Sciences",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Entomology",
+    "degree": "Ph.D.",
+    "department": "College of Food, Agricultural and Natural Resource Sciences",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Environmental Health",
+    "degree": "M.P.H.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Environmental Health",
+    "degree": "M.S.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  },
+  {
+    "universityId": "University of Minnesota Twin Cities",
+    "name": "Environmental Health",
+    "degree": "Ph.D.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.25,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-03-01"
+    },
+    "website": "https://apps.grad.umn.edu/programs/selector.aspx"
+  }
+]

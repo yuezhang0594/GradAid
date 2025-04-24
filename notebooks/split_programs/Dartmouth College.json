@@ -1,0 +1,436 @@
+[
+  {
+    "universityId": "Dartmouth College",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Cognitive Neuroscience",
+    "degree": "Ph.D.",
+    "department": "Psychological and Brain Sciences",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Comparative Literature",
+    "degree": "Ph.D.",
+    "department": "Department of Comparative Literature",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Earth Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Earth Sciences",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Ecology, Evolution, Environment and Society",
+    "degree": "Ph.D.",
+    "department": "EEES Program",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Engineering",
+    "degree": "Ph.D.",
+    "department": "Thayer School of Engineering",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Health Policy and Clinical Practice",
+    "degree": "Ph.D.",
+    "department": "Dartmouth Institute for Health Policy",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Integrative Neuroscience",
+    "degree": "Ph.D.",
+    "department": "Program in Integrative Neuroscience",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Biochemistry and Cell Biology",
+    "degree": "Ph.D.",
+    "department": "Molecular and Cellular Biology",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Biological Sciences",
+    "degree": "Ph.D.",
+    "department": "Molecular and Cellular Biology",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Cancer Biology",
+    "degree": "Ph.D.",
+    "department": "Molecular and Cellular Biology",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Microbiology and Immunology",
+    "degree": "Ph.D.",
+    "department": "Molecular and Cellular Biology",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Molecular and Systems Biology",
+    "degree": "Ph.D.",
+    "department": "Molecular and Cellular Biology",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Physics and Astronomy",
+    "degree": "Ph.D.",
+    "department": "Department of Physics and Astronomy",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Psychological and Brain Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Psychological and Brain Sciences",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Quantitative Biomedical Sciences",
+    "degree": "Ph.D.",
+    "department": "QBS Program",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Sonic Practice",
+    "degree": "M.A.",
+    "department": "Arts and Humanities",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Comparative Literature",
+    "degree": "M.A.",
+    "department": "Department of Comparative Literature",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Earth Sciences",
+    "degree": "M.S.",
+    "department": "Department of Earth Sciences",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Engineering",
+    "degree": "M.S.",
+    "department": "Thayer School of Engineering",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Liberal Studies",
+    "degree": "M.A.",
+    "department": "Liberal Studies Program",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Epidemiology",
+    "degree": "M.S.",
+    "department": "Geisel School of Medicine",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Health Data Science",
+    "degree": "M.S.",
+    "department": "Geisel School of Medicine",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Healthcare Research",
+    "degree": "M.S.",
+    "department": "Geisel School of Medicine",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Implementation Science",
+    "degree": "M.S.",
+    "department": "Geisel School of Medicine",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Medical Informatics",
+    "degree": "M.S.",
+    "department": "Geisel School of Medicine",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  },
+  {
+    "universityId": "Dartmouth College",
+    "name": "Master of Energy Transition",
+    "degree": "M.E.T.",
+    "department": "Energy Transition Program",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs"
+  }
+]

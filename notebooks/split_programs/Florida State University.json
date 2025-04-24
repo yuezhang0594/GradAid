@@ -1,0 +1,866 @@
+[
+  {
+    "universityId": "Florida State University",
+    "name": "Social Work",
+    "degree": "M.S.W.",
+    "department": "College of Social Work",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Sport Management",
+    "degree": "M.S.",
+    "department": "Department of Sport Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Information",
+    "degree": "M.S.",
+    "department": "School of Information",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Information Technology",
+    "degree": "M.S.",
+    "department": "School of Information",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Art Education",
+    "degree": "M.S.",
+    "department": "Department of Art Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Arts Administration",
+    "degree": "M.A.",
+    "department": "Department of Art Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Art Therapy",
+    "degree": "M.S.",
+    "department": "Department of Art Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Museum Education and Visitor-Centered Curation",
+    "degree": "M.A.",
+    "department": "Department of Art Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Art History",
+    "degree": "M.A.",
+    "department": "Department of Art History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Museum & Cultural Heritage Studies",
+    "degree": "M.A.",
+    "department": "Department of Art History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Asian Studies",
+    "degree": "M.A.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Communication",
+    "degree": "M.A.",
+    "department": "School of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Strategic Communication",
+    "degree": "M.S.",
+    "department": "School of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Media Communication Studies",
+    "degree": "M.S.",
+    "department": "School of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Public Interest Media and Communication",
+    "degree": "M.S.",
+    "department": "School of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Communication Science and Disorders",
+    "degree": "M.S.",
+    "department": "School of Communication Science and Disorders",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Industrial Engineering",
+    "degree": "M.S.",
+    "department": "Department of Industrial Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Engineering Management",
+    "degree": "M.S.",
+    "department": "Department of Industrial Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Systems Engineering",
+    "degree": "M.S.",
+    "department": "Department of Industrial Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Interior Design",
+    "degree": "M.F.A.",
+    "department": "Department of Interior Architecture and Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Interior Design: First Professional",
+    "degree": "M.S.",
+    "department": "Department of Interior Architecture and Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Interior Design: Advanced Professional",
+    "degree": "M.S.",
+    "department": "Department of Interior Architecture and Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Geography",
+    "degree": "M.S.",
+    "department": "Department of Geography",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "GIS",
+    "degree": "M.S.",
+    "department": "Department of Geography",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Human Development and Family Science",
+    "degree": "M.S.",
+    "department": "Department of Human Development and Family Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Career Counseling",
+    "degree": "M.S.",
+    "department": "Department of Educational Psychology and Learning Systems",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Clinical Mental Health Counseling",
+    "degree": "M.S.",
+    "department": "Department of Educational Psychology and Learning Systems",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "School Counseling",
+    "degree": "M.S.",
+    "department": "Department of Educational Psychology and Learning Systems",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "School Psychology",
+    "degree": "M.S.",
+    "department": "Department of Educational Psychology and Learning Systems",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Instructional Systems and Learning Technologies",
+    "degree": "M.S.",
+    "department": "Department of Educational Psychology and Learning Systems",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Learning and Cognition",
+    "degree": "M.S.",
+    "department": "Department of Educational Psychology and Learning Systems",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Measurement and Statistics",
+    "degree": "M.S.",
+    "department": "Department of Educational Psychology and Learning Systems",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "English",
+    "degree": "M.A.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Creative Writing",
+    "degree": "M.F.A.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Literature, Media, and Culture",
+    "degree": "M.A.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Rhetoric and Composition",
+    "degree": "M.A.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "International Affairs",
+    "degree": "M.S.",
+    "department": "School of International Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Juris Master",
+    "degree": "J.M.",
+    "department": "College of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Mathematics",
+    "degree": "M.S.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Business Administration",
+    "degree": "M.B.A.",
+    "department": "College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Master's Bridge Program",
+    "degree": "M.S.",
+    "department": "College of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Modern Languages",
+    "degree": "M.A.",
+    "department": "Department of Modern Languages",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Classics",
+    "degree": "M.A.",
+    "department": "Department of Classics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Electrical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Electrical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Nutrition and Food Science",
+    "degree": "M.S.",
+    "department": "Department of Nutrition and Food Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Organizational Management & Communication",
+    "degree": "M.S.",
+    "department": "College of Applied Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Nursing",
+    "degree": "M.S.N.",
+    "department": "College of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Artificial Intelligence Applications in Healthcare",
+    "degree": "M.S.N.",
+    "department": "College of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Nurse Education",
+    "degree": "M.S.N.",
+    "department": "College of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Religion",
+    "degree": "M.A.",
+    "department": "Department of Religion",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Risk Management and Insurance",
+    "degree": "M.S.",
+    "department": "College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  },
+  {
+    "universityId": "Florida State University",
+    "name": "Russian and Eastern European Studies",
+    "degree": "M.A.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://gradschool.fsu.edu/"
+  }
+]

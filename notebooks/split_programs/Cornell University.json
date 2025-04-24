@@ -1,0 +1,1217 @@
+[
+  {
+    "universityId": "Cornell University",
+    "name": "Agricultural Economics",
+    "degree": "Ph.D.",
+    "department": "Applied Economics and Management",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Animal Science",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Soil and Crop Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Horticulture",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Plant Biology",
+    "degree": "Ph.D.",
+    "department": "School of Integrative Plant Science",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Africana Studies",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Human Development",
+    "degree": "Ph.D.",
+    "department": "College of Human Ecology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Architecture",
+    "degree": "Ph.D.",
+    "department": "College of Architecture, Art, and Planning",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Biochemistry, Molecular and Cell Biology",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Computational Biology",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Biophysics",
+    "degree": "Ph.D.",
+    "department": "Graduate School",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Ecology and Evolutionary Biology",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Genetics, Genomics and Development",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Microbiology",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Neuroscience",
+    "degree": "Ph.D.",
+    "department": "Graduate School",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Pharmacology",
+    "degree": "Ph.D.",
+    "department": "Graduate School",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Entomology",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Management",
+    "degree": "Ph.D.",
+    "department": "SC Johnson College of Business",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Hotel Administration",
+    "degree": "Ph.D.",
+    "department": "SC Johnson College of Business",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Industrial and Labor Relations",
+    "degree": "Ph.D.",
+    "department": "School of Industrial and Labor Relations",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Chemistry and Chemical Biology",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Communication",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Human Behavior and Design",
+    "degree": "Ph.D.",
+    "department": "Design and Environmental Analysis",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Information Science",
+    "degree": "Ph.D.",
+    "department": "College of Computing and Information Science",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Aerospace Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Biological and Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Civil and Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Electrical and Computer Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Materials Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Operations Research",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Systems Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Comparative Literature",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "English Language and Literature",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Atmospheric Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Earth and Atmospheric Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Natural Resources",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "History of Art, Archaeology and Visual Studies",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Asian Literature, Religion and Culture",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Germanic Studies",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Linguistics",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Romance Studies",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Classics",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Music",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Food Science and Technology",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Nutrition",
+    "degree": "Ph.D.",
+    "department": "College of Human Ecology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Performing and Media Arts",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Astronomy",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Government",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Public Policy",
+    "degree": "Ph.D.",
+    "department": "School of Public Policy",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "City and Regional Planning",
+    "degree": "Ph.D.",
+    "department": "College of Architecture, Art, and Planning",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Public Health",
+    "degree": "M.P.H.",
+    "department": "Public Health and Planetary Health",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Landscape Architecture",
+    "degree": "M.L.A.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Industrial and Labor Relations",
+    "degree": "M.S.",
+    "department": "School of Industrial and Labor Relations",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Information Science",
+    "degree": "M.P.S.",
+    "department": "College of Computing and Information Science",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Systems Engineering",
+    "degree": "M.Eng.",
+    "department": "College of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Mechanical Engineering",
+    "degree": "M.Eng.",
+    "department": "College of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Real Estate",
+    "degree": "M.P.S.(R.E.)",
+    "department": "SC Johnson College of Business",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Aerospace Engineering",
+    "degree": "M.Eng.",
+    "department": "College of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Public Administration",
+    "degree": "M.P.A.",
+    "department": "School of Public Policy",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Health Administration",
+    "degree": "M.H.A.",
+    "department": "School of Public Policy",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Design",
+    "degree": "M.A.",
+    "department": "Design and Environmental Analysis",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Human-Environment Relations",
+    "degree": "M.S.",
+    "department": "Design and Environmental Analysis",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Integrative Plant Science",
+    "degree": "M.P.S.",
+    "department": "School of Integrative Plant Science",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Plant Breeding",
+    "degree": "M.S.",
+    "department": "School of Integrative Plant Science",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Theoretical and Applied Mechanics",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  },
+  {
+    "universityId": "Cornell University",
+    "name": "Robotics",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradschool.cornell.edu/"
+  }
+]

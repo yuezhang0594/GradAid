@@ -1,0 +1,1577 @@
+[
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Aerospace Engineering",
+    "degree": "M.S.",
+    "department": "Mechanical & Aerospace Engineering Department",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "African American Studies",
+    "degree": "M.A.",
+    "department": "Department of African American Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "African Studies",
+    "degree": "M.A.",
+    "department": "Department of African Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "American Indian Studies",
+    "degree": "M.A.",
+    "department": "Department of American Indian Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Archaeology",
+    "degree": "Ph.D.",
+    "department": "Department of Archaeology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Architecture",
+    "degree": "Ph.D.",
+    "department": "Department of Architecture",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Biomathematics",
+    "degree": "M.S.",
+    "department": "Department of Biomathematics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Biostatistics",
+    "degree": "M.S.",
+    "department": "Biostatistics Department",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Biostatistics MPH",
+    "degree": "M.P.H.",
+    "department": "Biostatistics Department",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Chemical Engineering",
+    "degree": "M.S.",
+    "department": "Chemical & Biomolecular Engineering Department",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Economics Department",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Economics - Quantitative Economics",
+    "degree": "M.Q.E.",
+    "department": "Economics Department",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Education",
+    "degree": "M.A.",
+    "department": "Department of Education",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Electrical & Computer Engineering",
+    "degree": "M.S.",
+    "department": "Department of Electrical & Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Engineering",
+    "degree": "M.Engr.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Engineering - Online",
+    "degree": "M.S.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Environment and Sustainability",
+    "degree": "Ph.D.",
+    "department": "Department of Environment and Sustainability",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Environmental and Molecular Toxicology",
+    "degree": "Ph.D.",
+    "department": "Department of Environmental and Molecular Toxicology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Executive Master of Public Health",
+    "degree": "M.P.H.",
+    "department": "Fielding School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Film & Television",
+    "degree": "M.F.A.",
+    "department": "Film, Television, & Digital Media Department",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "French & Francophone Studies",
+    "degree": "Ph.D.",
+    "department": "Department of French & Francophone Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Gender Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Gender Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Genetic Counseling",
+    "degree": "M.S.",
+    "department": "Department of Human Genetics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Geochemistry",
+    "degree": "M.S.",
+    "department": "Department of Earth, Planetary, and Space Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Library & Information Science",
+    "degree": "M.L.I.S.",
+    "department": "Department of Information Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Linguistics",
+    "degree": "Ph.D.",
+    "department": "Department of Linguistics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Business Analytics",
+    "degree": "M.S.",
+    "department": "Anderson School of Management",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Executive MBA",
+    "degree": "M.B.A.",
+    "department": "Anderson School of Management",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Fully Employed MBA",
+    "degree": "M.B.A.",
+    "department": "Anderson School of Management",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Global Executive MBA for Asia Pacific",
+    "degree": "M.B.A.",
+    "department": "Anderson School of Management",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Financial Engineering",
+    "degree": "M.F.E.",
+    "department": "Anderson School of Management",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Management",
+    "degree": "M.B.A.",
+    "department": "Anderson School of Management",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Manufacturing Engineering",
+    "degree": "M.S.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Applied Geospatial Information Systems & Technologies",
+    "degree": "M.A.G.I.S.T.",
+    "department": "Department of Geography",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Legal Studies",
+    "degree": "M.L.S.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Public Health in Community Health, Health Promotion and Education",
+    "degree": "M.P.H.",
+    "department": "Fielding School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Quantum Science and Technology",
+    "degree": "M.Q.S.T.",
+    "department": "Department of Physics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Real Estate Development",
+    "degree": "M.R.E.D.",
+    "department": "School of Architecture and Urban Design",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Social Science",
+    "degree": "M.S.S.",
+    "department": "Division of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Materials Science & Engineering",
+    "degree": "M.S.",
+    "department": "Department of Materials Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Mathematics",
+    "degree": "M.A.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "Mechanical & Aerospace Engineering Department",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Medical Informatics",
+    "degree": "M.S.",
+    "department": "Department of Medical Informatics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Molecular & Medical Pharmacology",
+    "degree": "Ph.D.",
+    "department": "Department of Molecular & Medical Pharmacology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Molecular Biology",
+    "degree": "M.S.",
+    "department": "Department of Molecular Biology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Molecular, Cell, & Developmental Biology",
+    "degree": "M.S.",
+    "department": "Department of Molecular, Cell, & Developmental Biology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Molecular, Cellular, & Integrative Physiology",
+    "degree": "Ph.D.",
+    "department": "Department of Molecular, Cellular, & Integrative Physiology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Music",
+    "degree": "M.A.",
+    "department": "Department of Music",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Music",
+    "degree": "M.M.",
+    "department": "Department of Music",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Musicology",
+    "degree": "Ph.D.",
+    "department": "Department of Musicology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Near Eastern Languages & Cultures",
+    "degree": "M.A.",
+    "department": "Near Eastern Languages & Cultures Department",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Neuroscience",
+    "degree": "Ph.D.",
+    "department": "Department of Neuroscience",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Nursing",
+    "degree": "M.S.N.",
+    "department": "School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Nursing - Doctor of Nursing Practice",
+    "degree": "D.N.P.",
+    "department": "School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Oral Biology",
+    "degree": "M.S.",
+    "department": "Department of Oral Biology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Department of Philosophy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Social Welfare",
+    "degree": "M.S.W.",
+    "department": "Department of Social Welfare",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Spanish",
+    "degree": "M.A.",
+    "department": "Spanish and Portuguese Department",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Special Education",
+    "degree": "Ph.D.",
+    "department": "Department of Special Education",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "Statistics and Data Science Department",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Applied Statistics and Data Science",
+    "degree": "M.A.S.D.S.",
+    "department": "Statistics and Data Science Department",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Applied Chemical Sciences",
+    "degree": "M.S.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Art",
+    "degree": "M.F.A.",
+    "department": "Department of Art",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Asian Languages & Cultures",
+    "degree": "M.A.",
+    "department": "Department of Asian Languages & Cultures",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Astronomy",
+    "degree": "M.S.",
+    "department": "Department of Physics & Astronomy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Atmospheric & Oceanic Sciences",
+    "degree": "M.S.",
+    "department": "Department of Atmospheric & Oceanic Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Biochemistry & Molecular Biology",
+    "degree": "M.S.",
+    "department": "Department of Biological Chemistry",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Biology",
+    "degree": "M.S.",
+    "department": "Department of Ecology & Evolutionary Biology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Bioengineering",
+    "degree": "M.S.",
+    "department": "Department of Bioengineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Bioinformatics",
+    "degree": "M.S.",
+    "department": "Department of Computational Medicine",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Classics",
+    "degree": "M.A.",
+    "department": "Department of Classics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Community Health Sciences",
+    "degree": "M.P.H.",
+    "department": "Fielding School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Comparative Literature",
+    "degree": "M.A.",
+    "department": "Department of Comparative Literature",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Conservation of Archaeological and Ethnographic Materials",
+    "degree": "M.A.",
+    "department": "Cotsen Institute of Archaeology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Dance",
+    "degree": "M.F.A.",
+    "department": "World Arts and Cultures/Dance Department",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Design Media Arts",
+    "degree": "M.F.A.",
+    "department": "Department of Design Media Arts",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Earth & Space Sciences",
+    "degree": "M.S.",
+    "department": "Department of Earth, Planetary, and Space Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "East Asian Studies",
+    "degree": "M.A.",
+    "department": "Department of Asian Languages & Cultures",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Epidemiology",
+    "degree": "M.S.",
+    "department": "Fielding School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Geography",
+    "degree": "M.A.",
+    "department": "Department of Geography",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Germanic Languages",
+    "degree": "M.A.",
+    "department": "Department of Germanic Languages",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Health Policy and Management",
+    "degree": "M.S.",
+    "department": "Fielding School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Hispanic Languages and Literatures",
+    "degree": "M.A.",
+    "department": "Spanish and Portuguese Department",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Italian",
+    "degree": "M.A.",
+    "department": "Department of Italian",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Latin American Studies",
+    "degree": "M.A.",
+    "department": "Latin American Institute",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Law",
+    "degree": "J.D.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Mathematics Teaching",
+    "degree": "M.A.T.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Microbiology, Immunology & Molecular Genetics",
+    "degree": "M.S.",
+    "department": "Department of Microbiology, Immunology & Molecular Genetics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "Department of Physics & Astronomy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Political Science",
+    "degree": "M.A.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Portuguese",
+    "degree": "M.A.",
+    "department": "Spanish and Portuguese Department",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Psychology",
+    "degree": "M.A.",
+    "department": "Department of Psychology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Public Health",
+    "degree": "M.P.H.",
+    "department": "Fielding School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Public Policy",
+    "degree": "M.P.P.",
+    "department": "Luskin School of Public Affairs",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Scandinavian",
+    "degree": "M.A.",
+    "department": "Department of Scandinavian",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Slavic, East European and Eurasian Languages and Cultures",
+    "degree": "M.A.",
+    "department": "Department of Slavic, East European and Eurasian Languages and Cultures",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Theater",
+    "degree": "M.F.A.",
+    "department": "Department of Theater",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "Urban Planning",
+    "degree": "M.U.R.P.",
+    "department": "Luskin School of Public Affairs",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  },
+  {
+    "universityId": "University of California, Los Angeles",
+    "name": "World Arts and Cultures",
+    "degree": "M.A.",
+    "department": "World Arts and Cultures/Dance Department",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.ucla.edu/"
+  }
+]

@@ -1,0 +1,632 @@
+[
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Aeronautics and Astronautics",
+    "degree": "Ph.D.",
+    "department": "Department of Aeronautics and Astronautics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Urban Studies and Planning",
+    "degree": "M.S.",
+    "department": "Department of Urban Studies and Planning",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Architecture",
+    "degree": "M.Arch.",
+    "department": "Department of Architecture",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-07"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Biological Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Biological Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Biology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Brain and Cognitive Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Brain and Cognitive Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Real Estate",
+    "degree": "M.S.",
+    "department": "Center for Real Estate",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Chemical Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Civil and Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Computational and Systems Biology",
+    "degree": "Ph.D.",
+    "department": "Computational and Systems Biology Program",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Computational Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-10"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Data, Economics, and Design of Policy",
+    "degree": "M.S.",
+    "department": "Institute for Data, Systems, and Society",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Earth, Atmospheric, and Planetary Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Earth, Atmospheric, and Planetary Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Economics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Electrical Engineering and Computer Science",
+    "degree": "Ph.D.",
+    "department": "Department of Electrical Engineering and Computer Science",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Health Sciences and Technology",
+    "degree": "Ph.D.",
+    "department": "Harvard-MIT Division of Health Sciences and Technology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "History, Anthropology, and Science, Technology, and Society",
+    "degree": "Ph.D.",
+    "department": "School of Humanities, Arts, and Social Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Data Systems",
+    "degree": "Ph.D.",
+    "department": "Institute for Data, Systems, and Society",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Leaders for Global Operations",
+    "degree": "M.B.A.",
+    "department": "MIT Sloan School of Management",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-11-08"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Linguistics",
+    "degree": "Ph.D.",
+    "department": "Department of Linguistics and Philosophy",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Materials Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Materials Science and Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Mechanical Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Media Arts and Sciences",
+    "degree": "M.S.",
+    "department": "MIT Media Lab",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Microbiology",
+    "degree": "Ph.D.",
+    "department": "Department of Biology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Music Technology and Computation",
+    "degree": "M.A.",
+    "department": "School of Humanities, Arts, and Social Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-23"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Nuclear Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Nuclear Science and Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Operations Research",
+    "degree": "Ph.D.",
+    "department": "Operations Research Center",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Department of Linguistics and Philosophy",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-02"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Department of Physics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Polymers and Soft Matter",
+    "degree": "Ph.D.",
+    "department": "Program in Polymers and Soft Matter",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Science Writing",
+    "degree": "M.S.",
+    "department": "School of Humanities, Arts, and Social Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Supply Chain Management Blended",
+    "degree": "M.S.",
+    "department": "Center for Transportation and Logistics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-10"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Supply Chain Management Residential",
+    "degree": "M.S.",
+    "department": "Center for Transportation and Logistics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-11-01"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "System Design and Management",
+    "degree": "M.S.",
+    "department": "School of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-13"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Technology and Policy",
+    "degree": "M.S.",
+    "department": "Institute for Data, Systems, and Society",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Transportation",
+    "degree": "M.S.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Business Analytics",
+    "degree": "M.B.A.",
+    "department": "MIT Sloan School of Management",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-03"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Finance",
+    "degree": "M.S.",
+    "department": "MIT Sloan School of Management",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-03"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Management Studies",
+    "degree": "M.S.",
+    "department": "MIT Sloan School of Management",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-15"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Business Administration",
+    "degree": "M.B.A.",
+    "department": "MIT Sloan School of Management",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-09-30"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Business Administration",
+    "degree": "Ph.D.",
+    "department": "MIT Sloan School of Management",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  },
+  {
+    "universityId": "Massachusetts Institute of Technology",
+    "name": "Oceanography / Applied Ocean Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "MIT-WHOI Joint Program",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/programs/"
+  }
+]

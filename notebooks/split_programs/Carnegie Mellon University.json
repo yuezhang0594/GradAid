@@ -1,0 +1,1907 @@
+[
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Business",
+    "degree": "Ph.D.",
+    "department": "Tepper School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.tepper.cmu.edu/ph.d/program/admissions"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Business Analytics",
+    "degree": "Ph.D.",
+    "department": "Tepper School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.tepper.cmu.edu/ph.d/program/admissions"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Operations Management",
+    "degree": "Ph.D.",
+    "department": "Tepper School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.tepper.cmu.edu/ph.d/program/admissions"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Mellon College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/mcs/prospective-students/graduate-admission"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Materials Science",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/engineering/education/academic-departments/index.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Artificial Intelligence",
+    "degree": "Ph.D.",
+    "department": "School of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/school-of-computer-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Computer and Information Sciences",
+    "degree": "Ph.D.",
+    "department": "School of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/school-of-computer-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "School of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/school-of-computer-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Computer Software Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/school-of-computer-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Design and Visual Communications",
+    "degree": "Ph.D.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-fine-arts.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Civil Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Computer Engineering Technician",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Construction Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Engineering Mechanics",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Engineering Technician",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Industrial Management",
+    "degree": "Ph.D.",
+    "department": "Tepper School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.tepper.cmu.edu/ph.d/program/admissions"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Operations Research",
+    "degree": "Ph.D.",
+    "department": "Tepper School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.tepper.cmu.edu/ph.d/program/admissions"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Robotics and Automation Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/school-of-computer-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Systems Science and Theory",
+    "degree": "Ph.D.",
+    "department": "School of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/school-of-computer-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "English Language Studies",
+    "degree": "Ph.D.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Professional and Technical Writing",
+    "degree": "Ph.D.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Rhetoric and Composition",
+    "degree": "Ph.D.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Foreign Languages and Literatures",
+    "degree": "Ph.D.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Computer and Information Systems Security",
+    "degree": "Ph.D.",
+    "department": "Heinz College of Information Systems and Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/heinz-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Information Technology",
+    "degree": "Ph.D.",
+    "department": "Heinz College of Information Systems and Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/heinz-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Computational and Applied Mathematics",
+    "degree": "Ph.D.",
+    "department": "Mellon College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/mellon-college-of-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Financial Mathematics",
+    "degree": "Ph.D.",
+    "department": "Mellon College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/mellon-college-of-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Mathematics and Statistics",
+    "degree": "Ph.D.",
+    "department": "Mellon College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/mellon-college-of-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "Mellon College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/mellon-college-of-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Mellon College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/mellon-college-of-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Behavioral Sciences",
+    "degree": "Ph.D.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Public Administration",
+    "degree": "Ph.D.",
+    "department": "Heinz College of Information Systems and Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/heinz-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Public Policy Analysis",
+    "degree": "Ph.D.",
+    "department": "Heinz College of Information Systems and Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/heinz-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Social Sciences and Research Methods",
+    "degree": "Ph.D.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Arts",
+    "degree": "M.S.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-fine-arts.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Entertainment",
+    "degree": "M.E.T.",
+    "department": "Entertainment Technology Center",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/university-wide-programs.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "and Media Management",
+    "degree": "M.E.T.",
+    "department": "Entertainment Technology Center",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/university-wide-programs.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Bioinformatics",
+    "degree": "M.S.",
+    "department": "School of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/school-of-computer-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Biology",
+    "degree": "M.S.",
+    "department": "Mellon College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/mellon-college-of-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Biomedical Sciences and Molecular Medicine",
+    "degree": "M.S.",
+    "department": "Mellon College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/mellon-college-of-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Computational Biology",
+    "degree": "M.S.",
+    "department": "School of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/school-of-computer-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "M.S.",
+    "department": "Mellon College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/mellon-college-of-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Business",
+    "degree": "M.S.",
+    "department": "Tepper School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.tepper.cmu.edu/masters/admissions"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Business Analytics",
+    "degree": "M.S.",
+    "department": "Tepper School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.tepper.cmu.edu/masters/admissions"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Operations Management",
+    "degree": "M.S.",
+    "department": "Tepper School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.tepper.cmu.edu/masters/admissions"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Project Management",
+    "degree": "M.S.",
+    "department": "Tepper School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.tepper.cmu.edu/masters/admissions"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "Mellon College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/mellon-college-of-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Materials Science",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Journalism",
+    "degree": "M.S.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Artificial Intelligence",
+    "degree": "M.S.",
+    "department": "School of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/school-of-computer-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Computer and Information Sciences",
+    "degree": "M.S.",
+    "department": "School of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/school-of-computer-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Computer Graphics",
+    "degree": "M.S.",
+    "department": "School of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/school-of-computer-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "School of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/school-of-computer-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Computer Software Engineering",
+    "degree": "M.S.",
+    "department": "School of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/school-of-computer-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Human Computer Interaction",
+    "degree": "M.S.",
+    "department": "School of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/school-of-computer-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Design and Visual Communications",
+    "degree": "M.S.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-fine-arts.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Game Design and Interactive Media",
+    "degree": "M.E.T.",
+    "department": "Entertainment Technology Center",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/university-wide-programs.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Graphic Design",
+    "degree": "M.S.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-fine-arts.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Economics",
+    "degree": "M.S.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Chemical Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Civil Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Computer Engineering Technician",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Construction Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Electrical Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Engineering Mechanics",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Engineering Science",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Engineering Technician",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Environmental Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Industrial Management",
+    "degree": "M.S.",
+    "department": "Tepper School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.tepper.cmu.edu/masters/admissions"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Manufacturing Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Materials Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-engineering.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Operations Research",
+    "degree": "M.S.",
+    "department": "Tepper School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.tepper.cmu.edu/masters/admissions"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Robotics and Automation Engineering",
+    "degree": "M.S.",
+    "department": "School of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/school-of-computer-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "English Language Studies",
+    "degree": "M.S.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Playwriting and Screenwriting",
+    "degree": "M.F.A.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-fine-arts.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Professional and Technical Writing",
+    "degree": "M.S.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Rhetoric and Composition",
+    "degree": "M.S.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Sustainability Studies",
+    "degree": "M.S.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Actuarial Science",
+    "degree": "M.S.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Foreign Languages and Literatures",
+    "degree": "M.S.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Linguistics",
+    "degree": "M.S.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Interpretation",
+    "degree": "M.S.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "and Translation",
+    "degree": "M.S.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Healthcare Management",
+    "degree": "M.S.",
+    "department": "Heinz College of Information Systems and Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/heinz-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Art History",
+    "degree": "M.S.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-fine-arts.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "History",
+    "degree": "M.S.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Music History and Literature",
+    "degree": "M.S.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-fine-arts.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Computer and Information Systems Security",
+    "degree": "M.S.",
+    "department": "Heinz College of Information Systems and Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/heinz-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Computer Systems Networking and Telecommunications",
+    "degree": "M.S.",
+    "department": "Heinz College of Information Systems and Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/heinz-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Information Technology",
+    "degree": "M.S.",
+    "department": "Heinz College of Information Systems and Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/heinz-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Network",
+    "degree": "M.S.",
+    "department": "Heinz College of Information Systems and Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/heinz-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Database",
+    "degree": "M.S.",
+    "department": "Heinz College of Information Systems and Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/heinz-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "and System Administration",
+    "degree": "M.S.",
+    "department": "Heinz College of Information Systems and Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/heinz-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "International Affairs",
+    "degree": "M.S.",
+    "department": "Heinz College of Information Systems and Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/heinz-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Computational and Applied Mathematics",
+    "degree": "M.S.",
+    "department": "Mellon College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/mellon-college-of-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Data Analytics",
+    "degree": "M.S.",
+    "department": "Heinz College of Information Systems and Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/heinz-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Financial Mathematics",
+    "degree": "M.S.",
+    "department": "Mellon College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/mellon-college-of-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Mathematics and Statistics",
+    "degree": "M.S.",
+    "department": "Mellon College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/mellon-college-of-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "Mellon College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/mellon-college-of-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Music",
+    "degree": "M.S.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-fine-arts.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Musical Instruments",
+    "degree": "M.S.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-fine-arts.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Music Performance",
+    "degree": "M.S.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-fine-arts.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Music Technology",
+    "degree": "M.S.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-fine-arts.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Music Theory and Composition",
+    "degree": "M.S.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-fine-arts.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Voice and Opera",
+    "degree": "M.S.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-fine-arts.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Drama and Theatre Production",
+    "degree": "M.S.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-fine-arts.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Theatre Design",
+    "degree": "M.F.A.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/college-of-fine-arts.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Philosophy",
+    "degree": "M.S.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "Mellon College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/mellon-college-of-science.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Behavioral Sciences",
+    "degree": "M.S.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Psychology",
+    "degree": "M.S.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Public Administration",
+    "degree": "M.S.",
+    "department": "Heinz College of Information Systems and Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/heinz-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Public Policy Analysis",
+    "degree": "M.S.",
+    "department": "Heinz College of Information Systems and Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/heinz-college.html"
+  },
+  {
+    "universityId": "Carnegie Mellon University",
+    "name": "Social Sciences and Research Methods",
+    "degree": "M.S.",
+    "department": "Dietrich College of Humanities & Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://www.cmu.edu/graduate/academics/guide-to-graduate-degrees-and-programs/dietrich-college.html"
+  }
+]

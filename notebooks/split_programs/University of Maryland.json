@@ -1,0 +1,602 @@
+[
+  {
+    "universityId": "University of Maryland",
+    "name": "Accounting",
+    "degree": "M.S.",
+    "department": "Robert H. Smith School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/accounting-bmac/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Aerospace Engineering",
+    "degree": "M.S.",
+    "department": "A. James Clark School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/aerospace-engineering-enae/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Aerospace Engineering",
+    "degree": "Ph.D.",
+    "department": "A. James Clark School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/aerospace-engineering-enae/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "African American Studies",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/african-american-studies-z096/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Agricultural and Resource Economics",
+    "degree": "M.S.",
+    "department": "College of Agriculture and Natural Resources",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/agricultural-resource-economics-arec/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Agricultural and Resource Economics",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Natural Resources",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/agricultural-resource-economics-arec/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "American Studies",
+    "degree": "M.A.",
+    "department": "College of Arts and Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/american-studies-amst/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "American Studies",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/american-studies-amst/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Animal Sciences",
+    "degree": "M.S.",
+    "department": "College of Agriculture and Natural Resources",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/animal-sciences-ansc/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Applied Economics",
+    "degree": "M.S.",
+    "department": "College of Agriculture and Natural Resources",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/applied-economics-on-campus-ecam/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Applied Machine Learning",
+    "degree": "M.S.",
+    "department": "College of Computer, Mathematical, and Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/applied-machine-learning-online-samo/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "College of Behavioral and Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/anthropology-anth/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Business Administration",
+    "degree": "M.B.A.",
+    "department": "Robert H. Smith School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/business-administration-executive-emba/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Business Analytics",
+    "degree": "M.S.",
+    "department": "Robert H. Smith School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/business-analytics-bman/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Business and Management",
+    "degree": "Ph.D.",
+    "department": "Robert H. Smith School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/business-management-bphd/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Chemical Engineering",
+    "degree": "M.S.",
+    "department": "A. James Clark School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/chemical-engineering-ench/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "A. James Clark School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/chemical-engineering-ench/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "College of Computer, Mathematical, and Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/chemistry-chem/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Civil and Environmental Engineering",
+    "degree": "M.S.",
+    "department": "A. James Clark School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/civil-environmental-engineering-ence/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Civil and Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "A. James Clark School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/civil-environmental-engineering-ence/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Communication",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/communication-comm/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "College of Computer, Mathematical, and Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/computer-science-cmsc/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "College of Computer, Mathematical, and Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/computer-science-cmsc/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Electrical Engineering",
+    "degree": "M.S.",
+    "department": "A. James Clark School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/electrical-engineering-enee/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "A. James Clark School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/electrical-engineering-enee/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Mathematics",
+    "degree": "M.A.",
+    "department": "College of Computer, Mathematical, and Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/mathematics-math/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "College of Computer, Mathematical, and Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/mathematics-math/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "A. James Clark School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/mechanical-engineering-enme/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "A. James Clark School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/mechanical-engineering-enme/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "College of Computer, Mathematical, and Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/physics-phys/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "College of Computer, Mathematical, and Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/physics-phys/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "College of Behavioral and Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/psychology-psyc/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Public Policy",
+    "degree": "M.P.P.",
+    "department": "School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/public-policy-mapo/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Public Policy",
+    "degree": "Ph.D.",
+    "department": "School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/public-policy-mapo/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Materials Science and Engineering",
+    "degree": "M.S.",
+    "department": "A. James Clark School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/materials-science-engineering-enma/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Materials Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "A. James Clark School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/materials-science-engineering-enma/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Linguistics",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/linguistics-ling/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Robotics Engineering",
+    "degree": "M.Eng.",
+    "department": "A. James Clark School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/robotics-engineering-pmro/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Software Engineering",
+    "degree": "M.Eng.",
+    "department": "A. James Clark School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/software-engineering-pmes/"
+  },
+  {
+    "universityId": "University of Maryland",
+    "name": "Systems Engineering",
+    "degree": "M.Eng.",
+    "department": "A. James Clark School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-17"
+    },
+    "website": "https://academiccatalog.umd.edu/graduate/programs/systems-engineering-ense/"
+  }
+]

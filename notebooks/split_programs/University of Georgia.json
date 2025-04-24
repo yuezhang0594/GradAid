@@ -1,0 +1,1666 @@
+[
+  {
+    "universityId": "University of Georgia",
+    "name": "Agricultural & Applied Economics",
+    "degree": "Ph.D.",
+    "department": "College of Agricultural & Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-agricultural-and-applied-economics/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Agricultural Leadership, Education & Communication",
+    "degree": "Ph.D.",
+    "department": "College of Agricultural & Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-agricultural-leadership-education-and-communication/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Animal & Dairy Science",
+    "degree": "Ph.D.",
+    "department": "College of Agricultural & Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-animal-and-dairy-science/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-anthropology/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Art",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-art/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Artificial Intelligence",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-artificial-intelligence/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Biochemical Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-biochemical-engineering/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Biochemistry & Molecular Biology",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-biochemistry-and-molecular-biology/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Bioinformatics",
+    "degree": "Ph.D.",
+    "department": "Institute of Bioinformatics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-bioinformatics/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Biological & Agricultural Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-biological-and-agricultural-engineering/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-biomedical-engineering/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Business Administration: Accounting",
+    "degree": "Ph.D.",
+    "department": "Terry College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-business-administration-accounting/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Business Administration: Finance",
+    "degree": "Ph.D.",
+    "department": "Terry College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-business-administration-finance/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Business Administration: Management",
+    "degree": "Ph.D.",
+    "department": "Terry College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-business-administration-management/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Business Administration: Management Information Systems",
+    "degree": "Ph.D.",
+    "department": "Terry College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-business-administration-management-information-systems/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Business Administration: Marketing",
+    "degree": "Ph.D.",
+    "department": "Terry College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-business-administration-marketing/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Business Administration: Real Estate",
+    "degree": "Ph.D.",
+    "department": "Terry College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-business-administration-real-estate/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Business Administration: Risk Management & Insurance",
+    "degree": "Ph.D.",
+    "department": "Terry College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-business-administration-risk-management-and-insurance/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Cellular Biology",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-cellular-biology/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-chemistry/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Civil and Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-civil-and-environmental-engineering/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Clinical & Administrative Pharmacy",
+    "degree": "Ph.D.",
+    "department": "College of Pharmacy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-clinical-and-administrative-pharmacy/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Communication Sciences & Disorders",
+    "degree": "Ph.D.",
+    "department": "Mary Frances Early College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-communication-sciences-and-disorders/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Communication Studies",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-communication-studies/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Comparative Biomedical Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Veterinary Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-comparative-biomedical-sciences/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Comparative Literature & Intercultural Studies",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-comparative-literature-and-intercultural-studies/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-computer-science/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Counseling Psychology",
+    "degree": "Ph.D.",
+    "department": "Mary Frances Early College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-counseling-psychology/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Crop & Soil Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Agricultural & Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-crop-and-soil-sciences/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Ecology",
+    "degree": "Ph.D.",
+    "department": "Odum School of Ecology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-ecology/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Terry College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-economics/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Education",
+    "degree": "Ph.D.",
+    "department": "Mary Frances Early College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-education-1/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Educational Administration & Policy",
+    "degree": "Ph.D.",
+    "department": "Mary Frances Early College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-educational-administration-and-policy/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Educational Leadership",
+    "degree": "Ed.D.",
+    "department": "Mary Frances Early College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/edd-educational-leadership-1/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Educational Psychology",
+    "degree": "Ph.D.",
+    "department": "Mary Frances Early College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-educational-psychology/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Educational Theory & Practice",
+    "degree": "Ph.D.",
+    "department": "Mary Frances Early College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-educational-theory-and-practice/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-engineering/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-english/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Entomology",
+    "degree": "Ph.D.",
+    "department": "College of Agricultural & Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-entomology/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Environmental Design & Planning",
+    "degree": "Ph.D.",
+    "department": "College of Environment & Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-environmental-design-and-planning/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Environmental Health Science",
+    "degree": "Ph.D.",
+    "department": "College of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-environmental-health-science/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Epidemiology & Biostatistics",
+    "degree": "Ph.D.",
+    "department": "College of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-epidemiology-and-biostatistics/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Financial Planning, Housing & Consumer Economics",
+    "degree": "Ph.D.",
+    "department": "College of Family & Consumer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-financial-planning-housing-and-consumer-economics/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Food Science",
+    "degree": "Ph.D.",
+    "department": "College of Agricultural & Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-food-science/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Forestry & Natural Resources",
+    "degree": "Ph.D.",
+    "department": "Warnell School of Forestry & Natural Resources",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-forestry-and-natural-resources/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Genetics",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-genetics/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Geography",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-geography/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Geology",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-geology/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Health Promotion & Behavior",
+    "degree": "Ph.D.",
+    "department": "College of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-health-promotion-and-behavior/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Health Services Research and Policy",
+    "degree": "Ph.D.",
+    "department": "College of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-health-services-research-and-policy/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Higher Education",
+    "degree": "Ph.D.",
+    "department": "Louise McBee Institute of Higher Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-higher-education/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Higher Education",
+    "degree": "Ed.D.",
+    "department": "Louise McBee Institute of Higher Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/edd-higher-education/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-history/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Horticulture",
+    "degree": "Ph.D.",
+    "department": "College of Agricultural & Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-horticulture/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Human Development & Family Science",
+    "degree": "Ph.D.",
+    "department": "College of Family & Consumer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-human-development-and-family-science/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Infectious Diseases",
+    "degree": "Ph.D.",
+    "department": "College of Veterinary Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-infectious-diseases/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Integrated Life Sciences",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-integrated-life-sciences/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Integrated Plant Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Agricultural & Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-integrated-plant-sciences/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Integrative Conservation",
+    "degree": "Ph.D.",
+    "department": "Interdisciplinary",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-integrative-conservation-1/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Integrative Physiology & Pharmacology",
+    "degree": "Ph.D.",
+    "department": "College of Veterinary Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-integrative-physiology-and-pharmacology/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Kinesiology",
+    "degree": "Ph.D.",
+    "department": "Mary Frances Early College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-kinesiology/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Language & Literacy Education",
+    "degree": "Ph.D.",
+    "department": "Mary Frances Early College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-language-and-literacy-education/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Learning, Design & Technology",
+    "degree": "Ph.D.",
+    "department": "Mary Frances Early College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-learning-design-and-technology-1/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Learning, Leadership & Organization Development",
+    "degree": "Ed.D.",
+    "department": "Mary Frances Early College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/edd-learning-leadership-and-organization-development-1/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Learning, Leadership & Organization Development",
+    "degree": "Ph.D.",
+    "department": "Mary Frances Early College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-learning-leadership-and-organization-development/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Linguistics",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-linguistics/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Marine Sciences",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-marine-sciences/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Mass Communication",
+    "degree": "Ph.D.",
+    "department": "Grady College of Journalism & Mass Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-mass-communication/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-mathematics/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Mathematics Education",
+    "degree": "Ph.D.",
+    "department": "Mary Frances Early College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-mathematics-education/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-mechanical-engineering/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Microbiology",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-microbiology/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Music",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-music/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Music",
+    "degree": "D.M.A.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/dma-music/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Music Education",
+    "degree": "Ed.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/edd-music-education/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Neuroscience",
+    "degree": "Ph.D.",
+    "department": "Biomedical and Translational Sciences Institute",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-neuroscience/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Nutritional Sciences, Community Nutrition Emphasis",
+    "degree": "Ph.D.",
+    "department": "College of Family & Consumer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-foods-and-nutrition/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Pharmacy",
+    "degree": "Ph.D.",
+    "department": "College of Pharmacy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-pharmacy/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-philosophy/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-physics/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Plant Biology",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-plant-biology/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Plant Breeding, Genetics & Genomics",
+    "degree": "Ph.D.",
+    "department": "College of Agricultural & Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-plant-breeding-genetics-and-genomics/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Plant Pathology",
+    "degree": "Ph.D.",
+    "department": "College of Agricultural & Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-plant-pathology/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Political Science & International Affairs",
+    "degree": "Ph.D.",
+    "department": "School of Public & International Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-political-science-and-international-affairs/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Polymer, Fiber, & Textile Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Family & Consumer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-polymer-fiber-and-textile-sciences/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Poultry Science",
+    "degree": "Ph.D.",
+    "department": "College of Agricultural & Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-poultry-science/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-psychology/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Public Administration",
+    "degree": "Ph.D.",
+    "department": "School of Public & International Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-public-administration/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Public Health",
+    "degree": "Dr.P.H.",
+    "department": "College of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/drph-public-health-1/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Qualitative Research & Evaluation Methodologies",
+    "degree": "Ph.D.",
+    "department": "Mary Frances Early College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-qualitative-research-and-evaluation-methodologies/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Regenerative Bioscience",
+    "degree": "Ph.D.",
+    "department": "College of Agricultural & Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-regenerative-bioscience/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Religion",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-religion/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Romance Languages",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-romance-languages/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Science Education",
+    "degree": "Ed.D.",
+    "department": "Mary Frances Early College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/edd-science-education/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Science Education",
+    "degree": "Ph.D.",
+    "department": "Mary Frances Early College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-science-education/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Social Work",
+    "degree": "Ph.D.",
+    "department": "School of Social Work",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-social-work/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-sociology/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Special Education",
+    "degree": "Ph.D.",
+    "department": "Mary Frances Early College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-special-education/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-statistics/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Student Affairs Leadership",
+    "degree": "Ed.D.",
+    "department": "Mary Frances Early College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/edd-student-affairs-leadership/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Theatre",
+    "degree": "Ph.D.",
+    "department": "Franklin College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-theatre/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Toxicology",
+    "degree": "Ph.D.",
+    "department": "Interdisciplinary",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-toxicology-1/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Workforce Education",
+    "degree": "Ed.D.",
+    "department": "Mary Frances Early College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/edd-workforce-education-1/"
+  },
+  {
+    "universityId": "University of Georgia",
+    "name": "Workforce Education",
+    "degree": "Ph.D.",
+    "department": "Mary Frances Early College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-04-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://grad.uga.edu/degree/phd-workforce-education/"
+  }
+]

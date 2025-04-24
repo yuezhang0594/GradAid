@@ -1,0 +1,707 @@
+[
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Biochemistry and Molecular Biophysics",
+    "degree": "Ph.D.",
+    "department": "Division of Chemistry and Chemical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "Division of Biology and Biological Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Cellular Biology",
+    "degree": "Ph.D.",
+    "department": "Division of Biology and Biological Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Genetics and Genomics",
+    "degree": "Ph.D.",
+    "department": "Division of Biology and Biological Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Microbiology and Immunology",
+    "degree": "Ph.D.",
+    "department": "Division of Biology and Biological Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "Ph.D.",
+    "department": "Division of Biology and Biological Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Division of Chemistry and Chemical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Division of the Humanities and Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Aerospace Engineering",
+    "degree": "Ph.D.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "Division of Biology and Biological Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "Division of Chemistry and Chemical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Civil Engineering",
+    "degree": "Ph.D.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Engineering Mechanics",
+    "degree": "Ph.D.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Engineering Physics",
+    "degree": "Ph.D.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Materials Engineering",
+    "degree": "Ph.D.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Systems Engineering",
+    "degree": "Ph.D.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Geology and Earth Science",
+    "degree": "Ph.D.",
+    "department": "Division of Geological and Planetary Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Computational and Applied Mathematics",
+    "degree": "Ph.D.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Mathematics and Statistics",
+    "degree": "Ph.D.",
+    "department": "Division of Physics, Mathematics and Astronomy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Astronomy and Astrophysics",
+    "degree": "Ph.D.",
+    "department": "Division of Physics, Mathematics and Astronomy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Division of Physics, Mathematics and Astronomy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Biochemistry and Molecular Biophysics",
+    "degree": "M.S.",
+    "department": "Division of Chemistry and Chemical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Biology",
+    "degree": "M.S.",
+    "department": "Division of Biology and Biological Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "M.S.",
+    "department": "Division of Biology and Biological Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "Division of Chemistry and Chemical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Economics",
+    "degree": "M.S.",
+    "department": "Division of the Humanities and Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Aerospace Engineering",
+    "degree": "M.S.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "M.S.",
+    "department": "Division of Biology and Biological Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Chemical Engineering",
+    "degree": "M.S.",
+    "department": "Division of Chemistry and Chemical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Civil Engineering",
+    "degree": "M.S.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Electrical Engineering",
+    "degree": "M.S.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Engineering Mechanics",
+    "degree": "M.S.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Engineering Physics",
+    "degree": "M.S.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Environmental Engineering",
+    "degree": "M.S.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Materials Engineering",
+    "degree": "M.S.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Systems Engineering",
+    "degree": "M.S.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Geology and Earth Science",
+    "degree": "M.S.",
+    "department": "Division of Geological and Planetary Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Computational and Applied Mathematics",
+    "degree": "M.S.",
+    "department": "Division of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Mathematics and Statistics",
+    "degree": "M.S.",
+    "department": "Division of Physics, Mathematics and Astronomy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Astronomy and Astrophysics",
+    "degree": "M.S.",
+    "department": "Division of Physics, Mathematics and Astronomy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  },
+  {
+    "universityId": "California Institute of Technology",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "Division of Physics, Mathematics and Astronomy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradoffice.caltech.edu/"
+  }
+]

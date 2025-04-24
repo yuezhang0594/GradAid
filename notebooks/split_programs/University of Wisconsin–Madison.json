@@ -1,0 +1,1506 @@
+[
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "African American Studies",
+    "degree": "M.A.",
+    "department": "Department of African American Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/african-american-studies/afro-american-studies-ma/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "African Cultural Studies",
+    "degree": "M.A.",
+    "department": "Department of African Cultural Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/african-cultural-studies/african-cultural-studies-ma/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "African Cultural Studies",
+    "degree": "Ph.D.",
+    "department": "Department of African Cultural Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/african-cultural-studies/african-cultural-studies-phd/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Agricultural and Applied Economics",
+    "degree": "M.S.",
+    "department": "Department of Agricultural and Applied Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/agricultural-applied-economics/agricultural-applied-economics-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Agricultural and Applied Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Agricultural and Applied Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/agricultural-applied-economics/agricultural-applied-economics-phd/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Agroecology",
+    "degree": "M.S.",
+    "department": "College of Agricultural and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/agricultural-life-sciences-college-wide/agroecology-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Agronomy",
+    "degree": "M.S.",
+    "department": "Department of Agronomy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/agronomy/agronomy-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Agronomy",
+    "degree": "Ph.D.",
+    "department": "Department of Agronomy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/agronomy/agronomy-phd/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Animal Sciences",
+    "degree": "M.S.",
+    "department": "Department of Animal and Dairy Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/animal-dairy-sciences/animal-sciences-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Animal Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Animal and Dairy Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/animal-dairy-sciences/animal-sciences-phd/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Anthropology",
+    "degree": "M.A.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/anthropology/anthropology-ma/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Anthropology",
+    "degree": "M.S.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/anthropology/anthropology-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/anthropology/anthropology-phd/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Applied Biotechnology",
+    "degree": "M.S.",
+    "department": "Department of Cell and Regenerative Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/cell-regenerative-biology/applied-biotechnology-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Art",
+    "degree": "M.A.",
+    "department": "Department of Art",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/art/art-ma/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Art",
+    "degree": "M.F.A.",
+    "department": "Department of Art",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/art/art-mfa/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Art History",
+    "degree": "M.A.",
+    "department": "Department of Art History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/art-history/art-history-ma/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Art History",
+    "degree": "Ph.D.",
+    "department": "Department of Art History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/art-history/art-history-phd/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Asian Languages and Cultures",
+    "degree": "M.A.",
+    "department": "Department of Asian Languages and Cultures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/asian-languages-cultures/asian-languages-cultures-ma/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Astronomy",
+    "degree": "M.S.",
+    "department": "Department of Astronomy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/astronomy/astronomy-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Athletic Training",
+    "degree": "M.S.",
+    "department": "Department of Kinesiology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/kinesiology/athletic-training-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Atmospheric and Oceanic Sciences",
+    "degree": "M.S.",
+    "department": "Department of Atmospheric and Oceanic Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/atmospheric-oceanic-sciences/atmospheric-oceanic-sciences-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Audiology",
+    "degree": "Au.D.",
+    "department": "Department of Communication Sciences and Disorders",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/communication-sciences-disorders/audiology-consortial-program-uw-stevens-point-aud/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Bacteriology",
+    "degree": "M.S.",
+    "department": "Department of Bacteriology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/bacteriology/bacteriology-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Biochemistry",
+    "degree": "M.S.",
+    "department": "Department of Biochemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/biochemistry/biochemistry-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Biological Systems Engineering",
+    "degree": "M.S.",
+    "department": "Department of Biological Systems Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/biological-systems-engineering/biological-systems-engineering-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Biomedical Data Science",
+    "degree": "M.S.",
+    "department": "Department of Biostatistics and Medical Informatics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/biostatistics-medical-informatics/biomedical-data-science-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Biomedical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Biomedical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/biomedical-engineering/biomedical-engineering-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Biophysics",
+    "degree": "M.S.",
+    "department": "Graduate School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/graduate-school-wide/biophysics-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Biotechnology",
+    "degree": "M.S.",
+    "department": "Department of Cell and Regenerative Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/cell-regenerative-biology/biotechnology-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Botany",
+    "degree": "M.S.",
+    "department": "Department of Botany",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/botany/botany-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Business",
+    "degree": "M.S.",
+    "department": "School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/business-school-wide/business-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Accounting",
+    "degree": "M.Acc.",
+    "department": "Department of Accounting and Information Systems",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/accounting-information-systems/business-accounting-macc/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Accounting and Business Analysis",
+    "degree": "M.S.",
+    "department": "Department of Accounting and Information Systems",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/accounting-information-systems/business-accounting-business-analysis-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Analytics",
+    "degree": "M.S.",
+    "department": "School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/business-school-wide/business-analytics-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Arts and Creative Enterprise Leadership",
+    "degree": "M.A.",
+    "department": "Department of Management and Human Resources",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/management-human-resources/business-arts-creative-enterprise-leadership-ma/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Data, Insights, and Analytics",
+    "degree": "M.S.",
+    "department": "School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/business-school-wide/business-data-insights-analytics-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Business: Executive",
+    "degree": "M.B.A.",
+    "department": "School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "https://guide.wisc.edu/graduate/business-school-wide/business-executive-mba/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Finance, Investment and Banking",
+    "degree": "M.B.A.",
+    "department": "Department of Finance",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/finance/business-finance-investment-banking-mba/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "General Management",
+    "degree": "M.B.A.",
+    "department": "School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/business-school-wide/business-general-management-mba/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Management and Human Resources",
+    "degree": "M.B.A.",
+    "department": "Department of Management and Human Resources",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/management-human-resources/business-management-human-resources-mba/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Marketing",
+    "degree": "M.B.A.",
+    "department": "Department of Marketing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/marketing/business-marketing-mba/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Operations and Technology Management",
+    "degree": "M.B.A.",
+    "department": "Department of Operations and Information Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/operations-information-management/business-operations-technology-management-mba/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Real Estate and Urban Land Economics",
+    "degree": "M.B.A.",
+    "department": "Department of Real Estate and Urban Land Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/real-estate-urban-land-economics/business-real-estate-urban-land-economics-mba/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Risk Management and Insurance",
+    "degree": "M.B.A.",
+    "department": "Department of Risk and Insurance",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/risk-insurance/business-risk-management-insurance-mba/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Supply Chain Management",
+    "degree": "M.B.A.",
+    "department": "School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/business-school-wide/business-supply-chain-management-mba/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Cancer Biology",
+    "degree": "M.S.",
+    "department": "Department of Oncology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/oncology/cancer-biology-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Cartography and Geographic Information Systems",
+    "degree": "M.S.",
+    "department": "Department of Geography",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/geography/cartography-geographic-information-systems-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Cellular and Molecular Biology",
+    "degree": "M.S.",
+    "department": "Graduate School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/graduate-school-wide/cellular-molecular-biology-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Cellular and Molecular Pathology",
+    "degree": "M.S.",
+    "department": "Department of Pathology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/pathology/cellular-molecular-pathology-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Chemical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Chemical and Biological Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/chemical-biological-engineering/chemical-engineering-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/chemistry/chemistry-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Chinese",
+    "degree": "M.A.",
+    "department": "Department of Asian Languages and Cultures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/asian-languages-cultures/chinese-ma/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Civil and Environmental Engineering",
+    "degree": "M.Eng.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/civil-environmental-engineering/civil-environmental-engineering-meng/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Classical and Ancient Near Eastern Studies",
+    "degree": "M.A.",
+    "department": "Department of Classical and Ancient Near Eastern Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/classical-ancient-near-eastern-studies/classical-ancient-near-eastern-studies-ma/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Clinical Investigation",
+    "degree": "M.S.",
+    "department": "Institute for Clinical and Translational Research",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/institute-clinical-translational-research/clinical-investigation-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Clinical Nutrition",
+    "degree": "M.S.",
+    "department": "Department of Nutritional Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/nutritional-sciences/clinical-nutrition-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Clinical Rehabilitation Counseling",
+    "degree": "M.S.",
+    "department": "Department of Rehabilitation Psychology and Special Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/rehabilitation-psychology-special-education/clinical-rehabilitation-counseling-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Clinical and Health Informatics",
+    "degree": "M.S.",
+    "department": "Institute for Clinical and Translational Research",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/institute-clinical-translational-research/clinical-health-informatics-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Communication Arts",
+    "degree": "M.A.",
+    "department": "Department of Communication Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/communication-arts/communication-arts-ma/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Communication Sciences and Disorders",
+    "degree": "M.S.",
+    "department": "Department of Communication Sciences and Disorders",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/communication-sciences-disorders/communication-sciences-disorders-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Comparative Biomedical Sciences",
+    "degree": "M.S.",
+    "department": "School of Veterinary Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/veterinary-medicine-school-wide/comparative-biomedical-sciences-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Computer Sciences",
+    "degree": "M.S.",
+    "department": "Department of Computer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/computer-sciences/computer-sciences-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Counseling",
+    "degree": "M.S.",
+    "department": "Department of Counseling Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/counseling-psychology/counseling-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Counseling Psychology",
+    "degree": "Ph.D.",
+    "department": "Department of Counseling Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/counseling-psychology/counseling-psychology-phd/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Creative Writing",
+    "degree": "M.F.A.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/english/creative-writing-mfa/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Curriculum and Instruction",
+    "degree": "M.S.",
+    "department": "Department of Curriculum and Instruction",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/curriculum-instruction/curriculum-instruction-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Dairy Science",
+    "degree": "M.S.",
+    "department": "Department of Dairy Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/dairy-science/dairy-science-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Data Engineering",
+    "degree": "M.S.",
+    "department": "Department of Computer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/computer-sciences/data-engineering-ms"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Data Science",
+    "degree": "M.S.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/statistics/data-science-ms/#requirementstext"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Design + Innovation",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/engineering-college-wide/design-plus-innovation-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Development",
+    "degree": "Ph.D.",
+    "department": "College of Agricultural and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/agricultural-life-sciences-college-wide/development-phd/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Economics",
+    "degree": "M.S.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/economics/economics-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Educational Leadership and Policy Analysis",
+    "degree": "Ed.S.",
+    "department": "Department of Educational Leadership and Policy Analysis",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/educational-leadership-policy-analysis/educational-leadership-policy-analysis-eds/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Educational Policy Studies",
+    "degree": "M.A.",
+    "department": "Department of Educational Policy Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/educational-policy-studies/educational-policy-studies-ma/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Educational Psychology",
+    "degree": "M.S.",
+    "department": "Department of Educational Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/educational-psychology/educational-psychology-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Electrical and Computer Engineering",
+    "degree": "M.S.",
+    "department": "Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/electrical-computer-engineering/electrical-computer-engineering-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Endocrinology - Reproductive Physiology",
+    "degree": "M.S.",
+    "department": "School of Medicine and Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/medicine-public-health-school-wide/endocrinology-reproductive-physiology-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Engineering",
+    "degree": "M.Eng.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/engineering-college-wide/engineering-meng/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Engineering Management",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/engineering-college-wide/engineering-management-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Engineering Mechanics",
+    "degree": "M.S.",
+    "department": "Department of Engineering Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/engineering-physics/engineering-mechanics-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "English",
+    "degree": "M.A.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/english/english-ma/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Entomology",
+    "degree": "M.S.",
+    "department": "Department of Entomology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/entomology/entomology-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Environment and Resources",
+    "degree": "M.S.",
+    "department": "Nelson Institute for Environmental Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/environmental-studies/environment-resources-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Environmental Chemistry and Technology",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/engineering-college-wide/environmental-chemistry-technology-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Environmental Conservation",
+    "degree": "M.S.",
+    "department": "Nelson Institute for Environmental Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/environmental-studies/environmental-conservation-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Environmental Remediation and Management",
+    "degree": "M.S.",
+    "department": "Department of Soil Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/soil-science/environmental-remediation-management-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Epidemiology",
+    "degree": "M.S.",
+    "department": "Department of Population Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/population-health-sciences/epidemiology-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Financial Economics",
+    "degree": "M.S.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/economics/financial-economics-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Food Science",
+    "degree": "M.S.",
+    "department": "Department of Food Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/food-science/food-science-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Forestry",
+    "degree": "M.S.",
+    "department": "Department of Forest and Wildlife Ecology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/forest-wildlife-ecology/forestry-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "French",
+    "degree": "M.A.",
+    "department": "Department of French and Italian",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/french-italian/french-ma/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Freshwater and Marine Sciences",
+    "degree": "M.S.",
+    "department": "Department of Integrative Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/integrative-biology/freshwater-marine-science-ms/"
+  },
+  {
+    "universityId": "University of Wisconsin–Madison",
+    "name": "Gender and Women's Studies",
+    "degree": "M.A.",
+    "department": "Department of Gender and Women's Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "November 1"
+    },
+    "website": "http://guide.wisc.edu/graduate/gender-womens-studies/gender-womens-studies-ma/"
+  }
+]

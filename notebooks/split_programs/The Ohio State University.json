@@ -1,0 +1,562 @@
+[
+  {
+    "universityId": "The Ohio State University",
+    "name": "Agricultural Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Agricultural, Environmental, and Development Economics",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://aede.osu.edu/graduate/phd-program"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Animal Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Animal Sciences",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://ansci.osu.edu/graduate/doctoral-program"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Horticulture and Crop Science",
+    "degree": "Ph.D.",
+    "department": "Department of Horticulture and Crop Science",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://hcs.osu.edu/graduate/future-students"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Plant Science",
+    "degree": "Ph.D.",
+    "department": "Department of Plant Sciences",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "African American and African Studies",
+    "degree": "Ph.D.",
+    "department": "Department of African American and African Studies",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://aaas.osu.edu/graduate/phd"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://anthropology.osu.edu/graduate-program"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Family Studies and Consumer Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Human Sciences",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Women's, Gender and Sexuality Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Women's, Gender and Sexuality Studies",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://wgss.osu.edu/graduate/phd-program"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Human Development",
+    "degree": "Ph.D.",
+    "department": "Department of Human Sciences",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://sociology.osu.edu/graduate/phd-program"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Arts Administration, Education and Policy",
+    "degree": "Ph.D.",
+    "department": "Department of Arts Administration, Education and Policy",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://aaep.osu.edu/programs/phd"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Anatomy",
+    "degree": "Ph.D.",
+    "department": "College of Medicine",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://medicine.osu.edu/education/phd"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Biochemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Chemistry and Biochemistry",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://chemistry.osu.edu/graduate/biochemistry-program"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Biomedical Sciences and Molecular Medicine",
+    "degree": "Ph.D.",
+    "department": "College of Medicine",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Biophysics",
+    "degree": "Ph.D.",
+    "department": "Department of Physics",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Biostatistics",
+    "degree": "Ph.D.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Botany and Plant Physiology",
+    "degree": "Ph.D.",
+    "department": "Department of Plant Sciences",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Cellular Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Molecular Genetics",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Ecology and Evolutionary Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Evolution, Ecology, and Organismal Biology",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Epidemiology",
+    "degree": "Ph.D.",
+    "department": "College of Public Health",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Genetics and Genomics",
+    "degree": "Ph.D.",
+    "department": "Department of Molecular Genetics",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Microbiology and Immunology",
+    "degree": "Ph.D.",
+    "department": "Department of Microbiology",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "Ph.D.",
+    "department": "Department of Neuroscience",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Zoology and Entomology",
+    "degree": "Ph.D.",
+    "department": "Department of Evolution, Ecology, and Organismal Biology",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Business Administration",
+    "degree": "Ph.D.",
+    "department": "Fisher College of Business",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://fisher.osu.edu/graduate/phd"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Hotel and Hospitality Management",
+    "degree": "Ph.D.",
+    "department": "Department of Human Sciences",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Human Resources",
+    "degree": "Ph.D.",
+    "department": "Fisher College of Business",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Chemistry and Biochemistry",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Communications",
+    "degree": "Ph.D.",
+    "department": "School of Communication",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Dentistry",
+    "degree": "Ph.D.",
+    "department": "College of Dentistry",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Apparel and Textile Science",
+    "degree": "Ph.D.",
+    "department": "Department of Human Sciences",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Economics and Econometrics",
+    "degree": "Ph.D.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Agricultural Economics",
+    "degree": "M.S.",
+    "department": "Department of Agricultural, Environmental, and Development Economics",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://aede.osu.edu/graduate/masters-program"
+  },
+  {
+    "universityId": "The Ohio State University",
+    "name": "Animal Sciences and Husbandry",
+    "degree": "M.S.",
+    "department": "Department of Animal Sciences",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-07-30",
+      "spring": "2025-10-01"
+    },
+    "website": "https://gradsch.osu.edu/"
+  }
+]

@@ -1,0 +1,3182 @@
+[
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Animal Sciences and Husbandry",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Gender Studies",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Biochemistry and Molecular Biology",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Biomedical Sciences and Molecular Medicine",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Botany and Plant Physiology",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Cellular Biology",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Ecology and Evolutionary Biology",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Genetics and Genomics",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Microbiology and Immunology",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Natural Sciences",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Pharmacology and Toxicology",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Physiology and Pathology",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Zoology and Entomology",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Labor Relations",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Computer and Information Sciences",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Information Science",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Advanced Dentistry and Oral Sciences",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Dentistry",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Economics and Econometrics",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Educational Administration",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Education Research and Evaluation",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Elementary Education",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Foreign Language Teacher Education",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Higher Education Administration",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Library Science",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Mathematics Teacher Education",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Science Teacher Education",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Social Studies Teacher Education",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Special Education and Teaching",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Specialized Teaching and Education",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Teaching",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Civil Engineering",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Industrial Engineering",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Materials Engineering",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Operations Research",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Comparative Literature",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "English Language Studies",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Atmospheric Sciences and Meteorology",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Environmental Science",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Geology and Earth Science",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "French Language and Literature",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "German Language and Literature",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Italian Language and Literature",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Linguistics",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Interpretation",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "and Translation",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Spanish Language and Literature",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Geography",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Healthcare Management",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Health Services and Related Clinical Sciences",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Medical Illustration and Informatics",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Radiation Therapy",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Art History",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Latin and Ancient Greek Studies",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Music History and Literature",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Alternative Therapy",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Kinesiology and Exercise Science",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Physical Therapy",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Liberal Arts and Humanities",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Mathematics and Statistics",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Medical Technician",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Medicine",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Music Performance",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Nursing Science",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Education",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "and Practice",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Dietetics and Clinical Nutrition",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Food Science",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Nutrition Studies",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Pharmaceutical Chemistry and Drug Design",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Pharmacy Studies",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Political Science and Government",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Experimental Psychology",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Urban",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Community and Regional Planning",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Urban Studies and Affairs",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Public Health",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Social Work",
+    "degree": "Ph.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Agricultural Economics",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Animal Sciences and Husbandry",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Anthropology",
+    "degree": "M.A.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Gender Studies",
+    "degree": "M.A.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Sociology",
+    "degree": "M.A.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Landscape Architecture",
+    "degree": "M.L.A.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Biochemistry and Molecular Biology",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Biomedical Sciences and Molecular Medicine",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Biostatistics",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Botany and Plant Physiology",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Cellular Biology",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Ecology and Evolutionary Biology",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Genetics and Genomics",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Microbiology and Immunology",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Natural Sciences",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Pharmacology and Toxicology",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Physiology and Pathology",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Zoology and Entomology",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Business Analytics",
+    "degree": "M.B.A.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Human Resources",
+    "degree": "M.B.A.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Labor Relations",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Communications",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Digital Communication and Media/Multimedia",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Computer and Information Sciences",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Information Science",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Advanced Dentistry and Oral Sciences",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Dentistry",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Design and Visual Communications",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Economics",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Economics and Econometrics",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Adult and Continuing Education",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Educational Administration",
+    "degree": "Ed.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Education Research and Evaluation",
+    "degree": "Ed.D.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Elementary Education",
+    "degree": "M.Ed.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "English and Reading Teacher Education",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Foreign Language Teacher Education",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Higher Education Administration",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Library Science",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Mathematics Teacher Education",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "School Counseling and Guidance Services",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Science Teacher Education",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Social Studies Teacher Education",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Special Education and Teaching",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Specialized Teaching and Education",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Student Affairs and College Counseling",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Teaching",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Agricultural Engineering",
+    "degree": "M.Eng.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "M.Eng.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Chemical Engineering",
+    "degree": "M.Eng.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Civil Engineering",
+    "degree": "M.Eng.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Electrical Engineering",
+    "degree": "M.Eng.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Industrial Engineering",
+    "degree": "M.Eng.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Industrial Management",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Materials Engineering",
+    "degree": "M.Eng.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Mechanical Engineering",
+    "degree": "M.Eng.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Operations Research",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Systems Engineering",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Comparative Literature",
+    "degree": "M.A.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "English Language Studies",
+    "degree": "M.A.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Atmospheric Sciences and Meteorology",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Environmental Science",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Geology and Earth Science",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Sustainability Studies",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Chinese Language and Literature",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "East Asian Languages and Literatures",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "French Language and Literature",
+    "degree": "M.A.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "German Language and Literature",
+    "degree": "M.A.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Italian Language and Literature",
+    "degree": "M.A.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Linguistics",
+    "degree": "M.A.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Interpretation",
+    "degree": "M.A.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "and Translation",
+    "degree": "M.A.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Spanish Language and Literature",
+    "degree": "M.A.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Geography",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Healthcare Management",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Health Professions and Related Clinical Sciences",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Health Services and Related Clinical Sciences",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Medical Illustration and Informatics",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Medical Scientist",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Radiation Therapy",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Art History",
+    "degree": "M.A.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Latin and Ancient Greek Studies",
+    "degree": "M.A.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Music History and Literature",
+    "degree": "M.A.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Alternative Therapy",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Kinesiology and Exercise Science",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Mathematics and Statistics",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Clinical Laboratory Technician",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Medical Technician",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Radiologic Technology",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Music Performance",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Nursing Science",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Education",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "and Practice",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Dietetics and Clinical Nutrition",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Food Science",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Nutrition Studies",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Dance",
+    "degree": "M.F.A.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Drama and Theatre Production",
+    "degree": "M.F.A.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Pharmaceutical Chemistry and Drug Design",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Pharmaceutical Economics",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Pharmacy Studies",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Philosophy",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Physician Assistant",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Political Science and Government",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Applied Behavior Analysis",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Experimental Psychology",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Psychology",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "School Psychology",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Public Policy Analysis",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Urban",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Community and Regional Planning",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Urban Studies and Affairs",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Public Health",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Religious Studies",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Social Work",
+    "degree": "M.S.W.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  },
+  {
+    "universityId": "Rutgers University - New Brunswick",
+    "name": "Sport and Fitness Management",
+    "degree": "M.S.",
+    "department": "The School of Graduate Studies - New Brunswick",
+    "requirements": {
+      "minimumGPA": 3.62,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-01"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies"
+  }
+]

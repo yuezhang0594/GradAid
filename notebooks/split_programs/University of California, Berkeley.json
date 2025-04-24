@@ -1,0 +1,1277 @@
+[
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Department of Electrical Engineering and Computer Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/computer-science/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Department of Electrical Engineering and Computer Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/computer-science/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Electrical Engineering and Computer Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/electrical-engineering/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Electrical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Electrical Engineering and Computer Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/electrical-engineering/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Business Administration",
+    "degree": "M.B.A.",
+    "department": "Haas School of Business",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 5"
+    },
+    "website": "https://grad.berkeley.edu/program/business-administration/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Law",
+    "degree": "J.D.",
+    "department": "Berkeley Law",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1"
+    },
+    "website": "https://grad.berkeley.edu/program/law/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Public Health",
+    "degree": "M.P.H.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/public-health/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Public Policy",
+    "degree": "M.P.P.",
+    "department": "Goldman School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 6"
+    },
+    "website": "https://grad.berkeley.edu/program/public-policy/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://grad.berkeley.edu/program/mechanical-engineering/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://grad.berkeley.edu/program/mechanical-engineering/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Civil Engineering",
+    "degree": "M.S.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://grad.berkeley.edu/program/civil-engineering/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Environmental Engineering",
+    "degree": "M.S.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://grad.berkeley.edu/program/environmental-engineering/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Department of Psychology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/psychology/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/economics/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Education",
+    "degree": "Ed.D.",
+    "department": "Graduate School of Education",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/education/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Education",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Education",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/education/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/chemistry/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Department of Physics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://grad.berkeley.edu/program/physics/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Integrative Biology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/integrative-biology/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "English",
+    "degree": "M.A.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://grad.berkeley.edu/program/english/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://grad.berkeley.edu/program/english/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/history/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/history/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Social Welfare",
+    "degree": "M.S.W.",
+    "department": "School of Social Welfare",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 5"
+    },
+    "website": "https://grad.berkeley.edu/program/social-welfare/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Social Welfare",
+    "degree": "Ph.D.",
+    "department": "School of Social Welfare",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/social-welfare/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Urban Planning",
+    "degree": "M.C.P.",
+    "department": "Department of City and Regional Planning",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://grad.berkeley.edu/program/city-and-regional-planning/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Architecture",
+    "degree": "M.Arch.",
+    "department": "Department of Architecture",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 5"
+    },
+    "website": "https://grad.berkeley.edu/program/architecture/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Data Science",
+    "degree": "M.D.S.",
+    "department": "School of Information",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 6"
+    },
+    "website": "https://grad.berkeley.edu/program/data-science/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Information Management",
+    "degree": "M.I.M.S.",
+    "department": "School of Information",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 6"
+    },
+    "website": "https://grad.berkeley.edu/program/information-management-and-systems/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "African American Studies",
+    "degree": "Ph.D.",
+    "department": "Department of African American Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/african-american-studies/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Agricultural and Resource Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Agricultural and Resource Economics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/agricultural-and-resource-economics/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Ancient History and Mediterranean Archaeology",
+    "degree": "Ph.D.",
+    "department": "Department of Ancient History and Mediterranean Archaeology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/ancient-history-and-mediterranean-archaeology/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/anthropology/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Applied Science and Technology",
+    "degree": "Ph.D.",
+    "department": "Department of Applied Science and Technology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/applied-science-and-technology/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Art History",
+    "degree": "Ph.D.",
+    "department": "Department of History of Art",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/history-of-art/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Asian Studies",
+    "degree": "M.A.",
+    "department": "Department of Asian Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/asian-studies/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Astronomy",
+    "degree": "Ph.D.",
+    "department": "Department of Astronomy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/astronomy/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Bioengineering",
+    "degree": "Ph.D.",
+    "department": "Department of Bioengineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/bioengineering/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Bioengineering",
+    "degree": "M.S.",
+    "department": "Department of Bioengineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/bioengineering/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Biophysics",
+    "degree": "Ph.D.",
+    "department": "Graduate Group in Biophysics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/biophysics/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Civil and Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://grad.berkeley.edu/program/civil-and-environmental-engineering/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Classical Archaeology",
+    "degree": "Ph.D.",
+    "department": "Department of Classics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/classical-archaeology/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Classics",
+    "degree": "Ph.D.",
+    "department": "Department of Classics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/classics/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Comparative Literature",
+    "degree": "Ph.D.",
+    "department": "Department of Comparative Literature",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/comparative-literature/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Computational Biology",
+    "degree": "Ph.D.",
+    "department": "Center for Computational Biology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/computational-biology/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Demography",
+    "degree": "Ph.D.",
+    "department": "Department of Demography",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/demography/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Development Engineering",
+    "degree": "M.DevEng.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 5"
+    },
+    "website": "https://grad.berkeley.edu/program/development-engineering/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "East Asian Languages and Cultures",
+    "degree": "Ph.D.",
+    "department": "Department of East Asian Languages and Cultures",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/east-asian-languages-and-cultures/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Environmental Health Sciences",
+    "degree": "Ph.D.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/environmental-health-sciences/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Environmental Science, Policy, and Management",
+    "degree": "Ph.D.",
+    "department": "Department of Environmental Science, Policy, and Management",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/environmental-science-policy-and-management/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Epidemiology",
+    "degree": "Ph.D.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/epidemiology/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Ethnic Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Ethnic Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/ethnic-studies/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Film and Media",
+    "degree": "Ph.D.",
+    "department": "Department of Film and Media",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/film-and-media/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Geography",
+    "degree": "Ph.D.",
+    "department": "Department of Geography",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/geography/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "German",
+    "degree": "Ph.D.",
+    "department": "Department of German",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/german/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Health Policy",
+    "degree": "Ph.D.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/health-policy/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Industrial Engineering and Operations Research",
+    "degree": "Ph.D.",
+    "department": "Department of Industrial Engineering and Operations Research",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://grad.berkeley.edu/program/industrial-engineering-and-operations-research/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Industrial Engineering and Operations Research",
+    "degree": "M.S.",
+    "department": "Department of Industrial Engineering and Operations Research",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://grad.berkeley.edu/program/industrial-engineering-and-operations-research/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Information",
+    "degree": "Ph.D.",
+    "department": "School of Information",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/information/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Journalism",
+    "degree": "M.J.",
+    "department": "Graduate School of Journalism",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/journalism/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Landscape Architecture and Environmental Planning",
+    "degree": "Ph.D.",
+    "department": "Department of Landscape Architecture and Environmental Planning",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://grad.berkeley.edu/program/landscape-architecture-and-environmental-planning/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Landscape Architecture",
+    "degree": "M.L.A.",
+    "department": "Department of Landscape Architecture and Environmental Planning",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://grad.berkeley.edu/program/landscape-architecture/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Linguistics",
+    "degree": "Ph.D.",
+    "department": "Department of Linguistics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/linguistics/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Materials Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Materials Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://grad.berkeley.edu/program/materials-science-and-engineering/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Materials Science and Engineering",
+    "degree": "M.S.",
+    "department": "Department of Materials Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://grad.berkeley.edu/program/materials-science-and-engineering/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://grad.berkeley.edu/program/mathematics/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Molecular and Cell Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Molecular and Cell Biology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/molecular-and-cell-biology/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Music",
+    "degree": "Ph.D.",
+    "department": "Department of Music",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/music/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Near Eastern Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Near Eastern Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/near-eastern-studies/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Nuclear Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Nuclear Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://grad.berkeley.edu/program/nuclear-engineering/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Nuclear Engineering",
+    "degree": "M.S.",
+    "department": "Department of Nuclear Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://grad.berkeley.edu/program/nuclear-engineering/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Nutritional Sciences and Toxicology",
+    "degree": "Ph.D.",
+    "department": "Department of Nutritional Sciences and Toxicology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/nutritional-sciences-and-toxicology/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Performance Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Theater, Dance, and Performance Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/performance-studies/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Department of Philosophy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/philosophy/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Plant and Microbial Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Plant and Microbial Biology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/plant-and-microbial-biology/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/political-science/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Rhetoric",
+    "degree": "Ph.D.",
+    "department": "Department of Rhetoric",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/rhetoric/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Romance Languages and Literatures",
+    "degree": "Ph.D.",
+    "department": "Department of Romance Languages and Literatures",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/romance-languages-and-literatures/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Scandinavian Languages and Literatures",
+    "degree": "Ph.D.",
+    "department": "Department of Scandinavian",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/scandinavian-languages-and-literatures/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Science and Mathematics Education",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Education",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/science-and-mathematics-education/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/sociology/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "South and Southeast Asian Studies",
+    "degree": "Ph.D.",
+    "department": "Department of South and Southeast Asian Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/south-and-southeast-asian-studies/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/statistics/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Statistics",
+    "degree": "M.A.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://grad.berkeley.edu/program/statistics/"
+  },
+  {
+    "universityId": "University of California, Berkeley",
+    "name": "Urban Design",
+    "degree": "M.U.D.",
+    "department": "Department of City and Regional Planning",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://grad.berkeley.edu/program/urban-design/"
+  }
+]

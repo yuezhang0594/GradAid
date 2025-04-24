@@ -1,0 +1,1458 @@
+[
+  {
+    "universityId": "University of Chicago",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Art History",
+    "degree": "Ph.D.",
+    "department": "Department of Art History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Astronomy and Astrophysics",
+    "degree": "Ph.D.",
+    "department": "Department of Astronomy and Astrophysics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Biochemistry and Molecular Biophysics",
+    "degree": "Ph.D.",
+    "department": "Department of Biochemistry and Molecular Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Biophysical Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Biophysical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Cancer Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Cancer Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Cell and Molecular Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Molecular Genetics and Cell Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Cinema and Media Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Cinema and Media Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Classics",
+    "degree": "Ph.D.",
+    "department": "Department of Classics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Comparative Human Development",
+    "degree": "Ph.D.",
+    "department": "Department of Comparative Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Comparative Literature",
+    "degree": "Ph.D.",
+    "department": "Department of Comparative Literature",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Computational and Applied Mathematics",
+    "degree": "Ph.D.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Computational Neuroscience",
+    "degree": "Ph.D.",
+    "department": "Department of Neurobiology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Conceptual and Historical Studies of Science",
+    "degree": "Ph.D.",
+    "department": "Department of Conceptual and Historical Studies of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Data Science",
+    "degree": "Ph.D.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Development, Regeneration and Stem Cell Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Developmental Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Divinity",
+    "degree": "Ph.D.",
+    "department": "Divinity School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "East Asian Languages and Civilizations",
+    "degree": "Ph.D.",
+    "department": "Department of East Asian Languages and Civilizations",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Ecology & Evolution",
+    "degree": "Ph.D.",
+    "department": "Department of Ecology and Evolution",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "English Language and Literature",
+    "degree": "Ph.D.",
+    "department": "Department of English Language and Literature",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Evolutionary Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Ecology and Evolution",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Genetics, Genomics and Systems Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Human Genetics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Geophysical Science",
+    "degree": "Ph.D.",
+    "department": "Department of Geophysical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Germanic Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Germanic Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Human Genetics",
+    "degree": "Ph.D.",
+    "department": "Department of Human Genetics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Immunology",
+    "degree": "Ph.D.",
+    "department": "Committee on Immunology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Integrative Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Organismal Biology and Anatomy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Linguistics",
+    "degree": "Ph.D.",
+    "department": "Department of Linguistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Medical Physics",
+    "degree": "Ph.D.",
+    "department": "Department of Radiology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Microbiology",
+    "degree": "Ph.D.",
+    "department": "Committee on Microbiology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Molecular Engineering",
+    "degree": "Ph.D.",
+    "department": "Pritzker School of Molecular Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Molecular Metabolism and Nutrition",
+    "degree": "Ph.D.",
+    "department": "Department of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Music",
+    "degree": "Ph.D.",
+    "department": "Department of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Neurobiology",
+    "degree": "Ph.D.",
+    "department": "Department of Neurobiology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Department of Philosophy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Department of Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Political Economy",
+    "degree": "Ph.D.",
+    "department": "Harris School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Department of Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Public Health Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Public Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Public Policy",
+    "degree": "Ph.D.",
+    "department": "Harris School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Quantum Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "Pritzker School of Molecular Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Romance Languages and Literatures",
+    "degree": "Ph.D.",
+    "department": "Department of Romance Languages and Literatures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Slavic Languages and Literatures",
+    "degree": "Ph.D.",
+    "department": "Department of Slavic Languages and Literatures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Social Thought",
+    "degree": "Ph.D.",
+    "department": "Committee on Social Thought",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Social Work",
+    "degree": "Ph.D.",
+    "department": "Crown Family School of Social Work, Policy, and Practice",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "South Asian Languages and Civilizations",
+    "degree": "Ph.D.",
+    "department": "Department of South Asian Languages and Civilizations",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Stevens Doctoral Program",
+    "degree": "Ph.D.",
+    "department": "Booth School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Theater and Performance Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Theater and Performance Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/phd-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Applied Data Science",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Arts & Humanities",
+    "degree": "M.A.",
+    "department": "Division of the Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Biomedical Sciences",
+    "degree": "M.S.",
+    "department": "Division of the Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Business Administration (Evening)",
+    "degree": "M.B.A.",
+    "department": "Booth School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Business Administration (Executive)",
+    "degree": "M.B.A.",
+    "department": "Booth School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Business Administration (Full-Time)",
+    "degree": "M.B.A.",
+    "department": "Booth School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Business Administration (Weekend)",
+    "degree": "M.B.A.",
+    "department": "Booth School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Computational Analysis and Public Policy",
+    "degree": "M.S.",
+    "department": "Harris School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Computational and Applied Mathematics",
+    "degree": "M.S.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Computational Social Science",
+    "degree": "M.A.",
+    "department": "Division of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Data Science",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Digital Studies of Language, Culture, and History",
+    "degree": "M.A.",
+    "department": "Division of the Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Divinity",
+    "degree": "M.Div.",
+    "department": "Divinity School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Engineering",
+    "degree": "M.Eng.",
+    "department": "Pritzker School of Molecular Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Environmental Science",
+    "degree": "M.S.",
+    "department": "Department of Geophysical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Finance",
+    "degree": "M.S.",
+    "department": "Booth School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Financial Mathematics",
+    "degree": "M.S.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "International Relations",
+    "degree": "M.A.",
+    "department": "Committee on International Relations",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Law/Legal Studies",
+    "degree": "LL.M.",
+    "department": "Law School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Liberal Arts",
+    "degree": "M.A.",
+    "department": "Graham School of Continuing Liberal and Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Management",
+    "degree": "M.S.",
+    "department": "Booth School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Middle Eastern Studies",
+    "degree": "M.A.",
+    "department": "Center for Middle Eastern Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Precision Health",
+    "degree": "M.S.",
+    "department": "Department of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Public Health",
+    "degree": "M.P.H.",
+    "department": "Department of Public Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Public Health Sciences for Clinical Professionals",
+    "degree": "M.S.",
+    "department": "Department of Public Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Public Policy",
+    "degree": "M.P.P.",
+    "department": "Harris School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Public Policy (Evening Master's Program)",
+    "degree": "M.A.",
+    "department": "Harris School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Public Policy with Certificate in Research Methods",
+    "degree": "M.A.",
+    "department": "Harris School of Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Religious Studies",
+    "degree": "M.A.",
+    "department": "Divinity School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Social Sciences",
+    "degree": "M.A.",
+    "department": "Division of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Social Sector Leadership and Nonprofit Management",
+    "degree": "M.A.",
+    "department": "Crown Family School of Social Work, Policy, and Practice",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Social Work, Social Policy, and Social Administration",
+    "degree": "M.A.",
+    "department": "Crown Family School of Social Work, Policy, and Practice",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  },
+  {
+    "universityId": "University of Chicago",
+    "name": "Visual Arts",
+    "degree": "M.F.A.",
+    "department": "Department of Visual Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-07-02"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs/masters-programs"
+  }
+]

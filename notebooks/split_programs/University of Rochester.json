@@ -1,0 +1,572 @@
+[
+  {
+    "universityId": "University of Rochester",
+    "name": "Human Development",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Biology",
+    "degree": "M.S.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Brain and Cognitive Sciences",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Hajim School of Engineering & Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Hajim School of Engineering & Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Data Science",
+    "degree": "M.S.",
+    "department": "Hajim School of Engineering & Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Earth and Environmental Sciences",
+    "degree": "M.S.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Earth and Environmental Sciences",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Electrical and Computer Engineering",
+    "degree": "Ph.D.",
+    "department": "Hajim School of Engineering & Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 31"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Electrical and Computer Engineering",
+    "degree": "M.S.",
+    "department": "Hajim School of Engineering & Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "English",
+    "degree": "M.A.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 5"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Mathematics",
+    "degree": "M.A.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "Hajim School of Engineering & Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "Hajim School of Engineering & Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Optics",
+    "degree": "Ph.D.",
+    "department": "Hajim School of Engineering & Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Optics",
+    "degree": "M.S.",
+    "department": "Hajim School of Engineering & Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "March 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Physics",
+    "degree": "M.A.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "March 1"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "Hajim School of Engineering & Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Biomedical Engineering",
+    "degree": "M.S.",
+    "department": "Hajim School of Engineering & Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "Hajim School of Engineering & Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Chemical Engineering",
+    "degree": "M.S.",
+    "department": "Hajim School of Engineering & Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Linguistics",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Linguistics",
+    "degree": "M.A.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Visual and Cultural Studies",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 5"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Materials Science",
+    "degree": "M.S.",
+    "department": "Hajim School of Engineering & Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Technical Entrepreneurship and Management",
+    "degree": "M.S.",
+    "department": "Hajim School of Engineering & Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "March 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  },
+  {
+    "universityId": "University of Rochester",
+    "name": "Alternative Energy",
+    "degree": "M.S.",
+    "department": "Hajim School of Engineering & Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/"
+  }
+]

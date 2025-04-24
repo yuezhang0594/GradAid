@@ -1,0 +1,1314 @@
+[
+  {
+    "universityId": "Boston College",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Neuroscience",
+    "degree": "Ph.D.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Organizational Behavior Studies",
+    "degree": "Ph.D.",
+    "department": "Carroll School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Educational Administration",
+    "degree": "Ph.D.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Education Research and Evaluation",
+    "degree": "Ph.D.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Higher Education Administration",
+    "degree": "Ph.D.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Teaching",
+    "degree": "Ph.D.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Finance",
+    "degree": "Ph.D.",
+    "department": "Carroll School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "French",
+    "degree": "Ph.D.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Hispanic Studies",
+    "degree": "Ph.D.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Law",
+    "degree": "J.D.",
+    "department": "Boston College Law School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Financial Mathematics",
+    "degree": "Ph.D.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Nursing Science",
+    "degree": "Ph.D.",
+    "department": "Connell School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Education",
+    "degree": "Ph.D.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Counseling Psychology",
+    "degree": "Ph.D.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Applied Developmental and Educational Psychology",
+    "degree": "Ph.D.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Religious Education",
+    "degree": "Ph.D.",
+    "department": "Clough School of Theology and Ministry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Theology",
+    "degree": "Ph.D.",
+    "department": "Clough School of Theology and Ministry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Social Work",
+    "degree": "Ph.D.",
+    "department": "School of Social Work",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Sociology",
+    "degree": "M.A.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Biology",
+    "degree": "M.S.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Neuroscience",
+    "degree": "M.S.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Business Analytics",
+    "degree": "M.S.",
+    "department": "Carroll School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Organizational Behavior Studies",
+    "degree": "M.S.",
+    "department": "Carroll School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Management and Leadership",
+    "degree": "M.S.",
+    "department": "Carroll School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Early Childhood Education",
+    "degree": "M.Ed.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Educational Administration",
+    "degree": "M.Ed.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Educational Technology",
+    "degree": "M.Ed.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Education Research and Evaluation",
+    "degree": "M.Ed.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Elementary Education",
+    "degree": "M.Ed.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Secondary Education",
+    "degree": "M.Ed.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Secondary Education",
+    "degree": "M.S.T.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Secondary Education",
+    "degree": "M.A.T.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Higher Education Administration",
+    "degree": "M.A.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Secondary Education",
+    "degree": "M.Ed.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "School Counseling",
+    "degree": "M.A.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Secondary Education",
+    "degree": "M.Ed.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Special Education",
+    "degree": "M.Ed.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Teaching",
+    "degree": "M.Ed.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "English",
+    "degree": "M.A.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Geological Sciences",
+    "degree": "M.S.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Accounting",
+    "degree": "M.S.",
+    "department": "Carroll School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Finance",
+    "degree": "M.S.",
+    "department": "Carroll School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "French",
+    "degree": "M.A.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Italian",
+    "degree": "M.A.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Linguistics",
+    "degree": "M.A.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Hispanic Studies",
+    "degree": "M.A.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Slavic Studies",
+    "degree": "M.A.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Islamic Civilization and Societies",
+    "degree": "M.A.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Healthcare Management",
+    "degree": "M.S.",
+    "department": "Carroll School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Mental Health Counseling",
+    "degree": "M.A.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Classics",
+    "degree": "M.A.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Cybersecurity",
+    "degree": "M.S.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Legal Studies",
+    "degree": "LL.M.",
+    "department": "Boston College Law School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Financial Mathematics",
+    "degree": "M.S.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Nursing",
+    "degree": "M.S.",
+    "department": "Connell School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Philosophy",
+    "degree": "M.A.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Political Science",
+    "degree": "M.A.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Counseling, Developmental and Educational Psychology",
+    "degree": "M.A.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Applied Developmental and Educational Psychology",
+    "degree": "M.A.",
+    "department": "Lynch School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Psychology",
+    "degree": "M.A.",
+    "department": "Morrissey College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Divinity",
+    "degree": "M.Div.",
+    "department": "Clough School of Theology and Ministry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Ministry",
+    "degree": "M.A.",
+    "department": "Clough School of Theology and Ministry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Pastoral Ministry",
+    "degree": "M.A.",
+    "department": "Clough School of Theology and Ministry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Theology and Ministry",
+    "degree": "M.T.S.",
+    "department": "Clough School of Theology and Ministry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Social Work",
+    "degree": "M.S.W.",
+    "department": "School of Social Work",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  },
+  {
+    "universityId": "Boston College",
+    "name": "Sport Administration",
+    "degree": "M.S.",
+    "department": "Woods College of Advancing Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-11-15"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html"
+  }
+]

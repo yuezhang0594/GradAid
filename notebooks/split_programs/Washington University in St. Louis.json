@@ -1,0 +1,1112 @@
+[
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "American Culture Studies",
+    "degree": "M.A.",
+    "department": "Department of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Anthropology",
+    "degree": "M.A.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Art History and Archaeology",
+    "degree": "M.A.",
+    "department": "Department of Art History and Archaeology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Biology",
+    "degree": "M.A.",
+    "department": "Department of Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Classics",
+    "degree": "M.A.",
+    "department": "Department of Classics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Comparative Literature",
+    "degree": "M.A.",
+    "department": "Department of Comparative Literature",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Earth and Planetary Sciences",
+    "degree": "M.S.",
+    "department": "Department of Earth, Environmental and Planetary Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "East Asian Languages and Cultures",
+    "degree": "M.A.",
+    "department": "Department of East Asian Languages and Cultures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Economics",
+    "degree": "M.A.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Education",
+    "degree": "M.A.T.",
+    "department": "Department of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "English and American Literature",
+    "degree": "M.A.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Film and Media Studies",
+    "degree": "M.A.",
+    "department": "Department of Film and Media Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "French Language and Literature",
+    "degree": "M.A.",
+    "department": "Department of Romance Languages and Literatures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Germanic Languages and Literatures",
+    "degree": "M.A.",
+    "department": "Department of Germanic Languages and Literatures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Higher Education",
+    "degree": "M.A.",
+    "department": "Department of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Hispanic Studies",
+    "degree": "M.A.",
+    "department": "Department of Romance Languages and Literatures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Islamic and Near Eastern Studies",
+    "degree": "M.A.",
+    "department": "Department of Jewish, Islamic, and Middle Eastern Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Jewish Studies",
+    "degree": "M.A.",
+    "department": "Department of Jewish, Islamic, and Middle Eastern Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Language Instruction",
+    "degree": "M.A.",
+    "department": "Department of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Latin American Studies",
+    "degree": "M.A.",
+    "department": "Department of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Liberal Arts",
+    "degree": "M.L.A.",
+    "department": "University College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Mathematics",
+    "degree": "M.A.",
+    "department": "Department of Mathematics and Statistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Music",
+    "degree": "M.A.",
+    "department": "Department of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Performing Arts: Dance",
+    "degree": "M.F.A.",
+    "department": "Performing Arts Department",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Performing Arts: Theater and Performance Studies",
+    "degree": "M.A.",
+    "department": "Performing Arts Department",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Philosophy",
+    "degree": "M.A.",
+    "department": "Department of Philosophy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Philosophy-Neuroscience-Psychology",
+    "degree": "M.A.",
+    "department": "Department of Philosophy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "Department of Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Political Science",
+    "degree": "M.A.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Psychological & Brain Sciences",
+    "degree": "M.A.",
+    "department": "Department of Psychological & Brain Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Public Scholarship",
+    "degree": "M.A.",
+    "department": "Department of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Quantitative Data Analysis",
+    "degree": "M.S.",
+    "department": "Department of Mathematics and Statistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Sociology",
+    "degree": "M.A.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "Department of Mathematics and Statistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Teaching",
+    "degree": "M.A.T.",
+    "department": "Department of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Translation Studies",
+    "degree": "M.A.",
+    "department": "Department of Romance Languages and Literatures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Urban Studies",
+    "degree": "M.A.",
+    "department": "Department of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Women, Gender, and Sexuality Studies",
+    "degree": "M.A.",
+    "department": "Department of Women, Gender, and Sexuality Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Writing",
+    "degree": "M.F.A.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=543&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Art History and Archaeology",
+    "degree": "Ph.D.",
+    "department": "Department of Art History and Archaeology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Biochemistry, Biophysics and Structural Biology",
+    "degree": "Ph.D.",
+    "department": "Division of Biology and Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Biomedical Informatics and Data Science",
+    "degree": "Ph.D.",
+    "department": "Division of Biology and Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Cancer Biology",
+    "degree": "Ph.D.",
+    "department": "Division of Biology and Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Classics",
+    "degree": "Ph.D.",
+    "department": "Department of Classics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Comparative Literature",
+    "degree": "Ph.D.",
+    "department": "Department of Comparative Literature",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Computational and Systems Biology",
+    "degree": "Ph.D.",
+    "department": "Division of Biology and Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Development, Regenerative and Stem Cell Biology",
+    "degree": "Ph.D.",
+    "department": "Division of Biology and Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Earth and Planetary Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Earth, Environmental and Planetary Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "East Asian Languages and Cultures",
+    "degree": "Ph.D.",
+    "department": "Department of East Asian Languages and Cultures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Education",
+    "degree": "Ph.D.",
+    "department": "Department of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "English and American Literature",
+    "degree": "Ph.D.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Evolution, Ecology and Population Biology",
+    "degree": "Ph.D.",
+    "department": "Division of Biology and Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Germanic Languages and Literatures",
+    "degree": "Ph.D.",
+    "department": "Department of Germanic Languages and Literatures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Hispanic Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Romance Languages and Literatures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Human and Statistical Genetics",
+    "degree": "Ph.D.",
+    "department": "Division of Biology and Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Immunology",
+    "degree": "Ph.D.",
+    "department": "Division of Biology and Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Department of Mathematics and Statistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Molecular Cell Biology",
+    "degree": "Ph.D.",
+    "department": "Division of Biology and Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Molecular Genetics and Genomics",
+    "degree": "Ph.D.",
+    "department": "Division of Biology and Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Molecular Microbiology and Microbial Pathogenesis",
+    "degree": "Ph.D.",
+    "department": "Division of Biology and Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Neurosciences",
+    "degree": "Ph.D.",
+    "department": "Division of Biology and Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Department of Philosophy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Philosophy-Neuroscience-Psychology",
+    "degree": "Ph.D.",
+    "department": "Department of Philosophy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Department of Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Plant and Microbial Biosciences",
+    "degree": "Ph.D.",
+    "department": "Division of Biology and Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Psychological & Brain Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Psychological & Brain Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  },
+  {
+    "universityId": "Washington University in St. Louis",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/browse?tid=558&type=grid"
+  }
+]

@@ -1,0 +1,674 @@
+[
+  {
+    "universityId": "Emory University",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Women's, Gender, and Sexuality Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Women's, Gender, and Sexuality Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Biochemistry, Cell and Developmental Biology",
+    "degree": "Ph.D.",
+    "department": "Graduate Division of Biological and Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Biostatistics",
+    "degree": "Ph.D.",
+    "department": "Department of Biostatistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Epidemiology",
+    "degree": "Ph.D.",
+    "department": "Department of Epidemiology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Business",
+    "degree": "Ph.D.",
+    "department": "Goizueta Business School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Computer Science and Informatics",
+    "degree": "Ph.D.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Biomedical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Comparative Literature",
+    "degree": "Ph.D.",
+    "department": "Department of Comparative Literature",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "French",
+    "degree": "Ph.D.",
+    "department": "Department of French and Italian",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Hispanic Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Spanish and Portuguese",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Health Services Research and Health Policy",
+    "degree": "Ph.D.",
+    "department": "Rollins School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "MD/PhD",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Art History",
+    "degree": "Ph.D.",
+    "department": "Department of Art History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Nursing",
+    "degree": "Ph.D.",
+    "department": "Nell Hodgson Woodruff School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Nutrition and Health Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Nutrition and Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Department of Philosophy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Department of Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Department of Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://psychology.emory.edu/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Environmental Health Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Environmental Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Religion",
+    "degree": "Ph.D.",
+    "department": "Graduate Division of Religion",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "African American Studies",
+    "degree": "Ph.D.",
+    "department": "Department of African American Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Behavioral, Social, and Health Education Sciences",
+    "degree": "Ph.D.",
+    "department": "Rollins School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Cancer Biology",
+    "degree": "Ph.D.",
+    "department": "Graduate Division of Biological and Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Development Practice",
+    "degree": "M.A.",
+    "department": "Laney Graduate School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Environmental Sciences and Society",
+    "degree": "Ph.D.",
+    "department": "Department of Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Genetics and Molecular Biology",
+    "degree": "Ph.D.",
+    "department": "Graduate Division of Biological and Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Global Health and Development",
+    "degree": "Ph.D.",
+    "department": "Rollins School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Immunology and Molecular Pathogenesis",
+    "degree": "Ph.D.",
+    "department": "Graduate Division of Biological and Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Islamic Civilizations Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Middle Eastern and South Asian Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Microbiology and Molecular Genetics",
+    "degree": "Ph.D.",
+    "department": "Graduate Division of Biological and Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Molecular and Systems Pharmacology",
+    "degree": "Ph.D.",
+    "department": "Graduate Division of Biological and Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Neuroscience",
+    "degree": "Ph.D.",
+    "department": "Graduate Division of Biological and Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Population Biology, Ecology, and Evolution",
+    "degree": "Ph.D.",
+    "department": "Graduate Division of Biological and Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Mathematics",
+    "degree": "M.S.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Clinical Research",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Bioethics",
+    "degree": "M.A.",
+    "department": "Center for Ethics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Biomedical Innovation and Development – Advanced Therapeutics",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Economics",
+    "degree": "M.A.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  },
+  {
+    "universityId": "Emory University",
+    "name": "Quantitative Theory and Methods",
+    "degree": "M.S.",
+    "department": "Department of Quantitative Theory and Methods",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01"
+    },
+    "website": "https://gs.emory.edu/degree-programs/index.html"
+  }
+]

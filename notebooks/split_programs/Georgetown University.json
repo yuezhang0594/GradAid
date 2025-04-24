@@ -1,0 +1,1986 @@
+[
+  {
+    "universityId": "Georgetown University",
+    "name": "Biochemistry and Molecular Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Biochemistry and Molecular Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://biomedgrad.georgetown.edu/biochemistry/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://biology.georgetown.edu/graduate/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Biomedical Sciences and Molecular Medicine",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://biomedgrad.georgetown.edu/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Biostatistics",
+    "degree": "Ph.D.",
+    "department": "Department of Biostatistics, Bioinformatics, and Biomathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://biostatistics.georgetown.edu/academics/phd"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Cellular Biology",
+    "degree": "Ph.D.",
+    "department": "Cellular Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Microbiology and Immunology",
+    "degree": "Ph.D.",
+    "department": "Microbiology and Immunology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "Ph.D.",
+    "department": "Neuroscience and Neurobiology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Oncology and Cancer Biology",
+    "degree": "Ph.D.",
+    "department": "Oncology and Cancer Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Pharmacology and Toxicology",
+    "degree": "Ph.D.",
+    "department": "Pharmacology and Toxicology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Physiology and Pathology",
+    "degree": "Ph.D.",
+    "department": "Physiology and Pathology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Business",
+    "degree": "Ph.D.",
+    "department": "Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Chemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Economics and Econometrics",
+    "degree": "Ph.D.",
+    "department": "Economics and Econometrics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Arabic Language and Literature",
+    "degree": "Ph.D.",
+    "department": "Arabic Language and Literature",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "German Language and Literature",
+    "degree": "Ph.D.",
+    "department": "German Language and Literature",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Linguistics",
+    "degree": "Ph.D.",
+    "department": "Linguistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Interpretation and Translation",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/interpretation-and-translation/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Spanish Language and Literature",
+    "degree": "Ph.D.",
+    "department": "Spanish Language and Literature",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Middle Eastern Studies",
+    "degree": "Ph.D.",
+    "department": "Middle Eastern Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Advanced Legal Research",
+    "degree": "Ph.D.",
+    "department": "Advanced Legal Research",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Law",
+    "degree": "Ph.D.",
+    "department": "Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Liberal Arts and Humanities",
+    "degree": "Ph.D.",
+    "department": "Liberal Arts and Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Medicine",
+    "degree": "Ph.D.",
+    "department": "Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Nurse Anesthetist",
+    "degree": "Ph.D.",
+    "department": "Nurse Anesthetist",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Nursing",
+    "degree": "Ph.D.",
+    "department": "Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Philosophy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Political Science and Government",
+    "degree": "Ph.D.",
+    "department": "Political Science and Government",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Public Health",
+    "degree": "Ph.D.",
+    "department": "Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Religious Studies",
+    "degree": "Ph.D.",
+    "department": "Religious Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Adult Development",
+    "degree": "M.S.",
+    "department": "Adult Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Gerontology",
+    "degree": "M.S.",
+    "department": "Gerontology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "and Aging",
+    "degree": "M.S.",
+    "department": "and Aging",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Biochemistry and Molecular Biology",
+    "degree": "M.S.",
+    "department": "Biochemistry and Molecular Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Bioinformatics",
+    "degree": "M.S.",
+    "department": "Bioinformatics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Biology",
+    "degree": "M.S.",
+    "department": "Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Biomedical Sciences and Molecular Medicine",
+    "degree": "M.S.",
+    "department": "Biomedical Sciences and Molecular Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Biostatistics",
+    "degree": "M.S.",
+    "department": "Biostatistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Biotechnology",
+    "degree": "M.S.",
+    "department": "Biotechnology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Cellular Biology",
+    "degree": "M.S.",
+    "department": "Cellular Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Epidemiology",
+    "degree": "M.S.",
+    "department": "Epidemiology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Microbiology and Immunology",
+    "degree": "M.S.",
+    "department": "Microbiology and Immunology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "M.S.",
+    "department": "Neuroscience and Neurobiology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Oncology and Cancer Biology",
+    "degree": "M.S.",
+    "department": "Oncology and Cancer Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Pharmacology and Toxicology",
+    "degree": "M.S.",
+    "department": "Pharmacology and Toxicology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Physiology and Pathology",
+    "degree": "M.S.",
+    "department": "Physiology and Pathology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Business",
+    "degree": "M.S.",
+    "department": "Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Business Analytics",
+    "degree": "M.S.",
+    "department": "Business Analytics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Hotel and Hospitality Management",
+    "degree": "M.S.",
+    "department": "Hotel and Hospitality Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Human Resources",
+    "degree": "M.S.",
+    "department": "Human Resources",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "International Business",
+    "degree": "M.S.",
+    "department": "International Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Logistics and Supply Chain Management",
+    "degree": "M.S.",
+    "department": "Logistics and Supply Chain Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Project Management",
+    "degree": "M.S.",
+    "department": "Project Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Real Estate",
+    "degree": "M.S.",
+    "department": "Real Estate",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "Chemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Communications",
+    "degree": "M.S.",
+    "department": "Communications",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Digital Communication and Media/Multimedia",
+    "degree": "M.S.",
+    "department": "Digital Communication and Media/Multimedia",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Journalism",
+    "degree": "M.S.",
+    "department": "Journalism",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Public Relations",
+    "degree": "M.S.",
+    "department": "Public Relations",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Applied Economics",
+    "degree": "M.S.",
+    "department": "Applied Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Economic Development",
+    "degree": "M.S.",
+    "department": "Economic Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Economics",
+    "degree": "M.S.",
+    "department": "Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Economics and Econometrics",
+    "degree": "M.S.",
+    "department": "Economics and Econometrics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Educational Technology",
+    "degree": "M.S.",
+    "department": "Educational Technology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Higher Education Administration",
+    "degree": "M.S.",
+    "department": "Higher Education Administration",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Teaching",
+    "degree": "M.S.",
+    "department": "Teaching",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Teaching English as a Second Language",
+    "degree": "M.S.",
+    "department": "Teaching English as a Second Language",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Industrial Management",
+    "degree": "M.S.",
+    "department": "Industrial Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "English Language Studies",
+    "degree": "M.S.",
+    "department": "English Language Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Environmental Science",
+    "degree": "M.S.",
+    "department": "Environmental Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Finance",
+    "degree": "M.S.",
+    "department": "Finance",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Arabic Language and Literature",
+    "degree": "M.S.",
+    "department": "Arabic Language and Literature",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "German Language and Literature",
+    "degree": "M.S.",
+    "department": "German Language and Literature",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Linguistics",
+    "degree": "M.S.",
+    "department": "Linguistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Interpretation and Translation",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/interpretation-and-translation/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Spanish Language and Literature",
+    "degree": "M.S.",
+    "department": "Spanish Language and Literature",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Asian Studies",
+    "degree": "M.S.",
+    "department": "Asian Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "European and Russian Studies",
+    "degree": "M.S.",
+    "department": "European and Russian Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Latin American Studies",
+    "degree": "M.S.",
+    "department": "Latin American Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Middle Eastern Studies",
+    "degree": "M.S.",
+    "department": "Middle Eastern Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Healthcare Management",
+    "degree": "M.S.",
+    "department": "Healthcare Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Hospital Management",
+    "degree": "M.S.",
+    "department": "Hospital Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Health Physics",
+    "degree": "M.S.",
+    "department": "Health Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Health Professions and Related Clinical Sciences",
+    "degree": "M.S.",
+    "department": "Health Professions and Related Clinical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Medical Illustration and Informatics",
+    "degree": "M.S.",
+    "department": "Medical Illustration and Informatics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Medical Scientist",
+    "degree": "M.S.",
+    "department": "Medical Scientist",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Radiation Therapy",
+    "degree": "M.S.",
+    "department": "Radiation Therapy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "History",
+    "degree": "M.S.",
+    "department": "History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Computer and Information Systems Security",
+    "degree": "M.S.",
+    "department": "Computer and Information Systems Security",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "International Affairs",
+    "degree": "M.S.",
+    "department": "International Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Peace Studies and Conflict Resolution",
+    "degree": "M.S.",
+    "department": "Peace Studies and Conflict Resolution",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Advanced Legal Research",
+    "degree": "M.S.",
+    "department": "Advanced Legal Research",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Energy",
+    "degree": "M.S.",
+    "department": "Energy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Environment",
+    "degree": "M.S.",
+    "department": "Environment",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "and Natural Resources Law",
+    "degree": "M.S.",
+    "department": "and Natural Resources Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Health Law",
+    "degree": "M.S.",
+    "department": "Health Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "International Law",
+    "degree": "M.S.",
+    "department": "International Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Legal Studies",
+    "degree": "M.S.",
+    "department": "Legal Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Tax Law",
+    "degree": "M.S.",
+    "department": "Tax Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Liberal Arts and Humanities",
+    "degree": "M.S.",
+    "department": "Liberal Arts and Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Computational and Applied Mathematics",
+    "degree": "M.S.",
+    "department": "Computational and Applied Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "Statistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Nursing",
+    "degree": "M.S.",
+    "department": "Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Bioethics",
+    "degree": "M.S.",
+    "department": "Bioethics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Philosophy",
+    "degree": "M.S.",
+    "department": "Philosophy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Political Science and Government",
+    "degree": "M.S.",
+    "department": "Political Science and Government",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Homeland Security and Disaster Management",
+    "degree": "M.S.",
+    "department": "Homeland Security and Disaster Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Military Science",
+    "degree": "M.S.",
+    "department": "Military Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Behavioral Sciences",
+    "degree": "M.S.",
+    "department": "Behavioral Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Psychology",
+    "degree": "M.S.",
+    "department": "Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Public Administration",
+    "degree": "M.S.",
+    "department": "Public Administration",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Public Policy Analysis",
+    "degree": "M.S.",
+    "department": "Public Policy Analysis",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Urban",
+    "degree": "M.S.",
+    "department": "Urban",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Community and Regional Planning",
+    "degree": "M.S.",
+    "department": "Community and Regional Planning",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Public Health",
+    "degree": "M.S.",
+    "department": "Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Religious Studies",
+    "degree": "M.S.",
+    "department": "Religious Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Social Sciences and Research Methods",
+    "degree": "M.S.",
+    "department": "Social Sciences and Research Methods",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  },
+  {
+    "universityId": "Georgetown University",
+    "name": "Sport and Fitness Management",
+    "degree": "M.S.",
+    "department": "Sport and Fitness Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://grad.georgetown.edu/programs/"
+  }
+]

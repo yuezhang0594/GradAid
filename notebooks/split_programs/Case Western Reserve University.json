@@ -1,0 +1,2732 @@
+[
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Anthropology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/anth/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Sociology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/soci/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Anatomy",
+    "degree": "Ph.D.",
+    "department": "Anatomy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Biochemistry and Molecular Biology",
+    "degree": "Ph.D.",
+    "department": "Biochemistry and Molecular Biology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Biology",
+    "degree": "M.S.",
+    "department": "Biology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "Biology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Biomedical Sciences and Molecular Medicine",
+    "degree": "Ph.D.",
+    "department": "Biomedical Sciences and Molecular Medicine",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Cellular Biology",
+    "degree": "Ph.D.",
+    "department": "Cellular Biology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Computational Biology",
+    "degree": "Ph.D.",
+    "department": "Computational Biology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Epidemiology",
+    "degree": "Ph.D.",
+    "department": "Epidemiology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Genetics and Genomics",
+    "degree": "Ph.D.",
+    "department": "Genetics and Genomics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Microbiology and Immunology",
+    "degree": "Ph.D.",
+    "department": "Microbiology and Immunology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "Ph.D.",
+    "department": "Neuroscience and Neurobiology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Pathology",
+    "degree": "Ph.D.",
+    "department": "Pathology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Pharmacology and Toxicology",
+    "degree": "Ph.D.",
+    "department": "Pharmacology and Toxicology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Physiology and Pathology",
+    "degree": "Ph.D.",
+    "department": "Physiology and Pathology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Business",
+    "degree": "Ph.D.",
+    "department": "Business",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Organizational Behavior Studies",
+    "degree": "Ph.D.",
+    "department": "Organizational Behavior Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "Chemistry",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Chemistry",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Computer Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Dentistry",
+    "degree": "Ph.D.",
+    "department": "Dentistry",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Music Teacher Education",
+    "degree": "Ph.D.",
+    "department": "Music Teacher Education",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Aerospace Engineering",
+    "degree": "M.S.",
+    "department": "Mechanical & Aerospace Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Aerospace Engineering",
+    "degree": "Ph.D.",
+    "department": "Mechanical & Aerospace Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "Bioengineering and Biomedical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "Chemical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Civil Engineering",
+    "degree": "Ph.D.",
+    "department": "Civil Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Computer Hardware Engineering",
+    "degree": "Ph.D.",
+    "department": "Computer Hardware Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "Electrical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Materials Engineering",
+    "degree": "Ph.D.",
+    "department": "Materials Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Operations Research",
+    "degree": "Ph.D.",
+    "department": "Operations Research",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Polymer Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "Polymer Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Systems Engineering",
+    "degree": "Ph.D.",
+    "department": "Systems Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "English Language Studies",
+    "degree": "Ph.D.",
+    "department": "English Language Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Geology and Earth Science",
+    "degree": "Ph.D.",
+    "department": "Geology and Earth Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Audiology and Speech-Language Pathology",
+    "degree": "Ph.D.",
+    "department": "Audiology and Speech-Language Pathology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Medical Illustration and Informatics",
+    "degree": "Ph.D.",
+    "department": "Medical Illustration and Informatics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Art History",
+    "degree": "Ph.D.",
+    "department": "Art History",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/arth/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "History",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Law",
+    "degree": "Ph.D.",
+    "department": "Law",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "US Law",
+    "degree": "Ph.D.",
+    "department": "US Law",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Computational and Applied Mathematics",
+    "degree": "Ph.D.",
+    "department": "Computational and Applied Mathematics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Mathematics and Statistics",
+    "degree": "Ph.D.",
+    "department": "Mathematics and Statistics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "Mathematics, Applied Mathematics, and Statistics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/math/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "Mathematics, Applied Mathematics, and Statistics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/math/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Medicine",
+    "degree": "Ph.D.",
+    "department": "Medicine",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Music",
+    "degree": "Ph.D.",
+    "department": "Music",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Music Theory and Composition",
+    "degree": "Ph.D.",
+    "department": "Music Theory and Composition",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Nurse Anesthetist",
+    "degree": "Ph.D.",
+    "department": "Nurse Anesthetist",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Nursing Science",
+    "degree": "Ph.D.",
+    "department": "Nursing Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Education",
+    "degree": "Ph.D.",
+    "department": "Education",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "and Practice",
+    "degree": "Ph.D.",
+    "department": "and Practice",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Nutrition Studies",
+    "degree": "Ph.D.",
+    "department": "Nutrition Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Bioethics",
+    "degree": "Ph.D.",
+    "department": "Bioethics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Astronomy and Astrophysics",
+    "degree": "Ph.D.",
+    "department": "Astronomy and Astrophysics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "Physics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/physics/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Physics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/physics/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Political Science and Government",
+    "degree": "Ph.D.",
+    "department": "Political Science and Government",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Psychology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Environmental Health",
+    "degree": "Ph.D.",
+    "department": "Environmental Health",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Social Work",
+    "degree": "Ph.D.",
+    "department": "Jack, Joseph and Morton Mandel School of Applied Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/socialwork/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Anthropology",
+    "degree": "M.S.",
+    "department": "Anthropology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Sociology",
+    "degree": "M.S.",
+    "department": "Sociology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Anatomy",
+    "degree": "M.S.",
+    "department": "Anatomy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Biochemistry and Molecular Biology",
+    "degree": "M.S.",
+    "department": "Biochemistry and Molecular Biology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Biomedical Engineering",
+    "degree": "M.S.",
+    "department": "Biomedical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/engineering/ebme/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "Biomedical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/engineering/ebme/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Cellular Biology",
+    "degree": "M.S.",
+    "department": "Cellular Biology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Computational Biology",
+    "degree": "M.S.",
+    "department": "Computational Biology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Epidemiology",
+    "degree": "M.S.",
+    "department": "Epidemiology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Genetics and Genomics",
+    "degree": "M.S.",
+    "department": "Genetics and Genomics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Microbiology and Immunology",
+    "degree": "M.S.",
+    "department": "Microbiology and Immunology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "M.S.",
+    "department": "Neuroscience and Neurobiology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Pathology",
+    "degree": "M.S.",
+    "department": "Pathology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Pharmacology and Toxicology",
+    "degree": "M.S.",
+    "department": "Pharmacology and Toxicology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Physiology and Pathology",
+    "degree": "M.S.",
+    "department": "Physiology and Pathology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Business",
+    "degree": "M.S.",
+    "department": "Business",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Business Analytics",
+    "degree": "M.S.",
+    "department": "Business Analytics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Organizational Behavior Studies",
+    "degree": "M.S.",
+    "department": "Organizational Behavior Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "Chemistry",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Computer & Data Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/engineering/computer-data-sciences"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Computer & Data Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/engineering/computer-data-sciences"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Advanced Dentistry and Oral Sciences",
+    "degree": "M.S.",
+    "department": "Advanced Dentistry and Oral Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Art Teacher Education",
+    "degree": "M.S.",
+    "department": "Art Teacher Education",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Music Teacher Education",
+    "degree": "M.S.",
+    "department": "Music Teacher Education",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Aerospace Engineering",
+    "degree": "M.S.",
+    "department": "Aerospace Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "M.S.",
+    "department": "Bioengineering and Biomedical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Chemical Engineering",
+    "degree": "M.S.",
+    "department": "Chemical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Civil Engineering",
+    "degree": "M.S.",
+    "department": "Civil Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Computer Hardware Engineering",
+    "degree": "M.S.",
+    "department": "Computer Hardware Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Electrical Engineering",
+    "degree": "M.S.",
+    "department": "Electrical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Engineering",
+    "degree": "M.S.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Industrial Management",
+    "degree": "M.S.",
+    "department": "Industrial Management",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Materials Engineering",
+    "degree": "M.S.",
+    "department": "Materials Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Operations Research",
+    "degree": "M.S.",
+    "department": "Operations Research",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Polymer Science and Engineering",
+    "degree": "M.S.",
+    "department": "Polymer Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Systems Engineering",
+    "degree": "M.S.",
+    "department": "Systems Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Comparative Literature",
+    "degree": "M.S.",
+    "department": "Comparative Literature",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "English",
+    "degree": "M.A.",
+    "department": "English",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/engl/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "English",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/engl/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Geology and Earth Science",
+    "degree": "M.S.",
+    "department": "Geology and Earth Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Earth, Environmental, and Planetary Sciences",
+    "degree": "M.S.",
+    "department": "Earth, Environmental, and Planetary Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/eeps/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Earth, Environmental, and Planetary Sciences",
+    "degree": "Ph.D.",
+    "department": "Earth, Environmental, and Planetary Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/eeps/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Accounting",
+    "degree": "M.S.",
+    "department": "Accounting",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Finance",
+    "degree": "M.S.",
+    "department": "Finance",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "French Language and Literature",
+    "degree": "M.S.",
+    "department": "French Language and Literature",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Healthcare Management",
+    "degree": "M.S.",
+    "department": "Healthcare Management",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Audiology and Speech-Language Pathology",
+    "degree": "M.S.",
+    "department": "Audiology and Speech-Language Pathology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Genetic Counseling",
+    "degree": "M.S.",
+    "department": "Genetic Counseling",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Medical Illustration and Informatics",
+    "degree": "M.S.",
+    "department": "Medical Illustration and Informatics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Medical Scientist",
+    "degree": "M.S.",
+    "department": "Medical Scientist",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Art History",
+    "degree": "M.A.",
+    "department": "Art History",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/arth/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Art History",
+    "degree": "Ph.D.",
+    "department": "Art History",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/arth/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Art History and Museum Studies",
+    "degree": "M.A.",
+    "department": "Art History",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/arth/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "History",
+    "degree": "M.S.",
+    "department": "History",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Music History and Literature",
+    "degree": "M.S.",
+    "department": "Music History and Literature",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Intellectual Property Law",
+    "degree": "M.S.",
+    "department": "Intellectual Property Law",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "International Law",
+    "degree": "M.S.",
+    "department": "International Law",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Law",
+    "degree": "M.S.",
+    "department": "Law",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Legal Studies",
+    "degree": "M.S.",
+    "department": "Legal Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Programs for Foreign Lawyers",
+    "degree": "M.S.",
+    "department": "Programs for Foreign Lawyers",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Computational and Applied Mathematics",
+    "degree": "M.S.",
+    "department": "Computational and Applied Mathematics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Financial Mathematics",
+    "degree": "M.S.",
+    "department": "Financial Mathematics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Mathematics and Statistics",
+    "degree": "M.S.",
+    "department": "Mathematics and Statistics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "Statistics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Anesthesiologist Assistant",
+    "degree": "M.S.",
+    "department": "Anesthesiologist Assistant",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Music",
+    "degree": "M.S.",
+    "department": "Music",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Community Nursing",
+    "degree": "M.S.",
+    "department": "Community Nursing",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Critical Care Nursing",
+    "degree": "M.S.",
+    "department": "Critical Care Nursing",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Geriatric Nursing",
+    "degree": "M.S.",
+    "department": "Geriatric Nursing",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Mental Health Nursing",
+    "degree": "M.S.",
+    "department": "Mental Health Nursing",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Midwifery Nursing",
+    "degree": "M.S.",
+    "department": "Midwifery Nursing",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Neonatal Nursing",
+    "degree": "M.S.",
+    "department": "Neonatal Nursing",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Nurse Anesthetist",
+    "degree": "M.S.",
+    "department": "Nurse Anesthetist",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Nursing",
+    "degree": "M.S.",
+    "department": "Nursing",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Nursing Science",
+    "degree": "M.S.",
+    "department": "Nursing Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Education",
+    "degree": "M.S.",
+    "department": "Education",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "and Practice",
+    "degree": "M.S.",
+    "department": "and Practice",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Pediatric Nursing",
+    "degree": "M.S.",
+    "department": "Pediatric Nursing",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Women's Health Nursing",
+    "degree": "M.S.",
+    "department": "Women's Health Nursing",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Nutrition Studies",
+    "degree": "M.S.",
+    "department": "Nutrition Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Dance",
+    "degree": "M.S.",
+    "department": "Dance",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Drama and Theatre Production",
+    "degree": "M.S.",
+    "department": "Drama and Theatre Production",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Bioethics",
+    "degree": "M.S.",
+    "department": "Bioethics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Philosophy",
+    "degree": "M.S.",
+    "department": "Philosophy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Physician Assistant",
+    "degree": "M.S.",
+    "department": "Physician Assistant",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Astronomy and Astrophysics",
+    "degree": "M.S.",
+    "department": "Astronomy and Astrophysics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "Physics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Political Science and Government",
+    "degree": "M.S.",
+    "department": "Political Science and Government",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Cognitive Science",
+    "degree": "M.S.",
+    "department": "Cognitive Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Psychological Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/psychsciences/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Psychology (Clinical)",
+    "degree": "Ph.D.",
+    "department": "Psychological Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/psychsciences/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Psychology (Developmental, Cognitive, and Affective Sciences)",
+    "degree": "Ph.D.",
+    "department": "Psychological Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/psychsciences/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Non-Profit and Public Management",
+    "degree": "M.S.",
+    "department": "Non-Profit and Public Management",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Environmental Health",
+    "degree": "M.S.",
+    "department": "Environmental Health",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Public Health",
+    "degree": "M.S.",
+    "department": "Public Health",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Religious Studies",
+    "degree": "M.S.",
+    "department": "Religious Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/gradstudies/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Social Work",
+    "degree": "M.S.W.",
+    "department": "Jack, Joseph and Morton Mandel School of Applied Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/socialwork/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Social Work",
+    "degree": "Ph.D.",
+    "department": "Jack, Joseph and Morton Mandel School of Applied Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/socialwork/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Contemporary Dance",
+    "degree": "M.F.A.",
+    "department": "Dance",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/danc/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Contemporary Dance",
+    "degree": "M.A.",
+    "department": "Dance",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/danc/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Nursing",
+    "degree": "Ph.D.",
+    "department": "Frances Payne Bolton School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/nursing/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Social Welfare",
+    "degree": "Ph.D.",
+    "department": "Jack, Joseph and Morton Mandel School of Applied Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/socialwork/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Musicology",
+    "degree": "Ph.D.",
+    "department": "Music",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/music/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Music, Historical Performance Practice",
+    "degree": "M.A.",
+    "department": "Music",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/music/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Music, Historical Performance Practice",
+    "degree": "M.A.",
+    "department": "Music",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/music/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Clinical Research Scholars Program (CRSP)",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/medicine/crsp/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Clinical Translational Science",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/medicine/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Epidemiology and Biostatistics",
+    "degree": "Ph.D.",
+    "department": "Population and Quantitative Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/medicine/pqhs/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Genetic Counseling Training Program",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/medicine/genetics/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Medical Physiology",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/medicine/physiology/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Theater / Acting",
+    "degree": "M.F.A.",
+    "department": "Theater",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/artsci/thtr/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Systems Biology and Bioinformatics",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/medicine/dbts/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Systems Biology and Bioinformatics",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/medicine/dbts/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Accountancy",
+    "degree": "Ph.D.",
+    "department": "Weatherhead School of Management",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://weatherhead.case.edu/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Design and Innovation",
+    "degree": "Ph.D.",
+    "department": "Weatherhead School of Management",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://weatherhead.case.edu/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Designing Sustainable Systems",
+    "degree": "Ph.D.",
+    "department": "Weatherhead School of Management",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://weatherhead.case.edu/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Organizational Behavior",
+    "degree": "Ph.D.",
+    "department": "Weatherhead School of Management",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://weatherhead.case.edu/"
+  },
+  {
+    "universityId": "Case Western Reserve University",
+    "name": "Aerospace Physiology",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-20"
+    },
+    "website": "https://case.edu/medicine/physiology/"
+  }
+]

@@ -1,0 +1,1218 @@
+[
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Feminist Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Feminist Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Hispanic Languages and Literatures",
+    "degree": "Ph.D.",
+    "department": "Department of Hispanic Languages and Literatures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Molecular, Cellular & Developmental Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Molecular, Cellular & Developmental Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Ecology, Evolution & Marine Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Ecology, Evolution & Marine Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Marine Science",
+    "degree": "Ph.D.",
+    "department": "Department of Marine Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Dynamical Neuroscience",
+    "degree": "Ph.D.",
+    "department": "Department of Dynamical Neuroscience",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Technology Management",
+    "degree": "Ph.D.",
+    "department": "Department of Technology Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Materials",
+    "degree": "Ph.D.",
+    "department": "Department of Materials",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Communication",
+    "degree": "Ph.D.",
+    "department": "Department of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Media Arts and Technology",
+    "degree": "Ph.D.",
+    "department": "Department of Media Arts and Technology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Education",
+    "degree": "Ph.D.",
+    "department": "Department of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Chemical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Electrical & Computer Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Electrical & Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Comparative Literature",
+    "degree": "Ph.D.",
+    "department": "Department of Comparative Literature",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Environmental Science & Management",
+    "degree": "Ph.D.",
+    "department": "Bren School of Environmental Science & Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Earth Science",
+    "degree": "Ph.D.",
+    "department": "Department of Earth Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Film and Media Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Film and Media Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "East Asian Languages and Cultural Studies",
+    "degree": "Ph.D.",
+    "department": "Department of East Asian Languages and Cultural Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Linguistics",
+    "degree": "Ph.D.",
+    "department": "Department of Linguistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Geography",
+    "degree": "Ph.D.",
+    "department": "Department of Geography",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Geography, Joint Program SDSU",
+    "degree": "Ph.D.",
+    "department": "Department of Geography",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "History of Art and Architecture",
+    "degree": "Ph.D.",
+    "department": "Department of History of Art and Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "History, Joint Program CSUS",
+    "degree": "Ph.D.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Classics",
+    "degree": "Ph.D.",
+    "department": "Department of Classics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Music",
+    "degree": "Ph.D.",
+    "department": "Department of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Global Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Global Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Statistics and Applied Probability",
+    "degree": "Ph.D.",
+    "department": "Department of Statistics and Applied Probability",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Theater, Dance, and Performance Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Theater, Dance, and Performance Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Department of Philosophy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Department of Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Psychological & Brain Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Psychological & Brain Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Religious Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Religious Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Counseling, Clinical & School Psychology",
+    "degree": "Ph.D.",
+    "department": "Department of Counseling, Clinical & School Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Chicana and Chicano Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Chicana and Chicano Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Bioengineering",
+    "degree": "Ph.D.",
+    "department": "Department of Bioengineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Interdisciplinary Program in Quantitative Biosciences",
+    "degree": "Ph.D.",
+    "department": "Interdisciplinary Program in Quantitative Biosciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Actuarial Science",
+    "degree": "M.S.",
+    "department": "Department of Actuarial Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Applied Mathematics",
+    "degree": "M.A.",
+    "department": "Department of Applied Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Art",
+    "degree": "M.F.A.",
+    "department": "Department of Art",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Asian Studies",
+    "degree": "M.A.",
+    "department": "Department of Asian Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Latin American and Iberian Studies",
+    "degree": "M.A.",
+    "department": "Department of Latin American and Iberian Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Marine Science",
+    "degree": "M.S.",
+    "department": "Department of Marine Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Mathematics",
+    "degree": "M.A.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Media Arts and Technology",
+    "degree": "M.S.",
+    "department": "Department of Media Arts and Technology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Materials",
+    "degree": "M.S.",
+    "department": "Department of Materials",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Electrical & Computer Engineering",
+    "degree": "M.S.",
+    "department": "Department of Electrical & Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Earth Science",
+    "degree": "M.S.",
+    "department": "Department of Earth Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Ecology, Evolution & Marine Biology",
+    "degree": "M.S.",
+    "department": "Department of Ecology, Evolution & Marine Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Molecular, Cellular & Developmental Biology",
+    "degree": "M.S.",
+    "department": "Department of Molecular, Cellular & Developmental Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Music",
+    "degree": "M.A.",
+    "department": "Department of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Music",
+    "degree": "M.M.",
+    "department": "Department of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Religious Studies",
+    "degree": "M.A.",
+    "department": "Department of Religious Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Statistics",
+    "degree": "M.A.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Theater, Dance, and Performance Studies",
+    "degree": "M.A.",
+    "department": "Department of Theater, Dance, and Performance Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Technology Management",
+    "degree": "M.T.M.",
+    "department": "Department of Technology Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Education",
+    "degree": "M.A.",
+    "department": "Department of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Education - Teacher Education Program",
+    "degree": "M.Ed.",
+    "department": "Department of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Counseling, Clinical & School Psychology",
+    "degree": "M.Ed.",
+    "department": "Department of Counseling, Clinical & School Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Environmental Science & Management",
+    "degree": "M.E.D.S.",
+    "department": "Bren School of Environmental Science & Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Environmental Science & Management",
+    "degree": "M.E.S.M.",
+    "department": "Bren School of Environmental Science & Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Global Studies",
+    "degree": "M.A.",
+    "department": "Department of Global Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Geography",
+    "degree": "M.A.",
+    "department": "Department of Geography",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "History of Art and Architecture",
+    "degree": "M.A.",
+    "department": "Department of History of Art and Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  },
+  {
+    "universityId": "University of California, Santa Barbara",
+    "name": "Linguistics",
+    "degree": "M.A.",
+    "department": "Department of Linguistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-01-02"
+    },
+    "website": "https://www.graddiv.ucsb.edu/graduate-programs/departments"
+  }
+]

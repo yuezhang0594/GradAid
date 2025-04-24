@@ -1,0 +1,3810 @@
+[
+  {
+    "universityId": "Boston University",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Archaeology",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Minority and Ethnic Studies",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Anatomy",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Biochemistry and Molecular Biology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Bioinformatics",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Biomedical Sciences and Molecular Medicine",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Biophysics",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Biostatistics",
+    "degree": "Ph.D.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Cellular Biology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Epidemiology",
+    "degree": "Ph.D.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Genetics and Genomics",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Microbiology and Immunology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Pathology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Pharmacology and Toxicology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Physiology and Pathology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Business Support Services",
+    "degree": "Ph.D.",
+    "department": "Questrom School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Digital Communication and Media/Multimedia",
+    "degree": "Ph.D.",
+    "department": "College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Advanced Dentistry and Oral Sciences",
+    "degree": "Ph.D.",
+    "department": "Goldman School of Dental Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Dentistry",
+    "degree": "Ph.D.",
+    "department": "Goldman School of Dental Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Economics and Econometrics",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Educational Administration",
+    "degree": "Ph.D.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Music Teacher Education",
+    "degree": "Ph.D.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "School Counseling and Guidance Services",
+    "degree": "Ph.D.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Special Education and Teaching",
+    "degree": "Ph.D.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Teaching",
+    "degree": "Ph.D.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Computer Hardware Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Materials Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Systems Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "English Language Studies",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Geology and Earth Science",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "French Language and Literature",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Spanish Language and Literature",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Geography",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Healthcare Management",
+    "degree": "Ph.D.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Audiology and Speech-Language Pathology",
+    "degree": "Ph.D.",
+    "department": "College of Health & Rehabilitation Sciences: Sargent College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Maternal and Child Health",
+    "degree": "Ph.D.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Medical Scientist",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Art History",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Music History and Literature",
+    "degree": "Ph.D.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Alternative Therapy",
+    "degree": "Ph.D.",
+    "department": "College of Health & Rehabilitation Sciences: Sargent College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Occupational Therapy",
+    "degree": "Ph.D.",
+    "department": "College of Health & Rehabilitation Sciences: Sargent College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Physical Therapy",
+    "degree": "Ph.D.",
+    "department": "College of Health & Rehabilitation Sciences: Sargent College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Law",
+    "degree": "Ph.D.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Liberal Arts and Humanities",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Financial Mathematics",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Mathematics and Statistics",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Medicine",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Conducting",
+    "degree": "Ph.D.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Musical Instruments",
+    "degree": "Ph.D.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Music Performance",
+    "degree": "Ph.D.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Music Theory and Composition",
+    "degree": "Ph.D.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Nutrition Studies",
+    "degree": "Ph.D.",
+    "department": "College of Health & Rehabilitation Sciences: Sargent College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Astronomy and Astrophysics",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Political Science and Government",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Counseling Psychology",
+    "degree": "Ph.D.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Public Administration",
+    "degree": "Ph.D.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Environmental Health",
+    "degree": "Ph.D.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Public Health",
+    "degree": "Ph.D.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Divinity",
+    "degree": "Ph.D.",
+    "department": "School of Theology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Ministry",
+    "degree": "Ph.D.",
+    "department": "School of Theology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "and Pre-Theology",
+    "degree": "Ph.D.",
+    "department": "School of Theology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Religious Studies",
+    "degree": "Ph.D.",
+    "department": "School of Theology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Theological and Ministerial Studies",
+    "degree": "Ph.D.",
+    "department": "School of Theology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Social Sciences and Research Methods",
+    "degree": "Ph.D.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Social Work",
+    "degree": "Ph.D.",
+    "department": "School of Social Work",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "African American Studies",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Anthropology",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Archaeology",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Child Development",
+    "degree": "M.Ed.",
+    "department": "Wheelock College of Education & Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Minority and Ethnic Studies",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Sociology",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Arts",
+    "degree": "M.F.A.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Entertainment",
+    "degree": "M.F.A.",
+    "department": "College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "and Media Management",
+    "degree": "M.S.",
+    "department": "College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Fine and Studio Arts Management",
+    "degree": "M.F.A.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Anatomy",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Biochemistry and Molecular Biology",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Bioinformatics",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Biology",
+    "degree": "M.S.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Biomedical Sciences and Molecular Medicine",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Biostatistics",
+    "degree": "M.P.H.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Biotechnology",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Cellular Biology",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Epidemiology",
+    "degree": "M.P.H.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Microbiology and Immunology",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Pathology",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Physiology and Pathology",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Business",
+    "degree": "M.B.A.",
+    "department": "Questrom School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Business Analytics",
+    "degree": "M.S.",
+    "department": "Questrom School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Business Support Services",
+    "degree": "M.B.A.",
+    "department": "Questrom School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Hotel and Hospitality Management",
+    "degree": "M.M.H.",
+    "department": "School of Hospitality Administration",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Human Resources",
+    "degree": "M.S.",
+    "department": "Questrom School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Insurance",
+    "degree": "M.S.",
+    "department": "Questrom School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Logistics and Supply Chain Management",
+    "degree": "M.S.",
+    "department": "Questrom School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Marketing",
+    "degree": "M.S.",
+    "department": "Questrom School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Advertising",
+    "degree": "M.S.",
+    "department": "College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Communications",
+    "degree": "M.S.",
+    "department": "College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Digital Communication and Media/Multimedia",
+    "degree": "M.S.",
+    "department": "College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Journalism",
+    "degree": "M.S.",
+    "department": "College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Public Relations",
+    "degree": "M.S.",
+    "department": "College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Radio and Television",
+    "degree": "M.F.A.",
+    "department": "College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Artificial Intelligence",
+    "degree": "M.S.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Computer Software Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Information Science",
+    "degree": "M.S.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Criminal Justice and Corrections",
+    "degree": "M.S.",
+    "department": "Metropolitan College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Criminal Justice and Law Enforcement Administration",
+    "degree": "M.S.",
+    "department": "Metropolitan College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Criminal Justice and Safety Studies",
+    "degree": "M.S.",
+    "department": "Metropolitan College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Forensic Science and Technology",
+    "degree": "M.S.",
+    "department": "Metropolitan College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Advanced Dentistry and Oral Sciences",
+    "degree": "M.S.",
+    "department": "Goldman School of Dental Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Graphic Design",
+    "degree": "M.F.A.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Economic Development",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Economics",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Economics and Econometrics",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Art Teacher Education",
+    "degree": "M.Ed.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Early Childhood Education",
+    "degree": "M.Ed.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Educational Administration",
+    "degree": "M.Ed.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Education Research and Evaluation",
+    "degree": "M.Ed.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Elementary Education",
+    "degree": "M.Ed.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "English and Reading Teacher Education",
+    "degree": "M.Ed.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Foreign Language Teacher Education",
+    "degree": "M.Ed.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Health Teacher Education",
+    "degree": "M.Ed.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Kindergarten and Preschool Education",
+    "degree": "M.Ed.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Mathematics Teacher Education",
+    "degree": "M.Ed.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Music Teacher Education",
+    "degree": "M.Ed.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Physical Education Teaching and Coaching",
+    "degree": "M.Ed.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "School Counseling and Guidance Services",
+    "degree": "M.Ed.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Science Teacher Education",
+    "degree": "M.Ed.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Social Studies Teacher Education",
+    "degree": "M.Ed.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Special Education and Teaching",
+    "degree": "M.Ed.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Specialized Teaching and Education",
+    "degree": "M.Ed.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Teaching",
+    "degree": "M.Ed.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Teaching English as a Second Language",
+    "degree": "M.Ed.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Computer Hardware Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Electrical Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Manufacturing Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Materials Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Robotics and Automation Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Systems Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Systems Science and Theory",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Comparative Literature",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Creative Writing",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "English Language Studies",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Playwriting and Screenwriting",
+    "degree": "M.F.A.",
+    "department": "College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Geology and Earth Science",
+    "degree": "M.S.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Cinematography and Video Production",
+    "degree": "M.F.A.",
+    "department": "College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Actuarial Science",
+    "degree": "M.S.",
+    "department": "Metropolitan College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Finance",
+    "degree": "M.S.",
+    "department": "Questrom School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Taxation",
+    "degree": "M.S.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Fine Arts",
+    "degree": "M.F.A.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "French Language and Literature",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Linguistics",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Interpretation",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "and Translation",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Spanish Language and Literature",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Geography",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Latin American Studies",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Healthcare Management",
+    "degree": "M.P.H.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Audiology and Speech-Language Pathology",
+    "degree": "M.S.",
+    "department": "College of Health & Rehabilitation Sciences: Sargent College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Genetic Counseling",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Health Professions and Related Clinical Sciences",
+    "degree": "M.S.",
+    "department": "College of Health & Rehabilitation Sciences: Sargent College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Health Services and Related Clinical Sciences",
+    "degree": "M.S.",
+    "department": "College of Health & Rehabilitation Sciences: Sargent College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Maternal and Child Health",
+    "degree": "M.P.H.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Medical Scientist",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Art History",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Historic Preservation and Conservation",
+    "degree": "M.A.",
+    "department": "Metropolitan College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Music History and Literature",
+    "degree": "M.A.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Computer and Information Systems Security",
+    "degree": "M.S.",
+    "department": "Metropolitan College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Computer Systems Networking and Telecommunications",
+    "degree": "M.S.",
+    "department": "Metropolitan College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Network",
+    "degree": "M.S.",
+    "department": "Metropolitan College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Database",
+    "degree": "M.S.",
+    "department": "Metropolitan College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "and System Administration",
+    "degree": "M.S.",
+    "department": "Metropolitan College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "International Affairs",
+    "degree": "M.A.",
+    "department": "Frederick S. Pardee School of Global Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Alternative Therapy",
+    "degree": "M.S.",
+    "department": "College of Health & Rehabilitation Sciences: Sargent College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Athletic Training",
+    "degree": "M.S.",
+    "department": "College of Health & Rehabilitation Sciences: Sargent College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Occupational Therapy",
+    "degree": "M.S.",
+    "department": "College of Health & Rehabilitation Sciences: Sargent College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "International Law",
+    "degree": "M.S.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Legal Studies",
+    "degree": "M.S.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Programs for Foreign Lawyers",
+    "degree": "M.S.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Tax Law",
+    "degree": "M.S.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Liberal Arts and Humanities",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Financial Mathematics",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Mathematics and Statistics",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Statistics",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Radiologic Technology",
+    "degree": "M.S.",
+    "department": "College of Health & Rehabilitation Sciences: Sargent College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Conducting",
+    "degree": "M.F.A.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Musical Instruments",
+    "degree": "M.F.A.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Music Performance",
+    "degree": "M.F.A.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Music Theory and Composition",
+    "degree": "M.F.A.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Food Science",
+    "degree": "M.S.",
+    "department": "College of Health & Rehabilitation Sciences: Sargent College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Nutrition Studies",
+    "degree": "M.S.",
+    "department": "College of Health & Rehabilitation Sciences: Sargent College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Drama and Theatre Production",
+    "degree": "M.F.A.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Theatre Design",
+    "degree": "M.F.A.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Bioethics",
+    "degree": "M.A.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Philosophy",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Astronomy and Astrophysics",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Physics",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Political Science and Government",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Clinical Psychology",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Psychology",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Non-Profit and Public Management",
+    "degree": "M.A.",
+    "department": "Metropolitan College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Public Administration",
+    "degree": "M.P.H.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Public Policy Analysis",
+    "degree": "M.P.H.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Urban",
+    "degree": "M.A.",
+    "department": "Metropolitan College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Community and Regional Planning",
+    "degree": "M.A.",
+    "department": "Metropolitan College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Urban Studies and Affairs",
+    "degree": "M.A.",
+    "department": "Metropolitan College",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Environmental Health",
+    "degree": "M.P.H.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Public Health",
+    "degree": "M.P.H.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Public Health Education",
+    "degree": "M.P.H.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Biblical Studies",
+    "degree": "M.Div.",
+    "department": "School of Theology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Divinity",
+    "degree": "M.Div.",
+    "department": "School of Theology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Ministry",
+    "degree": "M.Div.",
+    "department": "School of Theology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "and Pre-Theology",
+    "degree": "M.T.S.",
+    "department": "School of Theology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Religious Studies",
+    "degree": "M.T.S.",
+    "department": "School of Theology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Religious Vocations",
+    "degree": "M.Div.",
+    "department": "School of Theology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Theological and Ministerial Studies",
+    "degree": "M.T.S.",
+    "department": "School of Theology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Social Sciences and Research Methods",
+    "degree": "M.A.",
+    "department": "College of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  },
+  {
+    "universityId": "Boston University",
+    "name": "Social Work",
+    "degree": "M.S.W.",
+    "department": "School of Social Work",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.bu.edu/grad/"
+  }
+]

@@ -1,0 +1,2166 @@
+[
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Advanced Architectural Design",
+    "degree": "M.A.A.D.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://soa.utexas.edu/apply/graduate-admissions/application-instructions/master-advanced-architectural-design"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Architectural History",
+    "degree": "M.A.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://soa.utexas.edu/graduate-admissions/architectural-history"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Architectural Studies",
+    "degree": "M.S.A.S.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://soa.utexas.edu/graduate-admissions"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Architecture",
+    "degree": "Ph.D.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "http://soa.utexas.edu/apply/graduate-admissions/application-instructions/phd-architecture"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Architecture - First Professional",
+    "degree": "M.Arch.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://soa.utexas.edu/apply/graduate-admissions/application-instructions/master-architecture-first-professional"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Community & Regional Planning",
+    "degree": "M.S.C.R.P.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://soa.utexas.edu/graduate-admissions/planning"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Community & Regional Planning",
+    "degree": "Ph.D.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "http://soa.utexas.edu/apply/graduate-admissions/application-instructions/phd-community-and-regional-planning"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Historic Preservation",
+    "degree": "M.S.H.P.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://soa.utexas.edu/graduate-admissions/historic-preservation"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Interior Design - First Professional",
+    "degree": "M.I.D.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://soa.utexas.edu/graduate-admissions/interior-design-first-professional"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Interior Design - Post Professional",
+    "degree": "M.I.D.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://soa.utexas.edu/graduate-admissions/interior-design-post-professional"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Landscape Architecture - First Professional",
+    "degree": "M.L.A.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://soa.utexas.edu/graduate-admissions/mla-first-professional"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Landscape Architecture - Post Professional",
+    "degree": "M.S.L.A.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://soa.utexas.edu/landscape-architecture/post-professional"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Sustainable Design",
+    "degree": "M.S.S.D.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "http://soa.utexas.edu/node/6825"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Urban Design",
+    "degree": "M.S.U.D.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://soa.utexas.edu/graduate-admissions/urban-design"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Accounting",
+    "degree": "Ph.D.",
+    "department": "McCombs School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "http://www.mccombs.utexas.edu/Departments/Accounting/Degree-Programs/Doctoral.aspx"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Accounting",
+    "degree": "M.P.A.",
+    "department": "McCombs School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 14"
+    },
+    "website": "https://www.mccombs.utexas.edu/MPA"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Business Administration",
+    "degree": "M.B.A.",
+    "department": "McCombs School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "April 1"
+    },
+    "website": "https://www.mccombs.utexas.edu/graduate/mba/full-time-mba/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Business Administration - Dallas",
+    "degree": "M.B.A.",
+    "department": "McCombs School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "May 30"
+    },
+    "website": "https://www.mccombs.utexas.edu/graduate/mba/mba-at-dallas-fort-worth/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Business Administration - Executive",
+    "degree": "M.B.A.",
+    "department": "McCombs School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "May 30"
+    },
+    "website": "https://www.mccombs.utexas.edu/graduate/mba/executive-mba/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Business Administration - Houston",
+    "degree": "M.B.A.",
+    "department": "McCombs School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "May 30"
+    },
+    "website": "https://www.mccombs.utexas.edu/graduate/mba/mba-at-houston/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Advertising",
+    "degree": "M.A.",
+    "department": "Moody College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://advertising.utexas.edu/graduate-program/masters-program"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Advertising",
+    "degree": "Ph.D.",
+    "department": "Moody College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://advertising.utexas.edu/graduate-program/phd-program"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Communication Sciences and Disorders",
+    "degree": "M.A.",
+    "department": "Moody College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://csd.utexas.edu/graduate/master-arts"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Communication Sciences and Disorders",
+    "degree": "Ph.D.",
+    "department": "Moody College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://csd.utexas.edu/graduate/doctor-philosophy"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Communication Studies",
+    "degree": "M.A.",
+    "department": "Moody College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://commstudies.utexas.edu/graduate/masters-program"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Communication Studies",
+    "degree": "Ph.D.",
+    "department": "Moody College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://commstudies.utexas.edu/graduate/doctoral-program"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Journalism",
+    "degree": "M.A.",
+    "department": "Moody College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://journalism.utexas.edu/graduate/masters-program"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Journalism",
+    "degree": "Ph.D.",
+    "department": "Moody College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://journalism.utexas.edu/graduate/doctoral-program"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Radio-Television-Film",
+    "degree": "M.A.",
+    "department": "Moody College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://rtf.utexas.edu/graduate/master-arts"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Radio-Television-Film",
+    "degree": "M.F.A.",
+    "department": "Moody College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://rtf.utexas.edu/graduate/master-fine-arts"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Radio-Television-Film",
+    "degree": "Ph.D.",
+    "department": "Moody College of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://rtf.utexas.edu/graduate/doctor-philosophy"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Curriculum and Instruction",
+    "degree": "M.A.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1",
+      "spring": "October 1"
+    },
+    "website": "https://education.utexas.edu/departments/curriculum-instruction/graduate-programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Curriculum and Instruction",
+    "degree": "M.Ed.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1",
+      "spring": "October 1"
+    },
+    "website": "https://education.utexas.edu/departments/curriculum-instruction/graduate-programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Curriculum and Instruction",
+    "degree": "Ph.D.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://education.utexas.edu/departments/curriculum-instruction/graduate-programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Educational Leadership and Policy",
+    "degree": "M.Ed.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1",
+      "spring": "October 1"
+    },
+    "website": "https://education.utexas.edu/departments/educational-leadership-policy/graduate-programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Educational Leadership and Policy",
+    "degree": "Ed.D.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://education.utexas.edu/departments/educational-leadership-policy/graduate-programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Educational Leadership and Policy",
+    "degree": "Ph.D.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://education.utexas.edu/departments/educational-leadership-policy/graduate-programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Educational Psychology",
+    "degree": "M.A.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://education.utexas.edu/departments/educational-psychology/graduate-programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Educational Psychology",
+    "degree": "M.Ed.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://education.utexas.edu/departments/educational-psychology/graduate-programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Educational Psychology",
+    "degree": "Ph.D.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://education.utexas.edu/departments/educational-psychology/graduate-programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Kinesiology and Health Education",
+    "degree": "M.Ed.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1",
+      "spring": "October 1"
+    },
+    "website": "https://education.utexas.edu/departments/kinesiology-health-education/graduate-programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Kinesiology and Health Education",
+    "degree": "M.S.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1",
+      "spring": "October 1"
+    },
+    "website": "https://education.utexas.edu/departments/kinesiology-health-education/graduate-programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Kinesiology and Health Education",
+    "degree": "Ph.D.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://education.utexas.edu/departments/kinesiology-health-education/graduate-programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Science, Technology, Engineering, and Mathematics Education",
+    "degree": "M.A.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1",
+      "spring": "October 1"
+    },
+    "website": "https://education.utexas.edu/departments/curriculum-instruction/graduate-programs/stem-education"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Science, Technology, Engineering, and Mathematics Education",
+    "degree": "M.Ed.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1",
+      "spring": "October 1"
+    },
+    "website": "https://education.utexas.edu/departments/curriculum-instruction/graduate-programs/stem-education"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Science, Technology, Engineering, and Mathematics Education",
+    "degree": "Ph.D.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://education.utexas.edu/departments/curriculum-instruction/graduate-programs/stem-education"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Special Education",
+    "degree": "M.A.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1",
+      "spring": "October 1"
+    },
+    "website": "https://education.utexas.edu/departments/special-education/graduate-programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Special Education",
+    "degree": "M.Ed.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1",
+      "spring": "October 1"
+    },
+    "website": "https://education.utexas.edu/departments/special-education/graduate-programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Special Education",
+    "degree": "Ph.D.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://education.utexas.edu/departments/special-education/graduate-programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Aerospace Engineering",
+    "degree": "M.S.E.",
+    "department": "Cockrell School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "September 1"
+    },
+    "website": "https://www.ae.utexas.edu/graduate/prospective-students"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Aerospace Engineering",
+    "degree": "Ph.D.",
+    "department": "Cockrell School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "September 1"
+    },
+    "website": "https://www.ae.utexas.edu/graduate/prospective-students"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Biomedical Engineering",
+    "degree": "M.S.E.",
+    "department": "Cockrell School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.bme.utexas.edu/graduate-program"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "Cockrell School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.bme.utexas.edu/graduate-program"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Chemical Engineering",
+    "degree": "M.S.E.",
+    "department": "Cockrell School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "September 1"
+    },
+    "website": "https://che.utexas.edu/academics/graduate-program/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "Cockrell School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "September 1"
+    },
+    "website": "https://che.utexas.edu/academics/graduate-program/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Civil Engineering",
+    "degree": "M.S.E.",
+    "department": "Cockrell School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "September 1"
+    },
+    "website": "https://www.caee.utexas.edu/graduate/prospective"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Civil Engineering",
+    "degree": "Ph.D.",
+    "department": "Cockrell School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "September 1"
+    },
+    "website": "https://www.caee.utexas.edu/graduate/prospective"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Electrical and Computer Engineering",
+    "degree": "M.S.E.",
+    "department": "Cockrell School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "September 1"
+    },
+    "website": "https://www.ece.utexas.edu/academics/graduate"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Electrical and Computer Engineering",
+    "degree": "Ph.D.",
+    "department": "Cockrell School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "September 1"
+    },
+    "website": "https://www.ece.utexas.edu/academics/graduate"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Engineering Management",
+    "degree": "M.S.E.",
+    "department": "Cockrell School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "September 1"
+    },
+    "website": "https://www.engr.utexas.edu/graduate/programs/engineering-management"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Environmental Engineering",
+    "degree": "M.S.E.",
+    "department": "Cockrell School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "September 1"
+    },
+    "website": "https://www.caee.utexas.edu/graduate/prospective"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "Cockrell School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "September 1"
+    },
+    "website": "https://www.caee.utexas.edu/graduate/prospective"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Materials Science and Engineering",
+    "degree": "M.S.E.",
+    "department": "Cockrell School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "September 1"
+    },
+    "website": "https://www.tmi.utexas.edu/academics/graduate-program/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Materials Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "Cockrell School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "September 1"
+    },
+    "website": "https://www.tmi.utexas.edu/academics/graduate-program/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.E.",
+    "department": "Cockrell School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "September 1"
+    },
+    "website": "https://www.me.utexas.edu/graduate"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "Cockrell School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "September 1"
+    },
+    "website": "https://www.me.utexas.edu/graduate"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Operations Research and Industrial Engineering",
+    "degree": "M.S.E.",
+    "department": "Cockrell School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "September 1"
+    },
+    "website": "https://www.caee.utexas.edu/graduate/areas/orie"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Operations Research and Industrial Engineering",
+    "degree": "Ph.D.",
+    "department": "Cockrell School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "September 1"
+    },
+    "website": "https://www.caee.utexas.edu/graduate/areas/orie"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Petroleum Engineering",
+    "degree": "M.S.E.",
+    "department": "Cockrell School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "September 1"
+    },
+    "website": "https://www.pge.utexas.edu/future/graduate"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Petroleum Engineering",
+    "degree": "Ph.D.",
+    "department": "Cockrell School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "September 1"
+    },
+    "website": "https://www.pge.utexas.edu/future/graduate"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Art Education",
+    "degree": "M.A.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://finearts.utexas.edu/art-education"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Art History",
+    "degree": "M.A.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://finearts.utexas.edu/art-history"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Art History",
+    "degree": "Ph.D.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://finearts.utexas.edu/art-history"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Dance",
+    "degree": "M.F.A.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://finearts.utexas.edu/dance"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Music",
+    "degree": "M.Music",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://music.utexas.edu/apply/graduate-admissions"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Music",
+    "degree": "Ph.D.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://music.utexas.edu/apply/graduate-admissions"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Studio Art",
+    "degree": "M.F.A.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://art.utexas.edu/admissions/graduate"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Theatre",
+    "degree": "M.A.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://theatredance.utexas.edu/graduate"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Theatre",
+    "degree": "M.F.A.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://theatredance.utexas.edu/graduate"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Theatre",
+    "degree": "Ph.D.",
+    "department": "College of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://theatredance.utexas.edu/graduate"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Energy and Earth Resources",
+    "degree": "M.A.",
+    "department": "Jackson School of Geosciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.jsg.utexas.edu/eer/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Geological Sciences",
+    "degree": "M.S.",
+    "department": "Jackson School of Geosciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.jsg.utexas.edu/education/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Geological Sciences",
+    "degree": "Ph.D.",
+    "department": "Jackson School of Geosciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.jsg.utexas.edu/education/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Information Studies",
+    "degree": "M.S.I.S.",
+    "department": "School of Information",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "September 1"
+    },
+    "website": "https://www.ischool.utexas.edu/programs/masters"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Information Studies",
+    "degree": "Ph.D.",
+    "department": "School of Information",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.ischool.utexas.edu/programs/phd"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Anthropology",
+    "degree": "M.A.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/anthropology/graduate/prospective-students/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/anthropology/graduate/prospective-students/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Classics",
+    "degree": "M.A.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/classics/graduate-program/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Classics",
+    "degree": "Ph.D.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/classics/graduate-program/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Comparative Literature",
+    "degree": "M.A.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/complit/graduate-program/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Comparative Literature",
+    "degree": "Ph.D.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/complit/graduate-program/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Economics",
+    "degree": "M.A.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://liberalarts.utexas.edu/economics/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/economics/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "English",
+    "degree": "M.A.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/english/graduate/prospective-students/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/english/graduate/prospective-students/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "French Studies",
+    "degree": "M.A.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/frenchitalian/graduate-programs/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "French Studies",
+    "degree": "Ph.D.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/frenchitalian/graduate-programs/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Geography",
+    "degree": "M.A.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/geography/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Geography",
+    "degree": "Ph.D.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/geography/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Germanic Studies",
+    "degree": "M.A.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/germanic/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Germanic Studies",
+    "degree": "Ph.D.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/germanic/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Government",
+    "degree": "M.A.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/government/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Government",
+    "degree": "Ph.D.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/government/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/history/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/history/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Linguistics",
+    "degree": "M.A.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/linguistics/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Linguistics",
+    "degree": "Ph.D.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/linguistics/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Philosophy",
+    "degree": "M.A.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/philosophy/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/philosophy/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Psychology",
+    "degree": "M.A.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://liberalarts.utexas.edu/psychology/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://liberalarts.utexas.edu/psychology/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Sociology",
+    "degree": "M.A.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/sociology/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "College of Liberal Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://liberalarts.utexas.edu/sociology/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Astronomy",
+    "degree": "M.A.",
+    "department": "College of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://astronomy.utexas.edu/graduate"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Astronomy",
+    "degree": "Ph.D.",
+    "department": "College of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://astronomy.utexas.edu/graduate"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Biochemistry",
+    "degree": "M.A.",
+    "department": "College of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://cns.utexas.edu/graduate-education/programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Biochemistry",
+    "degree": "Ph.D.",
+    "department": "College of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://cns.utexas.edu/graduate-education/programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Cell and Molecular Biology",
+    "degree": "M.A.",
+    "department": "College of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://cns.utexas.edu/graduate-education/programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Cell and Molecular Biology",
+    "degree": "Ph.D.",
+    "department": "College of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://cns.utexas.edu/graduate-education/programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Chemistry",
+    "degree": "M.A.",
+    "department": "College of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1",
+      "spring": "September 1"
+    },
+    "website": "https://cns.utexas.edu/graduate-education/programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "College of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://cns.utexas.edu/graduate-education/programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "College of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "September 1"
+    },
+    "website": "https://www.cs.utexas.edu/graduate/prospective-students"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "College of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.cs.utexas.edu/graduate/prospective-students"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Human Development and Family Sciences",
+    "degree": "M.A.",
+    "department": "College of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.utexas.edu/cola/prc/degrees/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Human Development and Family Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.utexas.edu/cola/prc/degrees/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Mathematics",
+    "degree": "M.A.",
+    "department": "College of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "October 1"
+    },
+    "website": "https://www.ma.utexas.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "College of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ma.utexas.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Microbiology",
+    "degree": "M.A.",
+    "department": "College of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://cns.utexas.edu/graduate-education/programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Microbiology",
+    "degree": "Ph.D.",
+    "department": "College of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://cns.utexas.edu/graduate-education/programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Physics",
+    "degree": "M.A.",
+    "department": "College of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "September 1"
+    },
+    "website": "https://www.ph.utexas.edu/graduate"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "College of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ph.utexas.edu/graduate"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "College of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://stat.utexas.edu/graduate"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "College of Natural Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://stat.utexas.edu/graduate"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Nursing",
+    "degree": "M.S.N.",
+    "department": "School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://nursing.utexas.edu/academics/grad"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Nursing",
+    "degree": "Ph.D.",
+    "department": "School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://nursing.utexas.edu/academics/grad/phd"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Pharmaceutical Sciences",
+    "degree": "M.S.",
+    "department": "College of Pharmacy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://pharmacy.utexas.edu/graduate-programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Pharmaceutical Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Pharmacy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://pharmacy.utexas.edu/graduate-programs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Public Affairs",
+    "degree": "M.P.Aff.",
+    "department": "LBJ School of Public Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://lbj.utexas.edu/master-public-affairs"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Public Policy",
+    "degree": "Ph.D.",
+    "department": "LBJ School of Public Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://lbj.utexas.edu/phd-public-policy"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Global Policy Studies",
+    "degree": "M.G.P.S.",
+    "department": "LBJ School of Public Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://lbj.utexas.edu/master-global-policy-studies"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Social Work",
+    "degree": "M.S.S.W.",
+    "department": "Steve Hicks School of Social Work",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "October 1"
+    },
+    "website": "https://socialwork.utexas.edu/academics/mssw/"
+  },
+  {
+    "universityId": "The University of Texas at Austin",
+    "name": "Social Work",
+    "degree": "Ph.D.",
+    "department": "Steve Hicks School of Social Work",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://socialwork.utexas.edu/academics/phd/"
+  }
+]

@@ -1,0 +1,1394 @@
+[
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Accounting",
+    "degree": "M.S.",
+    "department": "College of Business",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/business/academics/graduate-program/ms-accounting/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Anatomical Sciences",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://medicine.stonybrookmedicine.edu/anatomy"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Anthropological Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/anthropology/graduate/index.php"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Applied Health Informatics",
+    "degree": "M.S.",
+    "department": "School of Health Professions",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://healthprofessions.stonybrookmedicine.edu/programs/ahi"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Applied Mathematics and Statistics",
+    "degree": "M.S.",
+    "department": "Department of Applied Mathematics and Statistics",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/ams/graduate/index.php"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Applied Mathematics and Statistics",
+    "degree": "Ph.D.",
+    "department": "Department of Applied Mathematics and Statistics",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/ams/graduate/index.php"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Art History and Criticism",
+    "degree": "M.A.",
+    "department": "Department of Art",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://art.stonybrook.edu/programs/graduate/art-history-criticism-ma/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Art History and Criticism",
+    "degree": "Ph.D.",
+    "department": "Department of Art",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://art.stonybrook.edu/programs/graduate/art-history-criticism-phd/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Biochemistry and Structural Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Biochemistry and Structural Biology",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/biochemistry/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Biological Sciences",
+    "degree": "M.A.",
+    "department": "Department of Ecology and Evolution",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/biology/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Biomedical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Biomedical Engineering",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/bme/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Biomedical Engineering",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/bme/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Biomedical Informatics",
+    "degree": "M.S.",
+    "department": "Department of Biomedical Informatics",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://bmi.stonybrookmedicine.edu/education"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Biomedical Informatics",
+    "degree": "Ph.D.",
+    "department": "Department of Biomedical Informatics",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://bmi.stonybrookmedicine.edu/education"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Business Administration",
+    "degree": "M.B.A.",
+    "department": "College of Business",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/business/academics/graduate-program/mba/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/chemistry/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/chemistry/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Civil Engineering",
+    "degree": "M.S.",
+    "department": "Department of Civil Engineering",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/civil/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Computer Engineering",
+    "degree": "M.S.",
+    "department": "Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/electrical/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Computer Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/electrical/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.cs.stonybrook.edu/admissions/Graduate-Program"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.cs.stonybrook.edu/admissions/Graduate-Program"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Creative Writing and Literature",
+    "degree": "M.F.A.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/southampton/mfa/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Disability Studies",
+    "degree": "M.A.",
+    "department": "School of Health Professions",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://healthprofessions.stonybrookmedicine.edu/programs/disability"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Ecology and Evolution",
+    "degree": "Ph.D.",
+    "department": "Department of Ecology and Evolution",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/ecoevo/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Economics",
+    "degree": "M.A.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/economics/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/economics/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Electrical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/electrical/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/electrical/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "English",
+    "degree": "M.A.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/english/graduate/ma.html"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/english/graduate/phd.html"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Finance",
+    "degree": "M.S.",
+    "department": "College of Business",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/business/academics/graduate-program/ms-finance/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Genetics",
+    "degree": "Ph.D.",
+    "department": "Department of Genetics",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/genetics/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Geosciences",
+    "degree": "M.S.",
+    "department": "Department of Geosciences",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/geosciences/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Geosciences",
+    "degree": "Ph.D.",
+    "department": "Department of Geosciences",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/geosciences/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Health Administration",
+    "degree": "M.S.",
+    "department": "School of Health Professions",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://healthprofessions.stonybrookmedicine.edu/programs/aha"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Health and Rehabilitation Sciences",
+    "degree": "Ph.D.",
+    "department": "School of Health Professions",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://healthprofessions.stonybrookmedicine.edu/programs/hrs"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Hispanic Languages and Literature",
+    "degree": "M.A.",
+    "department": "Department of Hispanic Languages and Literature",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/hispanic/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Hispanic Languages and Literature",
+    "degree": "Ph.D.",
+    "department": "Department of Hispanic Languages and Literature",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/hispanic/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/history/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/history/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Industrial and Systems Engineering",
+    "degree": "M.S.",
+    "department": "Department of Technology and Society",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/technology-and-society/graduate/industrial-and-systems-engineering/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Liberal Studies",
+    "degree": "M.A.",
+    "department": "School of Professional Development",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/spd/graduate/ma_liberalstudies"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Linguistics",
+    "degree": "M.A.",
+    "department": "Department of Linguistics",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/linguistics/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Linguistics",
+    "degree": "Ph.D.",
+    "department": "Department of Linguistics",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/linguistics/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Management and Policy",
+    "degree": "M.S.",
+    "department": "College of Business",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/business/academics/graduate-program/ms-management-and-policy/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Marine and Atmospheric Sciences",
+    "degree": "M.S.",
+    "department": "School of Marine and Atmospheric Sciences",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.somas.stonybrook.edu/education/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Marine and Atmospheric Sciences",
+    "degree": "Ph.D.",
+    "department": "School of Marine and Atmospheric Sciences",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.somas.stonybrook.edu/education/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Materials Science and Engineering",
+    "degree": "M.S.",
+    "department": "Department of Materials Science and Engineering",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/matscieng/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Materials Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Materials Science and Engineering",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/matscieng/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Mathematics",
+    "degree": "M.A.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/mathematics/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/mathematics/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://me.stonybrook.edu/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://me.stonybrook.edu/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Medical Physics",
+    "degree": "M.S.",
+    "department": "School of Health Professions",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://healthprofessions.stonybrookmedicine.edu/programs/medicalphysics"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Microbiology",
+    "degree": "Ph.D.",
+    "department": "Department of Microbiology and Immunology",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://renaissance.stonybrookmedicine.edu/microbiology/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Molecular and Cellular Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Molecular and Cellular Biology",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/molbio/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Molecular and Cellular Pharmacology",
+    "degree": "Ph.D.",
+    "department": "Department of Pharmacology",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/pharmacology/education/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Music",
+    "degree": "M.A.",
+    "department": "Department of Music",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/music/degree_programs/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Music",
+    "degree": "M.M.",
+    "department": "Department of Music",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/music/degree_programs/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Music",
+    "degree": "D.M.A.",
+    "department": "Department of Music",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/music/degree_programs/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Music",
+    "degree": "Ph.D.",
+    "department": "Department of Music",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/music/degree_programs/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Neuroscience",
+    "degree": "Ph.D.",
+    "department": "Department of Neurobiology and Behavior",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://medicine.stonybrookmedicine.edu/neurobiology"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Nursing",
+    "degree": "Ph.D.",
+    "department": "School of Nursing",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://nursing.stonybrookmedicine.edu/academics/phd"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Occupational Therapy",
+    "degree": "M.S.",
+    "department": "School of Health Professions",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://healthprofessions.stonybrookmedicine.edu/programs/ot"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Philosophy",
+    "degree": "M.A.",
+    "department": "Department of Philosophy",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/philosophy/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Department of Philosophy",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/philosophy/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Physical Therapy",
+    "degree": "D.P.T.",
+    "department": "School of Health Professions",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://healthprofessions.stonybrookmedicine.edu/programs/pt"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Physician Assistant",
+    "degree": "M.S.",
+    "department": "School of Health Professions",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://healthprofessions.stonybrookmedicine.edu/programs/pa"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Physics",
+    "degree": "M.A.",
+    "department": "Department of Physics and Astronomy",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/physics/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "Department of Physics and Astronomy",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/physics/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Department of Physics and Astronomy",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/physics/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Physiology and Biophysics",
+    "degree": "Ph.D.",
+    "department": "Department of Physiology and Biophysics",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/physiology/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Political Science",
+    "degree": "M.A.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/polisci/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/polisci/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Psychology",
+    "degree": "M.A.",
+    "department": "Department of Psychology",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/psychology/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Department of Psychology",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/psychology/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Public Health",
+    "degree": "M.P.H.",
+    "department": "Program in Public Health",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://publichealth.stonybrookmedicine.edu/academics"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Social Work",
+    "degree": "M.S.W.",
+    "department": "School of Social Welfare",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://socialwelfare.stonybrookmedicine.edu/academics/msw"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Social Work",
+    "degree": "Ph.D.",
+    "department": "School of Social Welfare",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://socialwelfare.stonybrookmedicine.edu/academics/phd"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Sociology",
+    "degree": "M.A.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/sociology/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/sociology/graduate/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Studio Art",
+    "degree": "M.F.A.",
+    "department": "Department of Art",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://art.stonybrook.edu/programs/graduate/studio-art-mfa/"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Technology and Society",
+    "degree": "M.S.",
+    "department": "Department of Technology and Society",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/technology-and-society/graduate/masters"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Technology, Policy, and Innovation",
+    "degree": "Ph.D.",
+    "department": "Department of Technology and Society",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/technology-and-society/graduate/phd"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Theatre",
+    "degree": "M.A.",
+    "department": "Department of Theatre Arts",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/theatre-arts/graduate/index.php"
+  },
+  {
+    "universityId": "State University of New York at Stony Brook",
+    "name": "Women's, Gender, and Sexuality Studies",
+    "degree": "M.A.",
+    "department": "Department of Women's, Gender, and Sexuality Studies",
+    "requirements": {
+      "minimumGPA": 2.5,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-10-01"
+    },
+    "website": "https://www.stonybrook.edu/commcms/wgss/graduate/"
+  }
+]

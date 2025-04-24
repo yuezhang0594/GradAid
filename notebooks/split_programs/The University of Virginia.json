@@ -1,0 +1,992 @@
+[
+  {
+    "universityId": "The University of Virginia",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Environmental Architecture and Design",
+    "degree": "Ph.D.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Biochemistry and Molecular Biology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Biophysics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Cellular Biology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Microbiology and Immunology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Pathology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Pharmacology and Toxicology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Physiology and Pathology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Business",
+    "degree": "Ph.D.",
+    "department": "Darden School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Computer and Information Sciences",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Economics and Econometrics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Educational Administration",
+    "degree": "Ph.D.",
+    "department": "School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Higher Education Administration",
+    "degree": "Ph.D.",
+    "department": "School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "School Counseling and Guidance Services",
+    "degree": "Ph.D.",
+    "department": "School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Teaching",
+    "degree": "Ed.D.",
+    "department": "School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Civil Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Computer Hardware Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Engineering Physics",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Materials Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Systems Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "English Language Studies",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Environmental Science",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "French Language and Literature",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "German Language and Literature",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Russian and European Languages and Literatures",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Spanish Language and Literature",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Art History",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Latin and Ancient Greek Studies",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Music History and Literature",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "International Affairs",
+    "degree": "Ph.D.",
+    "department": "Frank Batten School of Leadership and Public Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Law",
+    "degree": "J.D.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Legal Studies",
+    "degree": "LL.M.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Mathematics and Statistics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Medicine",
+    "degree": "M.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Nursing Science",
+    "degree": "Ph.D.",
+    "department": "School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Education",
+    "degree": "Ed.D.",
+    "department": "School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Astronomy and Astrophysics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Political Science and Government",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Clinical Psychology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "School Psychology",
+    "degree": "Ph.D.",
+    "department": "School of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Religious Studies",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Anthropology",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Architecture",
+    "degree": "M.Arch.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Business",
+    "degree": "M.B.A.",
+    "department": "Darden School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Business Analytics",
+    "degree": "M.S.",
+    "department": "McIntire School of Commerce",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Engineering",
+    "degree": "M.Eng.",
+    "department": "School of Engineering and Applied Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Creative Writing",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts & Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Data Science",
+    "degree": "M.S.",
+    "department": "School of Data Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Nursing",
+    "degree": "M.S.N.",
+    "department": "School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  },
+  {
+    "universityId": "The University of Virginia",
+    "name": "Public Health",
+    "degree": "M.P.H.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-31"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/"
+  }
+]

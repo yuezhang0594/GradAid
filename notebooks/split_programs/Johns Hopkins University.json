@@ -1,0 +1,1094 @@
+[
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Krieger School of Arts and Sciences (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Krieger School of Arts and Sciences (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Pathobiology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Biochemistry and Molecular Biology",
+    "degree": "Ph.D.",
+    "department": "Bloomberg School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Bioinformatics",
+    "degree": "Ph.D.",
+    "department": "Krieger School of Arts and Sciences (Advanced Academic Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "Krieger School of Arts and Sciences (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Cross-Disciplinary Program in Biomedical Sciences",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Biophysics",
+    "degree": "Ph.D.",
+    "department": "Krieger School of Arts and Sciences (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Biostatistics",
+    "degree": "Ph.D.",
+    "department": "Bloomberg School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Cellular Biology",
+    "degree": "Ph.D.",
+    "department": "Cellular Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Epidemiology",
+    "degree": "Ph.D.",
+    "department": "Bloomberg School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Genetics and Genomics",
+    "degree": "Ph.D.",
+    "department": "Genetics and Genomics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Neuroscience",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Pathology",
+    "degree": "Ph.D.",
+    "department": "Pathology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Pharmacology and Toxicology",
+    "degree": "Ph.D.",
+    "department": "Pharmacology and Toxicology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Krieger School of Arts and Sciences (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Whiting School of Engineering (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Krieger School of Arts and Sciences (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Education",
+    "degree": "Ed.D.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Counseling",
+    "degree": "M.S.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "Whiting School of Engineering (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Chemical and Biomolecular Engineering",
+    "degree": "Ph.D.",
+    "department": "Whiting School of Engineering (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Civil Engineering",
+    "degree": "Ph.D.",
+    "department": "Whiting School of Engineering (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Electrical and Computer Engineering",
+    "degree": "Ph.D.",
+    "department": "Whiting School of Engineering (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Engineering",
+    "degree": "Ph.D.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "Whiting School of Engineering (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Materials Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "Whiting School of Engineering (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "Whiting School of Engineering (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "Krieger School of Arts and Sciences (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Geology and Earth Science",
+    "degree": "Ph.D.",
+    "department": "Geology and Earth Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "German",
+    "degree": "Ph.D.",
+    "department": "Krieger School of Arts and Sciences (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Romance Languages and Literatures",
+    "degree": "Ph.D.",
+    "department": "Romance Languages and Literatures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Middle Eastern Studies",
+    "degree": "Ph.D.",
+    "department": "Middle Eastern Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Healthcare Management",
+    "degree": "Ph.D.",
+    "department": "Healthcare Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Health Professions and Related Clinical Sciences",
+    "degree": "Ph.D.",
+    "department": "Health Professions and Related Clinical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Maternal and Child Health",
+    "degree": "Ph.D.",
+    "department": "Maternal and Child Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Mental and Social Health Studies",
+    "degree": "Ph.D.",
+    "department": "Mental and Social Health Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Art History",
+    "degree": "Ph.D.",
+    "department": "Krieger School of Arts and Sciences (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Krieger School of Arts and Sciences (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Latin and Ancient Greek Studies",
+    "degree": "Ph.D.",
+    "department": "Latin and Ancient Greek Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "International Affairs",
+    "degree": "Ph.D.",
+    "department": "International Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Liberal Arts and Humanities",
+    "degree": "Ph.D.",
+    "department": "Liberal Arts and Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Computational and Applied Mathematics",
+    "degree": "Ph.D.",
+    "department": "Whiting School of Engineering (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Krieger School of Arts and Sciences (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Medicine",
+    "degree": "Ph.D.",
+    "department": "Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Performance",
+    "degree": "M.M.",
+    "department": "Peabody Institute",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Composition",
+    "degree": "M.M.",
+    "department": "Peabody Institute",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Nursing",
+    "degree": "Ph.D.",
+    "department": "School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Psychiatric Mental Health Nurse Practitioner",
+    "degree": "D.N.P.",
+    "department": "School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Krieger School of Arts and Sciences (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Astronomy and Astrophysics",
+    "degree": "Ph.D.",
+    "department": "Astronomy and Astrophysics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Krieger School of Arts and Sciences (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "Krieger School of Arts and Sciences (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Cognitive Science",
+    "degree": "Ph.D.",
+    "department": "Krieger School of Arts and Sciences (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Experimental Psychology",
+    "degree": "Ph.D.",
+    "department": "Experimental Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Krieger School of Arts and Sciences (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Environmental Health",
+    "degree": "Ph.D.",
+    "department": "Bloomberg School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Public Health",
+    "degree": "Ph.D.",
+    "department": "Bloomberg School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Government",
+    "degree": "M.A.",
+    "department": "Krieger School of Arts and Sciences (Advanced Academic Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Intelligence Analysis",
+    "degree": "M.S.",
+    "department": "Krieger School of Arts and Sciences (Advanced Academic Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Cultural Heritage Management",
+    "degree": "M.A.",
+    "department": "Krieger School of Arts and Sciences (Advanced Academic Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Communication",
+    "degree": "M.A.",
+    "department": "Krieger School of Arts and Sciences (Advanced Academic Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Biotechnology Enterprise and Entrepreneurship",
+    "degree": "M.S.",
+    "department": "Krieger School of Arts and Sciences (Advanced Academic Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Liberal Arts",
+    "degree": "M.A.",
+    "department": "Krieger School of Arts and Sciences (Advanced Academic Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Cybersecurity",
+    "degree": "M.S.",
+    "department": "Whiting School of Engineering (Engineering For Professionals)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Information Systems Engineering",
+    "degree": "M.S.",
+    "department": "Whiting School of Engineering (Engineering For Professionals)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Information Systems",
+    "degree": "M.S.",
+    "department": "Carey Business School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Security Informatics",
+    "degree": "M.S.",
+    "department": "Whiting School of Engineering (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Organizational Leadership",
+    "degree": "M.S.",
+    "department": "Krieger School of Arts and Sciences (Advanced Academic Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Applied Economics",
+    "degree": "M.S.",
+    "department": "Krieger School of Arts and Sciences (Advanced Academic Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Applied Health Sciences Informatics",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Global Health Economics",
+    "degree": "M.H.S.",
+    "department": "Bloomberg School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Epidemiology",
+    "degree": "M.H.S.",
+    "department": "Bloomberg School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Epidemiology",
+    "degree": "Sc.M.",
+    "department": "Bloomberg School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "European Public Policy",
+    "degree": "M.A.",
+    "department": "School of Advanced International Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Composition",
+    "degree": "D.M.A.",
+    "department": "Peabody Institute",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Bioethics",
+    "degree": "M.B.E.",
+    "department": "Bloomberg School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Film and Game Scoring",
+    "degree": "M.M.",
+    "department": "Peabody Institute",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Civil and Systems Engineering",
+    "degree": "Ph.D.",
+    "department": "Whiting School of Engineering (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Immunology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Individualized Genomics and Health",
+    "degree": "M.S.",
+    "department": "Krieger School of Arts and Sciences (Advanced Academic Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Industrial and Operations Engineering",
+    "degree": "M.S.",
+    "department": "Whiting School of Engineering (Engineering For Professionals)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Doctor of Medicine",
+    "degree": "M.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  },
+  {
+    "universityId": "Johns Hopkins University",
+    "name": "Humanistic Studies",
+    "degree": "Ph.D.",
+    "department": "Krieger School of Arts and Sciences (Full Time, On Campus Programs)",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {},
+    "website": "https://www.jhu.edu/academics/graduate-studies/"
+  }
+]

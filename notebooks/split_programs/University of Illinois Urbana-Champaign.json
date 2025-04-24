@@ -1,0 +1,1090 @@
+[
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Elementary Education",
+    "degree": "Ed.M.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Engineering",
+    "degree": "M.Eng.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Engineering Technology and Management for Agricultural Systems",
+    "degree": "M.S.",
+    "department": "Department of Agricultural and Biological Engineering",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "English",
+    "degree": "M.A.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Art Education",
+    "degree": "M.A.",
+    "department": "School of Art and Design",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Art Education",
+    "degree": "Ph.D.",
+    "department": "School of Art and Design",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Art History",
+    "degree": "M.A.",
+    "department": "School of Art and Design",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Art History",
+    "degree": "Ph.D.",
+    "department": "School of Art and Design",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Astronomy",
+    "degree": "M.S.",
+    "department": "Department of Astronomy",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Astronomy",
+    "degree": "Ph.D.",
+    "department": "Department of Astronomy",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Atmospheric Sciences",
+    "degree": "M.S.",
+    "department": "Department of Atmospheric Sciences",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Atmospheric Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Atmospheric Sciences",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Audiology",
+    "degree": "Au.D.",
+    "department": "Department of Speech and Hearing Science",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Human Development & Family Studies",
+    "degree": "M.S.",
+    "department": "Department of Human Development and Family Studies",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Human Development & Family Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Human Development and Family Studies",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Human Resources & Industrial Relations",
+    "degree": "M.H.R.I.R.",
+    "department": "School of Labor and Employment Relations",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Human Resources & Industrial Relations",
+    "degree": "Ph.D.",
+    "department": "School of Labor and Employment Relations",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Industrial Design",
+    "degree": "M.Des.",
+    "department": "School of Art and Design",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Industrial Engineering",
+    "degree": "M.S.",
+    "department": "Department of Industrial and Enterprise Systems Engineering",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Bioinformatics",
+    "degree": "M.S.",
+    "department": "School of Information Sciences",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Biomedical Image Computing",
+    "degree": "M.S.",
+    "department": "Department of Bioengineering",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Biophysics & Quantitative Biology",
+    "degree": "M.S.",
+    "department": "Center for Biophysics and Quantitative Biology",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Biophysics & Quantitative Biology",
+    "degree": "Ph.D.",
+    "department": "Center for Biophysics and Quantitative Biology",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Bioprocessing & Bioenergy",
+    "degree": "M.S.",
+    "department": "Department of Agricultural and Biological Engineering",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Business Administration",
+    "degree": "M.B.A.",
+    "department": "Gies College of Business",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Entomology",
+    "degree": "M.S.",
+    "department": "Department of Entomology",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Entomology",
+    "degree": "Ph.D.",
+    "department": "Department of Entomology",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Environmental Engineering in Civil Engineering",
+    "degree": "M.S.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Environmental Engineering in Civil Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Predictive Analytics and Risk Management",
+    "degree": "M.S.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Psychological Science",
+    "degree": "M.S.",
+    "department": "Department of Psychology",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Psychology",
+    "degree": "M.S.",
+    "department": "Department of Psychology",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Department of Psychology",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Public Health",
+    "degree": "M.P.H.",
+    "department": "Department of Kinesiology and Community Health",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "French",
+    "degree": "Ph.D.",
+    "department": "Department of French and Italian",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Game Development",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Geography",
+    "degree": "M.A.",
+    "department": "Department of Geography & Geographic Information Science",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Geography",
+    "degree": "M.S.",
+    "department": "Department of Geography & Geographic Information Science",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Recreation, Sport & Tourism",
+    "degree": "M.S.",
+    "department": "Department of Recreation, Sport and Tourism",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Recreation, Sport & Tourism",
+    "degree": "Ph.D.",
+    "department": "Department of Recreation, Sport and Tourism",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Regional Planning",
+    "degree": "Ph.D.",
+    "department": "Department of Urban and Regional Planning",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Religion",
+    "degree": "M.A.",
+    "department": "Department of Religion",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Russian, East European, & Eurasian Studies",
+    "degree": "M.A.",
+    "department": "Russian, East European, and Eurasian Center",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Secondary Education",
+    "degree": "Ed.M.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Agricultural Leadership, Education, & Communications",
+    "degree": "M.S.",
+    "department": "College of Agricultural, Consumer and Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Animal Sciences",
+    "degree": "M.A.N.S.C.",
+    "department": "Department of Animal Sciences",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Animal Sciences",
+    "degree": "M.S.",
+    "department": "Department of Animal Sciences",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Animal Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Animal Sciences",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Anthropology",
+    "degree": "M.A.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Applied Mathematics",
+    "degree": "M.S.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Architectural Studies",
+    "degree": "M.S.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Strategic Brand Communication",
+    "degree": "M.S.",
+    "department": "Gies College of Business",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Sustainable Urban Design",
+    "degree": "M.S.U.D.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Systems & Entrepreneurial Engineering",
+    "degree": "M.S.",
+    "department": "Department of Industrial and Enterprise Systems Engineering",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Systems & Entrepreneurial Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Industrial and Enterprise Systems Engineering",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Financial Engineering",
+    "degree": "M.S.",
+    "department": "Department of Finance",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Food Science & Human Nutrition",
+    "degree": "M.S.",
+    "department": "Department of Food Science and Human Nutrition",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Food Science & Human Nutrition",
+    "degree": "Ph.D.",
+    "department": "Department of Food Science and Human Nutrition",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "French",
+    "degree": "M.A.",
+    "department": "Department of French and Italian",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Architecture",
+    "degree": "M.Arch.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Architecture",
+    "degree": "Ph.D.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Art & Design",
+    "degree": "M.F.A.",
+    "department": "School of Art and Design",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  },
+  {
+    "universityId": "University of Illinois Urbana-Champaign",
+    "name": "Art Education",
+    "degree": "Ed.M.",
+    "department": "School of Art and Design",
+    "requirements": {
+      "minimumGPA": 3.2,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-15",
+      "spring": "2025-11-15"
+    },
+    "website": "http://catalog.illinois.edu/graduate/"
+  }
+]

@@ -1,0 +1,1382 @@
+[
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Accountancy",
+    "degree": "M.P.Ac.",
+    "department": "The Paul Merage School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://merage.uci.edu/programs/masters/master-professional-accountancy/index.html"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Acting",
+    "degree": "M.F.A.",
+    "department": "Claire Trevor School of the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://drama.arts.uci.edu/graduate/mfa-acting"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.anthropology.uci.edu/graduate/overview.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Art",
+    "degree": "M.F.A.",
+    "department": "Claire Trevor School of the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://art.arts.uci.edu/graduate"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Biomedical Engineering",
+    "degree": "M.S.",
+    "department": "The Henry Samueli School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://engineering.uci.edu/dept/bme/graduate/master-science-biomedical-engineering"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "The Henry Samueli School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://engineering.uci.edu/dept/bme/graduate/doctor-philosophy-biomedical-engineering"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Biotechnology Management",
+    "degree": "M.S.",
+    "department": "The Henry Samueli School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "March 15"
+    },
+    "website": "https://engineering.uci.edu/dept/bme/graduate/master-science-biotechnology-management"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Business Administration",
+    "degree": "Ph.D.",
+    "department": "The Paul Merage School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://merage.uci.edu/programs/phd/index.html"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Business Administration",
+    "degree": "M.B.A.",
+    "department": "The Paul Merage School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "April 1"
+    },
+    "website": "https://merage.uci.edu/programs/mba/full-time-mba/index.html"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Chemical and Biochemical Engineering",
+    "degree": "M.S.",
+    "department": "The Henry Samueli School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://engineering.uci.edu/dept/cbe/graduate"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Chemical and Biochemical Engineering",
+    "degree": "Ph.D.",
+    "department": "The Henry Samueli School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://engineering.uci.edu/dept/cbe/graduate/doctor-philosophy-chemical-and-biochemical-engineering"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "School of Physical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.chem.uci.edu/graduate-programs"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "School of Physical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.chem.uci.edu/graduate-programs"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Civil Engineering",
+    "degree": "M.S.",
+    "department": "The Henry Samueli School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://engineering.uci.edu/dept/cee/graduate/master-science"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Civil Engineering",
+    "degree": "Ph.D.",
+    "department": "The Henry Samueli School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://engineering.uci.edu/dept/cee/graduate/doctor-philosophy"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Classics",
+    "degree": "M.A.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.humanities.uci.edu/classics/graduate/index.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Classics",
+    "degree": "Ph.D.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.humanities.uci.edu/classics/graduate/index.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Comparative Literature",
+    "degree": "M.A.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.humanities.uci.edu/complit/graduate/index.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Comparative Literature",
+    "degree": "Ph.D.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.humanities.uci.edu/complit/graduate/index.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Computer Engineering",
+    "degree": "M.S.",
+    "department": "The Henry Samueli School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://engineering.uci.edu/dept/eecs/graduate/computer-engineering"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Computer Engineering",
+    "degree": "Ph.D.",
+    "department": "The Henry Samueli School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://engineering.uci.edu/dept/eecs/graduate/computer-engineering"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Donald Bren School of Information and Computer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ics.uci.edu/grad/degrees/degree_cs.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Donald Bren School of Information and Computer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ics.uci.edu/grad/degrees/degree_cs.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Creative Writing",
+    "degree": "M.F.A.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://www.humanities.uci.edu/english/graduate/mfa.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Criminology, Law and Society",
+    "degree": "M.A.S.",
+    "department": "School of Social Ecology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "April 1"
+    },
+    "website": "https://clsmas.soceco.uci.edu/"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Criminology, Law and Society",
+    "degree": "Ph.D.",
+    "department": "School of Social Ecology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://cls.soceco.uci.edu/pages/phd-program"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Dance",
+    "degree": "M.F.A.",
+    "department": "Claire Trevor School of the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://dance.arts.uci.edu/graduate/mfa-dance"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Design",
+    "degree": "M.F.A.",
+    "department": "Claire Trevor School of the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://art.arts.uci.edu/mfa-design"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Drama",
+    "degree": "Ph.D.",
+    "department": "Claire Trevor School of the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://drama.arts.uci.edu/graduate/phd-drama"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Drama and Theatre",
+    "degree": "Ph.D.",
+    "department": "Claire Trevor School of the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://drama.arts.uci.edu/graduate/joint-phd-drama-and-theatre"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Earth System Science",
+    "degree": "M.S.",
+    "department": "School of Physical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.ess.uci.edu/grad"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Earth System Science",
+    "degree": "Ph.D.",
+    "department": "School of Physical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ess.uci.edu/grad"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Economics",
+    "degree": "M.A.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "April 15"
+    },
+    "website": "https://www.economics.uci.edu/masters/index.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.economics.uci.edu/doctoral/index.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Electrical Engineering",
+    "degree": "M.S.",
+    "department": "The Henry Samueli School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://engineering.uci.edu/dept/eecs/graduate/electrical-engineering"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "The Henry Samueli School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://engineering.uci.edu/dept/eecs/graduate/electrical-engineering"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Engineering",
+    "degree": "M.S.",
+    "department": "The Henry Samueli School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://engineering.uci.edu/admissions/graduate"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "English",
+    "degree": "M.A.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.humanities.uci.edu/english/graduate/overview.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.humanities.uci.edu/english/graduate/overview.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Environmental Health Sciences",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.ehs.uci.edu/grad/index.html"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Environmental Health Sciences",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.ehs.uci.edu/grad/index.html"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Epidemiology",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.epi.uci.edu/doctoral-program/"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "European Thought & Culture",
+    "degree": "M.A.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.humanities.uci.edu/european-studies/graduate/index.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Film and Media Studies",
+    "degree": "Ph.D.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.humanities.uci.edu/filmandmediastudies/graduate/index.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Genetic Counseling",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.pediatrics.uci.edu/genetic-counseling/"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.humanities.uci.edu/history/graduate/index.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.humanities.uci.edu/history/graduate/index.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Human-Computer Interaction Design",
+    "degree": "M.H.C.I.D.",
+    "department": "Donald Bren School of Information and Computer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://mhcid.ics.uci.edu/"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Informatics",
+    "degree": "M.S.",
+    "department": "Donald Bren School of Information and Computer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ics.uci.edu/grad/degrees/degree_inf.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Informatics",
+    "degree": "Ph.D.",
+    "department": "Donald Bren School of Information and Computer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ics.uci.edu/grad/degrees/degree_inf.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Language Science",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://langsci.uci.edu/graduate"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Law",
+    "degree": "J.D.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "March 1"
+    },
+    "website": "https://www.law.uci.edu/admission/jd-program/"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Law",
+    "degree": "LL.M.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "March 1"
+    },
+    "website": "https://www.law.uci.edu/llm/"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Logic and Philosophy of Science",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://lps.uci.edu/grad/index.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Materials Science and Engineering",
+    "degree": "M.S.",
+    "department": "The Henry Samueli School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://engineering.uci.edu/dept/mse/graduate"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Materials Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "The Henry Samueli School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://engineering.uci.edu/dept/mse/graduate"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Mathematical, Computational, and Systems Biology",
+    "degree": "Ph.D.",
+    "department": "School of Physical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://ccbs.uci.edu/education/mcsb/"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Mathematics",
+    "degree": "M.S.",
+    "department": "School of Physical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.math.uci.edu/graduate/masters-program"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "School of Physical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.math.uci.edu/graduate/phd-program"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Mechanical and Aerospace Engineering",
+    "degree": "M.S.",
+    "department": "The Henry Samueli School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://engineering.uci.edu/dept/mae/graduate"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Mechanical and Aerospace Engineering",
+    "degree": "Ph.D.",
+    "department": "The Henry Samueli School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://engineering.uci.edu/dept/mae/graduate"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Medicine",
+    "degree": "M.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "November 1"
+    },
+    "website": "https://www.meded.uci.edu/admissions/medical-education.asp"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Medicine",
+    "degree": "M.D./Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "November 1"
+    },
+    "website": "https://www.mstp.uci.edu/"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Music",
+    "degree": "M.F.A.",
+    "department": "Claire Trevor School of the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://music.arts.uci.edu/graduate"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Music",
+    "degree": "Ph.D.",
+    "department": "Claire Trevor School of the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://music.arts.uci.edu/graduate"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Networked Systems",
+    "degree": "M.S.",
+    "department": "Donald Bren School of Information and Computer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.networkedsystems.uci.edu/requirements"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Networked Systems",
+    "degree": "Ph.D.",
+    "department": "Donald Bren School of Information and Computer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.networkedsystems.uci.edu/requirements"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Nursing",
+    "degree": "M.S.",
+    "department": "Sue & Bill Gross School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://nursing.uci.edu/programs/graduate/"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Nursing Science",
+    "degree": "Ph.D.",
+    "department": "Sue & Bill Gross School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://nursing.uci.edu/programs/graduate/phd/"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Pharmacological Sciences",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://pharmacology.uci.edu/education-and-training/"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Pharmacological Sciences",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://pharmacology.uci.edu/education-and-training/"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Philosophy",
+    "degree": "M.A.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.humanities.uci.edu/philosophy/graduate/index.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 10"
+    },
+    "website": "https://www.humanities.uci.edu/philosophy/graduate/index.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "School of Physical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.physics.uci.edu/academics/graduate-studies"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "School of Physical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.physics.uci.edu/academics/graduate-studies"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Political Science",
+    "degree": "M.A.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.polisci.uci.edu/grad/index.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.polisci.uci.edu/grad/index.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.psychology.uci.edu/graduate/index.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Public Health",
+    "degree": "M.P.H.",
+    "department": "Program in Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://publichealth.uci.edu/ph/_graduate/mph_program"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Public Health",
+    "degree": "Ph.D.",
+    "department": "Program in Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://publichealth.uci.edu/ph/_graduate/phd_program"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Public Policy",
+    "degree": "M.P.P.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "March 1"
+    },
+    "website": "https://mpp.uci.edu/"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Software Engineering",
+    "degree": "M.S.",
+    "department": "Donald Bren School of Information and Computer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "March 1"
+    },
+    "website": "https://www.ics.uci.edu/grad/degrees/degree_se.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Software Engineering",
+    "degree": "Ph.D.",
+    "department": "Donald Bren School of Information and Computer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ics.uci.edu/grad/degrees/degree_se.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Spanish",
+    "degree": "M.A.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.humanities.uci.edu/spanishandportuguese/graduate/index.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Spanish",
+    "degree": "Ph.D.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.humanities.uci.edu/spanishandportuguese/graduate/index.php"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "Donald Bren School of Information and Computer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.stat.uci.edu/graduate-studies/ms-in-statistics/"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "Donald Bren School of Information and Computer Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.stat.uci.edu/graduate-studies/phd-in-statistics/"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Transportation Science",
+    "degree": "M.S.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.its.uci.edu/grad/trans-science.html"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Transportation Science",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.its.uci.edu/grad/trans-science.html"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Urban and Regional Planning",
+    "degree": "M.U.R.P.",
+    "department": "School of Social Ecology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://uppp.soceco.uci.edu/murp"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Urban and Regional Planning",
+    "degree": "Ph.D.",
+    "department": "School of Social Ecology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://uppp.soceco.uci.edu/phd"
+  },
+  {
+    "universityId": "University of California, Irvine",
+    "name": "Visual Studies",
+    "degree": "Ph.D.",
+    "department": "School of Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.humanities.uci.edu/visualstudies/program/index.php"
+  }
+]

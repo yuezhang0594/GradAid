@@ -1,0 +1,4226 @@
+[
+  {
+    "universityId": "New York University",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Biochemistry and Molecular Biology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Biomedical Sciences and Molecular Medicine",
+    "degree": "Ph.D.",
+    "department": "Grossman School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Cellular Biology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Microbiology and Immunology",
+    "degree": "Ph.D.",
+    "department": "Grossman School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Pathology",
+    "degree": "Ph.D.",
+    "department": "Grossman School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Pharmacology and Toxicology",
+    "degree": "Ph.D.",
+    "department": "Grossman School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Physiology and Pathology",
+    "degree": "Ph.D.",
+    "department": "Grossman School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Business",
+    "degree": "Ph.D.",
+    "department": "Leonard N. Stern School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Business Analytics",
+    "degree": "Ph.D.",
+    "department": "Leonard N. Stern School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Merchandising and Buying Operations",
+    "degree": "Ph.D.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Digital Communication and Media/Multimedia",
+    "degree": "Ph.D.",
+    "department": "Tisch School of the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Computer and Information Sciences",
+    "degree": "Ph.D.",
+    "department": "Courant Institute of Mathematical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Dentistry",
+    "degree": "Ph.D.",
+    "department": "College of Dentistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Educational Administration",
+    "degree": "Ph.D.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Educational Technology",
+    "degree": "Ph.D.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Biomedical Sciences and Molecular Medicine",
+    "degree": "Ph.D.",
+    "department": "Grossman School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Cellular Biology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Microbiology and Immunology",
+    "degree": "Ph.D.",
+    "department": "Grossman School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Pathology",
+    "degree": "Ph.D.",
+    "department": "Grossman School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Pharmacology and Toxicology",
+    "degree": "Ph.D.",
+    "department": "Grossman School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Physiology and Pathology",
+    "degree": "Ph.D.",
+    "department": "Grossman School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Business",
+    "degree": "Ph.D.",
+    "department": "Leonard N. Stern School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Business Analytics",
+    "degree": "Ph.D.",
+    "department": "Leonard N. Stern School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Merchandising and Buying Operations",
+    "degree": "Ph.D.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Digital Communication and Media/Multimedia",
+    "degree": "Ph.D.",
+    "department": "Tisch School of the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Computer and Information Sciences",
+    "degree": "Ph.D.",
+    "department": "Courant Institute of Mathematical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Dentistry",
+    "degree": "Ph.D.",
+    "department": "College of Dentistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Educational Administration",
+    "degree": "Ph.D.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Educational Technology",
+    "degree": "Ph.D.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Higher Education Administration",
+    "degree": "Ph.D.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "International Education",
+    "degree": "Ph.D.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Music Teacher Education",
+    "degree": "Ph.D.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Teaching",
+    "degree": "Ph.D.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Civil Engineering",
+    "degree": "Ph.D.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Industrial Management",
+    "degree": "Ph.D.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Operations Research",
+    "degree": "Ph.D.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Systems Science and Theory",
+    "degree": "Ph.D.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Comparative Literature",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "English Language Studies",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Literature",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Cinematography and Video Production",
+    "degree": "Ph.D.",
+    "department": "Tisch School of the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Foreign Languages and Literatures",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "French Language and Literature",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "German Language and Literature",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Italian Language and Literature",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Spanish Language and Literature",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Asian Studies",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "European and Russian Studies",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Middle Eastern Studies",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "North American Studies",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Audiology and Speech-Language Pathology",
+    "degree": "Ph.D.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Health Professions and Related Clinical Sciences",
+    "degree": "Ph.D.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Art History",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Latin and Ancient Greek Studies",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Music History and Literature",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Occupational Therapy",
+    "degree": "Ph.D.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Physical Therapy",
+    "degree": "Ph.D.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Law",
+    "degree": "Ph.D.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Legal Studies",
+    "degree": "Ph.D.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Financial Mathematics",
+    "degree": "Ph.D.",
+    "department": "Courant Institute of Mathematical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Mathematics and Statistics",
+    "degree": "Ph.D.",
+    "department": "Courant Institute of Mathematical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "Courant Institute of Mathematical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Medicine",
+    "degree": "Ph.D.",
+    "department": "Grossman School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Music Performance",
+    "degree": "Ph.D.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Adult Health Nursing",
+    "degree": "Ph.D.",
+    "department": "Rory Meyers College of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Critical Care Nursing",
+    "degree": "Ph.D.",
+    "department": "Rory Meyers College of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Mental Health Nursing",
+    "degree": "Ph.D.",
+    "department": "Rory Meyers College of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Midwifery Nursing",
+    "degree": "Ph.D.",
+    "department": "Rory Meyers College of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Nursing",
+    "degree": "Ph.D.",
+    "department": "Rory Meyers College of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Nursing Science",
+    "degree": "Ph.D.",
+    "department": "Rory Meyers College of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Education",
+    "degree": "Ph.D.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "and Practice",
+    "degree": "Ph.D.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Pediatric Nursing",
+    "degree": "Ph.D.",
+    "department": "Rory Meyers College of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Nutrition Studies",
+    "degree": "Ph.D.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Drama and Theatre Production",
+    "degree": "Ph.D.",
+    "department": "Tisch School of the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Performing Arts",
+    "degree": "Ph.D.",
+    "department": "Tisch School of the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Political Science and Government",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Cognitive Science",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Counseling Psychology",
+    "degree": "Ph.D.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Developmental and Child Psychology",
+    "degree": "Ph.D.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Experimental Psychology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Social Psychology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Public Administration",
+    "degree": "Ph.D.",
+    "department": "Robert F. Wagner Graduate School of Public Service",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Environmental Health",
+    "degree": "Ph.D.",
+    "department": "School of Global Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Public Health",
+    "degree": "Ph.D.",
+    "department": "School of Global Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Religious Studies",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Social Sciences and Research Methods",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Social Work",
+    "degree": "Ph.D.",
+    "department": "Silver School of Social Work",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "African American Studies",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Anthropology",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Sociology",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Architecture",
+    "degree": "M.S.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Bioinformatics",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Biology",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Biomedical Sciences and Molecular Medicine",
+    "degree": "M.S.",
+    "department": "Grossman School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Biostatistics",
+    "degree": "M.S.",
+    "department": "School of Global Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Biotechnology",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Cellular Biology",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Epidemiology",
+    "degree": "M.S.",
+    "department": "School of Global Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Microbiology and Immunology",
+    "degree": "M.S.",
+    "department": "Grossman School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Natural Sciences",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Pathology",
+    "degree": "M.S.",
+    "department": "Grossman School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Pharmacology and Toxicology",
+    "degree": "M.S.",
+    "department": "Grossman School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Physiology and Pathology",
+    "degree": "M.S.",
+    "department": "Grossman School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Business",
+    "degree": "M.S.",
+    "department": "Leonard N. Stern School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Business Analytics",
+    "degree": "M.S.",
+    "department": "Leonard N. Stern School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Business Support Services",
+    "degree": "M.S.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Construction Management",
+    "degree": "M.S.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Hotel and Hospitality Management",
+    "degree": "M.S.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Human Resources",
+    "degree": "M.S.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Marketing",
+    "degree": "M.S.",
+    "department": "Leonard N. Stern School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Merchandising and Buying Operations",
+    "degree": "M.S.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Organizational Leadership",
+    "degree": "M.S.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Project Management",
+    "degree": "M.S.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Real Estate",
+    "degree": "M.S.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Communications",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Digital Communication and Media/Multimedia",
+    "degree": "M.S.",
+    "department": "Tisch School of the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Journalism",
+    "degree": "M.S.",
+    "department": "Arthur L. Carter Journalism Institute",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Computer and Information Sciences",
+    "degree": "M.S.",
+    "department": "Courant Institute of Mathematical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Computer Software Engineering",
+    "degree": "M.S.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Information Science",
+    "degree": "M.S.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Web Page and Digital Design",
+    "degree": "M.S.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Economics",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Economics and Econometrics",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Art Teacher Education",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Early Childhood Education",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Educational Administration",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Educational Technology",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Education Research and Evaluation",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Elementary Education",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "English and Reading Teacher Education",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Foreign Language Teacher Education",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "High School Education",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "International Education",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Mathematics Teacher Education",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Music Teacher Education",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "School Counseling and Guidance Services",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Social Studies Teacher Education",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Special Education and Teaching",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Teaching",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Teaching English as a Second Language",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "M.S.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Chemical Engineering",
+    "degree": "M.S.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Civil Engineering",
+    "degree": "M.S.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Computer Hardware Engineering",
+    "degree": "M.S.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Construction Engineering",
+    "degree": "M.S.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Electrical Engineering",
+    "degree": "M.S.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Engineering Physics",
+    "degree": "M.S.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Environmental Engineering",
+    "degree": "M.S.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Industrial Engineering",
+    "degree": "M.S.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Industrial Management",
+    "degree": "M.S.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Operations Research",
+    "degree": "M.S.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Robotics and Automation Engineering",
+    "degree": "M.S.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Comparative Literature",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Creative Writing",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "English Language Studies",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Literature",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Playwriting and Screenwriting",
+    "degree": "M.S.",
+    "department": "Tisch School of the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Environmental Science",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Cinematography and Video Production",
+    "degree": "M.S.",
+    "department": "Tisch School of the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Accounting",
+    "degree": "M.S.",
+    "department": "Leonard N. Stern School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Finance",
+    "degree": "M.S.",
+    "department": "Leonard N. Stern School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Financial Planning",
+    "degree": "M.S.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Fine Arts",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Studio Arts",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Chinese Language and Literature",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Foreign Languages and Literatures",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "French Language and Literature",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "German Language and Literature",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Italian Language and Literature",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Linguistics",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Interpretation",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "and Translation",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Spanish Language and Literature",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Asian Studies",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "European and Russian Studies",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Latin American Studies",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Middle Eastern Studies",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "North American Studies",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Hospital Management",
+    "degree": "M.S.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Audiology and Speech-Language Pathology",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Health Professions and Related Clinical Sciences",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Medical Scientist",
+    "degree": "M.S.",
+    "department": "Grossman School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Art History",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "History",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Latin and Ancient Greek Studies",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Music History and Literature",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Computer and Information Systems Security",
+    "degree": "M.S.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Information Technology",
+    "degree": "M.S.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Network",
+    "degree": "M.S.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Database",
+    "degree": "M.S.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "and System Administration",
+    "degree": "M.S.",
+    "department": "Tandon School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "International Affairs",
+    "degree": "M.S.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Alternative Therapy",
+    "degree": "M.S.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Occupational Therapy",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Advanced Legal Research",
+    "degree": "M.S.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Energy",
+    "degree": "M.S.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Environment",
+    "degree": "M.S.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "and Natural Resources Law",
+    "degree": "M.S.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "International Law",
+    "degree": "M.S.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Legal Studies",
+    "degree": "M.S.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Tax Law",
+    "degree": "M.S.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Liberal Arts and Humanities",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Computational and Applied Mathematics",
+    "degree": "M.S.",
+    "department": "Courant Institute of Mathematical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Data Analytics",
+    "degree": "M.S.",
+    "department": "Courant Institute of Mathematical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Financial Mathematics",
+    "degree": "M.S.",
+    "department": "Courant Institute of Mathematical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Mathematics and Statistics",
+    "degree": "M.S.",
+    "department": "Courant Institute of Mathematical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "Courant Institute of Mathematical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Music",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Music Performance",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Music Theory and Composition",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Voice and Opera",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Adult Health Nursing",
+    "degree": "M.S.",
+    "department": "Rory Meyers College of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Clinical Nurse Specialist",
+    "degree": "M.S.",
+    "department": "Rory Meyers College of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Critical Care Nursing",
+    "degree": "M.S.",
+    "department": "Rory Meyers College of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Mental Health Nursing",
+    "degree": "M.S.",
+    "department": "Rory Meyers College of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Midwifery Nursing",
+    "degree": "M.S.",
+    "department": "Rory Meyers College of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Nursing",
+    "degree": "M.S.",
+    "department": "Rory Meyers College of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Nursing Administration",
+    "degree": "M.S.",
+    "department": "Rory Meyers College of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Nursing Science",
+    "degree": "M.S.",
+    "department": "Rory Meyers College of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Education",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "and Practice",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Pediatric Nursing",
+    "degree": "M.S.",
+    "department": "Rory Meyers College of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Food Science",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Nutrition Studies",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Dance",
+    "degree": "M.S.",
+    "department": "Tisch School of the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Drama and Theatre Production",
+    "degree": "M.S.",
+    "department": "Tisch School of the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Performing Arts",
+    "degree": "M.S.",
+    "department": "Tisch School of the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Theatre Design",
+    "degree": "M.S.",
+    "department": "Tisch School of the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Philosophy",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Political Science and Government",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Military Science",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Counseling Psychology",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Developmental and Child Psychology",
+    "degree": "M.S.",
+    "department": "Steinhardt School of Culture, Education, and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Experimental Psychology",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Social Psychology",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Public Administration",
+    "degree": "M.S.",
+    "department": "Robert F. Wagner Graduate School of Public Service",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Urban",
+    "degree": "M.S.",
+    "department": "Robert F. Wagner Graduate School of Public Service",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Community and Regional Planning",
+    "degree": "M.S.",
+    "department": "Robert F. Wagner Graduate School of Public Service",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Environmental Health",
+    "degree": "M.S.",
+    "department": "School of Global Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Religious Studies",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Social Sciences and Research Methods",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts & Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  },
+  {
+    "universityId": "New York University",
+    "name": "Social Work",
+    "degree": "M.S.",
+    "department": "Silver School of Social Work",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-03-01",
+      "spring": "2025-11-01"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html"
+  }
+]

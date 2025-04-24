@@ -1,0 +1,1266 @@
+[
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Biochemistry",
+    "degree": "Ph.D.",
+    "department": "College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Biological Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Integrated Biomedical Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Biophysics",
+    "degree": "Ph.D.",
+    "department": "College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Analytics",
+    "degree": "Ph.D.",
+    "department": "Mendoza College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Management",
+    "degree": "Ph.D.",
+    "department": "Mendoza College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Aerospace and Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Bioengineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Chemical and Biomolecular Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Civil and Environmental Engineering and Earth Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Computer Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "French and Francophone Studies",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Italian",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Spanish",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "History Doctoral Program",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "History and Philosophy of Science",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Peace Studies and Anthropology",
+    "degree": "Ph.D.",
+    "department": "Keough School for Global Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Peace Studies and History",
+    "degree": "Ph.D.",
+    "department": "Keough School for Global Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Peace Studies and Political Science",
+    "degree": "Ph.D.",
+    "department": "Keough School for Global Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Peace Studies and Psychology",
+    "degree": "Ph.D.",
+    "department": "Keough School for Global Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Peace Studies and Sociology",
+    "degree": "Ph.D.",
+    "department": "Keough School for Global Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Peace Studies and Theology",
+    "degree": "Ph.D.",
+    "department": "Keough School for Global Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Law",
+    "degree": "J.S.D.",
+    "department": "The Law School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Applied and Computational Mathematics and Statistics",
+    "degree": "Ph.D.",
+    "department": "College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Sacred Music (Conducting)",
+    "degree": "D.M.A.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Sacred Music (Organ)",
+    "degree": "D.M.A.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Theology",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Applied and Computational Mathematics and Statistics",
+    "degree": "M.S.",
+    "department": "College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Architecture",
+    "degree": "M.Arch.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Architectural Design and Urbanism",
+    "degree": "M.A.D.U.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Data Sciences",
+    "degree": "M.S.",
+    "department": "College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Global Health",
+    "degree": "M.S.",
+    "department": "College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Interdisciplinary Mathematics",
+    "degree": "M.S.I.M.",
+    "department": "College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Engineering, Science and Technology Entrepreneurship",
+    "degree": "M.S.",
+    "department": "College of Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Aerospace Engineering",
+    "degree": "M.S.A.E.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Civil Engineering",
+    "degree": "M.S.C.E.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Earth Sciences",
+    "degree": "M.S.E.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Electrical Engineering",
+    "degree": "M.S.E.E.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.M.E.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Business Analytics",
+    "degree": "M.S.",
+    "department": "Mendoza College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Business Analytics - Chicago",
+    "degree": "M.S.",
+    "department": "Mendoza College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Finance - Chicago",
+    "degree": "M.S.",
+    "department": "Mendoza College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Management",
+    "degree": "M.S.",
+    "department": "Mendoza College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "One Year M.B.A.",
+    "degree": "M.B.A.",
+    "department": "Mendoza College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Two Year M.B.A.",
+    "degree": "M.B.A.",
+    "department": "Mendoza College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Executive M.B.A.",
+    "degree": "M.B.A.",
+    "department": "Mendoza College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Executive M.B.A. - Chicago",
+    "degree": "M.B.A.",
+    "department": "Mendoza College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Dual Degree: M.B.A. / M.S.B.A.",
+    "degree": "M.B.A.",
+    "department": "Mendoza College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Accountancy",
+    "degree": "M.S.",
+    "department": "Mendoza College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Master in Nonprofit Administration",
+    "degree": "M.N.A.",
+    "department": "Mendoza College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Executive Master in Nonprofit Administration",
+    "degree": "M.N.A.",
+    "department": "Mendoza College of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "ACE: Teaching Fellows",
+    "degree": "M.Ed.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "ACE: Mary Ann Remick Leadership Program",
+    "degree": "M.A.E.L.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Classics",
+    "degree": "M.A.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Creative Writing",
+    "degree": "M.F.A.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Design",
+    "degree": "M.F.A.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Early Christian Studies",
+    "degree": "M.A.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Echo/Theology",
+    "degree": "M.A.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "English",
+    "degree": "M.A.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Master of Global Affairs",
+    "degree": "M.G.A.",
+    "department": "Keough School for Global Affairs",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Master of Sacred Music",
+    "degree": "M.S.M.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Studio Art",
+    "degree": "M.F.A.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Theology",
+    "degree": "M.A.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Theology",
+    "degree": "M.Div.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Theology",
+    "degree": "M.T.S.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Law",
+    "degree": "J.D.",
+    "department": "The Law School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Law",
+    "degree": "LL.M.",
+    "department": "The Law School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  },
+  {
+    "universityId": "University of Notre Dame",
+    "name": "Medieval Studies",
+    "degree": "M.A.",
+    "department": "College of Arts and Letters",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15",
+      "spring": "2025-10-15"
+    },
+    "website": "https://graduateschool.nd.edu/"
+  }
+]

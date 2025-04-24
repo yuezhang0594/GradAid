@@ -1,0 +1,2222 @@
+[
+  {
+    "universityId": "Brown University",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Archaeology",
+    "degree": "Ph.D.",
+    "department": "Joukowsky Institute for Archaeology and the Ancient World",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Hispanic American Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Hispanic Studies",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Minority and Ethnic Studies",
+    "degree": "Ph.D.",
+    "department": "Minority and Ethnic Studies",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Biochemistry and Molecular Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Molecular Biology, Cell Biology, and Biochemistry",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Ecology, Evolution, and Organismal Biology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Biomedical Sciences and Molecular Medicine",
+    "degree": "Ph.D.",
+    "department": "Division of Biology and Medicine",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Biophysics",
+    "degree": "Ph.D.",
+    "department": "Biophysics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Biostatistics",
+    "degree": "Ph.D.",
+    "department": "Department of Biostatistics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Biotechnology",
+    "degree": "Ph.D.",
+    "department": "Biotechnology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Cellular Biology",
+    "degree": "Ph.D.",
+    "department": "Cellular Biology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Computational Biology",
+    "degree": "Ph.D.",
+    "department": "Computational Biology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Ecology and Evolutionary Biology",
+    "degree": "Ph.D.",
+    "department": "Ecology and Evolutionary Biology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Epidemiology",
+    "degree": "Ph.D.",
+    "department": "Epidemiology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "Ph.D.",
+    "department": "Neuroscience and Neurobiology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Pathology",
+    "degree": "Ph.D.",
+    "department": "Pathology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Pharmacology and Toxicology",
+    "degree": "Ph.D.",
+    "department": "Pharmacology and Toxicology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Entrepreneurship",
+    "degree": "Ph.D.",
+    "department": "Entrepreneurship",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Chemistry",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Communications",
+    "degree": "Ph.D.",
+    "department": "Communications",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Computer and Information Sciences",
+    "degree": "Ph.D.",
+    "department": "Computer and Information Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Economic Development",
+    "degree": "Ph.D.",
+    "department": "Economic Development",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Economics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Economics and Econometrics",
+    "degree": "Ph.D.",
+    "department": "Economics and Econometrics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Teaching",
+    "degree": "Ph.D.",
+    "department": "Teaching",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "Bioengineering and Biomedical Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Engineering Physics",
+    "degree": "Ph.D.",
+    "department": "Engineering Physics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Comparative Literature",
+    "degree": "Ph.D.",
+    "department": "Comparative Literature",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Creative Writing",
+    "degree": "Ph.D.",
+    "department": "Creative Writing",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "English Language Studies",
+    "degree": "Ph.D.",
+    "department": "Department of English",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Environmental Science",
+    "degree": "Ph.D.",
+    "department": "Environmental Science",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Geology and Earth Science",
+    "degree": "Ph.D.",
+    "department": "Geology and Earth Science",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Foreign Languages and Literatures",
+    "degree": "Ph.D.",
+    "department": "Foreign Languages and Literatures",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "French Language and Literature",
+    "degree": "Ph.D.",
+    "department": "French Language and Literature",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Linguistics",
+    "degree": "Ph.D.",
+    "department": "Linguistics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Interpretation",
+    "degree": "Ph.D.",
+    "department": "Interpretation",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "and Translation",
+    "degree": "Ph.D.",
+    "department": "and Translation",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Spanish Language and Literature",
+    "degree": "Ph.D.",
+    "department": "Spanish Language and Literature",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "African Studies",
+    "degree": "Ph.D.",
+    "department": "African Studies",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Asian Studies",
+    "degree": "Ph.D.",
+    "department": "Asian Studies",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "European and Russian Studies",
+    "degree": "Ph.D.",
+    "department": "European and Russian Studies",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Latin American Studies",
+    "degree": "Ph.D.",
+    "department": "Latin American Studies",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Middle Eastern Studies",
+    "degree": "Ph.D.",
+    "department": "Middle Eastern Studies",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "North American Studies",
+    "degree": "Ph.D.",
+    "department": "North American Studies",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Health Services and Related Clinical Sciences",
+    "degree": "Ph.D.",
+    "department": "Health Services and Related Clinical Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Medical Scientist",
+    "degree": "Ph.D.",
+    "department": "Medical Scientist",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Art History",
+    "degree": "Ph.D.",
+    "department": "Art History",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Department of History",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Latin and Ancient Greek Studies",
+    "degree": "Ph.D.",
+    "department": "Latin and Ancient Greek Studies",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Music History and Literature",
+    "degree": "Ph.D.",
+    "department": "Music History and Literature",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "International Affairs",
+    "degree": "Ph.D.",
+    "department": "International Affairs",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Liberal Arts and Humanities",
+    "degree": "Ph.D.",
+    "department": "Liberal Arts and Humanities",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Computational and Applied Mathematics",
+    "degree": "Ph.D.",
+    "department": "Computational and Applied Mathematics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Mathematics and Statistics",
+    "degree": "Ph.D.",
+    "department": "Mathematics and Statistics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Medicine",
+    "degree": "Ph.D.",
+    "department": "Medicine",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Music Technology",
+    "degree": "Ph.D.",
+    "department": "Music Technology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Drama and Theatre Production",
+    "degree": "Ph.D.",
+    "department": "Drama and Theatre Production",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Philosophy",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Astronomy and Astrophysics",
+    "degree": "Ph.D.",
+    "department": "Astronomy and Astrophysics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Department of Physics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Political Science and Government",
+    "degree": "Ph.D.",
+    "department": "Political Science and Government",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Behavioral Sciences",
+    "degree": "Ph.D.",
+    "department": "Behavioral Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Cognitive Science",
+    "degree": "Ph.D.",
+    "department": "Cognitive Science",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Experimental Psychology",
+    "degree": "Ph.D.",
+    "department": "Experimental Psychology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Psychology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Public Policy Analysis",
+    "degree": "Ph.D.",
+    "department": "Public Policy Analysis",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Urban Studies and Affairs",
+    "degree": "Ph.D.",
+    "department": "Urban Studies and Affairs",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Public Health",
+    "degree": "Ph.D.",
+    "department": "School of Public Health",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Religious Studies",
+    "degree": "Ph.D.",
+    "department": "Religious Studies",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Social Sciences and Research Methods",
+    "degree": "Ph.D.",
+    "department": "Social Sciences and Research Methods",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Anthropology",
+    "degree": "M.S.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Archaeology",
+    "degree": "M.S.",
+    "department": "Joukowsky Institute for Archaeology and the Ancient World",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Hispanic American Studies",
+    "degree": "M.S.",
+    "department": "Department of Hispanic Studies",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Sociology",
+    "degree": "M.S.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Biochemistry and Molecular Biology",
+    "degree": "M.S.",
+    "department": "Department of Molecular Biology, Cell Biology, and Biochemistry",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Biology",
+    "degree": "M.S.",
+    "department": "Department of Ecology, Evolution, and Organismal Biology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Biomedical Sciences and Molecular Medicine",
+    "degree": "M.S.",
+    "department": "Division of Biology and Medicine",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Biostatistics",
+    "degree": "M.S.",
+    "department": "Department of Biostatistics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Biotechnology",
+    "degree": "M.S.",
+    "department": "Biotechnology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Cellular Biology",
+    "degree": "M.S.",
+    "department": "Cellular Biology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Ecology and Evolutionary Biology",
+    "degree": "M.S.",
+    "department": "Ecology and Evolutionary Biology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Epidemiology",
+    "degree": "M.S.",
+    "department": "Epidemiology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "M.S.",
+    "department": "Neuroscience and Neurobiology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Pathology",
+    "degree": "M.S.",
+    "department": "Pathology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Pharmacology and Toxicology",
+    "degree": "M.S.",
+    "department": "Pharmacology and Toxicology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Business",
+    "degree": "M.S.",
+    "department": "Business",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "Chemistry",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Communications",
+    "degree": "M.S.",
+    "department": "Communications",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Computer and Information Sciences",
+    "degree": "M.S.",
+    "department": "Computer and Information Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Economic Development",
+    "degree": "M.S.",
+    "department": "Economic Development",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Economics",
+    "degree": "M.S.",
+    "department": "Department of Economics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Economics and Econometrics",
+    "degree": "M.S.",
+    "department": "Economics and Econometrics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Bilingual and Multicultural Education",
+    "degree": "M.S.",
+    "department": "Bilingual and Multicultural Education",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Elementary Education",
+    "degree": "M.S.",
+    "department": "Elementary Education",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "English and Reading Teacher Education",
+    "degree": "M.S.",
+    "department": "English and Reading Teacher Education",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Mathematics Teacher Education",
+    "degree": "M.S.",
+    "department": "Mathematics Teacher Education",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Science Teacher Education",
+    "degree": "M.S.",
+    "department": "Science Teacher Education",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Social Studies Teacher Education",
+    "degree": "M.S.",
+    "department": "Social Studies Teacher Education",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Teaching",
+    "degree": "M.S.",
+    "department": "Teaching",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "M.S.",
+    "department": "Bioengineering and Biomedical Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Engineering",
+    "degree": "M.S.",
+    "department": "School of Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Industrial Engineering",
+    "degree": "M.S.",
+    "department": "Industrial Engineering",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Comparative Literature",
+    "degree": "M.S.",
+    "department": "Comparative Literature",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Creative Writing",
+    "degree": "M.S.",
+    "department": "Creative Writing",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "English Language Studies",
+    "degree": "M.S.",
+    "department": "Department of English",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Playwriting and Screenwriting",
+    "degree": "M.S.",
+    "department": "Playwriting and Screenwriting",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Environmental Science",
+    "degree": "M.S.",
+    "department": "Environmental Science",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Geology and Earth Science",
+    "degree": "M.S.",
+    "department": "Geology and Earth Science",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Foreign Languages and Literatures",
+    "degree": "M.S.",
+    "department": "Foreign Languages and Literatures",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "French Language and Literature",
+    "degree": "M.S.",
+    "department": "French Language and Literature",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Linguistics",
+    "degree": "M.S.",
+    "department": "Linguistics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Interpretation",
+    "degree": "M.S.",
+    "department": "Interpretation",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "and Translation",
+    "degree": "M.S.",
+    "department": "and Translation",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Spanish Language and Literature",
+    "degree": "M.S.",
+    "department": "Spanish Language and Literature",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "African Studies",
+    "degree": "M.S.",
+    "department": "African Studies",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "European and Russian Studies",
+    "degree": "M.S.",
+    "department": "European and Russian Studies",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "North American Studies",
+    "degree": "M.S.",
+    "department": "North American Studies",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Healthcare Management",
+    "degree": "M.S.",
+    "department": "Healthcare Management",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Medical Scientist",
+    "degree": "M.S.",
+    "department": "Medical Scientist",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Art History",
+    "degree": "M.S.",
+    "department": "Art History",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Historic Preservation and Conservation",
+    "degree": "M.S.",
+    "department": "Historic Preservation and Conservation",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "History",
+    "degree": "M.S.",
+    "department": "Department of History",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Latin and Ancient Greek Studies",
+    "degree": "M.S.",
+    "department": "Latin and Ancient Greek Studies",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Music History and Literature",
+    "degree": "M.S.",
+    "department": "Music History and Literature",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Computer and Information Systems Security",
+    "degree": "M.S.",
+    "department": "Computer and Information Systems Security",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Liberal Arts and Humanities",
+    "degree": "M.S.",
+    "department": "Liberal Arts and Humanities",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Computational and Applied Mathematics",
+    "degree": "M.S.",
+    "department": "Computational and Applied Mathematics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Data Science",
+    "degree": "M.S.",
+    "department": "Data Science Initiative",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Mathematics and Statistics",
+    "degree": "M.S.",
+    "department": "Mathematics and Statistics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Medicine",
+    "degree": "M.S.",
+    "department": "Medicine",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Music Technology",
+    "degree": "M.S.",
+    "department": "Music Technology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Acting",
+    "degree": "M.S.",
+    "department": "Acting",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Drama and Theatre Production",
+    "degree": "M.S.",
+    "department": "Drama and Theatre Production",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Philosophy",
+    "degree": "M.S.",
+    "department": "Philosophy",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "Department of Physics",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Political Science and Government",
+    "degree": "M.S.",
+    "department": "Political Science and Government",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Behavioral Sciences",
+    "degree": "M.S.",
+    "department": "Behavioral Sciences",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Cognitive Science",
+    "degree": "M.S.",
+    "department": "Cognitive Science",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Experimental Psychology",
+    "degree": "M.S.",
+    "department": "Experimental Psychology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Psychology",
+    "degree": "M.S.",
+    "department": "Psychology",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Public Policy Analysis",
+    "degree": "M.S.",
+    "department": "Public Policy Analysis",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Public Health",
+    "degree": "M.S.",
+    "department": "School of Public Health",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Religious Studies",
+    "degree": "M.S.",
+    "department": "Religious Studies",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  },
+  {
+    "universityId": "Brown University",
+    "name": "Social Sciences and Research Methods",
+    "degree": "M.S.",
+    "department": "Social Sciences and Research Methods",
+    "requirements": {
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-01-15",
+      "spring": "2025-08-15"
+    },
+    "website": "https://graduateschool.brown.edu/"
+  }
+]

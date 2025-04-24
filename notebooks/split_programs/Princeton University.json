@@ -1,0 +1,887 @@
+[
+  {
+    "universityId": "Princeton University",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Applied and Computational Math",
+    "degree": "Ph.D.",
+    "department": "Program in Applied and Computational Mathematics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Architecture",
+    "degree": "Ph.D.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Architecture",
+    "degree": "M.Arch.",
+    "department": "School of Architecture",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Art and Archaeology",
+    "degree": "Ph.D.",
+    "department": "Department of Art and Archaeology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Astrophysical Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Astrophysical Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Atmospheric and Oceanic Sciences",
+    "degree": "Ph.D.",
+    "department": "Program in Atmospheric and Oceanic Sciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Bioengineering",
+    "degree": "Ph.D.",
+    "department": "Department of Bioengineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Biophysics",
+    "degree": "Ph.D.",
+    "department": "Program in Biophysics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Chemical and Biological Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Chemical and Biological Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Chemical and Biological Engineering",
+    "degree": "M.S.E.",
+    "department": "Department of Chemical and Biological Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Chemical and Biological Engineering",
+    "degree": "M.Eng.",
+    "department": "Department of Chemical and Biological Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Civil and Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Civil and Environmental Engineering",
+    "degree": "M.S.E.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Civil and Environmental Engineering",
+    "degree": "M.Eng.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Classics",
+    "degree": "Ph.D.",
+    "department": "Department of Classics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Comparative Literature",
+    "degree": "Ph.D.",
+    "department": "Department of Comparative Literature",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Computer Science",
+    "degree": "M.S.E.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "East Asian Studies",
+    "degree": "Ph.D.",
+    "department": "Department of East Asian Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Ecology and Evolutionary Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Ecology and Evolutionary Biology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Electrical and Computer Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Electrical and Computer Engineering",
+    "degree": "M.Eng.",
+    "department": "Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Finance",
+    "degree": "M.Fin.",
+    "department": "Department of Finance",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2026-01-04"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "French and Italian",
+    "degree": "Ph.D.",
+    "department": "Department of French and Italian",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Geosciences",
+    "degree": "Ph.D.",
+    "department": "Department of Geosciences",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "German",
+    "degree": "Ph.D.",
+    "department": "Department of German",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "History of Science",
+    "degree": "Ph.D.",
+    "department": "Program in History of Science",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Mechanical and Aerospace Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Mechanical and Aerospace Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Mechanical and Aerospace Engineering",
+    "degree": "M.S.E.",
+    "department": "Department of Mechanical and Aerospace Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Mechanical and Aerospace Engineering",
+    "degree": "M.Eng.",
+    "department": "Department of Mechanical and Aerospace Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Molecular Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Molecular Biology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Molecular Biology",
+    "degree": "M.D./Ph.D.",
+    "department": "Department of Molecular Biology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Music Composition",
+    "degree": "Ph.D.",
+    "department": "Department of Music",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Musicology",
+    "degree": "Ph.D.",
+    "department": "Department of Music",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Near Eastern Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Near Eastern Studies",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Neuroscience",
+    "degree": "Ph.D.",
+    "department": "Princeton Neuroscience Institute",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Neuroscience",
+    "degree": "M.D./Ph.D.",
+    "department": "Princeton Neuroscience Institute",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Operations Research and Financial Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Operations Research and Financial Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Department of Philosophy",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Department of Physics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Plasma Physics",
+    "degree": "Ph.D.",
+    "department": "Program in Plasma Physics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Politics",
+    "degree": "Ph.D.",
+    "department": "Department of Politics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Population Studies",
+    "degree": "Ph.D.",
+    "department": "Office of Population Research",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Public and International Affairs",
+    "degree": "Ph.D.",
+    "department": "Princeton School of Public and International Affairs",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Public and International Affairs",
+    "degree": "M.P.A.",
+    "department": "Princeton School of Public and International Affairs",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Public and International Affairs",
+    "degree": "M.P.P.",
+    "department": "Princeton School of Public and International Affairs",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Department of Psychology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Quantitative and Computational Biology",
+    "degree": "Ph.D.",
+    "department": "Lewis-Sigler Institute for Integrative Genomics",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Quantum Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "Program in Quantum Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Religion",
+    "degree": "Ph.D.",
+    "department": "Department of Religion",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Slavic Languages and Literatures",
+    "degree": "Ph.D.",
+    "department": "Department of Slavic Languages and Literatures",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  },
+  {
+    "universityId": "Princeton University",
+    "name": "Spanish and Portuguese",
+    "degree": "Ph.D.",
+    "department": "Department of Spanish and Portuguese",
+    "requirements": {
+      "minimumGPA": 3.5,
+      "gre": false,
+      "toefl": false
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+  }
+]

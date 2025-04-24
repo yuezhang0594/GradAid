@@ -1,0 +1,1618 @@
+[
+  {
+    "universityId": "Tufts University",
+    "name": "Child Development",
+    "degree": "Ph.D.",
+    "department": "Child Development",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Biochemistry and Molecular Biology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Biomedical Sciences and Molecular Medicine",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Biotechnology",
+    "degree": "Ph.D.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Cellular Biology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Genetics and Genomics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Microbiology and Immunology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Dentistry",
+    "degree": "Ph.D.",
+    "department": "School of Dental Medicine",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Specialized Teaching and Education",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Civil Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "English Language Studies",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Medical Scientist",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "International Affairs",
+    "degree": "Ph.D.",
+    "department": "The Fletcher School",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Occupational Therapy",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Liberal Arts and Humanities",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Mathematics and Statistics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Medicine",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Nutrition Studies",
+    "degree": "Ph.D.",
+    "department": "Friedman School of Nutrition Science and Policy",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Drama and Theatre Production",
+    "degree": "Ph.D.",
+    "department": "School of the Museum of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Pharmaceutical Chemistry and Drug Design",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Cognitive Science",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Experimental Psychology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Public Health",
+    "degree": "Ph.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Veterinary Medicine",
+    "degree": "Ph.D.",
+    "department": "Cummings School of Veterinary Medicine",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Archaeology",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Child Development",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Minority and Ethnic Studies",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Biochemistry and Molecular Biology",
+    "degree": "M.S.",
+    "department": "Graduate School of Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Biology",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Biomedical Sciences and Molecular Medicine",
+    "degree": "M.S.",
+    "department": "Graduate School of Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Biotechnology",
+    "degree": "M.S.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Cellular Biology",
+    "degree": "M.S.",
+    "department": "Graduate School of Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Ecology and Evolutionary Biology",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Epidemiology",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Genetics and Genomics",
+    "degree": "M.S.",
+    "department": "Graduate School of Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Microbiology and Immunology",
+    "degree": "M.S.",
+    "department": "Graduate School of Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Neuroscience and Neurobiology",
+    "degree": "M.S.",
+    "department": "Graduate School of Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Business",
+    "degree": "M.B.A.",
+    "department": "The Fletcher School",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "International Business",
+    "degree": "M.B.A.",
+    "department": "The Fletcher School",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Communications",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Computer Software Engineering",
+    "degree": "M.S.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Human Computer Interaction",
+    "degree": "M.S.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Advanced Dentistry and Oral Sciences",
+    "degree": "D.M.D.",
+    "department": "School of Dental Medicine",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Dentistry",
+    "degree": "D.M.D.",
+    "department": "School of Dental Medicine",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Economics",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Specialized Teaching and Education",
+    "degree": "M.A.T.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Teaching",
+    "degree": "M.A.T.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Bioengineering and Biomedical Engineering",
+    "degree": "M.Eng.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Chemical Engineering",
+    "degree": "M.Eng.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Civil Engineering",
+    "degree": "M.Eng.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Computer Hardware Engineering",
+    "degree": "M.Eng.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Electrical Engineering",
+    "degree": "M.Eng.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Engineering",
+    "degree": "M.Eng.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Industrial Management",
+    "degree": "M.Eng.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Materials Engineering",
+    "degree": "M.Eng.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Mechanical Engineering",
+    "degree": "M.Eng.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "English Language Studies",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Environmental Science",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Sustainability Studies",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "French Language and Literature",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "German Language and Literature",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Healthcare Management",
+    "degree": "M.H.A.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Medical Illustration and Informatics",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Medical Scientist",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Art History",
+    "degree": "M.A.",
+    "department": "School of the Museum of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Latin and Ancient Greek Studies",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Music History and Literature",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Computer and Information Systems Security",
+    "degree": "M.S.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "International Affairs",
+    "degree": "M.A.",
+    "department": "The Fletcher School",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Occupational Therapy",
+    "degree": "M.S.O.T.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "International Law",
+    "degree": "LL.M.",
+    "department": "The Fletcher School",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Computational and Applied Mathematics",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Mathematics and Statistics",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Nutrition Studies",
+    "degree": "M.S.",
+    "department": "Friedman School of Nutrition Science and Policy",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Drama and Theatre Production",
+    "degree": "M.F.A.",
+    "department": "School of the Museum of Fine Arts",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Pharmaceutical Chemistry and Drug Design",
+    "degree": "M.S.",
+    "department": "Graduate School of Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Philosophy",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Physician Assistant",
+    "degree": "M.P.A.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Experimental Psychology",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "School Psychology",
+    "degree": "M.S.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Public Administration",
+    "degree": "M.P.A.",
+    "department": "The Fletcher School",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Public Policy Analysis",
+    "degree": "M.P.P.",
+    "department": "The Fletcher School",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Urban Studies and Affairs",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Public Health",
+    "degree": "M.P.H.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  },
+  {
+    "universityId": "Tufts University",
+    "name": "Veterinary Medicine",
+    "degree": "M.S.",
+    "department": "Cummings School of Veterinary Medicine",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-05-15",
+      "spring": "2025-09-15"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/"
+  }
+]

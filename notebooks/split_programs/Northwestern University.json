@@ -1,0 +1,2370 @@
+[
+  {
+    "universityId": "Northwestern University",
+    "name": "Accounting Information and Management",
+    "degree": "Ph.D.",
+    "department": "Kellogg School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Applied Economics and Social and Economic Policy",
+    "degree": "M.A.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Applied Physics",
+    "degree": "Ph.D.",
+    "department": "Department of Physics and Astronomy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Art History",
+    "degree": "Ph.D.",
+    "department": "Department of Art History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Artificial Intelligence",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Art Theory and Practice",
+    "degree": "M.F.A.",
+    "department": "Department of Art Theory and Practice",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Audiology",
+    "degree": "Ph.D.",
+    "department": "School of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Biomedical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Biostatistics",
+    "degree": "M.S.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Biotechnology",
+    "degree": "M.S.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Black Studies",
+    "degree": "Ph.D.",
+    "department": "Department of African American Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Brass Performance",
+    "degree": "M.M.",
+    "department": "Bienen School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Chemical and Biological Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Chemical and Biological Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Civil and Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Clinical Investigation",
+    "degree": "M.S.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Clinical Psychology",
+    "degree": "Ph.D.",
+    "department": "Department of Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Communication",
+    "degree": "Ph.D.",
+    "department": "School of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Communication Sciences and Disorders",
+    "degree": "Ph.D.",
+    "department": "School of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Comparative Literary Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Comparative Literary Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Computer Engineering",
+    "degree": "M.S.",
+    "department": "Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Computer Science and Learning Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Conducting",
+    "degree": "M.M.",
+    "department": "Bienen School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Counseling",
+    "degree": "M.A.",
+    "department": "School of Education and Social Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Data Science",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Directing",
+    "degree": "M.F.A.",
+    "department": "School of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Documentary Media",
+    "degree": "M.F.A.",
+    "department": "School of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Earth and Planetary Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Earth and Planetary Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Education",
+    "degree": "M.S.Ed.",
+    "department": "School of Education and Social Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Electrical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Sports Administration",
+    "degree": "M.S.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Energy and Sustainability",
+    "degree": "M.S.",
+    "department": "School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Engineering Design Innovation",
+    "degree": "M.S.",
+    "department": "McCormick School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Engineering Management",
+    "degree": "M.S.",
+    "department": "McCormick School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Engineering Sciences and Applied Mathematics",
+    "degree": "Ph.D.",
+    "department": "Department of Engineering Sciences and Applied Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Finance",
+    "degree": "Ph.D.",
+    "department": "Kellogg School of Business",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "French and Italian",
+    "degree": "Ph.D.",
+    "department": "Department of French and Italian",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Genetic Counseling",
+    "degree": "M.S.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Geotechnics",
+    "degree": "M.S.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "German Literature and Critical Thought",
+    "degree": "Ph.D.",
+    "department": "Department of German",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Global Health",
+    "degree": "M.S.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Health Analytics",
+    "degree": "M.S.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Healthcare Administration",
+    "degree": "M.S.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Healthcare Quality and Patient Safety",
+    "degree": "M.S.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Health Informatics",
+    "degree": "M.S.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Health Sciences Integrated",
+    "degree": "Ph.D.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Health Services and Outcomes Research",
+    "degree": "Ph.D.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Higher Education Administration and Policy",
+    "degree": "M.S.",
+    "department": "School of Education and Social Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Human Development and Social Policy",
+    "degree": "Ph.D.",
+    "department": "School of Education and Social Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Industrial Engineering and Management Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Industrial Engineering and Management Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Information Design and Strategy",
+    "degree": "M.S.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Information Systems",
+    "degree": "M.S.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Information Technology",
+    "degree": "M.S.",
+    "department": "McCormick School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Integrated Marketing Communications",
+    "degree": "M.S.",
+    "department": "Medill School of Journalism",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Integrated Marketing Communications Professional",
+    "degree": "M.S.",
+    "department": "Medill School of Journalism",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Interdepartmental Neuroscience",
+    "degree": "Ph.D.",
+    "department": "Northwestern Interdepartmental Neuroscience Program",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Interdisciplinary Biological Sciences",
+    "degree": "Ph.D.",
+    "department": "The Graduate School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "International Executive MBA",
+    "degree": "M.B.A.",
+    "department": "Kellogg School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Jazz Studies",
+    "degree": "M.M.",
+    "department": "Bienen School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Juris Doctor",
+    "degree": "J.D.",
+    "department": "Pritzker School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Juris Doctor for International Lawyers",
+    "degree": "J.D.",
+    "department": "Pritzker School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "JD-LLM in International Human Rights",
+    "degree": "J.D.",
+    "department": "Pritzker School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "JD-LLM in Taxation",
+    "degree": "J.D.",
+    "department": "Pritzker School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "JD-MBA",
+    "degree": "J.D.",
+    "department": "Pritzker School of Law and Kellogg School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "JD-PhD",
+    "degree": "J.D.",
+    "department": "Pritzker School of Law and The Graduate School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Journalism",
+    "degree": "M.S.J.",
+    "department": "Medill School of Journalism",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Leadership for Creative Enterprises",
+    "degree": "M.S.",
+    "department": "School of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Learning and Organizational Change",
+    "degree": "M.S.",
+    "department": "School of Education and Social Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Learning Sciences",
+    "degree": "Ph.D.",
+    "department": "School of Education and Social Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Life and Biomedical Sciences",
+    "degree": "Ph.D.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Linguistics",
+    "degree": "Ph.D.",
+    "department": "Department of Linguistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Literature",
+    "degree": "Ph.D.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "LLM in Taxation",
+    "degree": "LL.M.",
+    "department": "Pritzker School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "LLM Program in International Human Rights",
+    "degree": "LL.M.",
+    "department": "Pritzker School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Machine Learning and Data Science",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Management and Organization",
+    "degree": "Ph.D.",
+    "department": "Kellogg School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Management and Organization and Sociology",
+    "degree": "Ph.D.",
+    "department": "Kellogg School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Managerial Economics and Strategy",
+    "degree": "Ph.D.",
+    "department": "Kellogg School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Marketing",
+    "degree": "Ph.D.",
+    "department": "Kellogg School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Marriage and Family Therapy",
+    "degree": "M.S.",
+    "department": "The Family Institute",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Materials Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Materials Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "MBA One-Year Program",
+    "degree": "M.B.A.",
+    "department": "Kellogg School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "MBA Two-Year Program",
+    "degree": "M.B.A.",
+    "department": "Kellogg School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "MBA Part-Time",
+    "degree": "M.B.A.",
+    "department": "Kellogg School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "MBAi Program",
+    "degree": "M.B.A.",
+    "department": "Kellogg School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "MD Doctor of Medicine",
+    "degree": "M.D.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "MD-MA Medical Humanities & Bioethics",
+    "degree": "M.D.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "MD-MS Healthcare Quality & Patient Safety",
+    "degree": "M.D.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Mechanical and Materials Science & Engineering",
+    "degree": "M.S.",
+    "department": "Department of Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Mechanical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Media, Technology, and Society",
+    "degree": "Ph.D.",
+    "department": "School of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Medical Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Medical Humanities and Bioethics",
+    "degree": "M.A.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Medical Scientist Training Program",
+    "degree": "M.D.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "MMM Program: Combined MBA and MS in Design Innovation",
+    "degree": "M.B.A.",
+    "department": "Kellogg School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Multidisciplinary Program in Education Sciences",
+    "degree": "Ph.D.",
+    "department": "School of Education and Social Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Music",
+    "degree": "Ph.D.",
+    "department": "Bienen School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Music Education",
+    "degree": "M.M.",
+    "department": "Bienen School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Music Education and Piano Pedagogy",
+    "degree": "M.M.",
+    "department": "Bienen School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Musicology",
+    "degree": "Ph.D.",
+    "department": "Bienen School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Music Theory and Cognition",
+    "degree": "Ph.D.",
+    "department": "Bienen School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Neurobiology",
+    "degree": "Ph.D.",
+    "department": "Department of Neurobiology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Neuroscience & Movement and Rehabilitation Science",
+    "degree": "Ph.D.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Operations Management",
+    "degree": "Ph.D.",
+    "department": "Kellogg School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Percussion Performance",
+    "degree": "M.M.",
+    "department": "Bienen School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Performance Studies",
+    "degree": "Ph.D.",
+    "department": "School of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Philosophy in Rhetoric, Media, and Publics",
+    "degree": "Ph.D.",
+    "department": "School of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Department of Philosophy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Physical Therapy",
+    "degree": "D.P.T.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Physical Therapy DPT-PhD Engineering",
+    "degree": "D.P.T.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Physician Assistant Program",
+    "degree": "M.S.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Physics and Astronomy",
+    "degree": "Ph.D.",
+    "department": "Department of Physics and Astronomy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Piano Performance",
+    "degree": "M.M.",
+    "department": "Bienen School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Piano Performance and Pedagogy",
+    "degree": "M.M.",
+    "department": "Bienen School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Plant Biology and Conservation",
+    "degree": "Ph.D.",
+    "department": "Department of Plant Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Predictive Analytics",
+    "degree": "M.S.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Predictive Science and Engineering Design",
+    "degree": "Ph.D.",
+    "department": "McCormick School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Product Design and Development Management",
+    "degree": "M.S.",
+    "department": "McCormick School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Project Management",
+    "degree": "M.S.",
+    "department": "McCormick School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Prose and Poetry",
+    "degree": "M.F.A.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Prosthetics-Orthotics",
+    "degree": "M.S.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Department of Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Public Health",
+    "degree": "M.P.H.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Public Health Combined MD/MPH",
+    "degree": "M.P.H.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Public Policy and Administration",
+    "degree": "M.P.A.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Regulatory Compliance",
+    "degree": "M.S.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Religious Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Religious Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Reproductive Science and Medicine",
+    "degree": "M.S.",
+    "department": "Feinberg School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Robotics",
+    "degree": "M.S.",
+    "department": "McCormick School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Screen Cultures",
+    "degree": "Ph.D.",
+    "department": "School of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Slavic Languages and Literatures",
+    "degree": "Ph.D.",
+    "department": "Department of Slavic Languages and Literatures",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Social Impact and Sustainability",
+    "degree": "M.S.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Sound Arts and Industries",
+    "degree": "M.A.",
+    "department": "School of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Spanish and Portuguese",
+    "degree": "Ph.D.",
+    "department": "Department of Spanish and Portuguese",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Speech, Language, and Learning",
+    "degree": "M.S.",
+    "department": "School of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Sports Administration",
+    "degree": "M.S.",
+    "department": "School of Professional Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Stage Design",
+    "degree": "M.F.A.",
+    "department": "School of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  },
+  {
+    "universityId": "Northwestern University",
+    "name": "String Performance",
+    "degree": "M.M.",
+    "department": "Bienen School of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-04",
+      "spring": "2025-03-13"
+    },
+    "website": "https://www.tgs.northwestern.edu/"
+  }
+]

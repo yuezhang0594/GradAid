@@ -1,0 +1,546 @@
+[
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Applied and Interdisciplinary Mathematics",
+    "degree": "M.S.",
+    "department": "Literature, Science, and the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Applied and Interdisciplinary Mathematics",
+    "degree": "Ph.D.",
+    "department": "Literature, Science, and the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Mathematics",
+    "degree": "M.S.",
+    "department": "Literature, Science, and the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Literature, Science, and the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.E.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Creative Writing",
+    "degree": "M.F.A.",
+    "department": "Literature, Science, and the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Environmental Health Sciences",
+    "degree": "M.S.",
+    "department": "Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Environmental Health Sciences",
+    "degree": "Ph.D.",
+    "department": "Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Naval Architecture and Marine Engineering",
+    "degree": "M.S.E.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Naval Architecture and Marine Engineering",
+    "degree": "Ph.D.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Arabic Studies",
+    "degree": "M.A.",
+    "department": "Literature, Science, and the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Philosophy",
+    "degree": "M.A.",
+    "department": "Literature, Science, and the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Literature, Science, and the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 5",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Literature, Science, and the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Ancient History",
+    "degree": "Ph.D.",
+    "department": "Literature, Science, and the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Health and Health Care Research",
+    "degree": "M.S.",
+    "department": "Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "May 1",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Environmental Engineering",
+    "degree": "M.S.E.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Ancient Mediterranean Art and Archaeology",
+    "degree": "Ph.D.",
+    "department": "Literature, Science, and the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Environment and Sustainability",
+    "degree": "Ph.D.",
+    "department": "Environment and Sustainability",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 2",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Industrial and Operations Engineering",
+    "degree": "M.S.E.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Industrial and Operations Engineering",
+    "degree": "Ph.D.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 10",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Information",
+    "degree": "Ph.D.",
+    "department": "Information",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "Literature, Science, and the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Literature, Science, and the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Civil Engineering",
+    "degree": "M.S.E.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Civil Engineering",
+    "degree": "Ph.D.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Robotics",
+    "degree": "M.S.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Robotics",
+    "degree": "Ph.D.",
+    "department": "Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Romance Languages and Literatures: French",
+    "degree": "Ph.D.",
+    "department": "Literature, Science, and the Arts",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Health Behavior and Health Equity",
+    "degree": "Ph.D.",
+    "department": "Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Health Infrastructures and Learning Systems",
+    "degree": "M.S.",
+    "department": "Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  },
+  {
+    "universityId": "University of Michigan - Ann Arbor",
+    "name": "Health Infrastructures and Learning Systems",
+    "degree": "Ph.D.",
+    "department": "Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1",
+      "spring": "October 1"
+    },
+    "website": "https://rackham.umich.edu/programs-of-study/"
+  }
+]

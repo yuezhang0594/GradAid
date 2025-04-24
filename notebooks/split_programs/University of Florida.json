@@ -1,0 +1,782 @@
+[
+  {
+    "universityId": "University of Florida",
+    "name": "Aerospace Engineering",
+    "degree": "M.S.",
+    "department": "Department of Aerospace Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Agricultural and Biological Engineering",
+    "degree": "M.S.",
+    "department": "Department of Agricultural and Biological Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Agricultural and Biological Engineering",
+    "degree": "M.E.",
+    "department": "Department of Agricultural and Biological Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Agricultural Education and Communication",
+    "degree": "M.S.",
+    "department": "Department of Agricultural Education and Communication",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Agronomy",
+    "degree": "M.S.",
+    "department": "Department of Agronomy",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Art",
+    "degree": "M.F.A.",
+    "department": "School of Art and Art History",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Audiology",
+    "degree": "Au.D.",
+    "department": "Department of Speech, Language, and Hearing Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Biomedical Engineering",
+    "degree": "M.E.",
+    "department": "J. Crayton Pruitt Family Department of Biomedical Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Business Administration",
+    "degree": "M.B.A.",
+    "department": "Warrington College of Business",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Chemical Engineering",
+    "degree": "M.E.",
+    "department": "Department of Chemical Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Construction Management",
+    "degree": "M.C.M.",
+    "department": "M.E. Rinker, Sr. School of Construction Management",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Creative Writing",
+    "degree": "M.F.A.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Curriculum and Instruction",
+    "degree": "M.Ed.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Curriculum and Instruction",
+    "degree": "Ed.S.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Design and Visual Communications",
+    "degree": "M.F.A.",
+    "department": "College of Design, Construction and Planning",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Early Childhood Education",
+    "degree": "M.Ed.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Educational Leadership",
+    "degree": "M.Ed.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Educational Leadership",
+    "degree": "Ed.S.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Elementary Education",
+    "degree": "M.Ed.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "English Education",
+    "degree": "M.A.T.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Environmental and Global Health",
+    "degree": "M.H.S.",
+    "department": "College of Public Health and Health Professions",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Fisheries and Aquatic Sciences",
+    "degree": "M.F.A.S.",
+    "department": "School of Forest, Fisheries, and Geomatics Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Forest Resources and Conservation",
+    "degree": "M.F.R.C.",
+    "department": "School of Forest, Fisheries, and Geomatics Sciences",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Health Administration",
+    "degree": "M.H.A.",
+    "department": "College of Public Health and Health Professions",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Historic Preservation",
+    "degree": "M.H.P.",
+    "department": "College of Design, Construction and Planning",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Marriage and Family Counseling",
+    "degree": "M.A.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Marriage and Family Counseling",
+    "degree": "Ed.S.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Materials Science and Engineering",
+    "degree": "M.S.",
+    "department": "Department of Materials Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Mathematics",
+    "degree": "M.S.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Mental Health Counseling",
+    "degree": "M.A.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Mental Health Counseling",
+    "degree": "Ed.S.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Music",
+    "degree": "D.M.A.",
+    "department": "School of Music",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Nuclear Engineering Sciences",
+    "degree": "M.S.",
+    "department": "Department of Materials Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "Department of Physics",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Preventive Veterinary Medicine",
+    "degree": "M.P.V.M.",
+    "department": "College of Veterinary Medicine",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Public Health",
+    "degree": "M.P.H.",
+    "department": "College of Public Health and Health Professions",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Reading Education",
+    "degree": "M.A.T.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Research and Evaluation Methodology",
+    "degree": "M.A.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "School Counseling and Guidance",
+    "degree": "M.A.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "School Counseling and Guidance",
+    "degree": "Ed.S.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "School Psychology",
+    "degree": "M.A.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "School Psychology",
+    "degree": "Ed.S.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Science Education",
+    "degree": "M.S.T.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Social Studies Education",
+    "degree": "M.A.T.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Special Education",
+    "degree": "M.A.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Special Education",
+    "degree": "Ed.S.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Statistics",
+    "degree": "M.Stat.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Student Personnel in Higher Education",
+    "degree": "M.A.",
+    "department": "College of Education",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Sustainable Development Practice",
+    "degree": "M.D.P.",
+    "department": "Center for Latin American Studies",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Theatre",
+    "degree": "M.F.A.",
+    "department": "School of Theatre and Dance",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Urban and Regional Planning",
+    "degree": "M.U.R.P.",
+    "department": "College of Design, Construction and Planning",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  },
+  {
+    "universityId": "University of Florida",
+    "name": "Zoology",
+    "degree": "M.S.",
+    "department": "Department of Biology",
+    "requirements": {
+      "minimumGPA": 3.3,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": ""
+    },
+    "website": "https://gradcatalog.ufl.edu/graduate/degrees/table/"
+  }
+]

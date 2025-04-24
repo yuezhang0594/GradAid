@@ -1,0 +1,802 @@
+[
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Ethnic Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Ethnic Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Bioinformatics & Systems Biology",
+    "degree": "Ph.D.",
+    "department": "School of Computing, Information and Data Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "School of Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Biomedical Sciences",
+    "degree": "Ph.D.",
+    "department": "Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Biostatistics",
+    "degree": "Ph.D.",
+    "department": "Herbert Wertheim School of Public Health and Human Longevity Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Chemistry & Biochemistry",
+    "degree": "Ph.D.",
+    "department": "School of Physical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Communication",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Computational Social Science",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Computer Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "Jacobs School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Convergent Systems Engineering",
+    "degree": "Ph.D.",
+    "department": "Jacobs School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Data Science",
+    "degree": "Ph.D.",
+    "department": "School of Computing, Information and Data Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Data Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "Jacobs School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Education Studies",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Electrical and Computer Engineering",
+    "degree": "Ph.D.",
+    "department": "Jacobs School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Bioengineering",
+    "degree": "Ph.D.",
+    "department": "Jacobs School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Materials Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "Jacobs School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Mechanical and Aerospace Engineering",
+    "degree": "Ph.D.",
+    "department": "Jacobs School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Nanoengineering / Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "Jacobs School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Structural Engineering",
+    "degree": "Ph.D.",
+    "department": "Jacobs School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Global Health",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Latin American Studies",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Linguistics",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Literature",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "School of Physical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Music",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Neurosciences",
+    "degree": "Ph.D.",
+    "department": "Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "School of Physical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Public Health",
+    "degree": "Ph.D.",
+    "department": "Herbert Wertheim School of Public Health and Human Longevity Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Theatre and Dance",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Visual Arts",
+    "degree": "Ph.D.",
+    "department": "School of Arts & Humanities",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Wireless Embedded Systems",
+    "degree": "Ph.D.",
+    "department": "Jacobs School of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Cognitive Sciences",
+    "degree": "Ph.D.",
+    "department": "School of Social Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Clinical Psychology",
+    "degree": "Ph.D.",
+    "department": "Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Clinical Research",
+    "degree": "M.S.",
+    "department": "Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Drug Development and Product Management",
+    "degree": "M.S.",
+    "department": "Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Interdisciplinary Research on Substance Use",
+    "degree": "Ph.D.",
+    "department": "Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Language and Communicative Disorders",
+    "degree": "Ph.D.",
+    "department": "Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Audiology",
+    "degree": "Au.D.",
+    "department": "Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Astronomy",
+    "degree": "Ph.D.",
+    "department": "School of Physical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Data Science Online",
+    "degree": "M.S.",
+    "department": "School of Computing, Information and Data Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "School of Global Policy & Strategy",
+    "degree": "M.A.",
+    "department": "School of Global Policy and Strategy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Rady School of Management",
+    "degree": "M.B.A.",
+    "department": "Rady School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  },
+  {
+    "universityId": "University of California, San Diego",
+    "name": "Scripps Institution of Oceanography",
+    "degree": "Ph.D.",
+    "department": "Scripps Institution of Oceanography",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-18",
+      "spring": null
+    },
+    "website": "https://grad.ucsd.edu/admissions/programs.html"
+  }
+]

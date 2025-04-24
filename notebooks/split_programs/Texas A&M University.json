@@ -1,0 +1,2177 @@
+[
+  {
+    "universityId": "Texas A&M University",
+    "name": "Aerospace Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/aerospace/aerospace-engineering-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Agricultural Economics",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/agricultural-economics/agricultural-economics-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Agricultural Leadership, Education, and Communications",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/agricultural-leadership-education-communications/agricultural-leadership-education-communications-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Animal Science",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/animal-science/animal-science-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/anthropology/anthropology-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Architecture",
+    "degree": "Ph.D.",
+    "department": "College of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/architecture/architecture-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Biochemistry",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/biochemistry-biophysics/biochemistry-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Biological and Agricultural Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/biological-agricultural/biological-agricultural-engineering-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/biology/biology-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/biomedical/biomedical-engineering-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Biomedical Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Veterinary Medicine & Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/veterinary-medicine-biomedical-sciences/biomedical-sciences-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Business Administration",
+    "degree": "Ph.D.",
+    "department": "Mays Business School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 5"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/business/business-administration-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Chemical Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/chemical/chemical-engineering-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/chemistry/chemistry-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Civil Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/civil-environmental/civil-engineering-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Communication",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/communication/communication-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Computer Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/computer-science/computer-engineering-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/computer-science/computer-science-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Curriculum and Instruction",
+    "degree": "Ph.D.",
+    "department": "College of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/education-human-development/teaching-learning-culture/curriculum-instruction-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/economics/economics-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Educational Administration",
+    "degree": "Ph.D.",
+    "department": "College of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/education-human-development/educational-administration-human-resource-development/educational-administration-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Educational Psychology",
+    "degree": "Ph.D.",
+    "department": "College of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/education-human-development/educational-psychology/educational-psychology-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/electrical-computer/electrical-engineering-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/english/english-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Entomology",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/entomology/entomology-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Food Science and Technology",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/food-science-technology/food-science-technology-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Genetics",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/interdisciplinary/genetics-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Geography",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/geography/geography-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Geology",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/geology-geophysics/geology-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Geophysics",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/geology-geophysics/geophysics-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/history/history-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Horticulture",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/horticultural-sciences/horticulture-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Industrial Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/industrial-systems/industrial-engineering-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Kinesiology",
+    "degree": "Ph.D.",
+    "department": "College of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/education-human-development/health-kinesiology/kinesiology-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Materials Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/materials-science/materials-science-engineering-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/mathematics/mathematics-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/mechanical/mechanical-engineering-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Microbiology",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/microbiology/microbiology-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Nuclear Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/nuclear/nuclear-engineering-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Nutrition",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/nutrition-food-science/nutrition-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Ocean Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/ocean/ocean-engineering-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Petroleum Engineering",
+    "degree": "Ph.D.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/petroleum/petroleum-engineering-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/philosophy/philosophy-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/physics-astronomy/physics-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Plant Breeding",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/soil-crop-sciences/plant-breeding-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Plant Pathology",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/plant-pathology-microbiology/plant-pathology-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/political-science/political-science-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Poultry Science",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/poultry-science/poultry-science-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/psychological-brain-sciences/psychology-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Recreation, Park and Tourism Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/recreation-park-tourism-sciences/recreation-park-tourism-sciences-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/sociology/sociology-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Soil Science",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/soil-crop-sciences/soil-science-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/statistics/statistics-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Urban and Regional Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/architecture/landscape-architecture-urban-planning/urban-regional-sciences-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Veterinary Medical Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Veterinary Medicine & Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/veterinary-medicine-biomedical-sciences/veterinary-medical-sciences-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Wildlife and Fisheries Sciences",
+    "degree": "Ph.D.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/rangeland-wildlife-fisheries-management/wildlife-fisheries-sciences-phd/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Accounting",
+    "degree": "M.B.A.",
+    "department": "Mays Business School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/business/accounting/accounting-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Aerospace Engineering",
+    "degree": "M.Eng.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/aerospace/aerospace-engineering-meng/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Aerospace Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/aerospace/aerospace-engineering-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Agricultural Economics",
+    "degree": "M.Ag.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/agricultural-economics/agricultural-economics-mag/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Agricultural Economics",
+    "degree": "M.S.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/agricultural-economics/agricultural-economics-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Agricultural Leadership, Education, and Communications",
+    "degree": "M.Ed.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/agricultural-leadership-education-communications/agricultural-leadership-education-communications-med/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Agricultural Leadership, Education, and Communications",
+    "degree": "M.S.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/agricultural-leadership-education-communications/agricultural-leadership-education-communications-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Animal Science",
+    "degree": "M.Ag.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/animal-science/animal-science-mag/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Animal Science",
+    "degree": "M.S.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/animal-science/animal-science-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Anthropology",
+    "degree": "M.A.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/anthropology/anthropology-ma/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Architecture",
+    "degree": "M.Arch.",
+    "department": "College of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/architecture/architecture-march/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Biochemistry",
+    "degree": "M.S.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/biochemistry-biophysics/biochemistry-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Biological and Agricultural Engineering",
+    "degree": "M.Eng.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/biological-agricultural/biological-agricultural-engineering-meng/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Biological and Agricultural Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/biological-agricultural/biological-agricultural-engineering-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Biology",
+    "degree": "M.S.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/biology/biology-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Biomedical Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/biomedical/biomedical-engineering-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Biotechnology",
+    "degree": "M.S.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "February 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/biotechnology-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Business Administration",
+    "degree": "M.B.A.",
+    "department": "Mays Business School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 5"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/business/business-administration-mba/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Chemical Engineering",
+    "degree": "M.Eng.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/chemical/chemical-engineering-meng/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Chemical Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/chemical/chemical-engineering-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Chemistry",
+    "degree": "M.S.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/chemistry/chemistry-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Civil Engineering",
+    "degree": "M.Eng.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/civil-environmental/civil-engineering-meng/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Civil Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/civil-environmental/civil-engineering-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Communication",
+    "degree": "M.A.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/communication/communication-ma/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Computer Engineering",
+    "degree": "M.Eng.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/computer-science/computer-engineering-meng/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Computer Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/computer-science/computer-engineering-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Computer Science",
+    "degree": "M.C.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/computer-science/computer-science-mcs/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/computer-science/computer-science-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Construction Management",
+    "degree": "M.S.",
+    "department": "College of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/architecture/construction-science/construction-management-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Curriculum and Instruction",
+    "degree": "M.Ed.",
+    "department": "College of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/education-human-development/teaching-learning-culture/curriculum-instruction-med/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Curriculum and Instruction",
+    "degree": "M.S.",
+    "department": "College of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/education-human-development/teaching-learning-culture/curriculum-instruction-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Economics",
+    "degree": "M.S.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/economics/economics-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Educational Administration",
+    "degree": "M.Ed.",
+    "department": "College of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/education-human-development/educational-administration-human-resource-development/educational-administration-med/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Educational Psychology",
+    "degree": "M.Ed.",
+    "department": "College of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/education-human-development/educational-psychology/educational-psychology-med/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Educational Psychology",
+    "degree": "M.S.",
+    "department": "College of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/education-human-development/educational-psychology/educational-psychology-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Electrical Engineering",
+    "degree": "M.Eng.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/electrical-computer/electrical-engineering-meng/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Electrical Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/electrical-computer/electrical-engineering-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "English",
+    "degree": "M.A.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/english/english-ma/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Entomology",
+    "degree": "M.Ag.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/entomology/entomology-mag/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Entomology",
+    "degree": "M.S.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/entomology/entomology-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Finance",
+    "degree": "M.S.",
+    "department": "Mays Business School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/business/finance/finance-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Food Science and Technology",
+    "degree": "M.Ag.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/food-science-technology/food-science-technology-mag/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Food Science and Technology",
+    "degree": "M.S.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/food-science-technology/food-science-technology-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Genetics",
+    "degree": "M.S.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/interdisciplinary/genetics-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Geography",
+    "degree": "M.S.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/geography/geography-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Geology",
+    "degree": "M.S.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/geology-geophysics/geology-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Geophysics",
+    "degree": "M.S.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/geology-geophysics/geophysics-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Health Education",
+    "degree": "M.S.",
+    "department": "College of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/education-human-development/health-kinesiology/health-education-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/history/history-ma/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Horticulture",
+    "degree": "M.Ag.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/horticultural-sciences/horticulture-mag/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Horticulture",
+    "degree": "M.S.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/horticultural-sciences/horticulture-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Industrial Engineering",
+    "degree": "M.Eng.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/industrial-systems/industrial-engineering-meng/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Industrial Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/industrial-systems/industrial-engineering-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Information Science",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/information-operations-management/information-science-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Kinesiology",
+    "degree": "M.S.",
+    "department": "College of Education and Human Development",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/education-human-development/health-kinesiology/kinesiology-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Landscape Architecture",
+    "degree": "M.L.A.",
+    "department": "College of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/architecture/landscape-architecture-urban-planning/landscape-architecture-mla/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Management",
+    "degree": "M.S.",
+    "department": "Mays Business School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/business/management/management-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Marketing",
+    "degree": "M.S.",
+    "department": "Mays Business School",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/business/marketing/marketing-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Materials Science and Engineering",
+    "degree": "M.Eng.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/materials-science/materials-science-engineering-meng/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Materials Science and Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/materials-science/materials-science-engineering-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Mathematics",
+    "degree": "M.S.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/mathematics/mathematics-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Mechanical Engineering",
+    "degree": "M.Eng.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/mechanical/mechanical-engineering-meng/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Mechanical Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/mechanical/mechanical-engineering-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Microbiology",
+    "degree": "M.S.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/microbiology/microbiology-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Nuclear Engineering",
+    "degree": "M.Eng.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/nuclear/nuclear-engineering-meng/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Nuclear Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/nuclear/nuclear-engineering-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Nutrition",
+    "degree": "M.S.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/nutrition-food-science/nutrition-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Ocean Engineering",
+    "degree": "M.Eng.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/ocean/ocean-engineering-meng/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Ocean Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/ocean/ocean-engineering-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Petroleum Engineering",
+    "degree": "M.Eng.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/petroleum/petroleum-engineering-meng/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Petroleum Engineering",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/petroleum/petroleum-engineering-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/physics-astronomy/physics-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Plant Breeding",
+    "degree": "M.S.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/soil-crop-sciences/plant-breeding-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Plant Pathology",
+    "degree": "M.S.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/plant-pathology-microbiology/plant-pathology-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Political Science",
+    "degree": "M.A.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/political-science/political-science-ma/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Poultry Science",
+    "degree": "M.Ag.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/poultry-science/poultry-science-mag/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Poultry Science",
+    "degree": "M.S.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/poultry-science/poultry-science-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Psychology",
+    "degree": "M.S.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/psychological-brain-sciences/psychology-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Public Health",
+    "degree": "M.P.H.",
+    "department": "School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/public-health/mph/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Public Service and Administration",
+    "degree": "M.P.S.A.",
+    "department": "The Bush School of Government & Public Service",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/government-public-service/public-service-administration-mpsa/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Recreation, Park and Tourism Sciences",
+    "degree": "M.Ag.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/recreation-park-tourism-sciences/recreation-park-tourism-sciences-mag/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Recreation, Park and Tourism Sciences",
+    "degree": "M.S.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/recreation-park-tourism-sciences/recreation-park-tourism-sciences-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Sociology",
+    "degree": "M.S.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/sociology/sociology-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Soil Science",
+    "degree": "M.S.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/soil-crop-sciences/soil-science-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "College of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/arts-sciences/statistics/statistics-ms/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Urban Planning",
+    "degree": "M.U.P.",
+    "department": "College of Architecture",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/architecture/landscape-architecture-urban-planning/urban-planning-mup/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Veterinary Medicine",
+    "degree": "D.V.M.",
+    "department": "College of Veterinary Medicine & Biomedical Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "October 1"
+    },
+    "website": "https://catalog.tamu.edu/professional/veterinary-medicine/dvm/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Wildlife and Fisheries Sciences",
+    "degree": "M.Ag.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/rangeland-wildlife-fisheries-management/wildlife-fisheries-sciences-mag/"
+  },
+  {
+    "universityId": "Texas A&M University",
+    "name": "Wildlife and Fisheries Sciences",
+    "degree": "M.S.",
+    "department": "College of Agriculture and Life Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 1"
+    },
+    "website": "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/agriculture-life-sciences/rangeland-wildlife-fisheries-management/wildlife-fisheries-sciences-ms/"
+  }
+]

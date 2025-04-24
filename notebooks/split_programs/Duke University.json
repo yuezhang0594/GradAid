@@ -1,0 +1,1108 @@
+[
+  {
+    "universityId": "Duke University",
+    "name": "Cultural Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Cultural Anthropology",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Evolutionary Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Evolutionary Anthropology",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Biochemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Biochemistry",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Computational Biology and Bioinformatics",
+    "degree": "Ph.D.",
+    "department": "Duke Center for Genomic and Computational Biology",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Biology",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Biostatistics and Bioinformatics",
+    "degree": "Ph.D.",
+    "department": "Department of Biostatistics and Bioinformatics",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Cell Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Cell Biology",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Cell and Molecular Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Cell and Molecular Biology",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Genetics and Genomics",
+    "degree": "Ph.D.",
+    "department": "Department of Molecular Genetics and Microbiology",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Marine Science and Conservation",
+    "degree": "Ph.D.",
+    "department": "Nicholas School of the Environment",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Immunology",
+    "degree": "Ph.D.",
+    "department": "Department of Immunology",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Neurobiology",
+    "degree": "Ph.D.",
+    "department": "Department of Neurobiology",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Pathobiology and Translational Biosciences",
+    "degree": "Ph.D.",
+    "department": "Department of Pathology",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Pharmacology",
+    "degree": "Ph.D.",
+    "department": "Department of Pharmacology and Cancer Biology",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Business Administration",
+    "degree": "Ph.D.",
+    "department": "Fuqua School of Business",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Chemistry",
+    "degree": "Ph.D.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Computational Media, Arts & Cultures",
+    "degree": "Ph.D.",
+    "department": "Department of Art, Art History & Visual Studies",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Economics",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Biomedical Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Biomedical Engineering",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Civil and Environmental Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Electrical and Computer Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Electrical and Computer Engineering",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Mechanical Engineering and Materials Science",
+    "degree": "Ph.D.",
+    "department": "Department of Mechanical Engineering and Materials Science",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "Department of English",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Environment",
+    "degree": "Ph.D.",
+    "department": "Nicholas School of the Environment",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Earth and Climate Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Earth and Climate Sciences",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Romance Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Romance Studies",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "German Studies (Carolina-Duke German Program)",
+    "degree": "Ph.D.",
+    "department": "Department of Germanic Languages and Literature",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Art, Art History and Visual Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Art, Art History and Visual Studies",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Department of History",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Classical Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Classical Studies",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Music",
+    "degree": "Ph.D.",
+    "department": "Department of Music",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Medical Physics",
+    "degree": "Ph.D.",
+    "department": "Department of Medical Physics",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Statistical Science",
+    "degree": "Ph.D.",
+    "department": "Department of Statistical Science",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Nursing",
+    "degree": "Ph.D.",
+    "department": "School of Nursing",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Philosophy",
+    "degree": "Ph.D.",
+    "department": "Department of Philosophy",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Department of Physics",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Political Science",
+    "degree": "Ph.D.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Psychology and Neuroscience",
+    "degree": "Ph.D.",
+    "department": "Department of Psychology and Neuroscience",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Public Policy",
+    "degree": "Ph.D.",
+    "department": "Sanford School of Public Policy",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Religion",
+    "degree": "Ph.D.",
+    "department": "Department of Religion",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Ecology",
+    "degree": "Ph.D.",
+    "department": "University Program in Ecology",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Materials Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "Department of Mechanical Engineering and Materials Science",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Literature",
+    "degree": "Ph.D.",
+    "department": "Department of Literature",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Molecular Cancer Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Pharmacology and Cancer Biology",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Molecular Genetics and Microbiology",
+    "degree": "Ph.D.",
+    "department": "Department of Molecular Genetics and Microbiology",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Population Health Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Population Health Sciences",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Environmental Policy",
+    "degree": "Ph.D.",
+    "department": "Nicholas School of the Environment",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/phd-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Analytical Political Economy",
+    "degree": "M.A.",
+    "department": "Department of Economics",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Applied Economics and Policy",
+    "degree": "M.A.",
+    "department": "Department of Economics",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Bioethics & Science Policy",
+    "degree": "M.A.",
+    "department": "Duke Initiative for Science & Society",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Graduate Liberal Studies",
+    "degree": "M.A.",
+    "department": "Graduate Liberal Studies Program",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "Department of History",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Humanities",
+    "degree": "M.A.",
+    "department": "College of Humanities and Social Sciences",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Political Science",
+    "degree": "M.A.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Religious Studies",
+    "degree": "M.A.",
+    "department": "Department of Religious Studies",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Slavic and Eurasian Studies",
+    "degree": "M.A.",
+    "department": "Department of Slavic and Eurasian Studies",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Digital Art History/Computational Media",
+    "degree": "M.A.",
+    "department": "Department of Art, Art History and Visual Studies",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "East Asian Studies",
+    "degree": "M.A.",
+    "department": "Department of Asian and Middle Eastern Studies",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Economics",
+    "degree": "M.A.",
+    "department": "Department of Economics",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Critical Asian and Middle Eastern Humanities",
+    "degree": "M.A.",
+    "department": "Department of Asian and Middle Eastern Studies",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Biomedical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Biomedical Engineering",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Civil and Environmental Engineering",
+    "degree": "M.S.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Electrical and Computer Engineering",
+    "degree": "M.S.",
+    "department": "Department of Electrical and Computer Engineering",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Materials Science and Engineering",
+    "degree": "M.S.",
+    "department": "Department of Mechanical Engineering and Materials Science",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Mechanical Engineering and Materials Science",
+    "degree": "M.S.",
+    "department": "Department of Mechanical Engineering and Materials Science",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Economics and Computation",
+    "degree": "M.S.",
+    "department": "Department of Economics",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Global Health",
+    "degree": "M.S.",
+    "department": "Duke Global Health Institute",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Medical Physics",
+    "degree": "M.S.",
+    "department": "Department of Medical Physics",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Population Health Sciences",
+    "degree": "M.S.",
+    "department": "Department of Population Health Sciences",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Quantitative Financial Economics",
+    "degree": "M.S.",
+    "department": "Department of Economics",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Statistical Science",
+    "degree": "M.S.",
+    "department": "Department of Statistical Science",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Early Education",
+    "degree": "M.A.T.",
+    "department": "Graduate School of Education",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Interdisciplinary Data Science",
+    "degree": "M.S.",
+    "department": "Duke University",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Dance: Embodied Interdisciplinary Praxis",
+    "degree": "M.F.A.",
+    "department": "Department of Dance",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  },
+  {
+    "universityId": "Duke University",
+    "name": "Experimental and Documentary Arts",
+    "degree": "M.F.A.",
+    "department": "Department of Art, Art History and Visual Studies",
+    "requirements": {
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-02-03"
+    },
+    "website": "https://gradschool.duke.edu/academics/programs-and-degrees/masters-programs/"
+  }
+]

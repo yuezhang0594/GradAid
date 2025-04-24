@@ -1,0 +1,1022 @@
+[
+  {
+    "universityId": "Harvard University",
+    "name": "African and African American Studies",
+    "degree": "Ph.D.",
+    "department": "Department of African and African American Studies",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/african-and-african-american-studies"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "American Studies",
+    "degree": "Ph.D.",
+    "department": "Department of American Studies",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-05"
+    },
+    "website": "https://gsas.harvard.edu/programs/american-studies"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Anthropology",
+    "degree": "Ph.D.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/anthropology"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Applied Mathematics",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/applied-mathematics"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Applied Physics",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/applied-physics"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Architecture, Landscape Architecture, and Urban Planning",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Design",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/architecture-landscape-architecture-and-urban-planning"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Astronomy",
+    "degree": "Ph.D.",
+    "department": "Department of Astronomy",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/astronomy"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Bioengineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/bioengineering"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Biological and Biomedical Sciences",
+    "degree": "Ph.D.",
+    "department": "Medical Sciences Division",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/biological-and-biomedical-sciences"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Biological Sciences in Public Health",
+    "degree": "Ph.D.",
+    "department": "Harvard T.H. Chan School of Public Health",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/biological-sciences-public-health"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Computational Science and Engineering",
+    "degree": "M.Eng.",
+    "department": "School of Engineering and Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/computational-science-and-engineering"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Computational Science and Engineering",
+    "degree": "M.S.",
+    "department": "School of Engineering and Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/computational-science-and-engineering"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Engineering and Applied Sciences",
+    "degree": "M.S.",
+    "department": "School of Engineering and Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/engineering-and-applied-sciences"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Engineering and Applied Sciences",
+    "degree": "M.Eng.",
+    "department": "School of Engineering and Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/engineering-and-applied-sciences"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "History of Science",
+    "degree": "Ph.D.",
+    "department": "Department of the History of Science",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/history-science"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "History of Science",
+    "degree": "M.A.",
+    "department": "Department of the History of Science",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/history-science"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Middle Eastern Studies",
+    "degree": "Ph.D.",
+    "department": "Center for Middle Eastern Studies",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-05"
+    },
+    "website": "https://gsas.harvard.edu/programs/middle-eastern-studies"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Middle Eastern Studies",
+    "degree": "M.A.",
+    "department": "Center for Middle Eastern Studies",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-05"
+    },
+    "website": "https://gsas.harvard.edu/programs/middle-eastern-studies"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Near Eastern Languages and Civilizations",
+    "degree": "Ph.D.",
+    "department": "Department of Near Eastern Languages and Civilizations",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/near-eastern-languages-and-civilizations"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Near Eastern Languages and Civilizations",
+    "degree": "M.A.",
+    "department": "Department of Near Eastern Languages and Civilizations",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/near-eastern-languages-and-civilizations"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Regional Studies–East Asia",
+    "degree": "M.A.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/regional-studies-east-asia"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Regional Studies–Russia, Eastern Europe, and Central Asia",
+    "degree": "M.A.",
+    "department": "Davis Center for Russian and Eurasian Studies",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-05"
+    },
+    "website": "https://gsas.harvard.edu/programs/regional-studies-russia-eastern-europe-and-central-asia"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "South Asian Studies",
+    "degree": "Ph.D.",
+    "department": "Department of South Asian Studies",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/south-asian-studies"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "South Asian Studies",
+    "degree": "M.A.",
+    "department": "Department of South Asian Studies",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/south-asian-studies"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Data Science",
+    "degree": "M.S.",
+    "department": "School of Engineering and Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/data-science"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Computer Science",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/computer-science"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Electrical Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/electrical-engineering"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Environmental Science and Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/environmental-science-and-engineering"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Materials Science and Mechanical Engineering",
+    "degree": "Ph.D.",
+    "department": "School of Engineering and Applied Sciences",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/materials-science-and-mechanical-engineering"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Biomedical Informatics",
+    "degree": "Ph.D.",
+    "department": "Medical Sciences Division",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/biomedical-informatics"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Biophysics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/biophysics"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Chemical Biology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/chemical-biology"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Chemistry and Chemical Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Chemistry and Chemical Biology",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/chemistry-and-chemical-biology"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Immunology",
+    "degree": "Ph.D.",
+    "department": "Medical Sciences Division",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/immunology"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Medical Sciences",
+    "degree": "Ph.D.",
+    "department": "Harvard Medical School",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/medical-sciences"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Molecular and Cellular Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Molecular and Cellular Biology",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/molecular-and-cellular-biology"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Neuroscience",
+    "degree": "Ph.D.",
+    "department": "Medical Sciences Division",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/neuroscience"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "History of Art and Architecture",
+    "degree": "Ph.D.",
+    "department": "Department of History of Art and Architecture",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-05"
+    },
+    "website": "https://gsas.harvard.edu/programs/history-art-and-architecture"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Inner Asian and Altaic Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Inner Asian and Altaic Studies",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-05"
+    },
+    "website": "https://gsas.harvard.edu/programs/inner-asian-and-altaic-studies"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "East Asian Languages and Civilizations",
+    "degree": "Ph.D.",
+    "department": "Department of East Asian Languages and Civilizations",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/east-asian-languages-and-civilizations"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Film and Visual Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Art, Film, and Visual Studies",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/film-and-visual-studies"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Germanic Languages and Literatures",
+    "degree": "Ph.D.",
+    "department": "Department of Germanic Languages and Literatures",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-05"
+    },
+    "website": "https://gsas.harvard.edu/programs/germanic-languages-and-literatures"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "History",
+    "degree": "Ph.D.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/history"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Celtic Languages and Literatures",
+    "degree": "Ph.D.",
+    "department": "Department of Celtic Languages and Literatures",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-05"
+    },
+    "website": "https://gsas.harvard.edu/programs/celtic-languages-and-literatures"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Classics",
+    "degree": "Ph.D.",
+    "department": "Department of the Classics",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/classics"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Comparative Literature",
+    "degree": "Ph.D.",
+    "department": "Department of Comparative Literature",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-05"
+    },
+    "website": "https://gsas.harvard.edu/programs/comparative-literature"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "English",
+    "degree": "Ph.D.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-05"
+    },
+    "website": "https://gsas.harvard.edu/programs/english"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Chemical Physics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/chemical-physics"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Earth and Planetary Sciences",
+    "degree": "Ph.D.",
+    "department": "Department of Earth and Planetary Sciences",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-05"
+    },
+    "website": "https://gsas.harvard.edu/programs/earth-and-planetary-sciences"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Mathematics",
+    "degree": "Ph.D.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/mathematics"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Physics",
+    "degree": "Ph.D.",
+    "department": "Department of Physics",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/physics"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Statistics",
+    "degree": "Ph.D.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/statistics"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Business Economics",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/business-economics"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Economics",
+    "degree": "Ph.D.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/economics"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Government",
+    "degree": "Ph.D.",
+    "department": "Department of Government",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/government"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Health Policy",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/health-policy"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Political Economy and Government",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/political-economy-and-government"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Psychology",
+    "degree": "Ph.D.",
+    "department": "Department of Psychology",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/psychology"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Public Policy",
+    "degree": "Ph.D.",
+    "department": "Harvard Kennedy School",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/public-policy"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Sociology",
+    "degree": "Ph.D.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://gsas.harvard.edu/programs/sociology"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Religion",
+    "degree": "Ph.D.",
+    "department": "Committee on the Study of Religion",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-05"
+    },
+    "website": "https://gsas.harvard.edu/programs/religion"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "The Study of Religion",
+    "degree": "Ph.D.",
+    "department": "Harvard Divinity School",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2026-01-05"
+    },
+    "website": "https://gsas.harvard.edu/programs/study-religion"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Organismic and Evolutionary Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Organismic and Evolutionary Biology",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/organismic-and-evolutionary-biology"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Speech and Hearing Bioscience and Technology",
+    "degree": "Ph.D.",
+    "department": "Harvard Medical School",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/speech-and-hearing-bioscience-and-technology"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Systems, Synthetic, and Quantitative Biology",
+    "degree": "Ph.D.",
+    "department": "Graduate School of Arts and Sciences",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/systems-synthetic-and-quantitative-biology"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Virology",
+    "degree": "Ph.D.",
+    "department": "Harvard Medical School",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://gsas.harvard.edu/programs/virology"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Law",
+    "degree": "LL.M.",
+    "department": "Harvard Law School",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-01"
+    },
+    "website": "https://hls.harvard.edu/graduate-program/ll-m-program/ll-m-degree-requirements/"
+  },
+  {
+    "universityId": "Harvard University",
+    "name": "Law",
+    "degree": "J.D.",
+    "department": "Harvard Law School",
+    "requirements": {
+      "minimumGPA": 3.6,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "2025-12-15"
+    },
+    "website": "https://hls.harvard.edu/graduate-program/sjd-program/"
+  }
+]

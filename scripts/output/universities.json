@@ -1,0 +1,602 @@
+[
+  {
+    "name": "Princeton University",
+    "location": {
+      "city": "Princeton",
+      "state": "New Jersey",
+      "country": "United States"
+    },
+    "website": "https://gradschool.princeton.edu/",
+    "ranking": 1
+  },
+  {
+    "name": "Massachusetts Institute of Technology",
+    "location": {
+      "city": "Cambridge",
+      "state": "Massachusetts",
+      "country": "United States"
+    },
+    "website": "https://oge.mit.edu/graduate-admissions/",
+    "ranking": 2
+  },
+  {
+    "name": "Harvard University",
+    "location": {
+      "city": "Cambridge",
+      "state": "Massachusetts",
+      "country": "United States"
+    },
+    "website": "https://www.hks.harvard.edu/educational-programs/masters-programs",
+    "ranking": 3
+  },
+  {
+    "name": "Stanford University",
+    "location": {
+      "city": "Stanford",
+      "state": "California",
+      "country": "United States"
+    },
+    "website": "https://gradadmissions.stanford.edu/",
+    "ranking": 4
+  },
+  {
+    "name": "Yale University",
+    "location": {
+      "city": "New Haven",
+      "state": "Connecticut",
+      "country": "United States"
+    },
+    "website": "https://www.yale.edu/academics/graduate-professional-study",
+    "ranking": 5
+  },
+  {
+    "name": "California Institute of Technology",
+    "location": {
+      "city": "Pasadena",
+      "state": "California",
+      "country": "United States"
+    },
+    "website": "https://gradoffice.caltech.edu/",
+    "ranking": 6
+  },
+  {
+    "name": "Duke University",
+    "location": {
+      "city": "Durham",
+      "state": "North Carolina",
+      "country": "United States"
+    },
+    "website": "https://gradschool.duke.edu/",
+    "ranking": 7
+  },
+  {
+    "name": "Johns Hopkins University",
+    "location": {
+      "city": "Baltimore",
+      "state": "Maryland",
+      "country": "United States"
+    },
+    "website": "https://www.jhu.edu/academics/graduate-studies/",
+    "ranking": 8
+  },
+  {
+    "name": "Northwestern University",
+    "location": {
+      "city": "Evanston",
+      "state": "Illinois",
+      "country": "United States"
+    },
+    "website": "https://www.tgs.northwestern.edu/",
+    "ranking": 9
+  },
+  {
+    "name": "University of Pennsylvania",
+    "location": {
+      "city": "Philadelphia",
+      "state": "Pennsylvania",
+      "country": "United States"
+    },
+    "website": "https://www.upenn.edu/academics/graduate/",
+    "ranking": 10
+  },
+  {
+    "name": "Cornell University",
+    "location": {
+      "city": "Ithaca",
+      "state": "New York",
+      "country": "United States"
+    },
+    "website": "https://gradschool.cornell.edu/",
+    "ranking": 11
+  },
+  {
+    "name": "University of Chicago",
+    "location": {
+      "city": "Chicago",
+      "state": "Illinois",
+      "country": "United States"
+    },
+    "website": "https://www.uchicago.edu/education-and-research/graduate-programs",
+    "ranking": 12
+  },
+  {
+    "name": "Brown University",
+    "location": {
+      "city": "Providence",
+      "state": "Rhode Island",
+      "country": "United States"
+    },
+    "website": "https://graduateschool.brown.edu/",
+    "ranking": 13
+  },
+  {
+    "name": "Columbia University",
+    "location": {
+      "city": "New York",
+      "state": "New York",
+      "country": "United States"
+    },
+    "website": "https://www.gsas.columbia.edu/",
+    "ranking": 14
+  },
+  {
+    "name": "Dartmouth College",
+    "location": {
+      "city": "Hanover",
+      "state": "New Hampshire",
+      "country": "United States"
+    },
+    "website": "https://graduate.dartmouth.edu/academics/programs",
+    "ranking": 15
+  },
+  {
+    "name": "University of California, Los Angeles",
+    "location": {
+      "city": "Los Angeles",
+      "state": "California",
+      "country": "United States"
+    },
+    "website": "https://grad.ucla.edu/admissions/",
+    "ranking": 16
+  },
+  {
+    "name": "University of California, Berkeley",
+    "location": {
+      "city": "Berkeley",
+      "state": "California",
+      "country": "United States"
+    },
+    "website": "https://grad.berkeley.edu/programs/",
+    "ranking": 17
+  },
+  {
+    "name": "Rice University",
+    "location": {
+      "city": "Houston",
+      "state": "Texas",
+      "country": "United States"
+    },
+    "website": "https://graduate.rice.edu/",
+    "ranking": 18
+  },
+  {
+    "name": "University of Notre Dame",
+    "location": {
+      "city": "Notre Dame",
+      "state": "Indiana",
+      "country": "United States"
+    },
+    "website": "https://graduateschool.nd.edu/",
+    "ranking": 19
+  },
+  {
+    "name": "Vanderbilt University",
+    "location": {
+      "city": "Nashville",
+      "state": "Tennessee",
+      "country": "United States"
+    },
+    "website": "https://gradschool.vanderbilt.edu/",
+    "ranking": 20
+  },
+  {
+    "name": "Carnegie Mellon University",
+    "location": {
+      "city": "Pittsburgh",
+      "state": "Pennsylvania",
+      "country": "United States"
+    },
+    "website": "https://csd.cmu.edu/academics/masters/admissions",
+    "ranking": 21
+  },
+  {
+    "name": "University of Michigan - Ann Arbor",
+    "location": {
+      "city": "Ann Arbor",
+      "state": "Michigan",
+      "country": "United States"
+    },
+    "website": "https://rackham.umich.edu/",
+    "ranking": 22
+  },
+  {
+    "name": "Washington University in St. Louis",
+    "location": {
+      "city": "St. Louis",
+      "state": "Missouri",
+      "country": "United States"
+    },
+    "website": "https://gradstudies.artsci.wustl.edu/",
+    "ranking": 23
+  },
+  {
+    "name": "Emory University",
+    "location": {
+      "city": "Atlanta",
+      "state": "Georgia",
+      "country": "United States"
+    },
+    "website": "https://gs.emory.edu/",
+    "ranking": 24
+  },
+  {
+    "name": "Georgetown University",
+    "location": {
+      "city": "Washington",
+      "state": "D.C.",
+      "country": "United States"
+    },
+    "website": "https://grad.georgetown.edu/programs/",
+    "ranking": 25
+  },
+  {
+    "name": "The University of Virginia",
+    "location": {
+      "city": "Charlottesville",
+      "state": "Virginia",
+      "country": "United States"
+    },
+    "website": "https://www.virginia.edu/academics/graduate/",
+    "ranking": 26
+  },
+  {
+    "name": "University of North Carolina - Chapel Hill",
+    "location": {
+      "city": "Chapel Hill",
+      "state": "North Carolina",
+      "country": "United States"
+    },
+    "website": "https://gradschool.unc.edu/programs/",
+    "ranking": 27
+  },
+  {
+    "name": "University of Southern California",
+    "location": {
+      "city": "Los Angeles",
+      "state": "California",
+      "country": "United States"
+    },
+    "website": "https://www.usc.edu/graduate-professional/",
+    "ranking": 28
+  },
+  {
+    "name": "University of California, San Diego",
+    "location": {
+      "city": "San Diego",
+      "state": "California",
+      "country": "United States"
+    },
+    "website": "https://students.ucsd.edu/academics/graduate-programs/grad-programs-ucsd.html",
+    "ranking": 29
+  },
+  {
+    "name": "New York University",
+    "location": {
+      "city": "New York",
+      "state": "New York",
+      "country": "United States"
+    },
+    "website": "https://www.nyu.edu/academics/nyu-online/graduate-degrees.html",
+    "ranking": 30
+  },
+  {
+    "name": "University of Florida",
+    "location": {
+      "city": "Gainesville",
+      "state": "Florida",
+      "country": "United States"
+    },
+    "website": "https://graduateschool.ufl.edu/apply/degrees/",
+    "ranking": 31
+  },
+  {
+    "name": "The University of Texas at Austin",
+    "location": {
+      "city": "Austin",
+      "state": "Texas",
+      "country": "United States"
+    },
+    "website": "https://gradschool.utexas.edu/",
+    "ranking": 32
+  },
+  {
+    "name": "Georgia Institute of Technology",
+    "location": {
+      "city": "Atlanta",
+      "state": "Georgia",
+      "country": "United States"
+    },
+    "website": "https://grad.gatech.edu/",
+    "ranking": 33
+  },
+  {
+    "name": "University of California, Davis",
+    "location": {
+      "city": "Davis",
+      "state": "California",
+      "country": "United States"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate",
+    "ranking": 34
+  },
+  {
+    "name": "University of California, Irvine",
+    "location": {
+      "city": "Irvine",
+      "state": "California",
+      "country": "United States"
+    },
+    "website": "https://catalogue.uci.edu/graduatedegrees/",
+    "ranking": 35
+  },
+  {
+    "name": "University of Illinois Urbana-Champaign",
+    "location": {
+      "city": "Urbana-Champaign",
+      "state": "Illinois",
+      "country": "United States"
+    },
+    "website": "https://grad.illinois.edu/admissions/programs",
+    "ranking": 36
+  },
+  {
+    "name": "Boston College",
+    "location": {
+      "city": "Chestnut Hill",
+      "state": "Massachusetts",
+      "country": "United States"
+    },
+    "website": "https://www.bc.edu/bc-web/academics/sites/university-catalog/graduate.html",
+    "ranking": 37
+  },
+  {
+    "name": "Tufts University",
+    "location": {
+      "city": "Medford",
+      "state": "Massachusetts",
+      "country": "United States"
+    },
+    "website": "https://www.tufts.edu/graduate-programs/",
+    "ranking": 38
+  },
+  {
+    "name": "University of California, Santa Barbara",
+    "location": {
+      "city": "Santa Barbara",
+      "state": "California",
+      "country": "United States"
+    },
+    "website": "https://www.ucsb.edu/academics/graduate/",
+    "ranking": 39
+  },
+  {
+    "name": "University of Wisconsin–Madison",
+    "location": {
+      "city": "Madison",
+      "state": "Wisconsin",
+      "country": "United States"
+    },
+    "website": "https://grad.wisc.edu/",
+    "ranking": 40
+  },
+  {
+    "name": "Boston University",
+    "location": {
+      "city": "Boston",
+      "state": "Massachusetts",
+      "country": "United States"
+    },
+    "website": "https://www.bu.edu/grad/",
+    "ranking": 41
+  },
+  {
+    "name": "The Ohio State University",
+    "location": {
+      "city": "Columbus",
+      "state": "Ohio",
+      "country": "United States"
+    },
+    "website": "https://gradsch.osu.edu/",
+    "ranking": 42
+  },
+  {
+    "name": "Rutgers University - New Brunswick",
+    "location": {
+      "city": "New Brunswick",
+      "state": "New Jersey",
+      "country": "United States"
+    },
+    "website": "https://newbrunswick.rutgers.edu/graduate-and-professional-studies",
+    "ranking": 43
+  },
+  {
+    "name": "University of Maryland",
+    "location": {
+      "city": "College Park",
+      "state": "Maryland",
+      "country": "United States"
+    },
+    "website": "https://gradschool.umd.edu/",
+    "ranking": 44
+  },
+  {
+    "name": "University of Rochester",
+    "location": {
+      "city": "Rochester",
+      "state": "New York",
+      "country": "United States"
+    },
+    "website": "https://www.rochester.edu/college/gradstudies/",
+    "ranking": 45
+  },
+  {
+    "name": "Lehigh University",
+    "location": {
+      "city": "Bethlehem",
+      "state": "Pennsylvania",
+      "country": "United States"
+    },
+    "website": "https://www2.lehigh.edu/academics/graduate-studies",
+    "ranking": 46
+  },
+  {
+    "name": "Purdue University",
+    "location": {
+      "city": "West Lafayette",
+      "state": "Indiana",
+      "country": "United States"
+    },
+    "website": "https://www.purdue.edu/gradschool/prospective/gradrequirements/index.html",
+    "ranking": 47
+  },
+  {
+    "name": "University of Georgia",
+    "location": {
+      "city": "Athens",
+      "state": "Georgia",
+      "country": "United States"
+    },
+    "website": "https://grad.uga.edu/",
+    "ranking": 48
+  },
+  {
+    "name": "University of Washington",
+    "location": {
+      "city": "Seattle",
+      "state": "Washington",
+      "country": "United States"
+    },
+    "website": "https://grad.uw.edu/",
+    "ranking": 49
+  },
+  {
+    "name": "Wake Forest University",
+    "location": {
+      "city": "Winston-Salem",
+      "state": "North Carolina",
+      "country": "United States"
+    },
+    "website": "https://graduate.wfu.edu/",
+    "ranking": 50
+  },
+  {
+    "name": "Case Western Reserve University",
+    "location": {
+      "city": "Cleveland",
+      "state": "Ohio",
+      "country": "United States"
+    },
+    "website": "https://case.edu/gradstudies/",
+    "ranking": 51
+  },
+  {
+    "name": "Texas A&M University",
+    "location": {
+      "city": "Unknown",
+      "state": "Unknown",
+      "country": "United States"
+    },
+    "website": "https://grad.tamu.edu/",
+    "ranking": 52
+  },
+  {
+    "name": "Virginia Tech",
+    "location": {
+      "city": "Blacksburg",
+      "state": "Virginia",
+      "country": "United States"
+    },
+    "website": "https://graduateschool.vt.edu/",
+    "ranking": 53
+  },
+  {
+    "name": "Florida State University",
+    "location": {
+      "city": "Tallahassee",
+      "state": "Florida",
+      "country": "United States"
+    },
+    "website": "https://gradschool.fsu.edu/",
+    "ranking": 54
+  },
+  {
+    "name": "Northeastern University",
+    "location": {
+      "city": "Boston",
+      "state": "Massachusetts",
+      "country": "United States"
+    },
+    "website": "https://graduate.northeastern.edu/programs/",
+    "ranking": 55
+  },
+  {
+    "name": "University of Minnesota Twin Cities",
+    "location": {
+      "city": "Minneapolis",
+      "state": "Minnesota",
+      "country": "United States"
+    },
+    "website": "https://grad.umn.edu/",
+    "ranking": 56
+  },
+  {
+    "name": "William & Mary",
+    "location": {
+      "city": "Williamsburg",
+      "state": "Virginia",
+      "country": "United States"
+    },
+    "website": "https://www.wm.edu/academics/graduateprograms/",
+    "ranking": 57
+  },
+  {
+    "name": "North Carolina State University",
+    "location": {
+      "city": "Raleigh",
+      "state": "North Carolina",
+      "country": "United States"
+    },
+    "website": "https://grad.ncsu.edu/",
+    "ranking": 58
+  },
+  {
+    "name": "State University of New York at Stony Brook",
+    "location": {
+      "city": "Stony Brook",
+      "state": "New York",
+      "country": "United States"
+    },
+    "website": "https://www.stonybrook.edu/grad/",
+    "ranking": 59
+  },
+  {
+    "name": "University of California, Merced",
+    "location": {
+      "city": "Merced",
+      "state": "California",
+      "country": "United States"
+    },
+    "website": "https://graduatedivision.ucmerced.edu/",
+    "ranking": 60
+  }
+]

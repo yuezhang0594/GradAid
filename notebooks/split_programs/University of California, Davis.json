@@ -1,0 +1,1382 @@
+[
+  {
+    "universityId": "University of California, Davis",
+    "name": "Accounting",
+    "degree": "M.S.",
+    "department": "Graduate School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Agricultural and Environmental Chemistry",
+    "degree": "M.S.",
+    "department": "College of Agricultural and Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 5"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Agricultural and Resource Economics",
+    "degree": "M.S.",
+    "department": "College of Agricultural and Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Animal Behavior",
+    "degree": "M.S.",
+    "department": "College of Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Animal Biology",
+    "degree": "M.S.",
+    "department": "College of Agricultural and Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Anthropology",
+    "degree": "M.A.",
+    "department": "Department of Anthropology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Applied Mathematics",
+    "degree": "M.S.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Art",
+    "degree": "M.F.A.",
+    "department": "Department of Art and Art History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Art History",
+    "degree": "M.A.",
+    "department": "Department of Art and Art History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Atmospheric Science",
+    "degree": "M.S.",
+    "department": "Department of Land, Air and Water Resources",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Biochemistry, Molecular, Cellular and Developmental Biology",
+    "degree": "Ph.D.",
+    "department": "College of Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Biological Systems Engineering",
+    "degree": "M.S.",
+    "department": "Department of Biological and Agricultural Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Biomedical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Biomedical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Biophysics",
+    "degree": "Ph.D.",
+    "department": "College of Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Biostatistics",
+    "degree": "M.S.",
+    "department": "Department of Public Health Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Business Administration",
+    "degree": "M.B.A.",
+    "department": "Graduate School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Business Analytics",
+    "degree": "M.S.",
+    "department": "Graduate School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Chemical Engineering",
+    "degree": "M.S.",
+    "department": "Department of Chemical Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Chemistry and Chemical Biology",
+    "degree": "Ph.D.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Child Development",
+    "degree": "M.S.",
+    "department": "Department of Human Ecology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Civil and Environmental Engineering",
+    "degree": "M.S.",
+    "department": "Department of Civil and Environmental Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Clinical Research",
+    "degree": "M.A.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "March 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Communication",
+    "degree": "M.A.",
+    "department": "Department of Communication",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Community Development",
+    "degree": "M.S.",
+    "department": "Department of Human Ecology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Comparative Literature",
+    "degree": "M.A.",
+    "department": "Department of Comparative Literature",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 5"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Computer Science",
+    "degree": "M.S.",
+    "department": "Department of Computer Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Creative Writing",
+    "degree": "M.A.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Cultural Studies",
+    "degree": "Ph.D.",
+    "department": "College of Letters and Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Design",
+    "degree": "M.F.A.",
+    "department": "Department of Design",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Dramatic Art",
+    "degree": "M.F.A.",
+    "department": "Department of Theatre and Dance",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Earth and Planetary Sciences",
+    "degree": "M.S.",
+    "department": "Department of Earth and Planetary Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Ecology",
+    "degree": "M.S.",
+    "department": "Department of Environmental Science and Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Ecology (Joint Program with San Diego State University)",
+    "degree": "Ph.D.",
+    "department": "Department of Environmental Science and Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Economics",
+    "degree": "M.A.",
+    "department": "Department of Economics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Education",
+    "degree": "M.A.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Education",
+    "degree": "Ph.D.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Educational Leadership",
+    "degree": "Ed.D.",
+    "department": "School of Education",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Electrical and Computer Engineering",
+    "degree": "M.S.",
+    "department": "Department of Electrical and Computer Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Energy Systems",
+    "degree": "M.S.",
+    "department": "College of Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "English",
+    "degree": "M.A.",
+    "department": "Department of English",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Entomology",
+    "degree": "M.S.",
+    "department": "Department of Entomology and Nematology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 5"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Environmental Policy and Management",
+    "degree": "M.S.",
+    "department": "Department of Environmental Science and Policy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 5"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Epidemiology",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Food Science",
+    "degree": "M.S.",
+    "department": "Department of Food Science and Technology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Forensic Science",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "French and Francophone Studies",
+    "degree": "M.A.",
+    "department": "Department of French and Italian",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Geography",
+    "degree": "M.A.",
+    "department": "Department of Geography",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "German",
+    "degree": "M.A.",
+    "department": "Department of German and Russian",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Health Informatics",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "History",
+    "degree": "M.A.",
+    "department": "Department of History",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Horticulture and Agronomy",
+    "degree": "M.S.",
+    "department": "Department of Plant Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Human Development",
+    "degree": "M.S.",
+    "department": "Department of Human Ecology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Hydrologic Sciences",
+    "degree": "M.S.",
+    "department": "Department of Land, Air and Water Resources",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Immunology",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Integrative Genetics and Genomics",
+    "degree": "Ph.D.",
+    "department": "College of Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Integrative Pathobiology",
+    "degree": "M.S.",
+    "department": "School of Veterinary Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "International Agricultural Development",
+    "degree": "M.S.",
+    "department": "College of Agricultural and Environmental Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Law",
+    "degree": "J.D.",
+    "department": "School of Law",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Linguistics",
+    "degree": "M.A.",
+    "department": "Department of Linguistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Management",
+    "degree": "M.M.",
+    "department": "Graduate School of Management",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Materials Science and Engineering",
+    "degree": "M.S.",
+    "department": "Department of Materials Science and Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Maternal and Child Nutrition",
+    "degree": "M.A.S.",
+    "department": "Department of Nutrition",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Mathematics",
+    "degree": "M.A.",
+    "department": "Department of Mathematics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Mechanical and Aerospace Engineering",
+    "degree": "M.S.",
+    "department": "Department of Mechanical and Aerospace Engineering",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Medicine",
+    "degree": "M.D.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Microbiology",
+    "degree": "M.S.",
+    "department": "College of Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Molecular, Cellular and Integrative Physiology",
+    "degree": "Ph.D.",
+    "department": "College of Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Music",
+    "degree": "M.A.",
+    "department": "Department of Music",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Native American Studies",
+    "degree": "M.A.",
+    "department": "Department of Native American Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Neuroscience",
+    "degree": "Ph.D.",
+    "department": "Center for Neuroscience",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Nursing",
+    "degree": "M.S.N.",
+    "department": "Betty Irene Moore School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Nursing Science and Health-Care Leadership",
+    "degree": "M.S.",
+    "department": "Betty Irene Moore School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Nursing Science and Health-Care Leadership",
+    "degree": "Ph.D.",
+    "department": "Betty Irene Moore School of Nursing",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Nutritional Biology",
+    "degree": "M.S.",
+    "department": "Department of Nutrition",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Performance Studies",
+    "degree": "Ph.D.",
+    "department": "Department of Theatre and Dance",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Pharmaceutical Chemistry",
+    "degree": "M.S.",
+    "department": "Department of Chemistry",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Pharmacology and Toxicology",
+    "degree": "M.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Philosophy",
+    "degree": "M.A.",
+    "department": "Department of Philosophy",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Physician Assistant Studies",
+    "degree": "M.H.S.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Physics",
+    "degree": "M.S.",
+    "department": "Department of Physics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Plant Biology",
+    "degree": "M.S.",
+    "department": "Department of Plant Biology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Plant Pathology",
+    "degree": "M.S.",
+    "department": "Department of Plant Pathology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Political Science",
+    "degree": "M.A.",
+    "department": "Department of Political Science",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Population Biology",
+    "degree": "Ph.D.",
+    "department": "College of Biological Sciences",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 1"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Preventive Veterinary Medicine",
+    "degree": "M.P.V.M.",
+    "department": "School of Veterinary Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Psychology",
+    "degree": "M.A.",
+    "department": "Department of Psychology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Public Health",
+    "degree": "M.P.H.",
+    "department": "School of Medicine",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Sociology",
+    "degree": "M.A.",
+    "department": "Department of Sociology",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": true,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "December 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Soils and Biogeochemistry",
+    "degree": "M.S.",
+    "department": "Department of Land, Air and Water Resources",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 15"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Spanish",
+    "degree": "M.A.",
+    "department": "Department of Spanish and Portuguese",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 5"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Statistics",
+    "degree": "M.S.",
+    "department": "Department of Statistics",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 5"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  },
+  {
+    "universityId": "University of California, Davis",
+    "name": "Study of Religion",
+    "degree": "M.A.",
+    "department": "Department of Religious Studies",
+    "requirements": {
+      "minimumGPA": 3.0,
+      "gre": false,
+      "toefl": true
+    },
+    "deadlines": {
+      "fall": "January 5"
+    },
+    "website": "https://www.ucdavis.edu/academics/graduate"
+  }
+]
