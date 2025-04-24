@@ -133,8 +133,8 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
               <SelectContent>
                 <SelectGroup>
                   <SelectItem value="all">All States</SelectItem>
-                  {/* Use Set to filter unique states */}
-                  {[...new Set(locations.map(loc => loc.state))].map((state) => (
+                  {/* Use Set to filter unique states and sort them alphabetically */}
+                  {[...new Set(locations.map(loc => loc.state))].sort().map((state) => (
                     <SelectItem key={state} value={state}>
                       {state}
                     </SelectItem>
@@ -176,9 +176,12 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
                       {locations
                         .filter(loc => filters.location?.state !== 'all' && 
                                 loc.state === filters.location?.state)
-                        .map((location) => (
-                          <SelectItem key={`${location.state}-${location.city}`} value={location.city}>
-                            {location.city}
+                        .map(location => location.city)
+                        .filter((city, index, self) => self.indexOf(city) === index)
+                        .sort()
+                        .map((city) => (
+                          <SelectItem key={city} value={city}>
+                            {city}
                           </SelectItem>
                         ))}
                     </SelectGroup>
@@ -202,9 +205,8 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
                 <SelectGroup>
                   <SelectItem value="all">All Rankings</SelectItem>
                   <SelectItem value="top_10">Top 10</SelectItem>
+                  <SelectItem value="top_25">Top 25</SelectItem>
                   <SelectItem value="top_50">Top 50</SelectItem>
-                  <SelectItem value="top_100">Top 100</SelectItem>
-                  <SelectItem value="top_200">Top 200</SelectItem>
                 </SelectGroup>
               </SelectContent>
             </Select>
