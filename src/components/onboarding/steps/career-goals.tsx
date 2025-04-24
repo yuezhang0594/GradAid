@@ -174,6 +174,20 @@ export function CareerGoalsStep({
 
               <FormField
                 control={form.control}
+                name="intendedField"
+                render={({ field }) => (
+                  <FormItem className="w-full sm:max-w-[300px]">
+                    <FormLabel>Intended Field of Study</FormLabel>
+                    <FormControl>
+                      <Input {...field} placeholder="e.g., Computer Science" />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+<FormField
+                control={form.control}
                 name="budgetRange"
                 render={({ field }) => (
                   <FormItem className="w-full sm:max-w-[200px]">
@@ -201,20 +215,6 @@ export function CareerGoalsStep({
                         <SelectItem value="100k+">$100,000+</SelectItem>
                       </SelectContent>
                     </Select>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              <FormField
-                control={form.control}
-                name="intendedField"
-                render={({ field }) => (
-                  <FormItem className="w-full sm:max-w-[300px]">
-                    <FormLabel>Intended Field of Study</FormLabel>
-                    <FormControl>
-                      <Input {...field} placeholder="e.g., Computer Science" />
-                    </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}

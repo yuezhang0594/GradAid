@@ -17,8 +17,8 @@ export function LandingPage({
                 </div>
                 <div className="px-4 md:px-6 flex flex-col items-center text-center gap-4 relative z-10 w-full">
                     <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">GradAid</h1>
-                    <p className="mx-auto max-w-[700px] text-lg text-muted-foreground md:text-xl">
-                    Your complete solution for graduate school application management and success
+                    <p className="mx-auto max-w-auto text-lg text-muted-foreground md:text-xl">
+                    AI-powered assistance for crafting compelling graduate school application documents
                     </p>
                     <div className="space-x-4 mt-8">
                     <SignInButton>
@@ -32,33 +32,33 @@ export function LandingPage({
                 <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12 w-full">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Features</h2>
                 <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                    Everything you need to succeed in your graduate school journey
+                    Everything you need to succeed in your graduate school application journey
                 </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl mx-auto">
                 <FeatureCard
+                    title="AI-Powered Document Generation"
+                    description="Generate personalized Statements of Purpose (SOPs) and Letters of Recommendation (LORs) tailored to your background and target programs."
+                />
+                <FeatureCard
+                    title="Customized Application Materials"
+                    description="Reflect your unique experiences and skills with AI assistance, ensuring your application stands out."
+                />
+                <FeatureCard
+                    title="University Program Research"
+                    description="Search and compare graduate programs, requirements, and deadlines to find the best fit for your goals."
+                />
+                <FeatureCard
                     title="Application Tracking"
-                    description="Keep track of all your applications in one place with deadline reminders and status updates"
+                    description="Manage multiple applications, track deadlines, and monitor your progress all in one place."
                 />
                 <FeatureCard
-                    title="Document Management"
-                    description="Store and organize recommendation letters, personal statements, and transcripts"
+                    title="Secure Document Management"
+                    description="Organize and securely store all your application documents with ease."
                 />
                 <FeatureCard
-                    title="School Research"
-                    description="Compare programs, requirements, and acceptance rates to find your perfect fit"
-                />
-                <FeatureCard
-                    title="Essay Assistance"
-                    description="Get guidance on personal statements and research proposals"
-                />
-                <FeatureCard
-                    title="Timeline Planning"
-                    description="Create a customized timeline for your application process"
-                />
-                <FeatureCard
-                    title="Community Support"
-                    description="Connect with other applicants and get advice from successful students"
+                    title="User Authentication & Security"
+                    description="Your personal information and documents are protected with secure authentication and data encryption."
                 />
                 </div>
             </section>
@@ -71,7 +71,7 @@ export function LandingPage({
                 <div className="px-4 md:px-6 flex flex-col items-center text-center gap-4 relative z-10 w-full">
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Ready to Begin?</h2>
                     <p className="mx-auto max-w-[700px] text-lg text-muted-foreground md:text-xl">
-                    Start your graduate school journey with GradAid today
+                    Let GradAid help you craft the perfect application. Start your journey today.
                     </p>
                     <SignInButton>
                         <Button>Get Started Now</Button>
