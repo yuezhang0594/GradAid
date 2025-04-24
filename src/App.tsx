@@ -64,8 +64,10 @@ function App() {
           <Route path="/timeline" element={<TimelinePage />} />
           <Route path="/activity" element={<ActivityPage />} />
           <Route path="/credits" element={<CreditsPage />} />
-          <Route path="/feedback" element={<FeedbackPage />} />
+        </Route>
+        <Route element={<ProtectedRoute requireCompleteProfile={false}><DashboardLayout /></ProtectedRoute>}>
           <Route path="/faq" element={<FAQPage />} />
+          <Route path="/feedback" element={<FeedbackPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Route>
       </Routes>
