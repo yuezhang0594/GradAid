@@ -1,6 +1,6 @@
 import { query } from "../_generated/server";
 import { v } from "convex/values";
-import { Doc, Id } from "../_generated/dataModel";
+import { Doc } from "../_generated/dataModel";
 import * as Search from "./model";
 import * as ProgramModel from "../programs/model";
 import * as UniversityModel from "../universities/model";

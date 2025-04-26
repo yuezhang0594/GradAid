@@ -1,6 +1,6 @@
 import { Id, Doc } from "../_generated/dataModel";
 import { QueryCtx } from "../_generated/server";
-import { University } from "../search/search";
+import { University } from "../search/queries";
 
 
 // Helper function to get universities by IDs
