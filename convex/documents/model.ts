@@ -39,7 +39,7 @@ export async function createApplicationDocument(
     title: title,
     lastEdited: new Date().toISOString()
   });
-  logDocumentActivity(ctx, documentId, `Document created: ${title}`, "draft");
+  await logDocumentActivity(ctx, documentId, `Document created: ${title}`, "draft");
   return documentId;
 }
 
@@ -120,7 +120,7 @@ export async function updateDocumentStatus(
     progress: progress,
     lastEdited: new Date().toISOString()
   });
-  logDocumentActivity(ctx, documentId, `Document status updated to ${status}`, status);
+  await logDocumentActivity(ctx, documentId, `Document status updated to ${status}`, status);
 
   // Log progress update activity if progress changed
   if (document.progress !== progress) {
@@ -263,7 +263,7 @@ export async function updateDocumentContent(
 ) {
   const { document } = await verifyDocumentOwnership(ctx, documentId);
   await ctx.db.patch(document._id, { content: content, lastEdited: new Date().toISOString() });
-  logDocumentActivity(ctx, document._id, `Document content updated`, document.status);
+  await logDocumentActivity(ctx, document._id, `Document content updated`, document.status);
 }
 
 /**
@@ -328,7 +328,7 @@ export async function updateRecommender(
     lastEdited: new Date().toISOString()
   });
 
-  logDocumentActivity(ctx, document._id, `Recommender updated`, document.status);
+  await logDocumentActivity(ctx, document._id, `Recommender updated`, document.status);
 }
 
 /**
