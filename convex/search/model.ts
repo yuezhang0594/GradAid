@@ -130,7 +130,7 @@ export function applyProgramFilters(
     filters: SearchFilters
 ) {
     if (universities.length === 0) {
-        return programsQuery;
+        return programsQuery.filter((q) => q.eq(q.field("_id"), null));
     }
 
     // Filter programs by matching universities

@@ -73,7 +73,7 @@ const schema = defineSchema({
     .index("by_ranking", ["ranking"])
     .searchIndex("search_name", {
       searchField: "name",
-      filterFields: ["location.country", "ranking"],
+      filterFields: ["location", "ranking"],
     }),
 
   programs: defineTable({
@@ -98,7 +98,7 @@ const schema = defineSchema({
     .index("by_department", ["department"])
     .searchIndex("search_programs", {
       searchField: "name",
-      filterFields: ["universityId", "degree", "department"],
+      filterFields: ["universityId", "degree", "department", "requirements"],
     }),
 
   applications: defineTable({
