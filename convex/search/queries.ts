@@ -11,6 +11,12 @@ export type University = Doc<"universities">;
 
 /**
  * Search for programs based on query and filters
+ * 
+ * @param ctx - The Convex query context
+ * @param args - Search parameters
+ * @param args.search - Optional search query string for text search
+ * @param args.filters - Optional filters to narrow down search results
+ * @returns An array of program IDs matching the search criteria
  */
 export const searchPrograms = query({
   args: {
@@ -51,7 +57,12 @@ export const searchPrograms = query({
 });
 
 /**
- * Get universities associated with specific programs, with pagination
+ * Get universities associated with specific programs
+ * 
+ * @param ctx - The Convex query context
+ * @param args - Query parameters
+ * @param args.programIds - Array of program IDs to find universities for
+ * @returns Universities data for the provided programs or null if no programs found
  */
 export const getUniversitiesForPrograms = query({
   args: {
@@ -78,6 +89,9 @@ export const getUniversitiesForPrograms = query({
 
 /**
  * Get a list of unique city and state combinations where US universities are located
+ * 
+ * @param ctx - The Convex query context
+ * @returns Array of objects containing unique city and state combinations
  */
 export const getUniqueLocations = query({
   args: {},
@@ -90,6 +104,9 @@ export const getUniqueLocations = query({
 
 /**
  * Get a list of unique degree types from all university programs
+ * 
+ * @param ctx - The Convex query context
+ * @returns Array of objects containing degree type values and their readable labels
  */
 export const getUniqueDegreeTypes = query({
   args: {},

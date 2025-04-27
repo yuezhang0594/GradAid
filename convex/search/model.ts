@@ -8,6 +8,9 @@ type University = Doc<"universities">;
 
 /**
  * Create base queries for programs and universities
+ * 
+ * @param ctx - The Convex query context
+ * @returns Object containing base queries for programs and universities
  */
 export async function createBaseQueries(ctx: QueryCtx) {
     const programsQuery = ctx.db.query("programs")
@@ -21,6 +24,12 @@ export async function createBaseQueries(ctx: QueryCtx) {
 
 /**
  * Apply text search to both program and university queries
+ * 
+ * @param ctx - The Convex query context
+ * @param searchQuery - The user's search text input
+ * @param programsQuery - Base query for programs
+ * @param universitiesQuery - Base query for universities
+ * @returns Updated queries filtered by search results
  */
 export async function applyTextSearch(
     ctx: QueryCtx,
@@ -64,6 +73,10 @@ export async function applyTextSearch(
 
 /**
  * Apply university-level filters (ranking, location)
+ * 
+ * @param universitiesQuery - Base query for universities
+ * @param filters - Filter criteria for university properties
+ * @returns Updated university query with filters applied
  */
 export function applyUniversityFilters(
     universitiesQuery: Query<NamedTableInfo<DataModel, "universities">>,
@@ -105,6 +118,11 @@ export function applyUniversityFilters(
 
 /**
  * Apply program-level filters based on university results
+ * 
+ * @param programsQuery - Base query for programs
+ * @param universities - Array of universities to filter programs by
+ * @param filters - Filter criteria for program properties
+ * @returns Updated program query with filters applied
  */
 export function applyProgramFilters(
     programsQuery: Query<NamedTableInfo<DataModel, "programs">>,
@@ -160,6 +178,10 @@ export function applyProgramFilters(
 
 /**
  * Get the final search results
+ * 
+ * @param ctx - The Convex query context
+ * @param programsQuery - Filtered query for programs
+ * @returns Array of program IDs matching the search criteria
  */
 export async function getSearchResults(
     ctx: QueryCtx,
@@ -169,6 +191,12 @@ export async function getSearchResults(
     return programs.map(program => program._id);
 }
 
+/**
+ * Extract unique university IDs from a list of programs
+ * 
+ * @param programs - Array of program documents
+ * @returns Array of unique university IDs associated with the programs
+ */
 export async function extractUniqueUniversityIds(
     programs: Doc<"programs">[]
 ): Promise<Id<"universities">[]> {
@@ -187,6 +215,13 @@ export async function extractUniqueUniversityIds(
     return Array.from(uniqueUniversityIds);
 }
 
+/**
+ * Get unique city and state combinations from universities
+ * 
+ * @param ctx - The Convex query context
+ * @param universities - Array of university documents
+ * @returns Array of objects containing unique city and state combinations
+ */
 export async function getUniqueLocations(
     ctx: QueryCtx,
     universities: Doc<"universities">[]
@@ -206,15 +241,16 @@ export async function getUniqueLocations(
     });
 }
 
-
 /**
  * Get unique degree types with formatted labels, sorted by frequency
- * Extracts degree types from programs, counts their occurrences,
- * maps them to readable labels, and sorts by frequency (highest first).
+ * 
+ * @param ctx - The Convex query context
+ * @returns Array of objects containing degree type values and their readable labels,
+ *          sorted by frequency (highest first)
  */
 export async function getUniqueDegreeTypes(
     ctx: QueryCtx
-  ): Promise<Array<{ value: string; label: string }>> {
+): Promise<Array<{ value: string; label: string }>> {
     const programs = await ctx.db.query("programs").collect();
   
     // Count the frequency of each degree type
@@ -240,4 +276,4 @@ export async function getUniqueDegreeTypes(
       value: item.value,
       label: degreeLabels[item.value] || item.value
     }));
-  }
+}
