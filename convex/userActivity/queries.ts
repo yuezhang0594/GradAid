@@ -2,6 +2,14 @@ import { query } from "../_generated/server";
 import { v } from "convex/values";
 import { getCurrentUserIdOrThrow } from "../users";
 
+/**
+ * Retrieves the most recent user activities for the current authenticated user.
+ * 
+ * @param args - The query arguments
+ * @param args.limit - Optional. Maximum number of activities to return (default: 10)
+ * @returns An array of user activity records sorted by recency (newest first)
+ * @throws If no authenticated user is found
+ */
 export const getRecentActivity = query({
   args: {
     limit: v.optional(v.number()),
@@ -20,6 +28,24 @@ export const getRecentActivity = query({
   },
 });
 
+/**
+ * Retrieves activity statistics for the current authenticated user.
+ *
+ * This query calculates the number of activities performed by the user across three time periods:
+ * - Today: Activities recorded since 12:00 AM of the current day
+ * - This Week: Activities recorded since the start of the current week (from Sunday)
+ * - This Month: Activities recorded since the 1st day of the current month
+ *
+ * @returns An object containing activity counts for different time periods:
+ * ```
+ * {
+ *   today: number,    // Count of activities recorded today
+ *   thisWeek: number, // Count of activities recorded this week
+ *   thisMonth: number // Count of activities recorded this month
+ * }
+ * ```
+ * @throws Will throw an error if no authenticated user is found
+ */
 export const getActivityStats = query({
   args: {},
   handler: async (ctx) => {

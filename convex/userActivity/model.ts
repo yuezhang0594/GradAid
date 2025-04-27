@@ -3,9 +3,14 @@ import { MutationCtx, QueryCtx } from "../_generated/server";
 import { UserActivityType } from "../validators";
 
 /**
- * Fetches recent activity for a user with optional limit
+ * Fetches recent user activity for a specific user.
+ * 
+ * @param ctx - The Convex query context
+ * @param userId - The ID of the user whose activity is being fetched
+ * @param limit - The maximum number of activity records to return (default is 12)
+ * 
+ * @returns A Promise that resolves to an array of user activity records
  */
-
 export async function getRecentActivityForUser(
     ctx: QueryCtx,
     userId: Id<"users">,
