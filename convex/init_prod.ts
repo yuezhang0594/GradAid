@@ -1,8 +1,8 @@
-import { internalMutation } from "../_generated/server";
-import { Doc, Id } from "../_generated/dataModel";
+import { internalMutation } from "./_generated/server";
+import { Doc, Id } from "./_generated/dataModel";
 import { WithoutSystemFields } from "convex/server";
-import universities from "../data/universities.json";
-import programs from "../data/programs.json";
+import universities from "./data/universities.json";
+import programs from "./data/programs.json";
 
 type University = Doc<"universities">;
 type UniversityInput = WithoutSystemFields<University>;

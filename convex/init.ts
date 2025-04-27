@@ -1,8 +1,8 @@
-import { internalMutation } from "../_generated/server";
-import { Doc, Id } from "../_generated/dataModel";
+import { internalMutation } from "./_generated/server";
+import { Doc, Id } from "./_generated/dataModel";
 import { WithoutSystemFields } from "convex/server";
 import { v } from "convex/values";
-import { ApplicationPriority } from "../validators";
+import { ApplicationPriority } from "./validators";
 
 // Define types based on our schema
 type University = Doc<"universities">
