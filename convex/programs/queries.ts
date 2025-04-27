@@ -5,6 +5,11 @@ import * as ProgramModel from "./model";
 
 /**
  * Get a program by its ID
+ * 
+ * @param ctx - The query context
+ * @param programId - The ID of the program to retrieve
+ * @returns The program with the specified ID
+ * @throws Error if the program is not found
  */
 export const getProgram = query({
     args: {
@@ -21,6 +26,10 @@ export const getProgram = query({
 
 /**
  * Get program objects from an array of program IDs
+ * 
+ * @param ctx - The query context
+ * @param args - Object containing an array of program IDs to retrieve
+ * @returns An array of program objects corresponding to the provided IDs
  */
 export const getProgramsByIds = query({
     args: {
