@@ -72,7 +72,7 @@ export const useCredits = mutation({
 /**
  * Reset user's AI credits to the default amount
  * This mutation will reset the usage counter and update the reset date
- * Typically used for subscription renewals or manual admin resets
+ * Typically used for subscription renewals or manual resets
  */
 export const resetCredits = internalMutation({
   args: {
@@ -86,9 +86,6 @@ export const resetCredits = internalMutation({
   handler: async (ctx, args) => {
     // Get the authenticated user (to verify admin status)
     const adminId = await getCurrentUserIdOrThrow(ctx);
-    
-    // TODO: In a production app, we would check if the current user is an admin
-    // For now, this is a simplified version that allows resetting without admin checks
     
     // Reset the user's credits
     const aiCredits = await ctx.db

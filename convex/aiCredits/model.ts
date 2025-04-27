@@ -15,6 +15,18 @@ export interface AiCreditUsageStat {
 }
 
 // Get the AI credits for a specific user
+/**
+ * Retrieves the AI credit summary for a specific user.
+ * 
+ * This function queries the database for the user's AI credits. If no credit record
+ * exists for the user, it returns default values with a reset date set to the default
+ * interval from the current time.
+ * 
+ * @param ctx - The query context used to access the database
+ * @param userId - The unique identifier of the user whose credits to retrieve
+ * @returns A promise that resolves to an object containing the user's total credits,
+ *          used credits, and the date when credits will reset
+ */
 export async function getUserAiCredits(
   ctx: QueryCtx,
   userId: Id<"users">
@@ -41,6 +53,19 @@ export async function getUserAiCredits(
 }
 
 // Get detailed usage statistics for a specific user
+/**
+ * Retrieves and aggregates AI credit usage statistics for a specific user.
+ * 
+ * This function fetches all AI credit usage records for the given user ID,
+ * groups them by usage type, calculates the total credits used for each type,
+ * and provides percentage information relative to total usage.
+ * 
+ * @param ctx - The query context for database operations
+ * @param userId - The user ID to retrieve AI credit usage for
+ * @returns A promise that resolves to an array of AI credit usage statistics,
+ *          with each entry containing the usage type, amount of credits used,
+ *          and percentage of total usage
+ */
 export async function getUserAiCreditUsage(
   ctx: QueryCtx,
   userId: Id<"users">
@@ -72,6 +97,17 @@ export async function getUserAiCreditUsage(
 }
 
 // Calculate remaining AI credits for a specific user
+/**
+ * Retrieves the remaining AI credits for a specific user.
+ *
+ * This function queries the database for the user's AI credits record and calculates
+ * how many credits they have left to use. If no record exists for the user, it returns
+ * the default allocation of credits.
+ *
+ * @param ctx - The query context for database operations
+ * @param userId - The ID of the user whose credits should be retrieved
+ * @returns The number of remaining AI credits (non-negative)
+ */
 export async function getUserRemainingAiCredits(
   ctx: QueryCtx,
   userId: Id<"users">
@@ -96,6 +132,21 @@ export async function getUserRemainingAiCredits(
 /**
  * Update AI credits for a user by incrementing the used credits amount
  * Creates a new record if one doesn't exist yet
+ */
+/**
+ * Updates a user's AI credits by deducting the specified amount.
+ * If no credit record exists for the user, it creates a new one with default values.
+ * 
+ * @param ctx - The mutation context for database operations
+ * @param userId - The ID of the user whose credits are being updated
+ * @param creditsToUse - The number of credits to deduct from the user's balance
+ * 
+ * @returns A promise that resolves to an object containing the updated credit information:
+ *          totalCredits, usedCredits, and the date when credits will reset
+ * 
+ * @example
+ * // Deduct 5 credits from user with ID "123"
+ * const creditSummary = await updateUserAiCredits(ctx, "123", 5);
  */
 export async function updateUserAiCredits(
   ctx: MutationCtx,
@@ -141,6 +192,16 @@ export async function updateUserAiCredits(
 /**
  * Record AI credit usage for tracking and reporting purposes
  */
+/**
+ * Records the usage of AI credits for a specific user.
+ *
+ * @param ctx - The mutation context used for database operations
+ * @param userId - The ID of the user who used the credits
+ * @param type - The category or type of AI credit usage
+ * @param credits - The number of credits consumed
+ * @param description - Optional text describing the specific usage
+ * @returns A promise that resolves when the usage record has been created
+ */
 export async function recordAiCreditUsage(
   ctx: MutationCtx,
   userId: Id<"users">,
@@ -162,6 +223,16 @@ export async function recordAiCreditUsage(
  * Use AI credits for a specific action
  * This is a compound function that both updates credit balance and records usage
  */
+/**
+ * Records AI credit usage for a user and updates their credit balance.
+ * 
+ * @param ctx - The mutation context for the operation
+ * @param userId - The ID of the user whose credits are being used
+ * @param type - The type of AI credit usage being recorded
+ * @param creditsToUse - The number of credits to deduct from the user's balance
+ * @param description - Optional description of the credit usage
+ * @returns A Promise that resolves to an updated AI credit summary for the user
+ */
 export async function useAiCredits(
   ctx: MutationCtx,
   userId: Id<"users">,
@@ -176,6 +247,17 @@ export async function useAiCredits(
   return await updateUserAiCredits(ctx, userId, creditsToUse);
 }
 
+/**
+ * Creates a new AI credits record for a user in the database.
+ * 
+ * @param ctx - The mutation context for database operations
+ * @param userId - The ID of the user to assign credits to
+ * @param totalCredits - The total number of AI credits to allocate, defaults to DEFAULT_AI_CREDITS
+ * @param usedCredits - The initial number of credits marked as used, defaults to 0
+ * @param resetDate - ISO date string when credits should reset, defaults to current date plus RESET_DAYS_IN_MILLISECONDS
+ * 
+ * @returns A Promise resolving to the ID of the newly created AI credits record
+ */
 export async function createAiCredits(
   ctx: MutationCtx,
   userId: Id<"users">,
