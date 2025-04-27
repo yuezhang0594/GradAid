@@ -14,7 +14,7 @@ import * as DashboardModel from "./model";
 import { api } from "../_generated/api";
 import { DEFAULT_AI_CREDITS } from "../validators";
 
-describe("Dashboard Model & Query Functions", () => {
+describe("Dashboard", () => {
   const t = convexTest(schema);
   let testUserId: Id<"users">;
   let otherUserId: Id<"users">; // User with no data
@@ -43,49 +43,55 @@ describe("Dashboard Model & Query Functions", () => {
 
   beforeAll(async () => {
     // Create users, university, programs
-    [testUserId, otherUserId, universityId, programId1, programId2, programId3] =
-      await t.run(async (ctx) => {
-        const userId = await ctx.db.insert("users", {
-          name: "Dashboard Test User",
-          email: `dashboard-test-${Date.now()}@example.com`,
-          clerkId: clerkId,
-        });
-        const otherId = await ctx.db.insert("users", {
-          name: "Other Dashboard User",
-          email: `other-dashboard-${Date.now()}@example.com`,
-          clerkId: otherClerkId,
-        });
-        const uniId = await ctx.db.insert("universities", {
-          name: "Dashboard University",
-          location: { city: "Dash City", state: "DB", country: "USA" },
-          website: "http://dashuni.edu",
-        });
-        const progId1 = await ctx.db.insert("programs", {
-          universityId: uniId,
-          name: "Dash Program 1",
-          degree: "M.S.",
-          department: "Dashboarding",
-          requirements: {},
-          deadlines: { fall: deadline1 },
-        });
-        const progId2 = await ctx.db.insert("programs", {
-          universityId: uniId,
-          name: "Dash Program 2",
-          degree: "Ph.D.",
-          department: "Dashboarding",
-          requirements: {},
-          deadlines: { fall: deadline2 },
-        });
-        const progId3 = await ctx.db.insert("programs", {
-            universityId: uniId,
-            name: "Dash Program 3",
-            degree: "M.Eng.",
-            department: "Dashboarding",
-            requirements: {},
-            deadlines: { fall: deadline3 },
-          });
-        return [userId, otherId, uniId, progId1, progId2, progId3];
+    [
+      testUserId,
+      otherUserId,
+      universityId,
+      programId1,
+      programId2,
+      programId3,
+    ] = await t.run(async (ctx) => {
+      const userId = await ctx.db.insert("users", {
+        name: "Dashboard Test User",
+        email: `dashboard-test-${Date.now()}@example.com`,
+        clerkId: clerkId,
       });
+      const otherId = await ctx.db.insert("users", {
+        name: "Other Dashboard User",
+        email: `other-dashboard-${Date.now()}@example.com`,
+        clerkId: otherClerkId,
+      });
+      const uniId = await ctx.db.insert("universities", {
+        name: "Dashboard University",
+        location: { city: "Dash City", state: "DB", country: "USA" },
+        website: "http://dashuni.edu",
+      });
+      const progId1 = await ctx.db.insert("programs", {
+        universityId: uniId,
+        name: "Dash Program 1",
+        degree: "M.S.",
+        department: "Dashboarding",
+        requirements: {},
+        deadlines: { fall: deadline1 },
+      });
+      const progId2 = await ctx.db.insert("programs", {
+        universityId: uniId,
+        name: "Dash Program 2",
+        degree: "Ph.D.",
+        department: "Dashboarding",
+        requirements: {},
+        deadlines: { fall: deadline2 },
+      });
+      const progId3 = await ctx.db.insert("programs", {
+        universityId: uniId,
+        name: "Dash Program 3",
+        degree: "M.Eng.",
+        department: "Dashboarding",
+        requirements: {},
+        deadlines: { fall: deadline3 },
+      });
+      return [userId, otherId, uniId, progId1, progId2, progId3];
+    });
   });
 
   beforeEach(async () => {
@@ -125,7 +131,8 @@ describe("Dashboard Model & Query Functions", () => {
       });
 
       // Documents
-      await ctx.db.insert("applicationDocuments", { // Doc 1 (App 1) - Complete
+      await ctx.db.insert("applicationDocuments", {
+        // Doc 1 (App 1) - Complete
         applicationId: aId1,
         userId: testUserId,
         title: "SOP Final",
@@ -134,7 +141,8 @@ describe("Dashboard Model & Query Functions", () => {
         progress: 100,
         lastEdited: now.toISOString(),
       });
-      await ctx.db.insert("applicationDocuments", { // Doc 2 (App 2) - In Progress
+      await ctx.db.insert("applicationDocuments", {
+        // Doc 2 (App 2) - In Progress
         applicationId: aId2,
         userId: testUserId,
         title: "LOR Req 1",
@@ -143,7 +151,8 @@ describe("Dashboard Model & Query Functions", () => {
         progress: 50,
         lastEdited: now.toISOString(),
       });
-       await ctx.db.insert("applicationDocuments", { // Doc 3 (App 2) - Not Started
+      await ctx.db.insert("applicationDocuments", {
+        // Doc 3 (App 2) - Not Started
         applicationId: aId2,
         userId: testUserId,
         title: "LOR Req 2",
@@ -152,7 +161,8 @@ describe("Dashboard Model & Query Functions", () => {
         progress: 0,
         lastEdited: now.toISOString(),
       });
-       await ctx.db.insert("applicationDocuments", { // Doc 4 (App 3) - In Progress
+      await ctx.db.insert("applicationDocuments", {
+        // Doc 4 (App 3) - In Progress
         applicationId: aId3,
         userId: testUserId,
         title: "SOP Draft",
@@ -167,7 +177,9 @@ describe("Dashboard Model & Query Functions", () => {
         userId: testUserId,
         totalCredits: DEFAULT_AI_CREDITS,
         usedCredits: 50,
-        resetDate: new Date(now.getTime() + 30 * 24 * 60 * 60 * 1000).toISOString(),
+        resetDate: new Date(
+          now.getTime() + 30 * 24 * 60 * 60 * 1000
+        ).toISOString(),
       });
 
       // User Activity (create 15 records to test limit)
@@ -203,93 +215,101 @@ describe("Dashboard Model & Query Functions", () => {
     });
   });
 
-  // --- Model Function Tests ---
+  describe("Model", () => {
+    describe("getDashboardStatsForUser", () => {
+      test("should return correct stats for user with data", async () => {
+        const stats = await t.run(async (ctx) => {
+          return await DashboardModel.getDashboardStatsForUser(ctx, testUserId);
+        });
 
-  describe("getDashboardStatsForUser", () => {
-    test("should return correct stats for user with data", async () => {
-      const stats = await t.run(async (ctx) => {
-        return await DashboardModel.getDashboardStatsForUser(ctx, testUserId);
+        // Application Stats
+        expect(stats.applications.total).toBe(3);
+        expect(stats.applications.submitted).toBe(1);
+        expect(stats.applications.inProgress).toBe(1);
+        expect(stats.applications.nextDeadline).toBe(deadline2); // Earliest deadline
+
+        // Document Stats (4 documents: 100, 50, 0, 25)
+        expect(stats.documents.totalDocuments).toBe(4);
+        expect(stats.documents.completedDocuments).toBe(1);
+        expect(stats.documents.averageProgress).toBeCloseTo(
+          (100 + 50 + 0 + 25) / 4
+        ); // 43.75
+
+        // AI Credits
+        expect(stats.aiCredits).not.toBeNull();
+        expect(stats.aiCredits?.totalCredits).toBe(DEFAULT_AI_CREDITS);
+        expect(stats.aiCredits?.usedCredits).toBe(50);
+
+        // Recent Activity
+        expect(stats.recentActivity).toHaveLength(12); // Limited to 12
+        expect(stats.recentActivity[0].description).toBe("Edited document 15"); // Most recent
+        expect(stats.recentActivity[11].description).toBe("Edited document 4");
       });
 
-      // Application Stats
-      expect(stats.applications.total).toBe(3);
-      expect(stats.applications.submitted).toBe(1);
-      expect(stats.applications.inProgress).toBe(1);
-      expect(stats.applications.nextDeadline).toBe(deadline2); // Earliest deadline
+      test("should return zero/default stats for user with no data", async () => {
+        const stats = await t.run(async (ctx) => {
+          // otherUserId has no applications, documents, or activity created in beforeEach
+          // aiCredits will be created by getUserAiCredits if they don't exist
+          return await DashboardModel.getDashboardStatsForUser(
+            ctx,
+            otherUserId
+          );
+        });
 
-      // Document Stats (4 documents: 100, 50, 0, 25)
-      expect(stats.documents.totalDocuments).toBe(4);
-      expect(stats.documents.completedDocuments).toBe(1);
-      expect(stats.documents.averageProgress).toBeCloseTo((100 + 50 + 0 + 25) / 4); // 43.75
+        // Application Stats
+        expect(stats.applications.total).toBe(0);
+        expect(stats.applications.submitted).toBe(0);
+        expect(stats.applications.inProgress).toBe(0);
+        expect(stats.applications.nextDeadline).toBeUndefined();
 
-      // AI Credits
-      expect(stats.aiCredits).not.toBeNull();
-      expect(stats.aiCredits?.totalCredits).toBe(DEFAULT_AI_CREDITS);
-      expect(stats.aiCredits?.usedCredits).toBe(50);
+        // Document Stats
+        expect(stats.documents.totalDocuments).toBe(0);
+        expect(stats.documents.completedDocuments).toBe(0);
+        expect(stats.documents.averageProgress).toBe(0);
 
-      // Recent Activity
-      expect(stats.recentActivity).toHaveLength(12); // Limited to 12
-      expect(stats.recentActivity[0].description).toBe("Edited document 15"); // Most recent
-      expect(stats.recentActivity[11].description).toBe("Edited document 4");
-    });
+        // AI Credits (should be default)
+        expect(stats.aiCredits).not.toBeNull();
+        expect(stats.aiCredits?.totalCredits).toBe(DEFAULT_AI_CREDITS);
+        expect(stats.aiCredits?.usedCredits).toBe(0);
 
-    test("should return zero/default stats for user with no data", async () => {
-      const stats = await t.run(async (ctx) => {
-        // otherUserId has no applications, documents, or activity created in beforeEach
-        // aiCredits will be created by getUserAiCredits if they don't exist
-        return await DashboardModel.getDashboardStatsForUser(ctx, otherUserId);
+        // Recent Activity
+        expect(stats.recentActivity).toEqual([]);
       });
-
-      // Application Stats
-      expect(stats.applications.total).toBe(0);
-      expect(stats.applications.submitted).toBe(0);
-      expect(stats.applications.inProgress).toBe(0);
-      expect(stats.applications.nextDeadline).toBeUndefined();
-
-      // Document Stats
-      expect(stats.documents.totalDocuments).toBe(0);
-      expect(stats.documents.completedDocuments).toBe(0);
-      expect(stats.documents.averageProgress).toBe(0);
-
-      // AI Credits (should be default)
-      expect(stats.aiCredits).not.toBeNull();
-      expect(stats.aiCredits?.totalCredits).toBe(DEFAULT_AI_CREDITS);
-      expect(stats.aiCredits?.usedCredits).toBe(0);
-
-      // Recent Activity
-      expect(stats.recentActivity).toEqual([]);
     });
   });
 
-  // --- Query Function Tests ---
+  describe("Queries", () => {
+    describe("getDashboardStats", () => {
+      test("should return stats for the authenticated user", async () => {
+        const stats = await asUser.query(
+          api.dashboard.queries.getDashboardStats
+        );
 
-  describe("getDashboardStats", () => {
-    test("should return stats for the authenticated user", async () => {
-      const stats = await asUser.query(api.dashboard.queries.getDashboardStats);
+        // Verify a few key stats to ensure the query called the model correctly
+        expect(stats.applications.total).toBe(3);
+        expect(stats.applications.nextDeadline).toBe(deadline2);
+        expect(stats.documents.totalDocuments).toBe(4);
+        expect(stats.recentActivity).toHaveLength(12);
+      });
 
-      // Verify a few key stats to ensure the query called the model correctly
-      expect(stats.applications.total).toBe(3);
-      expect(stats.applications.nextDeadline).toBe(deadline2);
-      expect(stats.documents.totalDocuments).toBe(4);
-      expect(stats.recentActivity).toHaveLength(12);
-    });
-
-    test("should return default/empty stats for a newly authenticated user with no data", async () => {
+      test("should return default/empty stats for a newly authenticated user with no data", async () => {
         // Use asOtherUser who has no data set up in beforeEach
-        const stats = await asOtherUser.query(api.dashboard.queries.getDashboardStats);
+        const stats = await asOtherUser.query(
+          api.dashboard.queries.getDashboardStats
+        );
 
         expect(stats.applications.total).toBe(0);
         expect(stats.applications.nextDeadline).toBeUndefined();
         expect(stats.documents.totalDocuments).toBe(0);
         expect(stats.recentActivity).toEqual([]);
-    });
+      });
 
-
-    test("should throw error if user is not authenticated", async () => {
-      // Use t without identity
-      await expect(
-        t.query(api.dashboard.queries.getDashboardStats)
-      ).rejects.toThrow(); // Should throw error because getCurrentUserIdOrThrow fails
+      test("should throw error if user is not authenticated", async () => {
+        // Use t without identity
+        await expect(
+          t.query(api.dashboard.queries.getDashboardStats)
+        ).rejects.toThrow(); // Should throw error because getCurrentUserIdOrThrow fails
+      });
     });
   });
 });
