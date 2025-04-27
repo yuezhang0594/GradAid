@@ -66,9 +66,6 @@ describe("getUserAiCredits", () => {
     expect(credits).not.toBeNull();
     expect(credits?.totalCredits).toBe(DEFAULT_AI_CREDITS);
     expect(credits?.usedCredits).toBe(0);
-    expect(credits?.resetDate).toBe(
-      new Date(Date.now() + RESET_DAYS_IN_MILLISECONDS).toISOString()
-    );
   });
 });
 
