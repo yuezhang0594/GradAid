@@ -4,7 +4,8 @@ import schema from "../schema";
 import { api, internal } from "../_generated/api";
 import { UserJSON } from "@clerk/backend";
 import { Id } from "../_generated/dataModel";
-import { userByClerkId } from "../users";
+import { getCurrentUserId, getCurrentUserIdOrThrow, getCurrentUserOrThrow, userByClerkId } from "../users";
+import { QueryCtx } from "../_generated/server";
 
 // Mock the createAiCredits function
 vi.mock("../aiCredits/model", () => ({
@@ -366,5 +367,88 @@ describe("User Management", () => {
             return await userByClerkId(ctx, "clerkDoesNotExist");
         });
         expect(user).toBeNull();
+    });
+
+    // New tests for the getCurrentUser* helper functions
+    describe("getCurrentUser* Helper Functions", () => {
+        // Helper to set up a test user
+        async function setupTestUser(t: any, clerkId: string) {
+            const clerkUser = mockClerkUser(clerkId, "helper@example.com", "Helper", "User");
+            await t.mutation(internal.users.upsertFromClerk, { data: clerkUser });
+            return t.withIdentity({ subject: clerkId });
+        }
+
+        it("should return user ID with getCurrentUserId when authenticated", async () => {
+            const t = convexTest(schema);
+            const clerkId = "clerkIdHelper1";
+            const asUser = await setupTestUser(t, clerkId);
+
+            const result = await asUser.run(async (ctx: QueryCtx) => {
+                // First get the user to compare IDs
+                const user = await userByClerkId(ctx, clerkId);
+                // Then test getCurrentUserId with identity
+                const userId = await getCurrentUserId(ctx);
+                return { user, userId };
+            });
+
+            expect(result.userId).not.toBeNull();
+            expect(result.userId).toEqual(result.user?._id);
+        });
+
+        it("should return null with getCurrentUserId when not authenticated", async () => {
+            const t = convexTest(schema);
+            
+            const userId = await t.run(async (ctx) => {
+                return await getCurrentUserId(ctx);
+            });
+            
+            expect(userId).toBeNull();
+        });
+
+        it("should return user with getCurrentUserOrThrow when authenticated", async () => {
+            const t = convexTest(schema);
+            const clerkId = "clerkIdHelper2";
+            const asUser = await setupTestUser(t, clerkId);
+
+            const user = await asUser.run(async (ctx: QueryCtx) => {
+                return await getCurrentUserOrThrow(ctx);
+            });
+
+            expect(user).not.toBeNull();
+            expect(user.clerkId).toBe(clerkId);
+            expect(user.name).toBe("Helper User");
+        });
+
+        it("should throw with getCurrentUserOrThrow when not authenticated", async () => {
+            const t = convexTest(schema);
+            
+            await expect(t.run(async (ctx) => {
+                return await getCurrentUserOrThrow(ctx);
+            })).rejects.toThrow("Can't get current user");
+        });
+
+        it("should return user ID with getCurrentUserIdOrThrow when authenticated", async () => {
+            const t = convexTest(schema);
+            const clerkId = "clerkIdHelper3";
+            const asUser = await setupTestUser(t, clerkId);
+
+            const result = await asUser.run(async (ctx: QueryCtx) => {
+                // First get the user to compare IDs
+                const user = await userByClerkId(ctx, clerkId);
+                // Then test getCurrentUserIdOrThrow with identity
+                const userId = await getCurrentUserIdOrThrow(ctx);
+                return { user, userId };
+            });
+
+            expect(result.userId).toEqual(result.user?._id);
+        });
+
+        it("should throw with getCurrentUserIdOrThrow when not authenticated", async () => {
+            const t = convexTest(schema);
+            
+            await expect(t.run(async (ctx) => {
+                return await getCurrentUserIdOrThrow(ctx);
+            })).rejects.toThrow("Can't get current user ID");
+        });
     });
 });

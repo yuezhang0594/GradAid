@@ -1278,6 +1278,146 @@ describe("Documents", () => {
           })
         ).rejects.toThrow(`Application with ID ${nonExistentAppId} not found`);
       });
+
+      test("should set application to 'not_started' when there are no documents", async () => {
+        // Create a new application without any documents
+        const emptyAppId = await t.run(async (ctx) => {
+          return await ctx.db.insert("applications", {
+            userId: testUserId,
+            universityId: universityId,
+            programId: programId,
+            status: "draft", // Start with a non-not_started status to verify change
+            deadline: deadline,
+            priority: "medium",
+            lastUpdated: new Date().toISOString(),
+          });
+        });
+
+        // Run the update function on an application without documents
+        const result = await asUser.run(async (ctx) => {
+          return await DocumentModel.updateApplicationStatusBasedOnDocuments(
+            ctx,
+            emptyAppId
+          );
+        });
+
+        expect(result.success).toBe(true);
+        expect(result.status).toBe("not_started");
+
+        // Verify the application status was updated in the database
+        const app = await t.run(async (ctx) => {
+          return await ctx.db.get(emptyAppId);
+        });
+
+        expect(app?.status).toBe("not_started");
+
+        // Check that an activity log was created for this status change
+        const activities = await asUser.run(async (ctx) => {
+          return await ctx.db
+            .query("userActivity")
+            .filter((q) =>
+              q.eq(q.field("metadata.applicationId"), emptyAppId)
+            )
+            .collect();
+        });
+
+        expect(activities.length).toBeGreaterThan(0);
+        expect(activities[0].description).toContain("automatically updated to not_started");
+      });
+
+      test("should not change application status if it's already 'not_started' with no documents", async () => {
+        // Create a new application without documents that is already in not_started status
+        const alreadyNotStartedAppId = await t.run(async (ctx) => {
+          return await ctx.db.insert("applications", {
+            userId: testUserId,
+            universityId: universityId,
+            programId: programId,
+            status: "not_started", // Already not_started
+            deadline: deadline,
+            priority: "medium",
+            lastUpdated: new Date().toISOString(),
+          });
+        });
+
+        // Count activities before update
+        const activitiesCountBefore = await t.run(async (ctx) => {
+          return await ctx.db
+            .query("userActivity")
+            .filter((q) => q.eq(q.field("metadata.applicationId"), alreadyNotStartedAppId))
+            .collect();
+        });
+
+        // Run the update function
+        const result = await asUser.run(async (ctx) => {
+          return await DocumentModel.updateApplicationStatusBasedOnDocuments(
+            ctx,
+            alreadyNotStartedAppId
+          );
+        });
+
+        expect(result.status).toBe("not_started");
+
+        // Count activities after update - should be the same (no new activity logged)
+        const activitiesCountAfter = await t.run(async (ctx) => {
+          return await ctx.db
+            .query("userActivity")
+            .filter((q) => q.eq(q.field("metadata.applicationId"), alreadyNotStartedAppId))
+            .collect();
+        });
+
+        // No new activity should be logged since status didn't change
+        expect(activitiesCountAfter.length).toBe(activitiesCountBefore.length);
+      });
+    });
+
+    describe("logDocumentProgressActivity", () => {
+      test("should log activity when document progress changes", async () => {
+        // We need to call a function that internally uses logDocumentProgressActivity
+        // updateDocumentStatus calls this function when progress changes
+        
+        // First, set up a document with a specific progress
+        await t.run(async (ctx) => {
+          await ctx.db.patch(sopDocId, { progress: 10 });
+        });
+        
+        // Update status which will change progress and log activity
+        await asUser.run(async (ctx) => {
+          await DocumentModel.updateDocumentStatus(ctx, sopDocId, "complete");
+        });
+        
+        // Check if progress change activity was logged
+        const activities = await asUser.run(async (ctx) => {
+          return await ctx.db
+            .query("userActivity")
+            .withIndex("by_user", (q) => q.eq("userId", testUserId))
+            .filter((q) => 
+              q.eq(q.field("type"), "document_edit") &&
+              q.eq(q.field("metadata.documentId"), sopDocId))
+            .collect();
+        });
+        
+        expect(activities.length).toBeGreaterThan(0);
+        const progressActivity = activities.find(a => a.description.includes("progress updated from"));
+        expect(progressActivity).toBeDefined();
+        expect(progressActivity?.metadata.oldProgress).toBe(10);
+        expect(progressActivity?.metadata.newProgress).toBe(100); // 'complete' status is 100% progress
+      });
+      
+      test("should throw when user doesn't own the document", async () => {
+        // This will indirectly test logDocumentProgressActivity's ownership check
+        // by calling updateDocumentStatus which uses it
+        await expect(
+          asOtherUser.run(
+            async (ctx) => {
+              return await DocumentModel.updateDocumentStatus(
+                ctx,
+                sopDocId,
+                "complete" // This would change progress and call logDocumentProgressActivity
+              );
+            }
+          )
+        ).rejects.toThrow();
+      });
     });
   });
 });
