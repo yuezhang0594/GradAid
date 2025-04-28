@@ -7,7 +7,7 @@ import {
   DEFAULT_AI_CREDITS,
   RESET_DAYS_IN_MILLISECONDS,
 } from "../validators";
-import * as AiCreditsModel from "./model"; // Import functions to test
+import * as AiCreditsModel from "../aiCredits/model"; // Import functions to test
 import { api, internal } from "../_generated/api";
 describe("aiCredits", () => {
   describe("Model", () => {

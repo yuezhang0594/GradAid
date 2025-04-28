@@ -10,7 +10,7 @@ import {
 } from "vitest";
 import schema from "../schema";
 import { Id } from "../_generated/dataModel";
-import * as DashboardModel from "./model";
+import * as DashboardModel from "../dashboard/model";
 import { api } from "../_generated/api";
 import { DEFAULT_AI_CREDITS } from "../validators";
 

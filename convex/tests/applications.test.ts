@@ -10,7 +10,7 @@ import {
 } from "vitest";
 import schema from "../schema";
 import { Id } from "../_generated/dataModel";
-import * as ApplicationModel from "./model";
+import * as ApplicationModel from "../applications/model";
 import * as Validators from "../validators";
 import { api } from "../_generated/api";
 

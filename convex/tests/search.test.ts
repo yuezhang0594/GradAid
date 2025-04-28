@@ -12,7 +12,7 @@ import {
 import schema from "../schema";
 import { api } from "../_generated/api";
 import { Id } from "../_generated/dataModel";
-import * as SearchModel from "./model";
+import * as SearchModel from "../search/model";
 
 describe("Search", () => {
   const t = convexTest(schema);

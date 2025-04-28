@@ -11,7 +11,7 @@ import {
 } from "vitest";
 import schema from "../schema";
 import { Id } from "../_generated/dataModel";
-import * as ProgramModel from "./model";
+import * as ProgramModel from "../programs/model";
 import { api } from "../_generated/api";
 
 describe("Programs", () => {
