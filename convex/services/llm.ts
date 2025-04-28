@@ -8,6 +8,20 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
+/**
+ * Generates a Statement of Purpose (SOP) for a graduate school application
+ * based on the applicant's profile and target program
+ * 
+ * @param {Object} args - Function arguments
+ * @param {any} args.profile - The applicant's profile containing personal, educational, and career information
+ * @param {Object} args.program - Information about the target program
+ * @param {string} args.program.university - University name
+ * @param {string} args.program.name - Program name
+ * @param {string} args.program.degree - Degree type
+ * @param {string} args.program.department - Department name
+ * @returns {Promise<string|null>} The generated SOP text
+ * @throws {Error} If SOP generation fails
+ */
 export const generateSOP = action({
   args: {
     profile: v.any(),
@@ -155,6 +169,24 @@ Tone & Style Guidance:
   }
 });
 
+/**
+ * Generates a Letter of Recommendation (LOR) for a graduate school application
+ * from the perspective of a recommender
+ * 
+ * @param {Object} args - Function arguments
+ * @param {any} args.profile - The applicant's profile containing personal and academic information
+ * @param {Object} args.university - Information about the target university
+ * @param {string} args.university.name - University name
+ * @param {Object} args.program - Information about the target program
+ * @param {string} args.program.name - Program name
+ * @param {string} args.program.degree - Degree type
+ * @param {string} args.program.department - Department name
+ * @param {Object} args.recommender - Information about the recommender
+ * @param {string} args.recommender.name - Recommender's name
+ * @param {string} args.recommender.email - Recommender's email
+ * @returns {Promise<string|null>} The generated LOR text
+ * @throws {Error} If LOR generation fails
+ */
 export const generateLOR = action({
   args: {
     profile: v.any(),

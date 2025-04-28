@@ -3,6 +3,11 @@ import { v } from "convex/values";
 import { Doc, Id } from "../_generated/dataModel";
 import { getCurrentUserIdOrThrow } from "../users";
 
+/**
+ * Retrieves the current user's profile information.
+ * 
+ * @returns The complete user profile or null if it doesn't exist
+ */
 export const getProfile = query({
   args: {},
   handler: async (ctx, args) => {
@@ -14,6 +19,11 @@ export const getProfile = query({
   },
 });
 
+/**
+ * Checks the current user's onboarding status and determines the next step.
+ * 
+ * @returns Object containing the current onboarding step and completion status
+ */
 export const checkOnboardingStatus = query({
   args: {},
   handler: async (ctx, args) => {
@@ -40,6 +50,12 @@ export const checkOnboardingStatus = query({
   },
 });
 
+/**
+ * Determines the next incomplete step in the user profile onboarding process.
+ * 
+ * @param profile - The user profile document
+ * @returns The next incomplete step identifier: "personal-info", "education", "test-scores", "career-goals", or "complete"
+ */
 function getNextIncompleteStep(profile: Doc<"userProfiles">): string {
   // Check if personalInfo exists and has all required fields
   if (!profile.countryOfOrigin ||
@@ -80,7 +96,11 @@ function getNextIncompleteStep(profile: Doc<"userProfiles">): string {
   return "complete";
 }
 
-// Get all applications for a user with their associated documents and LORs
+/**
+ * Retrieves all applications for the current user with their associated documents.
+ * 
+ * @returns Array of applications with their associated documents
+ */
 export const getApplications = query({
   args: {},
   handler: async (ctx, args) => {
@@ -109,7 +129,12 @@ export const getApplications = query({
   },
 });
 
-// Get dashboard stats for a user
+/**
+ * Retrieves dashboard statistics for the current user including application counts, 
+ * document statuses, AI credits, and recent activity.
+ * 
+ * @returns Dashboard statistics object with applications, documents, aiCredits and recentActivity
+ */
 export const getDashboardStats = query({
   args: {},
   handler: async (ctx, args) => {
@@ -164,7 +189,12 @@ export const getDashboardStats = query({
   },
 });
 
-// Get recent activity for a user
+/**
+ * Retrieves recent activity records for the current user.
+ * 
+ * @param limit - Optional limit on number of records to return (defaults to 12)
+ * @returns Array of recent activity records
+ */
 export const getRecentActivity = query({
   args: {
     limit: v.optional(v.number()),
@@ -180,7 +210,11 @@ export const getRecentActivity = query({
   },
 });
 
-// Get AI credits for a user
+/**
+ * Retrieves the AI credits for the current user.
+ * 
+ * @returns AI credits object or null if no credits exist
+ */
 export const getAiCredits = query({
   args: {},
   handler: async (ctx, args) => {
@@ -192,6 +226,11 @@ export const getAiCredits = query({
   },
 });
 
+/**
+ * Retrieves the name of the current user.
+ * 
+ * @returns The user's name or an empty string if not found
+ */
 export const getUserName = query({
   args: {},
   handler: async (ctx, args) => {

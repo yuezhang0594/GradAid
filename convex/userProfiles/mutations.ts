@@ -4,7 +4,12 @@ import { Id } from "../_generated/dataModel";
 import { get } from "http";
 import { getCurrentUserIdOrThrow } from "../users";
 
-// Helper function to determine next incomplete step
+/**
+ * Determines the next incomplete step in the user profile onboarding process.
+ * 
+ * @param profile - The user profile object to evaluate
+ * @returns The next incomplete step identifier: "personal-info", "education", "career-goals", or "complete"
+ */
 function getNextIncompleteStep(profile: any) {
   if (!profile || !profile.countryOfOrigin || !profile.dateOfBirth || !profile.currentLocation || !profile.nativeLanguage) {
     return "personal-info";
@@ -27,6 +32,11 @@ function getNextIncompleteStep(profile: any) {
 }
 
 // Queries
+/**
+ * Retrieves the current user's profile.
+ * 
+ * @returns The complete user profile or null if it doesn't exist
+ */
 export const getProfile = query({
   args: {},
   handler: async (ctx, args) => {
@@ -38,6 +48,11 @@ export const getProfile = query({
   },
 });
 
+/**
+ * Checks the current user's onboarding completion status and returns the next step.
+ * 
+ * @returns Object containing isComplete status and the currentStep identifier
+ */
 export const checkOnboardingStatus = query({
   args: {},
   handler: async (ctx, args) => {
@@ -56,6 +71,16 @@ export const checkOnboardingStatus = query({
 });
 
 // Mutations
+/**
+ * Saves or updates the user's personal information in their profile.
+ * Creates a new profile if one doesn't exist.
+ * 
+ * @param countryOfOrigin - The user's country of origin
+ * @param dateOfBirth - The user's date of birth
+ * @param currentLocation - The user's current location
+ * @param nativeLanguage - The user's native language
+ * @returns Object containing the next step ("education")
+ */
 export const savePersonalInfo = mutation({
   args: {
     countryOfOrigin: v.string(),
@@ -115,6 +140,19 @@ export const savePersonalInfo = mutation({
   },
 });
 
+/**
+ * Saves or updates the user's education information.
+ * Requires that personal information has already been saved.
+ * 
+ * @param educationLevel - The highest level of education completed
+ * @param major - The user's field of study
+ * @param university - The university attended
+ * @param gpa - The user's GPA
+ * @param gpaScale - The scale used for the GPA (typically 4.0)
+ * @param graduationDate - The graduation date
+ * @param researchExperience - Optional description of research experience
+ * @returns Object containing the next step ("test-scores")
+ */
 export const saveEducation = mutation({
   args: {
     educationLevel: v.string(),
@@ -150,6 +188,15 @@ export const saveEducation = mutation({
   },
 });
 
+/**
+ * Saves or updates the user's standardized test scores.
+ * Requires that personal information has already been saved.
+ * Test scores are optional for the overall profile completion.
+ * 
+ * @param greScores - Optional object containing GRE scores and test date
+ * @param englishTest - Optional object containing English proficiency test details
+ * @returns Object containing the next step ("career-goals")
+ */
 export const saveTestScores = mutation({
   args: {
     greScores: v.optional(
@@ -189,6 +236,19 @@ export const saveTestScores = mutation({
   },
 });
 
+/**
+ * Saves or updates the user's career goals and completes the onboarding process.
+ * Requires that personal information has already been saved.
+ * 
+ * @param targetDegree - The degree the user is pursuing
+ * @param intendedField - The user's intended field of study
+ * @param researchInterests - Array of research interests
+ * @param careerObjectives - Description of career objectives
+ * @param targetLocations - Array of desired study locations
+ * @param expectedStartDate - When the user expects to begin studies
+ * @param budgetRange - Optional budget range for studies
+ * @returns Object indicating completion ("complete")
+ */
 export const saveCareerGoals = mutation({
   args: {
     targetDegree: v.string(),

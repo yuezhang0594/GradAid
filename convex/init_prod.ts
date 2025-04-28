@@ -1,4 +1,4 @@
-import { internalMutation, MutationCtx } from "./_generated/server";
+import { internalMutation } from "./_generated/server";
 import { Doc, Id } from "./_generated/dataModel";
 import { WithoutSystemFields } from "convex/server";
 import universities from "./data/universities.json";

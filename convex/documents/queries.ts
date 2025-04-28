@@ -2,6 +2,13 @@ import { v } from "convex/values";
 import { query } from "../_generated/server";
 import * as Document from "./model"
 
+/**
+ * Retrieves a document by its ID, ensuring the requester has ownership access.
+ * 
+ * @param ctx - The Convex query context
+ * @param args - Query arguments containing the document ID
+ * @returns The document object if the requester has appropriate permissions
+ */
 export const getDocumentById = query({
   args: {
     applicationDocumentId: v.id("applicationDocuments"),
@@ -11,10 +18,12 @@ export const getDocumentById = query({
     return document;
   }
 });
-
-
 /**
- * Get recommender information for a letter of recommendation document
+ * Retrieves the recommender details for a specific document.
+ * 
+ * @param ctx - The Convex query context
+ * @param args - Query arguments containing the document ID
+ * @returns The recommender details for the specified document
  */
 export const getRecommender = query({
   args: {

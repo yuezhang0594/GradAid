@@ -64,7 +64,7 @@ export default function ContactPage() {
   });
 
   // Use Convex action to send emails
-  const sendContactEmail = useAction(api.resend.sendContactEmail);
+  const sendContactEmail = useAction(api.services.resend.sendContactEmail);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>

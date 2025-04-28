@@ -12,12 +12,12 @@ export function useProgramSearch(query?: string) {
     const [filters, setFilters] = useState<SearchFilters>(DEFAULT_FILTERS);
 
     // The filter state change will automatically trigger this query to re-run
-    const programIds = useQuery(api.search.search.searchPrograms, {
+    const programIds = useQuery(api.search.queries.searchPrograms, {
         search: query || "",
         filters,
     });
 
-    const universities = useQuery(api.search.search.getUniversitiesForPrograms, {
+    const universities = useQuery(api.search.queries.getUniversitiesForPrograms, {
         programIds: programIds ?? [],
     });
 
@@ -25,9 +25,9 @@ export function useProgramSearch(query?: string) {
         programIds: programIds ?? [],
     });
 
-    const uniqueLocations = useQuery(api.search.search.getUniqueLocations) || [];
+    const uniqueLocations = useQuery(api.search.queries.getUniqueLocations) || [];
 
-    const uniqueDegreeTypes = useQuery(api.search.search.getUniqueDegreeTypes) || [];
+    const uniqueDegreeTypes = useQuery(api.search.queries.getUniqueDegreeTypes) || [];
 
     const isLoading = programIds === undefined || universities === undefined || programs === undefined || uniqueLocations === undefined || uniqueDegreeTypes === undefined;
 

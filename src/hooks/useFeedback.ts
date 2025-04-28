@@ -54,7 +54,7 @@ const feedbackValidationSchema = z.object({
  * ```
  */
 export function useFeedback() {
-  const submitFeedbackMutation = useMutation(api.feedback.submitFeedback);
+  const submitFeedbackMutation = useMutation(api.feedback.mutations.submitFeedback);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [validationError, setValidationError] = useState<string | null>(null);
   const navigate = useNavigate();

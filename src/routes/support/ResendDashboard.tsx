@@ -30,7 +30,7 @@ interface ApiKeyResult {
 
 // Enhanced Resend API interaction hooks with cooldown
 function useVerifyResendDomains() {
-  const listDomains = useAction(api.resend.listDomains);
+  const listDomains = useAction(api.services.resend.listDomains);
   
   // Use local state to track cooldown
   const [lastFetchTime, setLastFetchTime] = useState<number>(0);
@@ -156,7 +156,7 @@ function useVerifyResendDomains() {
 }
 
 function useListResendApiKeys() {
-  const listApiKeys = useAction(api.resend.listApiKeys);
+  const listApiKeys = useAction(api.services.resend.listApiKeys);
   // Use local state to track cooldown
   const [lastFetchTime, setLastFetchTime] = useState<number>(0);
   const COOLDOWN_MS = 5000; // 5 seconds cooldown between requests
@@ -253,7 +253,7 @@ function useListResendApiKeys() {
 
 // Use Convex to check API connectivity with debouncing
 function useCheckResendApiStatus() {
-  const checkApiStatus = useAction(api.resend.checkApiStatus);
+  const checkApiStatus = useAction(api.services.resend.checkApiStatus);
   const [lastCheckTime, setLastCheckTime] = useState<number>(0);
   const COOLDOWN_MS = 10000; // 10 seconds cooldown for status checks
   

@@ -10,7 +10,14 @@ type ProgramWithUniversity = Program & { university: Doc<"universities"> };
 type Favorite = Doc<"favorites">;
 type User = Doc<"users">;
 
-// Toggle a program as favorite
+/**
+ * Toggles a program's favorite status for the current user.
+ * If the program is already favorited, it will be unfavorited, and vice versa.
+ * 
+ * @param ctx - The mutation context
+ * @param args - Object containing the program ID to toggle
+ * @returns A boolean indicating if the program is now favorited (true) or unfavorited (false)
+ */
 export const toggleFavorite = mutation({
   args: {
     programId: v.id("programs"),
@@ -44,7 +51,13 @@ export const toggleFavorite = mutation({
   },
 });
 
-// Check if a program is favorited
+/**
+ * Checks if a program is favorited by the current user.
+ * 
+ * @param ctx - The query context
+ * @param args - Object containing the program ID to check
+ * @returns A boolean indicating if the program is favorited (true) or not (false)
+ */
 export const isFavorite = query({
   args: {
     programId: v.id("programs"),
@@ -65,7 +78,12 @@ export const isFavorite = query({
   },
 });
 
-// Helper function for getting favorited programs
+/**
+ * Helper function to retrieve all programs favorited by the current user.
+ * 
+ * @param ctx - The query context
+ * @returns A promise resolving to an array of favorited Program objects
+ */
 async function getFavoriteProgramsHelper(
   ctx: QueryCtx,
 ): Promise<Array<Program>> {
@@ -87,7 +105,13 @@ async function getFavoriteProgramsHelper(
   return programs.filter((program: Program | null): program is Program => program !== null);
 }
 
-// Get all favorited programs for a user
+/**
+ * Gets all programs that the current user has favorited.
+ * 
+ * @param ctx - The query context
+ * @param args - Empty object as this function takes no arguments
+ * @returns A promise resolving to an array of favorited Program objects
+ */
 export const getFavoritePrograms = query({
   args: {},
   handler: async (ctx: QueryCtx, args): Promise<Array<Program>> => {
@@ -96,7 +120,13 @@ export const getFavoritePrograms = query({
   },
 });
 
-// Get all program IDs that a user has favorited
+/**
+ * Gets all program IDs that the current user has favorited.
+ * 
+ * @param ctx - The query context
+ * @param args - Empty object as this function takes no arguments
+ * @returns An array of objects containing program IDs
+ */
 export const getFavoriteProgramIds = query({
   args: {},
   returns: v.array(
@@ -118,18 +148,36 @@ export const getFavoriteProgramIds = query({
   },
 });
 
-// Delete a favorite by ID
+/**
+ * Deletes a favorite by its ID.
+ * 
+ * @param ctx - The mutation context
+ * @param args - Object containing the favorite ID to delete
+ * @returns A boolean indicating successful deletion
+ */
 export const deleteFavorite = mutation({
   args: {
     favoriteId: v.id("favorites"),
   },
   returns: v.boolean(),
   handler: async (ctx: MutationCtx, args) => {
+    const userId = await getCurrentUserIdOrThrow(ctx);
+    const favorite = await ctx.db.get(args.favoriteId);
+    if (favorite?.userId !== userId) {
+      throw new Error("You do not have permission to delete this favorite.");
+    }
     await ctx.db.delete(args.favoriteId);
     return true;
   },
 });
 
+/**
+ * Gets all favorited programs with their associated university data.
+ * 
+ * @param ctx - The query context
+ * @param args - Empty object as this function takes no arguments
+ * @returns A promise resolving to an array of programs with attached university data
+ */
 export const getFavoriteProgramsWithUniversity = query({
   args: {},
   handler: async (ctx: QueryCtx, args): Promise<Array<ProgramWithUniversity>> => {

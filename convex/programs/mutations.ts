@@ -1,6 +1,14 @@
 import { v } from "convex/values";
 import { mutation } from "../_generated/server";
 
+/**
+ * Creates a new academic program associated with a university.
+ * 
+ * @param ctx - The mutation context
+ * @param args - Object containing program details (university ID, name, degree, etc.)
+ * @returns The ID of the newly created program
+ * @throws Error if the user is not authenticated or if the university is not found
+ */
 export const create = mutation({
   args: {
     universityId: v.id("universities"),

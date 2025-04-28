@@ -108,7 +108,7 @@ export const degreeLabels: Record<string, string> = {
     'M.S.': 'Master of Science (M.S.)',
     'M.A.': 'Master of Arts (M.A.)',
     'Ph.D.': 'Doctor of Philosophy (Ph.D.)',
-    'M.B.A.': 'Master of Business Admin (M.B.A.)',
+    'M.B.A.': 'Master of Business Administration (M.B.A.)',
     'M.F.A.': 'Master of Fine Arts (M.F.A.)',
     'M.Eng.': 'Master of Engineering (M.Eng.)',
     'M.C.S.': 'Master of Computer Science (M.C.S.)',
