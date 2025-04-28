@@ -91,7 +91,6 @@ export default function SavedProgramsPage() {
                     <CardTitle className="text-md">
                       {program.degree} in {program.name}
                     </CardTitle>
-                    {/* TODO: add modal confirmation before deleting favorite */}
                     <Button
                       onClick={() => toggleFavorite(program._id)}
                       variant="ghost"
@@ -179,7 +178,6 @@ export default function SavedProgramsPage() {
                         <ExternalLink className="ml-1 h-4 w-4" />
                       </a>
                     </Button>
-                    {/* TODO: route to application page, prefill program details */}
                     <Button
                       variant="outline"
                       size="sm"

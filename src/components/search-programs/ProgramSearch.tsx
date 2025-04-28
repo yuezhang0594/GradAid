@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import SearchField from './SearchField';
 import FilterPanel from './FilterPanel';
 import { SearchFilters, DEFAULT_FILTERS } from '#/validators';
-// TODO: Fix bug where filters are not applied when no results are found
 interface ProgramSearchProps {
   onSearch: (query: string) => void;
   onFilterChange: (filters: SearchFilters, filterType?: string) => void;
