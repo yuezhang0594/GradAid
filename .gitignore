@@ -33,3 +33,6 @@ Thumbs.db
 .netlify/
 .vercel/
 supabase/migrations/
+
+# Coverage report
+coverage/

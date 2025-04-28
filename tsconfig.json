@@ -1,18 +1,19 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ],
+  "extends": "./tsconfig.app.json",
   "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "types": ["node", "vitest/globals", "./e2e/wdio"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
       "#/*": ["./convex/*"]
     }
-  }
+  },
+  "include": ["src", "convex", "e2e"],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
 }
