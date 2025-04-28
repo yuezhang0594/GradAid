@@ -44,17 +44,12 @@ export function useDocumentEditor() {
       })
     : null;
 
-  // Debug location state
-  console.log("Location state:", location.state);
-
   // Get application ID from navigation state
   const applicationId =
     (location.state?.applicationId as Id<"applications"> | null) || null;
-  console.log("Final application ID:", applicationId);
 
   // Get university name from location state
   const universityName = location.state?.universityName || "";
-  console.log("University name from location state:", universityName);
 
   // Get application details if we have an applicationId
   const applicationDetails = applicationId
@@ -62,17 +57,10 @@ export function useDocumentEditor() {
         applicationId: applicationId,
       })
     : null;
-  console.log("Application details:", applicationDetails);
 
   // Extract program information
   const programDegree = applicationDetails?.degree || "";
   const programName = applicationDetails?.program || "";
-
-  console.log("applicationId:", applicationId);
-  console.log("applicationDetails:", applicationDetails);
-  console.log("universityName:", universityName);
-  console.log("programDegree:", programDegree);
-  console.log("programName:", programName);
 
   // Mutations
   const saveDocument = useMutation(api.documents.mutations.saveDocumentDraft);

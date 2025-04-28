@@ -72,7 +72,7 @@ async function callResendApi<T>(
     ) {
       const cacheItem = cache[cacheKey];
       if (cacheItem.data) {
-        console.log("Returning cached data due to rate limiting");
+        console.warn("Returning cached data due to rate limiting");
         return cacheItem.data as T;
       }
     }

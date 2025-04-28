@@ -139,8 +139,6 @@ Tone & Style Guidance:
 - Showcase personal growth, intellectual curiosity, and readiness for research-intensive graduate training
 `;
 
-      console.log("[generateSOP] Prompt:", prompt);
-
       const response = await openai.chat.completions.create({
         model: "gpt-4",
         messages: [
@@ -163,7 +161,6 @@ Tone & Style Guidance:
       });
       return response.choices[0]?.message?.content || null;
     } catch (error) {
-      console.error("Error generating SOP:", error);
       throw new Error("Failed to generate Statement of Purpose");
     }
   }
@@ -299,8 +296,6 @@ export const generateLOR = action({
 - The letter should read as though it comes from someone who truly knows the student  
 
 `;
-
-      console.log("[generateLOR] Prompt:", prompt);
 
       const response = await openai.chat.completions.create({
         model: "gpt-4",

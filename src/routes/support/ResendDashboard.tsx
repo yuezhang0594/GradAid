@@ -262,7 +262,7 @@ function useCheckResendApiStatus() {
       // Implement cooldown
       const now = Date.now();
       if (now - lastCheckTime < COOLDOWN_MS) {
-        console.log("API status check on cooldown");
+        console.warn("API status check on cooldown");
         return false;
       }
       

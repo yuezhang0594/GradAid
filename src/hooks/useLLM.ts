@@ -57,8 +57,6 @@ export function useGenerateStatementOfPurpose() {
         const applicationDetails = await convex.query(api.applications.queries.getApplicationDetails, {
           applicationId
         });
-        console.log("[useGenerateStatementOfPurpose] applicationDetails:", applicationDetails);
-        console.log("[useGenerateStatementOfPurpose] userProfile:", userProfile);
 
         if (!applicationDetails || !userProfile) {
           toast.error("Application not found", {
@@ -70,8 +68,6 @@ export function useGenerateStatementOfPurpose() {
         const university = applicationDetails.university;
         const department = applicationDetails.department;
         const program = applicationDetails.program;
-        console.log("[useGenerateStatementOfPurpose] university:", university);
-        console.log("[useGenerateStatementOfPurpose] program:", program);
         if (!university || !program) {
           toast.error("Missing Data", {
             description: "University or program information is missing for this application."
@@ -87,7 +83,6 @@ export function useGenerateStatementOfPurpose() {
             department
           }
         };
-        console.log("[useGenerateStatementOfPurpose] data to generateSOP:", data);
         if (!aiCreditsRemaining || aiCreditsRemaining < AI_CREDITS_FOR_SOP) {
           toast.error("Insufficient AI Credits", {
             description: `You have ${aiCreditsRemaining} AI credits left. It takes ${AI_CREDITS_FOR_SOP} credits to generate a Statement of Purpose.`
@@ -95,7 +90,6 @@ export function useGenerateStatementOfPurpose() {
           return null;
         }
         const sop = await generateSOP(data);
-        console.log("[useGenerateStatementOfPurpose] SOP output:", sop);
         if (sop) {
           // Find the SOP document in applicationDetails.documents
           const sopDoc = Array.isArray(applicationDetails.documents)
@@ -195,8 +189,6 @@ export function useGenerateLetterOfRecommendation(documentId: Id<"applicationDoc
             email: recommender.email
           }
         };
-
-        console.log("[useGenerateLetterOfRecommendation] data to generateLOR:", data);
 
         // Check if AI credits are sufficient
         if (!aiCreditsRemaining || aiCreditsRemaining < AI_CREDITS_FOR_LOR) {
