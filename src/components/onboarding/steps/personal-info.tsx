@@ -19,6 +19,24 @@ const languageList = Object.entries(languages)
   }))
   .sort((a, b) => a.name.localeCompare(b.name));
 
+// Popular languages to show at the top
+const popularLanguages = [
+  "English",
+  "Chinese",
+  "Spanish",
+  "Portuguese",
+  "Hindi",
+  "Bengali",
+  "Marathi",
+  "Telugu"
+];
+
+// Get popular language objects and other languages
+const popularLanguageObjects = languageList
+  .filter(lang => popularLanguages.includes(lang.name));
+const otherLanguages = languageList
+  .filter(lang => !popularLanguages.includes(lang.name));
+
 // Popular countries to show at the top
 const popularCountries = [
   "United States",
@@ -256,7 +274,16 @@ export function PersonalInfoStep({ onComplete, initialData, onBack }: PersonalIn
                           <SelectValue placeholder="Select your native language" />
                         </SelectTrigger>
                         <SelectContent>
-                          {languageList.map((language) => (
+                          {/* Popular Languages */}
+                          {popularLanguageObjects.map((language) => (
+                            <SelectItem key={language.code} value={language.name}>
+                              {language.name}
+                            </SelectItem>
+                          ))}
+                          {/* Divider */}
+                          <SelectSeparator className="my-2" />
+                          {/* All Other Languages */}
+                          {otherLanguages.map((language) => (
                             <SelectItem key={language.code} value={language.name}>
                               {language.name}
                             </SelectItem>
