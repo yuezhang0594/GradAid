@@ -33,3 +33,6 @@ Thumbs.db
 .netlify/
 .vercel/
 supabase/migrations/
+
+# vitest coverage
+coverage/
