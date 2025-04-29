@@ -37,6 +37,7 @@ const defaultMockDocumentEditorValue = {
     showRecommenderDialog: false,
     showConfirmationDialog: false,
     showConfirmationNext: false,
+    showGeneratingDialog: false,
     isSaving: false,
     isGenerating: false,
   },
@@ -156,5 +157,86 @@ describe('DocumentEditor Component', () => {
     // Check for loading indicator or disabled buttons
     const savingButton = screen.getByRole('button', { name: /saving/i });
     expect(savingButton).toBeDisabled();
+  });
+
+  it('shows "No document selected" when documentId is not provided', async () => {
+    // Override the mock to return no documentId
+    vi.mocked(useDocumentEditor).mockReturnValue({
+      ...defaultMockDocumentEditorValue,
+      documentId: null,
+    });
+    
+    render(<DocumentEditor />);
+    
+    expect(screen.getByText('No document selected')).toBeInTheDocument();
+  });
+
+  it('loads recommender information for LOR document', async () => {
+    // Mock LOR document with recommender info
+    vi.mocked(useDocumentEditor).mockReturnValue({
+      ...defaultMockDocumentEditorValue,
+      document: {
+        ...defaultMockDocumentEditorValue.document,
+        type: "lor",
+        recommenderName: "Dr. Jane Smith",
+        recommenderEmail: "jane.smith@university.edu",
+      },
+      state: {
+        ...defaultMockDocumentEditorValue.state,
+        recommenderName: "Dr. Jane Smith",
+        recommenderEmail: "jane.smith@university.edu",
+      }
+    });
+    
+    render(<DocumentEditor />);
+    
+    const editRecommenderButton = screen.getByRole('button', { name: /edit recommender info/i });
+    expect(editRecommenderButton).toBeInTheDocument();
+  });
+
+  it('handles recommender dialog cancel button click', async () => {
+    const user = userEvent.setup();
+    const mockSetState = vi.fn();
+    
+    vi.mocked(useDocumentEditor).mockReturnValue({
+      ...defaultMockDocumentEditorValue,
+      document: {
+        ...defaultMockDocumentEditorValue.document,
+        type: "lor",
+      },
+      state: {
+        ...defaultMockDocumentEditorValue.state,
+        showRecommenderDialog: true,
+      },
+      setState: mockSetState,
+    });
+    
+    render(<DocumentEditor />);
+    
+    const cancelButton = screen.getByRole('button', { name: /cancel/i });
+    await user.click(cancelButton);
+    
+    expect(mockSetState).toHaveBeenCalled();
+  });
+
+  it('handles generating message dialog confirm button click', async () => {
+    const user = userEvent.setup();
+    const mockSetState = vi.fn();
+    
+    vi.mocked(useDocumentEditor).mockReturnValue({
+      ...defaultMockDocumentEditorValue,
+      state: {
+        ...defaultMockDocumentEditorValue.state,
+        showGeneratingDialog: true,
+      },
+      setState: mockSetState,
+    });
+    
+    render(<DocumentEditor />);
+    
+    const confirmButton = screen.getByRole('button', { name: /confirm/i });
+    await user.click(confirmButton);
+    
+    expect(mockSetState).toHaveBeenCalled();
   });
 });

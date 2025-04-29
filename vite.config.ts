@@ -43,8 +43,6 @@ export default defineConfig({
         "**/src/components/**",
         // Exclude js files
         "**/*.js",
-        // Exclude convex
-        "**/convex/**",
         // Exclude config
         "**/**.config.ts",
         "**/**.d.ts",
@@ -52,6 +50,9 @@ export default defineConfig({
         "**/src/assets/**",
         // Exclude test
         "**/src/test/**",
+        // Exclude resend (mock API does not work)
+        "**/convex/services/resend.ts",
+        "**/src/routes/support/ResendDashboard.tsx",
       ],
       // Set threshold enforcement for files that are being tested
       thresholds: {

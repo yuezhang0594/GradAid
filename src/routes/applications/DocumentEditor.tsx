@@ -87,13 +87,11 @@ export default function DocumentEditor() {
     <PageWrapper
       title={formatDocumentType(document?.type ?? "Document")}
       description={
-        <div className="flex flex-col items-center text-center">
-          <p className="text-sm text-muted-foreground">
-            {universityName && (programName || programDegree)
-              ? `${universityName} - ${programDegree} in ${programName}`
-              : "Application Document"}
-          </p>
-        </div>
+        <>
+          {universityName && (programName || programDegree)
+            ? `${universityName} - ${programDegree} in ${programName}`
+            : "Application Document"}
+        </>
       }
     >
       <div className="space-y-4 sm:space-y-6 mx-auto max-w-4xl px-2 sm:px-0">
@@ -346,15 +344,15 @@ export default function DocumentEditor() {
             </p>
             <div className="flex justify-end">
               <Button
-              variant="outline"
-              onClick={() =>
-                setState((prev) => ({
-                ...prev,
-                showGeneratingDialog: false,
-                }))
-              }
+                variant="outline"
+                onClick={() =>
+                  setState((prev) => ({
+                    ...prev,
+                    showGeneratingDialog: false,
+                  }))
+                }
               >
-              Confirm
+                Confirm
               </Button>
             </div>
           </AlertDialogContent>
