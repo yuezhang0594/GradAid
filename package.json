@@ -17,10 +17,7 @@
     "predev": "convex dev --run init --until-success",
     "init:keep-profiles": "convex run init '{\"keepProfileData\": true}'",
     "init:full-reset": "convex run init '{\"keepProfileData\": false}'",
-    "init": "convex run init '{\"keepProfileData\": true}'",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "init": "convex run init '{\"keepProfileData\": true}'"
   },
   "dependencies": {
     "@auth/core": "^0.37.0",

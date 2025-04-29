@@ -14,7 +14,9 @@ vi.mock('react-router', () => ({
 vi.mock('#/_generated/api', () => ({
   api: {
     feedback: {
-      submitFeedback: 'feedback.submitFeedback'
+      mutations: {
+        submitFeedback: 'feedback.mutations.submitFeedback'
+      }
     }
   }
 }));

@@ -6,7 +6,7 @@ vi.mock('convex/react', () => ({
 vi.mock('#/_generated/api', () => ({
   api: {
     search: {
-      search: {
+      queries: {
         searchPrograms: {},
         getUniversitiesForPrograms: {},
         getUniqueLocations: {},

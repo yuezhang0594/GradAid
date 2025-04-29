@@ -1,12 +1,7 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback } from 'react';
 import { api } from '#/_generated/api';
 import { useQuery } from 'convex/react';
-import { Doc, Id } from '#/_generated/dataModel';
 import { SearchFilters, DEFAULT_FILTERS } from '#/validators';
-import { set } from 'date-fns';
-
-type Program = Doc<"programs">;
-type University = Doc<"universities">
 
 export function useProgramSearch(query?: string) {
     const [filters, setFilters] = useState<SearchFilters>(DEFAULT_FILTERS);
