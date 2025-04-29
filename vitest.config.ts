@@ -23,34 +23,7 @@ export default defineConfig({
         // Exclude assets
         '**/src/assets/**',
         // Exclude test
-        '**/src/test/**',
-        // Exclude routes with no tests
-        '**/src/routes/auth/**',
-        '**/src/routes/legal/**',
-        '**/src/routes/onboarding/**',
-        '**/src/routes/pages/**',
-        '**/src/routes/profile/**',
-        '**/src/routes/support/**',
-        // Exclude specific route files with no tests
-        '**/src/routes/AuthenticatedRoute.tsx',
-        '**/src/routes/FeedbackPage.tsx',
-        '**/src/routes/ProgramApplyPage.tsx',
-        '**/src/routes/ProgramSearchPage.tsx',
-        '**/src/routes/ProtectedRoute.tsx',
-        '**/src/routes/SavedProgramsPage.tsx',
-        // Exclude hooks with no tests
-        '**/src/hooks/useApplicationDocument.ts',
-        '**/src/hooks/useApply.ts',
-        '**/src/hooks/useDashboardData.ts',
-        '**/src/hooks/useFavorites.ts',
-        '**/src/hooks/useFeedback.ts',
-        '**/src/hooks/useLLM.ts',
-        '**/src/hooks/useProfile.ts',
-        '**/src/hooks/useProgram.ts',
-        '**/src/hooks/useProgramSearch.ts',
-        // App entry points
-        '**/src/App.tsx',
-        '**/src/main.tsx',
+        '**/src/test/**'
       ],
       // Set threshold enforcement for files that are being tested
       thresholds: {
