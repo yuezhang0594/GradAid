@@ -1,45 +1,52 @@
-# GradAid - Product Requirements Document (PRD)
-**Version 1.2**
-**Last Updated: 2025-03-03**
+# GradAid
+
+**Version 2.1**  
+**Website: https://gradaid.online**  
+**Last Updated: 2025-04-30**  
 **Document Owner: jirissman**
 
 ## Table of Contents
+
 1. [Product Vision](#product-vision)
 2. [Personas](#personas)
 3. [User Scenarios](#user-scenarios)
 4. [Product Requirements](#product-requirements)
-5. [Technical Architecture](#technical-architecture)
-6. [File Structure](#file-structure)
-7. [Convex Guidelines](#convex-guidelines)
-8. [Component Specifications](#component-specifications)
-9. [API Documentation](#api-documentation)
-10. [Data Models](#data-models)
-11. [UI/UX Guidelines](#uiux-guidelines)
-12. [Development Standards](#development-standards)
-13. [Testing Requirements](#testing-requirements)
-14. [Release Criteria](#release-criteria)
+5. [Team Process and Development History](#team-process-and-development-history)
+6. [Technical Architecture](#technical-architecture)
+7. [File Structure](#file-structure)
+8. [Security, Privacy, and Reliability](#security-privacy-and-reliability)
+9. [Installation](#installation)
+10. [Testing](#testing)
 
 ## Product Vision
+
 For international students planning to attend graduate school in the US who need to draft documentation required for their applications. GradAid is an AI Driven Service Provider that provides students with freedom to be creative and tailor stories to their individual needs at a low-cost. Unlike educational consultancies, our product is available to users at any time and at a lower cost.
 
 ## Personas
+
 ### Persona 1 - Li Lei
+
 Li Lei, age 24, is a Chinese graduate student completing his MS degree in Biomedical Science. Originally from China, he earned his bachelor's degree in Chemistry before pursuing his master's studies. Li is passionate about scientific research and is determined to pursue a PhD in the United States to further his academic career. Despite his strong research background, he struggles with academic writing in English and is unfamiliar with the specific expectations of U.S. graduate applications. Li hopes to craft compelling Statements of Purpose (SOPs) and Letters of Recommendation (LORs) that effectively showcase his research achievements and align with his PhD aspirations. He views GradAid as an essential tool to generate professional, grammatically accurate documents tailored to his needs while helping him refine his tone and clarity for a natural-sounding application.
 
 ### Persona 2 - Astha Jain
+
 Astha Jain, a 28-year-old from Jaipur, India, comes from a large family and was the first to attend college. She pursued her passion for medicine at Mahatma Gandhi University of Medical Sciences and Technology, earning a Bachelor of Medicine and Bachelor of Surgery (MBBS) degree with high marks. Although she initially aspired to become a surgeon, she faced challenges finding employment immediately after graduation. Relocating to New Delhi in search of opportunities, she worked as a server to support herself while continuing her job search. Eventually, she secured a position as a junior doctor at a family medicine practice, where she worked for two years until the practice closed due to financial difficulties. Following this setback, she accepted a nursing position at Jeewan Mala Hospital in New Delhi. This career detour, coupled with the demanding hours of her new role, has prompted her to re-evaluate her career path. She now plans to pursue a graduate degree in a growing and more lucrative field, such as computer science or finance. Having saved enough money to study in the United States, she hopes that a graduate degree from a top American university will open doors to high-paying jobs, enabling her to support her aging parents, whose ability to work is diminishing.
 
 ### Persona 3 - Carlos Mendoza
+
 Carlos Mendoza, age 26, is a software engineer from Mexico City with four years of experience in backend development. He earned his bachelor's degree in Computer Science from UNAM and has worked at a mid-sized tech company. Carlos has always been passionate about AI and machine learning and wants to pivot into research, but his current job focuses more on software development rather than deep AI work.
 He plans to apply for an MS in Artificial Intelligence in the United States to gain the necessary academic background to transition into AI research roles. However, he is unfamiliar with the research-heavy SOPs required for graduate applications and has limited experience writing formal academic documents in English. He is also unsure how to best frame his work experience to demonstrate its relevance to AI research. He hopes GradAid will help him craft a strong SOP that highlights his technical background while showcasing his research potential in AI.
 
 ## User Scenarios
+
 ### Scenario 1 - Li Lei
+
 Li Lei, a 24-year-old Chinese graduate student completing his MS in Biomedical Science, is preparing to apply for PhD programs in the United States. With a BS in Chemistry and extensive research experience, he is eager to continue his academic journey in biomedical innovation. However, he faces significant challenges in crafting a compelling application due to his limited English proficiency and unfamiliarity with the tone, structure, and expectations of U.S. graduate admissions. Writing a strong Statement of Purpose (SOP) and securing well-crafted Letters of Recommendation (LORs) feels overwhelming, as he struggles to articulate his research achievements and career goals in a way that resonates with admissions committees.
 
 To overcome these challenges, Li turns to GradAid, which helps him generate well-structured, grammatically accurate SOPs and LORs tailored to his background and aspirations. By inputting key details about his academic journey and research experience, he receives personalized drafts that he can refine using GradAid's tone adjustment and clarity-enhancing features. The platform also provides research-focused suggestions to ensure his documents align with the expectations of specific PhD programs. With GradAid's support, Li gains confidence in his application, knowing that his materials effectively highlight his strengths and are presented in a professional, natural-sounding manner.
 
 ### Scenario 2 - Astha Jain
+
 Astha is determined to pursue a graduate degree in the US, but the application process feels overwhelming. Remembering a friend's recommendation, she opens her browser and navigates to GradAid.com. Astha clicks the "Get Started" button and begins interacting with GradAid's AI chatbot.
 
 GradAid asks her a series of questions: her background, academic achievements, work experience, career aspirations, and preferred fields of study. Astha appreciates how GradAid's conversational interface makes it easy to share her story, even the less conventional parts. She explains her medical background, her shift to nursing, and her desire to transition into a more lucrative and stable career to support her parents. Based on Astha's input, GradAid's AI analyzes her profile and generates a list of potential graduate programs in computer science and finance at universities across the US. The recommendations are tailored to her academic record, work history, and career goals. Astha is impressed by the breadth and relevance of the suggestions.
@@ -47,1822 +54,343 @@ GradAid asks her a series of questions: her background, academic achievements, w
 Astha selects a few programs that pique her interest. She knows the Statement of Purpose (SOP) is crucial, and it's where she's been struggling the most. Thankfully, GradAid offers an SOP brainstorming tool. GradAid's AI generates a series of prompts and potential themes for her SOP, suggesting ways to connect her seemingly disparate experiences into a cohesive narrative. Astha finds this incredibly helpful, as she's able to recognize the transferable skills she's gained, like problem-solving, communication, and adaptability.
 
 ### Scenario 3 - Carlos Mendoza
+
 Carlos has started drafting his Statement of Purpose (SOP) for MS programs in AI, but he's struggling to connect his industry experience in backend development to his passion for machine learning. Unsure of how to frame his background, he logs into GradAid and inputs details about his education, work experience, and research interests.
 
 GradAid analyzes his profile and suggests ways to highlight transferable skills from his software engineering background, such as his experience working with large datasets, optimization algorithms, and distributed computing. The AI-generated SOP draft weaves his technical experience into a compelling narrative, emphasizing how his work has naturally led him toward AI research. The platform also offers AI-powered editing tools to refine the language, ensuring his SOP is both professional and persuasive.
 
 ### Scenario 4 - Carlos Mendoza
+
 Carlos has shortlisted five MS programs in AI, each with slightly different focuses—some emphasize research, while others are more industry-oriented. He wants to tailor his SOP for each program but doesn't know how to efficiently modify his content.
 
 Using GradAid's customization feature, he selects the target programs and receives program-specific suggestions for refining his SOP. The tool highlights key faculty members and research labs he should mention, recommends how to emphasize certain skills based on each program's focus, and adjusts the wording to align with the expectations of research vs. industry-focused programs. With GradAid's help, Carlos creates tailored versions of his SOP, increasing his chances of securing admission.
 
 ## Product Requirements
+
 ### Must Have – minimal for release, required for a useful product
 
-| Feature | User Story | Persona or Scenario | Technical Requirements |
-|---------|------------|---------------------|------------------------|
-| Interactive form to collect user information and store in a database. | As an aspiring graduate student, I need to provide information about myself through an interactive form. | All personas and scenarios | - Form must capture academic history, work experience, achievements, skills, and career goals<br>- Progressive form with multi-step validation<br>- Form state must persist between sessions<br>- Data should be stored in Convex database with appropriate schema |
-| User authentication. | As a multi-device user, I need to log in so that my activity and history are saved and synchronized across all devices. | Basic feature for all web applications | - Authentication via Clerk with email/password and OAuth options (Google, GitHub)<br>- Account verification via email<br>- Session management through Clerk SDK<br>- Password reset functionality |
-| Customized SOP generation, specific to university requirements. | As an applicant applying to many graduate programs, I need automated document creation based on my university choice. | Astha's scenario | - University database with program-specific requirements<br>- AI prompting system that incorporates university-specific details<br>- Document template system with dynamic sections<br>- Ability to generate multiple variations for different programs |
-| Customized SOP generation, specific to user information. | As a mid-career professional seeking a graduate degree abroad, I need to have my diverse background and skillset reflected in my SOP. | Astha's scenario | - AI model integration for personalized content generation<br>- Natural language processing for coherent narrative creation<br>- Tone and style adjustment features<br>- Skill mapping algorithm to highlight relevant experiences |
-| Cross-platform support. | As a global applicant with limited internet access, I need to interact with GradAid in a web browser on my phone. | Global accessibility requirement | - Responsive design using Tailwind CSS<br>- Progressive Web App (PWA) features<br>- Optimized asset loading for slow connections<br>- Offline capability for document editing |
-| User authentication and data security (RBAC, OAuth, etc.) | As a privacy-conscious user, I need data encryption and security measures so that my personal information is protected. | Common security concern | - HTTPS implementation<br>- Data encryption at rest and in transit<br>- GDPR and CCPA compliance measures<br>- Clerk's role-based access control<br>- Regular security audits |
+| Feature                                                               | User Story                                                                                                                                                                | Persona or Scenario                    | Technical Requirements                                                                                                                                                                                                                                             | Completed by team member(s) or reason not completed                                                                                                                                                                                                                                                                                                                                                            |
+| :-------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Interactive form to collect user information and store in a database. | As an aspiring graduate student, I need to provide information about myself through an interactive form.                                                                  | All personas and scenarios             | - Form must capture academic history, work experience, achievements, skills, and career goals<br>- Progressive form with multi-step validation<br>- Form state must persist between sessions<br>- Data should be stored in Convex database with appropriate schema | Yue Zhang wrote the majority of code for this feature, Joseph Rissman supported with code review and backend tests.                                                                                                                                                                                                                                                                                            |
+| User authentication.                                                  | As a multi-device user, I need to log in so that my activity and history are saved and synchronized across all devices.                                                   | Basic feature for all web applications | - Authentication via Clerk with email/password and OAuth options (Google, GitHub)<br>- Account verification via email<br>- Session management through Clerk SDK<br>- Password reset functionality                                                                  | Joseph Rissman set up user authentication through Clerk as a microservice and integrated it with the database and the UI.                                                                                                                                                                                                                                                                                      |
+| Customized SOP generation, specific to university requirements.       | As an applicant applying to many graduate programs, I need automated document creation based on my university choice so that I can focus more on my application strategy. | Astha's scenario                       | - University database with program-specific requirements<br>- AI prompting system that incorporates university-specific details<br>- Document template system with dynamic sections<br>- Ability to generate multiple variations for different programs            | Yue Zhang wrote the code for generating documents with the OpenAI API, using profile and program-specific information from the database. Nitin Krishna Bojji created a custom prompt to provide more personalized responses.                                                                                                                                                                                   |
+| Customized SOP generation, specific to user information.              | As a mid-career professional seeking a graduate degree abroad, I need to have my diverse background and skillset reflected in my SOP.                                     | Astha's scenario                       | - AI model integration for personalized content generation<br>- Natural language processing for coherent narrative creation<br>- Tone and style adjustment features<br>- Skill mapping algorithm to highlight relevant experiences                                 | See above.                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Cross-platform support.                                               | As a global applicant with limited internet access, I need to interact with GradAid in a web browser on my phone.                                                         | Global accessibility requirement       | - Responsive design using Tailwind CSS<br>- Progressive Web App (PWA) features<br>- Optimized asset loading for slow connections<br>- Offline capability for document editing                                                                                      | Yue Zhang set up the project on Netlify to host the product on the internet. Yue Zhang and Joseph Rissman both contributed to ensuring the UI and UX is high-quality for both desktop and mobile users.                                                                                                                                                                                                        |
+| User authentication and data security (RBAC, OAuth, etc.)             | As a privacy-conscious user, I need data encryption and security measures so that my personal information is protected from unauthorized access and potential leaks.      | Common security concern                | - HTTPS implementation<br>- Data encryption at rest and in transit<br>- GDPR and CCPA compliance measures<br>- Clerk's role-based access control<br>- Regular security audits                                                                                      | Joseph Rissman set up automated routing to ensure users cannot access the application features unless they are signed in through Clerk. Joseph Rissman and Yue Zhang designed all code to be focused on security, with multiple checks to ensure users can only access their own data. Joseph Rissman implemented a feature to allow users to delete their account and all associated data for extra security. |
 
 ### Want to Have – improves on a required feature or additional functionality
 
-| Feature | User Story | Persona or Scenario | Technical Requirements |
-|---------|------------|---------------------|------------------------|
-| Document management system. | As an applicant needing to update my application materials, I want to quickly find my relevant documents. | Returning user scenario | - Document versioning system<br>- Search functionality with metadata filtering<br>- Folder/tag organization structure<br>- Export options (PDF, DOCX, TXT) |
-| Document formatting tools. | As an applicant preparing documents for various universities, I want to specify the format of downloaded documents. | All personas | - Template system with university-specific formatting<br>- Typography and layout controls<br>- Export format options with preview<br>- APA/MLA/Chicago style adherence options |
-| Application tracking system. | As an applicant managing multiple university applications, I want a system for tracking application deadlines. | Li's persona | - Calendar integration<br>- Notification system (email, in-app)<br>- Status tracking workflow<br>- Timeline visualization |
-| Application tracking system. | As someone that struggles with organization, I want a feature for tracking the progress of my applications. | Astha's persona | - Kanban-style application board<br>- Checklist functionality for application requirements<br>- Progress indicators and metrics<br>- Note-taking capabilities for each application |
-| Program search. | As a prospective graduate student, I want to interactively search through university programs and save them to a personalized list. | Carlos' persona | - University and program database<br>- Advanced search filters (location, specialization, ranking, etc.)<br>- Comparison tool for multiple programs<br>- Save/favorite functionality with custom lists |
+| Feature                                  | User Story                                                                                                                                                                                                        | Persona or Scenario     | Technical Requirements                                                                                                                                                                                 | Completed by team member(s) or reason not completed                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| :--------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Document management system.              | As an applicant needing to update my application materials, I want to quickly find my relevant documents.                                                                                                         | Returning user scenario | - Document versioning system<br>- Search functionality with metadata filtering<br>- Folder/tag organization structure<br>- Export options (PDF, DOCX, TXT)                                             | Yue Zhang implemented a document page where users can quickly see all of their documents sorted by application. Yue Zhang also implemented routing to allow users to access their documents for an application directly from the application detail page or even straight from the main dashboard.                                                                                                                                                                             |
+| Document formatting tools.               | As an applicant preparing documents for various universities, I want to specify the format of downloaded documents.                                                                                               | All personas            | - Template system with university-specific formatting<br>- Typography and layout controls<br>- Export format options with preview<br>- APA/MLA/Chicago style adherence options                         | This feature was not completed. This was planned for implementation after MVP launch, but MVP launch was pushed back due to delays integrating AI document generation. At present, users can still copy and paste the document contents into a word processor of their choice, which is a typical user experience when interacting with AI chatbots.                                                                                                                           |
+| Application tracking system (deadlines). | As an applicant managing multiple university applications, I want a system for tracking application deadlines so that I can ensure timely submissions and avoid missing critical dates                            | Li's persona            | - Calendar integration<br>- Notification system (email, in-app)<br>- Status tracking workflow<br>- Timeline visualization                                                                              | Yue Zhang implemented the code for tracking application deadlines and displaying them to the user. Joseph Rissman implemented code to allow users to set custom deadlines for greater control of the application process.                                                                                                                                                                                                                                                      |
+| Application tracking system (progress).  | As someone that struggles with organization and planning, I want a feature for tracking the progress of my applications so that I can stay informed about their status and manage any required follow-up actions. | Astha's persona         | - Kanban-style application board<br>- Checklist functionality for application requirements<br>- Progress indicators and metrics<br>- Note-taking capabilities for each application                     | Yue Zhang wrote all of the code for this feature, however in the current state it is a bit primitive and not bug-free. Work on this feature was delayed due to Yue needing to work on the AI document generation after it became clear Nitin was not contributing to the project.                                                                                                                                                                                              |
+| Program search.                          | As a prospective graduate student exploring various academic options, I want to interactively search through university programs and save them to a personalized list.                                            | Carlos' persona         | - University and program database<br>- Advanced search filters (location, specialization, ranking, etc.)<br>- Comparison tool for multiple programs<br>- Save/favorite functionality with custom lists | Joseph Rissman wrote all of the code for graduate program search and save features. This should have been a must-have requirement as it is now a major part of the product that begins the user flow for creating applications and related documents.<br>Nitin Krishna Bojji helped by web scraping data on universities and graduate programs that populated the database. Joseph Rissman contributed to web scraping by filling in missing data and cleaning incorrect data. |
 
 ### Nice to Have – things to do if there is time
 
-| Feature | User Story | Persona or Scenario | Technical Requirements |
-|---------|------------|---------------------|------------------------|
-| Speech-to-text and text-to-speech. | As an applicant with accessibility needs, I want GradAid to have speech recognition and speech generation capabilities. | Accessibility requirement | - Integration with Web Speech API<br>- Voice command functionality<br>- Text-to-speech for document review<br>- Language and accent detection |
-| UI/UX design and testing. | As a user with limited computer literacy, I want the GradAid website to be inviting with a modern design. | Astha's persona | - Usability testing framework<br>- A/B testing for UI elements<br>- User session recording and analytics<br>- Iterative design process based on feedback |
-| AI-power document updates. | As someone who has gained a new qualification, I want to be able to update my SOPs and LORs to include new accomplishments. | Carlos' persona | - Intelligent document comparison<br>- Suggestion system for document improvements<br>- Automatic update recommendations<br>- Version control and history tracking |
-| University shortlisting. | As a prospective graduate student, I want to receive a shortlist of universities based on my experience and accomplishments. | Astha's scenario | - Recommendation algorithm based on user profile<br>- Acceptance probability estimation<br>- Program matching based on research interests<br>- Geographic and financial considerations |
+| Feature                            | User Story                                                                                                                             | Persona or Scenario       | Technical Requirements                                                                                                                                                                 | Completed by team member(s) or reason not completed                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| :--------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- | :------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Speech-to-text and text-to-speech. | As an applicant with accessibility needs, I want GradAid to have speech recognition and speech generation capabilities.                | Accessibility requirement | - Integration with Web Speech API<br>- Voice command functionality<br>- Text-to-speech for document review<br>- Language and accent detection                                          | This feature was not completed. To be honest, I don’t understand what this feature was supposed to do. Nitin really wanted this feature, but he did not work on it so it did not happen.                                                                                                                                                                                                                                                                                                               |
+| UI/UX design and testing.          | As a user with limited computer literacy, I want the GradAid website to be inviting with a modern design.                              | Astha's persona           | - Usability testing framework<br>- A/B testing for UI elements<br>- User session recording and analytics<br>- Iterative design process based on feedback                               | Yue Zhang and Joseph Rissman both worked on the website design to ensure good UI and UX. The decision was made after the first project update to restart the website with the Shadcn/ui component library to provide the website with a consistent and clean look to it. Many users left positive feedback about the design saying it is “sleek” or “slick” and “easy to navigate” so I believe we accomplished this one.                                                                              |
+| AI-power document updates.         | As someone who has gained a new qualification, I want to be able to update my SOPs and LORs so that my new accomplishment is included. | Carlos' persona           | - Intelligent document comparison<br>- Suggestion system for document improvements<br>- Automatic update recommendations<br>- Version control and history tracking                     | Yue Zhang wrote all of the code to make the documents editable. Additionally, users can update their profile information if they have new accomplishments or forgot to include something, then regenerate their documents.                                                                                                                                                                                                                                                                             |
+| University shortlisting.           | As a prospective graduate student, I want to receive a shortlist of universities based on my experience and accomplishments.           | Astha's scenario          | - Recommendation algorithm based on user profile<br>- Acceptance probability estimation<br>- Program matching based on research interests<br>- Geographic and financial considerations | This feature was not completed. Nitin did write a python function to perform this task, but he delivered it towards the end of the semester. At that point we were still trying to complete the MVP by implementing AI document generation because Nitin had not delivered anything else up to that point. Therefore, the rest of the team did not have the bandwidth to implement a new page for this feature or rewrite the python code so it could actually be used with our database and frontend. |
+
+### Additional Product Features (Features not anticipated, but completed)
+
+| Feature                            | Reason Implemented                                                                                                                                                                                                                                                                | Completed by team member(s)                                                                                                                                                                                                                                   |
+| :--------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Landing page with hero section.    | Since authentication was required for access to any website features, it became necessary to create a landing page that describes what GradAid is about.                                                                                                                          | Yue Zhang wrote the majority of code for this feature. Joseph Rissman implemented the sign-in and sign-up flows with Clerk.                                                                                                                                   |
+| Application dashboard.             | With the growing complexity of GradAid being split across many pages, we needed a centralized dashboard to display the most important information to the user.                                                                                                                    | Yue Zhang wrote all of the code for this feature. The dashboard and the associated breakout pages (timeline, credit summary, applications, and activity) are all his work.                                                                                    |
+| User onboarding.                   | It became clear that to generate personalized documents, we needed a minimum amount of information about the user. Onboarding forces the user to minimally complete their profile before they can access any other core features.                                                 | Yue Zhang wrote the code for user onboarding, walking them through the process of creating their profile. Joseph Rissman wrote the code that forces the user to complete onboarding before accessing critical features.                                       |
+| AI usage management.               | Because we needed to use the OpenAI API to generate the document content, we needed to limit the amount of documents users can generate to prevent abuse.                                                                                                                         | Joseph Rissman wrote the backend code that tracks AI usage with credits, and enforces the limit when it is exceeded. Yue Zhang wrote the frontend code that displays the AI usage history and remaining credits to the user.                                  |
+| Logging user activity.             | It might be difficult for users to remember what they were doing last if they come back after a while or why they had used up all their AI credits. This feature helps users keep track of their progress.                                                                        | Joseph Rissman and Yue Zhang wrote the backend code that tracks different user activities. Yue Zhang wrote the frontend code that displays the activity to the user. Admittedly, this feature still has bugs that need to be fixed before it is fully usable. |
+| Frequently asked questions page.   | With the growing complexity of the website, it seemed reasonable to include an FAQ page to help users that get lost or have trouble with certain aspects.                                                                                                                         | Joseph Rissman wrote all of the code for this feature.                                                                                                                                                                                                        |
+| Contact form.                      | If users have any issues with the website, they can directly contact the developers through email to quickly get a response.                                                                                                                                                      | Joseph Rissman wrote all of the code for this feature.                                                                                                                                                                                                        |
+| Feedback form.                     | We wanted to collect user feedback to improve the website. Unfortunately, due to a certain team member not contributing to the project, our MVP launch was pushed back too far to be able to actually implement any of the suggested improvements before the end of the semester. | Joseph Rissman wrote all of the code for this feature.                                                                                                                                                                                                        |
+| Terms of service & privacy policy. | Although these are not legally binding documents that have not been looked at by a lawyer, it felt like including these legitimized the website.                                                                                                                                  | Joseph Rissman wrote all of the code for this feature.                                                                                                                                                                                                        |
+
+## Team Process and Development History
+
+The project started with the Admissions Alchemists team assigning initial responsibilities among its three members. Yue was designated to focus on frontend web development, Joseph assumed responsibility for backend development and database management, and Nitin was tasked with the AI-related aspects of the project.
+
+During the initial phase of the semester, leading up to the first presentation, team members proceeded with development according to their assigned roles. Joseph selected a database provider and established initial SQL functions for user data and program information storage. Yue developed a custom landing page and dashboard interface. Nitin reported progress on fine-tuning a custom AI model.
+
+Following the first mid-semester presentation, the team determined that the independent development approach was hindering the required pace of progress. Consequently, Joseph and Yue decided to restart the development process. This decision allowed them to leverage the experience gained since the project's inception, enabling them to reach the previous stage of development within approximately one week. Restarting provided an opportunity to collectively select a revised technology stack. Joseph opted for Convex as the database provider, citing its ease of integration with React. This transition also facilitated the adoption of TypeScript across the entire project, aiming to enhance development efficiency by standardizing the language for both frontend and backend components and simplifying troubleshooting. Yue proceeded to rebuild the frontend using React with TypeScript, incorporating the Shadcn component library to expedite development through reusable components. During this period, Nitin continued his assigned work on the LLM fine-tuning.
+
+After the decision to restart and collaborate more closely, the specific responsibilities of Joseph and Yue became more integrated. While Joseph retained primary responsibility for the backend and Convex server management, and Yue for the frontend and Netlify deployment, both adopted full-stack roles. They took ownership of specific features, developing both the necessary frontend and backend code. Joseph initially focused on the program search and save functionality, while Yue addressed the user profile and onboarding features. Completing these features required approximately two sprints because one of the sprints included Spring Break. Both Joseph and Yue contributed to the website layout and design, including the sidebar and header components. Joseph also managed the implementation of user authentication using Clerk. Nitin continued his task related to the custom LLM.
+
+Upon completion of the profile and search features, development shifted to creating new applications and implementing a document editor. Joseph focused on the application creation feature, handling both frontend and backend aspects. Yue developed the document editor, also managing both frontend and backend code. This phase spanned another sprint, during which Joseph and Yue conducted code reviews for each other's previously completed features. Nitin reported completion of the LLM fine-tuning, however, challenges were encountered in deploying the model beyond a local environment. The subsequent sprint was allocated for developing an accessible API for the LLM.
+
+With the application creation and document editing features implemented, the next step involved integrating them to complete the primary user flow. Joseph developed the frontend and backend components for creating new documents, while Yue finalized the dashboard's frontend and backend code, unifying the various elements. Code reviews continued between Joseph and Yue for their respective components. This sprint also included UI/UX refinement, ensuring consistency across the application by implementing a reusable page-wrapper component. As efforts to host the custom LLM on the cloud were unsuccessful, Nitin was assigned the task of developing code to utilize an existing LLM API, such as OpenAI or Llama.
+
+During the penultimate sprint, the task of integrating an LLM API was reassigned to Yue to ensure project timelines were met. Yue developed the backend code to interface with the OpenAI API for generating custom application documents and integrated it with the existing frontend components, utilizing a prompt previously developed by Nitin. Concurrently, Joseph focused on creating support pages, including the FAQ, contact page, and feedback form, developing all associated frontend and backend code. He also refactored the Convex server functions for improved maintainability and adherence to best practices, and implemented an AI credit management system. Both Yue and Joseph reviewed and implemented input validation and sanitization across their previously developed components. With the AI generation feature completed by Yue, Nitin was tasked with web scraping program and university data for database population.
+
+The final sprint involved Joseph and Yue writing tests for the codebase. Joseph processed the web-scraped data provided by Nitin, performing data cleaning, enrichment, and database population. Joseph and Yue collaborated on deploying the application to production servers and launching the website, allowing a week for user feedback collection. Several minor bug fixes and UI updates were implemented during this period, with continued code review between Joseph and Yue.
+
+A significant factor in the successful completion of the MVP within only 6 sprints is the history of collaboration between Joseph and Yue. They have worked together on multiple academic projects in previous courses. Drawing upon their previous experiences, they adopted the approach of assigning full-stack feature ownership to individual members. This approach proved efficient for feature development and integration as it was supported by effective communication and collaboration. Maintaining distinct primary responsibilities for frontend and backend infrastructure ensured clear accountability for service provider management, while their joint efforts ensured seamless integration across all services. The effective collaboration between Joseph and Yue was instrumental in navigating project challenges and achieving the final objectives.
 
 ## Technical Architecture
+### Development Tools
+
+- **TypeScript**: Provides type safety, improved developer experience, and easier debugging across the full stack.
+- **Vite:** A fast frontend build tool and development server that leverages native ES modules for quick startup and updates.
+- **Netlify:** A platform for deploying and hosting web projects, offering serverless functions and automated builds from Git.
+- **React:** A popular JavaScript library for building user interfaces based on reusable components.
+- **Convex:** A full-stack development platform with a real-time database and serverless functions, built for TypeScript.
+- **Vitest:** A Vite-native unit testing framework known for its speed and compatibility with Jest APIs.
+- **Zod:** A TypeScript-first schema declaration and validation library used for data validation.
+- **Shadcn/ui:** A collection of accessible and customizable UI components built with Radix UI and Tailwind CSS for React applications.
+- **Lucide:** An open-source library providing simple and consistent vector (SVG) icons.
+- **Clerk:** A service providing authentication, user management, and sign-in components for applications.
+- **Git:** A distributed version control system used for tracking changes in codebases and collaborating on software projects.
+- **Svix:** A service designed to reliably send and receive webhooks for application integrations.
+- **Tailwind CSS:** A utility-first CSS framework that allows for rapid UI development by composing low-level utility classes.
+- **Framer Motion:** A production-ready animation library for React, used to create fluid animations and gestures.
+- **Jotai:** An atomic state management library for React, offering a flexible and primitive approach to managing application state.
+- **Resend:** An API platform specifically designed for developers to manage and send transactional emails.
+- **OpenAI:** An AI research company providing APIs (like GPT) that allow developers to integrate advanced AI models into applications.
 
 ### Architecture Overview
-GradAid employs a modern, modular architecture designed for maintainability, scalability, and flexibility. The system consists of several key components, each with specific responsibilities:
 
-#### Frontend Architecture
-Built with **React** and **Vite** for fast rendering and development experience, the frontend includes:
-- **Document Editor**: Rich-text editing interface for SOPs and LORs using Shadcn components
-- **User Dashboard**: Displays saved documents and application insights
-- **Auth & Profile**: Manages user authentication and profile settings using Clerk
-- **Convex Client**: Facilitates real-time communication with the backend
-- **React Router**: Handles client-side routing with nested routes and navigation
+GradAid employs a modern, modular architecture based on the **model–view–controller (MVC)** pattern, designed for maintainability, scalability, and flexibility. The system consists of several key components, mapped generally as frontend (view/controller) and backend (model).
 
-#### Backend Architecture
-Powered by **Convex** for serverless backend functionality:
-- **Document Generation API**: AI-powered SOP/LOR generation services
-- **User Management**: Authentication, user data, and session tracking
-- **Database Integration**: Stores and retrieves user data and documents
+#### **Frontend Architecture**
 
-#### Styling and UI Components
-- **Tailwind CSS**: Utility-first CSS framework for responsive design
-- **Shadcn**: Component library providing consistent UI elements across the application
-- **Lucide**: Icon library providing consistent, customizable SVG icons throughout the interface
-- **Framer Motion**: Animation library for fluid, performant UI transitions and interactions
+Built with **React** and using **Vite** as the build tool for a fast development experience, the frontend is deployed via **Netlify**. Key modules include:
 
-#### Data Flow Architecture
-GradAid follows a client-server architecture with real-time capabilities:
-- Frontend React components communicate with Convex backend using the Convex client
-- Convex handles data persistence and business logic
-- Real-time updates push changes to the client without requiring page refreshes
+- **Graduate Program Module**: Allows users to search for programs, save them, and start applications.
+  * https://gradaid.online/search
+  * https://gradaid.online/saved
+  * https://gradaid.online/apply
+- **Document Editor**: Rich-text editing interface for SOPs and LORs, allowing AI generation or manual editing.
+  * https://gradaid.online/documents
+- **User Dashboard**: Centralized location displaying saved documents, application insights, and user information.
+  * https://gradaid.online/dashboard
+- **Onboarding & Profile**: Handles user profile creation, updates, and initial setup.
+  * https://gradaid.online/onboarding (only accessible if onboarding has not been completed)
+  * https://gradaid.online/profile
+- **Application Management**: Enables users to track application progress and access related documents.
+  * https://gradaid.online/applications
+  * https://gradaid.online/timeline
+- **Support Module**: Provides helpful information and a contact interface (utilizing the Resend service via the backend).
+  * https://gradaid.online/faq
+  * https://gradaid.online/contact
+  * https://gradaid.online/feedback
+- **Convex Client**: Facilitates real-time communication with the backend using specific hooks (`useQuery`, `useMutation`, `useAction`).
+- **React Router**: Handles client-side routing with nested routes and navigation for a seamless user workflow across modules.
+- **Reusable Components**: Ensures a consistent design language and user experience across all pages.
 
-#### Dependency Management
-The system minimizes coupling between components through:
-- **Component-Based Design**: Modular React components with clearly defined responsibilities
-- **API Abstraction**: Consistent interfaces between frontend and backend services
-- **State Management**: Clean separation of UI state and application data
+#### **Backend Architecture**
 
-#### Development Tools
-- **TypeScript**: Type safety and improved developer experience
-- **ESLint**: Code quality and consistency enforcement
-- **npm-run-all**: Parallel execution of development processes
-- **Vite**: Fast development server and optimized builds
+Powered by **Convex** for serverless backend functionality, database, and real-time updates. Written in **TypeScript** for type safety across the full stack.
 
-#### Deployment and Scalability
-- **Frontend**: Deployed as a static site with dynamic capabilities
-- **Backend**: Leverages Convex's serverless infrastructure for auto-scaling
-- **Database**: Utilizes Convex's built-in database for document storage and retrieval
+- **Database Integration**: Stores and retrieves user data (profiles, saved programs, applications) and documents. Data schema is defined in TypeScript. Convex provides reactive hooks (`useQuery`, `useMutation`, `useAction`) for frontend interaction, dynamically updating components as data changes.
+- **AI Document Generation**: Uses the `useAction` hook to call the **OpenAI API** for AI-powered SOP/LOR generation based on user background, goals, and program details. Results are saved directly to the database.
+- **User Management**: Authentication handled by **Clerk**. User information is synced from Clerk to the Convex database via **Svix webhooks** upon signup. Runtime authentication uses **JWTs** passed from Clerk to Convex for validating user sessions and restricting data access (users can only access their own data).
+- **Input Validation & Security**: Uses **Zod** for input validation and sanitization to prevent injection attacks (e.g., XSS) and ensure data integrity. Multi-layered security protects against malicious database access.
+- **Microservice Integration**:
+    - **Clerk**: Manages user authentication and profiles.
+    - **OpenAI**: Provides LLM capabilities for document generation.
+    - **Resend**: Handles sending emails (e.g., the contact form).
 
-### System Interaction Diagram
-```
-┌─────────────┐     HTTP/WebSocket    ┌─────────────┐
-│             │◄─────────────────────►│             │
-│  Frontend   │                       │   Convex    │
-│  (React)    │                       │  Backend    │
-│             │                       │             │
-└─────┬───────┘                       └─────┬───────┘
-      │                                     │
-      │                                     │
-┌─────▼───────┐                       ┌─────▼───────┐
-│             │                       │             │
-│   Browser   │                       │   Convex    │
-│  Storage    │                       │  Database   │
-│             │                       │             │
-└─────────────┘                       └─────────────┘
-```
+#### **Styling and UI Components**
+
+- **Tailwind CSS**: Utility-first CSS framework for responsive design.
+- **Shadcn**: Component library providing consistent UI elements.
+- **Lucide**: Icon library providing customizable SVG icons.
+- **Framer Motion**: Animation library for fluid UI transitions and interactions.
+
+#### **Dependency Management**
+
+The system minimizes coupling through:
+
+- **Component-Based Design**: Modular React components with defined responsibilities.
+- **API Abstraction**: Consistent interfaces via Convex server functions and external API calls handled by the backend.
+- **State Management**: Separation of UI state (managed within React components) and application data (managed by Convex).
+- **TypeScript**: Ensures type safety and consistency across frontend and backend code within the same repository.
+
+#### **Deployment and Scalability**
+
+- **Frontend**: Deployed as a static site with dynamic capabilities via **Netlify**.
+- **Backend & Database**: Leverages **Convex's** serverless infrastructure for auto-scaling compute and database resources.
+- **Authentication**: Relies on **Clerk's** scalable infrastructure.
+
+### GradAid Architecture Diagram
+
+### ![][image1]
+
+[image1]: <data:image/png;base64,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>
 
 ## File Structure
+
 Below is the complete file structure for GradAid with detailed explanations for key files and directories:
 
 ```
 GradAid/
-├── README.md                            # Project overview, setup instructions
-├── components.json                      # Shadcn component configurations
-├── convex/                              # Backend serverless functions
-│   ├── README.md                        # Backend documentation
-│   ├── _generated/                      # Auto-generated Convex types
-│   ├── auth.config.ts                   # Authentication configuration
-│   ├── auth.ts                          # Authentication functions
-│   ├── errors.ts                        # Error handling utilities
-│   ├── helpers.ts                       # Helper functions
-│   ├── http.ts                          # HTTP endpoint handlers
-│   ├── documents/                       # Document-related functions
-│   │   ├── create.ts                    # Document creation logic
-│   │   ├── update.ts                    # Document update logic
-│   │   ├── generate.ts                  # AI document generation
-│   │   └── format.ts                    # Document formatting utilities
-│   ├── universities/                    # University data functions
-│   │   ├── search.ts                    # University search functionality
-│   │   └── recommendations.ts           # Program recommendation logic
-│   ├── users/                           # User-related functions
-│   │   ├── profile.ts                   # User profile management
-│   │   └── preferences.ts               # User preferences handling
-│   ├── applications/                    # Application tracking functions
-│   │   ├── create.ts                    # Application creation
-│   │   ├── update.ts                    # Status update logic
-│   │   └── deadlines.ts                 # Deadline management
-│   ├── schema.ts                        # Database schema definitions
-│   └── tsconfig.json                    # TypeScript configuration for backend
-├── src/                                 # Frontend source code
-│   ├── routes/                      # Application routes
-│   │   ├── index.tsx                # Main routing configuration
-│   │   ├── auth/                    # Authentication routes handled by Clerk
-│   │   │   ├── sign-in.tsx          # Clerk sign-in page
-│   │   │   ├── sign-up.tsx          # Clerk registration page
-│   │   │   └── reset-password.tsx   # Clerk password reset page
-│   │   ├── dashboard/               # Dashboard routes
-│   │   │   ├── index.tsx            # Main dashboard page
-│   │   │   ├── documents.tsx        # Documents listing page
-│   │   │   └── applications.tsx     # Applications tracking page
-│   │   └── editor/                  # Document editor routes
-│   │       ├── index.tsx            # Document listing
-│   │       ├── [documentId].tsx     # Document editor page
-│   │       └── new.tsx              # New document page
-│   ├── components/                  # Reusable components
-│   │   ├── common/                  # Common UI components
-│   │   │   ├── Button.tsx           # Button component
-│   │   │   ├── Card.tsx             # Card component
-│   │   │   ├── Input.tsx            # Form input component
-│   │   │   └── Modal.tsx            # Modal dialog component
-│   │   ├── layout/                  # Layout components
-│   │   │   ├── Header.tsx           # Header component
-│   │   │   ├── Footer.tsx           # Footer component
-│   │   │   ├── Sidebar.tsx          # Sidebar navigation
-│   │   │   └── Layout.tsx           # Main layout wrapper
-│   │   ├── editor/                  # Editor-specific components
-│   │   │   ├── RichTextEditor.tsx   # Rich text editor
-│   │   │   ├── FormatControls.tsx   # Text formatting controls
-│   │   │   └── AIAssistant.tsx      # AI writing assistant
-│   │   └── dashboard/               # Dashboard-specific components
-│   │       ├── DocumentCard.tsx     # Document card component
-│   │       ├── ApplicationCard.tsx  # Application card component
-│   │       └── StatusBadge.tsx      # Status indicator badge
-│   ├── hooks/                       # Custom React hooks
-│   │   ├── useAuth.ts               # Clerk authentication hook
-│   │   ├── useDocuments.ts          # Document management hook
-│   │   ├── useUniversities.ts       # University data hook
-│   │   └── useApplications.ts       # Application tracking hook
-│   ├── utils/                       # Utility functions
-│   │   ├── api.ts                   # API interaction utilities
-│   │   ├── formatting.ts            # Text formatting helpers
-│   │   ├── validation.ts            # Form validation functions
-│   │   └── dates.ts                 # Date manipulation utilities
-│   ├── store/                       # State management
-│   │   ├── index.ts                 # Store configuration
-│   │   ├── authSlice.ts             # Authentication state
-│   │   ├── documentSlice.ts         # Document state
-│   │   └── applicationSlice.ts      # Application tracking state
-│   ├── types/                       # TypeScript type definitions
-│   │   ├── document.ts              # Document-related types
-│   │   ├── user.ts                  # User-related types
-│   │   ├── university.ts            # University-related types
-│   │   └── application.ts           # Application-related types
-│   ├── assets/                          # Static assets
-│   │   └── images/                      # Image files
-│   ├── App.tsx                          # Main App component
-│   ├── main.tsx                         # Application entry point
-│   └── vite-env.d.ts                    # Vite environment types
-├── public/                              # Public assets
-├── eslint.config.js                     # ESLint configuration
-├── netlify.toml                         # Netlify deployment config
-├── package.json                         # NPM package definition
-├── tsconfig.json                        # TypeScript configuration
-└── vite.config.ts                       # Vite configuration
+├── README.md                   # Project overview and setup instructions.
+├── TESTING.md                  # Information about testing procedures.
+├── components.json             # Configuration for shadcn/ui components.
+├── convex                      # Backend logic using the Convex framework.
+│   ├── README.md               # Overview of the Convex backend structure.
+│   ├── _generated              # Auto-generated Convex files (API definitions, data model).
+│   ├── aiCredits               # Manages AI credit usage and limits.
+│   ├── applications            # Handles graduate program application data and logic.
+│   ├── auth.config.ts          # Configuration for user authentication providers (e.g., Clerk).
+│   ├── dashboard               # Data fetching and logic for the user dashboard.
+│   ├── data                    # Static data files used for initialization or reference.
+│   ├── documents               # Logic for managing user documents.
+│   ├── feedback                # Handles user feedback submission.
+│   ├── http.ts                 # Defines HTTP endpoints for external integrations (e.g., webhooks).
+│   ├── init.ts                 # Initialization script for development environment data seeding.
+│   ├── init_prod.ts            # Initialization script for production environment data seeding.
+│   ├── programs                # Logic related to graduate programs (search, favorites).
+│   ├── schema.ts               # Defines the database schema for Convex tables.
+│   ├── search                  # Implements search functionality across programs/universities.
+│   ├── services                # Contains integrations with third-party services.
+│   │   ├── llm.ts              # Integration with Large Language Models (e.g., OpenAI).
+│   │   └── resend.ts           # Integration with Resend email service.
+│   ├── tests                   # Backend unit and integration tests for Convex functions.
+│   ├── tsconfig.json           # TypeScript configuration specific to the Convex backend.
+│   ├── universities            # Logic related to university data.
+│   ├── userActivity            # Tracks user actions within the application.
+│   ├── userProfiles            # Manages user profile data.
+│   ├── users.ts                # Core user management logic within Convex.
+│   └── validators.ts           # Reusable validation functions for Convex operations.
+├── eslint.config.js            # Configuration for ESLint code linting.
+├── index.html                  # Main HTML entry point for the Vite frontend application.
+├── netlify.toml                # Configuration file for Netlify deployment.
+├── package.json                # Project metadata, dependencies, and scripts.
+├── scripts                     # Utility scripts for development or deployment tasks (e.g., web scraping).
+├── src                         # Frontend source code (React/TypeScript/Vite).
+│   ├── App.css                 # Global CSS styles for the App component.
+│   ├── App.tsx                 # Main application component, sets up routing and layout.
+│   ├── __tests__               # Frontend unit/integration tests for top-level components.
+│   ├── assets                  # Static assets like images, logos, SVGs used in the frontend code.
+│   │   └── svg                 # Subdirectory specifically for SVG assets.
+│   ├── components              # Reusable UI components used across different pages/routes.
+│   │   ├── __tests__           # Unit tests for specific components.
+│   │   └── ui                  # Base UI components generated or copied from shadcn/ui.
+│   ├── hooks                   # Custom React hooks for state management and encapsulating logic.
+│   │   └── __tests__           # Unit tests for custom hooks.
+│   ├── index.css               # Global CSS styles or resets.
+│   ├── lib                     # Utility functions and shared libraries.
+│   │   └── __tests__           # Unit tests for utility functions.
+│   ├── main.tsx                # Entry point for the React application, renders the root component.
+│   ├── routes                  # Page components and routing configuration using React Router.
+│   │   └── __tests__           # Unit/integration tests for page components and route wrappers.
+│   ├── store                   # State management setup (Jotai).
+│   ├── test                    # Frontend testing setup and utilities.
+│   └── vite-env.d.ts           # TypeScript definitions for Vite environment variables.
+├── tsconfig.app.json           # TypeScript configuration for the frontend application code (src).
+├── tsconfig.json               # Base TypeScript configuration for the entire project.
+├── tsconfig.node.json          # TypeScript configuration for Node.js scripts/files (e.g., vite.config.ts).
+└── vite.config.ts              # Configuration file for the Vite build tool.
 ```
 
+## Security, Privacy, and Reliability
 
+### Security and Privacy
 
-# Convex guidelines
-## Function guidelines
-### New function syntax
-- ALWAYS use the new function syntax for Convex functions. For example:
-      ```typescript
-      import { query } from "./_generated/server";
-      import { v } from "convex/values";
-      export const f = query({
-          args: {},
-          returns: v.null(),
-          handler: async (ctx, args) => {
-          // Function body
-          },
-      });
-      ```
-
-### Http endpoint syntax
-- HTTP endpoints are defined in `convex/http.ts` and require an `httpAction` decorator. For example:
-      ```typescript
-      import { httpRouter } from "convex/server";
-      import { httpAction } from "./_generated/server";
-      const http = httpRouter();
-      http.route({
-          path: "/echo",
-          method: "POST",
-          handler: httpAction(async (ctx, req) => {
-          const body = await req.bytes();
-          return new Response(body, { status: 200 });
-          }),
-      });
-      ```
-- HTTP endpoints are always registered at the exact path you specify in the `path` field. For example, if you specify `/api/someRoute`, the endpoint will be registered at `/api/someRoute`.
-
-### Validators
-- Below is an example of an array validator:
-                            ```typescript
-                            import { mutation } from "./_generated/server";
-                            import { v } from "convex/values";
-
-                            export default mutation({
-                            args: {
-                                simpleArray: v.array(v.union(v.string(), v.number())),
-                            },
-                            handler: async (ctx, args) => {
-                                //...
-                            },
-                            });
-                            ```
-- Below is an example of a schema with validators that codify a discriminated union type:
-                            ```typescript
-                            import { defineSchema, defineTable } from "convex/server";
-                            import { v } from "convex/values";
-
-                            export default defineSchema({
-                                results: defineTable(
-                                    v.union(
-                                        v.object({
-                                            kind: v.literal("error"),
-                                            errorMessage: v.string(),
-                                        }),
-                                        v.object({
-                                            kind: v.literal("success"),
-                                            value: v.number(),
-                                        }),
-                                    ),
-                                )
-                            });
-                            ```
-- Always use the `v.null()` validator when returning a null value. Below is an example query that returns a null value:
-                                  ```typescript
-                                  import { query } from "./_generated/server";
-                                  import { v } from "convex/values";
-
-                                  export const exampleQuery = query({
-                                    args: {},
-                                    returns: v.null(),
-                                    handler: async (ctx, args) => {
-                                        console.log("This query returns a null value");
-                                        return null;
-                                    },
-                                  });
-                                  ```
-- Here are the valid Convex types along with their respective validators:
- Convex Type  | TS/JS type  |  Example Usage         | Validator for argument validation and schemas  | Notes                                                                                                                                                                                                 |
-| ----------- | ------------| -----------------------| -----------------------------------------------| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Id          | string      | `doc._id`              | `v.id(tableName)`                              |                                                                                                                                                                                                       |
-| Null        | null        | `null`                 | `v.null()`                                     | JavaScript's `undefined` is not a valid Convex value. Functions the return `undefined` or do not return will return `null` when called from a client. Use `null` instead.                             |
-| Int64       | bigint      | `3n`                   | `v.int64()`                                    | Int64s only support BigInts between -2^63 and 2^63-1. Convex supports `bigint`s in most modern browsers.                                                                                              |
-| Float64     | number      | `3.1`                  | `v.number()`                                   | Convex supports all IEEE-754 double-precision floating point numbers (such as NaNs). Inf and NaN are JSON serialized as strings.                                                                      |
-| Boolean     | boolean     | `true`                 | `v.boolean()`                                  |
-| String      | string      | `"abc"`                | `v.string()`                                   | Strings are stored as UTF-8 and must be valid Unicode sequences. Strings must be smaller than the 1MB total size limit when encoded as UTF-8.                                                         |
-| Bytes       | ArrayBuffer | `new ArrayBuffer(8)`   | `v.bytes()`                                    | Convex supports first class bytestrings, passed in as `ArrayBuffer`s. Bytestrings must be smaller than the 1MB total size limit for Convex types.                                                     |
-| Array       | Array       | `[1, 3.2, "abc"]`      | `v.array(values)`                              | Arrays can have at most 8192 values.                                                                                                                                                                  |
-| Object      | Object      | `{a: "abc"}`           | `v.object({property: value})`                  | Convex only supports "plain old JavaScript objects" (objects that do not have a custom prototype). Objects can have at most 1024 entries. Field names must be nonempty and not start with "$" or "_". |
-| Record      | Record      | `{"a": "1", "b": "2"}` | `v.record(keys, values)`                       | Records are objects at runtime, but can have dynamic keys. Keys must be only ASCII characters, nonempty, and not start with "$" or "_".                                                               |
-
-### Function registration
-- Use `internalQuery`, `internalMutation`, and `internalAction` to register internal functions. These functions are private and aren't part of an app's API. They can only be called by other Convex functions. These functions are always imported from `./_generated/server`.
-- Use `query`, `mutation`, and `action` to register public functions. These functions are part of the public API and are exposed to the public Internet. Do NOT use `query`, `mutation`, or `action` to register sensitive internal functions that should be kept private.
-- You CANNOT register a function through the `api` or `internal` objects.
-- ALWAYS include argument and return validators for all Convex functions. This includes all of `query`, `internalQuery`, `mutation`, `internalMutation`, `action`, and `internalAction`. If a function doesn't return anything, include `returns: v.null()` as its output validator.
-- If the JavaScript implementation of a Convex function doesn't have a return value, it implicitly returns `null`.
-
-### Function calling
-- Use `ctx.runQuery` to call a query from a query, mutation, or action.
-- Use `ctx.runMutation` to call a mutation from a mutation or action.
-- Use `ctx.runAction` to call an action from an action.
-- ONLY call an action from another action if you need to cross runtimes (e.g. from V8 to Node). Otherwise, pull out the shared code into a helper async function and call that directly instead.
-- Try to use as few calls from actions to queries and mutations as possible. Queries and mutations are transactions, so splitting logic up into multiple calls introduces the risk of race conditions.
-- All of these calls take in a `FunctionReference`. Do NOT try to pass the callee function directly into one of these calls.
-- When using `ctx.runQuery`, `ctx.runMutation`, or `ctx.runAction` to call a function in the same file, specify a type annotation on the return value to work around TypeScript circularity limitations. For example,
-                            ```
-                            export const f = query({
-                              args: { name: v.string() },
-                              returns: v.string(),
-                              handler: async (ctx, args) => {
-                                return "Hello " + args.name;
-                              },
-                            });
-
-                            export const g = query({
-                              args: {},
-                              returns: v.null(),
-                              handler: async (ctx, args) => {
-                                const result: string = await ctx.runQuery(api.example.f, { name: "Bob" });
-                                return null;
-                              },
-                            });
-                            ```
-
-### Function references
-- Function references are pointers to registered Convex functions.
-- Use the `api` object defined by the framework in `convex/_generated/api.ts` to call public functions registered with `query`, `mutation`, or `action`.
-- Use the `internal` object defined by the framework in `convex/_generated/api.ts` to call internal (or private) functions registered with `internalQuery`, `internalMutation`, or `internalAction`.
-- Convex uses file-based routing, so a public function defined in `convex/example.ts` named `f` has a function reference of `api.example.f`.
-- A private function defined in `convex/example.ts` named `g` has a function reference of `internal.example.g`.
-- Functions can also registered within directories nested within the `convex/` folder. For example, a public function `h` defined in `convex/messages/access.ts` has a function reference of `api.messages.access.h`.
-
-### Api design
-- Convex uses file-based routing, so thoughtfully organize files with public query, mutation, or action functions within the `convex/` directory.
-- Use `query`, `mutation`, and `action` to define public functions.
-- Use `internalQuery`, `internalMutation`, and `internalAction` to define private, internal functions.
-
-### Pagination
-- Paginated queries are queries that return a list of results in incremental pages.
-- You can define pagination using the following syntax:
-
-                            ```ts
-                            import { v } from "convex/values";
-                            import { query, mutation } from "./_generated/server";
-                            import { paginationOptsValidator } from "convex/server";
-                            export const listWithExtraArg = query({
-                                args: { paginationOpts: paginationOptsValidator, author: v.string() },
-                                handler: async (ctx, args) => {
-                                    return await ctx.db
-                                    .query("messages")
-                                    .filter((q) => q.eq(q.field("author"), args.author))
-                                    .order("desc")
-                                    .paginate(args.paginationOpts);
-                                },
-                            });
-                            ```
-                            Note: `paginationOpts` is an object with the following properties:
-                            - `numItems`: the maximum number of documents to return (the validator is `v.number()`)
-                            - `cursor`: the cursor to use to fetch the next page of documents (the validator is `v.union(v.string(), v.null())`)
-- A query that ends in `.paginate()` returns an object that has the following properties:
-                            - page (contains an array of documents that you fetches)
-                            - isDone (a boolean that represents whether or not this is the last page of documents)
-                            - continueCursor (a string that represents the cursor to use to fetch the next page of documents)
-
-
-## Validator guidelines
-- `v.bigint()` is deprecated for representing signed 64-bit integers. Use `v.int64()` instead.
-- Use `v.record()` for defining a record type. `v.map()` and `v.set()` are not supported.
-
-## Schema guidelines
-- Always define your schema in `convex/schema.ts`.
-- Always import the schema definition functions from `convex/server`:
-- System fields are automatically added to all documents and are prefixed with an underscore. The two system fields that are automatically added to all documents are `_creationTime` which has the validator `v.number()` and `_id` which has the validator `v.id(tableName)`.
-- Always include all index fields in the index name. For example, if an index is defined as `["field1", "field2"]`, the index name should be "by_field1_and_field2".
-- Index fields must be queried in the same order they are defined. If you want to be able to query by "field1" then "field2" and by "field2" then "field1", you must create separate indexes.
-
-## Typescript guidelines
-- You can use the helper typescript type `Id` imported from './_generated/dataModel' to get the type of the id for a given table. For example if there is a table called 'users' you can use `Id<'users'>` to get the type of the id for that table.
-- If you need to define a `Record` make sure that you correctly provide the type of the key and value in the type. For example a validator `v.record(v.id('users'), v.string())` would have the type `Record<Id<'users'>, string>`. Below is an example of using `Record` with an `Id` type in a query:
-                    ```ts
-                    import { query } from "./_generated/server";
-                    import { Doc, Id } from "./_generated/dataModel";
-
-                    export const exampleQuery = query({
-                        args: { userIds: v.array(v.id("users")) },
-                        returns: v.record(v.id("users"), v.string()),
-                        handler: async (ctx, args) => {
-                            const idToUsername: Record<Id<"users">, string> = {};
-                            for (const userId of args.userIds) {
-                                const user = await ctx.db.get(userId);
-                                if (user) {
-                                    users[user._id] = user.username;
-                                }
-                            }
-
-                            return idToUsername;
-                        },
-                    });
-                    ```
-- Be strict with types, particularly around id's of documents. For example, if a function takes in an id for a document in the 'users' table, take in `Id<'users'>` rather than `string`.
-- Always use `as const` for string literals in discriminated union types.
-- When using the `Array` type, make sure to always define your arrays as `const array: Array<T> = [...];`
-- When using the `Record` type, make sure to always define your records as `const record: Record<KeyType, ValueType> = {...};`
-- Always add `@types/node` to your `package.json` when using any Node.js built-in modules.
-
-## Full text search guidelines
-- A query for "10 messages in channel '#general' that best match the query 'hello hi' in their body" would look like:
-
-const messages = await ctx.db
-  .query("messages")
-  .withSearchIndex("search_body", (q) =>
-    q.search("body", "hello hi").eq("channel", "#general"),
-  )
-  .take(10);
-
-## Query guidelines
-- Do NOT use `filter` in queries. Instead, define an index in the schema and use `withIndex` instead.
-- Convex queries do NOT support `.delete()`. Instead, `.collect()` the results, iterate over them, and call `ctx.db.delete(row._id)` on each result.
-- Use `.unique()` to get a single document from a query. This method will throw an error if there are multiple documents that match the query.
-- When using async iteration, don't use `.collect()` or `.take(n)` on the result of a query. Instead, use the `for await (const row of query)` syntax.
-### Ordering
-- By default Convex always returns documents in ascending `_creationTime` order.
-- You can use `.order('asc')` or `.order('desc')` to pick whether a query is in ascending or descending order. If the order isn't specified, it defaults to ascending.
-- Document queries that use indexes will be ordered based on the columns in the index and can avoid slow table scans.
-
-
-## Mutation guidelines
-- Use `ctx.db.replace` to fully replace an existing document. This method will throw an error if the document does not exist.
-- Use `ctx.db.patch` to shallow merge updates into an existing document. This method will throw an error if the document does not exist.
-
-## Action guidelines
-- Always add `"use node";` to the top of files containing actions that use Node.js built-in modules.
-- Never use `ctx.db` inside of an action. Actions don't have access to the database.
-- Below is an example of the syntax for an action:
-                    ```ts
-                    import { action } from "./_generated/server";
-
-                    export const exampleAction = action({
-                        args: {},
-                        returns: v.null(),
-                        handler: async (ctx, args) => {
-                            console.log("This action does not return anything");
-                            return null;
-                        },
-                    });
-                    ```
-
-## Scheduling guidelines
-### Cron guidelines
-- Only use the `crons.interval` or `crons.cron` methods to schedule cron jobs. Do NOT use the `crons.hourly`, `crons.daily`, or `crons.weekly` helpers.
-- Both cron methods take in a FunctionReference. Do NOT try to pass the function directly into one of these methods.
-- Define crons by declaring the top-level `crons` object, calling some methods on it, and then exporting it as default. For example,
-                            ```ts
-                            import { cronJobs } from "convex/server";
-                            import { internal } from "./_generated/api";
-                            import { internalAction } from "./_generated/server";
-
-                            const empty = internalAction({
-                              args: {},
-                              returns: v.null(),
-                              handler: async (ctx, args) => {
-                                console.log("empty");
-                              },
-                            });
-
-                            const crons = cronJobs();
-
-                            // Run `internal.crons.empty` every two hours.
-                            crons.interval("delete inactive users", { hours: 2 }, internal.crons.empty, {});
-
-                            export default crons;
-                            ```
-- You can register Convex functions within `crons.ts` just like any other file.
-- If a cron calls an internal function, always import the `internal` object from '_generated/api`, even if the internal function is registered in the same file.
-
-
-## File storage guidelines
-- Convex includes file storage for large files like images, videos, and PDFs.
-- The `ctx.storage.getUrl()` method returns a signed URL for a given file. It returns `null` if the file doesn't exist.
-- Do NOT use the deprecated `ctx.storage.getMetadata` call for loading a file's metadata.
-
-                    Instead, query the `_storage` system table. For example, you can use `ctx.db.system.get` to get an `Id<"_storage">`.
-                    ```
-                    import { query } from "./_generated/server";
-                    import { Id } from "./_generated/dataModel";
-
-                    type FileMetadata = {
-                        _id: Id<"_storage">;
-                        _creationTime: number;
-                        contentType?: string;
-                        sha256: string;
-                        size: number;
-                    }
-
-                    export const exampleQuery = query({
-                        args: { fileId: v.id("_storage") },
-                        returns: v.null();
-                        handler: async (ctx, args) => {
-                            const metadata: FileMetadata | null = await ctx.db.system.get(args.fileId);
-                            console.log(metadata);
-                            return null;
-                        },
-                    });
-                    ```
-- Convex storage stores items as `Blob` objects. You must convert all items to/from a `Blob` when using Convex storage.
-
-## Component Specifications
-
-### Document Editor Component
-
-**Purpose:** Provides a rich text editing interface for creating and editing SOPs and LORs.
-
-**Key Functionality:**
-- Rich text formatting (bold, italic, headings, lists)
-- AI-powered writing suggestions
-- Document templates for different application types
-- Real-time saving
-- Version history
-
-**Example Usage:**
-```tsx
-// Example of how developers should implement the Document Editor component
-import { RichTextEditor } from "@/components/editor/RichTextEditor";
-import { useDocument } from "@/hooks/useDocuments";
-
-function DocumentEditorPage({ documentId }) {
-  const { document, saveDocument, generateAIContent } = useDocument(documentId);
-  
-  return (
-    <div className="document-editor">
-      <h1>Edit Your Statement of Purpose</h1>
-      <RichTextEditor 
-        initialContent={document.content}
-        onChange={(content) => saveDocument({...document, content})}
-        onRequestAIHelp={(selection) => generateAIContent(selection)}
-      />
-      <div className="document-actions">
-        <button onClick={() => saveDocument(document)}>Save</button>
-        <button onClick={() => generateAIContent("full")}>Generate Complete Draft</button>
-      </div>
-    </div>
-  );
-}
-```
-
-**Expected Response Format:**
-```typescript
-// Document data structure
-interface Document {
-  id: string;
-  title: string;
-  content: string;
-  documentType: "SOP" | "LOR" | "CV" | "RESUME";
-  targetUniversity?: string;
-  targetProgram?: string;
-  createdAt: Date;
-  updatedAt: Date;
-  versions: Array<{
-    content: string;
-    timestamp: Date;
-  }>;
-}
-```
-
-### University Search Component
-
-**Purpose:** Allows users to search for universities and academic programs.
-
-**Key Functionality:**
-- Search by name, location, program type, or ranking
-- Filter by acceptance rates, GRE requirements, etc.
-- Save favorite programs
-- View program details and requirements
-
-**Example Implementation:**
-```tsx
-// Example of how developers should implement the University Search
-import { useState } from "react";
-import { useUniversities } from "@/hooks/useUniversities";
-import { SearchField } from "@/components/common/SearchField";
-import { FilterPanel } from "@/components/universities/FilterPanel";
-import { UniversityCard } from "@/components/universities/UniversityCard";
-
-function UniversitySearchPage() {
-  const [searchQuery, setSearchQuery] = useState("");
-  const [filters, setFilters] = useState({
-    programType: "all",
-    location: "all",
-    ranking: "all"
-  });
-  
-  const { universities, loading, error } = useUniversities(searchQuery, filters);
-  
-  return (
-    <div className="university-search">
-      <h1>Find Your Graduate Program</h1>
-      <SearchField 
-        value={searchQuery} 
-        onChange={setSearchQuery} 
-        placeholder="Search universities or programs..." 
-      />
-      <FilterPanel filters={filters} onChange={setFilters} />
-      
-      {loading && <div>Loading universities...</div>}
-      {error && <div>Error: {error.message}</div>}
-      
-      <div className="results-grid">
-        {universities.map(university => (
-          <UniversityCard 
-            key={university.id}
-            university={university}
-            onSave={() => saveToFavorites(university.id)}
-          />
-        ))}
-      </div>
-    </div>
-  );
-}
-```
-
-**Expected Data Format:**
-```typescript
-// University data structure
-interface University {
-  id: string;
-  name: string;
-  location: {
-    city: string;
-    state: string;
-    country: string;
-  };
-  programs: Array<{
-    id: string;
-    name: string;
-    degree: "MS" | "MA" | "PhD" | "MBA" | "Other";
-    department: string;
-    requirements: {
-      gre: boolean;
-      toefl: boolean;
-      minimumGPA: number;
-      applicationFee: number;
-    };
-    deadlines: {
-      fall: Date | null;
-      spring: Date | null;
-      summer: Date | null;
-    };
-    acceptanceRate?: number;
-  }>;
-  ranking?: number;
-  website: string;
-}
-```
-
-### Application Tracker Component
-
-**Purpose:** Helps users keep track of their application progress across multiple universities.
-
-**Key Functionality:**
-- Status tracking (Not Started, In Progress, Submitted, Interview, Accepted, Rejected)
-- Deadline reminders
-- Document checklist for each application
-- Notes and important contacts
-
-**Example Implementation:**
-```tsx
-// Example of how developers should implement the Application Tracker
-import { useState } from "react";
-import { useApplications } from "@/hooks/useApplications";
-import { ApplicationCard } from "@/components/dashboard/ApplicationCard";
-import { StatusFilter } from "@/components/applications/StatusFilter";
-import { DeadlineCalendar } from "@/components/applications/DeadlineCalendar";
-
-function ApplicationTrackerPage() {
-  const [statusFilter, setStatusFilter] = useState("all");
-  const { applications, updateStatus, addNote } = useApplications(statusFilter);
-  
-  return (
-    <div className="application-tracker">
-      <h1>Your Applications</h1>
-      <div className="tracker-controls">
-        <StatusFilter value={statusFilter} onChange={setStatusFilter} />
-        <button>Add New Application</button>
-      </div>
-      
-      <DeadlineCalendar applications={applications} />
-      
-      <div className="applications-list">
-        {applications.map(application => (
-          <ApplicationCard 
-            key={application.id}
-            application={application}
-            onStatusChange={(status) => updateStatus(application.id, status)}
-            onAddNote={(note) => addNote(application.id, note)}
-          />
-        ))}
-        {applications.length === 0 && (
-          <div className="empty-state">
-            No applications matching your filter. Start adding applications to track your progress.
-          </div>
-        )}
-      </div>
-    </div>
-  );
-}
-```
-
-**Expected Data Format:**
-```typescript
-// Application data structure
-interface Application {
-  id: string;
-  universityId: string;
-  universityName: string;
-  programId: string;
-  programName: string;
-  status: "NOT_STARTED" | "IN_PROGRESS" | "SUBMITTED" | "INTERVIEW" | "ACCEPTED" | "REJECTED";
-  deadline: Date;
-  documents: Array<{
-    type: string;
-    status: "NOT_STARTED" | "IN_PROGRESS" | "COMPLETED";
-    documentId?: string;
-  }>;
-  notes: Array<{
-    id: string;
-    content: string;
-    timestamp: Date;
-  }>;
-  contacts: Array<{
-    name: string;
-    role: string;
-    email?: string;
-    phone?: string;
-  }>;
-  timeline: Array<{
-    event: string;
-    date: Date;
-  }>;
-}
-```
-
-## API Documentation
-
-### Convex Backend API
-
-#### User Authentication
-
-**Get Current User:**
-```typescript
-// convex/users/current.ts
-import { query } from "./_generated/server";
-import { v } from "convex/values";
-
-export const getCurrentUser = query({
-  args: {},
-  handler: async (ctx) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) {
-      return null;
-    }
-    
-    // Get Clerk user data
-    const userId = identity.subject;
-    const email = identity.email;
-    const name = identity.name;
-    
-    // Get or create user in Convex database
-    // ...implementation details...
-    
-    return {
-      userId,
-      email,
-      name,
-      // other user data from database
-    };
-  }
-});
-```
-
-**Example Request:**
-```typescript
-import { api } from "#/_generated/api";
-import { useQuery } from "convex/react";
-import { useAuth } from "@clerk/clerk-react";
-
-// Use Clerk's useAuth hook for authentication status
-const { isSignedIn } = useAuth();
-// Use Convex query to fetch current user data if signed in
-const user = useQuery(api.users.current.getCurrentUser);
-```
-
-**Example Response:**
-```json
-{
-  "userId": "user_2abc123def456",
-  "email": "user@example.com",
-  "name": "John Doe",
-  "createdAt": "2025-03-03T21:56:23.000Z"
-}
-```
-
-#### Document Generation
-
-**Generate SOP:**
-```typescript
-// convex/documents/generate.ts
-export const generateSOP = mutation({
-  args: {
-    userId: v.string(),
-    universityId: v.optional(v.string()),
-    programId: v.optional(v.string()),
-    background: v.object({
-      education: v.array(v.object({
-        degree: v.string(),
-        institution: v.string(),
-        field: v.string(),
-        graduationYear: v.number()
-      })),
-      workExperience: v.array(v.object({
-        title: v.string(),
-        company: v.string(),
-        startDate: v.string(),
-        endDate: v.optional(v.string()),
-        description: v.string()
-      })),
-      achievements: v.array(v.string()),
-      researchExperience: v.optional(v.array(v.object({
-        title: v.string(),
-        institution: v.string(),
-        description: v.string(),
-        publications: v.optional(v.array(v.string()))
-      }))),
-      careerGoals: v.string()
-    })
-  },
-  handler: async (ctx, args) => {
-    // Implementation details for AI generation
-    // Returns generated content
-  }
-});
-```
-
-**Example Request:**
-```typescript
-import { api } from "#/_generated/api";
-import { useMutation } from "convex/react";
-
-const generateSOP = useMutation(api.documents.generate.generateSOP);
-generateSOP({
-  userId: "usr_1a2b3c4d5e",
-  universityId: "univ_5e4d3c2b1a",
-  programId: "prog_9z8y7x6w5v",
-  background: {
-    education: [{
-      degree: "Bachelor of Science",
-      institution: "Universidad Nacional Autónoma de México",
-      field: "Computer Science",
-      graduationYear: 2022
-    }],
-    workExperience: [{
-      title: "Software Engineer",
-      company: "TechMex Solutions",
-      startDate: "2022-06-01",
-      endDate: "2025-03-01",
-      description: "Developed backend systems using Node.js and PostgreSQL"
-    }],
-    achievements: [
-      "Won 2nd place in National Coding Competition 2021",
-      "Published paper on distributed systems optimization"
-    ],
-    researchExperience: [{
-      title: "Research Assistant",
-      institution: "UNAM Computer Science Department",
-      description: "Assisted in research on machine learning algorithms for natural language processing",
-      publications: ["Efficient NLP Approaches for Spanish Language Processing"]
-    }],
-    careerGoals: "Pursue research in AI with focus on multilingual NLP applications"
-  }
-});
-```
-
-**Example Response:**
-```json
-{
-  "documentId": "doc_9v8u7t6s5r",
-  "content": "# Statement of Purpose\n\nAs a Computer Science graduate from Universidad Nacional Autónoma de México with professional experience in software engineering at TechMex Solutions, I am applying to your esteemed Master's program in Artificial Intelligence. My background in backend development has cultivated a strong foundation in system architecture and data management, while my research experience at UNAM's Computer Science Department has ignited my passion for natural language processing.\n\nDuring my time as a Research Assistant, I contributed to groundbreaking work on machine learning algorithms for Spanish language processing, resulting in a publication that explored efficient approaches for NLP in non-English contexts. This experience, combined with my second-place achievement in the National Coding Competition 2021, has prepared me to contribute meaningfully to your program's research initiatives.\n\nMy career goal is to advance the field of multilingual NLP applications, developing AI systems that better serve speakers of diverse languages. Your program's focus on inclusive AI technologies and the groundbreaking research conducted by Dr. Rodriguez on cross-lingual transfer learning makes your university the ideal environment for me to pursue this vision.\n\nWith my technical expertise, research background, and dedication to expanding AI's linguistic capabilities, I am confident that I will thrive in your program and contribute to the department's innovative work.",
-  "createdAt": "2025-03-03T22:17:25.000Z"
-}
-```
-
-#### University Search API
-
-**Search Universities:**
-```typescript
-// convex/universities/search.ts
-export const searchUniversities = query({
-  args: {
-    query: v.optional(v.string()),
-    filters: v.optional(v.object({
-      programType: v.optional(v.string()),
-      location: v.optional(v.string()),
-      ranking: v.optional(v.string())
-    })),
-    limit: v.optional(v.number())
-  },
-  handler: async (ctx, args) => {
-    // Implementation details
-  }
-});
-```
-
-**Example Request:**
-```typescript
-import { api } from "#/_generated/api";
-import { useQuery } from "convex/react";
-
-const universities = useQuery(api.universities.search.searchUniversities, {
-  query: "computer science",
-  filters: {
-    programType: "MS",
-    location: "California",
-    ranking: "top-50"
-  },
-  limit: 10
-});
-```
-
-**Example Response:**
-```json
-{
-  "results": [
-    {
-      "id": "univ_1a2b3c4d5e",
-      "name": "Stanford University",
-      "location": {
-        "city": "Stanford",
-        "state": "California",
-        "country": "United States"
-      },
-      "programs": [
-        {
-          "id": "prog_5e4d3c2b1a",
-          "name": "Computer Science",
-          "degree": "MS",
-          "department": "School of Engineering",
-          "requirements": {
-            "gre": true,
-            "toefl": true,
-            "minimumGPA": 3.5,
-            "applicationFee": 125
-          },
-          "deadlines": {
-            "fall": "2025-12-01T00:00:00.000Z",
-            "spring": null,
-            "summer": null
-          },
-          "acceptanceRate": 0.05
-        }
-      ],
-      "ranking": 2,
-      "website": "https://www.stanford.edu"
-    },
-    // More universities...
-  ],
-  "totalCount": 24
-}
-```
-
-#### Application Tracking API
-
-**Create Application:**
-```typescript
-// convex/applications/create.ts
-export const createApplication = mutation({
-  args: {
-    userId: v.string(),
-    universityId: v.string(),
-    programId: v.string(),
-    deadline: v.string(),
-    documents: v.array(v.object({
-      type: v.string(),
-      status: v.string()
-    }))
-  },
-  handler: async (ctx, args) => {
-    // Implementation details
-  }
-});
-```
-
-**Example Request:**
-```typescript
-import { api } from "#/_generated/api";
-import { useMutation } from "convex/react";
-
-const createApplication = useMutation(api.applications.create.createApplication);
-createApplication({
-  userId: "usr_1a2b3c4d5e",
-  universityId: "univ_5e4d3c2b1a",
-  programId: "prog_9z8y7x6w5v",
-  deadline: "2025-12-01",
-  documents: [
-    { type: "sop", status: "not_started" },
-    { type: "lor", status: "not_started" },
-  ]
-});
-```
-
-**Example Response:**
-```json
-{
-  "applicationId": "app_1q2w3e4r5t",
-  "universityName": "Stanford University",
-  "programName": "Computer Science",
-  "status": "not_started",
-  "deadline": "2025-12-01T00:00:00.000Z",
-  "createdAt": "2025-03-03T22:18:30.000Z"
-}
-```
-
-## Data Models
-
-### User Model
-```typescript
-// src/types/user.ts
-export interface User {
-  id: string;
-  email: string;
-  name: string;
-  profileComplete: boolean;
-  createdAt: Date;
-  updatedAt: Date;
-  lastLogin?: Date;
-  profile?: {
-    education: Education[];
-    workExperience: WorkExperience[];
-    achievements: string[];
-    researchExperience?: ResearchExperience[];
-    skills: string[];
-    careerGoals: string;
-  }
-}
-
-export interface Education {
-  id: string;
-  degree: string;
-  institution: string;
-  field: string;
-  gpa?: number;
-  startDate: Date;
-  graduationDate: Date;
-  description?: string;
-  courses?: string[];
-}
-
-export interface WorkExperience {
-  id: string;
-  title: string;
-  company: string;
-  location?: string;
-  startDate: Date;
-  endDate?: Date;
-  current: boolean;
-  description: string;
-  achievements?: string[];
-}
-
-export interface ResearchExperience {
-  id: string;
-  title: string;
-  institution: string;
-  supervisor?: string;
-  startDate: Date;
-  endDate?: Date;
-  current: boolean;
-  description: string;
-  publications?: Publication[];
-}
-
-export interface Publication {
-  title: string;
-  authors: string[];
-  journal?: string;
-  conference?: string;
-  year: number;
-  doi?: string;
-  url?: string;
-}
-```
-
-### Document Model
-```typescript
-// src/types/document.ts
-export interface Document {
-  id: string;
-  userId: string;
-  title: string;
-  content: string;
-  documentType: DocumentType;
-  targetUniversity?: string;
-  targetProgram?: string;
-  createdAt: Date;
-  updatedAt: Date;
-  versions: DocumentVersion[];
-  status: DocumentStatus;
-  tags: string[];
-  aiGenerated: boolean;
-  lastEdited: Date;
-}
-
-export enum DocumentType {
-  SOP = "SOP",
-  LOR = "LOR",
-  CV = "CV",
-  RESUME = "RESUME",
-  RESEARCH_STATEMENT = "RESEARCH_STATEMENT",
-  PERSONAL_STATEMENT = "PERSONAL_STATEMENT",
-  OTHER = "OTHER"
-}
-
-export enum DocumentStatus {
-  DRAFT = "DRAFT",
-  REVIEWING = "REVIEWING",
-  FINAL = "FINAL"
-}
-
-export interface DocumentVersion {
-  id: string;
-  content: string;
-  timestamp: Date;
-  comment?: string;
-}
-```
-
-### University Model
-```typescript
-// src/types/university.ts
-export interface University {
-  id: string;
-  name: string;
-  location: Location;
-  programs: Program[];
-  ranking?: number;
-  website: string;
-  description?: string;
-  admissionStats?: AdmissionStats;
-  imageUrl?: string;
-  isFavorite?: boolean; // Client-side only
-}
-
-export interface Location {
-  city: string;
-  state: string;
-  country: string;
-  region?: string;
-}
-
-export interface Program {
-  id: string;
-  name: string;
-  degree: DegreeType;
-  department: string;
-  requirements: ProgramRequirements;
-  deadlines: ProgramDeadlines;
-  acceptanceRate?: number;
-  tuition?: number;
-  duration?: string;
-  website?: string;
-  facultyStrengths?: string[];
-  researchAreas?: string[];
-}
-
-export enum DegreeType {
-  MS = "MS",
-  MA = "MA",
-  PHD = "PhD",
-  MBA = "MBA",
-  MFA = "MFA",
-  MEM = "MEM",
-  OTHER = "OTHER"
-}
-
-export interface ProgramRequirements {
-  gre: boolean;
-  greRequired?: boolean;
-  grePreferred?: boolean;
-  greWaiver?: boolean;
-  toefl: boolean;
-  toeflMinimum?: number;
-  ielts?: boolean;
-  ieltsMinimum?: number;
-  minimumGPA: number;
-  applicationFee: number;
-  recommendationLetters: number;
-  statementRequired: boolean;
-  cvRequired: boolean;
-  writingSampleRequired?: boolean;
-  portfolioRequired?: boolean;
-  interviewRequired?: boolean;
-}
-
-export interface ProgramDeadlines {
-  fall: Date | null;
-  spring: Date | null;
-  summer: Date | null;
-  priority?: Date | null;
-  funding?: Date | null;
-}
-
-export interface AdmissionStats {
-  applicants?: number;
-  admitted?: number;
-  enrolled?: number;
-  acceptanceRate?: number;
-  averageGPA?: number;
-  averageGRE?: {
-    verbal?: number;
-    quantitative?: number;
-    analytical?: number;
-  };
-}
-```
-
-### Application Model
-```typescript
-// src/types/application.ts
-export interface Application {
-  id: string;
-  userId: string;
-  universityId: string;
-  universityName: string;
-  programId: string;
-  programName: string;
-  status: ApplicationStatus;
-  deadline: Date;
-  documents: ApplicationDocument[];
-  notes: ApplicationNote[];
-  contacts: ApplicationContact[];
-  timeline: ApplicationEvent[];
-  createdAt: Date;
-  updatedAt: Date;
-  submissionDate?: Date;
-  decision?: ApplicationDecision;
-  decisionDate?: Date;
-}
-
-export enum ApplicationStatus {
-  NOT_STARTED = "NOT_STARTED",
-  IN_PROGRESS = "IN_PROGRESS",
-  SUBMITTED = "SUBMITTED",
-  INTERVIEW = "INTERVIEW",
-  ACCEPTED = "ACCEPTED",
-  REJECTED = "REJECTED",
-  WAITLISTED = "WAITLISTED",
-  DEFERRED = "DEFERRED",
-  WITHDRAWN = "WITHDRAWN"
-}
-
-export enum ApplicationDecision {
-  ACCEPTED = "ACCEPTED",
-  REJECTED = "REJECTED",
-  WAITLISTED = "WAITLISTED",
-  DEFERRED = "DEFERRED"
-}
-
-export interface ApplicationDocument {
-  type: string;
-  status: "NOT_STARTED" | "IN_PROGRESS" | "COMPLETED";
-  documentId?: string;
-  notes?: string;
-  dueDate?: Date;
-}
-
-export interface ApplicationNote {
-  id: string;
-  content: string;
-  timestamp: Date;
-  category?: string;
-}
-
-export interface ApplicationContact {
-  name: string;
-  role: string;
-  email?: string;
-  phone?: string;
-  notes?: string;
-  lastContacted?: Date;
-}
-
-export interface ApplicationEvent {
-  id: string;
-  event: string;
-  date: Date;
-  description?: string;
-  completed: boolean;
-}
-```
-
-## UI/UX Guidelines
-
-### Design Principles
-
-1. **Clarity & Simplicity**
-   - Clean layouts with clear visual hierarchy
-   - Minimal cognitive load for users
-   - Progressive disclosure for complex features
-
-2. **Accessibility**
-   - WCAG 2.1 AA compliance required
-   - Keyboard navigation support
-   - Screen reader compatibility
-   - Color contrast ratios of at least 4.5:1
-
-3. **Responsiveness**
-   - Mobile-first approach
-   - Fluid layouts that adapt to all screen sizes
-   - Touch-friendly UI elements
-
-4. **Consistency**
-   - Unified design language across all pages
-   - Predictable interaction patterns
-   - Consistent terminology and labeling
-
-5. **User Feedback**
-   - Clear loading states
-   - Meaningful error messages
-   - Success confirmations
-   - Empty state designs
-
-### Color Palette
-
-```css
-/* Primary colors */
---primary: #4361ee;
---primary-light: #6089ff;
---primary-dark: #2541b2;
-
-/* Secondary colors */
---secondary: #3a0ca3;
---secondary-light: #5c31d6;
---secondary-dark: #2a0875;
-
-/* Neutral colors */
---text-primary: #1a1a2e;
---text-secondary: #4a4a6a;
---background: #ffffff;
---surface: #f7f7f9;
---border: #e1e1e8;
-
-/* Feedback colors */
---success: #06d6a0;
---warning: #ffd166;
---error: #ef476f;
---info: #118ab2;
-```
-
-### Typography
-
-```css
-/* Font families */
---font-primary: 'Inter', sans-serif;
---font-secondary: 'Poppins', sans-serif;
---font-mono: 'JetBrains Mono', monospace;
-
-/* Font sizes */
---text-xs: 0.75rem;    /* 12px */
---text-sm: 0.875rem;   /* 14px */
---text-base: 1rem;     /* 16px */
---text-lg: 1.125rem;   /* 18px */
---text-xl: 1.25rem;    /* 20px */
---text-2xl: 1.5rem;    /* 24px */
---text-3xl: 1.875rem;  /* 30px */
---text-4xl: 2.25rem;   /* 36px */
-
-/* Font weights */
---font-light: 300;
---font-normal: 400;
---font-medium: 500;
---font-semibold: 600;
---font-bold: 700;
-```
-
-### Component Examples
-
-#### Button Variants
-
-```tsx
-// src/components/common/Button.tsx
-import React from 'react';
-import { cva, type VariantProps } from 'class-variance-authority';
-
-const buttonVariants = cva(
-  "inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none",
-  {
-    variants: {
-      variant: {
-        default: "bg-primary text-white hover:bg-primary-dark",
-        secondary: "bg-secondary text-white hover:bg-secondary-dark",
-        outline: "border border-primary text-primary hover:bg-primary/10",
-        ghost: "text-primary hover:bg-primary/10",
-        destructive: "bg-error text-white hover:bg-error/90",
-      },
-      size: {
-        default: "h-10 py-2 px-4",
-        sm: "h-8 px-3 text-xs",
-        lg: "h-12 px-6 text-base",
-        icon: "h-10 w-10",
-      },
-    },
-    defaultVariants: {
-      variant: "default",
-      size: "default",
-    },
-  }
-);
-
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
-  isLoading?: boolean;
-}
-
-const Button = ({ 
-  className, 
-  variant, 
-  size, 
-  isLoading, 
-  children, 
-  ...props 
-}: ButtonProps) => {
-  return (
-    <button
-      className={buttonVariants({ variant, size, className })}
-      disabled={isLoading || props.disabled}
-      {...props}
-    >
-      {isLoading && (
-        <svg className="animate-spin -ml-1 mr-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-        </svg>
-      )}
-      {children}
-    </button>
-  );
-};
-
-export default Button;
-```
-
-#### Form Field Examples
-
-```tsx
-// src/components/common/Input.tsx
-import React from 'react';
-
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  label: string;
-  description?: string;
-  error?: string;
-}
-
-const Input = ({ label, description, error, className, ...props }: InputProps) => {
-  const id = props.id || label.toLowerCase().replace(/\s+/g, '-');
-  
-  return (
-    <div className="space-y-2">
-      <label 
-        htmlFor={id}
-        className="text-sm font-medium text-text-primary"
-      >
-        {label}
-      </label>
-      
-      {description && (
-        <p className="text-xs text-text-secondary">
-          {description}
-        </p>
-      )}
-      
-      <input
-        id={id}
-        className={`
-          w-full px-3 py-2 rounded-md border
-          ${error ? 'border-error focus:ring-error' : 'border-border focus:ring-primary'}
-          focus:outline-none focus:ring-2 focus:ring-offset-1
-          placeholder:text-text-secondary/60
-          ${className}
-        `}
-        {...props}
-      />
-      
-      {error && (
-        <p className="text-xs text-error">
-          {error}
-        </p>
-      )}
-    </div>
-  );
-};
-
-export default Input;
-```
-
-## Development Standards
-
-### Coding Conventions
-
-1. **TypeScript Best Practices**
-   - Use strict type checking (`"strict": true` in tsconfig.json)
-   - Avoid `any` types; prefer explicit types or `unknown`
-   - Use interface for object types and type for unions/primitives/etc.
-   - Leverage type guards for runtime type checking
-
-2. **React Standards**
-   - Functional components with hooks
-   - Custom hooks for reusable logic
-   - Memoization for performance optimization (`useMemo`, `useCallback`, `memo`)
-   - Proper key usage in lists
-   - Component composition over prop drilling
-
-3. **File Organization**
-   - One component per file
-   - Component-related types in same file or dedicated types file
-   - Group related components in folders
-   - Barrel exports for clean imports
-
-4. **Naming Conventions**
-   - PascalCase for React components and types
-   - camelCase for variables, functions, and instances
-   - ALL_CAPS for constants
-   - Descriptive, intention-revealing names
-
-### Code Quality Tools
-
-1. **ESLint Configuration**
-   ```js
-   // eslint.config.js (flat config)
-   import eslint from '@eslint/js';
-   import tseslint from 'typescript-eslint';
-   import reactPlugin from 'eslint-plugin-react';
-   import hooksPlugin from 'eslint-plugin-react-hooks';
-   import a11yPlugin from 'eslint-plugin-jsx-a11y';
-
-   export default [
-     eslint.configs.recommended,
-     ...tseslint.configs.recommended,
-     {
-       plugins: {
-         react: reactPlugin,
-         'react-hooks': hooksPlugin,
-         'jsx-a11y': a11yPlugin
-       },
-       rules: {
-         'react/react-in-jsx-scope': 'off',
-         'react-hooks/rules-of-hooks': 'error',
-         'react-hooks/exhaustive-deps': 'warn',
-         'jsx-a11y/alt-text': 'error',
-         // Additional custom rules...
-       }
-     },
-     {
-       files: ['**/*.{ts,tsx}'],
-       rules: {
-         // TypeScript specific rules
-         '@typescript-eslint/explicit-function-return-type': 'off',
-         '@typescript-eslint/no-unused-vars': ['warn', {
-           argsIgnorePattern: '^_',
-           varsIgnorePattern: '^_',
-         }],
-         // More rules...
-       }
-     }
-   ];
-   ```
-
-2. **Commit Message Format**
-   ```
-   <type>(<scope>): <summary>
-
-   <description>
-
-   <footer>
-   ```
-
-   Types: feat, fix, docs, style, refactor, test, chore
-   Example: `feat(auth): implement email verification flow`
-
-### Error Handling
-
-1. **Frontend Error Handling**
-   - Use error boundaries for React component errors
-   - Implement global error handler for unhandled exceptions
-   - Provide user-friendly error messages
-   - Log detailed errors for debugging
-
-2. **API Error Handling**
-   ```typescript
-   // src/utils/api.ts
-   import { ConvexError } from "convex/values";
-   import { ClerkAPIError } from '@clerk/types';
-
-   export enum ErrorType {
-     VALIDATION = "VALIDATION",
-     AUTHENTICATION = "AUTHENTICATION",
-     AUTHORIZATION = "AUTHORIZATION",
-     NOT_FOUND = "NOT_FOUND",
-     RATE_LIMIT = "RATE_LIMIT",
-     SERVER = "SERVER"
-   }
-
-   export interface AppError {
-     type: ErrorType;
-     message: string;
-     field?: string;
-     details?: any;
-   }
-
-   export function handleApiError(error: unknown): AppError {
-     if (error instanceof ConvexError) {
-       // Handle Convex-specific errors
-       return {
-         type: ErrorType.SERVER,
-         message: error.message
-       };
-     }
-     
-     if (error instanceof ClerkAPIError) {
-       // Handle Clerk authentication errors
-       return {
-         type: ErrorType.AUTHENTICATION,
-         message: error.errors[0]?.message || "Authentication error",
-         details: error.errors
-       };
-     }
-     
-     if (error instanceof Error) {
-       return {
-         type: ErrorType.SERVER,
-         message: error.message
-       };
-     }
-     
-     return {
-       type: ErrorType.SERVER,
-       message: "An unknown error occurred"
-     };
-   }
-   ```
-
-## Testing Requirements
-
-### Unit Testing
-
-- Minimum 80% test coverage for utility functions and hooks
-- Jest as the test runner
-- React Testing Library for component testing
-
-**Example Test:**
-```typescript
-// src/utils/__tests__/formatting.test.ts
-import { formatDate, truncateText } from '../formatting';
-
-describe('formatDate', () => {
-  it('should format date in default format', () => {
-    const date = new Date('2025-03-03');
-    expect(formatDate(date)).toBe('Mar 3, 2025');
-  });
-  
-  it('should format date with custom format', () => {
-    const date = new Date('2025-03-03');
-    expect(formatDate(date, 'yyyy-MM-dd')).toBe('2025-03-03');
-  });
-});
-
-describe('truncateText', () => {
-  it('should truncate text longer than specified length', () => {
-    expect(truncateText('This is a long text', 10)).toBe('This is a...');
-  });
-  
-  it('should not truncate text shorter than specified length', () => {
-    expect(truncateText('Short', 10)).toBe('Short');
-  });
-});
-```
-
-### Integration Testing
-
-- Test key user flows
-- Cypress for end-to-end testing
-- Focus on critical paths: authentication, document creation, application tracking
-
-**Example Test:**
-```typescript
-// cypress/e2e/document-creation.cy.ts
-describe('Document Creation Flow', () => {
-  beforeEach(() => {
-    cy.signInWithClerk('test@example.com', 'password123');
-    cy.visit('/documents/new');
-  });
-  
-  it('should create a new Statement of Purpose', () => {
-    // Select document type
-    cy.findByLabelText('Document Type').select('Statement of Purpose');
-    
-    // Enter document title
-    cy.findByLabelText('Title').type('Stanford CS MS SOP');
-    
-    // Select university
-    cy.findByLabelText('University').type('Stanford');
-    cy.findByText('Stanford University').click();
-    
-    // Use AI generation
-    cy.findByText('Generate Draft').click();
-    
-    // Wait for generation to complete
-    cy.findByText('Draft Generated!', { timeout: 10000 }).should('be.visible');
-    
-    // Verify content exists
-    cy.get('.rich-text-editor').should('not.be.empty');
-    
-    // Save document
-    cy.findByText('Save Document').click();
-    
-    // Verify success message
-    cy.findByText('Document saved successfully').should('be.visible');
-    
-    // Verify document appears in documents list
-    cy.visit('/documents');
-    cy.findByText('Stanford CS MS SOP').should('be.visible');
-  });
-});
-```
-
-### User Acceptance Testing
-
-- Test with representative users from each persona group
-- Collect specific metrics:
-  - Task completion rate
-  - Time on task
-  - Error rate
-  - Satisfaction score
-- Focus on top user scenarios from PRD
-
-## Release Criteria
-
-### MVP Requirements
-
-The Minimum Viable Product must include:
-
-1. **User Authentication**
-   - Registration and login functionality using Clerk
-   - Password reset capability
-   - Profile creation
-   
-2. **Document Management**
-   - Create, edit, and delete documents
-   - Basic document generation with AI
-   - Document preview and export (PDF)
-
-3. **University Information**
-   - Basic university and program search
-   - View program requirements and deadlines
-
-4. **Application Tracking**
-   - Create and manage application entries
-   - Track application status
-   - Set and view application deadlines
-
-### Quality Standards
-
-1. **Performance**
-   - Page load time < 2 seconds on desktop, < 3 seconds on mobile
-   - Document generation response time < 5 seconds
-   - Search results in < 1 second
-
-2. **Reliability**
-   - 99.5% uptime during beta
-   - No data loss during normal operations
-   - Automatic error recovery for common failures
-
-3. **Security**
-   - All user data encrypted at rest and in transit
-   - No critical or high security vulnerabilities
-   - Secure authentication and authorization
-
-### Success Metrics
-
-1. **User Engagement**
-   - 70% of registered users create at least one document
-   - Average session duration > 10 minutes
-   - Return visit rate > 40% within first month
-
-2. **Document Generation**
-   - 90% of users generate at least one document
-   - 60% of users edit and save generated documents
-   - < 5% document generation failures
-
-3. **User Satisfaction**
-   - Net Promoter Score (NPS) > 30
-   - Customer Satisfaction Score (CSAT) > 4/5
-   - Feature satisfaction rating > 3.5/5 for core features
-
----
-
-This PRD provides comprehensive guidance for developers implementing the GradAid application. It defines clear requirements, technical specifications, and quality standards while maintaining flexibility for implementation details. The development team should use this document as the authoritative reference for building the product while consulting with the product owner regarding any ambiguities or necessary adjustments during development.
+Security and privacy are fundamental components of GradAid's architecture. Access to any section of the application beyond the public landing page necessitates user authentication via Clerk. This authentication process ensures user identity verification throughout the application session, establishing a foundation for robust security and privacy measures. Consequently, users are restricted to accessing only their own personal information. Data access controls are rigorously enforced whenever data is queried or modified, verifying that the requesting user possesses the appropriate permissions for the target data.
+
+The only publicly accessible information stored within the database pertains to university and program details. As these records contain no personal information, they do not require the same level of access control. Furthermore, users retain the right to delete their accounts and all associated personal data at any time, reinforcing data privacy and user control.
+
+### Reliability
+
+System reliability is achieved through the utilization of established and trusted infrastructure providers. The frontend, bundled using Vite, is hosted on Netlify, a reputable platform ensuring high availability and consistent internet accessibility for GradAid. The backend logic is executed as serverless functions hosted by Convex, which also manages the application's database.
+
+Currently, GradAid operates on the free tiers of these services, which imposes certain bandwidth limitations. While the existing bandwidth is adequate for current traffic levels, the architecture is designed for scalability. Both frontend and backend services can theoretically be scaled significantly to accommodate substantial increases in user demand, ensuring the application remains resilient under high traffic loads. Additionally, both Netlify and Convex incorporate rate limiting mechanisms as a protective measure against malicious activities, such as Distributed Denial-of-Service (DDoS) attacks, thereby mitigating potential service disruptions.
+
+### Microservice Dependency
+
+At present, strategies to mitigate dependencies on specific microservices have not been implemented. Replacing critical services like Clerk (for authentication) and Resend (for email delivery) would present challenges due to their significant integration within the codebase. While the OpenAI service could be substituted with an alternative Large Language Model (LLM) API with relative ease, the reliance on Clerk and Resend constitutes an identified limitation in the current architecture.
+
+Despite this dependency, these microservices provide substantial benefits in terms of security and reliability compared to developing equivalent functionalities in-house. Clerk offers robust user management security, and Resend addresses essential email security protocols. A future architectural objective is to reduce tight coupling with specific microservices, thereby enhancing the flexibility to integrate alternative solutions as needed.
+
+## Installation
+
+### Recommended Access
+
+The primary and recommended way to use GradAid is through the official hosted version available at: **[https://gradaid.online](https://gradaid.online)**
+
+This avoids the need for complex local setup and configuration of external services.
+
+### Local Development Setup
+
+If you intend to contribute to development or require a local instance, follow the steps below. Be aware that this process involves setting up accounts and configuring several third-party services.
+
+#### Prerequisites
+
+You will need to configure the following services:
+
+* **Convex:**
+    * Serves as the backend and database.
+    * Account required: [https://convex.dev](https://convex.dev)
+    * *Optional:* For a fully local setup without a Convex cloud account, you can explore [local deployments](https://docs.convex.dev/cli/local-deployments) (currently in beta, may have limitations).
+* **Clerk:**
+    * Handles user authentication.
+    * Account required: [https://clerk.com](https://clerk.com)
+    * Set your Clerk API keys within your Convex project's [environment variables](https://docs.convex.dev/production/environment-variables).
+    * See Clerk integration docs: [Clerk & Convex Auth](https://docs.convex.dev/auth/clerk), [Clerk Convex Integration](https://clerk.com/docs/integrations/databases/convex).
+* **OpenAI:**
+    * Required for document generation features.
+    * Account and API key required: [https://openai.com/](https://openai.com/)
+    * Set your `OPENAI_API_KEY` within your Convex project's [environment variables](https://docs.convex.dev/production/environment-variables).
+* **Resend:** (Optional for Local Development)
+    * Used for sending contact emails in the production version.
+    * Not strictly required for local development if email functionality is not needed.
+    * If not using Resend, you may need to comment out or remove code sections referencing the `RESEND_API_KEY` to prevent build errors.
+
+#### Configuration
+
+1.  **Environment Variables:** Ensure all required API keys (Clerk, OpenAI) are correctly set as environment variables in your Convex deployment settings.
+2.  **Clerk Webhooks:** Configure webhooks in your Clerk project dashboard to synchronize user data with your Convex backend, as described in the [Convex documentation](https://docs.convex.dev/auth/database-auth#set-up-webhooks).
+
+#### Running the Application
+
+1.  **Start the Backend:** Open your terminal in the project root directory and run the Convex development server:
+    ```bash
+    npm run dev:backend
+    ```
+2.  **Start the Frontend:** Open a *new* terminal window in the project root directory and start the Vite development server:
+    ```bash
+    npm run dev:frontend
+    ```
+
+3.  **Access Locally:** Once both processes are running, you can access the GradAid application in your web browser at `http://localhost:5173`.
+
+## Testing
+
+GradAid employs a comprehensive testing suite comprising over 600 tests, including unit, User Interface (UI), and integration tests. Due to testing being incorporated later in the development cycle, end-to-end (E2E) testing is currently absent, and the extent of integration testing is limited relative to unit and UI tests.
+
+Despite these limitations, the project maintains substantial code coverage, measured at 83% for functions and 94% for lines of code. This high coverage level provides significant protection against regressions in critical application functionalities. While acknowledging that further refinement is always possible to address all potential edge cases, the existing test suite offers thorough validation of the current codebase.
+
+The Vitest framework serves as the foundation for all testing procedures. Frontend testing utilizes the React Testing Library, running within a jsdom environment powered by Vitest. Backend testing employs the `convex-test` library, which leverages Vitest to simulate a mock database within the edge-runtime environment. Code coverage metrics are generated using the V8 coverage provider integrated with Vitest.
+
+Initial efforts were made to introduce end-to-end testing using WebdriverIO; however, integration challenges, particularly with the authentication system, prevented its successful implementation within the available timeframe. A key objective for future development includes the full implementation of end-to-end testing, potentially utilizing WebdriverIO or an alternative framework.
+
+### Running Tests Locally
+
+To execute the test suite in a local development environment, follow these steps:  
+<small>*Note that installation is not required to run tests. All tests run on a local version of the Convex database and mock all API calls so they can be run without setting up any services.*</small>
+
+1.  **Install Dependencies:** Ensure all necessary project packages are installed by running the following command in your terminal:
+    ```bash
+    npm install
+    ```
+    Alternatively, you can use the shorthand:
+    ```bash
+    npm i
+    ```
+
+2.  **Run Tests:** Execute the complete test suite once using this command:
+    ```bash
+    npm run test:once
+    ```
+
+3.  **Check Test Coverage:** To generate and view the test coverage report after running the tests, use the command:
+    ```bash
+    npm run test:coverage
+    ```

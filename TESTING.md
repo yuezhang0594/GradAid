@@ -8,6 +8,7 @@ We use the following testing tools:
 
 - **Vitest**: Test runner compatible with Vite
 - **React Testing Library**: For testing React components
+- **convex-test**: For testing Convex server functions
 - **jsdom**: For simulating a browser environment
 - **@testing-library/user-event**: For simulating user interactions
 
